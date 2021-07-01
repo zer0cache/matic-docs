@@ -330,6 +330,11 @@ module.exports = {
         "home/architecture/security-models",
       ],
     },
+    {
+        type: "category",
+        label: "DID Implementation",
+        items: ["develop/did-implementation/introduction","develop/did-implementation/getting-started"]
+    },
   ],
   Integrate: [
     "integrate/quickstart",
