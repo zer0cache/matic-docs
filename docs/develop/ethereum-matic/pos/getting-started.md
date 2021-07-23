@@ -31,7 +31,7 @@ Proof of stake based assets provides PoS security and faster exit with one check
   4. The **ChildChainManager** internally calls the **deposit** function of the child token contract and the corresponding amount of asset tokens are **minted to the users account**. It is important to note that only the ChildChainManager can access the deposit function on the child token contract.
   5. Once the user gets the tokens, they can be **transfered almost instantly with negligible fees on the Matic chain**.
   6. Withdrawing assets back to Ethereum is a 2 step process in which the asset tokens has to be **first burnt on the Matic chain** and then the **proof of this burn transaction has to be submitted** on the Ethereum chain.
-  7. It takes about 10-30 mins for the burn transaction to be checkpointed into the Ethereum chain. This is done by the Proof of Stake validators.
+  7. It takes about 20 mins to 3 hours for the burn transaction to be checkpointed into the Ethereum chain. This is done by the Proof of Stake validators.
   8. Once the transaction has been added to the check point, a proof of the burn transaction can be submitted on the **RootChainManager** contract on Ethereum by calling the **exit** function.
   9. This function call **verifies the checkpoint inclusion** and then triggers the Predicate contract which had locked the asset tokens when the assets were deposited initially.
   10. As the final step, the **predicate contract releases the locked tokens** and refunds it to the Users account on Ethereum.
