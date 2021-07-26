@@ -19,7 +19,7 @@ Proof of stake based assets provides PoS security and faster exit with one check
 
 ## Steps to use the PoS Bridge
 
-- **Root token** and **Child token** has to be mapped on the PoS bridge. This basically means that the token contract on the root chain and the token contract on the child chain have to maintain a connection or mapping in order transfer assets between them. Submit mapping request [here](/docs/develop/ethereum-matic/submit-mapping-request).
+- **Root token** and **Child token** has to be mapped on the PoS bridge. This basically means that the token contract on the root chain and the token contract on the child chain have to maintain a connection or mapping in order to transfer assets between them. Submit mapping request [here](/docs/develop/ethereum-matic/submit-mapping-request).
 
 - Once mapping is done, you can either use the **matic.js SDK** to interact with the contracts or you can do the same without the SDK. However, the matic.js SDK is designed in a very user friendly way to make the asset transfer mechanism very easy to integrate with any application.
 
