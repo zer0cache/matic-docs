@@ -47,7 +47,7 @@ module.exports = {
         "develop/network-details/mapped-tokens",
         "develop/network-details/gas-token",
         "develop/network-details/genesis-contracts",
-        "develop/network-details/full-node-deployment",
+        "integrate/full-node-deployment",
       ],
     },
     {
