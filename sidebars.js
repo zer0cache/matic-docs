@@ -536,7 +536,7 @@ module.exports = {
     // "faq/delegator-faq",
     "faq/commit-chain-multisigs",
     "faq/staking-faq",
-    "faq/staking-tutorials",
+    // "faq/staking-tutorials",
     "faq/wallet-bridge-faq",
     "faq/consensys-framework",
   ],
