@@ -1,0 +1,22 @@
+name: Polygon Doc build
+
+on:
+  pull_request:
+    branches: [ polygon ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code
+      - uses: actions/checkout@v2
+        with:
+          ref: polygon
+      
+      - name: INSTALL
+        run: npm install
+      
+      - name: BUILD
+        run: npm run build
