@@ -182,4 +182,4 @@ Check for the following:
 
 ### I have unbonded, how long will it take to Unbond
 
-The unbonding period is currently set to 80 checkpoints. This is approximately 9-10 days. Every checkpoint takes approximately 3 hours. However, some checkpoints could be delayed due to congestion on Ethereum.
+The unbonding period is currently set to 80 checkpoints. This is approximately ~3-4 days. Every checkpoint takes approximately 3 hours. However, some checkpoints could be delayed due to congestion on Ethereum.
