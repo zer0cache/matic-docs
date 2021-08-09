@@ -30,4 +30,4 @@ this section is for you.
 
 ## Jump to the Essentials
 
-- [Network Details](network) -> Information on all Matic Testnets and Beta-Mainnet.
+- [Network Details](/docs/integrate/network-detail) -> Information on all Matic Testnets and Beta-Mainnet.
