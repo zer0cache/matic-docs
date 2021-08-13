@@ -15,7 +15,7 @@ This section of the docs deal with tracking and monitoring the pace and speed of
 
 ## Deposit Events
 
-When a user deposits a token from Ethereum to Polygon, the [State Sync Mechanism](https://docs.matic.network/docs/contribute/state-sync/state-sync/#:~:text=State%20Sync%20is%20the%20native,logic%20sits%20inside%20onStateReceive%20function.) is triggered. If you didn't click on that link, the state sync mechanism is simply the native mechanism that reads Ethereum data from Polygon EVM chain and establishes a balance between the two chains. Over a process that lasts for 5-7 minutes, the mechanism mints the equivalent value of the Ethereum tokens deposits on the Polygon chain for the user. As this take a small amount of time, it is sometimes good UX to listen to the event stream and track it to see when it starts and ends.
+When a user deposits a token from Ethereum to Polygon, the [State Sync Mechanism](https://docs.matic.network/docs/contribute/state-sync/state-sync/#:~:text=State%20Sync%20is%20the%20native,logic%20sits%20inside%20onStateReceive%20function.) is triggered. If you didn't click on that link, the state sync mechanism is simply the native mechanism that reads Ethereum data from Polygon EVM chain and establishes a balance between the two chains. Over a process that lasts for 5-7 minutes, the mechanism mints the equivalent value of the Ethereum tokens deposits on the Polygon chain for the user. As this takes a small amount of time, it is sometimes good UX to listen to the event stream and track it to see when it starts and ends.
 
 ## Realtime deposit event tracking using a web socket connection
 

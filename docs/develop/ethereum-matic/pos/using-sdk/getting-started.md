@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
 
 ## Quick Summary 
 
-The matic.js SDK takes all the computing power of Polygon and places it right at your finger tip. With custom-made functions that allow for withdrawal, approval, deposit and burning, all without doing too much footwork, our reason for engineering this was to ensure you can get instant value from our platform. 
+The matic.js SDK takes all the computing power of Polygon and places it right at your finger tip. With custom-made functions that allow for approval, deposit and wtihdraw, all without doing too much footwork, our reason for engineering this was to ensure you can get instant value from our platform. 
 
 ## Installation
 The first step to using the awesome power of Polygon via our SDK is by doing an NPM install of it. Find here 
@@ -37,16 +37,10 @@ Done that? Next up, we use providers. The providers can be RPC urls or web3 base
 
 ## RPC and HD Wallet
 
-RPC Wallet
+RPC 
 ```bash
-const parentProvider = '<Infura now supports a dedicated Polygon RPC. See how to set that up here[https://blog.infura.io/polygon-now-available/](https://blog.infura.io/polygon-now-available/)>'
-const maticProvider = '<Sign up for a free RPC link at [https://rpc.maticvigil.com/](https://rpc.maticvigil.com/)>'
-```
-HD Wallet
-```bash
-const HDWalletProvider = require('@truffle/hdwallet-provider')
-const parentProvider = new HDWalletProvider(privateKey, 'https://mainnet.infura.io/v3/<infura-key>'),
-const maticProvider = new HDWalletProvider(privateKey, '<Sign up for a dedicated free RPC URL at https://rpc.maticvigil.com/ or other hosted node providers.>'),
+const parentProvider = 'https://mainnet.infura.io/v3/<infura-key>'
+const maticProvider = '<Infura now supports a dedicated Polygon RPC. See how to set that up here[https://blog.infura.io/polygon-now-available/](https://blog.infura.io/polygon-now-available/)>'
 ```
 
 Next thing you want to do is instantiate the client by passing network details and providers based on the network you're integrating.

@@ -17,7 +17,7 @@ The Proof of Stake bridge (PoS) enables seamless control over assets, faster dep
 
 ## Introduction
 
-Moving in and out of the Matic ecosystem is exponentially faster with the PoS bridge and this guide exists to show you just how easy it is. With our validator-run token bridge, you can move your ERC20, ERC721, and ERC1155 tokens at speeds never seen before. Unlike the plasma bridge with a 7-day withdrawal period, the PoS bridge completes deposits within 7-8 minutes and withdrawals within 30 minutes. Interested in how we can help you scale? Let's show the steps below.
+Moving in and out of the Polygon ecosystem is exponentially faster with the PoS bridge and this guide exists to show you just how easy it is. With our validator-run token bridge, you can move your ERC20, ERC721, and ERC1155 tokens at speeds never seen before. Unlike the plasma bridge with a 7-day withdrawal period, the PoS bridge completes deposits within 7-8 minutes and withdrawals within 30 minutes. Interested in how we can help you scale? Let's show the steps below.
 
 
 ## Steps to use the PoS Bridge
@@ -32,9 +32,9 @@ At a lower level and with more detail, this is what happens
 
 ### Deposit
 
-- The owner of the asset token uses what is called the Predicate Contract to approve and lock down the amount of tokens to be deposited. This contract interacts with the root chain manager to complete the deposit, approves the deposit of tokens and then is deployed on the ethereum network
+- The owner of the asset token approves the Predicate Contract to lock down the amount of tokens to be deposited. Once this approval transaction has confirmed, the owner of the asset token interacts with the RootChainManager contract to complete the deposit.
 
-- Next up, the asset is deposited with the State Sync Mechanism, if you didn't get a run-through of what the State Sync Mechanism is, it's in its simplest form the native mechanism to read Ethereum data of the Matic EVM chain. The inner workings of the mechanism itself comprises of a function call that is made of the RootChainManager which triggers the ChildChainManager contract. 
+- Next up, the asset is deposited with the State Sync Mechanism, if you didn't get a run-through of what the State Sync Mechanism is, it's in its simplest form the native mechanism to send data from Ethereum Network to the Polygon Network. The inner workings of the mechanism itself comprises of a function call that is made of the RootChainManager which triggers the ChildChainManager contract. 
 
 Want to see this in video format? Please check it out below
 
@@ -45,11 +45,11 @@ Want to see this in video format? Please check it out below
 
 ### Withdrawls
 
-- Withdrawing assets is a breeze with the PoS bridge. It's as simple as burning the asset tokens on the Matic chain, collecting the hash that is the proof of this burn, and submitting it to the **RootChainManager**. The **RootChainManager** then calls for the predicate contract to release the funds that were locked on the Ethereum chain.
+- Withdrawing assets is a breeze with the PoS bridge. It's as simple as burning the asset tokens on the Polygon chain, collecting the transaction hash of this burn transaction, and submitting it to the **RootChainManager**. The **RootChainManager** then calls for the predicate contract to release the funds that were locked on the Ethereum chain.
 
 - Once the burn transaction is validated on the Polygon chain, it takes 30 minutes to 3 Hours for this burn transaction to be checkpointed. Checkpointing is the process of merging the Polygon transactions into the Ethereum blockchain.
 
-- Next up, the proof of this burn is submitted to the **RootChainManager** by calling the exit function. This function call takes in the burnHash for verifying the checkpoint inclusion and only then triggers the Predicate Contract which unlocks and releases the funds that were deposited.
+- Next up, the proof of this burn transaction is submitted to the **RootChainManager** by calling the exit function. This function call takes in the burnHash for verifying the checkpoint inclusion and only then triggers the Predicate Contract which unlocks and releases the funds that were deposited.
 
 Want to watch all of this in video form? Please check it out below
 

@@ -10,16 +10,16 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 ## Quick Summary:
 
-This section deals with a very necessary prerequisite to using the Proof of Stake bridge - Mapping. Mapping is the process of getting and maintaining a stable connection between the networks and transferring assets to and fro the Ethereum and Polygon network.
+This section deals with a very necessary prerequisite to using the Polygon bridge - Mapping. Mapping is the process of creating and maintaining a stable connection between the contracts on the two networks(Ethereum and Polygon) and transferring assets to and fro the two networks.
 
 ## Introduction
 
-Mapping is the necessary step to using the PoS bridge and is necesssary to transfer assets to and fro the Ethereum and Polygon network. To understand how it happens, the first thing to do is to understand what the technical terms used to describe the transactions. 
+ To understand how mapping works, the first thing to do is to understand the technical terms used to describe the transactions. 
 
-- The **Root Chain** here refers to either the Goerli or Ethereum mainnet
-- The **Child Chain** refers to either Mumbai or Polygon mainnet
+- The **Root Chain** here refers to either the Goerli or Ethereum Mainnet
+- The **Child Chain** refers to either Mumbai or Polygon Mainnet
 
-If you have your token contract deployed on the **Root** **Chain** and want o move it to the **Child Chain** then this is the documentation for you. If however your intent is to deploy your contract on the **Polygon** mainnet, mint the tokens on the **Child Chain** and then move them back to the **Root Chain** - ****the end result of this is what we call Polygon Mintable Assets -  then you need to follow this [guide](https://docs.matic.network/docs/develop/ethereum-matic/mintable-assets/)
+If you have your token contract deployed on the **Root Chain** and want to move it to the **Child Chain** then this is the documentation for you. If however your intent is to deploy your contract on the **Polygon** mainnet, mint the tokens on the **Child Chain** and then move them back to the **Root Chain** - ****the end result of this is what we call Polygon Mintable Assets -  then you need to follow this [guide](https://docs.matic.network/docs/develop/ethereum-matic/mintable-assets/)
 
 ## Standard Child Token
 
@@ -35,15 +35,15 @@ Please visit this [link](https://docs.matic.network/docs/develop/ethereum-matic/
 
 ## Custom Child Token
 
-There are very many reasons why you may need a custom child token (with additional functions) rather than standard child token. To do this, you'll have to deploy your token contracts on the Child Chain and then submit your mapping request [here](https://mapper.matic.today/). Make sure to include the address of your deployed child token contract and you should be good to go. Let's describe an example of creating a custom child token contract.
+There are many reasons why you may need a custom child token (with additional functions) rather than standard child token. To do this, you'll have to deploy your token contracts on the Child Chain and then submit your mapping request [here](https://mapper.matic.today/). Make sure to include the address of your deployed child token contract and you should be good to go. Let's describe an example of creating a custom child token contract.
 
 **Your custom child contract should follow certain guidelines before you deploy it on the child chain.**
 
 The custom child contract must have: 
 
-A **Deposit** method**.** The **deposit** method should be present in your custom child contract. This function is called by the ChildChainManagerProxy contract whenever a deposit is initiated from the root chain. This deposit function internally mints the token on the child chain.
+A **deposit** method**.** The **deposit** method should be present in your custom child contract. This function is called by the ChildChainManagerProxy contract whenever a deposit is initiated from the root chain. This deposit function internally mints the token on the child chain.
 
-A **Withdraw** method. The **withdraw** method must be available as it is what is called to burn your tokens on the child chain. Burning is the first step of the withdrawal process. These rules need to be followed to maintain a proper balance of assets between the two child and root chains.
+A **withdraw** method. The **withdraw** method must be available as it is what is called to burn your tokens on the child chain. Burning is the first step of the withdrawal process. These rules need to be followed to maintain a proper balance of assets between the two child and root chains.
 
 **Sidenote**: No token minting in constructor of child token contract.
 
@@ -159,7 +159,7 @@ Steps :
 
 1. Deploy root token on root chain i.e. {Goerli, Ethereum Mainnet}
 2. Ensure your child token has the **deposit** & **withdraw** functions.
-3. Deploy the child token on child chain i.e. {Matic Mumbai, Matic Mainnet}
+3. Deploy the child token on child chain i.e. {Polygon Mumbai, Polygon Mainnet}
 4. Submit a mapping request, to be resolved by team.
 
 ### Request Submission

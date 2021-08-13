@@ -15,7 +15,7 @@ This section of the docs deals with how to deposit and withdraw ERC20 tokens on 
 
 ## Introduction
 
-This tutorial uses the Testnet network which is mapped to the Goerli Network. For the purpose of this tutorial, we have already deployed the Test tokens and mapped them on the PoS bridge. You can request the asset from the [faucet](https://faucet.matic.network/) and if they aren't available, please reach out to us on [discord](https://discord.com/invite/er6QVj) and we'll get back to you immediately.
+This tutorial uses the Polygon Testnet (Mumbai) which is mapped to the Goerli Network. For the purpose of this tutorial, we have already deployed the Test tokens and mapped them on the PoS bridge. You can request the asset from the [faucet](https://faucet.matic.network/) and if they aren't available, please reach out to us on [discord](https://discord.com/invite/er6QVj) and we'll get back to you immediately.
 
 In the upcoming tutorial, every step will be explained in detail along with a few code snippets. However, you can always refer to this repository which will have all the example source code that can help you to integrate and understand the working of the PoS bridge.
 
@@ -24,6 +24,7 @@ In the upcoming tutorial, every step will be explained in detail along with a fe
 
 - Approve the **ERC20PredicateProxy** contract to spend the tokens that are to be deposited.
 - Make the **depositFor** call on the **RootChainManager** contract on Ethereum.
+
 ### Withdraw ERC20
 
 - **Burn** your token on the Polygon chain. This involves sending your token to a bogus address so the token is no longer usable. 
