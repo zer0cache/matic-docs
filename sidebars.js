@@ -202,8 +202,8 @@ module.exports = {
       type: "category",
       label: "Oracles",
       items: [
-        "develop/oracles/optimisticoracle",
         "develop/oracles/getting-started",
+        "develop/oracles/optimisticoracle",
         "develop/oracles/chainlink",
         "develop/oracles/razor",
         "develop/oracles/bandchain",
