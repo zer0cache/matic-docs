@@ -47,7 +47,7 @@ jobs:
       - name: invalidate cloudfront distribution and wait for completion
         uses: muratiger/invalidate-cloudfront-and-wait-for-completion-action@master
         env:
-          DISTRIBUTION_ID: ${{ secrets.DEV_CLOUDFRONT_DISTRIBUTION_ID }}
+          DISTRIBUTION_ID: ${{ secrets.MASTER_CLOUDFRONT_DISTRIBUTION_ID }}
           PATHS: '/*'
           AWS_REGION: 'us-east-1'
           AWS_ACCESS_KEY_ID: ${{ secrets.MASTER_AWS_ACCESS_KEY_ID }}
