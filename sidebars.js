@@ -70,7 +70,7 @@ module.exports = {
         //   href: "https://status.matic.today/#/checkpoints",
         // },
         "develop/tools/matic-gas-station",
-        "develop/tools/widget"
+        
       ],
     },
     {
@@ -175,6 +175,11 @@ module.exports = {
             "develop/ethereum-matic/plasma/deposit-withdraw-event-plasma",
             "develop/ethereum-matic/plasma/mapping-assets",
           ],
+        },
+        {
+          type: "category",
+          label:"Tools",
+          items: ["develop/ethereum-matic/tools/widget"],
         },
         "develop/ethereum-matic/submit-mapping-request",
         "develop/ethereum-matic/mintable-assets",
