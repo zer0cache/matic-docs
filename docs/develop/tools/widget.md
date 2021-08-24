@@ -11,8 +11,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Wallet widget is a light wallet which can be embedded in any sites for executing transaction on Polygon. 
-Every widget is identified by an unique name which you can get from **Widget dashboard**
+Wallet widget is a light wallet which can be embedded in any sites for executing transaction on Polygon. Every widget is identified by an unique name which you can get from **Widget dashboard**
 
 ### Widget dashboard
 
