@@ -17,7 +17,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 - Metamask
 - Coinbase Wallet
-- Trust Wallet
+- Wallet Connect
 
 We will soon add more wallets.
 
