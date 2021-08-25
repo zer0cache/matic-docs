@@ -14,3 +14,6 @@ Ans - Yes, widget name is global. It is unique through the app. You can consider
 
 ## 2. Is there any example ?
 Ans - Yes we have dedicated repo for examples which contains examples for different framework and technology. Here is link to repo - https://github.com/maticnetwork/wallet-widget-example
+
+## 3. What if widget styles will override my website ?
+Ans - Widget is a shadow dom element, so all its styles are abstracted. Thus it won't override your website style.
