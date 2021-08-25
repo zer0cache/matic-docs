@@ -67,4 +67,3 @@ Setting up a validator node is a job that comes with responsibilities. To better
 
 The responsibility of creating blocks and also proposing checkpoints is variably dependent on a validator’s stake ratio in the overall pool.
 
-To setup your node you can follow the instructions from [here](https://docs.matic.network/docs/validate/counter-stake-stage-2/getting-started) 
