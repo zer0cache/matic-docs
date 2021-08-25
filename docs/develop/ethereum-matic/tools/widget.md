@@ -11,13 +11,17 @@ image: https://matic.network/banners/matic-network-16x9.png
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Wallet widget is a light wallet which can be embedded in any sites for executing transaction on Polygon. Every widget is identified by an unique name which you can get from **Widget dashboard**
+Wallet widget is a light wallet which can be embedded in any web application for executing bridge transactions - Deposit & Withdraw. 
+
+Every widget is identified by an unique name which you can get from [Widget dashboard](https://wallet.polygon.technology/widget-dashboard) .
 
 ### Widget dashboard
 
 Widget can be created from the widget dashboard page in the wallet application. It allows the user to create a new widget with some customisable options.
 
-Once the widget is created, You can copy code snippet and add it in your application or only get the id and configure by yourself.
+Once the widget is created, You can copy code snippet and add it in your application or use the widget name and configure by yourself.
+
+Here is link to widget dashboard - https://wallet.polygon.technology/widget-dashboard
 
 ## Install
 
@@ -70,6 +74,7 @@ Configuration can be supplied in Widget constructor.
     - bottom-left
 - **amount** : string - Prefill the amount in text box
 - **page** : string - select the page. Available options are - `withdraw`, `deposit`.
+- **overlay** : boolean - show overlay when widget is opened. By default it is false.
 
 ## Events
 
