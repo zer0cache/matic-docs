@@ -95,7 +95,7 @@ Watching the video below can give more clarity on how to use the "Try Again" fea
 
 Below is a list of centralised exchanges that currently support Polygon and also the tokens that these exchanges support.
 
-Bitmax- USDC, EASY, MATIC
+AscendEX - USDC, EASY, MATIC
 
 MXC - MATIC, QUICK, PlotX, Dfyn
 
