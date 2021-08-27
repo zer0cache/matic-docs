@@ -119,7 +119,7 @@ run
 
     heimdalld unsafe-reset-all 
 
-and start Heimdall services again. You can refer to Step 7 in the setup guide - https://docs.matic.network/staking/linux-package-installation/#step-7-run-heimdall
+and start Heimdall services again. You can refer to this guide - https://docs.matic.network/docs/validate/mainnet/validator-guide
 
 ### 5. From where do I create the API key?
 

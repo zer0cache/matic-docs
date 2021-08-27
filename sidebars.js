@@ -228,18 +228,7 @@ module.exports = {
         },
       ],
     },
-    {
-      type: "category",
-      label: "Realtime Updates",
-      items: [
-        "develop/dagger-webhooks",
-        {
-          type: "category",
-          label: "Zapier - Multiple Apps",
-          items: ["develop/zapier/getting-started"],
-        },
-      ],
-    },
+    
 
     {
       type: "category",

@@ -15,11 +15,11 @@ The usual mechanism to natively read Ethereum data from Polygon is using `State 
 
 ## What is [Fx-Portal](https://github.com/fx-portal/contracts)?
 
-It is a powerful yet simple implementation Polygon [state sync](https://docs.matic.network/docs/contribute/state-sync) mechanism. The Polygon PoS bridge is built on the same architecture. The code in the `examples` folder are some examples of usage. You can easily use these examples to build your own implementations or own custom bridge which allows any state-syncs without mapping.
+It is a powerful yet simple implementation Polygon [state sync](https://docs.matic.network/docs/contribute/state-sync/state-sync/) mechanism. The Polygon PoS bridge is built on the same architecture. The code in the `examples` folder are some examples of usage. You can easily use these examples to build your own implementations or own custom bridge which allows any state-syncs without mapping.
 
 ## How does it work?
 
-`FxChild` (FxChild.sol)  and `FxRoot` (FxRoot.sol) are the main contracts on which FxPortal works. It calls and passes data to user-defined methods on another chain without any mapping using the state sync mechanism. To use the deployed main contracts, you can implement FxPortal's base contracts in the smart contracts you deploy - [FxBaseRootTunnel](https://github.com/fx-portal/contracts/blob/main/contracts/tunnel/FxBaseRootTunnel.sol) and [FxBaseChildTunnel](https://github.com/fx-portal/contracts/blob/main/contracts/tunnel/FxBaseChildTunnel.sol). By building on these contracts, your deployed contracts will be able to communicate with each other using the [data tunnel](https://docs.matic.network/docs/develop/l1-l2-communication/data-tunnel/) mechanism.
+`FxChild` (FxChild.sol)  and `FxRoot` (FxRoot.sol) are the main contracts on which FxPortal works. It calls and passes data to user-defined methods on another chain without any mapping using the state sync mechanism. To use the deployed main contracts, you can implement FxPortal's base contracts in the smart contracts you deploy - [FxBaseRootTunnel](https://github.com/fx-portal/contracts/blob/main/contracts/tunnel/FxBaseRootTunnel.sol) and [FxBaseChildTunnel](https://github.com/fx-portal/contracts/blob/main/contracts/tunnel/FxBaseChildTunnel.sol). By building on these contracts, your deployed contracts will be able to communicate with each other using the data tunnel mechanism.
 
 Otherwise, you can choose to map your tokens with the already deployed tunnel contracts.
 

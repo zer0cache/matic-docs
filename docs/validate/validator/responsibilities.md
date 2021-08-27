@@ -42,5 +42,5 @@ Validators in Matic Network are selected via an on-chain auction process which h
             - The corresponding event is relayed to Heimdall and then Bor
             - A state-sync transaction get called on a Matic smart contract and the DApp can get the value on Bor via a function call on Bor itself.
             - A similar mechanism is in place for sending state from Matic to Ethereum
-            - Refer [state sync mechanism](/docs/contribute/state-sync) for more details on this
+            - Refer [state sync mechanism](/docs/contribute/state-sync/state-sync) for more details on this
 6. A validator does need to maintain a minimum amount of ETH to pay for gas fees for all Ethereum transactions.
