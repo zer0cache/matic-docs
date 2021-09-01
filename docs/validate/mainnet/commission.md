@@ -1,7 +1,7 @@
 ---
 id: commission
 title: Commission
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic

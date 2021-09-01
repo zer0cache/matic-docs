@@ -2,7 +2,7 @@
 id: deposit-withdraw-event-pos
 title: Deposit and Checkpoint Event Tracking - PoS
 sidebar_label: Deposit and Checkpoint Event Tracking
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -11,7 +11,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 ## Deposit Events
 
-When a token is deposited from Ethereum to Matic, a process called state sync mechanism comes into play that eventually mints the tokens for the user on the Matic chain. This process takes about ~5-7 minutes to happen and hence listening to the deposit event is very important to create a good user experience. This is an example script that can be used to track real time deposit events.
+When a token is deposited from Ethereum to Polygon, a process called state sync mechanism comes into play that eventually mints the tokens for the user on the Polygon chain. This process takes about ~5-7 minutes to happen and hence listening to the deposit event is very important to create a good user experience. This is an example script that can be used to track real time deposit events.
 
 ### Realtime deposit event tracking using a web socket connection
 
@@ -21,7 +21,7 @@ const Web3 = require("web3");
 
 // For Mumbai
 const ws = new WebSocket("wss://ws-mumbai.matic.today/");
-// For Matic mainnet: wss://ws-mainnet.matic.network/
+// For Polygon mainnet: wss://ws-mainnet.matic.network/
 const web3 = new Web3();
 const abiCoder = web3.eth.abi;
 
@@ -123,7 +123,7 @@ const provider = new Web3.providers.HttpProvider(
 );
 const web3 = new Web3(provider);
 
-// For mainnet, use the matic mainnet RPC: <Sign up for a dedicated free RPC URL at https://rpc.maticvigil.com/ or other hosted node providers.>
+// For mainnet, use the Polygon mainnet RPC: <Sign up for a dedicated free RPC URL at https://rpc.maticvigil.com/ or other hosted node providers.>
 const child_provider = new Web3.providers.HttpProvider(
   "<insert Mumbai testnet RPC URL>" //Get a free RPC URL from https://rpc.maticvigil.com/ or other hosted node providers.
 );
@@ -174,7 +174,7 @@ depositCompleted(
 
 ### Real-time checkpoint status tracking
 
-All transactions that occur on Matic chain are check-pointed to the Ethereum chain in frequent intervals of time by the validators. This time is ~10 mins on Mumbai and ~30 mins on Matic mainnet. The checkpoint occurs on a contract called the RootChain contract deployed on Ethereum chain. The following script can be used to listen to Real-time checkpoint inclusion events.
+All transactions that occur on Polygon chain are check-pointed to the Ethereum chain in frequent intervals of time by the validators. This time is ~10 mins on Mumbai and ~30 mins on Polygon mainnet. The checkpoint occurs on a contract called the RootChain contract deployed on Ethereum chain. The following script can be used to listen to Real-time checkpoint inclusion events.
 
 ```jsx
 const Web3 = require("web3");
@@ -192,7 +192,7 @@ const chil_provider = new Web3.providers.HttpProvider(
 );
 const child_web3 = new Web3(chil_provider);
 
-// txHash - transaction hash on Matic
+// txHash - transaction hash on Polygon
 // rootChainAddress - root chain proxy address on Ethereum
 async function checkInclusion(txHash, rootChainAddress) {
   let txDetails = await child_web3.eth.getTransactionReceipt(txHash);

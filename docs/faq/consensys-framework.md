@@ -2,7 +2,7 @@
 id: consensys-framework
 title: Consensys Scaling Framework
 sidebar_label: Consensys Scaling Framework
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -70,7 +70,7 @@ For more details, refer https://docs.matic.network/docs/develop/ethereum-matic/p
 
 ### - How soon are those funds available on the Polygon PoS?
 
-Around ~7-8 minutes. This is done via a message passing mechanism that is termed as `state sync`. More details can be found here: https://docs.matic.network/docs/contribute/state-sync/
+Around ~7-8 minutes. This is done via a message passing mechanism that is termed as `state sync`. More details can be found here: https://docs.matic.network/docs/contribute/state-sync/state-sync/
 
 Does Polygon PoS provide support for users entering without a L1 lock-up (i.e. in the case of onboarding a user directly onto Polygon, then the user wishes to exit to Ethereum mainnet)?
 

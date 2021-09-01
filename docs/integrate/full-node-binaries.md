@@ -1,7 +1,7 @@
 ---
 id: full-node-binaries
 title: Full Node Binaries
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -15,7 +15,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 <Tabs
   defaultValue="mainnet"
   values={[
-    { label: 'Matic-Mainnet', value: 'mainnet', },
+    { label: 'Polygon-Mainnet', value: 'mainnet', },
     { label: 'Mumbai-Testnet', value: 'mumbai', },
   ]
 }>
@@ -43,8 +43,9 @@ sudo apt-get install build-essential
 ### **Install GO**
 
 ```bash
-curl https://gist.githubusercontent.com/ssandeep/a6c7197811c83c71e5fead841bab396c/raw/e38212982ab8cdfc11776fa1a3aaf92b69e1cb15/go-install.sh
-bash install_go.sh
+wget https://gist.githubusercontent.com/ssandeep/a6c7197811c83c71e5fead841bab396c/raw/e38212982ab8cdfc11776fa1a3aaf92b69e1cb15/go-install.sh
+bash go-install.sh
+sudo ln -nfs ~/.go/bin/go /usr/bin/go
 ```
 
 > Note: Go version 1.15+ is recommended
@@ -94,9 +95,11 @@ git clone https://github.com/maticnetwork/bor
 cd bor
 
 # Checkout to a proper version
-# For eg: git checkout v0.2.6
+# For eg: git checkout v0.2.7
 git checkout <TAG OR BRANCH>
 make bor-all
+sudo ln -nfs ~/bor/build/bin/bor /usr/bin/bor
+sudo ln -nfs ~/bor/build/bin/bootnode /usr/bin/bootnode
 ```
 
 That will install the `bor` binary and `bootnode` binary:
@@ -123,6 +126,8 @@ Available networks: `mainnet-v1` and `testnet-v4`
 Node types: `sentry` and `validator` 
 
 ```bash
+cd ~/
+mkdir -p node
 cp -rf launch/<network-name>/sentry/<node-type>/* ~/node
 
 # To setup sentry node for mumbai (testnet-v4) testnet
@@ -154,6 +159,13 @@ cd ~/node
 wget https://raw.githubusercontent.com/maticnetwork/launch/master/<network-name>/service.sh
 # To setup sentry node for mumbai (testnet-v4) testnet
 # wget https://raw.githubusercontent.com/maticnetwork/launch/master/testnet-v4/service.sh
+```
+
+Generate the metadata file
+```bash
+sudo mkdir -p /etc/matic
+sudo chmod -R 777 /etc/matic/
+touch /etc/matic/metadata
 ```
 
 Generate services files and copy them into system directory
@@ -239,7 +251,7 @@ You can use VPN to restrict access for 22 port as per your requirement and secur
 
 <TabItem value="mainnet">
 
-# Matic Full Node Setup Using Binaries
+# Polygon Full Node Setup Using Binaries
 
 ## Pre-requisites
 
@@ -270,8 +282,9 @@ sudo apt-get install build-essential
 ***This is required for both your Sentry and Validator node***
 
 ```bash
-curl https://gist.githubusercontent.com/ssandeep/a6c7197811c83c71e5fead841bab396c/raw/e38212982ab8cdfc11776fa1a3aaf92b69e1cb15/go-install.sh
-bash install_go.sh
+wget https://gist.githubusercontent.com/ssandeep/a6c7197811c83c71e5fead841bab396c/raw/e38212982ab8cdfc11776fa1a3aaf92b69e1cb15/go-install.sh
+bash go-install.sh
+sudo ln -nfs ~/.go/bin/go /usr/bin/go
 ```
 
 > Note: Go version 1.15+ is recommended
@@ -313,9 +326,11 @@ git clone https://github.com/maticnetwork/bor
 cd bor
 
 # Checkout to a proper version
-# For eg: git checkout v0.2.6
+# For eg: git checkout v0.2.7
 git checkout <TAG OR BRANCH>
 make bor-all
+sudo ln -nfs ~/bor/build/bin/bor /usr/bin/bor
+sudo ln -nfs ~/bor/build/bin/bootnode /usr/bin/bootnode
 ```
 
 That will install the `bor` binary and `bootnode` binary:
@@ -342,9 +357,11 @@ Available networks: `mainnet-v1`
 Node types: `sentry` and `validator` 
 
 ```bash
+cd ~/
+mkdir -p node
 cp -rf launch/<network-name>/sentry/<node-type>/* ~/node
 
-# To setup sentry node for matic mainnet
+# To setup sentry node for Polygon mainnet
 # cp -rf launch/mainnet-v1/sentry/sentry/* ~/node
 ```
 
@@ -377,6 +394,8 @@ wget https://raw.githubusercontent.com/maticnetwork/launch/master/<network-name>
 
 Generate the metadata file
 ```bash
+sudo mkdir -p /etc/matic
+sudo chmod -R 777 /etc/matic/
 touch /etc/matic/metadata
 ```
 

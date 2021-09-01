@@ -47,7 +47,7 @@ module.exports = {
         "develop/network-details/mapped-tokens",
         "develop/network-details/gas-token",
         "develop/network-details/genesis-contracts",
-        "develop/network-details/full-node-deployment",
+        "integrate/full-node-deployment",
       ],
     },
     {
@@ -70,6 +70,7 @@ module.exports = {
         //   href: "https://status.matic.today/#/checkpoints",
         // },
         "develop/tools/matic-gas-station",
+        
       ],
     },
     {
@@ -175,6 +176,11 @@ module.exports = {
             "develop/ethereum-matic/plasma/mapping-assets",
           ],
         },
+        {
+          type: "category",
+          label:"Tools",
+          items: ["develop/ethereum-matic/tools/widget"],
+        },
         "develop/ethereum-matic/submit-mapping-request",
         "develop/ethereum-matic/mintable-assets",
       ],
@@ -202,6 +208,7 @@ module.exports = {
       label: "Oracles",
       items: [
         "develop/oracles/getting-started",
+        "develop/oracles/optimisticoracle",
         "develop/oracles/chainlink",
         "develop/oracles/razor",
         "develop/oracles/bandchain",
@@ -221,18 +228,7 @@ module.exports = {
         },
       ],
     },
-    {
-      type: "category",
-      label: "Realtime Updates",
-      items: [
-        "develop/dagger-webhooks",
-        {
-          type: "category",
-          label: "Zapier - Multiple Apps",
-          items: ["develop/zapier/getting-started"],
-        },
-      ],
-    },
+    
 
     {
       type: "category",
@@ -530,13 +526,13 @@ module.exports = {
     },
   ],
   faq: [
-    "faq/faq",
+    "faq/technical-faqs",
     // "faq/delegator-faq",
     "faq/commit-chain-multisigs",
     "faq/staking-faq",
-    "faq/staking-tutorials",
+    // "faq/staking-tutorials",
     "faq/wallet-bridge-faq",
-    "faq/technical-faqs",
     "faq/consensys-framework",
+    "faq/widget-faq",
   ],
 };

@@ -2,7 +2,7 @@
 id: staking-faq
 title: Staking FAQ
 sidebar_label: Staking FAQ
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -14,6 +14,21 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 For Staking you would need to have funds on Ethereum Mainnet. Login to Metamask on the Ethereum network using the Staking Dashboard. https://wallet.matic.network/staking
 
+Please watch the video for a graphical illustration of how this works
+
+<video loop autoplay width="70%" height="70%" controls="true" >
+  <source type="video/mp4" src="/img/staking_faq/How to Stake.mov"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
+
+### I've staked. How do i stake more?
+
+Please watch the video for a graphical illustration of how this works
+
+<video loop autoplay width="70%" height="70%" controls="true" >
+  <source type="video/mp4" src="/img/staking_faq/Stakemore.mov"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
 
 ### I am unable to view the Staking tab. How do i access Staking?
 
@@ -31,7 +46,7 @@ It depends on your understanding and research on which validator you would want 
 
 ### What is the unbonding period? 
 
-The unbonding period on Matic is 80 checkpoints. This period applies to the originally delegated amount and re-delegated amounts. It does not apply to any rewards that were not re-delegated.
+The unbonding period on Polygon is 80 checkpoints. This period applies to the originally delegated amount and re-delegated amounts. It does not apply to any rewards that were not re-delegated.
 
 ### Where to Stake? 
 
@@ -40,6 +55,13 @@ You can visit the below link for Staking: https://wallet.matic.network/staking/v
 ### I want to Withdraw Rewards but I am unable to ?
 
 You would need to have a minimum of 2 Matic to withdraw rewards.
+
+### How to restake rewards?
+
+<video loop autoplay width="70%" height="70%" controls="true" >
+  <source type="video/mp4" src="/img/staking_faq/Restake Rewards.mov"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
 
 ### I want to Restake Rewards but I am unable to ?
 
@@ -53,8 +75,14 @@ You can claim your rewards by clicking on the “My Account”, all the delegato
 <img src={useBaseUrl("img/staking_faq/Withdraw Rewards SS1.png")} height="300px"/><br/>
 
 `Step 2` <br/>
-<img src={useBaseUrl("img/staking_faq/Withdraw Rewards SS2.png")} height="300px"/><br/>
+<img src={useBaseUrl("img/staking_faq/Withdraw Rewards SS2.png")} height="380px"/><br/>
 
+Please watch the video for a graphical illustration of how this works
+
+<video loop autoplay width="70%" height="70%" controls="true" >
+  <source type="video/mp4" src="/img/staking_faq/Withdraw Rewards.mov"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
 
 ### How to restake?
 
@@ -68,7 +96,7 @@ Clicking on Restake Reward will ask you for confirmation from your Metamask acco
 <img src={useBaseUrl("img/staking_faq/Restake SS1.png")} height="300px"/><br/>
 
 `Step 2` <br/>
-<img src={useBaseUrl("img/staking_faq/Restake SS2.png")} height="300px"/><br/>
+<img src={useBaseUrl("img/staking_faq/Restake SS2.png")} height="415px"/><br/>
 
 
 ### How to unbond?
@@ -81,8 +109,14 @@ Here you will see an Unbond button for each of the validators. Click on the Unbo
 <img src={useBaseUrl("img/staking_faq/Unbond SS1.png")} height="300px"/><br/>
 
 `Step 2` <br/>
-<img src={useBaseUrl("img/staking_faq/Unbond SS2.png")} height="300px"/><br/>
+<img src={useBaseUrl("img/staking_faq/Unbond SS2.png")} height="420px"/><br/>
 
+Please watch the video for a graphical illustration of how this works
+
+<video loop autoplay width="70%" height="70%" controls="true" >
+  <source type="video/mp4" src="/img/staking_faq/Unbond.mov"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
 
 ### How to claim stake?
 
@@ -92,7 +126,14 @@ Once the unbonding period is complete the Claim Stake button will be enabled and
 <img src={useBaseUrl("img/staking_faq/Claim Stake SS1.png")} height="300px"/><br/>
 
 `Step 2` <br/>
-<img src={useBaseUrl("img/staking_faq/Claim Stake SS2.png")} height="300px"/><br/>
+<img src={useBaseUrl("img/staking_faq/Claim Stake SS2.png")} height="360px"/><br/>
+
+Please watch the video for a graphical illustration of how this works
+
+<video loop autoplay width="70%" height="70%" controls="true" >
+  <source type="video/mp4" src="/img/staking_faq/Claim Stake.mov"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
 
 ### Are hardware wallets supported?
 
@@ -102,7 +143,7 @@ Yes, hardware wallets are supported. You can use the "Connect Hardware Wallet" o
 
 Staking through Binance is not yet supported. There will be an announcement if and when Binance starts supporting it.
 
-### Do I need to deposit Matic tokens to the Matic Mainnet network for staking?
+### Do I need to deposit Matic tokens to the Polygon Mainnet network for staking?
 
 No. All your funds need to be on the Main Ethereum Network.
 
@@ -114,7 +155,7 @@ Currently 20188 Matic tokens are distributed proportionately on each successful 
 
 (Note that there is a 10% proposer bonus that accrues to the validator who submits the checkpoint, but over time, the effect of the extra bonus is nullified over multiple checkpoints by different validators.)
 
-The checkpoint submission is done by one of the validators approximately every 34 minutes. This time is approximate and may vary based on validator consensus on the Matic Heimdall layer. This may also vary based on Ethereum Network. Higher congestion in the network may result in delayed checkpoints.
+The checkpoint submission is done by one of the validators approximately every 34 minutes. This time is approximate and may vary based on validator consensus on the Polygon Heimdall layer. This may also vary based on Ethereum Network. Higher congestion in the network may result in delayed checkpoints.
 
 You can track checkpoints on the staking contract here: https://etherscan.io/address/0x86e4dc95c7fbdbf52e33d563bbdb00823894c287
 
@@ -141,4 +182,4 @@ Check for the following:
 
 ### I have unbonded, how long will it take to Unbond
 
-The unbonding period is currently set to 80 checkpoints. This is approximately 9-10 days. Every checkpoint takes approximately 3 hours. However, some checkpoints could be delayed due to congestion on Ethereum.
+The unbonding period is currently set to 80 checkpoints. This is approximately ~3-4 days. Every checkpoint takes approximately 3 hours. However, some checkpoints could be delayed due to congestion on Ethereum.

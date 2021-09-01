@@ -1,7 +1,7 @@
 ---
 id: stake-on-matic
-title: How to Stake and Become a Validator on Matic
-description: Build your next blockchain app on Matic.
+title: How to Stake and Become a Validator on Polygon
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -10,7 +10,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 
-This is a step-by-step guide to help you become a validator on Matic's incentivised testnet program. The following list of commands will help you setup your heimdall and bor nodes for staking and performing validator duties.
+This is a step-by-step guide to help you become a validator on Polygon's incentivised testnet program. The following list of commands will help you setup your heimdall and bor nodes for staking and performing validator duties.
 
 
 ## Pre-requisites:
@@ -48,9 +48,9 @@ The following output should appear:
     "priv_key": "0x********************************************************"
 }
 ```
-Now that you have done a basic health check and generated the keystore and private key for Bor and Heimdall respectively, you can now proceed to staking your tokens on Matic and become a validator.
+Now that you have done a basic health check and generated the keystore and private key for Bor and Heimdall respectively, you can now proceed to staking your tokens on Polygon and become a validator.
 
-## Stake on Matic
+## Stake on Polygon
 
 You can stake on Matic using the Validator Dashboard
 
