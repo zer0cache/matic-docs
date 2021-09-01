@@ -1,8 +1,8 @@
 ---
 id: validator-guide-binaries
-title: Matic Mainnet Node - Sentry & Validator
+title: Polygon Mainnet Node - Sentry & Validator
 sidebar_label: Node Setup Binaries
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -135,7 +135,7 @@ mkdir -p node
 cp -rf launch/<network-name>/sentry/<node-type> ~/node
 cp launch/<network-name>/service.sh ~/node
 
-# To setup sentry node for matic mainnet
+# To setup sentry node for Polygon mainnet
 # cp -rf launch/mainnet-v1/sentry/sentry ~/node
 # cp launch/mainnet-v1/service.sh ~/node
 ```
@@ -148,7 +148,7 @@ mkdir -p node
 cp -rf launch/<network-name>/sentry/<node-type> ~/node
 cp launch/<network-name>/service.sh ~/node
 
-# To setup sentry node for matic mainnet
+# To setup sentry node for Polygon mainnet
 # cp -rf launch/mainnet-v1/sentry/validator ~/node
 # cp launch/mainnet-v1/service.sh ~/node
 ```
@@ -425,7 +425,7 @@ You can check Bor logs here:
 
 - Bor - `journalctl -u bor.service -f`
 
-Now, you have successfully setup your Sentry and Validator Node. Now all that you have to do is Stake by using the Matic Staking UI.
+Now, you have successfully setup your Sentry and Validator Node. Now all that you have to do is Stake by using the Polygon Staking UI.
 
 You can follow this step-by-step guide to understand how you can stake on Matic: [https://www.notion.so/maticnetwork/Staking-on-Matic-Mainnet-5ad50f58fad348fc89c6dcf3a729f260](https://www.notion.so/maticnetwork/Staking-on-Matic-Mainnet-5ad50f58fad348fc89c6dcf3a729f260)
 

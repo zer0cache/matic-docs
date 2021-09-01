@@ -1,33 +1,33 @@
 ---
 id: getting-started
-title: Application development on Matic
+title: Application development on Polygon
 sidebar_label: Getting Started
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
-Welcome to the most exciting and innovative platform to build your blockchain application on **Matic Blockchain**. Blockchain technology is poised to revolutionise the way the digital world handles data and does business. Be a part of this revolution and get a head start with decentralised application development on Matic.
+Welcome to the most exciting and innovative platform to build your blockchain application on **Polygon Blockchain**. Blockchain technology is poised to revolutionise the way the digital world handles data and does business. Be a part of this revolution and get a head start with decentralised application development on Polygon.
 
-This page will act as your guide into the **Matic Ecosystem**. You'll find links to some useful resources and websites to get you up and started with building on Matic in particular and Blockchain in general. Feel free to reach out to us on Telegram/Discord. 
+This page will act as your guide into the **Polygon Ecosystem**. You'll find links to some useful resources and websites to get you up and started with building on Polygon in particular and Blockchain in general. Feel free to reach out to us on Telegram/Discord. 
 
 ## **Developer Quick Start**
 
-If you're an Ethereum Developer, you're already a Matic developer. 
-All the tools you're familiar with are supported on Matic out of the box: Truffle, Remix, Web3js. 
-Switch over to Matic's RPC and get started!
+If you're an Ethereum Developer, you're already a Polygon developer. 
+All the tools you're familiar with are supported on Polygon out of the box: Truffle, Remix, Web3js. 
+Switch over to Polygon's RPC and get started!
 
-Matic's Test Network which is called **Mumbai** connects with **Ethereum's Goërli Testnet.** 
+Polygon's Test Network which is called **Mumbai** connects with **Ethereum's Goërli Testnet.** 
 All the network related details can be found in [network docs](/docs/develop/network-details/network) 
 
 - Setup [Metamask Wallet](/docs/develop/metamask/hello) or [Arkane Wallet](/docs/develop/wallets/arkane/intro)
-- Deploy your Contracts on Matic Network
+- Deploy your Contracts on Polygon 
     - [Using Remix](/docs/develop/remix)
     - [Using Truffle](/docs/develop/truffle)
     - [Using Hardhat](/docs/develop/hardhat)
-- Connecting to Matic [with RPC](https://docs.matic.network/docs/develop/metamask/testnet) by adding Matic network on Metamask or directly via [Arkane](/docs/develop/wallets/arkane/network).
+- Connecting to Polygon [with RPC](https://docs.matic.network/docs/develop/metamask/testnet) by adding Polygon on Metamask or directly via [Arkane](/docs/develop/wallets/arkane/network).
 
   Note that same RPC can be used with web3js.
 
@@ -39,7 +39,7 @@ All the network related details can be found in [network docs](/docs/develop/net
     // Sign up for a free dedicated RPC URL at https://rpc.maticvigil.com/ or other hosted node providers.
     const web3 = new Web3('https://rpc-mumbai.matic.today')
 
-    // web3 object is now connected with Matic's node
+    // web3 object is now connected with Polygon's node
         ```
 
 ---
@@ -48,17 +48,17 @@ All the network related details can be found in [network docs](/docs/develop/net
 
 - **Migrating from Ethereum chain (or any EVM based chain for that matter)**
 
-    Deploy all your smart contracts directly on Matic chain. You don't have to worry about the underlying architecture, as long as it is EVM compatible!
+    Deploy all your smart contracts directly on Polygon chain. You don't have to worry about the underlying architecture, as long as it is EVM compatible!
 
-    [Deploying your dApp on Matic](https://docs.matic.network/docs/integrate/quickstart)
+    [Deploying your dApp on Polygon](https://docs.matic.network/docs/integrate/quickstart)
 
-- **Using Matic as a faster transactions layer**
+- **Using Polygon as a faster transactions layer**
 
-    Using Matic as a transactions layer in your DApp deployed on Mainnet, you can get started with getting your tokens mapped by us.
+    Using Polygon as a transactions layer in your DApp deployed on Mainnet, you can get started with getting your tokens mapped by us.
 
-    Getting your tokens mapped on Matic: 👋🏼 Ping us on [http://bit.ly/matic-technical-group](http://bit.ly/matic-technical-group)
+    Getting your tokens mapped on Polygon: 👋🏼 Ping us on [http://bit.ly/matic-technical-group](http://bit.ly/matic-technical-group)
 
-### **🌱 Building a new dApp on Matic?**
+### **🌱 Building a new dApp on Polygon?**
 
 **🏗️ Start building!**
 
@@ -70,7 +70,7 @@ All the network related details can be found in [network docs](/docs/develop/net
 **😎 Advanced**
 
 - [Sidechains and Plasma](https://docs.matic.network/docs/home/blockchain-basics/sidechain)
-- [Matic's architecture and Security](https://docs.matic.network/docs/home/architecture/security-models)
+- [Polygon's architecture and Security](https://docs.matic.network/docs/home/architecture/security-models)
 - [When to use Plasma](https://docs.matic.network/docs/home/architecture/security-models)
 - [Moving assets from Mainchain to Matic chain: the Plasma way](https://docs.matic.network/docs/develop/maticjs/getting-started)
 - [Swapping Plasma Assets](https://docs.matic.network/docs/develop/advanced/swap-assets)
@@ -136,7 +136,7 @@ Hackathons take place at blockchain conferences and meetups all over the world. 
 <div style={{textAlign: 'center', paddingTop: '15px', paddingBottom: '15px'}}>
   <button className="btn btn-primary btn-md">
     <a href="https://discord.gg/yCj3gc" target="_blank" style={{color: 'inherit'}}>
-      Matic Hackathons Discord Channel
+      Polygon's Hackathons Discord Channel
     </a>
   </button>
 </div>

@@ -2,7 +2,7 @@
 id: consensys-framework
 title: Consensys Scaling Framework
 sidebar_label: Consensys Scaling Framework
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic

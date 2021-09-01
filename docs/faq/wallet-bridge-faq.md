@@ -1,7 +1,7 @@
 ---
 id: wallet-bridge-faq
 title: Wallet and Bridge FAQ 
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -29,13 +29,13 @@ Plasma comes with a additional security where your funds are locked in a challen
 
 MATIC tokens
 
-## How do I deposit to Matic Wallet and also withdraw?
+## How do I deposit to Polygon Wallet and also withdraw?
 
 These blogs and videos are a perfect guide to start with depositing and withdrawing: [https://docs.matic.network/docs/develop/wallets/matic-web-wallet/web-wallet-v2-guide/#depositing-funds-from-ethereum-to-matic](https://docs.matic.network/docs/develop/wallets/matic-web-wallet/web-wallet-v2-guide/#depositing-funds-from-ethereum-to-matic)[https://www.youtube.com/playlist?list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9](https://www.youtube.com/playlist?list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9)
 
 ## How to switch to Polygon mainnet in Metamask?
 
-Assuming that you have already added the network and custom RPC for Matic mainnet in your Metamask wallet here is how you can switch:
+Assuming that you have already added the network and custom RPC for Polygon mainnet in your Metamask wallet here is how you can switch:
 
 1. Open your Metamask wallet and click on the network dropdown to expand as shown in figure:
 
@@ -63,7 +63,7 @@ Open Metamask and scroll down to click on add tokens.
 
 Then, select Custom Token to add the relevant contract address, symbol and the decimal precision. Contract addresses (PoS-WETH in this case) can be found on this link: [https://docs.matic.network/docs/develop/network-details/mapped-tokens/](https://docs.matic.network/docs/develop/network-details/mapped-tokens/)
 
-You will need to add the child token address to view balances on Matic mainnet.
+You will need to add the child token address to view balances on Polygon mainnet.
 
 Decimal of precision is 18 for WETH (generally, for most tokens decimal of precision is 18).
 
@@ -71,13 +71,13 @@ Once you fill in all the fields, you can click on next and your token will be ad
 
 [https://lh3.googleusercontent.com/xlHZO9N35Y7qRHVHoYdoXLHrGpDRCkd6ZM7bBD3mwi24lbwjJBW3AVWCRYMTRKem-vsj-3h0C1Hs1HpWHWlcAfGlpjZCXoEWYETYT3MXGCukqGhmDc2uOtr3LlOoPSJFJt_RfQ__](https://lh3.googleusercontent.com/xlHZO9N35Y7qRHVHoYdoXLHrGpDRCkd6ZM7bBD3mwi24lbwjJBW3AVWCRYMTRKem-vsj-3h0C1Hs1HpWHWlcAfGlpjZCXoEWYETYT3MXGCukqGhmDc2uOtr3LlOoPSJFJt_RfQ__)
 
-## Can I send my tokens from Matic to any other wallet/exchange ?
+## Can I send my tokens from Polygon to any other wallet/exchange ?
 
-You cannot directly send tokens from Matic UI to Exchange/wallets. You have to first withdraw from Matic to Ethereum and then send it to your exchange address (unless your exchange/wallet explicitly supports the network).
+You cannot directly send tokens from Polygon UI to Exchange/wallets. You have to first withdraw from Polygon to Ethereum and then send it to your exchange address (unless your exchange/wallet explicitly supports the network).
 
 ## I made a mistake of sending funds to an exchange/wallet directly. Can you help?
 
-Unfortunately, we can not assist in such cases. Please don't send funds directly to exchanges that support only Ethereum, you have to first withdraw from Matic to Ethereum and then send it to your exchange address.
+Unfortunately, we can not assist in such cases. Please don't send funds directly to exchanges that support only Ethereum, you have to first withdraw from Polygon to Ethereum and then send it to your exchange address.
 
 ## My transaction is pending for too long, what can I do?
 
@@ -105,7 +105,7 @@ Okex - BAL, BAT, CEL, COMP, CRV, DAI, ETH, GHST, GUSD, LINK, MKR, PAX, SNX, SUSH
 
 Bitforex - MATIC
 
-Sending Tokens to any other exchange that is not mentioned explicitly in the above list can lead to a loss of funds. If you want to withdraw funds to any exchange that does not support Polygon, you will have to first withdraw the token to Ethereum and then send it to the exchange using your Ethereum wallet. This video demonstrates how to withdraw funds from Matic to Ethereum - [https://www.youtube.com/watch?v=DgpHY95qrbQ&list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9&index=5](https://www.youtube.com/watch?v=DgpHY95qrbQ&list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9&index=5)
+Sending Tokens to any other exchange that is not mentioned explicitly in the above list can lead to a loss of funds. If you want to withdraw funds to any exchange that does not support Polygon, you will have to first withdraw the token to Ethereum and then send it to the exchange using your Ethereum wallet. This video demonstrates how to withdraw funds from Polygon to Ethereum - [https://www.youtube.com/watch?v=DgpHY95qrbQ&list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9&index=5](https://www.youtube.com/watch?v=DgpHY95qrbQ&list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9&index=5)
 
 Alternatively, you can follow this guide [here](https://docs.matic.today/docs/develop/wallets/matic-web-wallet/web-wallet-v2-guide/).
 
@@ -113,14 +113,14 @@ Alternatively, you can follow this guide [here](https://docs.matic.today/docs/d
 
 [https://docs.matic.network/docs/validate/delegator-faq/#my-metamask-is-stuck-at-confirming-after-login-what-do-i-do-or-nothing-happens-when-i-try-to-login](https://docs.matic.network/docs/validate/delegator-faq/#my-metamask-is-stuck-at-confirming-after-login-what-do-i-do-or-nothing-happens-when-i-try-to-login)
 
-## Does Matic support hardware wallets?
+## Does Polygon support hardware wallets?
 Yes, hardware wallets are supported.
 
-## What can I do with my Matic wallet?
+## What can I do with my Polygon wallet?
 
-- Send funds to any account on Matic.
-- Deposit funds from Ethereum to Matic (using the bridge).
-- Withdraw funds back to Ethereum from Matic (also using the bridge).
+- Send funds to any account on Polygon.
+- Deposit funds from Ethereum to Polygon (using the bridge).
+- Withdraw funds back to Ethereum from Polygon (also using the bridge).
 
 ## My token is not visible in the list. Who should I contact?
 
@@ -128,8 +128,8 @@ Reach out to the Polygon team on Discord or Telegram and get your token listed. 
 
 ## What are some best practices to follow?
 
-- When you want to send funds from Matic to Ethereum, use the withdraw functionality. Do not use the send functionality. This will lead to loss of funds.
-- Do not deposit to the Matic mainnet if you wish to participate in staking only.
+- When you want to send funds from Polygon to Ethereum, use the withdraw functionality. Do not use the send functionality. This will lead to loss of funds.
+- Do not deposit to the Polygon mainnet if you wish to participate in staking only.
 - Do not change the gas limit from Metamask.
 
 ## What do I do if the deposit is confirmed but the balance is not getting updated?
@@ -150,11 +150,11 @@ No, you have to complete the next steps. If the current gas price is too high, t
 
 ## Why is there a 7 day challenge period?
 
-Plasma bridge comes with a plasma security challenge period of 7 days in which anyone can challenge the transaction that has happened on Matic.
+Plasma bridge comes with a plasma security challenge period of 7 days in which anyone can challenge the transaction that has happened on Polygon.
 
 ## Why is the MATIC token is not supported on PoS?
 
-MATIC is the native token of Matic network and it has a contract address - 0x0000000000000000000000000000000000001010 on the Matic chain. It is also used to pay gas. Mapping the MATIC token on the PoS bridge will lead to MATIC having an additional contract address on the MATIC chain. This will collide with the existing contract address as this new token address can not be used to pay for gas and will have to remain as a normal ERC20 token on the matic chain. Hence, to avoid this confusion, it was decided to retain MATIC only on Plasma.
+MATIC is the native token of Polygon and it has a contract address - 0x0000000000000000000000000000000000001010 on the Polygon chain. It is also used to pay gas. Mapping the MATIC token on the PoS bridge will lead to MATIC having an additional contract address on the Polygon chain. This will collide with the existing contract address as this new token address can not be used to pay for gas and will have to remain as a normal ERC20 token on the Polygon chain. Hence, to avoid this confusion, it was decided to retain MATIC only on Plasma.
 
 ## How do I map tokens?
 
@@ -219,7 +219,7 @@ Sadly, we regret to inform you that we may not be able to assist if you have sen
 
 Here is what an exchange needs to do in this case (although not sure how much flexibility the support executives have to execute this). Assuming the exchange support executive has access to the account's private keys, they can transfer the funds from their account on Polygon to your (the user's) address on Polygon.
 
-It's important to note that you shouldn't send funds directly to exchanges that support only Ethereum. The correct procedure is you have to first withdraw from Matic to Ethereum and then send it to your exchange address.
+It's important to note that you shouldn't send funds directly to exchanges that support only Ethereum. The correct procedure is you have to first withdraw from Polygon to Ethereum and then send it to your exchange address.
 
 ## I'm shown an insufficient balance error.
 

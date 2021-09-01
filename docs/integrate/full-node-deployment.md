@@ -1,7 +1,7 @@
 ---
 id: full-node-deployment
 title: Full Node Deployment
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -14,7 +14,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 <Tabs
   defaultValue="mainnet"
   values={[
-    { label: 'Matic-Mainnet', value: 'mainnet', },
+    { label: 'Polygon-Mainnet', value: 'mainnet', },
     { label: 'Mumbai-Testnet', value: 'mumbai', },
   ]
 }>
@@ -174,7 +174,7 @@ In case your Bor node has stopped syncing, you can add additional bootnodes to y
 
     Minimum 650GB SSD (make sure it is extendable)
 
-# Full Node Deployment (Matic mainnet)
+# Full Node Deployment (Polygon mainnet)
 We have created simple Ansible playbooks to setup a full node.
 
 Pre-requisite:
@@ -186,7 +186,7 @@ Pre-requisite:
 - You will also need to make sure that **Go is not installed on your VM / Machine**. Setting up your full node through ansible will run into issues if you have Go already installed, as ansible requires specific packages of Go to be installed.
 - You will also need to make sure that your VM / Machine does not have any **previous setups for Matic Validator or Heimdall or Bor**. You will need to delete them as your setup will run into issues.
 
-## Setup full node for Matic mainnet
+## Setup full node for Polygon mainnet
 
 - Ensure you have access to the remote machine or VM that the full node is being setup on. Refer [https://github.com/maticnetwork/node-ansible#setup](https://github.com/maticnetwork/node-ansible#setup) for more details.
 - Clone the [`https://github.com/maticnetwork/node-ansible`](https://github.com/maticnetwork/node-ansible) repo

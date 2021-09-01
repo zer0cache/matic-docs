@@ -10,21 +10,21 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-We have revamped the Matic Web wallet interface, which has some great UX fixes, a streamlined deposit and withdrawal process, a superior deposit and withdraw tracking module, and notifications on the application to see the status properly.
+We have revamped the Polygon Web wallet interface, which has some great UX fixes, a streamlined deposit and withdrawal process, a superior deposit and withdraw tracking module, and notifications on the application to see the status properly.
 
-## Logging into the Matic Web Wallet
+## Logging into the Polygon Web Wallet
 
-To login to the Matic Web Wallet you need to access the following URL: https://wallet.matic.network/
-How to connect to Matic to Metamask, please refer this [guide](https://docs.matic.network/docs/develop/metamask/config-matic)
+To login to the Polygon Web Wallet you need to access the following URL: https://wallet.matic.network/
+How to connect to Polygon to Metamask, please refer this [guide](https://docs.matic.network/docs/develop/metamask/config-matic)
 
-Once you access this page, you will be requested to connect to your MetaMask account. Note that currently the Matic Web Wallet supports MetaMask, WalletConnect and Wallet Link. We will gradually add support for more wallets.
-Once you connect your account with the Web Wallet you will be navigated to the landing page and you can see all your token balances on the Matic Wallet across the bridges(PoS and Plasma).You don’t need to toggle between bridges which was available in V1.
+Once you access this page, you will be requested to connect to your MetaMask account. Note that currently the Polygon Web Wallet supports MetaMask, WalletConnect and Wallet Link. We will gradually add support for more wallets.
+Once you connect your account with the Web Wallet you will be navigated to the landing page and you can see all your token balances on the Polygon Wallet across the bridges(PoS and Plasma).You don’t need to toggle between bridges which was available in V1.
 
 <img src={useBaseUrl("img/wallet/Wallet-1.png")} width="100%" height="100%"/>
 
-## Depositing Funds from Ethereum to Matic
+## Depositing Funds from Ethereum to Polygon
 
-Click on the ‘Move Funds to Matic Mainnet’ button or you can click on the ‘Deposit’ link from any of the token types on ‘Your tokens on Matic Mainnet’ section.
+Click on the ‘Move Funds to Polygon Mainnet’ button or you can click on the ‘Deposit’ link from any of the token types on ‘Your tokens on Polygon Mainnet’ section.
 <img src={useBaseUrl("img/wallet/Wallet-2.png")} width="100%" height="100%" /> 
 
 You will be redirected to the bridge page where you need to enter the deposit amount.
@@ -57,7 +57,7 @@ Click on the “Continue” button from “Confirm Transfer” popup.
 After you click on the “Continue” button, you need to confirm all your transactions in your MetaMask to make the transaction successful
 
 Once you confirm the transaction, you will see a “Transfer in Progress” popup which will show you the Deposit status. 
-It will take ~7-8 minutes for the tokens to show up on Matic.
+It will take ~7-8 minutes for the tokens to show up on Polygon.
 
 <img src={useBaseUrl("img/wallet/Wallet-8.png")} width="50%" height="50%"/> 
 
@@ -77,13 +77,13 @@ Click on the Deposit success transaction to see the “Transfer Completed” pop
 
 <img src={useBaseUrl("img/wallet/Wallet-11.png")} width="50%" height="50%" /> 
 
-##  Withdrawing Funds from Matic Back to Ethereum on PoS Bridge
+##  Withdrawing Funds from Polygon Back to Ethereum on PoS Bridge
 
-Withdrawing funds from Matic back to the Ethereum mainnet via,
+Withdrawing funds from Polygon back to the Ethereum mainnet via,
 
 PoS Bridge is a simple 2-step process.For the funds to be available back on Ethereum it will take ~3 hours.
  
-To withdraw funds, click on the ‘Withdraw’ link from any of the PoS token on ‘Your tokens on Matic Mainnet’ section.
+To withdraw funds, click on the ‘Withdraw’ link from any of the PoS token on ‘Your tokens on Polygon Mainnet’ section.
 
 <img src={useBaseUrl("img/wallet/Wallet-12.png")} width="100%" height="100%"/> 
 
@@ -134,9 +134,9 @@ Once you have confirmed the second transaction, you will receive your funds back
 
 <img src={useBaseUrl("img/wallet/Wallet-21.png")} width="50%" height="50%"/> 
 
-## Withdrawing Funds from Matic Back to Ethereum on Plasma Bridge
+## Withdrawing Funds from Polygon Back to Ethereum on Plasma Bridge
 
-Withdrawing funds from Matic back to the Ethereum mainnet via, Plasma Bridge is a 3-step process but with a caveat.  For the funds to be available back on Ethereum it will take 7 days.
+Withdrawing funds from Polygon back to the Ethereum mainnet via, Plasma Bridge is a 3-step process but with a caveat.  For the funds to be available back on Ethereum it will take 7 days.
 
 To withdraw funds, click on the ‘Withdraw’ link from any of the Plasma token type on ‘Your tokens on Matic Mainnet’ section.
 

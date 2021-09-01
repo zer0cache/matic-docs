@@ -2,7 +2,7 @@
 id: erc20
 title: ERC20 Deposit and Withdraw Guide
 sidebar_label: ERC20
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -13,16 +13,16 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 #### **Deposit ERC20 (2 step process)**
 
-1. The tokens need to be first approved to the Matic rootchain contract on Parent Chain (Ethereum/Goerli).
-2. Once approved, the **deposit** function is to be invoked where the tokens get deposited to the Matic contract, and are available for use in the Matic network.
+1. The tokens need to be first approved to the Polygon rootchain contract on Parent Chain (Ethereum/Goerli).
+2. Once approved, the **deposit** function is to be invoked where the tokens get deposited to the Polygon contract, and are available for use in Polygon.
 
 #### **Transfer ERC20**
 
-Once you have funds on Matic, you can use those funds to send to others instantly.
+Once you have funds on Polygon, you can use those funds to send to others instantly.
 
 #### **Withdraw ERC20 (3 step process)**
 
-1. Withdrawal of funds is initiated from Matic Network. A checkpoint interval of 30 mins(For testnets wait for ~10 minutes) is set, where all the blocks on the Matic block layer are validated since the last checkpoint.
+1. Withdrawal of funds is initiated from Polygon. A checkpoint interval of 30 mins(For testnets wait for ~10 minutes) is set, where all the blocks on the Polygon block layer are validated since the last checkpoint.
 2. Once the checkpoint is submitted to the mainchain ERC20 contract, an NFT Exit (ERC721) token is created of equivalent value. Users need to wait for a 7 day challenge period (For testnets wait for ~5 minutes for)
 3. Once the challenge period is complete, the withdrawn funds can be claimed back to your ERC20 acccount from the mainchain contract using a process-exit procedure.
 
@@ -32,7 +32,7 @@ Once you have funds on Matic, you can use those funds to send to others instantl
 
 ---
 
-### Configuring Matic SDK
+### Configuring Polygon SDK
 
 Install Matic SDK (**_2.0.2)_**
 
@@ -101,7 +101,7 @@ FROM = ""
 
 ## deposit.js
 
-**Approve**: This is a normal ERC20 approval so that **_depositManagerContract_** can call **_transferFrom_** function. Matic Plasma client exposes **_approveERC20TokensForDeposit_** method to make this call.
+**Approve**: This is a normal ERC20 approval so that **_depositManagerContract_** can call **_transferFrom_** function. Polygon Plasma client exposes **_approveERC20TokensForDeposit_** method to make this call.
 
 **deposit**: Deposit can be done by calling **_depositERC20ForUser_** on depositManagerContract contract.
 
@@ -132,7 +132,7 @@ async function execute() {
 execute().then(_ => process.exit(0))
 ```
 
-> NOTE: Deposits from Ethereum to Matic happen using a state sync mechanism and takes about ~5-7 minutes. After waiting for this time interval, it is recommended to check the balance using web3.js/matic.js library or using Metamask. The explorer will show the balance only if at least one asset transfer has happened on the child chain. This [link](/docs/develop/ethereum-matic/plasma/deposit-withdraw-event-plasma) explains how to track the deposit events.
+> NOTE: Deposits from Ethereum to Polygon happen using a state sync mechanism and takes about ~5-7 minutes. After waiting for this time interval, it is recommended to check the balance using web3.js/matic.js library or using Metamask. The explorer will show the balance only if at least one asset transfer has happened on the child chain. This [link](/docs/develop/ethereum-matic/plasma/deposit-withdraw-event-plasma) explains how to track the deposit events.
 
 ## transfer.js
 
@@ -167,7 +167,7 @@ execute().then((_) => process.exit(0));
 
 ### 1. Burn
 
-User can call **_withdraw_** function of **_getERC20TokenContract_** child token contract. This function should burn the tokens. Matic Plasma client exposes **_startWithdraw_** method to make this call.
+User can call **_withdraw_** function of **_getERC20TokenContract_** child token contract. This function should burn the tokens. Polygon Plasma client exposes **_startWithdraw_** method to make this call.
 
 ```js
 const utils = require("./utils");
@@ -189,7 +189,7 @@ execute().then((_) => process.exit(0));
 
 ### 2. confirm-withdraw.js
 
-User can call **_startExitWithBurntTokens_** function of **_erc20Predicate_** contract. This function should burn the tokens. Matic Plasma client exposes **_withdraw_** method to make this call. This function can be called only after the checkpoint is included in the main chain. The checkpoint inclusion can be tracked by following this [guide](/docs/develop/ethereum-matic/plasma/deposit-withdraw-event-plasma#checkpoint-events).
+User can call **_startExitWithBurntTokens_** function of **_erc20Predicate_** contract. This function should burn the tokens. Polygon Plasma client exposes **_withdraw_** method to make this call. This function can be called only after the checkpoint is included in the main chain. The checkpoint inclusion can be tracked by following this [guide](/docs/develop/ethereum-matic/plasma/deposit-withdraw-event-plasma#checkpoint-events).
 
 ```js
 //Wait for ~10 mins for Mumbai testnet or ~30mins for Ethereum Mainnet till the checkpoint is submitted for burned transaction, then run the confirm withdraw
@@ -211,7 +211,7 @@ execute().then((_) => process.exit(0));
 
 ### 3. Process Exit
 
-Once the **_Challenge Period_** has been passed for the transaction present in checkpoint, user should call the **_processExits_** function of **_withdrawManager_** contract and submit the proof of burn. Upon submitting valid proof tokens are transferred to the user. Matic Plasma client exposes **_processExits_** method to make this call.
+Once the **_Challenge Period_** has been passed for the transaction present in checkpoint, user should call the **_processExits_** function of **_withdrawManager_** contract and submit the proof of burn. Upon submitting valid proof tokens are transferred to the user. Polygon Plasma client exposes **_processExits_** method to make this call.
 
 ```js
 const utils = require("./utils");
@@ -229,6 +229,6 @@ async function execute() {
 execute().then((_) => process.exit(0));
 ```
 
-_Note: A checkpoint, which is a representation of all transactions happening on the Matic Network to the ERC20 chain every ~30 minutes, is submitted to the mainchain ERC20 contract._
+_Note: A checkpoint, which is a representation of all transactions happening on the Polygon Network to the ERC20 chain every ~30 minutes, is submitted to the mainchain ERC20 contract._
 
 _Note: Once the checkpoint is submitted, user needs to wait for a challenge period of 7 days long._
