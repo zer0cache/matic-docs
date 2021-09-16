@@ -39,12 +39,12 @@ module.exports = {
         alt: "Polygon logo",
         src: "/img/polygon/primary-logo.svg",
         srcDark: "/img/polygon/monotone-white.png",
-        // href: 'https://docs.matic.network/', // default to siteConfig.baseUrl
+        // href: 'https://docs.polygon.technology/', // default to siteConfig.baseUrl
         target: "_self", // by default, this value is calculated based on the `href` attribute (the external link will open in a new tab, all others in the current one)
       },
       items: [
         {
-          to: "docs/home/new-to-matic",
+          to: "docs/home/new-to-polygon",
           label: "Basics",
           position: "left",
           activeBasePath: "docs/home",

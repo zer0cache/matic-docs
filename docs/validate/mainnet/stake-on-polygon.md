@@ -1,5 +1,5 @@
 ---
-id: stake-on-matic
+id: stake-on-polygon
 title: How to Stake and Become a Validator on Polygon
 description: Build your next blockchain app on Polygon.
 keywords:
@@ -16,7 +16,7 @@ This is a step-by-step guide to help you become a validator on Polygon's incenti
 ## Pre-requisites:
 
 
-You should have Heimdall and Bor setups up and running on your machine. If you haven't setup your node you should setup using the following instructions:  https://docs.matic.network/docs/validate/orientation
+You should have Heimdall and Bor setups up and running on your machine. If you haven't setup your node you should setup using the following instructions:  https://docs.polygon.technology/docs/validate/orientation
 
 
 ### Account information
@@ -56,7 +56,7 @@ You can stake on Matic using the Validator Dashboard
 
 ### Stake using validator dashboard 
 
-In order to stake using the Validator Dashboard, you can use the following link to access the dashboard: https://wallet.matic.network/staking/validators/new
+In order to stake using the Validator Dashboard, you can use the following link to access the dashboard: https://wallet.polygon.technology//staking/validators/new
 
 You will be able to login using Metamask or any WalletConnect enabled wallet. We recommend using Metamask.
 

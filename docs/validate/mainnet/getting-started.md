@@ -15,13 +15,13 @@ To participate and become a responsible validator by running a node on the the P
 
 Please ensure that you read the documentation carefully before starting the setup for the nodes.
 
-Node setup guide: https://docs.matic.network/docs/validate/mainnet/validator-guide
+Node setup guide: https://docs.polygon.technology/docs/validate/mainnet/validator-guide
 
 **Stake on Polygon**
 
 Before you initiate the staking process, ensure that your node's health check is complete. Please perform a health check by joining the Discord Server and contacting one of the admins (Delroy)
 
-Stake tokens to become a validator - [follow this guide](https://docs.matic.network/docs/validate/mainnet/stake-on-matic)
+Stake tokens to become a validator - [follow this guide](https://docs.polygon.technology/docs/validate/mainnet/stake-on-matic)
 
 
 **Queries, any?**

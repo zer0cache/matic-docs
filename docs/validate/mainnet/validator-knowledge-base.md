@@ -39,23 +39,23 @@ If none of this is the issue, then please contact the **Support Team** immediate
 
 You can follow the instructions from the below 2 links:
 
-**Ansible**: [https://docs.matic.network/docs/validate/mainnet/validator-guide/](https://docs.matic.network/docs/validate/mainnet/validator-guide/)
+**Ansible**: [https://docs.polygon.technology/docs/validate/mainnet/validator-guide/](https://docs.polygon.technology/docs/validate/mainnet/validator-guide/)
 
-**Binaries**: [https://docs.matic.network/docs/validate/mainnet/validator-guide-binaries](https://docs.matic.network/docs/validate/mainnet/validator-guide-binaries)
+**Binaries**: [https://docs.polygon.technology/docs/validate/mainnet/validator-guide-binaries](https://docs.polygon.technology/docs/validate/mainnet/validator-guide-binaries)
 
 **6. I want to setup a Full node (non-validator node) on Polygon. How do I do that?**
 
 You can follow the instructions from the below links:
 
-**Ansible**:  [https://docs.matic.network/docs/integrate/full-node-deployment](https://docs.matic.network/docs/integrate/full-node-deployment)
+**Ansible**:  [https://docs.polygon.technology/docs/integrate/full-node-deployment](https://docs.polygon.technology/docs/integrate/full-node-deployment)
 
-**Binaries**: [https://docs.matic.network/docs/integrate/full-node-binaries/](https://docs.matic.network/docs/integrate/full-node-binaries/)
+**Binaries**: [https://docs.polygon.technology/docs/integrate/full-node-binaries/](https://docs.polygon.technology/docs/integrate/full-node-binaries/)
 
 **7. Why do I have to keep ETH in my signer account?**
 
 ETH is required on your signer account because for submitting checkpoints to Ethereum, all transactions require ETH to be used as Gas. Hence ETH is required on your Signer Account.
 
-**8. I'm trying to setup my node using Ansbile and I'm getting a "Host not found" error**
+**8. I'm trying to setup my node using Ansible and I'm getting a "Host not found" error**
 
 This could be because your `inventory.yml` file may have some formatting issues. Correct them with proper indentation and then try again
 
@@ -123,7 +123,7 @@ No. You cannot. Polygon's architecture currently does not allow Validators runni
 
 **23. Is there a way to run a light node with bor? or only full node is available?**
 
-There is no light node option as of now. If you want you can run a full node from here: [https://docs.matic.network/docs/integrate/full-node-deployment/](https://docs.matic.network/docs/integrate/full-node-deployment/)
+There is no light node option as of now. If you want you can run a full node from here: [https://docs.polygon.technology/docs/integrate/full-node-deployment/](https://docs.polygon.technology/docs/integrate/full-node-deployment/)
 
 **24. What is the uptime percentage calculation on the Staking UI**
 

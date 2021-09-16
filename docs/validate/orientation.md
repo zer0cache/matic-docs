@@ -47,12 +47,12 @@ Once you have familiarised with the Architecture and Specs and Codebase, you can
 
 **Setup your Full Node**
 
-> * **Option 1:** [Linux Package Installation](https://docs.matic.network/docs/validate/counter-stake-stage-2/linux-package-installation) (Recommended; lightweight, native)
-> * **Option 2:** [Running with Binaries](https://docs.matic.network/docs/validate/counter-stake-stage-2/running-with-binaries) (Relatively complex to setup, but offers advanced 
+> * **Option 1:** [Linux Package Installation](https://docs.polygon.technology/docs/validate/counter-stake-stage-2/linux-package-installation) (Recommended; lightweight, native)
+> * **Option 2:** [Running with Binaries](https://docs.polygon.technology/docs/validate/counter-stake-stage-2/running-with-binaries) (Relatively complex to setup, but offers advanced 
 
 **Stake on Polygon**
 
-Stake tokens to become a validator - [follow this guide](https://docs.matic.network/docs/validate/counter-stake-stage-2/stake-on-matic)
+Stake tokens to become a validator - [follow this guide](https://docs.polygon.technology/docs/validate/counter-stake-stage-2/stake-on-matic)
 
 ## To become a Delegator
 
@@ -60,4 +60,4 @@ Delegators are token holders who cannot, or do not want to run a validator thems
 
 Here is a Step-By-Step guide to help you become a delegator on Polygon's incentivised testnet program. There are no pre-requisites required to become a delegator on Polygon. All you have to do is have an Ethereum account.
 
-Article: [Become a Delegator](https://docs.matic.network/docs/validate/counter-stake-stage-2/delegate)
+Article: [Become a Delegator](https://docs.polygon.technology/docs/validate/counter-stake-stage-2/delegate)

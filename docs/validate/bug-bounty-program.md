@@ -13,7 +13,7 @@ Polygon looks forward to working with the community to find security vulnerabili
 The bounty program is to ensure everyone has an opportunity to find bugs in our system, which will in turn help us ensure the security of Polygon. Payouts will go up to $5,000 for critical issues.
 
 ## Getting Started
-* If you are new to blockchains and/or to Polygon, take a look at the Polygon overview - https://docs.matic.network/docs/home/architecture/matic-architecture
+* If you are new to blockchains and/or to Polygon, take a look at the Polygon overview - https://docs.polygon.technology/docs/home/architecture/matic-architecture
 
 * Explore the code on GitHub there are 3 main repositories for you to study
 Heimdall - https://github.com/maticnetwork/heimdall
@@ -28,7 +28,7 @@ The Polygon CLI repo is an easy way to setup and manage the entire Polygon stack
 
 If you want to run a full node on the Polygon Mainnet or Mumbai Testnet you can follow the links below
 
-**Full Node**: https://docs.matic.network/docs/integrate/full-node-deployment/
+**Full Node**: https://docs.polygon.technology/docs/integrate/full-node-deployment/
 
 ## Getting Tokens for Testing
 

@@ -13,7 +13,7 @@ Polygon looks forward to working with the community to find security vulnerabili
 The bounty program is to ensure everyone has an opportunity to find bugs in our system, which will in turn help us ensure the security of Polygon. Payouts will go up to $10,000 for critical issues.
 
 ## Getting Started
-* If you are new to blockchains and/or to Polygon, take a look at the Polygon overview - https://docs.matic.network/docs/home/architecture/matic-architecture
+* If you are new to blockchains and/or to Polygon, take a look at the Polygon overview - https://docs.polygon.technology/docs/home/architecture/polygon-architecture/
 
 * Explore the code on GitHub there are 3 main repositories for you to study
 Heimdall - https://github.com/maticnetwork/heimdall
@@ -26,17 +26,9 @@ Contracts - https://github.com/maticnetwork/contracts
 The Polygon CLI repo is an easy way to setup and manage the entire Polygon stack, including **Heimdall**, **Bor** and the **Staking & Plasma smart contracts** on a local environment. This would help in simulating tests and attacks locally.
 
 
-If you want to run a node on the Counter Stake - Stage 2 staking testnet, you follow the instructions on these links:
-
-* **Overview**: https://docs.matic.network/docs/validate/counter-stake-stage-2/getting-started
-
-* **Linux Package**: https://docs.matic.network/docs/validate/counter-stake-stage-2/linux-package-installation
-
-* **Binaries**: https://docs.matic.network/docs/validate/counter-stake-stage-2/running-with-binaries
-
 ## Getting Tokens for Testing
 
-To get tokens you can access our faucet: https://faucet.matic.network/ and choose the Goerli network to get some tokens. Or you can drop an email with your ETH address to delroy(@)matic.network
+To get tokens you can access our faucet: https://faucet.polygon.technology/ and choose the Goerli network to get some tokens. Or you can drop an email with your ETH address to delroy(@)polygon.technology
 
 ## Have questions?
 

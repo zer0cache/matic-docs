@@ -27,7 +27,7 @@ All the network related details can be found in [network docs](/docs/develop/net
     - [Using Remix](/docs/develop/remix)
     - [Using Truffle](/docs/develop/truffle)
     - [Using Hardhat](/docs/develop/hardhat)
-- Connecting to Polygon [with RPC](https://docs.matic.network/docs/develop/metamask/testnet) by adding Polygon on Metamask or directly via [Arkane](/docs/develop/wallets/arkane/network).
+- Connecting to Polygon [with RPC](https://docs.polygon.technology/docs/develop/metamask/testnet) by adding Polygon on Metamask or directly via [Arkane](/docs/develop/wallets/arkane/network).
 
   Note that same RPC can be used with web3js.
 
@@ -50,7 +50,7 @@ All the network related details can be found in [network docs](/docs/develop/net
 
     Deploy all your smart contracts directly on Polygon chain. You don't have to worry about the underlying architecture, as long as it is EVM compatible!
 
-    [Deploying your dApp on Polygon](https://docs.matic.network/docs/integrate/quickstart)
+    [Deploying your dApp on Polygon](https://docs.polygon.technology/docs/integrate/quickstart)
 
 - **Using Polygon as a faster transactions layer**
 
@@ -64,16 +64,16 @@ All the network related details can be found in [network docs](/docs/develop/net
 
 - [Full Stack DApp: Tutorial Series](https://kauri.io/full-stack-dapp-tutorial-series/5b8e401ee727370001c942e3/c)
 - Getting to know your tools:
-    - [Web3js](https://www.dappuniversity.com/articles/web3-js-intro), [Remix](https://docs.matic.network/docs/develop/remix/), [Truffle](https://docs.matic.network/docs/develop/truffle), [Metamask](https://docs.matic.network/docs/develop/metamask/hello), [Arkane](/docs/develop/wallets/arkane/intro)
-- [Writing your first DApp on Matic!](https://docs.matic.network/docs/develop/full-stack-dapp-with-pos)
+    - [Web3js](https://www.dappuniversity.com/articles/web3-js-intro), [Remix](https://docs.polygon.technology/docs/develop/remix/), [Truffle](https://docs.polygon.technology/docs/develop/truffle), [Metamask](https://docs.polygon.technology/docs/develop/metamask/hello), [Arkane](/docs/develop/wallets/arkane/intro)
+- [Writing your first DApp on Polygon!](https://docs.polygon.technology/docs/develop/full-stack-dapp-with-pos)
 
 **😎 Advanced**
 
-- [Sidechains and Plasma](https://docs.matic.network/docs/home/blockchain-basics/sidechain)
-- [Polygon's architecture and Security](https://docs.matic.network/docs/home/architecture/security-models)
-- [When to use Plasma](https://docs.matic.network/docs/home/architecture/security-models)
-- [Moving assets from Mainchain to Matic chain: the Plasma way](https://docs.matic.network/docs/develop/maticjs/getting-started)
-- [Swapping Plasma Assets](https://docs.matic.network/docs/develop/advanced/swap-assets)
+- [Sidechains and Plasma](https://docs.polygon.technology/docs/home/blockchain-basics/sidechain)
+- [Polygon's architecture and Security](https://docs.polygon.technologyk/docs/home/architecture/security-models)
+- [When to use Plasma](https://docs.polygon.technology/docs/home/architecture/security-models)
+- [Moving assets from Mainchain to Polygon chain: the Plasma way](https://docs.polygon.technology/docs/develop/maticjs/getting-started)
+- [Swapping Plasma Assets](https://docs.polygon.technology/docs/develop/advanced/swap-assets)
 
 **Other links**
 
@@ -109,7 +109,7 @@ All the network related details can be found in [network docs](/docs/develop/net
 - [Full stack dapp tutorial series](https://kauri.io/collection/5b8e401ee727370001c942e3/full-stack-dapp-tutorial-series)
 - [Infura Docs](https://infura.io/docs)
 - [Truffle Suite Docs](https://www.trufflesuite.com/docs) (Recommended)
-- [Truffle tutorials](https://www.trufflesuite.com/tutorials) (Recommended)
+- [Truffle tutorial](https://www.trufflesuite.com/tutorial) (Recommended)
 - [Parity Wiki](https://wiki.parity.io/)
 - [Geth docs](https://geth.ethereum.org/)
 - [Remix](https://remix.ethereum.org/)
@@ -122,7 +122,7 @@ All the network related details can be found in [network docs](/docs/develop/net
 ### **Learn the Basics of Development**
 
 - [Full stack dapp tutorial series](https://kauri.io/collection/5b8e401ee727370001c942e3/full-stack-dapp-tutorial-series)
-- [Truffle tutorials](https://www.trufflesuite.com/tutorials)
+- [Truffle tutorial](https://www.trufflesuite.com/tutorial)
 - [Dapp University](https://www.youtube.com/channel/UCY0xL8V6NzzFcwzHCgB8orQ)
 - [ConsenSys Academy Developer Program On-Demand course](https://consensys.net/academy/ondemand/)
 - [What is Ethereum?](https://blockgeeks.com/guides/ethereum/)

@@ -1,5 +1,5 @@
 ---
-id: what-is-matic
+id: what-is-polygon
 title: What is Polygon?
 sidebar_label: What is Polygon
 description: Build your next blockchain app on Polygon.
