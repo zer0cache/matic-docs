@@ -1,5 +1,5 @@
 ---
-id: new-to-matic
+id: new-to-polygon
 title: New to Polygon?
 description: Build your next blockchain app on Polygon.
 keywords:
@@ -9,11 +9,11 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 Polygon is a scaling solution for public blockchains. Based on an adapted implementation of Plasma framework (Plasma MoreVP) - with an account based implementation (read more [here](https://ethresear.ch/t/account-based-plasma-morevp/5480)), Polygon supports all the existing Ethereum tooling along with faster and cheaper transactions.
 
-### Types of Interaction on Matic
+### Types of Interaction on Polygon
 
 * [Polygon PoS chain](/docs/develop/getting-started)
-* [Ethereum + Polygon with PoS bridge](https://docs.matic.today/docs/develop/ethereum-matic/pos/getting-started)
-* [Ethereum + Polygon with Plasma bridge](https://docs.matic.today/docs/develop/ethereum-matic/plasma/getting-started)
+* [Ethereum + Polygon with PoS bridge](https://docs.polygon.technology/docs/develop/ethereum-matic/pos/getting-started)
+* [Ethereum + Polygon with Plasma bridge](https://docs.polygon.technology/docs/develop/ethereum-matic/plasma/getting-started)
 
 ### Deploy Smart Contracts
 

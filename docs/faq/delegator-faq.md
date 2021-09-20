@@ -12,7 +12,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### What is the Staking Dashboard URL?
 
-The staking dashboard URL is https://wallet.matic.network/staking.
+The staking dashboard URL is https://wallet.polygon.technology/staking/.
 
 ### What is the Minimum stake amount?
 
@@ -20,7 +20,7 @@ There is no minimum stake amount to delegate. However, you can always start with
 
 ### How many rewards will I get if I delegate?
 
-Please use the Staking Rewards Calculator to determine your estimates. https://wallet.matic.network/staking-rewards
+Please use the Staking Rewards Calculator to determine your estimates. https://wallet.polygon.technology/staking-rewards
 
 ### Why does my transaction take so long?
 
@@ -165,7 +165,7 @@ No. You can choose any node of your choice.
 
 ### What happens to my rewards that are accumalated if I switch delegation from Foundation to External node?
 
-If you haven't already claimed your rewards before switching delegation, then upon successfull switch of your delegation from Foundation to External the Rewards that were accumalated till then will be transferred back to your account. 
+If you haven't already claimed your rewards before switching delegation, then upon successful switch of your delegation from Foundation to External the Rewards that were accumalated till then will be transferred back to your account. 
 
 ### Will delegation on the External Nodes work the same as Foundation Nodes?
 

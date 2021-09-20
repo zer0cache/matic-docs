@@ -1,7 +1,7 @@
 ---
-id: erc721
-title: ERC721 Deposit and Withdraw Guide
-sidebar_label: ERC721
+id: erc20
+title: ERC20 Deposit and Withdraw Guide
+sidebar_label: ERC20
 description: Build your next blockchain app on Polygon.
 keywords:
   - docs
@@ -17,12 +17,12 @@ In the upcoming tutorial, every step will be explained in detail along with a fe
 
 ## High Level Flow
 
-Deposit ERC721 -
+Deposit ERC20 -
 
-1. **_Approve_** **_ERC721Predicate_** contract to spend the tokens that have to be deposited.
+1. **_Approve_** **_ERC20Predicate_** contract to spend the tokens that have to be deposited.
 2. Make **_depositFor_** call on **_RootChainManager_**.
 
-Withdraw ERC721 -
+Withdraw ERC20 -
 
 1. **_Burn_** tokens on Polygon chain.
 2. Call **_exit_** function on **_RootChainManager_** to submit proof of burn transaction. This call can be made **_after checkpoint_** is submitted for the block containing burn transaction.
@@ -33,41 +33,41 @@ Withdraw ERC721 -
 
 ### Approve
 
-This is a normal ERC721 approval so that **_ERC721Predicate_** can call **_transferFrom_** function. Polygon POS client exposes **_approveERC721ForDeposit_** method to make this call.
+This is a normal ERC20 approval so that **_ERC20Predicate_** can call **_transferFrom_** function. Polygon POS client exposes **_approveERC20ForDeposit_** method to make this call.
 
 ```jsx
-await maticPOSClient.approveERC721ForDeposit(rootToken, tokenId, { from });
+await maticPOSClient.approveERC20ForDeposit(rootToken, amount, { from });
 ```
 
 ### Deposit
 
-Deposit can be done by calling **_depositFor_** on RootChainManager contract. Note that token needs to be mapped and approved for transfer beforehand. Once tokens are transferred deposit proceeds using StateSync mechanism. Polygon POS client exposes **_depositERC721ForUser_** method to make this call.
+Note that token needs to be mapped and approved for transfer beforehand. Polygon POS client exposes **_depositERC20ForUser_** method to make this call.
 
 ```jsx
-await maticPOSClient.depositERC721ForUser(rootToken, from, tokenId, {
+await maticPOSClient.depositERC20ForUser(rootToken, from, amount, {
   from,
   gasPrice: "10000000000",
 });
 ```
 
-**_deposit_** function of **_ChildToken_** is called by the **_ChildChainManager._** Tokens should be minted when this call is made.
+Sidenote: Deposits from Ethereum to Polygon happen using a state sync mechanism and takes about ~5-7 minutes. After waiting for this time interval, it is recommended to check the balance using web3.js/matic.js library or using Metamask. The explorer will show the balance only if at least one asset transfer has happened on the child chain. This [link](/docs/develop/ethereum-matic/pos/deposit-withdraw-event-pos) explains how to track the deposit events.
 
 > NOTE: Deposits from Ethereum to Polygon happen using a state sync mechanism and takes about ~5-7 minutes. After waiting for this time interval, it is recommended to check the balance using web3.js/matic.js library or using Metamask. The explorer will show the balance only if at least one asset transfer has happened on the child chain. This [link](/docs/develop/ethereum-matic/pos/deposit-withdraw-event-pos) explains how to track the deposit events.
 
 ### Burn
 
-User can call **_withdraw_** function of **_ChildToken_** contract. This function should burn the tokens. Polygon POS client exposes **_burnERC721_** method to make this call.
+User can call **_withdraw_** function of **_ChildToken_** contract. This function should burn the tokens. Polygon POS client exposes **_burnERC20_** method to make this call.
 
 ```jsx
-await maticPOSClient.burnERC721(childToken, tokenId, { from });
+await maticPOSClient.burnERC20(childToken, amount, { from });
 ```
 
 Store the transaction hash for this call and use it while generating burn proof.
 
 ### Exit
 
-Once the **_checkpoint_** has been **_submitted_** for the block containing burn transaction, user should call the **_exit_** function of **_RootChainManager_** contract and submit the proof of burn. Upon submitting valid proof tokens are transferred to the user. Polygon POS client exposes **_exitERC721_** method to make this call. This function can be called only after the checkpoint is included in the main chain. The checkpoint inclusion can be tracked by following this [guide](/docs/develop/ethereum-matic/pos/deposit-withdraw-event-pos#checkpoint-events).
+Once the **_checkpoint_** has been **_submitted_** for the block containing burn transaction, user should call the **_exit_** function of **_RootChainManager_** contract and submit the proof of burn. Upon submitting valid proof tokens are transferred to the user. Polygon POS client exposes **_exitERC20_** method to make this call. This function can be called only after the checkpoint is included in the main chain. The checkpoint inclusion can be tracked by following this [guide](/docs/develop/ethereum-matic/pos/deposit-withdraw-event-pos#checkpoint-events).
 
 ```jsx
-await maticPOSClient.exitERC721(burnTxHash, { from });
+await maticPOSClient.exitERC20(burnTxHash, { from });
 ```

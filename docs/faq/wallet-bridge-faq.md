@@ -11,7 +11,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Where can I use the Matic Web Wallet?
-[https://wallet.matic.network/](https://wallet.matic.network/)
+[https://wallet.polygon.technology/](https://wallet.polygon.technology/)
 
 ## Which wallets are currently supported?
 
@@ -23,7 +23,7 @@ We will soon add more wallets.
 
 ## How is Plasma different from PoS?
 
-Plasma comes with a additional security where your funds are locked in a challenge period , post 7 day period user can withdraw tokens. [https://docs.matic.network/docs/develop/ethereum-matic/getting-started](https://docs.matic.network/docs/develop/ethereum-matic/getting-started)
+Plasma comes with a additional security where your funds are locked in a challenge period , post 7 day period user can withdraw tokens. [https://docs.polygon.technology/docs/develop/ethereum-matic/getting-started](https://docs.polygon.technology/docs/develop/ethereum-matic/getting-started)
 
 ## What tokens are only available on Plasma?
 
@@ -31,7 +31,7 @@ MATIC tokens
 
 ## How do I deposit to Polygon Wallet and also withdraw?
 
-These blogs and videos are a perfect guide to start with depositing and withdrawing: [https://docs.matic.network/docs/develop/wallets/matic-web-wallet/web-wallet-v2-guide/#depositing-funds-from-ethereum-to-matic](https://docs.matic.network/docs/develop/wallets/matic-web-wallet/web-wallet-v2-guide/#depositing-funds-from-ethereum-to-matic)[https://www.youtube.com/playlist?list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9](https://www.youtube.com/playlist?list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9)
+These blogs and videos are a perfect guide to start with depositing and withdrawing: [https://docs.polygon.technology/docs/develop/wallets/matic-web-wallet/web-wallet-v2-guide/#depositing-funds-from-ethereum-to-matic](https://docs.polygon.technology/docs/develop/wallets/matic-web-wallet/web-wallet-v2-guide/#depositing-funds-from-ethereum-to-matic)[https://www.youtube.com/playlist?list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9](https://www.youtube.com/playlist?list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9)
 
 ## How to switch to Polygon mainnet in Metamask?
 
@@ -47,11 +47,11 @@ Assuming that you have already added the network and custom RPC for Polygon main
 
 You have now switched to Polygon mainnet.
 
-You can refer to this link if you are looking for instructions on how to add the network to Metamask: [https://docs.matic.network/docs/develop/metamask/config-polygon-on-wallets#configure-polygon-on-metamask](https://docs.matic.network/docs/develop/metamask/config-polygon-on-wallets#configure-polygon-on-metamask)
+You can refer to this link if you are looking for instructions on how to add the network to Metamask: [https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-wallets#configure-polygon-on-metamask](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-wallets#configure-polygon-on-metamask)
 
 ## How to choose Polygon mainnet in Walletlink?
 
-Please follow the guide provided [here](https://docs.matic.network/docs/develop/metamask/config-polygon-on-wallets#configure-polygon-on-walletlink)
+Please follow the guide provided [here](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-wallets#configure-polygon-on-walletlink)
 
 ## I have deposited WETH but I don’t see it on Metamask. What do I do?
 
@@ -61,7 +61,7 @@ Open Metamask and scroll down to click on add tokens.
 
 [https://lh6.googleusercontent.com/KXBiSkXtLJaP6f1uEeYOOU6Suj7II6g3Nw5EXLklIWujd7_Q56Bn5yfsRpZD5ouB87-qzUHNVmcGWche1G5A2zif0VTZ3rH9GTeuJR2fzi6YvUDCDsGEPWTukjNJbid7klNJwug8](https://lh6.googleusercontent.com/KXBiSkXtLJaP6f1uEeYOOU6Suj7II6g3Nw5EXLklIWujd7_Q56Bn5yfsRpZD5ouB87-qzUHNVmcGWche1G5A2zif0VTZ3rH9GTeuJR2fzi6YvUDCDsGEPWTukjNJbid7klNJwug8)
 
-Then, select Custom Token to add the relevant contract address, symbol and the decimal precision. Contract addresses (PoS-WETH in this case) can be found on this link: [https://docs.matic.network/docs/develop/network-details/mapped-tokens/](https://docs.matic.network/docs/develop/network-details/mapped-tokens/)
+Then, select Custom Token to add the relevant contract address, symbol and the decimal precision. Contract addresses (PoS-WETH in this case) can be found on this link: [https://docs.polygon.technology/docs/develop/network-details/mapped-tokens/](https://docs.polygon.technology/docs/develop/network-details/mapped-tokens/)
 
 You will need to add the child token address to view balances on Polygon mainnet.
 
@@ -111,7 +111,7 @@ Alternatively, you can follow this guide [here](https://docs.matic.today/docs/d
 
 ## I am not able to login, what do I do?
 
-[https://docs.matic.network/docs/validate/delegator-faq/#my-metamask-is-stuck-at-confirming-after-login-what-do-i-do-or-nothing-happens-when-i-try-to-login](https://docs.matic.network/docs/validate/delegator-faq/#my-metamask-is-stuck-at-confirming-after-login-what-do-i-do-or-nothing-happens-when-i-try-to-login)
+[https://docs.polygon.technology/docs/validate/delegator-faq/#my-metamask-is-stuck-at-confirming-after-login-what-do-i-do-or-nothing-happens-when-i-try-to-login](https://docs.polygon.technology/docs/validate/delegator-faq/#my-metamask-is-stuck-at-confirming-after-login-what-do-i-do-or-nothing-happens-when-i-try-to-login)
 
 ## Does Polygon support hardware wallets?
 Yes, hardware wallets are supported.
@@ -205,7 +205,7 @@ We have listed some common errors that the users might face. You can find the so
 
     The current RPC error you're facing might be due to an RPC overload.
 
-    Please try changing your RPC and proceed with the transaction. You may follow this link [here](https://docs.matic.network/docs/develop/network-details/network#matic-mainnet) for more information.
+    Please try changing your RPC and proceed with the transaction. You may follow this link [here](https://docs.polygon.technology/docs/develop/network-details/network#matic-mainnet) for more information.
   
   c. 
 
@@ -229,7 +229,7 @@ If this is a transaction on the Polygon mainnet, we'll require that you have suf
 
 ## How do I bridge assets across chains?
 
-[https://wallet.matic.network/bridge/](https://wallet.matic.network/bridge/) (ETH <-> Polygon) <br/>
+[https://wallet.polygon.technology/bridge/](https://wallet.polygon.technology/bridge/) (ETH <-> Polygon) <br/>
 [https://xpollinate.io/](https://xpollinate.io/) (BSC <-> Polygon <-> xDai) <br/>
 [https://exchange.chainswap.com/](https://exchange.chainswap.com/) (ETH <-> Polygon/BSC) <br/>
 [https://anyswap.exchange/bridge](https://anyswap.exchange/bridge) (ETH <-> Polygon <-> BSC/xDai) <br/>
@@ -318,3 +318,5 @@ For speeding up transactions via Metamask, please go to this [link](https://meta
 - Transaction hash
 - Exact action intended and the result, very descriptive
 - Screenshots or screen recordings of the action
+
+

@@ -1,6 +1,6 @@
 ---
-id: matic-architecture
-title: Matic Architecture
+id: polygon-architecture
+title: Polygon Architecture
 description: Build your next blockchain app on Polygon.
 keywords:
   - docs

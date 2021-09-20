@@ -38,7 +38,7 @@ We have created simple Ansible playbooks to setup a full node.
 
 **Pre-requisite:**
 
-- Minimum system requirements: https://docs.matic.network/docs/validate/technical-requirements/
+- Minimum system requirements: https://docs.polygon.technology/docs/validate/technical-requirements/
 - Install **Ansible with Python 3.x**: Ansible should be installed on local machine with **Python3.x**. The setup will not work if you have Python2.x.
     - To install ansible with Python 3.x you can use this command `pip3 install ansible`. This will install Python 3 dependencies as well as ansible.
 - Check [https://github.com/maticnetwork/node-ansible#requirements](https://github.com/maticnetwork/node-ansible#requirements) for requirements
@@ -179,7 +179,7 @@ We have created simple Ansible playbooks to setup a full node.
 
 Pre-requisite:
 
-- Minimum system requirements: https://docs.matic.network/docs/validate/technical-requirements/
+- Minimum system requirements: https://docs.polygon.technology/docs/validate/technical-requirements/
 - Ansible should be installed on local machine with **Python3.x**. The setup will not work if you have Python2.x.
     - To install **ansible with Python 3.x** you can use this command `pip3 install ansible`. This will install Python 3 dependencies as well as ansible.
 - Check [https://github.com/maticnetwork/node-ansible#requirements](https://github.com/maticnetwork/node-ansible#requirements) for requirements

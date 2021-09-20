@@ -1,5 +1,5 @@
 ---
-id: matic-architecture
+id: polygon-architecture
 title: Overview
 description: Architecturally, the beauty of Polygon is its elegant design, which features a generic validation layer separated from varying execution environments like Plasma enabled chains, full blown EVM sidechains, and in the future, other Layer 2 approaches such as Optimistic Rollups.
 keywords:

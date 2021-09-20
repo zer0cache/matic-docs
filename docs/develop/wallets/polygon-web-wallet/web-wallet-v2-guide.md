@@ -14,8 +14,8 @@ We have revamped the Polygon Web wallet interface, which has some great UX fixes
 
 ## Logging into the Polygon Web Wallet
 
-To login to the Polygon Web Wallet you need to access the following URL: https://wallet.matic.network/
-How to connect to Polygon to Metamask, please refer this [guide](https://docs.matic.network/docs/develop/metamask/config-matic)
+To login to the Polygon Web Wallet you need to access the following URL: https://wallet.polygon.technology/
+How to connect to Polygon to Metamask, please refer this [guide](https://docs.polygon.technology//docs/develop/metamask/config-matic)
 
 Once you access this page, you will be requested to connect to your MetaMask account. Note that currently the Polygon Web Wallet supports MetaMask, WalletConnect and Wallet Link. We will gradually add support for more wallets.
 Once you connect your account with the Web Wallet you will be navigated to the landing page and you can see all your token balances on the Polygon Wallet across the bridges(PoS and Plasma).You don’t need to toggle between bridges which was available in V1.
