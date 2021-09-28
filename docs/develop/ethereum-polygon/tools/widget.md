@@ -21,7 +21,10 @@ Widget can be created from the widget dashboard page in the wallet application. 
 
 Once the widget is created, You can copy code snippet and add it in your application or use the widget name and configure by yourself.
 
-Here is link to widget dashboard - https://wallet.polygon.technology/widget-dashboard
+Here is link to widget dashboard -
+
+* mainnet - https://wallet.polygon.technology/widget-dashboard
+* testnet - https://wallet-dev.polygon.technology/widget-dashboard
 
 ## Install
 
@@ -45,7 +48,7 @@ import { Widget } from "@maticnetwork/wallet-widget";
 var widget = new Widget({
     appName: "<widget name>", //widget name from dashboard
     target: '#btnMaticWidget', // element selector for showing widget on click
-    network: 'testnet' // network to be used - testnet or mainnet
+    network: 'mainnet' // network to be used - testnet or mainnet
 });
 ```
 
@@ -54,6 +57,11 @@ Create widget whenever you are ready. It is best to call create function after d
 ```javascript 
 widget.create();
 ```
+### Important Note 👉
+
+1. Based on network "testnet" or "mainnet", you need to create your app on respective dashboard. We recommend to create app with same name on both testnet & mainnet, so that you don't have any issue when you are changing network.
+
+2. Wallet widget is UI Library and on different website it might have some issues like - colors, responsiveness etc. So please spend some time on testing - how it looks & behave. In case of any help needed - please reach out to [support team](https://support.polygon.technology/).
 
 ## Configuration
 
