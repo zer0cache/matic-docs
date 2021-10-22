@@ -56,7 +56,7 @@ module.exports = {
           activeBasePath: "docs/develop",
         },
         {
-          to: "docs/validate/orientation",
+          to: "docs/validate/polygon-overview",
           label: "Validate",
           position: "left",
           activeBasePath: "docs/validate",
