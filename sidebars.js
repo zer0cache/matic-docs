@@ -351,16 +351,6 @@ module.exports = {
           label: "Polygon Faucet",
           href: "https://faucet.polygon.technology/",
         },
-        {
-          type: "link",
-          label: "RPC Health",
-          href: "https://status.matic.today",
-        },
-        {
-          type: "link",
-          label: "Checkpoint Status",
-          href: "https://status.matic.today/#/checkpoints",
-        },
       ],
     },
     {
