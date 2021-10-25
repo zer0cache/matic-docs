@@ -16,9 +16,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 This section guides you through starting and running the validator node through an Ansible playbook.
 
-For the system requirements, see [Validator Node System Requirements](/docs/validate/mainnet/validator-node-system-requirements).
+For the system requirements, see [Validator Node System Requirements](https://docs.polygon.technology/docs/validate/validate/validator-node-system-requirements).
 
-If you would like to start and run the validator node from binaries, see [Run a Validator Node from Binaries](/docs/validate/mainnet/validator-guide-binaries).
+If you would like to start and run the validator node from binaries, see [Run a Validator Node from Binaries](https://docs.polygon.technology/docs/validate/validate/run-validator-binaries).
 
 :::note
 
@@ -549,4 +549,4 @@ Now that your sentry and validator nodes are synced and running, head over to [D
 
 ## Proceed to staking
 
-Now that you have your sentry and validator nodes health-checked, proceed to [Staking](/docs/validate/mainnet/stake-on-matic/).
+Now that you have your sentry and validator nodes health-checked, proceed to [Staking](https://docs.polygon.technology/docs/validate/validator/core-components/staking).

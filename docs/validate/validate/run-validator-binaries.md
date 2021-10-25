@@ -16,9 +16,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 This section guides you through starting and running the validator node from binaries.
 
-For the system requirements, see [Validator Node System Requirements](/docs/validate/mainnet/validator-node-system-requirements).
+For the system requirements, see [Validator Node System Requirements](https://docs.polygon.technology/docs/validate/validate/validator-node-system-requirements).
 
-If you would like to start and run the validator node through Ansible, see [Run a Validator Node with Ansible](/docs/validate/mainnet/validator-guide).
+If you would like to start and run the validator node through Ansible, see [Run a Validator Node with Ansible](https://docs.polygon.technology/docs/validate/validate/run-validator-ansible).
 
 :::note
 
@@ -88,7 +88,7 @@ Run this section both on the sentry and the validator machines.
 
 ### Install Heimdall
 
-Clone the [Heimdall repository](ttps://github.com/maticnetwork/heimdall):
+Clone the [Heimdall repository](https://github.com/maticnetwork/heimdall/):
 
 ```sh
 git clone https://github.com/maticnetwork/heimdall
