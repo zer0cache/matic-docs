@@ -121,13 +121,13 @@ xxx.xxx.xx.xx | SUCCESS => {
 Do a test run of the sentry node setup:
 
 ```sh
-ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.8 heimdall_branch=v0.2.2  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
+ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.9 heimdall_branch=v0.2.3  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
 ```
 
 Run the sentry node setup:
 
 ```sh
-ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.8 heimdall_branch=v0.2.2  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"
+ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.9 heimdall_branch=v0.2.3  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"
 ```
 
 Once the setup is complete, you will see a message of completion on the terminal.
@@ -164,13 +164,13 @@ xxx.xxx.xx.xx | SUCCESS => {
 Do a test run of the validator node setup:
 
 ```sh
-ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.8 heimdall_branch=v0.2.2 network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet" --list-hosts
+ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.9 heimdall_branch=v0.2.3 network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet" --list-hosts
 ```
 
 Run the validator node setup:
 
 ```sh
-ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.8 heimdall_branch=v0.2.2  network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet"
+ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.9 heimdall_branch=v0.2.3  network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet"
 ```
 
 Once the setup is complete, you will see a message of completion on the terminal.
