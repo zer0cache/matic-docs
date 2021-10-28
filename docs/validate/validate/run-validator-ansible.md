@@ -22,7 +22,7 @@ If you would like to start and run the validator node from binaries, see [Run a 
 
 :::note
 
-Steps in this guide involve waiting for the Heimdall and Bor nodes to fully sync. This process takes several days to complete.
+Steps in this guide involve waiting for the Heimdall and Bor services to fully sync. This process takes several days to complete.
 
 Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [Snapshot Instructions for Heimdall and Bor](https://forum.matic.network/t/snapshot-instructions-for-heimdall-and-bor/2278).
 
@@ -39,6 +39,12 @@ There is limited space for accepting new validators. New validators can only joi
 * On the local machine, [Python 3.x](https://www.python.org/downloads/) installed.
 * On the remote machines, make sure Go is *not* installed.
 * On the remote machines, your local machine's SSH public key is on the remote machines to let Ansible connect to them.
+
+:::note
+
+You would need Go version 1.17 to be installed for the setup. 
+
+:::
 
 ## Overview
 
@@ -76,7 +82,7 @@ Change to the cloned repository:
 cd node-ansible
 ```
 
-Add the IP addresses of the remote machines that will become a sentry node and a validator node to the `inventory.yaml` file.
+Add the IP addresses of the remote machines that will become a sentry node and a validator node to the `inventory.yml` file.
 
 ```yml
 all:
@@ -109,6 +115,11 @@ Check that the remote sentry machine is reachable. On the local machine, run `an
 
 ```sh
 $ ansible sentry -m ping
+```
+
+You should get this as output
+
+```sh
 xxx.xxx.xx.xx | SUCCESS => {
     "ansible_facts": {
         "discovered_interpreter_python": "/usr/bin/python3"
@@ -122,6 +133,15 @@ Do a test run of the sentry node setup:
 
 ```sh
 ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.9 heimdall_branch=v0.2.3  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
+```
+
+This will be the output
+
+```sh
+playbook: playbooks/network.yml
+  pattern: ['all']
+  host (1):
+    xx.xxx.x.xxx
 ```
 
 Run the sentry node setup:
@@ -152,6 +172,11 @@ Check that the remote validator machine is reachable. On the local machine, run 
 
 ```sh
 $ ansible validator -m ping
+```
+
+You should get this as output
+
+```sh
 xxx.xxx.xx.xx | SUCCESS => {
     "ansible_facts": {
         "discovered_interpreter_python": "/usr/bin/python3"
@@ -189,9 +214,9 @@ ansible-playbook -l validator playbooks/clean.yml
 
 Login to the remote sentry machine.
 
-### Configure the Heimdall node
+### Configure the Heimdall Service
 
-Open for editing `~/.heimdalld/config/config.toml`.
+Open for editing `vi ~/.heimdalld/config/config.toml`.
 
 In `config.toml`, change the following:
 
@@ -219,9 +244,9 @@ In `config.toml`, change the following:
 
 Save the changes in `config.toml`.
 
-### Configure the Bor node
+### Configure the Bor Service
 
-Open for editing `~/node/bor/start.sh`.
+Open for editing `vi ~/node/bor/start.sh`.
 
 In `start.sh`, add the boot node addresses consisting of a node ID, an IP address, and a port by adding the following line at the end:
 
@@ -231,7 +256,7 @@ In `start.sh`, add the boot node addresses consisting of a node ID, an IP addres
 
 Save the changes in `start.sh`.
 
-Open for editing `~/.bor/data/bor/static-nodes.json`.
+Open for editing `vi ~/.bor/data/bor/static-nodes.json`.
 
 In `static-nodes.json`, change the following:
 
@@ -250,17 +275,25 @@ Save the changes in `static-nodes.json`.
 
 The sentry machine must have the following ports open to the world `0.0.0.0/0`:
 
-* 22
-* 26656
-* 30303
+* 26656- Your Heimdall service will connect your node to other nodes Heimdall service.
+
+* 30303- Your Bor service will connect your node to other nodes Bor service.
+
+* 22- For the validator to be able to ssh from wherever he/she is.
+
+:::note 
+
+However, if they use a vpn connection, they can allow incoming ssh connections only from the vpn ip address
+
+:::
 
 ## Start the sentry node
 
-You will first start the Heimdall node. Once the Heimdall node syncs, you will start the Bor node.
+You will first start the Heimdall service. Once the Heimdall service syncs, you will start the Bor service.
 
 :::note
 
-The Heimdall node takes several days to fully sync from scratch.
+The Heimdall service takes several days to fully sync from scratch.
 
 Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [Snapshot Instructions for Heimdall and Bor](https://forum.matic.network/t/snapshot-instructions-for-heimdall-and-bor/2278).
 
@@ -268,7 +301,7 @@ For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.ma
 
 :::
 
-### Start the Heimdall node
+### Start the Heimdall service
 
 Start the Heimdall service:
 
@@ -314,14 +347,14 @@ curl localhost:26657/status
 
 In the output, the `catching_up` value is:
 
-* `true` — the Heimdall node is syncing.
-* `false` — the Heimdall node is fully synced.
+* `true` — the Heimdall service is syncing.
+* `false` — the Heimdall service is fully synced.
 
-Wait for the Heimdall node to fully sync.
+Wait for the Heimdall service to fully sync.
 
-### Start the Bor node
+### Start the Bor Service
 
-Once the Heimdall node is fully synced, start the Bor node.
+Once the Heimdall service is fully synced, start the Bor service.
 
 Start the Bor service:
 
@@ -343,41 +376,44 @@ To complete this section, you must have an RPC endpoint of your fully synced Eth
 
 :::
 
-### Configure the Heimdall node
+### Configure the Heimdall Service
 
 Login to the remote validator machine.
 
-Open for editing `~/.heimdalld/config/config.toml`.
+Open for editing `vi ~/.heimdalld/config/config.toml`.
 
 In `config.toml`, change the following:
 
 * `moniker` — any name. Example: `moniker = "my-validator-node"`.
 * `pex` — set the value to `false` to disable the peer exchange. Example: `pex = false`.
 * `private_peer_ids` — comment out the value to disable it. Example: `# private_peer_ids = ""`.
-* `persistent_peers` — the node ID of Heimdall set up on the sentry machine and the IP address of the sentry machine.
+
 
   To get the node ID of Heimdall on the sentry machine:
 
   1. Login to the sentry machine.
   1. Run `heimdalld tendermint show-node-id`.
 
-  Example: `persistent_peers = "7d2adb45aa20fdcf053c0e3b8209eb781e501b46@188.166.216.25:26656"`.
+  Example: `persistent_peers = "sentry_machineNodeID@sentry_instance_ip:26656"`
 
 * `prometheus` — set the value to `true` to enable the Prometheus metrics. Example: `prometheus = true`.
 
 Save the changes in `config.toml`.
 
-Open for editing `~/.heimdalld/config/heimdall-config.toml`.
+Open for editing `vi ~/.heimdalld/config/heimdall-config.toml`.
 
 In `heimdall-config.toml`, change the following:
 
-* `eth_rpc_url` — an RPC endpoint for a fully synced Ethereum mainnet node. Example: `eth_rpc_url = "https://nd-123-456-789.p2pify.com/60f2a23810ba11c827d3da642802412a"`
+* `eth_rpc_url` — an RPC endpoint for a fully synced Ethereum mainnet node, i.e Infura. `eth_rpc_url =<insert Infura or any full node RPC URL to Ethereum>`
+
+Example: `eth_rpc_url = "https://nd-123-456-789.p2pify.com/60f2a23810ba11c827d3da642802412a"`
+
 
 Save the changes in `heimdall-config.toml`.
 
-### Configure the Bor node
+### Configure the Bor Service
 
-Open for editing `~/.bor/data/bor/static-nodes.json`.
+Open for editing `vi ~/.bor/data/bor/static-nodes.json`.
 
 In `static-nodes.json`, change the following:
 
@@ -409,9 +445,9 @@ To generate the private key, run:
 heimdallcli generate-validatorkey ETHEREUM_PRIVATE_KEY
 ```
 
-where
-
-* ETHEREUM_PRIVATE_KEY — your Ethereum address private key.
+:::note
+* ETHEREUM_PRIVATE_KEY — your Ethereum wallet address.
+:::
 
 This will generate `priv_validator_key.json`. Move the generated JSON file to the Heimdall configuration directory:
 
@@ -429,9 +465,9 @@ To generate the private key, run:
 heimdallcli generate-keystore ETHEREUM_PRIVATE_KEY
 ```
 
-where
-
-* ETHEREUM_PRIVATE_KEY — your Ethereum address private key.
+:::note
+* ETHEREUM_PRIVATE_KEY — your Ethereum private key.
+:::
 
 When prompted, set up a password to the keystore file.
 
@@ -445,11 +481,11 @@ mv ./UTC-<time>-<address> ~/.bor/keystore/
 
 ### Add password.txt
 
-Add the Bor keystore file password in the `~/.bor/password.txt` file.
+Make sure to create a `password.txt` file then add the Bor keystore file password right in the `~/.bor/password.txt` file.
 
 ### Add your Ethereum address
 
-Open for editing `/etc/matic/metadata`.
+Open for editing `vi /etc/matic/metadata`.
 
 In `metadata`, add your Ethereum address. Example: `VALIDATOR_ADDRESS=0xca67a8D767e45056DC92384b488E9Af654d78DE2`.
 
@@ -459,18 +495,18 @@ Save the changes in `metadata`.
 
 At this point, you must have:
 
-* The Heimdall node on the sentry machine fully synced and running.
-* The Bor node on the sentry machine running.
-* The Heimdall node and the Bor node on the validator machine configured.
+* The Heimdall service on the sentry machine fully synced and running.
+* The Bor service on the sentry machine running.
+* The Heimdall service and the Bor service on the validator machine configured.
 * Your owner and signer keys configured.
 
-### Start the Heimdall node
+### Start the Heimdall Service
 
-You will now start the Heimdall node on the validator machine. Once the Heimdall node syncs, you will start the Bor node on the validator machine.
+You will now start the Heimdall service on the validator machine. Once the Heimdall service syncs, you will start the Bor service on the validator machine.
 
 :::note
 
-The Heimdall node takes several days to fully sync from scratch.
+The Heimdall service takes several days to fully sync from scratch.
 
 Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [Snapshot Instructions for Heimdall and Bor](https://forum.matic.network/t/snapshot-instructions-for-heimdall-and-bor/2278).
 
@@ -522,14 +558,14 @@ curl localhost:26657/status
 
 In the output, the `catching_up` value is:
 
-* `true` — the Heimdall node is syncing.
-* `false` — the Heimdall node is fully synced.
+* `true` — the Heimdall service is syncing.
+* `false` — the Heimdall service is fully synced.
 
-Wait for the Heimdall node to fully sync.
+Wait for the Heimdall service to fully sync.
 
-### Start the Bor node
+### Start the Bor Service
 
-Once the Heimdall node on the validator machine is fully synced, start the Bor node on the validator machine.
+Once the Heimdall service on the validator machine is fully synced, start the Bor service on the validator machine.
 
 Start the Bor service:
 
