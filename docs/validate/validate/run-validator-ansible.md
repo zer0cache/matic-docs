@@ -40,11 +40,6 @@ There is limited space for accepting new validators. New validators can only joi
 * On the remote machines, make sure Go is *not* installed.
 * On the remote machines, your local machine's SSH public key is on the remote machines to let Ansible connect to them.
 
-:::note
-
-You would need Go version 1.17 to be installed for the setup. 
-
-:::
 
 ## Overview
 
@@ -190,6 +185,15 @@ Do a test run of the validator node setup:
 
 ```sh
 ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.9 heimdall_branch=v0.2.3 network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet" --list-hosts
+```
+
+You should get this as output
+
+```sh
+playbook: playbooks/network.yml
+  pattern: ['all']
+  host (1):
+    xx.xxx.x.xxx
 ```
 
 Run the validator node setup:
