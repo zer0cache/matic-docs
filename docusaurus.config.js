@@ -29,6 +29,7 @@ module.exports = {
       defaultLanguage: "javascript",
     },
     algolia: {
+      appId: 'BH4D9OD16A',
       apiKey: "c3ad4eabc5af314ea3ed331efbe0a5c4",
       indexName: "matic_developer",
       algoliaOptions: {},
