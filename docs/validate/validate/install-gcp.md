@@ -14,7 +14,7 @@ In this document we will describe how to deploy Polygon nodes onto VM instance i
 ## Hardware requirements
 Check minimum and recommended [hardware requirements](https://docs.polygon.technology/docs/validate/mainnet/validator-guide) in Polygon docs
 ## Software requirements
-Use any modern Debian or Ubuntu Linux OS with long term support, f.e. Debian 11, Ubuntu 21.04. We'll focus on Ubuntu 20.04 in this manual 
+Use any modern Debian or Ubuntu Linux OS with long term support, f.e. Debian 11, Ubuntu 21.04. We'll focus on Ubuntu 21.04 in this manual 
 ## Deploy instance (2 ways)
 You may use at least two ways to create an instance in Google Cloud:
 * gcloud cli, local or [Cloud Shell](https://cloud.google.com/shell)
@@ -22,8 +22,8 @@ You may use at least two ways to create an instance in Google Cloud:
 
 We'll cover the first case in this manual. Let's start from deploy using CLI.
 1. Follow ["Before you begin" section](https://cloud.google.com/compute/docs/instances/create-start-instance#before-you-begin) to install and configure gcloud command-line tool. 
-Pay attention to default region and zone, choose ones closer to You or Your customers. You may use [gcping.com](https://gcping.com) to measure latency to choose closest location.
-2. Adjust the following command variables prior executing, when required
+Pay attention to default region and zone, choose ones closer to You or Your customers. You may use [gcping.com](https://gcping.com) to measure latency to choose the closest location.
+2. Adjust the following command variables using Your favorite editor prior executing, when required
    * `POLYGON_NETWORK` - choose `mainnet` or `mumbai` testnet network to run
    * `POLYGON_NODETYPE` - choose `archive`,`fullnode` node type to run
    * `POLYGON_BOOTSTRAP_MODE` - choose bootstrap mode `snapshot` or `from_scratch`
@@ -34,11 +34,11 @@ Pay attention to default region and zone, choose ones closer to You or Your cust
    * `HEIMDALL_EXT_DISK_SIZE` - additional disk size in GB to use with Heimdall, default value is recommended
    * `DISK_TYPE` - GCP [disk type](https://cloud.google.com/compute/docs/disks#disk-types), SSD is highly recommended
 
-3. Use the following command to create an instance with correct hardware and software requirements. In the example below we deploy Polygon `mainnet` from `from_scratch` with `fullnode` mode:
+3. Use the following command to create an instance with correct hardware and software requirements. In the example below we deploy Polygon `mainnet` from `snapshot` with `fullnode` mode:
 ```bash
    export POLYGON_NETWORK=mainnet
    export POLYGON_NODETYPE=fullnode
-   export POLYGON_BOOTSTRAP_MODE=from_scratch
+   export POLYGON_BOOTSTRAP_MODE=snapshot
    export POLYGON_RPC_PORT=8747
    export GCP_NETWORK_TAG=polygon
    gcloud compute firewall-rules create "polygon-p2p" --allow=tcp:26656,tcp:30303,udp:30303 --description="polygon p2p" --target-tags=${GCP_NETWORK_TAG}
@@ -61,13 +61,13 @@ Pay attention to default region and zone, choose ones closer to You or Your cust
    #cloud-config
 
    bootcmd:
-   - screen -dmS polygon su -l -c bash -c "curl -L https://raw.githubusercontent.com/maticnetwork/node-ansible/add-install-wrapper/install-gcp.sh | bash -s -- -n '${POLYGON_NETWORK}' -m '${POLYGON_NODETYPE}' -s '${POLYGON_BOOTSTRAP_MODE}' -p '${POLYGON_RPC_PORT}'; bash"'
+   - screen -dmS polygon su -l -c bash -c "curl -L https://raw.githubusercontent.com/maticnetwork/node-ansible/master/install-gcp.sh | bash -s -- -n '${POLYGON_NETWORK}' -m '${POLYGON_NODETYPE}' -s '${POLYGON_BOOTSTRAP_MODE}' -p '${POLYGON_RPC_PORT}'; bash"'
 ```
 Instance should be created during a couple of minutes
 ## Login to instance (optional)
 It will take a couple of minutes to install all the required software and a couple of hours to download a snapshot, when chosen.
 You should see working `bor` and `heimdalld` processes filling up additional drives. You may run following commands to check it.
-Connect to instance SSH service using gcloud wrapper:
+Connect to instance SSH service using `gcloud` SSH wrapper:
 ```bash
 gcloud compute ssh ${INSTANCE_NAME}
 # inside connected session
