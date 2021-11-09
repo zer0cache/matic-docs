@@ -35,7 +35,7 @@ Pay attention to default region and zone, choose ones closer to You or Your cust
    * `DISK_TYPE` - GCP [disk type](https://cloud.google.com/compute/docs/disks#disk-types), SSD is highly recommended
 
 3. Use the following command to create an instance with correct hardware and software requirements. In the example below we deploy Polygon `mainnet` from `from_scratch` with `fullnode` mode:
-    ```bash
+```bash
    export POLYGON_NETWORK=mainnet
    export POLYGON_NODETYPE=fullnode
    export POLYGON_BOOTSTRAP_MODE=from_scratch
@@ -62,7 +62,7 @@ Pay attention to default region and zone, choose ones closer to You or Your cust
 
    bootcmd:
    - screen -dmS polygon su -l -c bash -c "curl -L https://raw.githubusercontent.com/maticnetwork/node-ansible/add-install-wrapper/install-gcp.sh | bash -s -- -n '${POLYGON_NETWORK}' -m '${POLYGON_NODETYPE}' -s '${POLYGON_BOOTSTRAP_MODE}' -p '${POLYGON_RPC_PORT}'; bash"'
-    ```
+```
 Instance should be created during a couple of minutes
 ## Login to instance (optional)
 It will take a couple of minutes to install all the required software and a couple of hours to download a snapshot, when chosen.
