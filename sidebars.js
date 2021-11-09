@@ -412,6 +412,7 @@ module.exports = {
         "validate/validate/validator-node-system-requirements",
         "validate/validate/run-validator-ansible",
         "validate/validate/run-validator-binaries",
+        "validate/validate/install-gcp",
         "validate/validate/validator-staking-operations",
         "validate/validate/replace-validator",
         "validate/validate/change-signer-address",
