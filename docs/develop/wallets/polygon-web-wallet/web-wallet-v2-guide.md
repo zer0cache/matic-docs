@@ -19,12 +19,7 @@ To login to the Polygon Web Wallet you need to access the following URL: https:/
 To login to the testnet version of Polygon Web Wallet, you need to access the following URL: https://wallet-dev.polygon.technology/.
 How to connect to Polygon to Metamask, please refer this [guide](hhttps://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/)
 
-Once you access this page, you will be requested to connect to your MetaMask account. Note that currently the Polygon Web Wallet supports MetaMask, WalletConnect and Wallet Link. We will gradually add support for more wallets.
-Once you connect your account with the Web Wallet you will be navigated to the landing page and you can see all your token balances on the Polygon Wallet across the bridges(PoS and Plasma).You don’t need to toggle between bridges which was available in V1.
-
-
-Once you access this page, you will be requested to connect to your MetaMask account. Note that currently the Polygon Web Wallet supports MetaMask, WalletConnect and Wallet Link. We will gradually add support for more wallets.
-Once you connect your account with the Web Wallet you will be navigated to the landing page with various means on how to transact with the wallet web depending on your use case. We have the Polygon Wallet, perfect for sending, recieving and storingyour assets on the Polygon network, the Polygon Bridge, for withdrawals and deposits across networks. Polygon Staking - your go-to place for staking and getting rewards with your $MATIC, and the Widget Dashboard. 
+Once you connect your account with the Web Wallet you will be taken to the landing page with various means on how to transact with the wallet web depending on your use case. We have the Polygon Wallet, perfect for sending, recieving and storingyour assets on the Polygon network, the Polygon Bridge, for withdrawals and deposits across networks. Polygon Staking - your go-to place for staking and getting rewards with your $MATIC, and the Widget Dashboard.
 
 <img src={useBaseUrl("img/wallet/wallet-landing-page.png")} width="100%" height="100%"/>
 
