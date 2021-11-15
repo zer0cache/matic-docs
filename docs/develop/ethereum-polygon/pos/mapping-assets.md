@@ -15,7 +15,7 @@ Mapping is necessary in order to transfer your assets to and from the Ethereum a
 - **The Root chain** :: refers to either Goerli or Ethereum Mainnet
 - **The Child chain** :: refers to either Polygon Mumbai or Polygon Mainnet
 
-If you already have your token contract deployed on the Root chain and want to move it to Child chain, then you should follow this walkthrough, but if you intend to deploy your contract on Polygon Mainnet first, mint the tokens on the Child chain first and then move them back to the Root chain. You should then follow this [guide](/docs/develop/ethereum-matic/mintable-assets).
+If you already have your token contract deployed on the Root chain and want to move it to Child chain, then you should follow this walkthrough, but if you intend to deploy your contract on Polygon Mainnet first, mint the tokens on the Child chain first and then move them back to the Root chain. You should then follow this [guide](https://docs.polygon.technology/docs/develop/ethereum-polygon/mintable-assets).
 
 ## Standard Child Token
 
