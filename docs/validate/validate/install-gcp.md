@@ -95,3 +95,4 @@ Please note blockchain data is saved onto additional drives which is kept by def
 At the end You'll get an instance as shown on the diagram below
 <img src={useBaseUrl("img/mainnet/polygon-instance.svg")} />
 
+If you hit an issue with this manual - please feel free to open an [issue](https://github.com/maticnetwork/matic-docs/issues) or [create a PR](https://github.com/maticnetwork/matic-docs/pulls) on [GitHub](https://github.com/maticnetwork/matic-docs). 
