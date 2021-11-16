@@ -9,22 +9,11 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 
 For the upcoming testnet event, this is the minimal hardware configuration:
-:::tip Minimal hardware Configuration for Validator Node
-8 GB RAM 
 
-100GB SSD
-
-x64 2.0 GHz 2v CPU
-:::
-
-:::tip Minimal hardware Configuration for Sentry Node
-8 GB RAM 
-
-60GB SSD
-
-x64 2.0 GHz 4v CPU
-:::
-
+### Minimal hardware Configuration for Full Node
+- RAM: 16-32 GB
+- CPU: 4-8 core CPU (t3 xLarge)
+- Storage: Minimum 650GB SSD (make sure it is extendable) 
 
 While we do not favor any operating system, more secure and stable Linux server distributions (like CentOS) should be preferred over desktop operating systems (like Mac OS and Windows).
 

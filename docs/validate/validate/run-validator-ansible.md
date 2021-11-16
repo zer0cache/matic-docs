@@ -106,7 +106,7 @@ all:
         134.209.100.175: 
 ```
 
-Check that the remote sentry machine is reachable. On the local machine, run `ansible sentry -m ping`:
+Check that the remote sentry machine is reachable. On the local machine, run:
 
 ```sh
 $ ansible sentry -m ping
@@ -224,7 +224,7 @@ Open for editing `vi ~/.heimdalld/config/config.toml`.
 
 In `config.toml`, change the following:
 
-* `moniker` — any name. Example: `moniker = "my-sentry-node"`.
+* `moniker` — any name. Example: `moniker = "my-full-node"`.
 * `seeds` — the seed node addresses consisting of a node ID, an IP address, and a port.
 
   Use the following values:
