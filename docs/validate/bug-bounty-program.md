@@ -46,4 +46,4 @@ Check out the forum and join the discussion on Discord.
 * [Forum](https://forum.polygon.technology)
 * [Discord](https://discord.gg/XvpHAxZ)
 
-See also the [HackerOne program description](https://hackerone.com/matic-network).
+See also the [Immunefi  bug bountry program](https://immunefi.com/bounty/polygon/).
