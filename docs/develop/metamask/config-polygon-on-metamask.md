@@ -24,7 +24,7 @@ In order to view the flow of funds in your accounts, on the Polygon Network, you
 }>
 
 <TabItem value="mumbai">
-To add Poylgon's Mumbai-Testnet, click on the Network selection dropdown and then click on Custom RPC.
+To add Polygon's Mumbai-Testnet, click on the Network selection dropdown and then click on Custom RPC.
 
 <img src={useBaseUrl("img/metamask/select-network.png")} />
 
