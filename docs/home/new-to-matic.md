@@ -22,6 +22,7 @@ Polygon is a scaling solution for public blockchains. Based on an adapted implem
 * Deploy your Contracts on Polygon
     - [Using Remix](/docs/develop/remix)
     - [Using Truffle](/docs/develop/truffle)
+    - [Using Hardhat](/docs/develop/hardhat)
 * Configure the Web3 RPC-URL to https://rpc-mumbai.matic.today, *Everything else remains the same*
 
 ### What is a Blockchain?
