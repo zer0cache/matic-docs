@@ -28,8 +28,6 @@ Alternatively, you can use a maintained snapshot, which will reduce the sync tim
 
 For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.matic.today/).
 
-There is limited space for accepting new validators. New validators can only join the active set when a currently active validator unbonds.
-
 :::
 
 
@@ -203,8 +201,6 @@ Alternatively, you can use a maintained snapshot, which will reduce the sync tim
 
 For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.matic.today/).
 
-There is limited space for accepting new validators. New validators can only join the active set when a currently active validator unbonds.
-
 :::
 
 # Full Node Deployment (Polygon mainnet)
@@ -229,7 +225,7 @@ We have created simple Ansible playbooks to setup a full node.
 - Check node health with the community.
 
 :::note
-You must follow the exact outlined sequence of actions, otherwise you will run into issues.
+You have to follow the exact outlined sequence of actions, otherwise you will run into issues.
 :::
 
 <!-- ## Pre-requisite

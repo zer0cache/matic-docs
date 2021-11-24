@@ -45,6 +45,7 @@ module.exports = {
         "develop/network-details/gas-token",
         "develop/network-details/genesis-contracts",
         "develop/network-details/technical-requirements",
+        "integrate/full-node-binaries",
         "integrate/full-node-deployment",
       ],
     },
@@ -358,7 +359,7 @@ module.exports = {
       type: "category",
       label: "Advanced",
       items: [
-        // "integrate/technical-requirements",
+          "develop/network-details/technical-requirements",
           "integrate/full-node-deployment", 
           "integrate/full-node-binaries"
         ],

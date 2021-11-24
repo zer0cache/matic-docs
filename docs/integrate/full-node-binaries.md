@@ -22,17 +22,59 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <TabItem value="mumbai">
 
-## Pre-requisites
+This section guides you through starting and running a full node on a binary.
 
-### Minimum System Requirements
+For the system requirements, see [Minimum Technical Requirements](http://localhost:3000/docs/develop/network-details/technical-requirements).
 
-- Minimum system requirements are as follows:
+:::note
 
-    16 - 32 GiB of memory
+Steps in this guide involve waiting for the Heimdall and Bor services to fully sync. This process takes several days to complete.
 
-    4 - 8 core CPU (t3 xLarge)
+Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [Snapshot Instructions for Heimdall and Bor](https://forum.matic.network/t/snapshot-instructions-for-heimdall-and-bor/2278).
 
-    Minimum 650GB SSD (make sure it is extendable)
+For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.matic.today/).
+
+:::
+
+
+## Prerequisites
+
+
+- One machine.
+- `build-essential` installed on the Full Node machine.
+- To install:
+- sudo apt-get install build-essential
+- Go 1.17 installed on both the Full Node machine.
+
+<!-- ### To install
+
+```bash wget https://gist.githubusercontent.com/ssandeep/a6c7197811c83c71e5fead841bab396c/raw/e38212982ab8cdfc11776fa1a3aaf92b69e1cb15/go-install.sh
+```
+
+```bash 
+go-install.sh
+```
+
+```bash
+sudo ln -nfs ~/.go/bin/go /usr/bin/go
+``` -->
+
+<!-- RabbitMQ installed on both the Full Node machines. See Downloading and Installing RabbitMQ. -->
+
+
+## Overview
+
+- Have the one machine prepared.
+- Install the Heimdall and Bor binaries on the Full Node machine.
+- Set up the Heimdall and Bor services on the Full Node machines.
+- Configure the Full node.
+- Start the Full node.
+- Check node health with the community.
+
+:::note
+You have to follow the exact outlined sequence of actions, otherwise you will run into issues.
+:::
+    
 
 ### Install build essentials
 
@@ -48,7 +90,7 @@ bash go-install.sh
 sudo ln -nfs ~/.go/bin/go /usr/bin/go
 ```
 
-> Note: Go version 1.15+ is recommended
+> Note: Go version 1.17 is recommended
 
 ### RabbitMq
 
@@ -253,25 +295,68 @@ You can use VPN to restrict access for 22 port as per your requirement and secur
 
 # Polygon Full Node Setup Using Binaries
 
-## Pre-requisites
+This section guides you through starting and running a full node on a binary.
 
-### Minimum System Requirements
+For the system requirements, see [Minimum Technical Requirements](http://localhost:3000/docs/develop/network-details/technical-requirements).
 
-- Minimum system requirements are as follows:
+:::note
 
-    16 GiB of memory
+Steps in this guide involve waiting for the Heimdall and Bor services to fully sync. This process takes several days to complete.
 
-    4 core CPU (t2 xLarge)
+Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [Snapshot Instructions for Heimdall and Bor](https://forum.matic.network/t/snapshot-instructions-for-heimdall-and-bor/2278).
 
-    Minimum 60GB disk (make sure it is extendable)
+For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.matic.today/).
 
-It is essential that you have **2 different Machines / VM** for your Sentry and Validator Node. Having a single Machine to run both, your Sentry and Validator nodes will run into issues
+:::
 
-You can obviously opt for higher setup infra to future-proof your Node. However, anything below the minimum requirements, you will run into issues sooner than later. The minimum requirements set above is for both Sentry and Validator nodes.
+
+## Prerequisites
+
+- One machine.
+- `build-essential` installed on the Full Node machine.
+- To install:
+- sudo apt-get install build-essential
+- Go 1.17 installed on both the Full Node machine.
+
+<!-- ### To install
+
+```bash 
+wget https://gist.githubusercontent.com/ssandeep/a6c7197811c83c71e5fead841bab396c/raw/e38212982ab8cdfc11776fa1a3aaf92b69e1cb15/go-install.sh
+```
+
+```bash 
+go-install.sh
+```
+
+```bash
+sudo ln -nfs ~/.go/bin/go /usr/bin/go
+```
+
+RabbitMQ installed on both the Full Node machines. See Downloading and Installing RabbitMQ. -->
+
+<!-- - Two machines — one local machine on which you will run the Ansible playbook; one remote machine — for Full Node.
+- On the local machine, Ansible installed.
+- On the local machine, Python 3.x installed.
+- On the remote machine, make sure Go is not installed.
+- On the remote machine, your local machine's SSH public key is on the remote machine to let Ansible connect to them. -->
+
+
+## Overview
+
+- Have the one machine prepared.
+- Install the Heimdall and Bor binaries on the Full Node machine.
+- Set up the Heimdall and Bor services on the Full Node machine.
+- Configure the Full node.
+- Start the Full node.
+- Check node health with the community.
+
+:::note
+You have to follow the exact outlined sequence of actions, otherwise you will run into issues.
+:::
 
 ### Install build essentials
 
-***This is required for both your Sentry and Validator node***
+***This is required for your full node***
 
 ```bash
 sudo apt-get install build-essential
@@ -279,7 +364,7 @@ sudo apt-get install build-essential
 
 ### Install GO
 
-***This is required for both your Sentry and Validator node***
+***This is required for your full node***
 
 ```bash
 wget https://gist.githubusercontent.com/ssandeep/a6c7197811c83c71e5fead841bab396c/raw/e38212982ab8cdfc11776fa1a3aaf92b69e1cb15/go-install.sh
@@ -287,13 +372,13 @@ bash go-install.sh
 sudo ln -nfs ~/.go/bin/go /usr/bin/go
 ```
 
-> Note: Go version 1.15+ is recommended
+> Note: Go version 1.17 is recommended
 
 ## Install Binaries
 
 ### Heimdall
 
-***This is required for both your Sentry and Validator node***
+***This is required for your full node***
 
 Next, install the latest version of Heimdall and services. Make sure you checkout the correct [released version](https://github.com/maticnetwork/heimdall/releases) on Git
 
@@ -316,7 +401,7 @@ heimdalld version --long
 
 ### Bor
 
-***This is required for both your Sentry and Validator node***
+***This is required for your full node***
 
 Next, install the latest version of Bor. Make sure you checkout the correct [released version](https://github.com/maticnetwork/bor/releases) via Git
 
