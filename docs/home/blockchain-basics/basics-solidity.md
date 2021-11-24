@@ -10,7 +10,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 
 ## Solidity<img src = 'https://solidity.readthedocs.io/en/v0.6.11/_images/logo.svg' width='50'/> 
-Solidity is an object oriented, high-level programming language for implementing smart contracts. It allows to write programs, which governs the behavior of accounts within blockhain network. It is statically typed, supports contract inheritance and has many built-in Contract Libraries. Solidity is similar to programming languages like  C++, Python and JavaScript. 
+Solidity is an object oriented, high-level programming language for implementing smart contracts. It allows to write programs, which governs the behavior of accounts within blockchain network. It is statically typed, supports contract inheritance and has many built-in Contract Libraries. Solidity is similar to programming languages like  C++, Python and JavaScript. 
 
 It comprised of: 
 - variables 
