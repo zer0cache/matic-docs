@@ -8,7 +8,7 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
-For Polygon Network, any participant can be qualified to became a Polygon's validator by running a full-node. The primary incentive to run a full node for validators is to earn Rewards and Transaction fee. Validator participating in consensus for Polygon incentivise to participate as they receives block rewards and transaction fee. 
+For Polygon Network, any participant can be qualified to become a Polygon's validator by running a full-node. The primary incentive to run a full node for validators is to earn Rewards and Transaction fee. Validator participating in consensus for Polygon incentivise to participate as they receives block rewards and transaction fee. 
 
 As Validators slots are limited for network, the process to get selected as one is to participate in on-chain auction process which happens at regular intervals as defined [here](https://www.notion.so/maticnetwork/State-of-Staking-03e983ed9cc6470a9e8aee47d51f0d14#a55fbd158b7d4aa89648a4e3b68ac716).
 
@@ -18,14 +18,14 @@ If the slot is open, then the auction is started to interested validators:
 
 - Where they will bid more than the last bid made for the slot.
 - The Process of Participating in Auction is outlined here:
-    - Auction are automatically started once the slot is opened.
+    - Auction is automatically started once the slot is opened.
     - To start participating in auction, Call `startAuction()`
     - This will lock your assets in Stack Manager.
     - If another potential validator stakes more than your stake then locked tokens will be returned back to you.
     - Again, Stake more to win this Auction.
-- At the end of the auction period, The highest bidder wins and becomes a Validator on Polygon's Network.
+- At the end of the auction period, the highest bidder wins and becomes a Validator on Polygon's Network.
 
-> Please keep full node running if your are participating in auction to avoid Slashing of stake due to inactive Node as a validator.
+> Please keep full node running if you are participating in auction to avoid Slashing of stake due to inactive Node as a validator.
 
 To process of a becoming a validator after the highest bidder won the slot is here:
 
@@ -39,7 +39,7 @@ To process of a becoming a validator after the highest bidder won the slot is he
 
 ### UnStake
 
-Unstacking allows validator to be out of active pool of validators. But to ensure Good Participation stake is locked for next 21 days.
+Unstaking allows validator to be out of active pool of validators. But to ensure Good Participation stake is locked for next 21 days.
 
 - When validator wants to exit from system and stop validating blocks and submitting checkpoints she can `unstake.`
 - This action is immediate as of now.
