@@ -24,7 +24,7 @@ Blockchain is a shared, transparent and immutable ledger for recording transacti
 Blockchain Technology stores information in blocks which are chronologically synchronised. And these blocks cannot be controlled by an individual making blockchain highly secured.
 
 2. **Decentralised Ledger** <br></br>
-Decentralised Ledger operates on peer to peer basis. DLT allows to record the transaction of assets and their details in multiple places at the same time without any central authority. Unlike traditional databases, distributed ledgers have no central data store or administration functionality.
+Decentralised Ledger operates on peer to peer basis. DLT allows recording the transaction of assets and their details in multiple places at the same time without any central authority. Unlike traditional databases, distributed ledgers have no central data store or administration functionality.
 
 3. **Immutable** <br></br>
 Once a block is sealed cryptographically or added to main chain, it is impossible to delete or edit, ensuring the immutability of the digital ledger.
