@@ -443,3 +443,7 @@ Delete Bor: `sudo rm -rf ~/.bor`
 **For binaries**
 
 Go to `CS-2003/bor` and then run, `bash stop.sh`
+
+### Diagnosing what went wrong in a node
+
+You can use [this script](https://github.com/maticnetwork/launch/tree/master/scripts/node_diagnostics.sh) to check periodially the sync status of your node.
