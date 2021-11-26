@@ -40,10 +40,10 @@ For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.ma
 ## Prerequisites
 
 
-- One machine.
+- One machine is required.
 - `build-essential` installed on the Full Node machine.
 - To install:
-- sudo apt-get install build-essential
+- `sudo apt-get install build-essential`
 - Go 1.17 installed on both the Full Node machine.
 
 <!-- ### To install
@@ -312,10 +312,10 @@ For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.ma
 
 ## Prerequisites
 
-- One machine.
+- One machine is required.
 - `build-essential` installed on the Full Node machine.
 - To install:
-- sudo apt-get install build-essential
+- `sudo apt-get install build-essential`
 - Go 1.17 installed on both the Full Node machine.
 
 <!-- ### To install
