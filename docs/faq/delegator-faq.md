@@ -141,7 +141,7 @@ No. Once your Delegation transactions are confirmed, and you can see your tokens
 
 ### I have unbonded, how long will it take to Unbond
 
-The unbonding period is currently set to 82 checkpoints. This is approximately 47 hours. Every checkpoint takes approximately 34 minutes. However, some checkpoints could be delayed upto ~1 hour due to congestion on Ethereum.
+The unbonding period is currently set to 82 checkpoints. This is approximately 9 days. Every checkpoint takes approximately 34 minutes. However, some checkpoints could be delayed upto ~1 hour due to congestion on Ethereum.
 
 ### I have unbonded, and I now see the Claim Stake button, but it is disabled, why is that
 
