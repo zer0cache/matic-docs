@@ -107,7 +107,7 @@ where
 Example:
 
 ```sh
-git checkout v0.2.3
+git checkout v0.2.4
 ```
 
 Install Heimdall:
@@ -143,7 +143,7 @@ where
 Example:
 
 ```sh
-git checkout v0.2.9
+git checkout v0.2.10
 ```
 
 Install Bor:
