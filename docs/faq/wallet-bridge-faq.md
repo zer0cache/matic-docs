@@ -23,7 +23,7 @@ We will soon add more wallets.
 
 ## How is Plasma different from PoS?
 
-Plasma comes with a additional security where your funds are locked in a challenge period , post 7 day period user can withdraw tokens. [https://docs.polygon.technology/docs/develop/ethereum-matic/getting-started](https://docs.polygon.technology/docs/develop/ethereum-matic/getting-started)
+Plasma comes with a additional security where your funds are locked in a challenge period of 2 seocnds, then the user can withdraw tokens. [https://docs.polygon.technology/docs/develop/ethereum-matic/getting-started](https://docs.polygon.technology/docs/develop/ethereum-matic/getting-started)
 
 ## What tokens are only available on Plasma?
 
@@ -146,17 +146,17 @@ It takes 7-8 minutes for the deposit transaction to complete. Please wait for so
 
 Checkpoints sometimes take more that 45 minutes to 1 hour based on network congestion on Ethereum, we suggest waiting for a while before raising a ticket.
 
-## I am trying to withdraw, but the challenge period is taking more than 7 days, how long should I wait?
+## I am trying to withdraw, but the challenge period is taking more than 2 seconds, how long should I wait?
 
-It can take a bit more than 7 days sometimes. Kindly wait or reach out to the Polygon team if its taking too long at [https://support.polygon.technology/support/home](https://support.polygon.technology/support/home)
+It can take a bit more than 2 seconds sometimes. Kindly wait or reach out to the Polygon team if its taking too long at [https://support.polygon.technology/support/home](https://support.polygon.technology/support/home)
 
 ## Is it possible to cancel a withdraw transaction?
 
 No, you have to complete the next steps. If the current gas price is too high, then please wait and try later when the price goes down.
 
-## Why is there a 7 day challenge period?
+## Why is there a 2 second challenge period?
 
-Plasma bridge comes with a plasma security challenge period of 7 days in which anyone can challenge the transaction that has happened on Polygon.
+Plasma bridge comes with a plasma security challenge period of 2 seconds in which anyone can challenge the transaction that has happened on Polygon.
 
 ## Why is the MATIC token is not supported on PoS?
 

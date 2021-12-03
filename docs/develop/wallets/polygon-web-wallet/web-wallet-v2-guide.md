@@ -128,7 +128,7 @@ Once you have confirmed the second transaction, you will receive your funds back
 
 ## Withdrawing Funds from Polygon Back to Ethereum on Plasma Bridge
 
-Withdrawing funds from Polygon back to the Ethereum mainnet via, Plasma Bridge is a 3-step process but with a caveat.  For the funds to be available back on Ethereum it will take 7 days.
+Withdrawing funds from Polygon back to the Ethereum mainnet via, Plasma Bridge is a 3-step process but with a caveat. 
 
 To withdraw funds, click on the ‘Withdraw’ link from any of the Plasma token type on ‘Your tokens on Polygon Mainnet’ section.
 

@@ -121,7 +121,7 @@ During burning of ERC20 tokens, providers are specified as below
 
 Withdrawal of funds is initiated from the child chain. A checkpoint interval of 30 mins(~10 minutes for testnet) is set, where all the blocks on the Polygon block layer are validated. Once the checkpoint is submitted to the root chain, the withdraw function can be triggered.
 
-Once the withdraw function is successful,an NFT Exit (ERC721) token is created. Users need to wait for a 7 day challenge period (~5 minutes for testnet). Once the challenge period is complete, the withdrawn funds can be claimed back to your account on the root chain using a process-exit which is explained in the next step.
+Once the withdraw function is successful,an NFT Exit (ERC721) token is created. Users need to wait for 2 seconds (challenge period for both mainnet and testnet) Once the challenge period is complete, the withdrawn funds can be claimed back to your account on the root chain using a process-exit which is explained in the next step.
 
 In the confirm withdraw step, providers are specified as below
 
@@ -149,7 +149,7 @@ await maticPoSClient.withdraw(burnTxHash, {
 
 ### Process Exit
 
-The exit process takes place on the root chain and upon confirmation on the root chain, equivalent amount of tokens burnt on child chain are released to the users account. Make sure the root chain network is selected in Metamask. This function can be called only after the 7 day challenge period(~5 mins on testnet)
+The exit process takes place on the root chain and upon confirmation on the root chain, equivalent amount of tokens burnt on child chain are released to the users account. Make sure the root chain network is selected in Metamask. This function can be called only after the challenge period (about 1 second)
 
 ```js
 await matic
