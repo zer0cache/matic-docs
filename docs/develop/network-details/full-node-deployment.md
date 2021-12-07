@@ -141,7 +141,6 @@ Setup full node for Polygon mainnet
 
     `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12-beta3 heimdall_branch=v0.2.4 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts`
 
-
     It should output the remote machine IP(s) you have configured
 
     <img src={useBaseUrl("img/network/full-node-mainnet.png")} />
@@ -151,7 +150,6 @@ Setup full node for Polygon mainnet
 
     `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12-beta3 heimdall_branch=v0.2.4 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"`
 
-
 - In case you run into any issues, delete and clean the whole setup using
 
     `ansible-playbook -l sentry playbooks/clean.yml`
@@ -159,7 +157,7 @@ Setup full node for Polygon mainnet
 - Login to the remote machine
 - Configure the following in `~/.heimdalld/config/config.toml`:
     - `moniker=<enter unique identifier>`
-    - `seeds="f4f605d60b8ffaaf15240564e58a81103510631c@159.203.9.164:26656,4fb1bc820088764a564d4f66bba1963d47d82329@44.232.55.71:26656"`
+    - `seeds="f4f605d60b8ffaaf15240564e58a81103510631c@159.203.9.164:26656,4fb1bc820088764a564d4f66bba1963d47d82329@44.232.55.71:26656,2eadba4be3ce47ac8db0a3538cb923b57b41c927@35.199.4.13:26656,3b23b20017a6f348d329c102ddc0088f0a10a444@35.221.13.28:26656,25f5f65a09c56e9f1d2d90618aa70cd358aa68da@35.230.116.151:26656"`
 - Configure the following in `~/.heimdalld/config/heimdall-config.toml`:
     - `eth_rpc_url =<insert Infura or any full node RPC URL to Ethereum>`
 - Add the following flag in `~/node/bor/start.sh` to the `bor` start params:
