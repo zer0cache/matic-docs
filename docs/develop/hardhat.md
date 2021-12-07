@@ -58,17 +58,22 @@ module.exports = {
 }
 ```
 
+## **Compile Smart contract file**
+
+```bash
+$ npx hardhat compile
+```
 
 ## **Deploying on Matic Network**
 
 Run this command in root of the project directory:
-```js
+```bash
 $ npx hardhat run scripts/sample-script.js --network matic
 ```
 
 Contract will be deployed on Matic's Mumbai Testnet, it look like this:
 
-```js
+```shell
 Compilation finished successfully
 Greeter deployed to: 0xfaFfCAD549BAA6110c5Cc03976d9383AcE90bdBE
 ```
