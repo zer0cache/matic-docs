@@ -48,7 +48,7 @@ There is limited space for accepting new validators. New validators can only joi
   To install:
 
   ```sh
-  wget https://gist.githubusercontent.com/ssandeep/a6c7197811c83c71e5fead841bab396c/raw/e38212982ab8cdfc11776fa1a3aaf92b69e1cb15/go-install.sh
+  wget https://gist.githubusercontent.com/ssandeep/a6c7197811c83c71e5fead841bab396c/raw/go-install.sh
   bash go-install.sh
   sudo ln -nfs ~/.go/bin/go /usr/bin/go
   ```
