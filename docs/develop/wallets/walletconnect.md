@@ -20,7 +20,7 @@ npm install --save @maticnetwork/walletconnect-provider
 Install matic.js for Matic integration:
 
 ```bash
-$ npm install --save maticjs
+$ npm install @maticnetwork/maticjs
 ```
 And add the following code in your App,
 

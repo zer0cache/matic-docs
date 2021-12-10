@@ -53,12 +53,14 @@ ETHEREUM_CHAINID: Chain ID of root chain
 To deposit ERC20 tokens, an approve function call has to be made before calling the deposit function. Upon clicking the deposit button, metamask will first ask to approve the transfer of a specified number of tokens and after the confirmation of the approval transaction, metamask will ask to confirm the deposit transaction. Make sure the root chain network is selected in metamask for deposit functionality.
 
 ```js
-await maticPoSClient.approveERC20ForDeposit(config.posRootERC20, x1, {
-  from: account,
-});
-await maticPoSClient.depositERC20ForUser(config.posRootERC20, account, amount, {
-  from: account,
-});
+// approve amount 10 on parent token
+const approveResult = await erc20ParentToken.approve(10);
+
+const erc20RootToken = posClient.erc20(<root token address>, true);
+
+//deposit 100 to user address
+const result = await erc20Token.deposit(100, <user address>);
+
 ```
 
 During deposit of ERC20 tokens, the providers are specified as below
@@ -86,24 +88,31 @@ Once deposited, the token can be transfered to any other account on the Polygon 
 During Transfer, only the `maticProvider` needs to be set as `window.web3`.
 
 ```js
-await maticPoSClient.transferERC20Tokens(
-  config.posChildERC20,
-  account,
-  amount,
-  {
-    from: account,
-  }
-);
+const erc20Token = posClient.erc20(<token address>);
+
+const result = await erc20Token.transfer(<amount>,<to>);
+
+const txHash = await result.getTransactionHash();
+
+const txReceipt = await result.getReceipt();
+
 ```
 
 ### Burn
 
 For withdrawing tokens back to root chain,tokens have to be first burnt on child chain. Make sure child chain network is selected in metamask.
+The **withdrawStart()** method can be used to initiate the withdraw process which will burn the specified amount on polygon chain.
 
 ```js
-await maticPoSClient.burnERC20(config.posChildERC20, amount, {
-  from: account,
-});
+const erc20Token = posClient.erc20(<token address>);
+
+// start withdraw process for 100 amount
+const result = await erc20Token.withdrawStart(100);
+
+const txHash = await result.getTransactionHash();
+
+const txReceipt = await result.getReceipt();
+
 ```
 
 During burning of ERC20 tokens, providers are specified as below
@@ -132,13 +141,20 @@ During exit of ERC20 tokens, the providers are specified as below
 
 `parentProvider: window.web3`
 
-The **_exitERC20_** function in PoS bridge involves block proof generation by querying the child chain multiple times and hence it may take 4-5 seconds for Metamask to popup as it consumes time to build the transaction object. 
+The **_withdrawExit_** function in PoS bridge involves block proof generation by querying the child chain multiple times and hence it may take 4-5 seconds for Metamask to popup as it consumes time to build the transaction object. 
 
 ```js
-await maticPoSClient.exitERC20(burnTxHash, {
-  from: account,
-});
+const erc20RootToken = posClient.erc20(<root token address>, true);
+
+// start withdraw process for 100 amount
+const result = await erc20Token.withdrawExit(<burn tx hash>);
+
+const txHash = await result.getTransactionHash();
+
+const txReceipt = await result.getReceipt();
+
 ```
+You can also use the **_withdrawExitFaster_** method which can be used to exit the withdraw process faster. For more details please visit this [guide](https://maticnetwork.github.io/matic.js/docs/pos/erc20/withdraw-exit-faster/)
 
 <div
         style={{
