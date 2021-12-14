@@ -34,7 +34,7 @@ module.exports = {
     {
       type: "category",
       label: "Deploying on Polygon",
-      items: ["develop/remix", "develop/truffle", "develop/hardhat","develop/replit"],
+      items: ["develop/alchemy", "develop/remix", "develop/truffle", "develop/hardhat","develop/replit"],
     },
     {
       type: "category",
