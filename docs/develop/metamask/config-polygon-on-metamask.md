@@ -11,8 +11,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## Configure Polygon on Metamask
-
 In order to view the flow of funds in your accounts, on the Polygon Network, you will need to configure Polygon `{testnet, mainnet}` URL on Metamask.
 
 <Tabs

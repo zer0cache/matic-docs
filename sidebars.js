@@ -80,6 +80,7 @@ module.exports = {
           type: "category",
           label: "Metamask",
           items: [
+            "develop/metamask/overview",
             "develop/metamask/hello",
             "develop/metamask/config-polygon-on-metamask",
             "develop/metamask/custom-tokens",
