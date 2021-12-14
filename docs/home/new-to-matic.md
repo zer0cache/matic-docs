@@ -20,6 +20,7 @@ Polygon is a scaling solution for public blockchains. Based on an adapted implem
 <!-- ### Are you an Experience Blockchain Developer? -->
 
 * Deploy your Contracts on Polygon
+    - [Using Alchemy](/docs/develop/alchemy)
     - [Using Remix](/docs/develop/remix)
     - [Using Truffle](/docs/develop/truffle)
     - [Using Hardhat](/docs/develop/hardhat)
