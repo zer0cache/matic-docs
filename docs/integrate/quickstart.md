@@ -22,6 +22,7 @@ this section is for you.
 ## Deploy smart contracts
 
 * Deploy your Contracts on Polygon
+    - [Using Alchemy](/docs/develop/alchemy)
     - [Using Remix](/docs/develop/remix)
     - [Using Truffle](/docs/develop/truffle)
 * Configure the Web3 RPC-URL to https://rpc-mumbai.matic.today, *Everything else remains the same*
