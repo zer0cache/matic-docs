@@ -12,8 +12,8 @@ Polygon is a scaling solution for public blockchains. Based on an adapted implem
 ### Types of Interaction on Polygon
 
 * [Polygon PoS chain](/docs/develop/getting-started)
-* [Ethereum + Polygon with PoS bridge](https://docs.polygon.technology/docs/develop/ethereum-matic/pos/getting-started)
-* [Ethereum + Polygon with Plasma bridge](https://docs.polygon.technology/docs/develop/ethereum-matic/plasma/getting-started)
+* [Ethereum + Polygon with PoS bridge](https://docs.polygon.technology/docs/develop/ethereum-polygon/pos/getting-started)
+* [Ethereum + Polygon with Plasma bridge](https://docs.polygon.technology/docs/develop/ethereum-polygon/plasma/getting-started)
 
 ### Deploy Smart Contracts
 

@@ -23,7 +23,7 @@ We will soon add more wallets.
 
 ## How is Plasma different from PoS?
 
-Plasma comes with a additional security where your funds are locked in a challenge period of 2 seocnds, then the user can withdraw tokens. [https://docs.polygon.technology/docs/develop/ethereum-matic/getting-started](https://docs.polygon.technology/docs/develop/ethereum-matic/getting-started)
+Plasma comes with a additional security where your funds are locked in a challenge period of 2 seocnds, then the user can withdraw tokens. [https://docs.polygon.technology/docs/develop/ethereum-polygon/getting-started](https://docs.polygon.technology/docs/develop/ethereum-polygon/getting-started)
 
 ## What tokens are only available on Plasma?
 
