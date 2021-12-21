@@ -53,23 +53,8 @@ module.exports = {
       type: "category",
       label: "Tools",
       items: [
-        {
-          type: "link",
-          label: "Polygon Faucet",
-          href: "https://faucet.polygon.technology/",
-        },
-        // {
-        //   type: "link",
-        //   label: "RPC Health",
-        //   href: "https://status.matic.today",
-        // },
-        // {
-        //   type: "link",
-        //   label: "Checkpoint Status",
-        //   href: "https://status.matic.today/#/checkpoints",
-        // },
+        "develop/tools/polygon-faucet",
         "develop/tools/polygon-gas-station",
-        
       ],
     },
     {
