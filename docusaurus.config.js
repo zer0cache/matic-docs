@@ -11,6 +11,123 @@ module.exports = {
   },
   onBrokenLinks: "log",
   themeConfig: {
+    footer: {
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Home',
+              to: '/',
+            },
+            {
+              label: 'Develop',
+              to: '/docs/develop/getting-started',
+            },
+            {
+              label: 'Docs GitHub',
+              href: 'https://github.com/maticnetwork/matic-docs',
+            },
+            {
+              label: 'Support',
+              href: 'https://forum.polygon.technology/',
+            },
+            {
+              label: 'FAQs',
+              to: '/docs/faq/technical-faqs',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Discord',
+              href: 'https://discord.com/invite/polygon',
+            },
+            {
+              href: "https://forum.polygon.technology/",
+              label: "Forum",
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/0xPolygon',
+            },
+            {
+              label: 'Reddit',
+              href: 'https://www.reddit.com/r/0xPolygon/',
+            },
+            {
+              label: 'Telegram',
+              href: 'https://t.me/polygonofficial',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/maticnetwork',
+            },
+          ],
+        },
+        {
+          title: "Developers",
+          items: [
+          {
+              label: "Get Started",
+              href: "https://polygon.technology/get-started/"
+          },
+          {
+              label: "Hackathons",
+              href: "https://www.polygongrantshackathon.com/"
+          },
+          {
+              label: "Bug Bounty",
+              href: "https://immunefi.com/bounty/polygon/"
+          },
+          {
+            label: "DApps",
+            href: "https://awesomepolygon.com/"
+          },
+          {
+            label: "Use Polygon",
+            href: "https://wallet.polygon.technology/"
+          },
+      ]
+      },
+      {
+        title: "Company",
+        items: [
+        {
+            label: "Polygon Technology",
+            href: "https://polygon.technology/"
+        },
+        {
+            label: "Blogs",
+            href: "https://blog.polygon.technology/"
+        },
+        {
+          label: "Brand Kit",
+          href: "https://polygon.technology/brand-resources/"
+      },
+        {
+            label: "Careers",
+            href: "https://polygon.technology/careers/"
+        },
+        {
+          label: "Contact",
+          href: "hhttps://polygon.technology/contact-us/"
+        },
+        {
+          label: "About Us",
+          href: "https://polygon.technology/about/"
+        },
+    ]
+    },
+      ],
+      logo: {
+        alt: 'Polygon Logo',
+        src: 'img/polygon/polygon-logo.svg',
+      },
+      copyright: `Copyright © ${new Date().getFullYear()} Polygon technology`, 
+    },
     announcementBar: {
       id: "support_us",
       content:
@@ -38,8 +155,8 @@ module.exports = {
       hideOnScroll: true,
       logo: {
         alt: "Polygon logo",
-        src: "/img/polygon/primary-logo.svg",
-        srcDark: "/img/polygon/monotone-white.png",
+        src: "/img/polygon/polygon-logo.webp",
+        srcDark: "/img/polygon/polygon-logo-inverted.png",
         // href: 'https://docs.polygon.technology/', // default to siteConfig.baseUrl
         target: "_self", // by default, this value is calculated based on the `href` attribute (the external link will open in a new tab, all others in the current one)
       },
@@ -80,7 +197,7 @@ module.exports = {
           position: "right",
         },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/maticnetwork",
           position: "right",
           className: "header-github-link",
           "aria-label": "GitHub repository",
