@@ -24,6 +24,7 @@ All the network related details can be found in [network docs](/docs/develop/net
 
 - Setup [Metamask Wallet](/docs/develop/metamask/overview) or [Arkane Wallet](/docs/develop/wallets/arkane/intro)
 - Deploy your Contracts on Polygon 
+    - [Using Alchemy](/docs/develop/alchemy)
     - [Using Remix](/docs/develop/remix)
     - [Using Truffle](/docs/develop/truffle)
     - [Using Hardhat](/docs/develop/hardhat)
@@ -65,8 +66,9 @@ All the network related details can be found in [network docs](/docs/develop/net
 
 - [Full Stack DApp: Tutorial Series](https://kauri.io/full-stack-dapp-tutorial-series/5b8e401ee727370001c942e3/c)
 - Getting to know your tools:
-    - [Web3js](https://www.dappuniversity.com/articles/web3-js-intro), [Ethers.js](https://docs.ethers.io/v5/),[Remix](https://docs.polygon.technology/docs/develop/remix/), [Truffle](https://docs.polygon.technology/docs/develop/truffle), [Metamask](/docs/develop/metamask/overview), [Arkane](/docs/develop/wallets/arkane/intro)
 
+    - [Web3js](https://www.dappuniversity.com/articles/web3-js-intro), [Ethers.js](https://docs.ethers.io/v5/),[Remix](https://docs.polygon.technology/docs/develop/remix/), [Truffle](https://docs.polygon.technology/docs/develop/truffle), [Metamask](/docs/develop/metamask/overview), [Arkane](/docs/develop/wallets/arkane/intro)
+- [Integrating Webhooks](https://docs.alchemy.com/alchemy/guides/v2-alchemy-notify)
 
 **😎 Advanced**
 
@@ -108,6 +110,7 @@ All the network related details can be found in [network docs](/docs/develop/net
 
 - [CryptoZombies](https://cryptozombies.io/)
 - [Full stack dapp tutorial series](https://kauri.io/#collections/Full%20Stack%20dApp%20Tutorial%20Series/full-stack-dapp-tutorial-series-intro/)
+- [Alchemy (Blockchain APIs and Developer Tools)](https://alchemy.com/?a=polygon-docs) (Recommended)
 - [Infura Docs](https://infura.io/docs)
 - [Truffle Suite Docs](https://www.trufflesuite.com/docs) (Recommended)
 - [Truffle tutorial](https://www.trufflesuite.com/tutorial) (Recommended)
@@ -123,6 +126,8 @@ All the network related details can be found in [network docs](/docs/develop/net
 ### **Learn the Basics of Development**
 
 - [Full stack dapp tutorial series](https://kauri.io/#collections/Full%20Stack%20dApp%20Tutorial%20Series/full-stack-dapp-tutorial-series-intro/)
+- [Hello World Smart Contract](https://docs.alchemy.com/alchemy/tutorials/hello-world-smart-contract)
+- [How to Create an NFT](https://docs.alchemy.com/alchemy/tutorials/how-to-create-an-nft)
 - [Truffle tutorial](https://www.trufflesuite.com/tutorial)
 - [Dapp University](https://www.youtube.com/channel/UCY0xL8V6NzzFcwzHCgB8orQ)
 - [ConsenSys Academy Developer Program On-Demand course](https://consensys.net/academy/ondemand/)
@@ -159,6 +164,7 @@ Twitter:
 
 - [Bankless: How to Use Crypto Twitter](https://bankless.substack.com/p/how-to-use-crypto-twitter-to-level-77c)
 - [EthHub](https://twitter.com/ethhub_io)
+- [Alchemy](https://twitter.com/AlchemyPlatform)
 - [CodeFi](https://twitter.com/ConsenSysCodefi)
 - [ConsenSys Labs](https://twitter.com/ConsenSys)
 - [Universal Login](https://twitter.com/unilogin)
@@ -182,6 +188,7 @@ Twitter:
 ### **Newsletters**
 
 - [Week In Ethereum](https://weekinethereumnews.com/)
+- [Alchemy: Supercharged](https://www.alchemy.com/newsletter)
 - [EthHub](https://ethhub.io/)
 - [Chain Letter](https://forms.technologyreview.com/chain-letter/)
 - [ConsenSys Newsletter Digest](https://share.hsforms.com/1HiFwsb55S5GUf-EOe0KP8Q2urwb?email=)

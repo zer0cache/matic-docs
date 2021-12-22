@@ -34,7 +34,7 @@ module.exports = {
     {
       type: "category",
       label: "Deploying on Polygon",
-      items: ["develop/remix", "develop/truffle", "develop/hardhat","develop/replit"],
+      items: ["develop/alchemy", "develop/remix", "develop/truffle", "develop/hardhat","develop/replit"],
     },
     {
       type: "category",
@@ -425,6 +425,11 @@ module.exports = {
         "validate/validate/change-signer-address",
         "validate/validate/validator-commission-operations",
       ],
+    },
+    {
+      type: "category",
+      label: "Knowledge Base",
+      items: ["validate/knowledge-base/known-issues","validate/knowledge-base/how-to",]
     },
     "validate/validator-faq",
     "validate/general-faq",
