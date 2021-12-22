@@ -9,7 +9,7 @@ module.exports = {
   customFields: {
     description: "Build your next blockchain app on Polygon.",
   },
-  onBrokenLinks: 'log',
+  onBrokenLinks: "log",
   themeConfig: {
     announcementBar: {
       id: "support_us",
@@ -29,7 +29,7 @@ module.exports = {
       defaultLanguage: "javascript",
     },
     algolia: {
-      appId: 'BH4D9OD16A',
+      appId: "BH4D9OD16A",
       apiKey: "c3ad4eabc5af314ea3ed331efbe0a5c4",
       indexName: "matic_developer",
       algoliaOptions: {},
@@ -80,6 +80,12 @@ module.exports = {
           position: "right",
         },
         {
+          href: "https://github.com/facebook/docusaurus",
+          position: "right",
+          className: "header-github-link",
+          "aria-label": "GitHub repository",
+        },
+        {
           label: "Polygon SDK",
           href: "https://sdk-docs.polygon.technology/docs/overview/",
           position: "left",
@@ -90,10 +96,18 @@ module.exports = {
           position: "left",
           activeBasePath: "docs/faq",
         },
-   
       ],
     },
   },
+  stylesheets: [
+    {
+      href: "https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css",
+      type: "text/css",
+      integrity:
+        "sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc",
+      crossorigin: "anonymous",
+    },
+  ],
   presets: [
     [
       "@docusaurus/preset-classic",
