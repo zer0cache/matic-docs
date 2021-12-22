@@ -9,7 +9,7 @@ module.exports = {
   customFields: {
     description: "Build your next blockchain app on Polygon.",
   },
-  onBrokenLinks: "log",
+  onBrokenLinks: 'log',
   themeConfig: {
     footer: {
       links: [
@@ -146,7 +146,7 @@ module.exports = {
       defaultLanguage: "javascript",
     },
     algolia: {
-      appId: "BH4D9OD16A",
+      appId: 'BH4D9OD16A',
       apiKey: "c3ad4eabc5af314ea3ed331efbe0a5c4",
       indexName: "matic_developer",
       algoliaOptions: {},
