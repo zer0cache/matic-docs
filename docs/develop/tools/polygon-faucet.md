@@ -28,20 +28,22 @@ Tokens on testnet networks has no value as they are only used for testing purpos
     - **Goerli** - Ethereum test network
     - **DA Testnet** - Internal testing
 
-3. Select the type of the testnet token that you want to receive:
- <img src={useBaseUrl("img/tools/select-tokens.png")} />
-
+3. Select the type of the testnet token that you want to receive, where:
    - **MATIC Token** - Testnet token of Polygon network
    - **Test ERC20** - Standard testnet token on the Ethereum network
    - **Test ERC1155** - Standard testnet token used for NFTs
    - **LINK** - ERC677 testnet token that inherits functionality from the ERC20
 
+<img src={useBaseUrl("img/tools/select-tokens.png")} />
+
 4. Enter your wallet address, you can copy it from your Metamask or Polygon wallet
 
-5. Click on the button "Submit" and "Confirm" the details
+5. Click on the button "Submit" to sent your request
+
+6. Click on the button "Confirm" to agree on the entered details
  <img src={useBaseUrl("img/tools/confirm-transaction.png")} />
 
-6. You have successfully submitted your request, you will receive the requested testnet tokens within 1 to 2 minutes
+7. Congratulations, you have successfully submitted your request. You will receive the requested testnet tokens within 1 to 2 minutes
  <img src={useBaseUrl("img/tools/submitted.png")} />
 
 :::note
