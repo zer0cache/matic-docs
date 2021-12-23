@@ -21,12 +21,13 @@ Tokens on testnet networks has no value as they are only used for testing purpos
 ### How to use Polygon Faucet
 
 1. Navigate to [faucet.polygon.technology](https://faucet.polygon.technology/)
- <img src={useBaseUrl("img/tools/faucet.png")} />
 
-2. Select one of the blockchain testnet networks:
+2. Select one of the blockchain testnet networks. Where:
     - **Mumbai** - Polygon test network
     - **Goerli** - Ethereum test network
     - **DA Testnet** - Internal testing
+
+ <img src={useBaseUrl("img/tools/faucet.png")} />
 
 3. Select the type of the testnet token that you want to receive, where:
    - **MATIC Token** - Testnet token of Polygon network
@@ -38,7 +39,7 @@ Tokens on testnet networks has no value as they are only used for testing purpos
 
 4. Enter your wallet address, you can copy it from your Metamask or Polygon wallet
 
-5. Click on the button "Submit" to sent your request
+5. Click on the button "Submit" to send your request
 
 6. Click on the button "Confirm" to agree on the entered details
  <img src={useBaseUrl("img/tools/confirm-transaction.png")} />
