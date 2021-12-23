@@ -12,7 +12,11 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-[Polygon Faucet](https://faucet.polygon.technology/) is a tool that allows you to get free MATIC tokens on testnet to help you get started with polygon network. The tokens enable you to work with Polygon features without spending real Matic on the mainnet.
+[Polygon Faucet](https://faucet.polygon.technology/) is a tool that allows you to get free MATIC tokens on testnet to help you get started with polygon network. The tokens enable you to work with Polygon features without spending real MATIC on the mainnet.
+
+:::note
+Tokens on testnet networks has no value as they are only used for testing purposes.
+:::
 
 ### How to use Polygon Faucet
 
@@ -31,10 +35,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
    - **Test ERC20** - Standard testnet token on the Ethereum network
    - **Test ERC1155** - Standard testnet token used for NFTs
    - **LINK** - ERC677 testnet token that inherits functionality from the ERC20
-
-:::note
-Tokens on testnet networks has no value as they are only used for testing purposes.
-:::
 
 4. Enter your wallet address, you can copy it from your Metamask or Polygon wallet
 
