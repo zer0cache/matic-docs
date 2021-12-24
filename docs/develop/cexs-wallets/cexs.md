@@ -10,24 +10,18 @@ image: https://matic.network/banners/matic-network-16x9.png
 | # |Exchange Name       |CEX/DEX     |Tokens integrated                                                                                                            |
 |---|--------------------|------------|-----------------------------------------------------------------------------------------------------------------------------|
 |1  |AscendEX (BitMax)   |CEX         |MATIC, USDC, ROUTE, ZEE, PLOT                                                                                                |
-|2  |Gate.io             |CEX         |USDT, USDC, MATIC                                                                                                            |
-|3  |Gemini              |CEX         |Emailed                                                                                                                      |
-|4  |BitStamp            |CEX         |Emailed                                                                                                                      |
-|5  |Upbit Korea         |CEX         |Emailed                                                                                                                      |
+|2  |Gate.io             |CEX         |USDT, USDC, MATIC                                                                                                            |                                                                                                                    |
 |6  |OKCoin              |CEX         |USDC, USDT, DAI, ETH, UNI, LINK, COMP (11) - only withdrawals                                                                |
-|7  |Bithumb Korea       |CEX         |Not part of TG group                                                                                                         |
+|7  |Bithumb Korea       |CEX         |                                                                                                        |
 |8  |BitBnS              |CEX         |MATIC, USDC, USDT, WETH, LINK, AAVE                                                                                          |
 |9  |Bitfinex            |CEX         |                                                                                                                             |
-|10 |KuCoin              |CEX         |Matic                                                                                                                        |
+|10 |KuCoin              |CEX         |MATIC                                                                                                                       |
 |11 |SwapSwop (Estonia)  |CEX         |                                                                                                                             |
-|12 |CoinSwitch Kuber    |CEX         |                                                                                                                             |
-|13 |Binaryx Exchange    |CEX         |Emailed                                                                                                                      |
-|14 |Huobi               |CEX         |                                                                                                                             |
-|15 |Coinsbit            |CEX         |Pinged on TG                                                                                                                 |
-|16 |Simplex.com         |CEX         |                                                                                                                             |
-|17 |Letsexchange.io     |CEX         |Submitted req on their site                                                                                                  |
+|12 |CoinSwitch Kuber    |CEX         |                                                                                                                             |                                                                                                                   |
+|14 |Huobi               |CEX         |                                                                                                                             |                                                                                                               |
+|16 |Simplex.com         |CEX         |                                                                                                                             |                                                                                                |
 |18 |Bitgo               |CEX         |                                                                                                                             |
-|19 |MXC                 |CEX         |USDC, USDT, MATIC (10)                                                                                                       |
+|19 |MXC                 |CEX         |USDC, USDT, MATIC                                                                                                       |
 |20 |WazirX              |CEX         |                                                                                                                             |
 |21 |OKEx                |CEX         |BAL, BAT, CEL, COMP, CRV, DAI, ETH, GHST, GUSD, LINK, MKR, PAX, SNX, SUSHI, TUSD, UNI, USDC, USDT, USDK, wBTC, YFI, YFII, ZRX|
 |22 |BitMart             |CEX         |MATIC                                                                                                                        |
@@ -35,18 +29,17 @@ image: https://matic.network/banners/matic-network-16x9.png
 |24 |Kraken (Europe)     |CEX         |                                                                                                                             |
 |25 |Coinone             |CEX         |                                                                                                                             |
 |26 |Burency Exchange    |CEX         |                                                                                                                             |
-|27 |Binance             |CEX         |                                                                                                                             |
-|28 |Bitcoin.com Exchange|CEX         |TG Group                                                                                                                     |
+|27 |Binance             |CEX         |                                                                                                                             |                                                                                                                   |
 |29 |Huobi Global        |CEX         |                                                                                                                             |
 |30 |Poloniex            |CEX         |                                                                                                                             |
 |31 |Binance US          |CEX         |                                                                                                                             |
 |32 |Bitforex            |CEX         |USDT                                                                                                                         |
-|33 |Bittrex (Global)    |CEX         |September                                                                                                                    |
+|33 |Bittrex (Global)    |CEX         |                                                                                                                    |
 |34 |Coinbase Pro        |CEX         |                                                                                                                             |
 |35 |CoinDCX             |CEX         |                                                                                                                             |
 |36 |Digifinex           |CEX         |                                                                                                                             |
 |37 |eToroX              |CEX         |                                                                                                                             |
-|38 |HitBTC              |CEX         |Could you please clarify if the ERC20 contract going to be disabled in the near future?                                      |
+|38 |HitBTC              |CEX         |                                     |
 |39 |Huobi Indonesia     |CEX         |                                                                                                                             |
 |40 |Huobi Korea         |CEX         |                                                                                                                             |
 |41 |LATOKEN             |CEX         |                                                                                                                             |
@@ -93,13 +86,13 @@ image: https://matic.network/banners/matic-network-16x9.png
 |82 |WhiteBIT            |CEX         |                                                                                                                             |
 |83 |XT.COM              |            |MATIC                                                                                                                        |
 |84 |ZG.com              |CEX         |                                                                                                                             |
-|85 |Bybit               |CEX         |Q4                                                                                                                           |
+|85 |Bybit               |CEX         |                                                                                                                         |
 |86 |7b                  |CEX (broker)|                                                                                                                             |
 |87 |HotBit              |CEX         |                                                                                                                             |
-|88 |P2PB2B              |CEX         |Charges to list MATIC                                                                                                        |
+|88 |P2PB2B              |CEX         |                                                                                                       |
 |89 |Hoo.com             |CEX         |                                                                                                                             |
 |90 |MEXC                |CEX         |                                                                                                                             |
-|91 |Bitbank             |CEX         |Listing is in progress                                                                                                       |
+|91 |Bitbank             |CEX         |                                                                                                      |
 |92 |Bitkub              |CEX         |                                                                                                                             |
 |93 |Currency.com        |CEX         |                                                                                                                             |
 |94 |Bitso               |CEX         |                                                                                                                             |
@@ -109,7 +102,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 |98 |MAX Maicoin         |CEX         |                                                                                                                             |
 |99 |BitPro              |CEX         |                                                                                                                             |
 |100|CoinMetro           |CEX         |                                                                                                                             |
-|101|Kuna Exchange       |CEX         |Price to list MATIC                                                                                                          |
+|101|Kuna Exchange       |CEX         |                                                                                                         |
 |102|Bibox               |CEX         |                                                                                                                             |
 |103|Oceanex             |CEX         |                                                                                                                             |
 |104|Paribu              |CEX         |                                                                                                                             |
@@ -117,7 +110,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 |106|ExMarkets           |CEX         |                                                                                                                             |
 |107|BTSE                |CEX         |                                                                                                                             |
 |108|BHEX                |CEX         |                                                                                                                             |
-|109|Coincheck           |CEX         |Oct list MATIC                                                                                                               |
+|109|Coincheck           |CEX         |                                                                                                             |
 |110|Luno                |CEX         |                                                                                                                             |
 |111|Nominex             |CEX         |                                                                                                                             |
 |112|Stormgain           |CEX         |                                                                                                                             |
