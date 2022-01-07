@@ -7,14 +7,17 @@
 ![PRs](https://img.shields.io/github/issues-pr-raw/maticnetwork/matic-docs)
 ![contributors](https://img.shields.io/github/contributors-anon/maticnetwork/matic-docs)
 ![size](https://img.shields.io/github/languages/code-size/maticnetwork/matic-docs) 
-![lines](https://img.shields.io/tokei/lines/github/maticnetwork/matic-docs)
 [![Discord](https://img.shields.io/discord/714888181740339261?color=1C1CE1&label=Polygon%20%7C%20Discord%20%F0%9F%91%8B%20&style=flat-square)](https://discord.gg/zdwkdvMNY2)
 [![Twitter Follow](https://img.shields.io/twitter/follow/0xPolygon.svg?style=social)](https://twitter.com/0xPolygon)
+
+
+![Frame 3808](https://user-images.githubusercontent.com/63050765/148505368-134636fe-84e1-41bd-a30f-0e01907afbc1.png)
+
 
 Polygon is a scaling solution for public blockchains that combines the best of Ethereum and sovereign Blockchains into a full-stack scaling solution. Polygon documentation website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 
-## How to contribute to our Documentation
+## How to contribute to our Documentation🛠️
 
 ### Contribution  Guidelines
 We believe one of the things that makes Polygon special is its coherent design and we seek to retain this defining characteristic. From the outset we defined some guidelines to ensure new contributions only ever enhance the Documentation.
@@ -135,6 +138,6 @@ Note that for editing suggestions you must have a Github account and good knowle
 
 <hr style="margin-top: 3em; margin-bottom: 3em;">
 
-## Join our Discord server
+## Join our Discord server👋
 
 Join Polygon community  – share your ideas or just say hi over [on Discord](https://discord.gg/zdwkdvMNY2).
