@@ -141,7 +141,7 @@ Hackathons take place at blockchain conferences and meetups all over the world. 
 
 <div style={{textAlign: 'center', paddingTop: '15px', paddingBottom: '15px'}}>
   <button className="btn btn-primary btn-md">
-    <a href="https://discord.gg/DfWQd2Tc" target="_blank" style={{color: 'inherit'}}>
+    <a href="https://discord.gg/polygon" target="_blank" style={{color: 'inherit'}}>
       Polygon's Hackathons Discord Channel
     </a>
   </button>

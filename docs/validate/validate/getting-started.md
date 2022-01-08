@@ -25,5 +25,5 @@ This section guides you through the following topics:
 
 Community assistance:
 
-* [Discord](https://discord.gg/XvpHAxZ)
+* [Discord](https://discord.gg/polygon)
 * [Forum](https://forum.polygon.technology/)

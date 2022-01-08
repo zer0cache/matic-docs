@@ -44,6 +44,6 @@ To get tokens, you can access the [Polygon faucet](https://faucet.polygon.techno
 Check out the forum and join the discussion on Discord.
 
 * [Forum](https://forum.polygon.technology)
-* [Discord](https://discord.gg/XvpHAxZ)
+* [Discord](https://discord.gg/polygon)
 
 See also the [Immunefi  bug bountry program](https://immunefi.com/bounty/polygon/).
