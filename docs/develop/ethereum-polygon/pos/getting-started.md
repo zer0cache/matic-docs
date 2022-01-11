@@ -19,7 +19,7 @@ Proof of stake based assets provides PoS security and faster exit with one check
 
 ## Steps to use the PoS Bridge
 
-Before we enter into this section of the docs, it may help to have a thorough understanding of these terms as you'll interact with them while trying to use the bridge. [Mapping](https://docs.polygon.technology/docs/develop/ethereum-polygon/submit-mapping-request/) and the [State Sync Mechanism](https://docs.polygon.technology/docs/validate/validator/state-sync-mechanism/)
+Before we enter into this section of the docs, it may help to have a thorough understanding of these terms as you'll interact with them while trying to use the bridge. [Mapping](https://docs.polygon.technology/docs/develop/ethereum-polygon/submit-mapping-request/) and the [State Sync Mechanism](https://docs.polygon.technology/docs/contribute/state-sync/state-sync/)
 
 Done with those links? Let's continue to a high level overview of the flow then.
 

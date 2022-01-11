@@ -105,7 +105,7 @@ It is the moral duty of the validators to communicate the commission rates and t
 
 The preferred platforms to communicate the commission rates are:
 
-* [Discord](https://discord.gg/XvpHAxZ)
+* [Discord](https://discord.gg/polygon)
 * [Forum](https://forum.polygon.technology/)
 
 ### Communication
@@ -116,7 +116,7 @@ Communicating issues as early as possible ensures that the community and the Pol
 
 The preferred platforms to communicate the commission rates are:
 
-* [Discord](https://discord.gg/XvpHAxZ)
+* [Discord](https://discord.gg/polygon)
 * [Forum](https://forum.polygon.technology/)
 * [GitHub](https://github.com/maticnetwork)
 

@@ -119,7 +119,7 @@ run
 
     heimdalld unsafe-reset-all 
 
-and start Heimdall services again. You can refer to this guide - https://docs.matic.network/docs/validate/mainnet/validator-guide
+and start Heimdall services again. You can refer to this guide - https://docs.polygon.technology/docs/validate/validate/run-validator-ansible
 
 ### 5. From where do I create the API key?
 

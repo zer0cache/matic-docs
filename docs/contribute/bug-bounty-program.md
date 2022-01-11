@@ -34,6 +34,6 @@ To get tokens you can access our faucet: https://faucet.polygon.technology/ and 
 
 Check out the forum and join the discussion on Discord.
 * **Forum** - https://forum.matic.network
-* **Discord** - https://discord.gg/XvpHAxZ
+* **Discord** - https://discord.gg/polygon
 
 For more information about the program visit https://hackerone.com/matic-network. Please note that the HackerOne page for Polygon is currently only an invite-only page. The HackerOne page will be open to the public on June 1st, 2020.

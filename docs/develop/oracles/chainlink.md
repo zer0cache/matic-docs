@@ -176,7 +176,7 @@ There are currently only a few operational Chainlink oracles on the Polygon Mumb
 * LINK: <a href="https://mumbai.polygonscan.com/address/0x70d1F773A9f81C852087B77F6Ae6d3032B02D2AB/transactions" target="_blank">`0x326C977E6efc84E512bB9C30f76E30c160eD06FB`</a>
 
 
-To obtain LINK on Mumbai Testnet, head to the <a href="https://faucet.matic.network/" target="_blank">faucet here</a>.
+To obtain LINK on Mumbai Testnet, head to the <a href="https://faucet.polygon.technology/" target="_blank">faucet here</a>.
 
 # Which APIs are Supported?
 

@@ -10,7 +10,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 
 - [Network Details](/docs/develop/network-details/network) -> To view network details
-- [Polygon Faucet](https://faucet.matic.network/) -> Get TestTokens at Polygon faucet
+- [Polygon Faucet](https://faucet.polygon.technology/) -> Get TestTokens at Polygon faucet
 
 
 ## Testnets
