@@ -20,7 +20,7 @@ Once we have those installed, To install hardhat, you need to create an npm proj
 ```js
 $ npm install --save-dev hardhat
 ```
-To create your Hardhat project run npx hardhat in your project folder
+To create your Hardhat project run `npx hardhat` in your project folder
 Let’s create the sample project and go through these steps to try out the sample task and compile, test and deploy the sample contract.
 
 
