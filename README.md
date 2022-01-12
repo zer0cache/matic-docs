@@ -42,19 +42,20 @@ Note that on macOS you also need Xcode and Command Line Tools.
     cd matic-docs
     ```
 4. If you have already forked the repo, you need to ensure that the fork is configured and up to date to avoid potential merge conflicts. Check [how to configure your fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork)
-```
-git remote add upstream https://github.com/maticnetwork/matic-docs
-```
-[Sync your fork with the latest changes](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork):
-```
-git checkout master
-git fetch upstream
-git merge upstream/master
-```
+    ```
+    git remote add upstream https://github.com/maticnetwork/matic-docs
+    ```
+    [Sync your fork with the latest changes](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork):
+    ```
+    git checkout master
+    git fetch upstream
+    git merge upstream/master
+    ```
 5. Install all dependencies
     ```
     yarn install
     ```
+    
 6. Run docs locally, this command starts a local development server and opens up a browser window *http://localhost:3000*. Most changes are reflected live without having to restart the server:
     ```
     yarn start
