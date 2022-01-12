@@ -10,7 +10,7 @@ keywords:
   - node
   - validator
   - sentry
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -103,7 +103,7 @@ all:
         188.166.216.25:
     validator:
       hosts:
-        134.209.100.175: 
+        134.209.100.175:
 ```
 
 Check that the remote sentry machine is reachable. On the local machine, run:
@@ -127,7 +127,7 @@ xxx.xxx.xx.xx | SUCCESS => {
 Do a test run of the sentry node setup:
 
 ```sh
-ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12-beta3 heimdall_branch=v0.2.4  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
+ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.13 heimdall_branch=v0.2.4  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
 ```
 
 This will be the output
@@ -142,7 +142,7 @@ playbook: playbooks/network.yml
 Run the sentry node setup:
 
 ```sh
-ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12-beta3 heimdall_branch=v0.2.4  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"
+ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.13 heimdall_branch=v0.2.4  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"
 ```
 
 Once the setup is complete, you will see a message of completion on the terminal.
@@ -184,7 +184,7 @@ xxx.xxx.xx.xx | SUCCESS => {
 Do a test run of the validator node setup:
 
 ```sh
-ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.12-beta3 heimdall_branch=v0.2.4 network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet" --list-hosts
+ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.13 heimdall_branch=v0.2.4 network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet" --list-hosts
 ```
 
 You should get this as output
@@ -199,7 +199,7 @@ playbook: playbooks/network.yml
 Run the validator node setup:
 
 ```sh
-ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.12-beta3 heimdall_branch=v0.2.4  network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet"
+ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.13 heimdall_branch=v0.2.4  network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet"
 ```
 
 Once the setup is complete, you will see a message of completion on the terminal.
@@ -285,7 +285,7 @@ The sentry machine must have the following ports open to the world `0.0.0.0/0`:
 
 * 22- For the validator to be able to ssh from wherever he/she is.
 
-:::note 
+:::note
 
 However, if they use a vpn connection, they can allow incoming ssh connections only from the vpn ip address
 
