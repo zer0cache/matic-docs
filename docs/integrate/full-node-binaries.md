@@ -138,7 +138,7 @@ cd bor
 
 # Checkout to a proper version
 
-# For eg: git checkout v0.2.13-beta2
+# For eg: git checkout v0.2.13
 
 git checkout <TAG OR BRANCH>
 make bor-all
