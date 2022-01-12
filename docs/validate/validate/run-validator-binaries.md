@@ -10,7 +10,7 @@ keywords:
   - node
   - validator
   - sentry
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -42,7 +42,7 @@ There is limited space for accepting new validators. New validators can only joi
   ```sh
   sudo apt-get install build-essential
   ```
-  
+
 * Go 1.17 installed on both the sentry and the validator machines.
 
   To install:
@@ -143,7 +143,7 @@ where
 Example:
 
 ```sh
-git checkout v0.2.12-beta3
+git checkout v0.2.13
 ```
 
 Install Bor:
