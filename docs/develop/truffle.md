@@ -29,7 +29,7 @@ To verify that Truffle is installed properly, type **`truffle version`** on a 
 - Update the truffle-config with matic-network-crendentials.
 
 ```js
-const HDWalletProvider = require('truffle-hdwallet-provider');
+const HDWalletProvider = require('@truffle/hdwallet-provider');
 const fs = require('fs');
 const mnemonic = fs.readFileSync(".secret").toString().trim();
 
@@ -41,7 +41,7 @@ module.exports = {
       network_id: "*",       // Any network (default: none)
     },
     matic: {
-      provider: () => new HDWalletProvider(mnemonic, `https://rpc-mumbai.matic.today`),
+      provider: () => new HDWalletProvider(mnemonic, `https://rpc-mumbai.maticvigil.com`),
       network_id: 80001,
       confirmations: 2,
       timeoutBlocks: 200,
@@ -65,6 +65,8 @@ module.exports = {
 Notice, it requires mnemonic to be passed in for maticProvider, this is the seed phrase for the account you'd like to deploy from. Create a new .secret file in root directory and enter your 12 word mnemonic seed phrase to get started. To get the seedwords from metamask wallet you can go to Metamask Settings, then from the menu choose Security and Privacy where you will see a button that says reveal seed words. 
 
 ## **Deploying on Matic Network**
+
+Add Matic to your wallet using https://faucet.polygon.technology/
 
 Run this command in root of the project directory:
 ```js
@@ -112,4 +114,4 @@ Summary
 
 **Congratulations!** You have successfully deployed HelloWorld Smart Contract. Now you can interact with the Smart Contract.
 
-You can check the deployment status here: https://mumbai-explorer.matic.today/
+You can check the deployment status here: https://mumbai.polygonscan.com/

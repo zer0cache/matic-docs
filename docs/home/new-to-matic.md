@@ -1,27 +1,29 @@
 ---
-id: new-to-matic
-title: New to Matic?
-description: Build your next blockchain app on Matic.
+id: new-to-polygon
+title: New to Polygon?
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
-Matic Network is a scaling solution for public blockchains. Based on an adapted implementation of Plasma framework (Plasma MoreVP) - with an account based implementation (read more [here](https://ethresear.ch/t/account-based-plasma-morevp/5480)), Matic supports all the existing Ethereum tooling along with faster and cheaper transactions.
+Polygon is a scaling solution for public blockchains. Based on an adapted implementation of Plasma framework (Plasma MoreVP) - with an account based implementation (read more [here](https://ethresear.ch/t/account-based-plasma-morevp/5480)), Polygon supports all the existing Ethereum tooling along with faster and cheaper transactions.
 
-### Types of Interaction on Matic
+### Types of Interaction on Polygon
 
-* [Matic PoS chain](/docs/develop/getting-started)
-* [Ethereum + Matic with PoS bridge](https://docs.matic.today/docs/develop/ethereum-matic/pos/getting-started)
-* [Ethereum + Matic with Plasma bridge](https://docs.matic.today/docs/develop/ethereum-matic/plasma/getting-started)
+* [Polygon PoS chain](/docs/develop/getting-started)
+* [Ethereum + Polygon with PoS bridge](https://docs.polygon.technology/docs/develop/ethereum-polygon/pos/getting-started)
+* [Ethereum + Polygon with Plasma bridge](https://docs.polygon.technology/docs/develop/ethereum-polygon/plasma/getting-started)
 
 ### Deploy Smart Contracts
 
 <!-- ### Are you an Experience Blockchain Developer? -->
 
-* Deploy your Contracts on Matic Network
+* Deploy your Contracts on Polygon
+    - [Using Alchemy](/docs/develop/alchemy)
     - [Using Remix](/docs/develop/remix)
     - [Using Truffle](/docs/develop/truffle)
+    - [Using Hardhat](/docs/develop/hardhat)
 * Configure the Web3 RPC-URL to https://rpc-mumbai.matic.today, *Everything else remains the same*
 
 ### What is a Blockchain?
@@ -34,7 +36,7 @@ Think of a Sidechain as a clone of a 'parent' blockchain, supporting transfer of
 
 :page_facing_up: [Sidechains and Childchains](https://hackernoon.com/what-are-sidechains-and-childchains-7202cc9e5994)
 ### What is Plasma?
-Plasma is a framework of secondary chains that will communicate and interact as sparingly as possible with the main chain. Child chain are a scaling solution for Ethereum (or any blockchain for that matter).
+Plasma is a framework of secondary chains that will communicate and interact as sparingly as possible with the main chain. Child chain is a scaling solution for Ethereum (or any blockchain for that matter).
 It is a layer 2 solution for Ethereum that provides a framework for building ‘off-chain’ decentralised applications that are secure, scalable and swift.
 
 :page_facing_up: [Read more about Plasma](blockchain-basics/sidechain)

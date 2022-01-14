@@ -1,7 +1,7 @@
 ---
 id: full-node-deployment
 title: Full Node Deployment
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -14,11 +14,23 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 <Tabs
   defaultValue="mainnet"
   values={[
-    { label: 'Matic-Mainnet', value: 'mainnet', },
-    { label: 'Mumbai-Testnet', value: 'mumbai', },
+    { label: 'Polygon-Mainnet', value: 'mainnet', },
+    { label: 'Polygon-Testnet', value: 'mumbai', },
   ]
 }>
 <TabItem value="mumbai">
+
+## Pre-requisites
+
+### Minimum System Requirements
+
+- Minimum system requirements are as follows:
+
+    16 - 32 GiB of memory
+
+    4 - 8 core CPU (t3 xLarge)
+
+    Minimum 650GB SSD (make sure it is extendable)
 
 # Full Node Deployment (Mumbai testnet)
 
@@ -30,7 +42,7 @@ Pre-requisite:
     - To install ansible with Python 3.x you can use this command `pip3 install ansible`. This will install Python 3 dependencies as well as ansible.
 - Check [https://github.com/maticnetwork/node-ansible#requirements](https://github.com/maticnetwork/node-ansible#requirements) for requirements
 - You will also need to make sure that Go is not installed on your VM / Machine. Setting up your full node through ansible will run into issues if you have Go already installed, as ansible requires specific packages of Go to be installed.
-- You will also need to make sure that your VM / Machine does not have any previous setups for Matic Validator or Heimdall or Bor. You will need to delete them as your setup will run into issues.
+- You will also need to make sure that your VM / Machine does not have any previous setups for Polygon Validator or Heimdall or Bor. You will need to delete them as your setup will run into issues.
 
 Setup full node for Testnetv4/Mumbai testnet
 
@@ -41,7 +53,9 @@ Setup full node for Testnetv4/Mumbai testnet
 - Check if remote machine is reachable by running `ansible sentry -m ping`
 - For a test run to confirm if the correct remote machine / VM is configured, run the following command:
 
-    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.4 heimdall_branch=v0.2.1-mumbai network_version=testnet-v4 node_type=sentry/sentry" --list-hosts`
+
+    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12-beta3 heimdall_branch=v0.2.4 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai" --list-hosts`
+
 
     It should output the remote machine IP(s) you have configured
 
@@ -49,7 +63,9 @@ Setup full node for Testnetv4/Mumbai testnet
 
 - Setup the full node with this command:
 
-    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.4 heimdall_branch=v0.2.1-mumbai network_version=testnet-v4 node_type=sentry/sentry"`
+
+    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12-beta3 heimdall_branch=v0.2.4 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai"`
+
 
 - In case you run into any issues, delete and clean the whole setup using
 
@@ -90,7 +106,19 @@ Setup full node for Testnetv4/Mumbai testnet
 </TabItem>
 <TabItem value="mainnet">
 
-# Full Node Deployment (Matic mainnet)
+## Pre-requisites
+
+### Minimum System Requirements
+
+- Minimum system requirements are as follows:
+
+    16 - 32 GiB of memory
+
+    4 - 8 core CPU (t3 xLarge)
+
+    Minimum 650GB SSD (make sure it is extendable)
+
+# Full Node Deployment (Polygon mainnet)
 We have created simple Ansible playbooks to setup a full node.
 
 Pre-requisite:
@@ -99,9 +127,9 @@ Pre-requisite:
     - To install ansible with Python 3.x you can use this command `pip3 install ansible`. This will install Python 3 dependencies as well as ansible.
 - Check [https://github.com/maticnetwork/node-ansible#requirements](https://github.com/maticnetwork/node-ansible#requirements) for requirements
 - You will also need to make sure that Go is not installed on your VM / Machine. Setting up your full node through ansible will run into issues if you have Go already installed, as ansible requires specific packages of Go to be installed.
-- You will also need to make sure that your VM / Machine does not have any previous setups for Matic Validator or Heimdall or Bor. You will need to delete them as your setup will run into issues.
+- You will also need to make sure that your VM / Machine does not have any previous setups for Polygon Validator or Heimdall or Bor. You will need to delete them as your setup will run into issues.
 
-Setup full node for Matic mainnet
+Setup full node for Polygon mainnet
 
 - Ensure you have access to the remote machine or VM that the full node is being setup on. Refer [https://github.com/maticnetwork/node-ansible#setup](https://github.com/maticnetwork/node-ansible#setup) for more details.
 - Clone the [`https://github.com/maticnetwork/node-ansible`](https://github.com/maticnetwork/node-ansible) repo
@@ -110,7 +138,8 @@ Setup full node for Matic mainnet
 - Check if remote machine is reachable by running `ansible sentry -m ping`
 - For a test run to confirm if the correct remote machine / VM is configured, run the following command:
 
-    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.4 heimdall_branch=v0.2.1-mainnet network_version=mainnet-v1 node_type=sentry/sentry" --list-hosts`
+
+    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12-beta3 heimdall_branch=v0.2.4 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts`
 
     It should output the remote machine IP(s) you have configured
 
@@ -118,7 +147,8 @@ Setup full node for Matic mainnet
 
 - Setup the full node with this command:
 
-    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.4 heimdall_branch=v0.2.1-mainnet network_version=mainnet-v1 node_type=sentry/sentry"`
+
+    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12-beta3 heimdall_branch=v0.2.4 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"`
 
 - In case you run into any issues, delete and clean the whole setup using
 
@@ -127,7 +157,7 @@ Setup full node for Matic mainnet
 - Login to the remote machine
 - Configure the following in `~/.heimdalld/config/config.toml`:
     - `moniker=<enter unique identifier>`
-    - `seeds="f4f605d60b8ffaaf15240564e58a81103510631c@159.203.9.164:26656,4fb1bc820088764a564d4f66bba1963d47d82329@44.232.55.71:26656"`
+    - `seeds="f4f605d60b8ffaaf15240564e58a81103510631c@159.203.9.164:26656,4fb1bc820088764a564d4f66bba1963d47d82329@44.232.55.71:26656,2eadba4be3ce47ac8db0a3538cb923b57b41c927@35.199.4.13:26656,3b23b20017a6f348d329c102ddc0088f0a10a444@35.221.13.28:26656,25f5f65a09c56e9f1d2d90618aa70cd358aa68da@35.230.116.151:26656"`
 - Configure the following in `~/.heimdalld/config/heimdall-config.toml`:
     - `eth_rpc_url =<insert Infura or any full node RPC URL to Ethereum>`
 - Add the following flag in `~/node/bor/start.sh` to the `bor` start params:

@@ -1,7 +1,7 @@
 ---
 id: walletconnect
 title: Wallet Connect
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -11,7 +11,7 @@ Wallet Connect is an open protocol - not a wallet - built to create a communicat
 
 ## 1. Set up Web3
 
-To set up your DApp to connect to user’s Matic Wallet we can use Wallet Connect’s provider to directly connect to Matic Network. Install the following in your DApp:
+To set up your DApp to connect to user’s Polygon Wallet we can use Wallet Connect’s provider to directly connect to Polygon. Install the following in your DApp:
 
 ```bash
 npm install --save @maticnetwork/walletconnect-provider
@@ -27,10 +27,11 @@ And add the following code in your App,
 ```js
 import WalletConnectProvider from "@maticnetwork/walletconnect-provider"
 
-import Web3 from "web3"import Matic from "maticjs"
+import Web3 from "web3"
+import Matic from "maticjs"
 ```
 
-Next, we set up Matic and Ropsten provider via Wallet Connect’s object:
+Next, we set up Polygon and Ropsten provider via Wallet Connect’s object:
 
 ```javascript
 const maticProvider = new WalletConnectProvider(

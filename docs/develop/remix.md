@@ -2,7 +2,7 @@
 id: remix
 title: Using Remix
 sidebar_label: Using Remix
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -101,7 +101,7 @@ Go to Solidity Compiler
 - Now, ```Compile HelloWorld.sol```
 - After Successful Compilation, it will show 
 <img src={useBaseUrl("img/helloworld/Screenshot_2020-02-14_at_1.08.22_PM.png")} />
-- Now, We have to deploy our smart contract on Matic Network. For that, we have to connect to web3 world, this can be done by using any of the services like Metamask, Brave, Portis etc. We will be using Metamask. Please follow this [tutorial to setup a Metamask Account](/docs/develop/metamask/hello).
+- Now, We have to deploy our smart contract on Polygon Network. For that, we have to connect to web3 world, this can be done by using any of the services like Metamask, Brave, Portis etc. We will be using Metamask. Please follow this [tutorial to setup a Metamask Account](/docs/develop/metamask/hello).
 - Open Metamask and select Custom RPC from the networks dropdown
 
 <div
@@ -115,9 +115,9 @@ Go to Solidity Compiler
 </div>
 
 - Put in a Network name - “Matic Mumbai Testnet”
-- In URL field you can add the URL as "https://rpc-mumbai.matic.today"
+- In URL field you can add the URL as "https://rpc-mumbai.maticvigil.com"
 - Enter the Chain ID: 80001
-- (Optional Fields) Symbol: "maticmum" and Block Explorer URL: "https://mumbai-explorer.matic.today/"
+- (Optional Fields) Symbol: "maticmum" and Block Explorer URL: "https://mumbai.polygonscan.com/"
 <div
         style={{
           display: "flex",
@@ -139,7 +139,7 @@ Go to Solidity Compiler
         <img src={useBaseUrl("img/helloworld/Screenshot_2020-01-09_at_1.24.49_PM.png")} alt="RemixIDE_Step1"/>
 </div>
 
-- Head over to [Faucet](https://faucet.matic.network/) and request test ether - you will need this pay for gas on Matic. 
+- Head over to [Faucet](https://faucet.polygon.technology/) and request test ether - you will need this pay for gas on Matic. 
 Select 'Mumbai' as the network and 'MATIC Token' as the token in the faucet
 - Now, let's Deploy the Smart Contract on Matic Network
 - Select Injected Web3 in the Environment dropdown and your contract
@@ -178,7 +178,7 @@ Select 'Mumbai' as the network and 'MATIC Token' as the token in the faucet
         <img src={useBaseUrl("img/helloworld/Screenshot_2020-02-14_at_1.45.23_PM.png")} alt="RemixIDE_Step1"/>
 </div>
 
-**Congratulations!** You have successfully deployed HelloWorld Smart Contract. Now you can interact with the Smart Contract. Check the deployment status here: https://mumbai-explorer.matic.today/.
+**Congratulations!** You have successfully deployed HelloWorld Smart Contract. Now you can interact with the Smart Contract. Check the deployment status here: https://mumbai.polygonscan.com/.
 
 <div
         style={{
@@ -189,3 +189,36 @@ Select 'Mumbai' as the network and 'MATIC Token' as the token in the faucet
       >
         <img src={useBaseUrl("img/helloworld/Screenshot_2020-02-14_at_2.00.19_PM.png")} alt="RemixIDE_Step1"/>
 </div>
+
+# **Verifying your Contracts on PolygonScan**
+
+
+The first and foremost step is to flatten the solidity contract into a single file.
+
+## **Flatten your solidity contract**
+
+Install [truffle-flattener](https://github.com/nomiclabs/truffle-flattener) or [sol-merger](https://github.com/RyuuGan/sol-merger)
+
+
+Flatten using command
+
+```sol-merger \"./contracts/*.sol\" ./build```
+
+## **Verifying on Polygonscan**
+
+Navigate to your contract's polygonscan page and then click verify and publish
+
+<img src={useBaseUrl("img/verification/verify-publish.png")} />
+
+
+- Select ```Solidity (Single File)``` in compiler type
+- Select appropriate compiler version
+- Choose the license type of your contract
+
+Onto the next section, paste your flattended contract here.
+
+If you had enabled optimization then adjust the  `optimization` section accordingly.
+
+Constructor arguments should have been filled in automatically, if not, they can be retrieved from the trailing bytes of the deployment transaction, they resemble something like ```000000000000000000000000a6fa4fb5f76172d178d61b04b0ecd319c5d1c0aa```
+
+That's it, you are done.  🎉

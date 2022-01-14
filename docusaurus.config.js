@@ -1,21 +1,138 @@
 module.exports = {
-  title: "Matic Network | Documentation",
-  tagline: "Welcome to Matic developer documentation",
-  url: "https://docs.matic.network/",
+  title: "Polygon Technology | Documentation",
+  tagline: "Welcome to Polygon developer documentation",
+  url: "https://docs.polygon.technology/",
   baseUrl: "/",
-  favicon: "img/favicon.png",
-  organizationName: "Matic Network",
+  favicon: "img/polygon/polygon-logo.svg",
+  organizationName: "Polygon Technology",
   projectName: "matic-docs",
   customFields: {
-    description: "Build your next blockchain app on Matic.",
+    description: "Build your next blockchain app on Polygon.",
   },
   onBrokenLinks: 'log',
   themeConfig: {
+    footer: {
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Home',
+              to: '/',
+            },
+            {
+              label: 'Develop',
+              to: '/docs/develop/getting-started',
+            },
+            {
+              label: 'Docs GitHub',
+              href: 'https://github.com/maticnetwork/matic-docs',
+            },
+            {
+              label: 'Support',
+              href: 'https://forum.polygon.technology/',
+            },
+            {
+              label: 'FAQs',
+              to: '/docs/faq/technical-faqs',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Discord',
+              href: 'https://discord.com/invite/polygon',
+            },
+            {
+              href: "https://forum.polygon.technology/",
+              label: "Forum",
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/0xPolygon',
+            },
+            {
+              label: 'Reddit',
+              href: 'https://www.reddit.com/r/0xPolygon/',
+            },
+            {
+              label: 'Telegram',
+              href: 'https://t.me/polygonofficial',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/maticnetwork',
+            },
+          ],
+        },
+        {
+          title: "Developers",
+          items: [
+          {
+              label: "Get Started",
+              href: "https://polygon.technology/get-started/"
+          },
+          {
+              label: "Hackathons",
+              href: "https://www.polygongrantshackathon.com/"
+          },
+          {
+              label: "Bug Bounty",
+              href: "https://immunefi.com/bounty/polygon/"
+          },
+          {
+            label: "DApps",
+            href: "https://awesomepolygon.com/"
+          },
+          {
+            label: "Use Polygon",
+            href: "https://wallet.polygon.technology/"
+          },
+      ]
+      },
+      {
+        title: "Company",
+        items: [
+        {
+            label: "Polygon Technology",
+            href: "https://polygon.technology/"
+        },
+        {
+            label: "Blogs",
+            href: "https://blog.polygon.technology/"
+        },
+        {
+          label: "Brand Kit",
+          href: "https://polygon.technology/brand-resources/"
+      },
+        {
+            label: "Careers",
+            href: "https://polygon.technology/careers/"
+        },
+        {
+          label: "Contact",
+          href: "hhttps://polygon.technology/contact-us/"
+        },
+        {
+          label: "About Us",
+          href: "https://polygon.technology/about/"
+        },
+    ]
+    },
+      ],
+      logo: {
+        alt: 'Polygon Logo',
+        src: 'img/polygon/polygon-logo.svg',
+      },
+      copyright: `Copyright © ${new Date().getFullYear()} Polygon technology`, 
+    },
     announcementBar: {
       id: "support_us",
       content:
-        '🎉Matic Mainnet <a target="_blank" rel="noopener noreferrer" href="/docs/develop/network-details/network"/>is open for developers🎉! ',
-      backgroundColor: "#2b6def", // Defaults to `#fff`
+        '🎉 Polygon Mainnet <a target="_blank" rel="noopener noreferrer" href="/docs/develop/network-details/network"/>is open for developers 🎉! ',
+      backgroundColor: "#8247e5", // Defaults to `#fff`
       textColor: "#fff", // Defaults to `#000`
     },
     // googleAnalytics: {
@@ -29,23 +146,23 @@ module.exports = {
       defaultLanguage: "javascript",
     },
     algolia: {
+      appId: 'BH4D9OD16A',
       apiKey: "c3ad4eabc5af314ea3ed331efbe0a5c4",
       indexName: "matic_developer",
       algoliaOptions: {},
     },
     navbar: {
       hideOnScroll: true,
-      title: "Developer",
       logo: {
-        alt: "Matic logo",
-        src: "/img/logo.svg",
-        srcDark: "/img/logo-white.svg",
-        // href: 'https://docs.matic.network/', // default to siteConfig.baseUrl
+        alt: "Polygon logo",
+        src: "/img/polygon/polygon-logo.webp",
+        srcDark: "/img/polygon/polygon-logo-inverted.png",
+        // href: 'https://docs.polygon.technology/', // default to siteConfig.baseUrl
         target: "_self", // by default, this value is calculated based on the `href` attribute (the external link will open in a new tab, all others in the current one)
       },
       items: [
         {
-          to: "docs/home/new-to-matic",
+          to: "docs/home/new-to-polygon",
           label: "Basics",
           position: "left",
           activeBasePath: "docs/home",
@@ -57,7 +174,7 @@ module.exports = {
           activeBasePath: "docs/develop",
         },
         {
-          to: "docs/validate/orientation",
+          to: "docs/validate/polygon-overview",
           label: "Validate",
           position: "left",
           activeBasePath: "docs/validate",
@@ -80,7 +197,18 @@ module.exports = {
           position: "right",
         },
         {
-          to: "docs/faq/faq",
+          href: "https://github.com/maticnetwork",
+          position: "right",
+          className: "header-github-link",
+          "aria-label": "GitHub repository",
+        },
+        {
+          label: "Polygon SDK",
+          href: "https://sdk-docs.polygon.technology/docs/overview/",
+          position: "left",
+        },
+        {
+          to: "docs/faq/technical-faqs",
           label: "FAQ",
           position: "left",
           activeBasePath: "docs/faq",
@@ -88,6 +216,15 @@ module.exports = {
       ],
     },
   },
+  stylesheets: [
+    {
+      href: "https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css",
+      type: "text/css",
+      integrity:
+        "sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc",
+      crossorigin: "anonymous",
+    },
+  ],
   presets: [
     [
       "@docusaurus/preset-classic",

@@ -9,7 +9,7 @@ import { firstRow, secondRow, networkBanner } from "../data/features";
 
 function NetworkBanner({title, class_name, description, linkUrl, imageUrl}) {
   return (
-    <div className="col-md-6 p-8">
+    <div className="col-md-4 p-8">
       <Link to={useBaseUrl(linkUrl)} activeClassName="active">
         <div className={`banner d-flex ${ class_name }`}>
           <div className="icon-wrapper col-2">
@@ -47,7 +47,7 @@ function FirstRow({ title, description, linkUrl, imageUrl }) {
 function SecondRow({ title, description, linkUrl, imageUrl }) {
   // const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className="col-md-6 p-8">
+    <div className="col-md-4 p-8">
       <Link to={useBaseUrl(linkUrl)}>
         <div className="show-card">
           <div className="icon-wrapper">
@@ -69,8 +69,7 @@ function Home() {
       <div
         className="bootstrap-wrapper"
       >
-        <img src={useBaseUrl("img/home/background-mockup-left.svg")} className="background-img left" />
-        <img src={useBaseUrl("img/home/background-mockup-right.svg")} className="background-img right" />
+        
         <div className="container">
           <div className="row pt-40">
             {networkBanner &&
