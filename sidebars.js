@@ -317,6 +317,12 @@ module.exports = {
         "develop/cexs-wallets/cexs",
         "develop/cexs-wallets/wallets",
       ],
+
+    },
+    {
+      type: "category",
+      label: "DID Implementation",
+      items: ["develop/did-implementation/introduction","develop/did-implementation/getting-started"]
     },
   ],
   Integrate: [
