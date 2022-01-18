@@ -42,7 +42,9 @@ The table below shows some examples about different mapped tokens on Mumbai test
 
 # Polygon-Mainnet
 
-Here are the list of mapped tokens on Polygon-Mainnet, If you would like to get your token mapped then send your mapping request here: https://mapper.matic.today/
+If you want to get your token mapped then please send your mapping request via https://mapper.matic.today/
+
+The table below shows some examples about different mapped tokens on Polygon-Mainnet, including but not limited to:
 
 | Token Name        | Bridge | Parent Chain Address: Ethereum Mainnet                                                                                | Child Chain: Polygon Network                                                                                                      |
 | ----------------- | ------ | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
