@@ -5,7 +5,7 @@ description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -54,7 +54,7 @@ Setup full node for Testnetv4/Mumbai testnet
 - For a test run to confirm if the correct remote machine / VM is configured, run the following command:
 
 
-    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12-beta3 heimdall_branch=v0.2.4 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai" --list-hosts`
+    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.13 heimdall_branch=v0.2.4 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai" --list-hosts`
 
 
     It should output the remote machine IP(s) you have configured
@@ -64,7 +64,7 @@ Setup full node for Testnetv4/Mumbai testnet
 - Setup the full node with this command:
 
 
-    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12-beta3 heimdall_branch=v0.2.4 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai"`
+    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.13 heimdall_branch=v0.2.4 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai"`
 
 
 - In case you run into any issues, delete and clean the whole setup using
@@ -90,7 +90,7 @@ Setup full node for Testnetv4/Mumbai testnet
     - `sudo service heimdalld start`
     - `sudo service heimdalld-rest-server start`
 
-    Once Heimdall is synced, run 
+    Once Heimdall is synced, run
 
     - `sudo service bor start`
 
@@ -139,7 +139,7 @@ Setup full node for Polygon mainnet
 - For a test run to confirm if the correct remote machine / VM is configured, run the following command:
 
 
-    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12-beta3 heimdall_branch=v0.2.4 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts`
+    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.13 heimdall_branch=v0.2.4 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts`
 
     It should output the remote machine IP(s) you have configured
 
@@ -148,7 +148,7 @@ Setup full node for Polygon mainnet
 - Setup the full node with this command:
 
 
-    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12-beta3 heimdall_branch=v0.2.4 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"`
+    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.13 heimdall_branch=v0.2.4 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"`
 
 - In case you run into any issues, delete and clean the whole setup using
 
@@ -173,7 +173,7 @@ Setup full node for Polygon mainnet
     - `sudo service heimdalld start`
     - `sudo service heimdalld-rest-server start`
 
-    Once Heimdall is synced, run 
+    Once Heimdall is synced, run
 
     - `sudo service bor start`
 
