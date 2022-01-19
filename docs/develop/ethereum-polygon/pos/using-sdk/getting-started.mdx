@@ -26,11 +26,12 @@ npm install @maticnetwork/maticjs
 ## Usage
 To access the SDK, import it in your application using
 ```js
-const MaticPOSClient = require('@maticnetwork/maticjs').MaticPOSClient
+import { use } from '@maticnetwork/maticjs'
+import { Web3ClientPlugin } from '@maticnetwork/maticjs-web3'
 
-// or
+// install web3 plugin
+use(Web3ClientPlugin)
 
-import { MaticPOSClient } from '@maticnetwork/maticjs'
 ```
 
 The providers can be RPC urls or web3 based providers like Metamask provider, HDWalletProvider etc. based on requirement.
@@ -71,36 +72,31 @@ Instantiate the client by passing network details and providers based on the net
 
 ```js
 // for mumbai testnet
-const maticPOSClient = new MaticPOSClient({
-  network: "testnet",
-  version: "mumbai",
-  parentProvider: <goerli-provider>,
-  maticProvider: <mumbai-provider>
-});
+const getPOSClient = (network = 'testnet', version = 'mumbai') => {
+  const posClient = new POSClient()
+  return posClient.init({
+    network: network,
+    version: version,
+    parent: {
+      provider: <parent provider>,
+      defaultConfig: {
+            from: <from address>
+      }
+    },
+    child: {
+      provider: <child provider>,
+      defaultConfig: {
+            from: <from address>
+      }
+    }
+  });
+}
 ```
 ```js
 // for Polygon mainnet
-const maticPOSClient = new MaticPOSClient({
-  network: "mainnet",
-  version: "v1",
-  parentProvider: <ethereum-provider>,
-  maticProvider: <matic-provider>
-});
-```
-More details can be provided if you want to override the default values.
-```js
-const maticPOSClient = new MaticPOSClient({
-  network: "testnet",
-  version: "mumbai",
-  parentProvider: <goerli-provider>,
-  maticProvider: <mumbai-provider>,
-  rootChain: <plasma-root-chain-address>,
-  posRootChainManager: <pos-root-chain-manager-address>,
-  posERC20Predicate: <pos-erc20-predicate-address>,
-  posERC721Predicate: <pos-erc721-predicate-address>,
-  posERC1155Predicate: <pos-erc1155-predicate-address>,
-  parentDefaultOptions: { from: <user-address> },
-  maticDefaultOptions: { from: <user-address> },
-});
+
+const posClient = await getPOSClient('mainnet','v1');
+
 ```
 
+For more info, please have a look at [maticjs doc](https://maticnetwork.github.io/matic.js/) .

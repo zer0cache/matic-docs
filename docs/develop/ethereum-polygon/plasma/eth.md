@@ -33,10 +33,10 @@ Once you have funds on Polygon, you can use those funds to send to others instan
 
 ### Configuring Matic SDK
 
-Install Matic SDK (**_2.0.2)_**
+Install Matic SDK (**_3.0.0)_**
 
 ```bash
-npm install --save @maticnetwork/maticjs
+npm i @maticnetwork/maticjs-plasma
 ```
 
 ### util.js
@@ -44,47 +44,42 @@ npm install --save @maticnetwork/maticjs
 Initiating Maticjs client
 
 ```js
-const bn = require("bn.js");
-const HDWalletProvider = require("@truffle/hdwallet-provider");
+// const use = require('@maticnetwork/maticjs').use
+const { Web3ClientPlugin } = require('@maticnetwork/maticjs-web3')
+const { PlasmaClient } = require('@maticnetwork/maticjs-plasma')
+const { use } = require('@maticnetwork/maticjs')
+const HDWalletProvider = require('@truffle/hdwallet-provider')
+const config = require('./config')
 
-const Network = require("@maticnetwork/meta/network");
-const Matic = require("@maticnetwork/maticjs").default;
+// install web3 plugin
+use(Web3ClientPlugin)
 
-const SCALING_FACTOR = new bn(10).pow(new bn(18));
+const privateKey = config.user1.privateKey
+const from = config.user1.address
 
-async function getMaticClient(_network = "testnet", _version = "mumbai") {
-  const network = new Network(_network, _version);
-  const { from } = getAccount();
-  const matic = new Matic({
-    network: _network,
-    version: _version,
-    parentProvider: new HDWalletProvider(
-      process.env.PRIVATE_KEY,
-      network.Main.RPC
-    ),
-    maticProvider: new HDWalletProvider(
-      process.env.PRIVATE_KEY,
-      network.Matic.RPC
-    ),
-    parentDefaultOptions: { from },
-    maticDefaultOptions: { from },
-  });
-  await matic.initialize();
-  return { matic, network };
-}
-
-function getAccount() {
-  if (!process.env.PRIVATE_KEY || !process.env.FROM) {
-    throw new Error("Please set the PRIVATE_KEY/FROM env vars");
+async function getPlasmaClient (network = 'testnet', version = 'mumbai') {
+  try {
+    const plasmaClient = new PlasmaClient()
+    return plasmaClient.init({
+      network: network,
+      version: version,
+      parent: {
+        provider: new HDWalletProvider(privateKey, config.parent.rpc),
+        defaultConfig: {
+          from
+        }
+      },
+      child: {
+        provider: new HDWalletProvider(privateKey, config.child.rpc),
+        defaultConfig: {
+          from
+        }
+      }
+    })
+  } catch (error) {
+    console.error('error unable to initiate plasmaClient', error)
   }
-  return { privateKey: process.env.PRIVATE_KEY, from: process.env.FROM };
 }
-
-module.exports = {
-  SCALING_FACTOR,
-  getMaticClient,
-  getAccount,
-};
 ```
 
 ### process.env
@@ -92,8 +87,11 @@ module.exports = {
 Create a new file in root directory name it process.env
 
 ```bash
-PRIVATE_KEY = ""
-FROM = ""
+USER1_FROM = 
+USER1_PRIVATE_KEY = 
+USER2_ADDRESS = 
+ROOT_RPC = 
+MATIC_RPC = 
 ```
 
 ---
@@ -107,21 +105,23 @@ FROM = ""
 **_depositEther_** method to make this call.
 
 ```js
-const utils = require('./utils')
+const { getPOSClient, from } = require('../../utils');
 
-async function execute() {
-  const { matic, network } = await utils.getMaticClient()
-  const { from } = utils.getAccount()
+const execute = async () => {
+  const client = await getPOSClient();
+  const result = await client.depositEther(100, from);
 
-  const token = network.Main.Contracts.Tokens.MaticWeth
-  const amount = matic.web3Client.web3.utils.toWei('1.567')
+  const txHash = await result.getTransactionHash();
+  const receipt = await result.getReceipt();
 
-  // deposit
-  await matic.depositEther(token, from, amount)).then((res) => {
-        console.log("deposit hash: ", res.transactionHash)
-  })
-}
-execute().then(_ => process.exit(0))
+};
+
+execute().then(() => {
+}).catch(err => {
+  console.error("err", err);
+}).finally(_ => {
+  process.exit(0);
+})
 ```
 
 > NOTE: Deposits from Ethereum to Polygon happen using a state sync mechanism and takes about ~5-7 minutes. After waiting for this time interval, it is recommended to check the balance using web3.js/matic.js library or using Metamask. The explorer will show the balance only if at least one asset transfer has happened on the child chain. This [link](/docs/develop/ethereum-polygon/plasma/deposit-withdraw-event-plasma) explains how to track the deposit events.
@@ -130,93 +130,103 @@ execute().then(_ => process.exit(0))
 
 ETH on Polygon network is a WETH(ERC20 Token).
 
-> `recipient` is the receiver’s address, to whom the funds are supposed to be sent.
-
 ```js
-const utils = require("./utils");
+const { getPlasmaClient, from, plasma, to } = require('../utils')
 
-async function execute() {
-  const { matic, network } = await utils.getMaticClient();
-  const { from } = utils.getAccount();
+const amount = '1000000000' // amount in wei
+const token = plasma.child.erc20
 
-  const recipient = "< >";
-
-  const amount = matic.web3Client.web3.utils.toWei("1.23");
-
-  await matic
-    .transferEther(recipient, amount, { from, parent: false })
-    .then((res) => {
-      console.log("Transfer hash: ", res.transactionHash);
-    });
+async function execute () {
+  try {
+    const plasmaClient = await getPlasmaClient()
+    const erc20Token = plasmaClient.erc20(token)
+    const result = await erc20Token.transfer(amount, to, { gasPrice: 1000000000 })
+    const txHash = await result.getTransactionHash()
+  } catch (error) {
+    console.log(error)
+  }
 }
 
-execute().then((_) => process.exit(0));
+execute().then(() => {
+}).catch(err => {
+  console.error('err', err)
+}).finally(_ => {
+  process.exit(0)
+})
 ```
 
 ## Withdraw
 
 ### 1. Burn
 
-User can call **_withdraw_** function of **_getERC20TokenContract_** child token contract. This function should burn the tokens. Polygon Plasma client exposes **_startWithdraw_** method to make this call.
+User can call **_withdraw_** function of **_getERC20TokenContract_** child token contract. This function should burn the tokens. Polygon Plasma client exposes **_withdrawStart_** method to make this call.
 
 ```js
-const utils = require("./utils");
+const { getPlasmaClient, from, plasma } = require('../utils')
 
-async function execute() {
-  const { matic, network } = await utils.getMaticClient();
-  const { from } = utils.getAccount();
+const amount = '1000000000000000' // amount in wei
+const token = plasma.child.erc20
+async function execute () {
+  const plasmaClient = await getPlasmaClient()
+  const erc20Token = plasmaClient.erc20(token)
+  const result = await erc20Token.withdrawStart(amount)
+  
+  const txHash = await result.getTransactionHash()
+  const receipt = await result.getReceipt()
 
-  const token = network.Matic.Contracts.Tokens.MaticWeth;
-  const amount = matic.web3Client.web3.utils.toWei("5.678");
-
-  await matic.startWithdraw(token, amount, { from }).then((res) => {
-    console.log("Burn hash: ", res.transactionHash);
-  });
 }
 
-execute().then((_) => process.exit(0));
+execute().then(() => {
+}).catch(err => {
+  console.error('err', err)
+}).finally(_ => {
+  process.exit(0)
 ```
 
 ### 2. confirm-withdraw.js
 
-User can call **_startExitWithBurntTokens_** function of **_erc20Predicate_** contract. This function should burn the tokens. Polygon Plasma client exposes **_withdraw_** method to make this call. This function can be called only after the checkpoint is included in the main chain. The checkpoint inclusion can be tracked by following this [guide](/docs/develop/ethereum-polygon/plasma/deposit-withdraw-event-plasma#checkpoint-events).
+
+User can call **_startExitWithBurntTokens_** function of **_erc20Predicate_** contract. This function should burn the tokens. Polygon Plasma client exposes **_withdrawConfirm_** method to make this call. This function can be called only after the checkpoint is included in the main chain. The checkpoint inclusion can be tracked by following this [guide](/docs/develop/ethereum-matic/plasma/deposit-withdraw-event-plasma#checkpoint-events).
+
 
 ```js
-//Wait for 5 mins till the checkpoint is submitted for burned transaction, then run the confirm withdraw
-const utils = require("./utils");
+//Wait for ~10 mins for Mumbai testnet or ~30mins for Ethereum Mainnet till the checkpoint is submitted for burned transaction, then run the confirm withdraw
+const { getPlasmaClient, from, plasma } = require('../utils')
 
-async function execute() {
-  const { matic } = await utils.getMaticClient();
-  const { from } = utils.getAccount();
+async function execute () {
+  const plasmaClient = await getPlasmaClient()
+  const erc20Token = plasmaClient.erc20(plasma.parent.erc20, true)
+  const result = await erc20Token.withdrawConfirm(<burn tx hash>)
 
-  // Submit proof of burn on Main Chain
-  const txHash = "<>";
-  await matic.withdraw(txHash, { from, gas: "7000000" }).then((res) => {
-    console.log("Confirm withdraw hash: ", res.transactionHash);
-  });
+  const txHash = await result.getTransactionHash()
+  const txReceipt = await result.getReceipt()
 }
-// Withdraw process is completed, funds will be transfered to your account after challege period is over.
-execute().then((_) => process.exit(0));
+
+execute().then(_ => {
+  process.exit(0)
+})
 ```
 
 ### 3. Process Exit
 
-Once the **_Challenge Period_** has been passed for the transaction present in checkpoint, user should call the **_processExits_** function of **_withdrawManager_** contract and submit the proof of burn. Upon submitting valid proof tokens are transferred to the user. Polygon Plasma client exposes **_processExits_** method to make this call.
+Once the **_Challenge Period_** has been passed for the transaction present in checkpoint, user should call the **_processExits_** function of **_withdrawManager_** contract and submit the proof of burn. Upon submitting valid proof tokens are transferred to the user. Polygon Plasma client exposes **_withdrawExit_** method to make this call.
 
 ```js
-const utils = require("./utils");
+const { getPlasmaClient, from, plasma } = require('../utils')
 
-async function execute() {
-  const { matic, network } = await utils.getMaticClient();
-  const { from } = utils.getAccount();
-
-  const token = network.Main.Contracts.Tokens.MaticWeth;
-  await matic.processExits(token, { from, gas: 7000000 }).then((res) => {
-    console.log("Exit hash: ", res.transactionHash);
-  });
+async function execute () {
+  const plasmaClient = await getPlasmaClient()
+  const erc20Token = plasmaClient.erc20(plasma.parent.erc20, true);
+  const result = await erc20Token.withdrawExit();
+  
+  const txHash = await result.getTransactionHash()
+  const txReceipt = await result.getReceipt()
+  console.log(txReceipt)
 }
 
-execute().then((_) => process.exit(0));
+execute().then(_ => {
+  process.exit(0)
+})
 ```
 
 _Note: A checkpoint, which is a representation of all transactions happening on Polygon to the Ethereum chain every ~5 minutes, is submitted to the mainchain Ethereum contract._

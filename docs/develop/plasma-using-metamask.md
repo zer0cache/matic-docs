@@ -53,12 +53,10 @@ ETHEREUM_CHAINID: Chain ID of root chain
 To deposit ERC20 tokens, an approve function call has to be made before calling the deposit function. Upon clicking the deposit button, metamask will first ask to approve the transfer of a specified number of tokens and after the confirmation of the approval transaction, metamask will ask to confirm the deposit transaction. Make sure the root chain network is selected in metamask for deposit functionality.
 
 ```js
-await matic.approveERC20TokensForDeposit(config.plasmaRootERC20, amount, {
-  from: account,
-});
-return matic.depositERC20ForUser(config.plasmaRootERC20, account, amount, {
-  from: account,
-});
+const erc20RootToken = plasmaClient.erc20(<root token address>, true);
+
+// approve 100 amount
+const approveResult = await erc20Token.approve(100);
 ```
 
 During deposit of ERC20 tokens, providers are specified as below
@@ -86,9 +84,25 @@ Once deposited, the token can be transfered to any other account on the Matic ch
 During Transfer, only the `maticProvider` needs to be set as `window.web3`.
 
 ```js
-matic.transferERC20Tokens(config.plasmaChildERC20, account, amount, {
-  from: account,
-});
+const erc20Token = plasmaClient.erc20(<token address>);
+
+const result = await erc20Token.transfer(<amount>,<to>);
+
+const txHash = await result.getTransactionHash();
+
+const txReceipt = await result.getReceipt();
+```
+MATIC is native token on Polygon. So we support transfer of Matic tokens without any token address.
+
+```js
+// initialize token with null means use MATIC tokens
+const erc20Token = plasmaClient.erc20(null);
+
+const result = await erc20Token.transfer(<amount>,<to>);
+
+const txHash = await result.getTransactionHash();
+
+const txReceipt = await result.getReceipt();
 ```
 
 ### Initiate withdraw
@@ -96,9 +110,15 @@ matic.transferERC20Tokens(config.plasmaChildERC20, account, amount, {
 For withdrawing tokens back to root chain,tokens have to be first burnt on child chain. Make sure child chain network is selected in metamask.
 
 ```js
-matic.startWithdraw(config.plasmaChildERC20, amount, {
-  from: account,
-});
+const erc20ChildToken = plasmaClient.erc20(<child token address>);
+
+// start withdraw process for 100 amount
+const result = await erc20ChildToken.withdrawStart(100);
+
+const txHash = await result.getTransactionHash();
+
+const txReceipt = await result.getReceipt();
+
 ```
 
 During burning of ERC20 tokens, providers are specified as below
@@ -129,13 +149,20 @@ In the confirm withdraw step, providers are specified as below
 
 `parentProvider: window.web3`
 
-The **_withdraw_** function in Plasma bridge involves block proof generation by querying the child chain multiple times and hence it may take 4-5 seconds for Metamask to popup as it consumes time to build the transaction object.
+The **_withdrawConfirm_** function in Plasma bridge involves block proof generation by querying the child chain multiple times and hence it may take 4-5 seconds for Metamask to popup as it consumes time to build the transaction object.
 
 ```js
-await maticPoSClient.withdraw(burnTxHash, {
-  from: account,
-});
+const erc20Token = plasmaClient.erc20(<token address>, true);
+
+const result = await erc20Token.withdrawConfirm(<burn tx hash>);
+
+const txHash = await result.getTransactionHash();
+
+const txReceipt = await result.getReceipt();
+
 ```
+
+You can use the **_withdrawConfirmFaster_** method which is faster because it generates proof in the backend. Fore more details to use this please visit this [guide](https://maticnetwork.github.io/matic.js/docs/plasma/erc20/withdraw-confirm-faster/)
 
 <div
         style={{
@@ -147,16 +174,19 @@ await maticPoSClient.withdraw(burnTxHash, {
         <img src={useBaseUrl("img/plasma-using-metamask/confirmWithdraw.png")} />
 </div>
 
-### Process Exit
+### Withdraw Exit
 
 The exit process takes place on the root chain and upon confirmation on the root chain, equivalent amount of tokens burnt on child chain are released to the users account. Make sure the root chain network is selected in Metamask. This function can be called only after the challenge period (about 1 second)
 
 ```js
-await matic
-  .processExits(config.plasmaRootERC20, { from: account })
-  .then((res) => {
-    console.log("Exit hash: ", res.transactionHash);
-  });
+const erc20RootToken = plasmaClient.erc20(<root token address>, true);
+
+const result = await erc20Token.withdrawExit();
+
+const txHash = await result.getTransactionHash();
+
+const txReceipt = await result.getReceipt();
+
 ```
 
 In the process exit step, providers are specified as below

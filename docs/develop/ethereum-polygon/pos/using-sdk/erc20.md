@@ -13,7 +13,7 @@ This tutorial uses the Polygon Testnet ( Mumbai ) which is mapped to the Goerli 
 
 **Mapping your assets** is necessary to integrate the PoS bridge on your application. You can submit a mapping request [here](/docs/develop/ethereum-polygon/submit-mapping-request). But for the purpose of this tutorial, we have already deployed the **Test tokens** and Mapped then on the PoS bridge. You may need it for trying out the tutorial on your own. You can request the desired Asset from the [faucet](https://faucet.polygon.technology/). If the test tokens are unavailable on the faucet, do reach us on [discord](https://discord.gg/polygon)
 
-In the upcoming tutorial, every step will be explained in detail along with a few code snippets. However, you can always refer to this [repository](https://github.com/maticnetwork/matic.js/tree/v2.0.2/examples/POS-client) which will have all the **example source code** that can help you to integrate and understand the working of PoS bridge.
+In the upcoming tutorial, every step will be explained in detail along with a few code snippets. However, you can always refer to this [repository](https://github.com/maticnetwork/matic.js/tree/master/examples/pos) which will have all the **example source code** that can help you to integrate and understand the working of PoS bridge.
 
 ## High Level Flow
 
@@ -33,21 +33,36 @@ Withdraw ERC20 -
 
 ### Approve
 
-This is a normal ERC20 approval so that **_ERC20Predicate_** can call **_transferFrom_** function. Polygon POS client exposes **_approveERC20ForDeposit_** method to make this call.
+This is a normal ERC20 approval so that **_ERC20Predicate_** can call **_transferFrom_** function. Polygon POS client exposes **_approve_** method to make this call.
 
 ```jsx
-await maticPOSClient.approveERC20ForDeposit(rootToken, amount, { from });
+const execute = async () => {
+  const client = await getPOSClient();
+  const erc20Token = client.erc20(pos.parent.erc20, true);
+
+  const result = await erc20Token.approve(<amount>);
+
+  const txHash = await result.getTransactionHash();
+  const receipt = await result.getReceipt();
+
+}
 ```
 
 ### Deposit
 
-Note that token needs to be mapped and approved for transfer beforehand. Polygon POS client exposes **_depositERC20ForUser_** method to make this call.
+Note that token needs to be mapped and approved for transfer beforehand. Polygon POS client exposes **_deposit_** method to make this call.
 
 ```jsx
-await maticPOSClient.depositERC20ForUser(rootToken, from, amount, {
-  from,
-  gasPrice: "10000000000",
-});
+const execute = async () => {
+  const client = await getPOSClient();
+  const erc20Token = client.erc20(pos.parent.erc20, true);
+
+  const result = await erc20Token.deposit(<amount>, <user address>);
+
+  const txHash = await result.getTransactionHash();
+  const receipt = await result.getReceipt();
+
+}
 ```
 
 Sidenote: Deposits from Ethereum to Polygon happen using a state sync mechanism and takes about ~5-7 minutes. After waiting for this time interval, it is recommended to check the balance using web3.js/matic.js library or using Metamask. The explorer will show the balance only if at least one asset transfer has happened on the child chain. This [link](/docs/develop/ethereum-polygon/pos/deposit-withdraw-event-pos) explains how to track the deposit events.
@@ -56,18 +71,38 @@ Sidenote: Deposits from Ethereum to Polygon happen using a state sync mechanism 
 
 ### Burn
 
-User can call **_withdraw_** function of **_ChildToken_** contract. This function should burn the tokens. Polygon POS client exposes **_burnERC20_** method to make this call.
+User can call **_withdraw_** function of **_ChildToken_** contract. This function should burn the tokens. Polygon POS client exposes **_withdrawStart_** method to make this call.
 
 ```jsx
-await maticPOSClient.burnERC20(childToken, amount, { from });
+const execute = async () => {
+  const client = await getPOSClient();
+  const erc20Token = client.erc20(pos.child.erc20);
+
+  const result = await erc20Token.withdrawStart(<amount to burn>);
+
+  const txHash = await result.getTransactionHash();
+  const receipt = await result.getReceipt();
+
+}
 ```
 
 Store the transaction hash for this call and use it while generating burn proof.
 
 ### Exit
 
-Once the **_checkpoint_** has been **_submitted_** for the block containing burn transaction, user should call the **_exit_** function of **_RootChainManager_** contract and submit the proof of burn. Upon submitting valid proof tokens are transferred to the user. Polygon POS client exposes **_exitERC20_** method to make this call. This function can be called only after the checkpoint is included in the main chain. The checkpoint inclusion can be tracked by following this [guide](/docs/develop/ethereum-polygon/pos/deposit-withdraw-event-pos#checkpoint-events).
+
+Once the **_checkpoint_** has been **_submitted_** for the block containing burn transaction, user should call the **_exit_** function of **_RootChainManager_** contract and submit the proof of burn. Upon submitting valid proof tokens are transferred to the user. Polygon POS client exposes **_withdrawExit_** method to make this call. This function can be called only after the checkpoint is included in the main chain. The checkpoint inclusion can be tracked by following this [guide](/docs/develop/ethereum-matic/pos/deposit-withdraw-event-pos#checkpoint-events).
+
 
 ```jsx
-await maticPOSClient.exitERC20(burnTxHash, { from });
+const execute = async () => {
+  const client = await getPOSClient();
+  const erc20Token = client.erc20(pos.parent.erc20, true);
+
+  const result = await erc20Token.withdrawExit('<burn tx hash>');
+
+  const txHash = await result.getTransactionHash();
+  const receipt = await result.getReceipt();
+
+}
 ```
