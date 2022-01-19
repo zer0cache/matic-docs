@@ -87,8 +87,11 @@ async function getPlasmaClient (network = 'testnet', version = 'mumbai') {
 Create a new file in root directory name it process.env
 
 ```bash
-privateKey = ""
-FROM = ""
+USER1_FROM = 
+USER1_PRIVATE_KEY = 
+USER2_ADDRESS = 
+ROOT_RPC = 
+MATIC_RPC = 
 ```
 
 ---
@@ -109,9 +112,7 @@ const execute = async () => {
   const result = await client.depositEther(100, from);
 
   const txHash = await result.getTransactionHash();
-  console.log("txHash", txHash);
   const receipt = await result.getReceipt();
-  console.log("receipt", receipt);
 
 };
 
@@ -138,11 +139,9 @@ const token = plasma.child.erc20
 async function execute () {
   try {
     const plasmaClient = await getPlasmaClient()
-    console.log(token, to)
     const erc20Token = plasmaClient.erc20(token)
     const result = await erc20Token.transfer(amount, to, { gasPrice: 1000000000 })
     const txHash = await result.getTransactionHash()
-    console.log(txHash)
   } catch (error) {
     console.log(error)
   }
@@ -171,7 +170,10 @@ async function execute () {
   const plasmaClient = await getPlasmaClient()
   const erc20Token = plasmaClient.erc20(token)
   const result = await erc20Token.withdrawStart(amount)
-  console.log(await result.getReceipt())
+  
+  const txHash = await result.getTransactionHash()
+  const receipt = await result.getReceipt()
+
 }
 
 execute().then(() => {
@@ -193,9 +195,9 @@ async function execute () {
   const plasmaClient = await getPlasmaClient()
   const erc20Token = plasmaClient.erc20(plasma.parent.erc20, true)
   const result = await erc20Token.withdrawConfirm(<burn tx hash>)
+
   const txHash = await result.getTransactionHash()
   const txReceipt = await result.getReceipt()
-  console.log(txReceipt)
 }
 
 execute().then(_ => {
@@ -212,8 +214,9 @@ const { getPlasmaClient, from, plasma } = require('../utils')
 
 async function execute () {
   const plasmaClient = await getPlasmaClient()
-  const erc20Token = plasmaClient.erc20(plasma.parent.erc20, true)
-  const result = await erc20Token.withdrawExit()
+  const erc20Token = plasmaClient.erc20(plasma.parent.erc20, true);
+  const result = await erc20Token.withdrawExit();
+  
   const txHash = await result.getTransactionHash()
   const txReceipt = await result.getReceipt()
   console.log(txReceipt)

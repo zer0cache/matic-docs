@@ -40,12 +40,10 @@ const execute = async () => {
   const client = await getPOSClient();
   const erc20Token = client.erc20(pos.parent.erc20, true);
 
-  const result = await erc20Token.approve(10);
+  const result = await erc20Token.approve(<amount>);
 
   const txHash = await result.getTransactionHash();
-  console.log("txHash", txHash);
   const receipt = await result.getReceipt();
-  console.log("receipt", receipt);
 
 }
 ```
@@ -59,17 +57,10 @@ const execute = async () => {
   const client = await getPOSClient();
   const erc20Token = client.erc20(pos.parent.erc20, true);
 
-  const result = await erc20Token.deposit(10, from, {
-    from, 
-    gasLimit: 300000,
-    gasPrice: 50000000000,
-    // maxPriorityFeePerGas: 6000000000, 
-  });
+  const result = await erc20Token.deposit(<amount>, <user address>);
 
   const txHash = await result.getTransactionHash();
-  console.log("txHash", txHash);
   const receipt = await result.getReceipt();
-  console.log("receipt", receipt);
 
 }
 ```
@@ -87,12 +78,10 @@ const execute = async () => {
   const client = await getPOSClient();
   const erc20Token = client.erc20(pos.child.erc20);
 
-  const result = await erc20Token.withdrawStart(10);
+  const result = await erc20Token.withdrawStart(<amount to burn>);
 
   const txHash = await result.getTransactionHash();
-  console.log("txHash", txHash);
   const receipt = await result.getReceipt();
-  console.log("receipt", receipt);
 
 }
 ```
@@ -111,9 +100,7 @@ const execute = async () => {
   const result = await erc20Token.withdrawExit('<burn tx hash>');
 
   const txHash = await result.getTransactionHash();
-  console.log("txHash", txHash);
   const receipt = await result.getReceipt();
-  console.log("receipt", receipt);
 
 }
 ```
