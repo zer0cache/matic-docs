@@ -130,7 +130,7 @@ Yes, hardware wallets are supported.
 
 ## My token is not visible in the list. Who should I contact?
 
-Reach out to the Polygon team on Discord or Telegram and get your token listed. Before that, ensure your token is mapped. If it is not mapped, please raise a request at [https://mapper.matic.today/](https://mapper.matic.today/)
+Reach out to the Polygon team on Discord or Telegram and get your token listed. Before that, ensure your token is mapped. If it is not mapped, please raise a request at [https://mapper.polygon.technology/](https://mapper.polygon.technology/)
 
 ## What are some best practices to follow?
 
@@ -164,7 +164,7 @@ MATIC is the native token of Polygon and it has a contract address - 0x000000000
 
 ## How do I map tokens?
 
-Please raise a mapping request at [https://mapper.matic.today/](https://mapper.matic.today/)
+Please raise a mapping request at [https://mapper.polygon.technology/](https://mapper.polygon.technology/)
 
 ## What do I do if the transaction is taking too long or if the gas price is too high?
 
