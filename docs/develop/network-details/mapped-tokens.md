@@ -22,7 +22,9 @@ values={[
 
 # Mumbai-Testnet
 
-Here are the list of mapped tokens on Mumbai testnet, If you would like to get your token mapped then send your mapping request here: https://mapper.matic.today/
+If you want to get your token mapped then please send your mapping request via https://mapper.matic.today/
+
+The table below shows some examples about different mapped tokens on Mumbai testnet, including but not limited to:
 
 | Token Name        | Bridge | Parent Chain Address: Goerli                                                                                                 | Child Chain: MUMBAI                                                                                                                  |
 | ----------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
@@ -66,6 +68,8 @@ Here are the list of mapped tokens on Polygon-Mainnet, If you would like to get 
 | DummyERC20Token   | PoS    | [0xf2F3bD7Ca5746C5fac518f67D1BE87805a2Be82A](https://etherscan.io/address/0xf2F3bD7Ca5746C5fac518f67D1BE87805a2Be82A) | [0xeFfdCB49C2D0EF813764B709Ca3c6fe71f230E3e](https://polygonscan.com/address/0xeFfdCB49C2D0EF813764B709Ca3c6fe71f230E3e) |
 | DummyERC721Token  | PoS    | [0x71B821aa52a49F32EEd535fCA6Eb5aa130085978](https://etherscan.io/address/0x71B821aa52a49F32EEd535fCA6Eb5aa130085978) | [0x6EBEAC13f6403D19C95b6B75008B12fd21a93Aab](https://polygonscan.com/address/0x6EBEAC13f6403D19C95b6B75008B12fd21a93Aab) |
 | DummyERC1155Token | PoS    | [0x556f501CF8a43216Df5bc9cC57Eb04D4FFAA9e6D](https://etherscan.io/address/0x556f501CF8a43216Df5bc9cC57Eb04D4FFAA9e6D) | [0xA0c68C638235ee32657e8f720a23ceC1bFc77C77](https://polygonscan.com/address/0xA0c68C638235ee32657e8f720a23ceC1bFc77C77) |
+| WDEV | PoS    | [0x4a5df63b0c37b38515e4ee51baf40edd420bf7d5](https://etherscan.io/address/0x4a5df63b0c37b38515e4ee51baf40edd420bf7d5) | [0xa5577d1cec2583058a6bd6d5deac44797c205701](https://polygonscan.com/address/0xa5577d1cec2583058a6bd6d5deac44797c205701) |
+
 
 </TabItem>
 </Tabs>

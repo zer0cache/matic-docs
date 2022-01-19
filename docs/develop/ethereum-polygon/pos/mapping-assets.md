@@ -26,7 +26,7 @@ Standard Child Token contract will look like these:-
 2. [ERC721](https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildERC721.sol#L2157-#L2238)
 3. [ERC1155](https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildERC1155.sol#L1784-#L1818)
 
-Please visit this [link](/docs/develop/ethereum-matic/submit-mapping-request) to understand how to create a new mapping request. 
+Please visit this [link](/docs/develop/ethereum-polygon/submit-mapping-request) to understand how to create a new mapping request. 
 
 ## Custom Child Token
 
@@ -155,4 +155,4 @@ Steps :
 
 ### Request Submission
 
-Please go use [this link](/docs/develop/ethereum-matic/submit-mapping-request) to submit a mapping request.
+Please go use [this link](/docs/develop/ethereum-polygon/submit-mapping-request) to submit a mapping request.

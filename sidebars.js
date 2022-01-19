@@ -34,7 +34,7 @@ module.exports = {
     {
       type: "category",
       label: "Deploying on Polygon",
-      items: ["develop/remix", "develop/truffle", "develop/hardhat","develop/replit"],
+      items: ["develop/alchemy", "develop/remix", "develop/truffle", "develop/hardhat","develop/replit"],
     },
     {
       type: "category",
@@ -53,23 +53,8 @@ module.exports = {
       type: "category",
       label: "Tools",
       items: [
-        {
-          type: "link",
-          label: "Polygon Faucet",
-          href: "https://faucet.polygon.technology/",
-        },
-        // {
-        //   type: "link",
-        //   label: "RPC Health",
-        //   href: "https://status.matic.today",
-        // },
-        // {
-        //   type: "link",
-        //   label: "Checkpoint Status",
-        //   href: "https://status.matic.today/#/checkpoints",
-        // },
+        "develop/tools/polygon-faucet",
         "develop/tools/polygon-gas-station",
-        
       ],
     },
     {
@@ -80,6 +65,7 @@ module.exports = {
           type: "category",
           label: "Metamask",
           items: [
+            "develop/metamask/overview",
             "develop/metamask/hello",
             "develop/metamask/config-polygon-on-metamask",
             "develop/metamask/custom-tokens",
@@ -323,6 +309,21 @@ module.exports = {
         "home/architecture/security-models",
       ],
     },
+    {
+      type: "category",
+      label: "CEXs, Wallets & Fiat-on-ramps",
+      items: [
+        "develop/cexs-wallets/fiat-ramps",
+        "develop/cexs-wallets/cexs",
+        "develop/cexs-wallets/wallets",
+      ],
+
+    },
+    {
+      type: "category",
+      label: "DID Implementation",
+      items: ["develop/did-implementation/introduction","develop/did-implementation/getting-started"]
+    },
   ],
   Integrate: [
     "integrate/quickstart",
@@ -424,6 +425,11 @@ module.exports = {
         "validate/validate/change-signer-address",
         "validate/validate/validator-commission-operations",
       ],
+    },
+    {
+      type: "category",
+      label: "Knowledge Base",
+      items: ["validate/knowledge-base/known-issues","validate/knowledge-base/how-to",]
     },
     "validate/validator-faq",
     "validate/general-faq",

@@ -10,7 +10,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 ## Overview
 
-Polygon validators continuously monitor a contract on Ethereum chain called **_StateSender_**. Each time a registered contract on Ethreum chain calls this contract, it emits an event. Using this event Polygon validators relay the data to another contract on Polygon chain. This **_StateSync_** mechanism is used to send data from Ethereum to Polygon.
+Polygon validators continuously monitor a contract on Ethereum chain called **_StateSender_**. Each time a registered contract on Ethereum chain calls this contract, it emits an event. Using this event Polygon validators relay the data to another contract on Polygon chain. This **_StateSync_** mechanism is used to send data from Ethereum to Polygon.
 
 Polygon validators also periodically submit a hash of all transactions on Polygon chain to Ethereum chain. This **_Checkpoint_** can be used to verify any transaction that happened on Polygon. Once a transaction is verified to have happened on Polygon chain, action can be taked accordingly on Ethereum.
 

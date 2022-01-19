@@ -5,7 +5,7 @@ description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -75,7 +75,7 @@ You must follow the exact outlined sequence of actions, otherwise you will run i
     ```
 
 - Edit the `inventory.yml` file and insert your IP(s) in the `sentry->hosts` section. Refer [https://github.com/maticnetwork/node-ansible#inventory](https://github.com/maticnetwork/node-ansible#inventory) for more details.
-- Check if remote machine is reachable by running 
+- Check if remote machine is reachable by running
 
     ```js
     ansible sentry -m ping
@@ -84,7 +84,7 @@ You must follow the exact outlined sequence of actions, otherwise you will run i
 - For a test run to confirm if the correct remote machine / VM is configured, run the following command:
 
     ```js
-    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12-beta3 heimdall_branch=v0.2.4 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai" --list-hosts
+    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.13-beta2 heimdall_branch=v0.2.4 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai" --list-hosts
     ```
 
     This will be the output
@@ -99,7 +99,7 @@ You must follow the exact outlined sequence of actions, otherwise you will run i
 - Setup the full node with this command:
 
     ```js
-    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12 heimdall_branch=v0.2.4 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai"
+    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.13-beta2 heimdall_branch=v0.2.4 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai"
     ```
 
 - In case you run into any issues, delete and clean the whole setup using
@@ -113,7 +113,7 @@ You must follow the exact outlined sequence of actions, otherwise you will run i
     ```js
     moniker=<enter unique identifier>
     ```
-    
+
     ```js
     seeds="4cd60c1d76e44b05f7dfd8bab3f447b119e87042@54.147.31.250:26656"
     ```
@@ -161,7 +161,7 @@ In case your Bor node has stopped syncing, you can add additional bootnodes to y
     sudo service heimdalld-rest-server start
     ```
 
-    Once Heimdall is synced, run the following command: 
+    Once Heimdall is synced, run the following command:
 
     ```js
     sudo service bor start
@@ -189,6 +189,11 @@ In case your Bor node has stopped syncing, you can add additional bootnodes to y
 
 - Ports / Firewall configuration
     - Open ports 22, 26656 and 30303 to world (0.0.0.0/0) on node firewall. All other ports should be closed.
+
+## Full Node Access (via Alchemy)
+  1. Visit Alchemy.com and sign up for a free account
+  2. Get your private key and API endpoint
+  3. Use your Alchemy account to access Polygon Mumbai Testnet
 
 </TabItem>
 <TabItem value="mainnet">
@@ -250,7 +255,7 @@ You have to follow the exact outlined sequence of actions, otherwise you will ru
 - For a test run to confirm if the correct remote machine / VM is configured, run the following command:
 
     ```js
-    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12-beta3 heimdall_branch=v0.2.4  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
+    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.13 heimdall_branch=v0.2.4  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
     ```
 
     This will be the output
@@ -266,7 +271,7 @@ You have to follow the exact outlined sequence of actions, otherwise you will ru
 
     ```js
 
-    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.12-beta3 heimdall_branch=v0.2.4  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"
+    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.13 heimdall_branch=v0.2.4  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"
     ```
 
 - In case you run into any issues, delete and clean the whole setup using
@@ -323,7 +328,7 @@ You have to follow the exact outlined sequence of actions, otherwise you will ru
     sudo service heimdalld-rest-server start
     ```
 
-    Once Heimdall is synced, run the following command: 
+    Once Heimdall is synced, run the following command:
 
     ```js
     sudo service bor start
@@ -346,6 +351,11 @@ You have to follow the exact outlined sequence of actions, otherwise you will ru
 
 - Ports / Firewall configuration
     - Open ports 22, 26656 and 30303 to world (0.0.0.0/0) on node firewall. All other ports should be closed.
+
+## Full Node Access (via Alchemy)
+  1. Visit [Alchemy.com](https://www.alchemy.com/) and sign up for a free account
+  2. Get your private key and API endpoint
+  3. Use your Alchemy account to access Polygon Mainnet
 
 </TabItem>
 </Tabs>
