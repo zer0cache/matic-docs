@@ -1,7 +1,7 @@
 ---
 id: how-to-send-eip1559-transactions
 title: How to send EIP1559 Transactions
-sidebar_label: Send EIP1559 transactions
+sidebar_label: How to send EIP1559 transactions
 description: Build your next blockchain app on Polygon.
 keywords:
   - docs
