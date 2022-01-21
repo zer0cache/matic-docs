@@ -30,7 +30,7 @@ Only the `gasPrice` needed to be mentioned in the legacy transaction prior to th
 The follwing code example shows sending transaction in Legacy method:
 
 ```jsx
-const sendTransactionsInLegacyMethod = async () => {
+const sendLegacyTransaction = async () => {
     con dest web3 = new Web3('https://polygon-rpc.com');
 
     await web3.eth.sendTransactions({
@@ -52,7 +52,7 @@ The follwing code example shows sending transaction in Type 2 method:
 
 ```jsx
 // Example for
-const sendLegacyTransaction = async () => {
+const sendEIP1559Transaction = async () => {
     const web3 = new Web3('https://polygon-rpc.com');
 
     await web3.eth.sendTransactions({
@@ -62,6 +62,40 @@ const sendLegacyTransaction = async () => {
         maxPriorityFeePerGas: 40000000000
     })
 }
+```
+
+The Polygon Gas Station V2 can be used to get the gas fee estimates.
+
+Polygon Gas Station V2 Endpoint:
+
+```jsx
+
+https://gasstation-mainnet.matic.network/v2
+
+```
+
+Polygon Gas Station V2 Response:
+
+```jsx
+
+{
+	"safeLow": {
+		"maxPriorityFee": 37.181444553750005,
+		"maxFee": 326.2556979087
+	},
+	"standard": {
+		"maxPriorityFee": 49.575259405,
+		"maxFee": 435.00759721159994
+	},
+	"fast": {
+		"maxPriorityFee": 61.96907425625,
+		"maxFee": 543.7594965144999
+	},
+	"estimatedBaseFee": 275.308812719,
+	"blockTime": 6,
+	"blockNumber": 23948420
+}
+
 ```
 
 ## See also
