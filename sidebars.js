@@ -38,6 +38,13 @@ module.exports = {
     },
     {
       type: "category",
+      label: "EIP1559 Transactions",
+      items: [
+        "develop/eip1559-transactions/how-to-send-eip1559-transactions",
+      ],
+    },
+    {
+      type: "category",
       label: "Network Details",
       items: [
         "develop/network-details/network",
@@ -213,7 +220,7 @@ module.exports = {
         },
       ],
     },
-    
+
 
     {
       type: "category",
@@ -361,7 +368,7 @@ module.exports = {
       label: "Advanced",
       items: [
           "develop/network-details/technical-requirements",
-          "integrate/full-node-deployment", 
+          "integrate/full-node-deployment",
           "integrate/full-node-binaries"
         ],
     },
