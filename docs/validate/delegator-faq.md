@@ -163,7 +163,7 @@ No. You can choose any node of your choice.
 
 ## What happens to my rewards that are accumalated if I switch delegation from Foundation to external node?
 
-If you haven't already withdrawn your rewards before switching delegation, then upon successfull switch of your delegation from Foundation to external node, the rewards that were accumalated until then will be transferred back to your account.
+If you haven't already withdrawn your rewards before switching delegation, then upon successful switch of your delegation from Foundation to external node, the rewards that were accumalated until then will be transferred back to your account.
 
 ## Will delegation on the external nodes work the same as Foundation nodes?
 
