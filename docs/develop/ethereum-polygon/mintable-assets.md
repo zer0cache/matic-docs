@@ -32,6 +32,16 @@ Please visit this [link](/docs/develop/ethereum-polygon/submit-mapping-request) 
     - ChildMintableERC721 - [https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildMintableERC721.sol](https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildMintableERC721.sol)
     - ChildMintableERC1155 - [https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildMintableERC1155.sol](https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildMintableERC1155.sol)
 
+- Most importantly, the child manager contract on Polygon should be given the depositor role in the asset contract deployed on Polygon. Only this child manager proxy address should have the rights to deposit tokens on Polygon.
+- Be sure to verify both contracts on Polygonscan and Etherscan accordingly, before submitting mapping request.
+
+Child Manager contract addresses:
+
+```
+Mumbai: 0xb5505a6d998549090530911180f38aC5130101c6
+Mainnet: 0xA6FA4fB5f76172d178d61B04b0ecd319C5d1C0aa
+```
+
 Please do mention the contract address of the deployed child token when you submit the mapping request. 
 
 > Note that the Ethereum contract needs to be deployed as shown in the next step - no minting needs to be done on Ethereum though. It is required so that tokens can be withdrawn to Ethereum if need be. 
