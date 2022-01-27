@@ -34,18 +34,18 @@ _Polygon Gas Station_ has been deployed both on Polygon Mumbai Testnet & Polygon
 
 # Mumbai-Testnet
 
-For getting gas price recommendation from this oracle, send GET request to [https://gasstation-mumbai.matic.today](https://gasstation-mumbai.matic.today)
+For getting gas price recommendation from this oracle, send GET request to [https://gasstation-mumbai.matic.today/v2](https://gasstation-mumbai.matic.today/v2)
 
 ### cURL
 
 ```bash
-curl https://gasstation-mumbai.matic.today
+curl https://gasstation-mumbai.matic.today/v2
 ```
 
 ### JavaScript
 
 ```javascript
-fetch('https://gasstation-mumbai.matic.today')
+fetch('https://gasstation-mumbai.matic.today/v2')
   .then(response => response.json())
   .then(json => console.log(json))
 ```
@@ -54,7 +54,7 @@ fetch('https://gasstation-mumbai.matic.today')
 
 ```python
 import requests
-requests.get('https://gasstation-mumbai.matic.today').json()
+requests.get('https://gasstation-mumbai.matic.today/v2').json()
 ```
 
 </TabItem>
