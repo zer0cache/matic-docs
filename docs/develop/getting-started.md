@@ -6,24 +6,24 @@ description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 
 Welcome to the most exciting and innovative platform to build your blockchain application on **Polygon Blockchain**. Blockchain technology is poised to revolutionise the way the digital world handles data and does business. Be a part of this revolution and get a head start with decentralised application development on Polygon.
 
-This page will act as your guide into the **Polygon Ecosystem**. You'll find links to some useful resources and websites to get you up and started with building on Polygon in particular and Blockchain in general. Feel free to reach out to us on Telegram/Discord. 
+This page will act as your guide into the **Polygon Ecosystem**. You'll find links to some useful resources and websites to get you up and started with building on Polygon in particular and Blockchain in general. Feel free to reach out to us on Telegram/Discord.
 
 ## **Developer Quick Start**
 
-If you're an Ethereum Developer, you're already a Polygon developer. 
-All the tools you're familiar with are supported on Polygon out of the box: Truffle, Remix, Web3js. 
+If you're an Ethereum Developer, you're already a Polygon developer.
+All the tools you're familiar with are supported on Polygon out of the box: Truffle, Remix, Web3js.
 Switch over to Polygon's RPC and get started!
 
-Polygon's Test Network which is called **Mumbai** connects with **Ethereum's Goërli Testnet.** 
-All the network related details can be found in [network docs](/docs/develop/network-details/network) 
+Polygon's Test Network which is called **Mumbai** connects with **Ethereum's Goërli Testnet.**
+All the network related details can be found in [network docs](/docs/develop/network-details/network)
 
 - Setup [Metamask Wallet](/docs/develop/metamask/overview) or [Arkane Wallet](/docs/develop/wallets/arkane/intro)
-- Deploy your Contracts on Polygon 
+- Deploy your Contracts on Polygon
     - [Using Alchemy](/docs/develop/alchemy)
     - [Using Remix](/docs/develop/remix)
     - [Using Truffle](/docs/develop/truffle)
@@ -34,7 +34,7 @@ All the network related details can be found in [network docs](/docs/develop/net
   Note that same RPC can be used with web3js.
 
     ```jsx
-    // Javascript 
+    // Javascript
 
     const Web3 = require('Web3')
 
@@ -100,7 +100,7 @@ All the network related details can be found in [network docs](/docs/develop/net
   </button>
 
   <button className="btn btn-primary btn-md mx-4">
-    <a href="https://www.notion.so/FAQs-2192c487105342ae90c54efadd101cac" target="_blank" style={{color: 'inherit'}}>
+    <a href="https://docs.polygon.technology/docs/faq/technical-faqs" target="_blank" style={{color: 'inherit'}}>
       FAQs
     </a>
   </button>
