@@ -143,7 +143,7 @@ where
 Example:
 
 ```sh
-git checkout v0.2.13
+git checkout v0.2.14
 ```
 
 Install Bor:
