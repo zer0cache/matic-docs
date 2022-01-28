@@ -6,7 +6,7 @@ description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -34,18 +34,18 @@ _Polygon Gas Station_ has been deployed both on Polygon Mumbai Testnet & Polygon
 
 # Mumbai-Testnet
 
-For getting gas price recommendation from this oracle, send GET request to [https://gasstation-mumbai.matic.today](https://gasstation-mumbai.matic.today)
+For getting gas price recommendation from this oracle, send GET request to [https://gasstation-mumbai.matic.today/v2](https://gasstation-mumbai.matic.today/v2)
 
 ### cURL
 
 ```bash
-curl https://gasstation-mumbai.matic.today
+curl https://gasstation-mumbai.matic.today/v2
 ```
 
 ### JavaScript
 
 ```javascript
-fetch('https://gasstation-mumbai.matic.today')
+fetch('https://gasstation-mumbai.matic.today/v2')
   .then(response => response.json())
   .then(json => console.log(json))
 ```
@@ -54,7 +54,7 @@ fetch('https://gasstation-mumbai.matic.today')
 
 ```python
 import requests
-requests.get('https://gasstation-mumbai.matic.today').json()
+requests.get('https://gasstation-mumbai.matic.today/v2').json()
 ```
 
 </TabItem>
@@ -62,18 +62,18 @@ requests.get('https://gasstation-mumbai.matic.today').json()
 
 # Polygon-Mainnet
 
-For getting gas price recommendation from this oracle, send GET request to [https://gasstation-mainnet.matic.network](https://gasstation-mainnet.matic.network)
+For getting gas price recommendation from this oracle, send GET request to the Polygon Gas Station V2 to get the gas fee estimates. Polygon Gas Station V2 Endpoint: [https://gasstation-mainnet.matic.network/v2](https://gasstation-mainnet.matic.network/v2)
 
 ### cURL
 
 ```bash
-curl https://gasstation-mainnet.matic.network
+curl https://gasstation-mainnet.matic.network/v2
 ```
 
 ### JavaScript
 
 ```javascript
-fetch('https://gasstation-mainnet.matic.network')
+fetch('https://gasstation-mainnet.matic.network/v2')
   .then(response => response.json())
   .then(json => console.log(json))
 ```
@@ -82,7 +82,7 @@ fetch('https://gasstation-mainnet.matic.network')
 
 ```python
 import requests
-requests.get('https://gasstation-mainnet.matic.network').json()
+requests.get('https://gasstation-mainnet.matic.network/v2').json()
 ```
 
 </TabItem>
