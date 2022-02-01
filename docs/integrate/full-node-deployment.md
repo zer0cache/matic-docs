@@ -195,6 +195,11 @@ In case your Bor node has stopped syncing, you can add additional bootnodes to y
   2. Get your private key and API endpoint
   3. Use your Alchemy account to access Polygon Mumbai Testnet
 
+## Full Node Access (via QuickNode)
+  1. Visit [QuickNode](https://www.quicknode.com/chains/matic) and sign up for a free account
+  2. Get your free trial node
+  3. Use your QuickNode node to access Polygon Mumbai Testnet
+
 </TabItem>
 <TabItem value="mainnet">
 
@@ -356,6 +361,11 @@ You have to follow the exact outlined sequence of actions, otherwise you will ru
   1. Visit [Alchemy.com](https://www.alchemy.com/) and sign up for a free account
   2. Get your private key and API endpoint
   3. Use your Alchemy account to access Polygon Mainnet
+
+## Full Node Access (via QuickNode)
+  1. Visit [QuickNode](https://www.quicknode.com/chains/matic) and sign up for a free account
+  2. Get your free trial node
+  3. Use your QuickNode node to access Polygon Mainnet
 
 </TabItem>
 </Tabs>

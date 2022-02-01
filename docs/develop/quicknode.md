@@ -142,4 +142,4 @@ So this is how contracts are deployed and interacted on Polygon.
 
 QuickNode just like Polygon has always had an education first approach they put out regular developer [guides](https://www.quicknode.com/guides?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide), [docs](https://www.quicknode.com/docs/polygon?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide), [tutorial videos](https://www.youtube.com/channel/UC3lhedwc0EISreYiYtQ-Gjg/videos) and have a [community of #web3 developers](https://discord.gg/DkdgEqE) who are eager to help eachother.
 
-We hope this guide was helpful. We'll be happy to hear from you DM us or tag us on Twiiter [@QuickNode](https://twitter.com/QuickNode)
+We hope this guide was helpful. We'll be happy to hear from you. DM us or tag us on Twiiter [@QuickNode](https://twitter.com/QuickNode)
