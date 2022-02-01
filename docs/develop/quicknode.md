@@ -6,7 +6,7 @@ description: Build and deploy a smart contract on Polygon.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 
 # 🐣 Beginner Smart Contract on Polygon
@@ -79,21 +79,13 @@ Paste the following code into your new Solidity script:
 pragma solidity >=0.4.0 <0.7.0;
 
 contract SimpleStorage {
-
     uint storedData;
-
     function set(uint x) public {
-
         storedData = x;
-
     }
-
     function get() public view returns (uint) {
-
         return storedData;
-
     }
-
 }
 ```
 
@@ -105,15 +97,15 @@ Line 1: Specifying [SPDX license](https://spdx.org/licenses/) type, which is an 
 
 Line 2: On the first line, we are declaring which Solidity compiler we want to use. For instance, we are targeting any version between ≥ 0.4.0 and <0.7.0.
 
-Line 3: We are declaring our contract here and naming it as Simplestorage.
+Line 3: We are declaring our contract here and naming it as `Simplestorage`.
 
-Line 4: Declaring a uint (Unsigned Integer) variable named storedData, this variable will be used to store data.
+Line 4: Declaring a uint (Unsigned Integer) [Solidity variable](https://docs.soliditylang.org/en/latest/types.html) named `storedData`, this variable will be used to store data.
 
-Line 5-7: Next, we will add a set function, using which we will change the value of our variable storeData.  The **set** function accepts a parameter x whose value we are storing into storeData. In addition, the function is marked as public which means that the function can be called outside the scope of this function and by other contracts.
+Line 5-7: Next, we will add a set function, using which we will change the value of our variable storeData.  The **set** function accepts a parameter `x` whose value we are storing into `storedData`. In addition, the function is marked as public which means that the function can be called outside the scope of this function and by other contracts.
 
-Line 8-10: We will add a **get** function to retrieve the value of storeData variable. This function is marked as view, which tells the Solidity compiler that this is a read-only function.
+Line 8-10: We will add a **get** function to retrieve the value of `storedData` variable. This function is marked as [view](https://docs.soliditylang.org/en/latest/types.html#function-types), which tells the Solidity compiler that this is a read-only function.
 
-Other than that, the get function also has returns (uint), which means that the function will return a uint value.
+Other than that, the get function also returns (uint), which means that the function will return a uint value.
 
 ### Step 5: Deploying the contract
 ----------------------
