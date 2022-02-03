@@ -195,6 +195,11 @@ In case your Bor node has stopped syncing, you can add additional bootnodes to y
   2. Get your private key and API endpoint
   3. Use your Alchemy account to access Polygon Mumbai Testnet
 
+## Full Node Access (via Chainstack)
+  1. [Sign up with Chainstack](https://console.chainstack.com/user/account/create) for a free account.
+  2. [Deploy a Polygon Mumbai testnet node](https://docs.chainstack.com/platform/join-a-public-network#join-a-polygon-pos-network).
+  3. [Get the deployed node’s HTTPS endpoint](https://docs.chainstack.com/platform/view-node-access-and-credentials).
+
 </TabItem>
 <TabItem value="mainnet">
 
@@ -356,6 +361,11 @@ You have to follow the exact outlined sequence of actions, otherwise you will ru
   1. Visit [Alchemy.com](https://www.alchemy.com/) and sign up for a free account
   2. Get your private key and API endpoint
   3. Use your Alchemy account to access Polygon Mainnet
+
+## Full Node Access (via Chainstack)
+  1. [Sign up with Chainstack](https://console.chainstack.com/user/account/create) for a free account.
+  2. [Deploy a Polygon mainnet node](https://docs.chainstack.com/platform/join-a-public-network#join-a-polygon-pos-network).
+  3. [Get the deployed node’s HTTPS endpoint](https://docs.chainstack.com/platform/view-node-access-and-credentials).
 
 </TabItem>
 </Tabs>
