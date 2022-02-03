@@ -94,7 +94,7 @@ The contract is an ERC-20 contract; you can learn more about the ERC-20 standard
 ## Step 2: Booting your Polygon node
 -------------------------
 
-QuickNode has a global network of Polygon Mainnet and Mumbai testnet nodes, today in this guide we will deploy our contract on the Polygon Mumbai testnet so sign up and simply get a [free trial node from QuickNode](https://www.quicknode.com/chains/matic?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide), which is much better than investing time in looking at different custom configs to launch your own node.
+QuickNode has a global network of Polygon Mainnet and Mumbai testnet nodes, they also run a [free public Polygon RPC](https://docs.polygon.technology/docs/develop/network-details/network/#:~:text=https%3A//rpc%2Dmainnet.matic.quiknode.pro) but if you get rate limited you can sign up for a [free trial node from QuickNode](https://www.quicknode.com/chains/matic?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide).
 
 ![](https://lh6.googleusercontent.com/vEAp28OLizS-ZBoYU1yWthHalH0xbrgatZ1ynyA1H4y2tW-x1EHC97qk5RkHatq6tO2anLAC-ch4mfs4am2rf1zaMO5BNEAtL3anqL4UQVH5ebpQOKyItYLm4slWIurR9iznXkly=s1600)
 
