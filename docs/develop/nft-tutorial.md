@@ -19,3 +19,5 @@ Build, mint, and send around your own ERC721 (NFT) on Mumbai (testnet) and then 
 2. Click [here](https://docs.scaffoldeth.io/scaffold-eth/examples-branches/common-web3-patterns/push-the-button#side-quests) for the Multi-player Turn Based Game (Push The Button).
 
 3. Click [here](https://docs.alchemy.com/alchemy/tutorials/nft-minter) for a tutorial on how to create an NFT Minter that enables users to mint NFTs from a front-end (a mini-version of OpenSea). Be sure to use your Polygon RPC URL from [Alchemy](https://alchemy.com/?a=polygon-docs) instead of the Ethereum version!
+
+4. Click [here](https://docs.alchemy.com/alchemy/enhanced-apis/nft-api) for the Alchemy NFT API that will allow you to instantly find NFTs by owner, as well as verify and display NFTs within your app.
