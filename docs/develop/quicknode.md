@@ -9,40 +9,89 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
-# 🐣 Beginner Smart Contract on Polygon
+# 🐣 Deploy a Smart Contract on Polygon using Brownie and QuickNode
 
 _Estimated time to complete this guide: \~10 minutes_
 
-Ethereum is a very lovely blockchain to work with, but recently, heavy traffic and many people building on it have resulted in the chain being a bit congested. Layer 2 solutions solve this issue by extending Ethereum scalability. Polygon (FKA Matic) is one such solution. It is an Ethereum Layer 2 with lower gas fees along with the security of Ethereum. Today in this guide, we'll learn how to build and deploy a smart contract using [Metamask](https://metamask.io), [Solidity](https://docs.soliditylang.org/en/v0.8.0/), [Ethereum REMIX IDE](https://remix.ethereum.org/), and [QuickNode](https://www.quicknode.com/chains/matic?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide)
+Python is one of the most versatile programming languages; from researchers running their test models to developers using it in heavy production environments, it has use cases in every possible technical field. This guide will walk you through the process of deploying smart contracts using [Brownie](https://eth-brownie.readthedocs.io/en/latest/index.html#brownie), a Python-based tool used to write and deploy smart contracts, and [QuickNode](https://www.quicknode.com/chains/matic?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide)
 
 **Prerequisites**
 
+-   Python3 installed.
+
 -   A Polygon node.
 
--   Web browser.
+-   Text editor.
 
--   MetaMask installed in the browser.
+-   Command-line.
 
--   That violet love for polygon.
+-   That violet love for Polygon and brownies.
 
-Why Polygon?
-------------
+## What is Brownie?
+-----------------
 
-With the rapid adoption of Ethereum, the problem of scalability arose, where gas prices started getting higher as more and more people wanted to get that precious Ethereum block space. [Polygon](https://polygon.technology/), which was launched as MATIC network, was created to provide a scalable solution to Ethereum. It is a [Proof-of-stake](https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/#what-is-pos) blockchain, just like other PoS blockchains, with the exception that transactions are collected and then settled on the Ethereum blockchain, which gives Polygon the interoperability, liquidity, and security of Ethereum.
+Smart contract development is majorly dominated by JavaScript-based libraries like [web3.js](https://web3js.readthedocs.io/), [ethers.js](https://docs.ethers.io/), [Truffle](https://www.trufflesuite.com/docs/truffle/overview), and [Hardhat](https://hardhat.org/). Python is a versatile, highly used language and can also be used for smart contracts/web3 development; [web3.py](https://web3py.readthedocs.io/en/stable/) is a compelling Python library that fulfills web3 needs. Brownie framework is built on top of web3.py.
 
-Polygon also has a Polygon SDK using which developers can make their own Ethereum compatible dApps and connect them to the main blockchain. These sidechains can be built using one of the scalability methods:
+Brownies are small rectangular confectionary items loved by everyone, but the [Brownie](https://eth-brownie.readthedocs.io/en/latest/index.html#brownie) we are talking about today is a Python-based framework to develop and test smart contracts. Brownie has support for both Solidity and Vyper contracts, and it even provides contract testing via [pytest](https://github.com/pytest-dev/pytest).
 
-**Plasma Chains:** It bundles all the transactions into blocks and submits them to Ethereum blockchain as a single batch.
+To demonstrate the process of writing and deploying a smart contract with Brownie, we will use [Brownie-mixes](https://github.com/brownie-mix) which are template projects. Specifically, we will use a [token mix](https://github.com/brownie-mix/token-mix), which is a template of the ERC-20 implementation.
 
-**zk-Rollups:** This allows multiple transfers to be bundled in a single transaction.
+## Step 1: Installing dependencies
+-----------------------
 
-**Optimistic Rollups:** Similar to Plasma chains with the capability of scaling Ethereum smart contracts.
+Brownie is built on top of python3, so we need it installed to work with brownie; let us check if we have python3 installed on our system. To do so, type the following in your terminal/cmd:
 
-Polygon's main chain is a Proof-of-Stake (PoS) chain which I already mentioned earlier. Where MATIC token, the native token of Polygon network, is used as staking token to validate transactions and vote on network upgrades. MATIC token is also used to pay for the gas fee on Polygon.
+```
+python3 -V
+```
 
-Now that we know what Polygon is let us deploy a contract on this fantastic network. But before that, we'll need a Polygon node and set it up in MetaMask.
+This should return the version of python3 installed. If not installed, download and install it from the official [python website](https://www.python.org/downloads/).
 
-### Step 1: Booting your Polygon node
+Let us make a project directory before installing brownie, and make that project directory our current working directory:
+
+```
+mkdir brownieDemo
+cd brownieDemo
+```
+
+Now that you have installed python3 on your system, let us install brownie using pip, Python's package manager. Pip is similar to what npm is for JavaScript. Type the following in your terminal/cmd:
+
+```
+pip3 install eth-brownie
+```
+***If the install fails, you can use the following command for better luck***
+
+```
+sudo pip3 install eth-brownie
+```
+
+To check if Brownie was installed correctly, type brownie in your terminal/cmd, and it should give the following output:
+
+![](https://lh6.googleusercontent.com/PQBS5TChhoS-G-CT0uCa3LurtoxQ0iSj9BNs5jonUt0sJfyTGfnZfMZ0w00D__X7p0GWgzFVz44aUuCQOaWS_TEY1EJlYvLv8CpgGbXJrIIwiATDVa61xrkF43JSNF4N5kSz5hO1)
+
+To get the token mix, simply type the following in your terminal/cmd:
+
+```
+brownie bake token
+```
+
+This will create a new directory token/ in our brownieDemo directory.
+
+
+### File structure
+First of all, cd into the _token_ directory:
+
+```
+cd token
+```
+
+Now, open the _token_ directory in your text editor. Under the ***contracts/*** folder you will find **Token.sol**, which is our main contract; you can write your own contracts or modify this. Under the ***scripts/*** folder, you will find ***token.py*** python script; this script will be used to deploy the contract, and modifications are needed based on contracts.
+
+![](https://lh3.googleusercontent.com/nlMPBzTL3dzag6Uszkzm242YOd60SnSRdQSkWeLMTL3GtXDyV85nxQBvlXrTBtykIBBHAtc2zQ476wIwRAw-SNr9yVHsqSMeSHssLfb7h197T-gulqnvzkmHEarBuzZ0fZBwyl3h)
+
+The contract is an ERC-20 contract; you can learn more about the ERC-20 standards and contracts in this [guide on ERC-20 tokens](https://www.quicknode.com/guides/solidity/how-to-create-and-deploy-an-erc20-token).
+
+## Step 2: Booting your Polygon node
 -------------------------
 
 QuickNode has a global network of Polygon Mainnet and Mumbai testnet nodes, today in this guide we will deploy our contract on the Polygon Mumbai testnet so sign up and simply get a [free trial node from QuickNode](https://www.quicknode.com/chains/matic?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide), which is much better than investing time in looking at different custom configs to launch your own node.
@@ -51,86 +100,89 @@ QuickNode has a global network of Polygon Mainnet and Mumbai testnet nodes, toda
 
 Copy the HTTP URL, which will be needed in the next step.
 
-### Step 2: Setting up MetaMask with Polygon node.
+## Step 3: Network and account set up.
 --------------------------------------
 
-After creating your QuickNode Polygon Node, we'll have to [set it up in the MetaMask wallet as a custom RPC](https://www.quicknode.com/guides/knowledge-base/how-to-set-a-custom-provider-in-metamask).
+We need to set up our QuickNode endpoint with Brownie. To do so, type the following in your terminal/cmd:
 
-![](https://lh3.googleusercontent.com/4I6N4RTWFDQ2fLhQV2sK5DczD8sm_fIV72u75p2shuCHHEzKQcYc2ZG6aK6SjOznocMKYd0ozsUh0kvHEQhxgufjy_7D76EDQ_OVOcdxgsmYwh-i_0jOVid_RsRZAdJUOox1TXpr=s1600)
+```
+brownie networks add Ethereum matic_mumbai host=YOUR_QUICKNODE_URL chainid=3
+```
 
-### Step 3: Getting test MATIC
+Replace **YOUR_QUICKNODE_URL** with the Mumbai URL we got in the last step.
+
+In the above command, `Ethereum` is the name of the environment, and `matic_mumbai` is the custom name of the network; you can give any name to your custom network.
+
+The next thing we need to do here is to create a new wallet using Brownie, to do so type the following in your terminal/cmd. 
+You will be asked to set up a password for your account. 
+
+```
+brownie accounts generate testac
+```
+
+This will generate an account along with a mnemonic phrase, save it offline. The name testac is the name for our account. You can choose any name that you would like.
+
+![](https://lh6.googleusercontent.com/a6n4IL_G4oenKG5WZYu9xTmSNLqa1ixlRGJpksoFjg5KIF2Z-lka_6pLufLgZGl9yK-wSvwDe5iCCJj1D2hCaPIkQU6nsKiAJg_AKw3jylndBd8AfDtvDstrehG8u3hgdm-KVCjK)
+
+> **Note**: Mnemonic phrases can be used to recover an account or import the account to other [non-custodial wallets](https://www.quicknode.com/guides/web3-sdks/how-to-do-a-non-custodial-transaction-with-quicknode). The account you see in the image above was just created for this guide.
+
+Copy the account address so that we can get some test ETH, which will be required to deploy our contract.
+
+## Step 4: Getting test MATIC
 ------------------
 
-We will need some test MATICs to pay for gas fees to deploy and interact with the smart contract.
+We will need some test MATICs to pay for gas fees to deploy the smart contract.
 
-Copy your address from MetaMask, paste it into the address field of [Polygon faucet](https://faucet.polygon.technology/), and click on submit. The faucet will send you 0.1 test MATIC.
+Copy your address of the account which we generated in the last step, paste it into the address field of [Polygon faucet](https://faucet.polygon.technology/), and click on submit. The faucet will send you 0.1 test MATIC.
 
 ![](https://lh6.googleusercontent.com/kq173aYK_XB8DwuZjXXp2sot9X4enx9WXo-Xt8O93S-GohO5kx9p1iI2JQzL9wdAtiTrWfjiEodAsI_vcD1m1dUvp6koTfrKvnP4gOymP-JSDYpHVJKjWQXQ0ePNTj1MmEAJQ8Wo=s1600)
 
-### Step 4: Writing the contract
+## Step 5: Deploying our contract
 --------------------
 
-Time to write our smart contract, go to [REMIX Ethereum](https://remix.ethereum.org/) and make a new solidity file for example, `mumbai01.sol`
+Before deploying the contract, we need to compile it using:
 
-Paste the following code into your new Solidity script:
-```javascript
-// SPDX-License-Identifier: MIT
-
-pragma solidity >=0.4.0 <0.7.0;
-
-contract SimpleStorage {
-    uint storedData;
-    function set(uint x) public {
-        storedData = x;
-    }
-    function get() public view returns (uint) {
-        return storedData;
-    }
-}
+```
+brownie compile
 ```
 
-Explanation of the code above.
+![](https://lh4.googleusercontent.com/AqxeplHn6FNPchw8EwgsyCkQuQhiqoEe8X7jUXLm8KKQvH3yCTRcUJ5j7cnU_eVntoRF0fbWXKda2Ad7Sr8KjjWJbdGRtXgDltdhb9nBeaqVoyaLvDUfVd3fTTEAFpJlwEHHByoI)
 
-Line 1: Specifying [SPDX license](https://spdx.org/licenses/) type, which is an addition after Solidity ^0.6.8.
+Now open the **scripts/token.py** in your text editor, and make the following changes:
 
->Whenever the source code of a smart contract is made available to the public, these licenses can help resolve/avoid copyright issues. If you do not wish to specify any license type, you can use a special license [UNLICENSED](https://spdx.org/licenses/Unlicense.html) or simply skip the whole comment (it won't result in an error, just a warning).
+```python
+#!/usr/bin/python3
 
-Line 2: On the first line, we are declaring which Solidity compiler we want to use. For instance, we are targeting any version between ≥ 0.4.0 and <0.7.0.
+from brownie import Token, accounts
 
-Line 3: We are declaring our contract here and naming it as `Simplestorage`.
+def main():
 
-Line 4: Declaring a uint (Unsigned Integer) [Solidity variable](https://docs.soliditylang.org/en/latest/types.html) named `storedData`, this variable will be used to store data.
+    acct = accounts.load('testac')
 
-Line 5-7: Next, we will add a set function, using which we will change the value of our variable storeData.  The **set** function accepts a parameter `x` whose value we are storing into `storedData`. In addition, the function is marked as public which means that the function can be called outside the scope of this function and by other contracts.
+    return Token.deploy("Test Token", "TST", 18, 1e21, {'from': acct})
+```
 
-Line 8-10: We will add a **get** function to retrieve the value of `storedData` variable. This function is marked as [view](https://docs.soliditylang.org/en/latest/types.html#function-types), which tells the Solidity compiler that this is a read-only function.
+Changes in the token.py file:
 
-Other than that, the get function also returns (uint), which means that the function will return a uint value.
+Line 7: We added this line to import testac account which we created earlier, and storing it in **acct** variable.
 
-### Step 5: Deploying the contract
-----------------------
+Line 8: On this line we edited 'From': part to have our acct variable.
 
-Now click on the Solidity logo from the left menu and click on compile. After successful compilation, a green tick will appear on the Solidity logo.
+FINALLY, now we will deploy our contract:
 
-![](https://lh6.googleusercontent.com/nPZvg_31tEIE-NzrCMgrGfo4nbz-UBiYqxdy0rZkUTZ2Smm526FBpHaMvCUWf-uF0-0VVIyRe9zHrI2jrPlcdHzQGV8j9Y5vaygIKqU--3NOt3ZgbEp_zCi01vCm9UjoqZsy0B4T=s1600)
+```
+brownie run token.py --network matic_mumbai
+```
 
-Now, click on the option from the left menu to deploy the complied contract and select `Injected Web3` as the environment. Below the environment, the name and chainid of our network will appear. In this case 'custom 80001' for Matic testnet. Make sure you have the correct contract name selected under the contract option. Once you have checked everything, click on `Deploy` and accept the transaction from the MetaMask pop-up window.
+matic_mumbai is the name of the custom network which we created earlier. The prompt will ask you for the password which we set earlier while making the account. After running the above command, you must get the transaction hash, and Brownie will wait for the transaction to get confirmed. Once the transaction is confirmed, it will return the address at which our contract is deployed on the Polygon Mumbai testnet.
 
-![](https://lh6.googleusercontent.com/xXU6LccQoQUMVbFI_HIdzUUyvTUz0bpZUPBW2ZjEbY0qKWRIKjPUQ66nHuGtL1B-gp7cHHdsIO0LcXdE1tiJbh7YJfFosFMK50V_6Zw012Ws3ZQhwc-9w8k6xxkWVQ7KQu8Bg69s=s1600)
+![](https://lh4.googleusercontent.com/-5YsXvupHFSOf7p1apOy6RwhqD7hYAoj5E-sXBSZ4C0xwofMFJ2XZnuCcrGtqhr7srH1HDY-eHVXz8yGQxnsdxNgzFeb26sj22sjUXsqXQxa_9FvKbo1OmvQLbSEVGJdxCgDNkEe)
 
-Once the contract deployment transaction is approved, the deployed contract will appear under the `Deployed Contracts` section.
+You can check out the deployed contract by copy-pasting the contract address at [Polygonscan Mumbai](https://mumbai.polygonscan.com/).
 
-![](https://lh3.googleusercontent.com/1Ble0P_qeM_xSA3o3qQNRjEpVl12z7eOUJsQjy7709p6b-5UlQNdaqZBgoUaVNjKiRlkYOaSPF-5S_S0unEBtCQuRH8YKBqxLD9PSMItVOOWAd3PGvr4F8WaGHE_2WFpkJYgoBVQ=s1600)
+![](https://lh5.googleusercontent.com/2cchxBugZcogWUHDWHvAp_xJif8ALdhLjrUaFgo6XZat5nm20U5PcGdGDqeX_5Jdt6w5SNnemOH8lnVGzHApLJ5ML6fHVS-spZx6BBEPb0eIUivMfPHI2AvPpTXUKCITt3g5NM3s)
 
-Expand the deployed contract and click on `get`; it will return the value of the **storedData**, which is  currently zero since we have not input any number yet.
-
-![](https://lh6.googleusercontent.com/O4xP-eo65gqo2j7fb-FgECDxJXY0FONIjZghlapA_FhC5Hwxhf-QJIm1jiy1HDoQU7R_C_5h_W2JTelUqnmr6cdeRZFOWG9q5Iw_iZh94t-qgAoNwfJLjFND2XBwZtyQWuzODpxP=s1600)
-
-To input a value, enter a number in the field near the `set` button, click on set and approve the transaction from the MetaMask pop-up. Once the transaction is approved, value of the **storedData** will be the input number. To verify this, click on `get`, and the inputed value will be printed.
-
-![](https://lh3.googleusercontent.com/TXEC6gAAyFSmmZPKX9xUUGlJczLNAmtVb2MS6-yPR9dU-9XMef3KkcMCuCWTodfjpVgqL5cej7Ig93zsimSU8dF56KzTQEjPR9NIFAshCKlZSHCJFg0Gl9lxdy_BWG-QtWyWAS_m=s1600)
-
-So this is how contracts are deployed and interacted on Polygon.
+So this is how contracts are deployed Polygon using Brownie and QuickNode.
 
 QuickNode just like Polygon has always had an education first approach they put out regular developer [guides](https://www.quicknode.com/guides?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide), [docs](https://www.quicknode.com/docs/polygon?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide), [tutorial videos](https://www.youtube.com/channel/UC3lhedwc0EISreYiYtQ-Gjg/videos) and have a [community of #web3 developers](https://discord.gg/DkdgEqE) who are eager to help eachother.
 
