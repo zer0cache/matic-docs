@@ -16,7 +16,7 @@ The bounty program is to ensure everyone has an opportunity to find bugs in the 
 
 ## Getting started
 
-If you are new to blockchains and/or to Polygon, see [Polygon Architecture](/docs/home/architecture/matic-architecture).
+If you are new to blockchains and/or to Polygon, see [Polygon Architecture](/docs/home/architecture/polygon-architecture).
 
 Explore the [code on GitHub](https://github.com/maticnetwork). There are 3 main repositories for you to study:
 
