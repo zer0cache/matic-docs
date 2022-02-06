@@ -38,7 +38,7 @@ async function checkDepositStatus(
   return new Promise((resolve, reject) => {
     ws.on("open", () => {
       ws.send(
-        `{"id": 1, "method": "eth_subscribe", "params": ["newDeposits", {"Contract": ${childChainManagerProxy}}]}`
+        `{"id": 1, "method": "eth_subscribe", "params": ["newDeposits", {"Contract": "${childChainManagerProxy}"}]}`
       );
 
       ws.on("message", (msg) => {
