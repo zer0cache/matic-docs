@@ -1,7 +1,7 @@
 ---
 id: web-wallet-v2-guide
 title: Web Wallet Usage Guide
-description: 
+description: Learn how to use the Polygon Web Wallet.
 keywords:
   - wallet
   - matic
@@ -178,7 +178,4 @@ Once you have confirmed all these transactions, you will receive your funds back
 
 >Note: You can view the successful transactions after “Transfer in Progress/Action required” transactions in the “Action Required” popup.
 
-
 >Note: In case you any queries, feel free to raise a ticket here https://support.polygon.technology/support/home
-
-

@@ -1,7 +1,7 @@
 ---
 id: graph
-title: Setting up hosted project with  TheGraph and Matic
-description: 
+title: Setting up hosted project with The Graph and Matic
+description: Learn how to set up a hosted project with The Graph and Matic.
 keywords:
   - graph
   - matic
@@ -10,7 +10,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-TheGraph, a decentralized protocol for indexing and querying chain data, supports the Matic chain. Data defined through subgraphs is easy to query and explore. Subgraphs can be created locally, or use a free hosted explorer for indexing and data display. 
+The Graph, a decentralized protocol for indexing and querying chain data, supports the Matic chain. Data defined through subgraphs is easy to query and explore. Subgraphs can be created locally, or use a free hosted explorer for indexing and data display. 
 
 > Note: See https://thegraph.com/docs/quick-start for more details, local installation and more. The docs include an example for learning how subgraphs work and this video provides a good introduction.
 
@@ -69,6 +69,3 @@ Your subgraph will be deployed and can be accessed from your dashboard.
 You can learn about querying the subgraph here: https://thegraph.com/docs/query-the-graph#using-the-graph-explorer
 
 If you want to make your subgraph public, you can do so by accessing your subgraph from your dashboard and then click on edit button. You will see the slider at the bottom of edit page.
-
-
-
