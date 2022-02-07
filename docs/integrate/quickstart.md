@@ -23,6 +23,7 @@ this section is for you.
 
 * Deploy your Contracts on Polygon
     - [Using Alchemy](/docs/develop/alchemy)
+    - [Using Chainstack](/docs/develop/chainstack)
     - [Using QuickNode](/docs/develop/quicknode)
     - [Using Remix](/docs/develop/remix)
     - [Using Truffle](/docs/develop/truffle)
