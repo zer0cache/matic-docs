@@ -26,6 +26,7 @@ All the network related details can be found in [network docs](/docs/develop/net
 - Deploy your Contracts on Polygon
     - [Using Alchemy](/docs/develop/alchemy)
     - [Using Chainstack](/docs/develop/chainstack)
+    - [Using QuickNode](/docs/develop/quicknode)
     - [Using Remix](/docs/develop/remix)
     - [Using Truffle](/docs/develop/truffle)
     - [Using Hardhat](/docs/develop/hardhat)
@@ -70,6 +71,7 @@ All the network related details can be found in [network docs](/docs/develop/net
 
     - [Web3js](https://www.dappuniversity.com/articles/web3-js-intro), [Ethers.js](https://docs.ethers.io/v5/),[Remix](https://docs.polygon.technology/docs/develop/remix/), [Truffle](https://docs.polygon.technology/docs/develop/truffle), [Metamask](/docs/develop/metamask/overview), [Arkane](/docs/develop/wallets/arkane/intro)
 - [Integrating Webhooks](https://docs.alchemy.com/alchemy/guides/v2-alchemy-notify)
+- [Archive Nodes with Debug namespace](https://www.quicknode.com/chains/matic?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide)
 
 **😎 Advanced**
 
@@ -111,7 +113,8 @@ All the network related details can be found in [network docs](/docs/develop/net
 
 - [CryptoZombies](https://cryptozombies.io/)
 - [Full stack dapp tutorial series](https://kauri.io/#collections/Full%20Stack%20dApp%20Tutorial%20Series/full-stack-dapp-tutorial-series-intro/)
-- [Alchemy (Blockchain APIs and Developer Tools)](https://alchemy.com/?a=polygon-docs) (Recommended)
+- [Alchemy (Blockchain APIs and Developer Tools)](https://alchemy.com/?a=polygon-docs)
+- [QuickNode (Multi-chain Blockchain infrastructure)](https://www.quicknode.com/docs/polygon?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide)
 - [Infura Docs](https://infura.io/docs)
 - [Truffle Suite Docs](https://www.trufflesuite.com/docs) (Recommended)
 - [Truffle tutorial](https://www.trufflesuite.com/tutorial) (Recommended)
@@ -127,6 +130,10 @@ All the network related details can be found in [network docs](/docs/develop/net
 ### **Learn the Basics of Development**
 
 - [Full stack dapp tutorial series](https://kauri.io/#collections/Full%20Stack%20dApp%20Tutorial%20Series/full-stack-dapp-tutorial-series-intro/)
+- [Web3 developer Stack](https://www.quicknode.com/guides/web3-sdks/the-web3-developer-stack)
+- [Deploy a smart contract using REMIX IDE](https://www.quicknode.com/guides/solidity/how-to-deploy-a-smart-contract-on-matic-polygon)
+- [How to create a token (ERC20)](https://www.quicknode.com/guides/solidity/how-to-create-and-deploy-an-erc20-token)
+- [Integrating IPFS with Ethereum](https://www.quicknode.com/guides/web3-sdks/how-to-integrate-ipfs-with-ethereum)
 - [Hello World Smart Contract](https://docs.alchemy.com/alchemy/tutorials/hello-world-smart-contract)
 - [How to Create an NFT](https://docs.alchemy.com/alchemy/tutorials/how-to-create-an-nft)
 - [Truffle tutorial](https://www.trufflesuite.com/tutorial)
@@ -165,6 +172,7 @@ Twitter:
 
 - [Bankless: How to Use Crypto Twitter](https://bankless.substack.com/p/how-to-use-crypto-twitter-to-level-77c)
 - [EthHub](https://twitter.com/ethhub_io)
+- [QuickNode](https://twitter.com/QuickNode)
 - [Alchemy](https://twitter.com/AlchemyPlatform)
 - [CodeFi](https://twitter.com/ConsenSysCodefi)
 - [ConsenSys Labs](https://twitter.com/ConsenSys)
@@ -189,6 +197,7 @@ Twitter:
 ### **Newsletters**
 
 - [Week In Ethereum](https://weekinethereumnews.com/)
+- [QuickNode: #Web3Vibes](https://www.getrevue.co/profile/quiknode)
 - [Alchemy: Supercharged](https://www.alchemy.com/newsletter)
 - [EthHub](https://ethhub.io/)
 - [Chain Letter](https://forms.technologyreview.com/chain-letter/)
