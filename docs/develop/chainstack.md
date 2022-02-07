@@ -6,10 +6,10 @@ description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 
-# 🌎 Hello World Smart Contract on Polygon
+# Hello World Smart Contract on Polygon
 
 This section guides you through deploying a Hello World contract using [Chainstack](https://chainstack.com/build-better-with-polygon/) and [Foundry](https://github.com/gakonst/foundry/) on the Mumbai testnet.
 
@@ -17,9 +17,7 @@ If you have any questions, reach out in the [Chainstack Discord](https://discord
 
 ## Deploy a Polygon Mumbai Node
 
-You need a node to deploy a smart contract to the blockchain network.
-
-To get your node:
+You need a node to deploy a smart contract to the blockchain network, follow the steps to get your node:
 
 1. [Sign up with Chainstack](https://console.chainstack.com/user/account/create).
 1. [Deploy a Mumbai node](https://docs.chainstack.com/platform/join-a-public-network#join-a-polygon-pos-network).
@@ -34,9 +32,9 @@ Foundry is a development toolkit to work with smart contracts.
 
 ## Initialize with Foundry
 
-In your project directory, run `foundry init`.
+To create a boilerplate project, navigate to your project directory and run:
 
-This will create a boilerplate project.
+`foundry init`.
 
 ## Fund Your Account
 
