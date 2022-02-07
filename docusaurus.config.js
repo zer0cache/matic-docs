@@ -113,7 +113,7 @@ module.exports = {
         },
         {
           label: "Contact",
-          href: "hhttps://polygon.technology/contact-us/"
+          href: "https://polygon.technology/contact-us/"
         },
         {
           label: "About Us",
