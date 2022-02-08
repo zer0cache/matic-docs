@@ -6,7 +6,7 @@ description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -64,9 +64,9 @@ Please check if you have enough ETH for the gas fees.
 
 ### When does reward get distributed?
 
-The rewards are distributed whenever a checkpoint is submitted. 
+The rewards are distributed whenever a checkpoint is submitted.
 
-Currently 20188 Matic tokens are distributed proportionately on each successful checkpoint submission to each delegator based on their stake relative to the overall staking pool of all validators and delegators. Also, the percentage for the reward distributed to each delegator will vary with each checkpoint depending on the relative stake of the delegator, validator and the overall stake. 
+Currently 20188 Matic tokens are distributed proportionately on each successful checkpoint submission to each delegator based on their stake relative to the overall staking pool of all validators and delegators. Also, the percentage for the reward distributed to each delegator will vary with each checkpoint depending on the relative stake of the delegator, validator and the overall stake.
 
 (Note that there is a 10% proposer bonus that accrues to the validator who submits the checkpoint, but over time, the effect of the extra bonus is nullified over multiple checkpoints by different validators.)
 
@@ -76,7 +76,7 @@ You can track checkpoints on the staking contract here: https://etherscan.io/add
 
 ### Why does reward keep getting decreased every checkpoint?
 
-Actual rewards earned will depend on the actual total locked supply in the network at each checkpoint. This is expected to vary significantly as more MATIC tokens get locked in the staking contracts. 
+Actual rewards earned will depend on the actual total locked supply in the network at each checkpoint. This is expected to vary significantly as more MATIC tokens get locked in the staking contracts.
 
 Rewards will be higher, to begin with, and will keep decreasing as the locked supply % goes up. This change in locked supply is captured at every checkpoint, and rewards are calculated based on this.
 
@@ -127,11 +127,15 @@ So first you must withdraw your funds from Binance or any other exchange to your
 
 ### When will be possible to become a validator and how many tokens do I need to have?
 
-The Polygon mainnet is being rolled out gradually in phases. Currently we are in Phase 1 with only the Polygon foundation nodes running. Gradually, additional external validators will be onboarded. Please refer to https://blog.matic.network/mainnet-is-going-live-announcing-the-launch-sequence/ for more details.
+A user can earn a validator spot only by if the below conditions come into play:
+1. When a validator decides to unstake from the network or
+2. Wait for the auction mechanism and replace the inactive validator.
+ 
+The minimum stake depends on the auction process where one user outbids another.
 
 ### If I have earned rewards while delegating, and if I add additional funds to the same validator node, what happens?
 
-If you have not re-delegated your rewards before delegating additional funds to the same validator node, your rewards will be withdrawn automatically. 
+If you have not re-delegated your rewards before delegating additional funds to the same validator node, your rewards will be withdrawn automatically.
 
 In case you dont want that to happen, re-delegate your rewards before delegating additional funds.
 
@@ -165,7 +169,7 @@ No. You can choose any node of your choice.
 
 ### What happens to my rewards that are accumalated if I switch delegation from Foundation to External node?
 
-If you haven't already claimed your rewards before switching delegation, then upon successful switch of your delegation from Foundation to External the Rewards that were accumalated till then will be transferred back to your account. 
+If you haven't already claimed your rewards before switching delegation, then upon successful switch of your delegation from Foundation to External the Rewards that were accumalated till then will be transferred back to your account.
 
 ### Will delegation on the External Nodes work the same as Foundation Nodes?
 
