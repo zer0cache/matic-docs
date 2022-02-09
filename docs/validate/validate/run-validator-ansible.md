@@ -139,10 +139,10 @@ playbook: playbooks/network.yml
     xx.xxx.x.xxx
 ```
 
-Run the sentry node setup:
+Run the sentry node setup with sudo privileges :
 
 ```sh
-ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.5  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"
+ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.5  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --ask-become-pass 
 ```
 
 Once the setup is complete, you will see a message of completion on the terminal.
@@ -196,10 +196,10 @@ playbook: playbooks/network.yml
     xx.xxx.x.xxx
 ```
 
-Run the validator node setup:
+Run the validator node setup with sudo privileges:
 
 ```sh
-ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.5  network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet"
+ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.5  network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet" --ask-become-pass
 ```
 
 Once the setup is complete, you will see a message of completion on the terminal.
