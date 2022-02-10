@@ -30,7 +30,7 @@ module.exports = {
             },
             {
               label: 'Support',
-              href: 'https://forum.polygon.technology/',
+              href: 'https://polygon.technology/developer-support-program/',
             },
             {
               label: 'FAQs',
@@ -41,6 +41,10 @@ module.exports = {
         {
           title: 'Community',
           items: [
+            {
+              label: 'Polygon Community',
+              href: 'https://polygon.technology/community',
+            },
             {
               label: 'Discord',
               href: 'https://discord.com/invite/polygon',
@@ -72,11 +76,15 @@ module.exports = {
           items: [
           {
               label: "Get Started",
-              href: "https://polygon.technology/get-started/"
+              href: "https://docs.polygon.technology/docs/develop/getting-started"
           },
           {
-              label: "Hackathons",
-              href: "https://www.polygongrantshackathon.com/"
+              label: "Advocate Program",
+              href: "https://polygon.technology/advocate-program"
+          },
+          {
+            label: "Funds",
+            href: "https://polygon.technology/funds/"
           },
           {
               label: "Bug Bounty",
@@ -84,10 +92,10 @@ module.exports = {
           },
           {
             label: "DApps",
-            href: "https://awesomepolygon.com/"
+            href: "https://polygon.technology/ecosystem"
           },
           {
-            label: "Use Polygon",
+            label: "PoS Wallet",
             href: "https://wallet.polygon.technology/"
           },
       ]
@@ -105,7 +113,7 @@ module.exports = {
         },
         {
           label: "Brand Kit",
-          href: "https://polygon.technology/brand-resources/"
+          href: "https://www.notion.so/polygontechnology/Brand-Resources-2cd18ae436584e98a6c5aae56db73058"
       },
         {
             label: "Careers",
@@ -126,7 +134,7 @@ module.exports = {
         alt: 'Polygon Logo',
         src: 'img/polygon/polygon-logo.svg',
       },
-      copyright: `Copyright © ${new Date().getFullYear()} Polygon technology`, 
+      copyright: `Copyright © ${new Date().getFullYear()} Polygon technology`,
     },
     announcementBar: {
       id: "support_us",
