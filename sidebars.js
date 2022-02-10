@@ -205,6 +205,7 @@ module.exports = {
         "develop/oracles/razor",
         "develop/oracles/bandchain",
         "develop/oracles/bandstandarddataset",
+        "develop/oracles/tellor",
       ],
     },
     "develop/fiat-on-ramp",
