@@ -1,21 +1,21 @@
 ---
-title: How to Use Tellor on Polygon
+title: Tellor
 description: A guide to get started with integrating the Tellor oracle into your Polygon contract
 author: "Tellor"
 lang: en
 sidebar: true
 tags: ["solidity", "smart contracts", "price feeds", "oracles", "Polygon", "Matic", "Tellor"]
 skill: beginner
-published: 2022-02-XX
+published: 2022-02-10
 source: Tellor Docs
 sourceUrl: https://docs.tellor.io/tellor/
 ---
 
-Participation in the tellor network is completely open. Our goal is to be the most censorship-resistant blockchain oracle.
+Tellor is an oracle that provides censorship resistant data that is secured by simple crypto-economic incentives. Data can be provided by anyone and checked by everyone. Tellor’s flexible structure can provide any data at any time interval to allow for easy experimentation/innovation.
 
-## (Soft) Prerequisites {#soft-prerequisites}
+## (Soft) Prerequisites
 
-This post aims to make accessing an oracle feed as simple and straightforward as possible. That said, we're assuming the following about your coding skill-level to focus on the oracle aspect.
+We're assuming the following about your coding skill-level to focus on the oracle aspect.
 
 Assumptions:
 
@@ -25,7 +25,7 @@ Assumptions:
 
 Tellor is a live and open-sourced oracle ready for implementation. This beginner's guide is here to showcase the ease with which one can get up and running with Tellor, providing your project with a fully decentralized and censorship-resistent oracle.
 
-## Overview {#overview}
+## Overview
 
 Tellor is an oracle system where parties can request the value of an off-chain data point (e.g. BTC/USD) and reporters compete to add this value to an on-chain data-bank, accessible by all Polygon smart contracts. The inputs to this data-bank are secured by a network of staked reporters. Tellor utilizes crypto-economic incentive mechanisms. Honest data submissions by reporters are rewarded by the issuance of Tellor’s token. Any bad actors are quickly punished and removed from the network by a dispute mechanism.
 
@@ -35,7 +35,7 @@ In this tutorial we'll go over:
 - Walk through a simple example.
 - List out testnet addresses of networks you currently can test Tellor on.
 
-## UsingTellor {#usingtellor}
+## UsingTellor
 
 The first thing you'll want to do is install the basic tools necessary for using Tellor as your oracle. Use [this package](https://github.com/tellor-io/usingtellor) to install the Tellor User Contracts:
 
@@ -45,7 +45,7 @@ Once installed this will allow your contracts to inherit the functions from the 
 
 Great! Now that you've got the tools ready, let's go through a simple exercise where we retrieve the bitcoin price:
 
-### BTC/USD Example {#btcusd-example}
+### BTC/USD Example
 
 Inherit the UsingTellor contract, passing the Tellor address as a constructor argument:
 
@@ -75,14 +75,14 @@ contract BtcPriceContract is UsingTellor {
 **Want to try a different data feed? Check out the list of supported data feeds here:
 [Current Data Feeds](https://docs.tellor.io/tellor/integration/data-feed-ids)**
 
-## Addresses: {#addresses}
+## Addresses:
 
 Tellor Tributes: [`0xe3322702bedaaed36cddab233360b939775ae5f1`](https://polygonscan.com/token/0xe3322702bedaaed36cddab233360b939775ae5f1#code)
 
 Oracle: [`0xfd45ae72e81adaaf01cc61c8bce016b7060dd537`](https://polygonscan.com/address/0xfd45ae72e81adaaf01cc61c8bce016b7060dd537#code)
 
-#### Looking to do some testing first?: {#looking-to-do-some-testing-first}
+#### Looking to do some testing first?:
 
 Polygon Mumbai Testnet: [`0x3477EB82263dabb59AC0CAcE47a61292f28A2eA7 `](https://mumbai.polygonscan.com/address/0x3477EB82263dabb59AC0CAcE47a61292f28A2eA7/contracts#code)
 
-#### For a more robust implementation of the Tellor oracle, check out the full list of available functions [here.](https://github.com/tellor-io/usingtellor/blob/master/README.md) {#for-a-more-robust-implementation-of-the-tellor-oracle-check-out-the-full-list-of-available-functions-here}
+#### For a more robust implementation of the Tellor oracle, check out the full list of available functions [here.](https://github.com/tellor-io/usingtellor/blob/master/README.md)
