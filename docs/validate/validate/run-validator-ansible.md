@@ -142,7 +142,7 @@ playbook: playbooks/network.yml
 Run the sentry node setup with sudo privileges :
 
 ```sh
-ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.5  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --ask-become-pass 
+ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.5  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --ask-become-pass
 ```
 
 Once the setup is complete, you will see a message of completion on the terminal.
@@ -306,6 +306,8 @@ For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.ma
 :::
 
 ### Start the Heimdall service
+
+The latest version, [Heimdall v.0.2.5](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.5), contains few enhancements such as **Restricting data size in state sync txs to 100kb** and **Removing nonce-check for (new) validator-join**.
 
 Start the Heimdall service:
 

@@ -43,6 +43,7 @@ Pre-requisite:
 - Check [https://github.com/maticnetwork/node-ansible#requirements](https://github.com/maticnetwork/node-ansible#requirements) for requirements
 - You will also need to make sure that Go is not installed on your VM / Machine. Setting up your full node through ansible will run into issues if you have Go already installed, as ansible requires specific packages of Go to be installed.
 - You will also need to make sure that your VM / Machine does not have any previous setups for Polygon Validator or Heimdall or Bor. You will need to delete them as your setup will run into issues.
+- The latest version, [Heimdall v.0.2.5](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.5), contains few enhancements such as **Restricting data size in state sync txs to 100kb** and **Removing nonce-check for (new) validator-join**.
 
 Setup full node for Testnetv4/Mumbai testnet
 
@@ -128,6 +129,7 @@ Pre-requisite:
 - Check [https://github.com/maticnetwork/node-ansible#requirements](https://github.com/maticnetwork/node-ansible#requirements) for requirements
 - You will also need to make sure that Go is not installed on your VM / Machine. Setting up your full node through ansible will run into issues if you have Go already installed, as ansible requires specific packages of Go to be installed.
 - You will also need to make sure that your VM / Machine does not have any previous setups for Polygon Validator or Heimdall or Bor. You will need to delete them as your setup will run into issues.
+- The latest version, [Heimdall v.0.2.5](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.5), contains few enhancements such as **Restricting data size in state sync txs to 100kb** and **Removing nonce-check for (new) validator-join**.
 
 Setup full node for Polygon mainnet
 
