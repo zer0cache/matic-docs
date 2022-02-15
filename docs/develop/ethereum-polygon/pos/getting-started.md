@@ -50,7 +50,7 @@ Want to see this in video format? Please check it out below
 
 Want to watch all of this in video form? Please check it out below
 
-- Once mapping is done, you can either use the **matic.js SDK** to interact with the contracts or you can do the same without the SDK. However, the matic.js SDK is designed in a very user friendly way to make the asset transfer mechanism very easy to integrate with any application.
+- Once mapping is done, you can either use the **matic.js SDK** to interact with the contracts or you can do the same without the SDK. However, the matic.js SDK is designed in a very user friendly way to make the asset transfer mechanism very easy to integrate with any application. Please, check [matic.js Documentation](https://maticnetwork.github.io/matic.js/docs/get-started/) to get started.
 
 - **The complete cycle of transferring assets from Ethereum to Polygon and then back to Ethereum** will be explained through this tutorial. In short, the process can be summed up as mentioned below:
 
@@ -64,4 +64,3 @@ Want to watch all of this in video form? Please check it out below
   8. Once the transaction has been added to the check point, a proof of the burn transaction can be submitted on the **RootChainManager** contract on Ethereum by calling the **exit** function.
   9. This function call **verifies the checkpoint inclusion** and then triggers the Predicate contract which had locked the asset tokens when the assets were deposited initially.
   10. As the final step, the **predicate contract releases the locked tokens** and refunds it to the Users account on Ethereum.
-
