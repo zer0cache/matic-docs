@@ -12,7 +12,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 ## Description
 In this document, we will describe how to deploy Polygon nodes into VM instance in Google Cloud
 ## Hardware requirements
-Check the minimum and recommended [hardware requirements](https://docs.polygon.technology/docs/validate/mainnet/validator-guide) in Polygon docs
+Check the minimum and recommended [hardware requirements](https://docs.polygon.technology/docs/validate/validate/validator-node-system-requirements) in Polygon docs
 ## Software requirements
 Use any modern Debian or Ubuntu Linux OS with long-term support, i.e. Debian 11, Ubuntu 21.04. We'll focus on Ubuntu 21.04 in this manual
 ## Deploy instance (2 ways)
