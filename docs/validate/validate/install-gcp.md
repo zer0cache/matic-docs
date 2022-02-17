@@ -14,7 +14,7 @@ In this document, we will describe how to deploy Polygon nodes into VM instance 
 ## Hardware requirements
 Check the minimum and recommended [hardware requirements](https://docs.polygon.technology/docs/validate/validate/validator-node-system-requirements) in Polygon docs
 ## Software requirements
-Use any modern Debian or Ubuntu Linux OS with long-term support, i.e. Debian 11, Ubuntu 21.04. We'll focus on Ubuntu 21.04 in this manual
+Use any modern Debian or Ubuntu Linux OS with long-term support, i.e. Debian 11, Ubuntu 20.04. We'll focus on Ubuntu 20.04 in this manual
 ## Deploy instance (2 ways)
 You may use at least two ways to create an instance in Google Cloud:
 * gcloud cli, local or [Cloud Shell](https://cloud.google.com/shell)
@@ -28,6 +28,7 @@ Pay attention to default region and zone, choose ones closer to you or your cust
    * `POLYGON_NODETYPE` - choose `archive`,`fullnode` node type to run
    * `POLYGON_BOOTSTRAP_MODE` - choose bootstrap mode `snapshot` or `from_scratch`
    * `POLYGON_RPC_PORT` - choose JSON RPC bor node port to listen on, the default value is what used on VM instance creation and in firewall rules
+   * `EXTRA_VAR` - choose Bor and Heimdall branches, use `network_version=mainnet-v1` with `mainnet` network and `network_version=testnet-v4` with `mumbai` network  
    * `INSTANCE_NAME` - the name of a VM instance with Polygon we are going to create
    * `INSTANCE_TYPE` - GCP [machine type](https://cloud.google.com/compute/docs/machine-types), default value is recommended, You may change it later if required
    * `BOR_EXT_DISK_SIZE` - additional disk size in GB to use with Bor, default value with `fullnode` is recommended, You may expand it later if required. You'll need 8192GB+ with `archive` node though
@@ -41,6 +42,7 @@ Pay attention to default region and zone, choose ones closer to you or your cust
    export POLYGON_BOOTSTRAP_MODE=snapshot
    export POLYGON_RPC_PORT=8747
    export GCP_NETWORK_TAG=polygon
+   export EXTRA_VAR="bor_branch=v0.2.14 heimdall_branch=v0.2.5  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=${POLYGON_NETWORK}"
    gcloud compute firewall-rules create "polygon-p2p" --allow=tcp:26656,tcp:30303,udp:30303 --description="polygon p2p" --target-tags=${GCP_NETWORK_TAG}
    gcloud compute firewall-rules create "polygon-rpc" --allow=tcp:${POLYGON_RPC_PORT} --description="polygon rpc" --target-tags=${GCP_NETWORK_TAG}
    export INSTANCE_NAME=polygon-0
@@ -50,7 +52,7 @@ Pay attention to default region and zone, choose ones closer to you or your cust
    export DISK_TYPE=pd-ssd
    gcloud compute instances create ${INSTANCE_NAME} \
    --image-project=ubuntu-os-cloud \
-   --image-family=ubuntu-2104 \
+   --image-family=ubuntu-2004-lts \
    --boot-disk-size=20 \
    --boot-disk-type=${DISK_TYPE} \
    --machine-type=${INSTANCE_TYPE} \
@@ -61,7 +63,7 @@ Pay attention to default region and zone, choose ones closer to you or your cust
    #cloud-config
 
    bootcmd:
-   - screen -dmS polygon su -l -c bash -c "curl -L https://raw.githubusercontent.com/maticnetwork/node-ansible/master/install-gcp.sh | bash -s -- -n '${POLYGON_NETWORK}' -m '${POLYGON_NODETYPE}' -s '${POLYGON_BOOTSTRAP_MODE}' -p '${POLYGON_RPC_PORT}'; bash"'
+   - screen -dmS polygon su -l -c bash -c "curl -L https://raw.githubusercontent.com/maticnetwork/node-ansible/master/install-gcp.sh | bash -s -- -n '${POLYGON_NETWORK}' -m '${POLYGON_NODETYPE}' -s '${POLYGON_BOOTSTRAP_MODE}' -p '${POLYGON_RPC_PORT}' -e \"'${EXTRA_VAR}'\"; bash"'
 ```
 The instance should be created during a couple of minutes
 ## Login to instance (optional)
