@@ -18,3 +18,10 @@ Polygon blockchain can be used to store data. But is it really worth the cost? T
 
 IPFS is a distributed system for storing and accessing files, websites, applications, and data. Using IPFS as a storage you don't need to store entire files to polygon blockchain you just need to store the hash of the IPFS to the polygon blockchain, thus make it much more cheaper then just storing the file.&#x20;
 
+### Example Projects
+
+ 1)  Tutorial in scaffold-eth that demonstrates how to mint an NFT on Polygon with IPFS [link](https://github.com/primeshprimesh/firstSimpleNFTProject).FOr more detials Click [here](https://github.com/scaffold-eth/scaffold-eth/tree/matic)
+ 
+ 2) Building a full stack web3 app with Next.js, Polygon, Solidity, The Graph, IPFS, and Hardhat [link](https://dev.to/dabit3/the-complete-guide-to-full-stack-web3-development-4g74)
+
+ 
