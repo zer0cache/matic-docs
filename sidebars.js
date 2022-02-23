@@ -197,6 +197,29 @@ module.exports = {
     },
     {
       type: "category",
+      label: "IPFS - Filecoin",
+      items: [
+        "develop/IPFS",
+        "develop/nftstorage",
+        {
+          type: "link",
+          label: "Web3 Storage",
+          href: "https://docs.web3.storage/",
+        },
+        {
+          type: "link",
+          label: "Estuary",
+          href: "https://docs.estuary.tech/",
+        },
+        {
+          type: "link",
+          label: "Filecoin-Polygon Bridge",
+          href: "https://eth.storage/docs/",
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "Oracles",
       items: [
         "develop/oracles/getting-started",
