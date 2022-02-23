@@ -74,7 +74,7 @@ When prompted, choose `Create an empty hardhat.config.js`. Your console output s
 ✨ Config file created ✨
 ```
 
-We will do some modifications to the hardhat configuration file `hardhat.config.js` to support the Polygon Mumbai test network. Open the `hardhat.config.js` that was created in the last step. Please note that we are loading your Polygon wallet private key from an environment file and that this environment file must be kept safe.
+We will do some modifications to the hardhat configuration file `hardhat.config.js` to support the Polygon Mumbai test network. Open the `hardhat.config.js` that was created in the last step. Please note that we are loading your Polygon wallet private key from an environment file and that this environment file must be kept safe. You can even use other rpc [link](https://docs.polygon.technology/docs/develop/network-details/network), as per requirement.
 
 ```js
 /**
@@ -84,17 +84,17 @@ require("@nomiclabs/hardhat-ethers");
 require('dotenv').config();
 const { PRIVATE_KEY } = process.env;
 module.exports = {
-  defaultNetwork: "matic",
+  defaultNetwork: "PolygonMumbai",
   networks: {
     hardhat: {
     },
-    matic: {
-      url: "https://rpc-mumbai.maticvigil.com",
+    PolygonMumbai : {
+      url: "https://rpc-mumbai.maticvigil.com", 
       accounts: [PRIVATE_KEY]
     }
   },
   solidity: {
-    version: "0.8.0",
+    version: "0.8.12",
     settings: {
       optimizer: {
         enabled: true,
@@ -108,8 +108,8 @@ module.exports = {
 Create a new file called `.env` which will hold your API key for NFT.Storage and your Polygon wallet. The content of the `.env` file should look like the listing below:
 
 ```bash
-PRIVATE_KEY="{your private key}"
-NFT_STORAGE_API_KEY="{your api key}"
+PRIVATE_KEY="Your Private Key"
+NFT_STORAGE_API_KEY="Your Api Key"
 ```
 
 Replace the placeholders with the API key you created during preparation and your Polygon wallet private key.
@@ -150,7 +150,7 @@ async function storeAsset() {
        name: 'ExampleNFT',
        description: 'My ExampleNFT is an awesome artwork!',
        image: new File(
-           [await fs.promises.readFile('assets/MyExampleNFT.png)],
+           [await fs.promises.readFile('assets/MyExampleNFT.png')],
            'MyExampleNFT.png',
            { type: 'image/png' }
        ),
@@ -189,7 +189,7 @@ First, we will create a smart contract that will be used to mint the NFT. Since 
 ```solidity
 // Contract based on https://docs.openzeppelin.com/contracts/4.x/erc721
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.12;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
@@ -268,7 +268,7 @@ deployContract()
 Deploying the contract is done with the helper functions provided by the hardhat library. First, we get the smart contract we created in the previous step with the provided factory. Then we deploy it by calling the respective method and wait for the deployment to be completed. There are a few more lines below the described code to get the correct address in the testnet environment. Save the `mjs` file Execute the script with the following command:
 
 ```bash
-npx hardhat run scripts/deploy-contract.mjs --network matic
+npx hardhat run scripts/deploy-contract.mjs --network PolygonMumbai
 ```
 
 If everything is correct, you will see the following output:

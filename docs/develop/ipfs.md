@@ -15,7 +15,7 @@ Polygon blockchain can be used to store data. But is it really worth the cost? T
 
 #### What is IPFS?&#x20;
 
-IPFS is a distributed system for storing and accessing files, websites, applications, and data. Using IPFS as a storage you don't need to store entire files to polygon blockchain you just need to store the hash of the IPFS to the polygon blockchain, thus make it much more cheaper then just storing the file.&#x20;
+IPFS is a distributed system for storing and accessing files, websites, applications, and data. Using IPFS as a storage you don't need to store entire files to polygon blockchain you just need to store the hash of the IPFS to the polygon blockchain, thus make it much more cheaper then just storing the file. For more details refer [IPFS docs](https://docs.ipfs.io/). &#x20;
 
 ### Example Projects
 

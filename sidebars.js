@@ -200,6 +200,11 @@ module.exports = {
       label: "IPFS - Filecoin",
       items: [
         "develop/ipfs",
+        {
+          type: "link",
+          label: "Filecoin-Polygon Bridge",
+          href: "https://eth.storage/docs/",
+        },
         "develop/nftstorage",
         {
           type: "link",
@@ -210,11 +215,6 @@ module.exports = {
           type: "link",
           label: "Estuary",
           href: "https://docs.estuary.tech/",
-        },
-        {
-          type: "link",
-          label: "Filecoin-Polygon Bridge",
-          href: "https://eth.storage/docs/",
         },
       ],
     },
