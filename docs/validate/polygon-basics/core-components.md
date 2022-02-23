@@ -7,7 +7,7 @@ It comes with 2 main entrypoints:
 * `heimdalld`: The heimdall Daemon, runs a full-node of the heimdall application.
 * `heimdallcli`: The Heimdall command-line interface, which enables interaction with a heimdall full-node.
 
-The core responsibility of Heimdall is to verify all state transitions happening on `Bor` and to periodically submit checkpoints on the Ethereum chain cementing the side-chain state.
+The core responsibility of Heimdall is to verify all state transitions happening on `Bor` and to periodically submit checkpoints on the Ethereum chain cementing the side-chain state. The latest version, [Heimdall v.0.2.5](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.5), contains few enhancements such as **Restricting data size in state sync txs to 100kb** and **Removing nonce-check for (new) validator-join**.
 
 **Bor**
 
@@ -22,4 +22,3 @@ To enable the PoS mechanism on our platform, we employ a set of staking manageme
 * The ability for anyone to stake MATIC tokens on the Ethereum smart contract and join the system as a Validator.
 * Earn staking rewards for validating state transitions on Polygon.
 * Enable penalties/slashing for activities such as double signing, validator downtime, etc.
-

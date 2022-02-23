@@ -8,7 +8,7 @@ keywords:
   - polygon
   - validator
   - faq
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 
 ## Heimdall shows "Failed Sanity Checks"
@@ -39,12 +39,25 @@ Usually restarting the Heimdall service should resolve the problem for you.
 
 ## Heimdall shows "Error: Wrong Block.Header.AppHash. Expected xxxx"
 
-This usually occurs due to an incorrect installation of Heimdall.
+This error usually occurs when Heimdall service is stuck on a block and there is no Rewind options are not available on Heimdall
 
-To fix, run:
+**Solution:**
+To resolve this:
+* Reset Heimdall completely
+* Sync from the snapshot again
 
-```sh
+### Reset Heimdall
+
+```
+sudo service heimdalld stop
 heimdalld unsafe-reset-all
+```
+
+### Sync Heimdall from Snapshot
+
+```
+wget -c <Snapshot URL>
+tar -xzvf <snapshot file> -C <HEIMDALL_DATA_DIRECTORY>
 ```
 
 Then start Heimdall services again.
@@ -276,6 +289,8 @@ curl  http://<your ip>:8545 -X POST -H "Content-Type: application/json" -d '
 This is generally not an error and should resolve on its own.
 
 ## Standard upgrade commands for Heimdall
+
+The latest version, [Heimdall v.0.2.5](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.5), contains few enhancements such as **Restricting data size in state sync txs to 100kb** and **Removing nonce-check for (new) validator-join**.
 
 ```sh
 cd ~/heimdall

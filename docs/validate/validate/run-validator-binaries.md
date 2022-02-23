@@ -88,6 +88,8 @@ Run this section both on the sentry and the validator machines.
 
 ### Install Heimdall
 
+The latest version, [Heimdall v.0.2.5](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.5), contains few enhancements such as **Restricting data size in state sync txs to 100kb** and **Removing nonce-check for (new) validator-join**.
+
 Clone the [Heimdall repository](https://github.com/maticnetwork/heimdall/):
 
 ```sh
@@ -107,7 +109,7 @@ where
 Example:
 
 ```sh
-git checkout v0.2.4
+git checkout v0.2.5
 ```
 
 Install Heimdall:

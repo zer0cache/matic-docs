@@ -90,19 +90,28 @@ requests.get('https://gasstation-mainnet.matic.network/v2').json()
 
 ## interpretation
 
-- Example JSON response will look like this.
+- Example JSON response will look like this:
 
 ```json
 {
-    "safeLow": 1.0,
-    "standard": 9.0,
-    "fast": 29.0,
-    "fastest": 45.0,
-    "blockTime": 2,
-    "blockNumber": 2650006
+  "safeLow": {
+    "maxPriorityFee":30.7611840636,
+    "maxFee":30.7611840796
+    },
+  "standard": {
+    "maxPriorityFee":32.146027800733336,
+    "maxFee":32.14602781673334
+    },
+  "fast": {
+    "maxPriorityFee":33.284344224133335,
+    "maxFee":33.284344240133336
+    },
+  "estimatedBaseFee":1.6e-8,
+  "blockTime":6,
+  "blockNumber":24962816
 }
 ```
 
-- {'safelow', 'standard', 'fast', 'fastest'} are gas prices in GWei, you can use these prices before sending transaction off to Polygon, depending upon your need
+- {'safelow', 'standard', 'fast', 'estimatedBaseFee'} are gas prices in GWei, you can use these prices before sending transaction off to Polygon, depending upon your need
 - _'blockNumber'_ tells what was latest block mined when recommendation was made
 - _'blockTime'_ in second, which gives average block time of network

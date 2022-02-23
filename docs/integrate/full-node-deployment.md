@@ -84,7 +84,7 @@ You must follow the exact outlined sequence of actions, otherwise you will run i
 - For a test run to confirm if the correct remote machine / VM is configured, run the following command:
 
     ```js
-    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14-beta2 heimdall_branch=v0.2.4 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai" --list-hosts
+    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14-beta2 heimdall_branch=v0.2.5 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai" --list-hosts
     ```
 
     This will be the output
@@ -99,7 +99,7 @@ You must follow the exact outlined sequence of actions, otherwise you will run i
 - Setup the full node with this command:
 
     ```js
-    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14-beta2 heimdall_branch=v0.2.4 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai"
+    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14-beta2 heimdall_branch=v0.2.5 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai"
     ```
 
 - In case you run into any issues, delete and clean the whole setup using
@@ -195,6 +195,17 @@ In case your Bor node has stopped syncing, you can add additional bootnodes to y
   2. Get your private key and API endpoint
   3. Use your Alchemy account to access Polygon Mumbai Testnet
 
+
+## Full Node Access (via Chainstack)
+  1. [Sign up with Chainstack](https://console.chainstack.com/user/account/create) for a free account.
+  2. [Deploy a Polygon Mumbai testnet node](https://docs.chainstack.com/platform/join-a-public-network#join-a-polygon-pos-network).
+  3. [Get the deployed node’s HTTPS endpoint](https://docs.chainstack.com/platform/view-node-access-and-credentials).
+
+## Full Node Access (via QuickNode)
+  1. Visit [QuickNode](https://www.quicknode.com/chains/matic) and sign up for a free account
+  2. Get your free trial node
+  3. Use your QuickNode node to access Polygon Mumbai Testnet
+
 </TabItem>
 <TabItem value="mainnet">
 
@@ -255,7 +266,7 @@ You have to follow the exact outlined sequence of actions, otherwise you will ru
 - For a test run to confirm if the correct remote machine / VM is configured, run the following command:
 
     ```js
-    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.4  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
+    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.5  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
     ```
 
     This will be the output
@@ -271,7 +282,7 @@ You have to follow the exact outlined sequence of actions, otherwise you will ru
 
     ```js
 
-    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.4  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"
+    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.5  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"
     ```
 
 - In case you run into any issues, delete and clean the whole setup using
@@ -315,6 +326,8 @@ You have to follow the exact outlined sequence of actions, otherwise you will ru
 
 ## Start the Heimdall Service
 
+The latest version, [Heimdall v.0.2.5](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.5), contains few enhancements such as **Restricting data size in state sync txs to 100kb** and **Removing nonce-check for (new) validator-join**.
+
 - Run the full node with the following commands:
     - **To Start Heimdall**:
 
@@ -356,6 +369,16 @@ You have to follow the exact outlined sequence of actions, otherwise you will ru
   1. Visit [Alchemy.com](https://www.alchemy.com/) and sign up for a free account
   2. Get your private key and API endpoint
   3. Use your Alchemy account to access Polygon Mainnet
+
+## Full Node Access (via Chainstack)
+  1. [Sign up with Chainstack](https://console.chainstack.com/user/account/create) for a free account.
+  2. [Deploy a Polygon mainnet node](https://docs.chainstack.com/platform/join-a-public-network#join-a-polygon-pos-network).
+  3. [Get the deployed node’s HTTPS endpoint](https://docs.chainstack.com/platform/view-node-access-and-credentials).
+
+## Full Node Access (via QuickNode)
+  1. Visit [QuickNode](https://www.quicknode.com/chains/matic) and sign up for a free account
+  2. Get your free trial node
+  3. Use your QuickNode node to access Polygon Mainnet
 
 </TabItem>
 </Tabs>

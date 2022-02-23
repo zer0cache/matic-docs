@@ -17,10 +17,11 @@ Inbound oracles bring off-chain or real-world data to the blockchain, whereas th
 
 To integrate your DApp with Oracles on Polygon, you can choose to go with one of the following solutions:
 
-1. [Chainlink](chainlink) (recommended)
-2. [UMA](optimisticoracle.md)
-2. [BandChain](bandchain)
-3. [Razor](razor)
+ 1. [Chainlink](chainlink)
+ 2. [UMA](optimisticoracle.md)
+ 3. [BandChain](bandchain)
+ 4. [Razor](razor)
+ 5. [Tellor](tellor.md)
 
 Randomness is also generated through oracles. See the Randomness section of the documentation for more information. 
 

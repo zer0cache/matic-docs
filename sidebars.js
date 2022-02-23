@@ -34,7 +34,7 @@ module.exports = {
     {
       type: "category",
       label: "Deploying on Polygon",
-      items: ["develop/alchemy", "develop/remix", "develop/truffle", "develop/hardhat","develop/replit"],
+      items: ["develop/alchemy", "develop/quicknode", "develop/chainstack", "develop/remix", "develop/truffle", "develop/hardhat","develop/replit"],
     },
     {
       type: "category",
@@ -205,6 +205,7 @@ module.exports = {
         "develop/oracles/razor",
         "develop/oracles/bandchain",
         "develop/oracles/bandstandarddataset",
+        "develop/oracles/tellor",
       ],
     },
     "develop/fiat-on-ramp",

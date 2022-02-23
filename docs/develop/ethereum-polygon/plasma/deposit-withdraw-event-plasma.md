@@ -27,7 +27,7 @@ async function checkDepositStatus(user, token, childChain) {
   return new Promise((resolve, reject) => {
     ws.on("open", function open() {
       ws.send(
-        `{"id": 1, "method": "eth_subscribe", "params": ["newDeposits", {"Contract": ${childChain}}]}`
+        `{"id": 1, "method": "eth_subscribe", "params": ["newDeposits", {"Contract": "${childChain}"}]}`
       );
       ws.on("message", function incoming(data) {
         var txData = _.get(JSON.parse(data), "params.result.Data", "");
