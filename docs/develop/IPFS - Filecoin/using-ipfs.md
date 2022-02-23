@@ -20,7 +20,11 @@ IPFS is a distributed system for storing and accessing files, websites, applicat
 
 ### Example Projects
 
- 1)  Tutorial in scaffold-eth that demonstrates how to mint an NFT on Polygon with IPFS [link](https://github.com/primeshprimesh/firstSimpleNFTProject).FOr more detials Click [here](https://github.com/scaffold-eth/scaffold-eth/tree/simple-nft-example)
+<<<<<<< HEAD
+ 1)  Tutorial in scaffold-eth that demonstrates how to mint an NFT on Polygon with IPFS [link](https://github.com/primeshprimesh/firstSimpleNFTProject).FOr more detials Click [here](https://github.com/scaffold-eth/scaffold-eth/tree/matic)
+=======
+ 1)  Tutorial in scaffold-eth that demonstrates how to mint an NFT on Polygon with IPFS [link](https://github.com/primeshprimesh/firstSimpleNFTProject).For more detials Click [here](https://github.com/scaffold-eth/scaffold-eth/tree/matic)
+>>>>>>> fceccfa743c771c77b58928ac4756e2617e52f1e
  
  2) Building a full stack web3 app with Next.js, Polygon, Solidity, The Graph, IPFS, and Hardhat [link](https://dev.to/dabit3/the-complete-guide-to-full-stack-web3-development-4g74)
 
