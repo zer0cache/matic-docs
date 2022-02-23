@@ -1,14 +1,13 @@
 ---
-description: How to use IPFS with polygon
+id: ipfs
+title: Using IPFS
+description: IPFS
 keywords:
-  - docs
-  - matic
   - IPFS
+  - matic
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
-
-# Using IPFS
 
 ### Context
 

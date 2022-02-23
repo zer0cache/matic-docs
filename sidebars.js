@@ -199,11 +199,11 @@ module.exports = {
       type: "category",
       label: "IPFS - Filecoin",
       items: [
-        "develop/IPFS",
+        "develop/ipfs",
         "develop/nftstorage",
         {
           type: "link",
-          label: "Web3 Storage",
+          label: "Web3.Storage",
           href: "https://docs.web3.storage/",
         },
         {
