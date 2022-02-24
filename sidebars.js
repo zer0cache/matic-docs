@@ -425,13 +425,21 @@ module.exports = {
         "validate/validate/core-components",
         "validate/validate/validator-responsibilities",
         "validate/validate/validator-node-system-requirements",
-        "validate/validate/run-validator-ansible",
+        {
+          type: "category",
+          label: "Run a node with Ansible",
+          items:[
+            "validate/validate/run-validator-ansible",
+            "validate/validate/setup-sentry-ansible",
+            "validate/validate/setup-validator-ansible",
+            "validate/validate/setup-owner-signer-keys"]
+        },
         "validate/validate/run-validator-binaries",
         "validate/validate/install-gcp",
         "validate/validate/validator-staking-operations",
         "validate/validate/replace-validator",
         "validate/validate/change-signer-address",
-        "validate/validate/validator-commission-operations",
+        "validate/validate/validator-commission-operations"
       ],
     },
     {
