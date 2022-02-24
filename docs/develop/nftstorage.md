@@ -1,6 +1,6 @@
 ---
 id: nftstorage
-title: Mint with NFT.storage and Polygon
+title: Mint with NFT.storage on Polygon
 description: Mint with NFT.storage and Polygon
 keywords:
   - nft.storage

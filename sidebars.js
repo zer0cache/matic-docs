@@ -200,22 +200,9 @@ module.exports = {
       label: "IPFS - Filecoin",
       items: [
         "develop/ipfs",
-        {
-          type: "link",
-          label: "Filecoin-Polygon Bridge",
-          href: "https://eth.storage/docs/",
-        },
+        "develop/filecoinhelpers",
         "develop/nftstorage",
-        {
-          type: "link",
-          label: "Web3.Storage",
-          href: "https://docs.web3.storage/",
-        },
-        {
-          type: "link",
-          label: "Estuary",
-          href: "https://docs.estuary.tech/",
-        },
+        
       ],
     },
     {

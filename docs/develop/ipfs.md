@@ -11,7 +11,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 ### Context
 
-Polygon blockchain can be used to store data. But is it really worth the cost? To put into perspective 1 byte of a data can cost you 50 gwei gas in matic token, or equal to about $0.2655 in today's market. It maybe small for just one byte of data but let's say you want to store a file with 1 GB data (1,000,000,000 bytes) it will cost you $265500000. The solution is IPFS, the InterPlanetary File System.&#x20;
+Polygon blockchain can be used to store data. But is it really worth the cost? To put into perspective 1 byte of a data can cost you 50 gwei gas in matic token, or equal to about $0.0166 in today's market. It maybe small for just one byte of data but let's say you want to store a file with 1 GB data (10^6 bytes) it will cost you 6.4x10^11 gwei or 640 matic. The solution is IPFS, the InterPlanetary File System.&#x20;
 
 #### What is IPFS?&#x20;
 
