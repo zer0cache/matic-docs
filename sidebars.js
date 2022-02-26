@@ -197,6 +197,15 @@ module.exports = {
     },
     {
       type: "category",
+      label: "IPFS - Filecoin",
+      items: [
+        "develop/filecoinhelpers",
+        "develop/nftstorage",
+        
+      ],
+    },
+    {
+      type: "category",
       label: "Oracles",
       items: [
         "develop/oracles/getting-started",
