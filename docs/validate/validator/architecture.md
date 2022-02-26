@@ -51,7 +51,7 @@ Checkpoints are important for two reasons:
 
 An overview of the process: 
 
-* A subset of active validators from the pool is selected to act as [block producers](/docs/validate/glossary#block-producer) for a [span](/docs/validate/glossary#span). These block producers are responsible for creating blocks and broadcasting the creted blocks on the the network.
+* A subset of active validators from the pool is selected to act as [block producers](/docs/validate/glossary#block-producer) for a [span](/docs/validate/glossary#span). These block producers are responsible for creating blocks and broadcasting the created blocks on the network.
 * A checkpoint includes the Merkle root hash of all blocks created during any given interval. All nodes validate the Merkle root hash and attach their signature to it.
 * A selected [proposer](/docs/validate/glossary#proposer) from the validator set is responsible for collecting all signatures for a particular checkpoint and committing the checkpoint on the Ethereum mainnet.
 * The responsibility of creating blocks and proposing checkpoints is variably dependent on a validator’s stake ratio in the overall pool.
