@@ -14,15 +14,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You can set up and change your [commission](/docs/validate/glossary#commission) as a validator.
 
-There is no upper limit on the commission rate.
+A validator is entitled to charge any commission rate. The minimum commission would be 0% and the maximum commission would be 100% of the rewards earned.
 
-You are allowed to change the commission rates as many times as possible.
+You are allowed to change the commission rates as many times as you would like.
 
 As a validator, it is one of your responsibilities to inform the community on commission changes. See [Validator Responsibilities](/docs/validate/validator/responsibilities).
 
 ## Set up your commission rate as a validator
 
-You set up commission rate as part of your initial validator staking process. See [Validator Staking Operations](/docs/validate/validate/validator-staking-operations).
+You set up the commission rate as part of your initial validator staking process. See [Validator Staking Operations](/docs/validate/validate/validator-staking-operations).
 
 ## Change your commission rate
 
