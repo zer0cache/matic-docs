@@ -1,4 +1,13 @@
-# Polygon Documentation
+<p align="center">
+<img align="center" src="https://user-images.githubusercontent.com/25497083/156289024-df2c8970-2072-4439-813d-d38809e80eef.png" width="200">
+</p>
+
+<div align="Center">
+<h1>Polygon Documentation</h1>
+<h3> Previously Matic Network </h3>
+</div>
+
+<br>
 
 ![Forks](https://img.shields.io/github/forks/maticnetwork/matic-docs?style=social)
 ![Stars](https://img.shields.io/github/stars/maticnetwork/matic-docs?style=social)
@@ -9,8 +18,6 @@
 ![size](https://img.shields.io/github/languages/code-size/maticnetwork/matic-docs)
 [![Discord](https://img.shields.io/discord/714888181740339261?color=1C1CE1&label=Polygon%20%7C%20Discord%20%F0%9F%91%8B%20&style=flat-square)](https://discord.gg/zdwkdvMNY2)
 [![Twitter Follow](https://img.shields.io/twitter/follow/0xPolygon.svg?style=social)](https://twitter.com/0xPolygon)
-
-![Frame 3808](https://user-images.githubusercontent.com/63050765/148505368-134636fe-84e1-41bd-a30f-0e01907afbc1.png)
 
 Polygon is a scaling solution for public blockchains that combines the best of Ethereum and sovereign blockchains 
 to offer a full-stack scaling solution.
