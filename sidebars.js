@@ -199,6 +199,7 @@ module.exports = {
       type: "category",
       label: "IPFS - Filecoin",
       items: [
+        "develop/ipfs",
         "develop/filecoinhelpers",
         "develop/nftstorage",
         
