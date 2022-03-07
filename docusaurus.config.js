@@ -201,7 +201,7 @@ module.exports = {
         },
         {
           label: "Support",
-          href: "https://forum.matic.network",
+          href: "https://polygon.technology/developer-support-program/",
           position: "right",
         },
         {

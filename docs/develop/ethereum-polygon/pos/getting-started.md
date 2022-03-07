@@ -9,6 +9,8 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
+Please, check [the latest matic.js Documentation PoS](https://maticnetwork.github.io/matic.js/docs/pos/) to get started.
+
 A bridge is basically a set of contracts that help in moving assets from the root chain to the child chain. There are primarily two bridges to move assets between Ethereum and Polygon. First one is the Plasma bridge and the second one is called the **PoS Bridge** or **Proof of Stake bridge**. **Plasma bridge** provides an increased security guarantee due to the Plasma exit mechanism.
 
 However, there are certain restrictions on the child token and there is a 7-day withdrawal period associated with all exits/withdraws from Polygon to Ethereum on the Plasma bridge.
@@ -50,7 +52,7 @@ Want to see this in video format? Please check it out below
 
 Want to watch all of this in video form? Please check it out below
 
-- Once mapping is done, you can either use the **matic.js SDK** to interact with the contracts or you can do the same without the SDK. However, the matic.js SDK is designed in a very user friendly way to make the asset transfer mechanism very easy to integrate with any application. Please, check [matic.js Documentation](https://maticnetwork.github.io/matic.js/docs/get-started/) to get started.
+- Once mapping is done, you can either use the **matic.js SDK** to interact with the contracts or you can do the same without the SDK. However, the matic.js SDK is designed in a very user friendly way to make the asset transfer mechanism very easy to integrate with any application.
 
 - **The complete cycle of transferring assets from Ethereum to Polygon and then back to Ethereum** will be explained through this tutorial. In short, the process can be summed up as mentioned below:
 

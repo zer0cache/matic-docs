@@ -9,6 +9,8 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
+Please, check [the latest matic.js Documentation of Plasma](https://maticnetwork.github.io/matic.js/docs/plasma/) to get started.
+
 ## Deposit Events
 
 When a token is deposited from Ethereum to Polygon, a process called state sync mechanism comes into play that eventually mints the tokens for the user on the Polygon chain. This process takes about ~5-7 minutes to happen and hence listening to the deposit event is very important to create a good user experience. This is an example script that can be used to track real time deposit events.
