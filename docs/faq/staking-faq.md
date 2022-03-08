@@ -27,7 +27,7 @@ You can navigate to "Your Delegations", choose one of the stakes and click on "S
 Please watch this video for a graphical illustration of how this works:
 
 <video loop autoplay width="70%" height="70%" controls="true" >
-  <source type="video/mp4" src="/img/staking_faq/stakingmore.mov"></source>
+  <source type="video/mp4" src="/img/staking_faq/stakingMore.mov"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 
@@ -74,15 +74,15 @@ Go to “My Account” to check "Your Delegations".
 Clicking on "Restake Reward" will ask you for confirmation from your Metamask account. Once you confirm the transaction, only then the restake transaction would be complete.
 
 `Step 1` <br/>
-<img src={useBaseUrl("img/staking_faq/Restakerewards1.png")} height="300px"/><br/>
+<img src={useBaseUrl("img/staking_faq/RestakeRewards1.png")} height="300px"/><br/>
 
 `Step 2` <br/>
-<img src={useBaseUrl("img/staking_faq/Restakerewards2.png")} height="415px"/><br/>
+<img src={useBaseUrl("img/staking_faq/RestakeRewards2.png")} height="415px"/><br/>
 
 Please watch the video for a graphical illustration of how this works:
 
 <video width="70%" height="70%" controls="true" >
-  <source type="video/mp4" src="/img/staking_faq/RestakingRewards.mov"></source>
+  <source type="video/mp4" src="/img/staking_faq/restakingRewards.mov"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 
@@ -95,15 +95,15 @@ You would need to have a minimum of **2 Matic** to restake rewards.
 You can claim your rewards by clicking on the “My Account”, all the delegators for a validator are displayed. Click on the “Withdraw Reward” button and the rewards will be transferred to your delegated account on Metamask. 
 
 `Step 1` <br/>
-<img src={useBaseUrl("img/staking_faq/Withdraw1.png")} height="300px"/><br/>
+<img src={useBaseUrl("img/staking_faq/withdraw1.png")} height="300px"/><br/>
 
 `Step 2` <br/>
-<img src={useBaseUrl("img/staking_faq/Withdraw2.png")} height="380px"/><br/>
+<img src={useBaseUrl("img/staking_faq/withdraw2.png")} height="380px"/><br/>
 
 Please watch the video for a graphical illustration of how this works:
 
 <video width="70%" height="70%" controls="true" >
-  <source type="video/mp4" src="/img/staking_faq/Withdraw.mov"></source>
+  <source type="video/mp4" src="/img/staking_faq/withdraw.mov"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 
@@ -116,18 +116,18 @@ You would need to have a minimum of **2 Matic** to withdraw rewards.
 Once the **unbonding period is complete**, the Claim Stake button will be enabled and you can then claim your staked tokens. The tokens will be transferred to your account.
 
 `Step 1` <br/>
-<img src={useBaseUrl("img/staking_faq/claimstake1.png")} height="400px"/><br/>
+<img src={useBaseUrl("img/staking_faq/claimStake1.png")} height="400px"/><br/>
 
 `Step 2` <br/>
-<img src={useBaseUrl("img/staking_faq/claimstake2.png")} height="300px"/><br/>
+<img src={useBaseUrl("img/staking_faq/claimStake2.png")} height="300px"/><br/>
 
 `Step 3` <br/>
-<img src={useBaseUrl("img/staking_faq/claimstake3.png")} height="400px"/><br/>
+<img src={useBaseUrl("img/staking_faq/claimStake3.png")} height="400px"/><br/>
 
 Please watch the video for a graphical illustration of how this works:
 
 <video width="70%" height="70%" controls="true" >
-  <source type="video/mp4" src="/img/staking_faq/ClaimingStake.mov"></source>
+  <source type="video/mp4" src="/img/staking_faq/claimingStake.mov"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 
