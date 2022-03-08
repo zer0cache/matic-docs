@@ -9,7 +9,7 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
-Please, check [the latest matic.js Documentation PoS](https://maticnetwork.github.io/matic.js/docs/pos/) to get started.
+Please check the latest [Matic.js documentation on PoS](https://maticnetwork.github.io/matic.js/docs/pos/) to get started.
 
 A bridge is basically a set of contracts that help in moving assets from the root chain to the child chain. There are primarily two bridges to move assets between Ethereum and Polygon. First one is the Plasma bridge and the second one is called the **PoS Bridge** or **Proof of Stake bridge**. **Plasma bridge** provides an increased security guarantee due to the Plasma exit mechanism.
 
