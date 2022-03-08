@@ -9,7 +9,7 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
-Please, check [the latest matic.js Documentation of Plasma ERC20](https://maticnetwork.github.io/matic.js/docs/plasma/erc20/) to get started and see all up-to-date methods.
+Please check the latest [Matic.js documentation on Plasma ERC20](https://maticnetwork.github.io/matic.js/docs/plasma/erc20/) to get started and view the up-to-date methods.
 
 ### High Level Flow
 
