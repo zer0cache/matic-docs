@@ -45,7 +45,7 @@ tar -xzvf <snapshot file> -C <HEIMDALL_DATA_DIRECTORY>
 // then please mention that directory name correctly.
 // When this command completes, you can delete the tar file to reclaim space.
 
-// For example, this will unpack the Tar file in the Heimdall Data directory:
+// For example, this will unpack the tar file in the Heimdall Data directory:
 tar -xzvf heimdall-snapshot-2021-09-12.tar.gz -C ~/.heimdalld/data/
 ```
 
