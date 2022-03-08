@@ -9,7 +9,7 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
-Please, check [the latest matic.js Documentation of Plasma](https://maticnetwork.github.io/matic.js/docs/plasma/) to get started.
+Please check the latest [Matic.js documentation on Plasma](https://maticnetwork.github.io/matic.js/docs/plasma/) to get started.
 
 ## Deposit Events
 
