@@ -9,6 +9,8 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
+Please check the latest [Matic.js documentation on Plasma ERC20](https://maticnetwork.github.io/matic.js/docs/plasma/erc20/) to get started and view the up-to-date methods.
+
 ### High Level Flow
 
 #### **Deposit ERC20 (2 step process)**
@@ -26,7 +28,7 @@ Once you have funds on Polygon, you can use those funds to send to others instan
 2. Once the checkpoint is submitted to the mainchain ERC20 contract, an NFT Exit (ERC721) token is created of equivalent value. Users need to wait for a about 2 seconds challenge period (For testnets also)
 3. Once the challenge period is complete, the withdrawn funds can be claimed back to your ERC20 acccount from the mainchain contract using a process-exit procedure.
 
-> For now, just go with the fact that the challenge period for withdrawals is an important part of the Plasma framework to ensure security of your transactions. 
+> For now, just go with the fact that the challenge period for withdrawals is an important part of the Plasma framework to ensure security of your transactions.
 
 ## Setup Details
 
@@ -88,11 +90,11 @@ async function getPlasmaClient (network = 'testnet', version = 'mumbai') {
 Create a new file in root directory name it process.env
 
 ```bash
-USER1_FROM = 
-USER1_PRIVATE_KEY = 
-USER2_ADDRESS = 
-ROOT_RPC = 
-MATIC_RPC = 
+USER1_FROM =
+USER1_PRIVATE_KEY =
+USER2_ADDRESS =
+ROOT_RPC =
+MATIC_RPC =
 ```
 
 ---

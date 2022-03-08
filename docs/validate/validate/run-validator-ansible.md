@@ -14,23 +14,20 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+:::tip
+Steps in this guide involve waiting for the **Heimdall** and **Bor** services to fully sync.
+This process takes several days to complete. Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [Snapshot Instructions for Heimdall and Bor](../../develop/network-details/snapshot-instructions-heimdall-bor).
+
+For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.matic.today/).
+
+There is limited space for accepting new validators. New validators can only join the active set when an already active validator unbonds.
+:::
+
 This section guides you through starting and running the validator node through an Ansible playbook.
 
 For the system requirements, see [Validator Node System Requirements](https://docs.polygon.technology/docs/validate/validate/validator-node-system-requirements).
 
 If you would like to start and run the validator node from binaries, see [Run a Validator Node from Binaries](https://docs.polygon.technology/docs/validate/validate/run-validator-binaries).
-
-:::note
-
-Steps in this guide involve waiting for the Heimdall and Bor services to fully sync. This process takes several days to complete.
-
-Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [Snapshot Instructions for Heimdall and Bor](https://forum.matic.network/t/snapshot-instructions-for-heimdall-and-bor/2278).
-
-For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.matic.today/).
-
-There is limited space for accepting new validators. New validators can only join the active set when a currently active validator unbonds.
-
-:::
 
 ## Prerequisites
 
