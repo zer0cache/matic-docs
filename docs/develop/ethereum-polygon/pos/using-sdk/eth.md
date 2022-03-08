@@ -9,7 +9,7 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
-Check the [latest matic.js Documentation for ETH](https://maticnetwork.github.io/matic.js/docs/pos/deposit-ether/).
+Check out the latest [Matic.js documentation on ETH](https://maticnetwork.github.io/matic.js/docs/pos/deposit-ether/).
 
 ## Quick Summary
 
