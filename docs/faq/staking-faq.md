@@ -6,7 +6,7 @@ description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -47,7 +47,7 @@ It depends on your understanding and research on which validator you would want 
 
 ### How to unbond?
 
-To Unbond from a Validator, navigate to MyAccount, where you find "Your Delegations". 
+To Unbond from a Validator, navigate to MyAccount, where you find "Your Delegations".
 There you will see an Unbond button for each of the validators. Click on the Unbond button for whichever validator that you want to unbond from.
 
 `Step 1` <br/>
@@ -63,7 +63,7 @@ Please watch the video for a graphical illustration of how this works:
   <p>Your browser does not support the video element.</p>
 </video>
 
-### What is the unbonding period? 
+### What is the unbonding period?
 
 The unbonding period on Polygon is 80 checkpoints. This is approximately ~3-4 days. Every checkpoint takes approximately 3 hours. However, some checkpoints could be delayed due to congestion on Ethereum.
 This period applies to the originally delegated amount and re-delegated amounts. It does not apply to any rewards that were not re-delegated.
@@ -77,7 +77,7 @@ Clicking on "Restake Reward" will ask you for confirmation from your Metamask ac
 <img src={useBaseUrl("img/staking_faq/RestakeRewards1.png")} height="300px"/><br/>
 
 `Step 2` <br/>
-<img src={useBaseUrl("img/staking_faq/RestakeRewards2.png")} height="415px"/><br/>
+<img src={useBaseUrl("img/staking_faq/restakeRewards2.png")} height="415px"/><br/>
 
 Please watch the video for a graphical illustration of how this works:
 
@@ -92,7 +92,7 @@ You would need to have a minimum of **2 Matic** to restake rewards.
 
 ### How to withdraw rewards?
 
-You can claim your rewards by clicking on the “My Account”, all the delegators for a validator are displayed. Click on the “Withdraw Reward” button and the rewards will be transferred to your delegated account on Metamask. 
+You can claim your rewards by clicking on the “My Account”, all the delegators for a validator are displayed. Click on the “Withdraw Reward” button and the rewards will be transferred to your delegated account on Metamask.
 
 `Step 1` <br/>
 <img src={useBaseUrl("img/staking_faq/withdraw1.png")} height="300px"/><br/>
@@ -107,7 +107,7 @@ Please watch the video for a graphical illustration of how this works:
   <p>Your browser does not support the video element.</p>
 </video>
 
-### I want to Withdraw Rewards but I am unable to. 
+### I want to Withdraw Rewards but I am unable to.
 
 You would need to have a minimum of **2 Matic** to withdraw rewards.
 
