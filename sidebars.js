@@ -425,7 +425,7 @@ module.exports = {
       ],
     },
     "validate/delegate",
-    "validate/delegator-faq",
+    //"validate/delegator-faq",
     // "validate/port_management",
     {
       type: "category",
