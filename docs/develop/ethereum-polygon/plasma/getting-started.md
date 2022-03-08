@@ -13,7 +13,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Please, check [the latest matic.js Documentation of Plasma](https://maticnetwork.github.io/matic.js/docs/plasma/) to get started.
 
-
 A bridge is basically a set of contracts that help in moving assets from the root chain to the child chain. There are primarily two bridges to move assets between Ethereum and Polygon. First one is the Plasma bridge and the second one is called the **PoS Bridge** or **Proof of Stake bridge**. **Plasma bridge** provides an increased security guarantees due to the Plasma exit mechanism.
 
 However, there are certain restrictions on the child token and there is a 7-day withdrawal period associated with all exits/withdraws from Polygon to Ethereum on the Plasma bridge. The [PoS Bridge](/docs/develop/ethereum-polygon/pos/getting-started) is more flexible and features faster withdrawals.
