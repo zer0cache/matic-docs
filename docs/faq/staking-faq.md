@@ -6,7 +6,7 @@ description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -35,7 +35,7 @@ You can navigate to "Your Delegations", choose one of the stakes and click on "S
 Please watch this video for a graphical illustration of how this works:
 
 <video loop autoplay width="70%" height="70%" controls="true" >
-  <source type="video/mp4" src="/img/staking_faq/stakingmore.mov"></source>
+  <source type="video/mp4" src="/img/staking_faq/stakingMore.mov"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 
@@ -59,7 +59,7 @@ Check if you have funds on the Main Ethereum Network, to delegate your tokens. A
 
 Once logged into https://wallet.polygon.technology/ you need to  click on apps > staking. Users will be landed on the staking overview page. Reference for guide:
 
-<img src={useBaseUrl("img/staking_faq/stakingApp.png")} height="500px"/>
+<img src={useBaseUrl("img/staking_faq/stakingApp.PNG")} height="500px"/>
 
 ### How do I know which Validator to select for better rewards?
 
@@ -67,7 +67,7 @@ It depends on your understanding and research on which validator you would want 
 
 ### How to unbond?
 
-To Unbond from a Validator, navigate to MyAccount, where you find "Your Delegations". 
+To Unbond from a Validator, navigate to MyAccount, where you find "Your Delegations".
 There you will see an Unbond button for each of the validators. Click on the Unbond button for whichever validator that you want to unbond from.
 
 `Step 1` <br/>
@@ -83,7 +83,7 @@ Please watch the video for a graphical illustration of how this works:
   <p>Your browser does not support the video element.</p>
 </video>
 
-### What is the unbonding period? 
+### What is the unbonding period?
 
 The unbonding period on Polygon is 80 checkpoints. This is approximately ~3-4 days. Every checkpoint takes approximately 3 hours. However, some checkpoints could be delayed due to congestion on Ethereum.
 This period applies to the originally delegated amount and re-delegated amounts. It does not apply to any rewards that were not re-delegated.
@@ -114,15 +114,15 @@ Go to “My Account” to check "Your Delegations".
 Clicking on "Restake Reward" will ask you for confirmation from your Metamask account. Once you confirm the transaction, only then the restake transaction would be complete.
 
 `Step 1` <br/>
-<img src={useBaseUrl("img/staking_faq/Restakerewards1.png")} height="300px"/><br/>
+<img src={useBaseUrl("img/staking_faq/RestakeRewards1.png")} height="300px"/><br/>
 
 `Step 2` <br/>
-<img src={useBaseUrl("img/staking_faq/Restakerewards2.png")} height="415px"/><br/>
+<img src={useBaseUrl("img/staking_faq/restakeRewards2.png")} height="415px"/><br/>
 
 Please watch the video for a graphical illustration of how this works:
 
 <video width="70%" height="70%" controls="true" >
-  <source type="video/mp4" src="/img/staking_faq/RestakingRewards.mov"></source>
+  <source type="video/mp4" src="/img/staking_faq/restakingRewards.mov"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 
@@ -132,22 +132,22 @@ You would need to have a minimum of **2 Matic** to restake rewards.
 
 ### How to withdraw rewards?
 
-You can claim your rewards by clicking on the “My Account”, all the delegators for a validator are displayed. Click on the “Withdraw Reward” button and the rewards will be transferred to your delegated account on Metamask. 
+You can claim your rewards by clicking on the “My Account”, all the delegators for a validator are displayed. Click on the “Withdraw Reward” button and the rewards will be transferred to your delegated account on Metamask.
 
 `Step 1` <br/>
-<img src={useBaseUrl("img/staking_faq/Withdraw1.png")} height="300px"/><br/>
+<img src={useBaseUrl("img/staking_faq/withdraw1.png")} height="300px"/><br/>
 
 `Step 2` <br/>
-<img src={useBaseUrl("img/staking_faq/Withdraw2.png")} height="380px"/><br/>
+<img src={useBaseUrl("img/staking_faq/withdraw2.png")} height="380px"/><br/>
 
 Please watch the video for a graphical illustration of how this works:
 
 <video width="70%" height="70%" controls="true" >
-  <source type="video/mp4" src="/img/staking_faq/Withdraw.mov"></source>
+  <source type="video/mp4" src="/img/staking_faq/withdraw.mov"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 
-### I want to Withdraw Rewards but I am unable to. 
+### I want to Withdraw Rewards but I am unable to.
 
 You would need to have a minimum of **2 Matic** to withdraw rewards.
 
@@ -156,18 +156,18 @@ You would need to have a minimum of **2 Matic** to withdraw rewards.
 Once the **unbonding period is complete**, the Claim Stake button will be enabled and you can then claim your staked tokens. The tokens will be transferred to your account.
 
 `Step 1` <br/>
-<img src={useBaseUrl("img/staking_faq/claimstake1.png")} height="400px"/><br/>
+<img src={useBaseUrl("img/staking_faq/claimStake1.png")} height="400px"/><br/>
 
 `Step 2` <br/>
-<img src={useBaseUrl("img/staking_faq/claimstake2.png")} height="300px"/><br/>
+<img src={useBaseUrl("img/staking_faq/claimStake2.png")} height="300px"/><br/>
 
 `Step 3` <br/>
-<img src={useBaseUrl("img/staking_faq/claimstake3.png")} height="400px"/><br/>
+<img src={useBaseUrl("img/staking_faq/claimStake3.png")} height="400px"/><br/>
 
 Please watch the video for a graphical illustration of how this works:
 
 <video width="70%" height="70%" controls="true" >
-  <source type="video/mp4" src="/img/staking_faq/ClaimingStake.mov"></source>
+  <source type="video/mp4" src="/img/staking_faq/claimingStake.mov"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 

@@ -52,6 +52,7 @@ module.exports = {
         "develop/network-details/gas-token",
         "develop/network-details/genesis-contracts",
         "develop/network-details/technical-requirements",
+        "develop/network-details/snapshot-instructions-heimdall-bor",
         "integrate/full-node-binaries",
         "integrate/full-node-deployment",
       ],
@@ -202,7 +203,7 @@ module.exports = {
         "develop/ipfs",
         "develop/filecoinhelpers",
         "develop/nftstorage",
-        
+
       ],
     },
     {
