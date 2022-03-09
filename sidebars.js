@@ -450,11 +450,11 @@ module.exports = {
       label: "Knowledge Base",
       items: ["validate/knowledge-base/known-issues","validate/knowledge-base/how-to",]
     },
-    "validate/validator-faq",
-    "validate/general-faq",
+    //"validate/general-faq",
     "validate/bug-bounty-program",
     "validate/reporting-issues",
     "validate/rewards",
+    "validate/validator-faq",
     "validate/glossary",
   ],
   Contributors: [
@@ -544,6 +544,7 @@ module.exports = {
     },
   ],
   faq: [
+    "faq/general-faq",
     "faq/technical-faqs",
     // "faq/delegator-faq",
     "faq/commit-chain-multisigs",
