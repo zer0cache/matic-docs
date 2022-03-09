@@ -87,11 +87,11 @@ async function getPlasmaClient (network = 'testnet', version = 'mumbai') {
 Create a new file in root directory name it process.env
 
 ```bash
-USER1_FROM = 
-USER1_PRIVATE_KEY = 
-USER2_ADDRESS = 
-ROOT_RPC = 
-MATIC_RPC = 
+USER1_FROM =
+USER1_PRIVATE_KEY =
+USER2_ADDRESS =
+ROOT_RPC =
+MATIC_RPC =
 ```
 
 ---
@@ -170,7 +170,7 @@ async function execute () {
   const plasmaClient = await getPlasmaClient()
   const erc20Token = plasmaClient.erc20(token)
   const result = await erc20Token.withdrawStart(amount)
-  
+
   const txHash = await result.getTransactionHash()
   const receipt = await result.getReceipt()
 
@@ -218,7 +218,7 @@ async function execute () {
   const plasmaClient = await getPlasmaClient()
   const erc20Token = plasmaClient.erc20(plasma.parent.erc20, true);
   const result = await erc20Token.withdrawExit();
-  
+
   const txHash = await result.getTransactionHash()
   const txReceipt = await result.getReceipt()
   console.log(txReceipt)

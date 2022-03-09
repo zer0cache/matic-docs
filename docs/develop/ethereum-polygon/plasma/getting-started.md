@@ -11,11 +11,13 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+Please check the latest [Matic.js documentation on Plasma](https://maticnetwork.github.io/matic.js/docs/plasma/) to get started.
+
 A bridge is basically a set of contracts that help in moving assets from the root chain to the child chain. There are primarily two bridges to move assets between Ethereum and Polygon. First one is the Plasma bridge and the second one is called the **PoS Bridge** or **Proof of Stake bridge**. **Plasma bridge** provides an increased security guarantees due to the Plasma exit mechanism.
 
 However, there are certain restrictions on the child token and there is a 7-day withdrawal period associated with all exits/withdraws from Polygon to Ethereum on the Plasma bridge. The [PoS Bridge](/docs/develop/ethereum-polygon/pos/getting-started) is more flexible and features faster withdrawals.
 
-This tutorial will act as a guide for step-by-step process to understand and use Plasma bridge using [Matic JS](https://github.com/maticnetwork/matic.js), which is the easiest way to interact with the Plasma Bridge on Polygon Network. Please, check [matic.js Documentation](https://maticnetwork.github.io/matic.js/docs/get-started/) to get started.
+This tutorial will act as a guide for step-by-step process to understand and use Plasma bridge using [Matic JS](https://github.com/maticnetwork/matic.js), which is the easiest way to interact with the Plasma Bridge on Polygon Network.
 
 ## Assets flow in Plasma Bridge
 
@@ -28,11 +30,37 @@ We will be showcasing the flow for asset transfers on Polygon in this tutorial a
    - The user can now transfer tokens to anyone they want instantly with negligible fees. Polygon chain has faster blocks (approximately 1 second). That way, the transfer will be done almost instantly.
 3. Once a user is ready, they can withdraw remaining tokens from the mainchain. Withdrawal of funds is initiated from the Plasma Sidechain. A checkpoint interval of 5 mins is set, where all the blocks on the Polygon block layer are validated since the last checkpoint.
 4. Once the checkpoint is submitted to the mainchain Ethereum contract, an Exit NFT (ERC721) token is created of equivalent value.
-5. Users need to wait for a challenge period of 2 seconds.
+5. Users need to wait for a challenge period of 7 days.
 6. Once the challenge period is complete, the withdrawn funds can be claimed back to your Ethereum acccount from the mainchain contract using a process-exit procedure.
    - User can also get a fast exit via 0x or Dharma (coming soon!)
 
 ### Prerequisites:
+
+```
+npm i @maticnetwork/maticjs-plasma
+
+import { PlasmaClient } from "@maticnetwork/maticjs-plasma"
+
+const plasmaClient = new PlasmaClient();
+
+await plasmaClient.init({
+    network: <network name>,  // 'testnet' or 'mainnet'
+    version: <network version>, // 'mumbai' or 'v1'
+    parent: {
+      provider: <parent provider>,
+      defaultConfig: {
+            from: <from address>
+      }
+    },
+    child: {
+      provider: <child provider>,
+      defaultConfig: {
+            from: <from address>
+      }
+    }
+});
+
+```
 
 ### Görli Faucet
 

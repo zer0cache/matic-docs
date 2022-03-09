@@ -116,6 +116,7 @@ All the network related details can be found in [network docs](/docs/develop/net
 - [Alchemy (Blockchain APIs and Developer Tools)](https://alchemy.com/?a=polygon-docs)
 - [QuickNode (Multi-chain Blockchain infrastructure)](https://www.quicknode.com/docs/polygon?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide)
 - [Infura Docs](https://infura.io/docs)
+- [Getting Started with Infura and Polygon](https://docs.infura.io/infura/networks/polygon-pos/tutorials/send-a-transaction)
 - [Truffle Suite Docs](https://www.trufflesuite.com/docs) (Recommended)
 - [Truffle tutorial](https://www.trufflesuite.com/tutorial) (Recommended)
 - [Parity Wiki](https://openethereum.github.io/)

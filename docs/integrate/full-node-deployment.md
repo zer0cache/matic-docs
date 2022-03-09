@@ -370,6 +370,11 @@ The latest version, [Heimdall v.0.2.5](https://github.com/maticnetwork/heimdall/
   2. Get your private key and API endpoint
   3. Use your Alchemy account to access Polygon Mainnet
 
+## Full Node Access (via Infura)
+  1. [Sign up for a free account](https://infura.io/register) on Infura
+  2. [Create an Ethereum project](https://docs.infura.io/infura/create-a-project) and [Add Polygon](https://docs.infura.io/infura/networks/ethereum/how-to/add-a-network-add-on)
+  3. [Start making requests](https://docs.infura.io/infura/networks/polygon-pos/getting-started/make-requests)
+
 ## Full Node Access (via Chainstack)
   1. [Sign up with Chainstack](https://console.chainstack.com/user/account/create) for a free account.
   2. [Deploy a Polygon mainnet node](https://docs.chainstack.com/platform/join-a-public-network#join-a-polygon-pos-network).

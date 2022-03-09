@@ -14,23 +14,20 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+:::tip
+Steps in this guide involve waiting for the **Heimdall** and **Bor** services to fully sync.
+This process takes several days to complete. Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [Snapshot Instructions for Heimdall and Bor](../../develop/network-details/snapshot-instructions-heimdall-bor).
+
+For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.matic.today/).
+
+There is limited space for accepting new validators. New validators can only join the active set when an already active validator unbonds.
+:::
+
 This section guides you through starting and running the validator node through an Ansible playbook.
 
 For the system requirements, see [Validator Node System Requirements](https://docs.polygon.technology/docs/validate/validate/validator-node-system-requirements).
 
 If you would like to start and run the validator node from binaries, see [Run a Validator Node from Binaries](https://docs.polygon.technology/docs/validate/validate/run-validator-binaries).
-
-:::note
-
-Steps in this guide involve waiting for the Heimdall and Bor services to fully sync. This process takes several days to complete.
-
-Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [Snapshot Instructions for Heimdall and Bor](https://forum.matic.network/t/snapshot-instructions-for-heimdall-and-bor/2278).
-
-For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.matic.today/).
-
-There is limited space for accepting new validators. New validators can only join the active set when a currently active validator unbonds.
-
-:::
 
 ## Prerequisites
 
@@ -39,6 +36,7 @@ There is limited space for accepting new validators. New validators can only joi
 * On the local machine, [Python 3.x](https://www.python.org/downloads/) installed.
 * On the remote machines, make sure Go is *not* installed.
 * On the remote machines, your local machine's SSH public key is on the remote machines to let Ansible connect to them.
+* We have Bloxroute available as a relay network. If you need a gateway to be added as your Trusted Peer please contact [Delroy on Discord](http://delroy/#0056).
 
 
 ## Overview
@@ -57,7 +55,7 @@ To get to a running validator node, do the following:
 
 :::note
 
-You must follow the exact outlined sequence of actions, otherwise you will run into issues.
+You must follow the **exact outlined sequence of actions**, otherwise you will run into issues.
 
 For example, a sentry node must always be set up before the validator node.
 
@@ -112,7 +110,7 @@ Check that the remote sentry machine is reachable. On the local machine, run:
 $ ansible sentry -m ping
 ```
 
-You should get this as output
+You should get this as output:
 
 ```sh
 xxx.xxx.xx.xx | SUCCESS => {
@@ -130,7 +128,7 @@ Do a test run of the sentry node setup:
 ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.5  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
 ```
 
-This will be the output
+This will be the output:
 
 ```sh
 playbook: playbooks/network.yml
@@ -139,7 +137,7 @@ playbook: playbooks/network.yml
     xx.xxx.x.xxx
 ```
 
-Run the sentry node setup with sudo privileges :
+Run the sentry node setup with sudo privileges:
 
 ```sh
 ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.5  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --ask-become-pass
@@ -169,7 +167,7 @@ Check that the remote validator machine is reachable. On the local machine, run 
 $ ansible validator -m ping
 ```
 
-You should get this as output
+You should get this as output:
 
 ```sh
 xxx.xxx.xx.xx | SUCCESS => {
@@ -206,7 +204,7 @@ Once the setup is complete, you will see a message of completion on the terminal
 
 :::note
 
-If you run into issue and would like to start over, run:
+If you run into an issue and would like to start over, run:
 
 ```sh
 ansible-playbook -l validator playbooks/clean.yml
@@ -216,13 +214,13 @@ ansible-playbook -l validator playbooks/clean.yml
 
 ## Configure the sentry node
 
-Login to the remote sentry machine.
+Log into the remote sentry machine.
 
 ### Configure the Heimdall Service
 
-Open for editing `vi ~/.heimdalld/config/config.toml`.
+Open `config.toml` for editing `vi ~/.heimdalld/config/config.toml`.
 
-In `config.toml`, change the following:
+Change the following:
 
 * `moniker` — any name. Example: `moniker = "my-full-node"`.
 * `seeds` — the seed node addresses consisting of a node ID, an IP address, and a port.
@@ -238,7 +236,7 @@ In `config.toml`, change the following:
 
   To get the node ID of Heimdall on the validator machine:
 
-  1. Login to the valdator machine.
+  1. Log into the validator machine.
   1. Run `heimdalld tendermint show-node-id`.
 
   Example: `private_peer_ids = "0ee1de0515f577700a6a4b6ad882eff1eb15f066"`.
@@ -268,7 +266,7 @@ In `static-nodes.json`, change the following:
 
   To get the node ID of Bor on the validator machine:
 
-  1. Login to the valdator machine.
+  1. Log into the validator machine.
   1. Run `bootnode -nodekey ~/.bor/data/bor/nodekey -writeaddress`.
 
   Example: `"enode://410e359736bcd3a58181cf55d54d4e0bbd6db2939c5f548426be7d18b8fd755a0ceb730fe5cf7510c6fa6f0870e388277c5f4c717af66d53c440feedffb29b4b@134.209.100.175:30303"`.
@@ -279,15 +277,15 @@ Save the changes in `static-nodes.json`.
 
 The sentry machine must have the following ports open to the world `0.0.0.0/0`:
 
-* 26656- Your Heimdall service will connect your node to other nodes Heimdall service.
+* 26656- Your Heimdall service will connect your node to other nodes using the Heimdall service.
 
-* 30303- Your Bor service will connect your node to other nodes Bor service.
+* 30303- Your Bor service will connect your node to other nodes using the Bor service.
 
 * 22- For the validator to be able to ssh from wherever he/she is.
 
 :::note
 
-However, if they use a vpn connection, they can allow incoming ssh connections only from the vpn ip address
+However, if they use a VPN connection, they can allow incoming ssh connections only from the VPN IP address.
 
 :::
 
@@ -307,7 +305,7 @@ For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.ma
 
 ### Start the Heimdall service
 
-The latest version, [Heimdall v.0.2.5](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.5), contains few enhancements such as **Restricting data size in state sync txs to 100kb** and **Removing nonce-check for (new) validator-join**.
+The latest version, [Heimdall v.0.2.5](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.5), contains a few enhancements such as **Restricting data size in state sync txs to 100kb** and **Removing nonce-check for (new) validator-join**.
 
 Start the Heimdall service:
 
@@ -384,11 +382,11 @@ To complete this section, you must have an RPC endpoint of your fully synced Eth
 
 ### Configure the Heimdall Service
 
-Login to the remote validator machine.
+Log into the remote validator machine.
 
-Open for editing `vi ~/.heimdalld/config/config.toml`.
+Open `config.toml` for editing `vi ~/.heimdalld/config/config.toml`.
 
-In `config.toml`, change the following:
+Change the following:
 
 * `moniker` — any name. Example: `moniker = "my-validator-node"`.
 * `pex` — set the value to `false` to disable the peer exchange. Example: `pex = false`.
@@ -427,7 +425,7 @@ In `static-nodes.json`, change the following:
 
   To get the node ID of Bor on the sentry machine:
 
-  1. Login to the sentry machine.
+  1. Log into the sentry machine.
   1. Run `bootnode -nodekey ~/.bor/data/bor/nodekey -writeaddress`.
 
   Example: `"enode://a8024075291c0dd3467f5af51a05d531f9e518d6cd229336156eb6545581859e8997a80bc679fdb7a3bd7473744c57eeb3411719b973b2d6c69eff9056c0578f@188.166.216.25:30303"`.
@@ -436,14 +434,14 @@ Save the changes in `static-nodes.json`.
 
 ## Set the owner and signer key
 
-On Polygon, it is recommended that you keep the owner and signer keys different.
+On Polygon, you should keep the owner and signer keys different.
 
 * Signer — the address that signs the [checkpoint transactions](/docs/validate/glossary#checkpoint-transaction). The recommendation is to keep at least 1 ETH on the signer address.
 * Owner — the address that does the staking transactions. The recommendation is to keep the MATIC tokens on the owner address.
 
 ### Generate a Heimdall private key
 
-You must generate a Heimdall private key only on the validator machine. Do not generate a Heimdall private key on the sentry machine.
+You must generate a Heimdall private key only on the validator machine. **Do not generate a Heimdall private key on the sentry machine.**
 
 To generate the private key, run:
 
@@ -452,7 +450,7 @@ heimdallcli generate-validatorkey ETHEREUM_PRIVATE_KEY
 ```
 
 :::note
-* ETHEREUM_PRIVATE_KEY — your Ethereum wallet address.
+* ETHEREUM_PRIVATE_KEY — your Ethereum private key.
 :::
 
 This will generate `priv_validator_key.json`. Move the generated JSON file to the Heimdall configuration directory:
@@ -463,7 +461,7 @@ mv ./priv_validator_key.json ~/.heimdalld/config
 
 ### Generate a Bor keystore file
 
-You must generate a Bor keystore file only on the validator machine. Do not generate a Bor keystore file on the sentry machine.
+You must generate a Bor keystore file only on the validator machine. **Do not generate a Bor keystore file on the sentry machine.**
 
 To generate the private key, run:
 
@@ -472,7 +470,7 @@ heimdallcli generate-keystore ETHEREUM_PRIVATE_KEY
 ```
 
 :::note
-* ETHEREUM_PRIVATE_KEY — your Ethereum private key.
+ETHEREUM_PRIVATE_KEY — your Ethereum private key.
 :::
 
 When prompted, set up a password to the keystore file.
