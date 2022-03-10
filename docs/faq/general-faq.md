@@ -59,7 +59,7 @@ To avail the proposer bonus completely, the proposer would need to include all s
 
 ## How can I reserve a validator spot?
 
-If we have a vacant validator slot, anyone with any amount of stake can become a validator in the system. There will be validator auctions organized periodically (days mostly), where in anyone can replace any current validator by proposing higher stake. So, in short, it is an open system where we cannot reserve places for anyone.
+If we have a vacant validator slot, anyone with any amount of stake can become a validator in the system. There will be validator auctions organized periodically (days mostly), wherein anyone can replace any current validator by proposing higher stake. So, in short, it is an open system where we cannot reserve places for anyone.
 
 In any case, there is always the possibility of stake delegation with the current validator set. Anyone can participate in the process with this mechanism and earn rewards as long as the respective validator is honest and online.
 
@@ -81,7 +81,7 @@ If one wishes to opt out of the system, the staked tokens undergo an unbonding p
 
 Delegated tokens enter unbonding period immediately upon unbond request. However, validators will need to serve a certain notice period in active state, participating in consensus and proposing checkpoints before entering into unbonding period.
 
-Stakers can withdraw their tokens after the unbonding period ends. Exact durations of withdraw for both delegator and validator will be announced here soon.
+Stakers can withdraw their tokens after the unbonding period ends. The duration of the unbonding period is of 82 checkpoints.
 
 See:
 
