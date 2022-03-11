@@ -11,6 +11,30 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
+## How can I reserve a validator spot?
+
+If we have a vacant validator slot, anyone with any amount of stake can become a validator in the system. There will be validator auctions organized periodically (days mostly), wherein anyone can replace any current validator by proposing higher stake. So, in short, it is an open system where we cannot reserve places for anyone.
+
+In any case, there is always the possibility of stake delegation with the current validator set. Anyone can participate in the process with this mechanism and earn rewards as long as the respective validator is honest and online.
+
+## What are the different states a validator can be in?
+
+* **Active**: Validator is in the current validator set, produces blocks at the Bor layer, participates in Heimdall consensus and commits checkpoint transactions to the Ethereum mainnet.
+* **Notice**: Validator sends a transaction to unbond. Before entering into the unbonding period, validator needs to be in active state creating, signing and proposing blocks for a certain time.
+* **Unbonding**: Validator is inactive in this state and thus earns no reward. However, the validator is still liable for slashing in case they have committed any malicious act previously.
+
+## Is there a minimum amount of MATIC required to stake to become a validator?
+
+The minimum is 1 Matic.
+
+We had earlier mentioned that we are thinking of having a minimum self stake requirement from the validators, as we do hope that validators also have their skin in the game. However, since we will be moving to a robust replacement strategy as the number of validator slots are limited as of now, this does not need any minimum self stake requirement. It is however, logical that over time, the average/median stake by a validator will tend upwards and become substantial.
+
+## How can a new validator replace an existing one?
+
+There is limited space for accepting new validators. New validators can only join the active set when a currently active validator unbonds.
+
+A new auction process for validator replacement will be rolled out.
+
 ## Heimdall shows "Failed Sanity Checks"
 
 `Addressbook` warnings can be ignored without an issue most of the time. If your node is connected to sufficient number of peers, these kind of errors can be ignored. Your `pex` is just trying to re-establish its connections with peers already present in `addrbook.json`.

@@ -37,71 +37,7 @@ The Polygon architecture also separates the process of block production and vali
 
 A checkpoint is basically the Merkle root of all blocks produced in between intervals. Validators play multiple roles, creating blocks at the block producer layer, participating in the consensus by signing all checkpoints and committing the checkpoint when acting as proposer. The probability of a validator becoming the block producer or proposer is based on their stake ratio in the overall pool.
 
-## What’s the incentive to be a Polygon staker?
-
-Polygon is allocating 12% of its total supply of 10 billion tokens to fund the staking rewards. These 1.2 billion tokens will be the staking incentive for the first five years. This is to ensure that the network is seeded well enough until transaction fees gain traction. These rewards are primarily meant to jump-start the network, while the protocol in the long run should be able to sustain itself on the basis of transaction fees.
-
-**Validator Rewards = Staking Rewards + Transaction Fees from Polygon chain**
-
-First year will see the maximum amount of tokens allocated as staking rewards. This is allocated in a way to ensure gradual decoupling of staking rewards from being the dominant component of the validator rewards.
-
-See also [Economics](/docs/validate/polygon-basics/economics).
-
-## How are staking rewards allocated to stakers?
-
-Tokens to be given out as staking rewards for the first five years of the network life are fixed. This reward is divided per [checkpoint](/docs/validate/glossary#checkpoint-transaction) and the amount to be shared with all stakers is absolute. The reward rate will be higher during lower bonding rates and vice-versa otherwise.
-
-The staking reward gets distributed proportionally to all stakers; proposer and signers, with the exception of proposer getting a bonus.
-
 ## Encouraging the proposer to include all signatures
 
 To avail the proposer bonus completely, the proposer would need to include all signatures in the checkpoint. Because the protocol desires 2/3+1 weight of the total stake, the checkpoint will be accepted even with 80% votes. However, in this case, proposer gets only 80% of the calculated bonus.
 
-## How can I reserve a validator spot?
-
-If we have a vacant validator slot, anyone with any amount of stake can become a validator in the system. There will be validator auctions organized periodically (days mostly), wherein anyone can replace any current validator by proposing higher stake. So, in short, it is an open system where we cannot reserve places for anyone.
-
-In any case, there is always the possibility of stake delegation with the current validator set. Anyone can participate in the process with this mechanism and earn rewards as long as the respective validator is honest and online.
-
-## Can I participate in the staking process, even if I do not want to run a node?
-
-MATIC token holders who do not wish to run their own node can delegate their tokens to a validator. Delegation increases the power of the validator. More the power, more probability of the validator to become the block producer and checkpoint proposer and more weight in the consensus.
-
-There is no minimum amount requirement for delegation. Any amount, even 1 MATIC, will be accepted in the system. However, it is up to validators to set a minimum limit or not while accepting delegations. Validators might charge a commission in exchange for their node running services. Other than the commission charged, one needs to evaluate the track record of the validator for example, average uptime or if the node was ever compromised.
-
-See also [Delegate](/docs/validate/delegate).
-
-## Where do the staked tokens reside?
-
-Staked tokens are locked in a contract deployed on the Ethereum mainnet. Validators do not hold the custody of the delegated tokens. However, in the event of validator getting slashed delegated tokens also get slashed.
-
-## For how long will my funds be locked?
-
-If one wishes to opt out of the system, the staked tokens undergo an unbonding period during which they are liable to being slashed for any misbehaviour committed by the validator before the unbonding period started.
-
-Delegated tokens enter unbonding period immediately upon unbond request. However, validators will need to serve a certain notice period in active state, participating in consensus and proposing checkpoints before entering into unbonding period.
-
-Stakers can withdraw their tokens after the unbonding period ends. The duration of the unbonding period is of 82 checkpoints.
-
-See:
-
-* [Delegate](/docs/validate/delegate)
-* [Validator Staking Operations](/docs/validate/mainnet/validator-staking-operations)
-
-## What are the different states a validator can be in?
-
-* **Active**: Validator is in the current validator set, produces blocks at the Bor layer, participates in Heimdall consensus and commits checkpoint transactions to the Ethereum mainnet.
-* **Notice**: Validator sends a transaction to unbond. Before entering into the unbonding period, validator needs to be in active state creating, signing and proposing blocks for a certain time.
-* **Unbonding**: Validator is inactive in this state and thus earns no reward. However, the validator is still liable for slashing in case they have committed any malicious act previously.
-
-## Is there a minimum amount of MATIC required to stake to become a validator?
-
-The minimum is 1 Matic.
-
-We had earlier mentioned that we are thinking of having a minimum self stake requirement from the validators, as we do hope that validators also have their skin in the game. However, since we will be moving to a robust replacement strategy as the number of validator slots are limited as of now, this does not need any minimum self stake requirement. It is however, logical that over time, the average/median stake by a validator will tend upwards and become substantial.
-
-## How can a new validator replace an existing one?
-
-There is limited space for accepting new validators. New validators can only join the active set when a currently active validator unbonds.
-
-A new auction process for validator replacement will be rolled out.
