@@ -29,6 +29,24 @@ Please watch this video for a graphical illustration of how this works:
   <p>Your browser does not support the video element.</p>
 </video>
 
+### What’s the incentive to be a Polygon staker?
+
+Polygon is allocating 12% of its total supply of 10 billion tokens to fund the staking rewards. These 1.2 billion tokens will be the staking incentive for the first five years. This is to ensure that the network is seeded well enough until transaction fees gain traction. These rewards are primarily meant to jump-start the network, while the protocol in the long run should be able to sustain itself on the basis of transaction fees.
+
+**Validator Rewards = Staking Rewards + Transaction Fees from Polygon chain**
+
+First year will see the maximum amount of tokens allocated as staking rewards. This is allocated in a way to ensure gradual decoupling of staking rewards from being the dominant component of the validator rewards.
+
+See also [Economics](/docs/validate/polygon-basics/economics).
+
+### Can I participate in the staking process, even if I do not want to run a node?
+
+MATIC token holders who do not wish to run their own node can delegate their tokens to a validator. Delegation increases the power of the validator. More the power, more probability of the validator to become the block producer and checkpoint proposer and more weight in the consensus.
+
+There is no minimum amount requirement for delegation. Any amount, even 1 MATIC, will be accepted in the system. However, it is up to validators to set a minimum limit or not while accepting delegations. Validators might charge a commission in exchange for their node running services. Other than the commission charged, one needs to evaluate the track record of the validator for example, average uptime or if the node was ever compromised.
+
+See also [Delegate](/docs/validate/delegate).
+
 ### I've staked my Matic tokens. How can I stake more?
 You can navigate to "Your Delegations", choose one of the stakes and click on "Stake More".
 
@@ -64,6 +82,25 @@ Once logged into https://wallet.polygon.technology/ you need to  click on apps >
 ### How do I know which Validator to select for better rewards?
 
 It depends on your understanding and research on which validator you would want to stake on. You can find the list of validators here : https://wallet.polygon.technology/staking/validators
+
+### How are staking rewards allocated to stakers?
+
+Tokens to be given out as staking rewards for the first five years of the network life are fixed. This reward is divided per [checkpoint](/docs/validate/glossary#checkpoint-transaction) and the amount to be shared with all stakers is absolute. The reward rate will be higher during lower bonding rates and vice-versa otherwise.
+
+The staking reward gets distributed proportionally to all stakers; proposer and signers, with the exception of proposer getting a bonus.
+
+### For how long will my funds be locked?
+
+If one wishes to opt out of the system, the staked tokens undergo an unbonding period during which they are liable to being slashed for any misbehaviour committed by the validator before the unbonding period started.
+
+Delegated tokens enter unbonding period immediately upon unbond request. However, validators will need to serve a certain notice period in active state, participating in consensus and proposing checkpoints before entering into unbonding period.
+
+Stakers can withdraw their tokens after the unbonding period ends. The duration of the unbonding period is of 82 checkpoints.
+
+See:
+
+* [Delegate](/docs/validate/delegate)
+* [Validator Staking Operations](/docs/validate/mainnet/validator-staking-operations)
 
 ### How to unbond?
 
@@ -236,6 +273,10 @@ Check for the following:
 - Check if you are logged into Metamask.
 - Check if you are logged into Metamask with Trezor/Ledger. You need to additionally turn on permission to call contracts on your Ledger device, if not enabled already.
 - Check your system timestamp. If the system time is not correct, you will need to correct it.
+
+### Where do the staked tokens reside?
+
+Staked tokens are locked in a contract deployed on the Ethereum mainnet. Validators do not hold the custody of the delegated tokens. However, in the event of validator getting slashed delegated tokens also get slashed.
 
 ### Why does my transaction take so long?
 

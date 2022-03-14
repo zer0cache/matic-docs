@@ -11,6 +11,30 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
+## How can I reserve a validator spot?
+
+If we have a vacant validator slot, anyone with any amount of stake can become a validator in the system. There will be validator auctions organized periodically (days mostly), wherein anyone can replace any current validator by proposing higher stake. So, in short, it is an open system where we cannot reserve places for anyone.
+
+In any case, there is always the possibility of stake delegation with the current validator set. Anyone can participate in the process with this mechanism and earn rewards as long as the respective validator is honest and online.
+
+## What are the different states a validator can be in?
+
+* **Active**: Validator is in the current validator set, produces blocks at the Bor layer, participates in Heimdall consensus and commits checkpoint transactions to the Ethereum mainnet.
+* **Notice**: Validator sends a transaction to unbond. Before entering into the unbonding period, validator needs to be in active state creating, signing and proposing blocks for a certain time.
+* **Unbonding**: Validator is inactive in this state and thus earns no reward. However, the validator is still liable for slashing in case they have committed any malicious act previously.
+
+## Is there a minimum amount of MATIC required to stake to become a validator?
+
+The minimum is 1 Matic.
+
+We had earlier mentioned that we are thinking of having a minimum self stake requirement from the validators, as we do hope that validators also have their skin in the game. However, since we will be moving to a robust replacement strategy as the number of validator slots are limited as of now, this does not need any minimum self stake requirement. It is however, logical that over time, the average/median stake by a validator will tend upwards and become substantial.
+
+## How can a new validator replace an existing one?
+
+There is limited space for accepting new validators. New validators can only join the active set when a currently active validator unbonds.
+
+A new auction process for validator replacement will be rolled out.
+
 ## Heimdall shows "Failed Sanity Checks"
 
 `Addressbook` warnings can be ignored without an issue most of the time. If your node is connected to sufficient number of peers, these kind of errors can be ignored. Your `pex` is just trying to re-establish its connections with peers already present in `addrbook.json`.
@@ -39,7 +63,7 @@ Usually restarting the Heimdall service should resolve the problem for you.
 
 ## Heimdall shows "Error: Wrong Block.Header.AppHash. Expected xxxx"
 
-This error usually occurs when Heimdall service is stuck on a block and there is no Rewind options are not available on Heimdall
+This error usually occurs when Heimdall service is stuck on a block and there is no Rewind options available on Heimdall.
 
 **Solution:**
 To resolve this:
@@ -48,12 +72,16 @@ To resolve this:
 
 ### Reset Heimdall
 
+Reset Heimdall with the following commands:
+
 ```
 sudo service heimdalld stop
 heimdalld unsafe-reset-all
 ```
 
 ### Sync Heimdall from Snapshot
+
+This is how you sync Heimdall from a Snapshot:
 
 ```
 wget -c <Snapshot URL>
@@ -79,7 +107,7 @@ This occurs mainly because of a previous installation of Polygon on your machine
 
 `sudo dpkg -r matic-node`
 
-## I'm not clear on which private Key should I add when I generate validator key
+## It is not clear which private Key I should add when I generate a validator key
 
 The private key to be used is your wallet's ETH address where your Polygon tokens are stored.
 
@@ -93,7 +121,7 @@ curl http://localhost:26657/status
 
 Check the value of `catching_up`. If it is `false`, then the node is all synced up.
 
-## Whats the difference between `~.heimsdall` and `/etc/heimsdall?`
+## What's the difference between `~.heimsdall` and `/etc/heimsdall?`
 
 `~/.heimsdall` is the Heimdall directory when you use the binary installation method.
 
@@ -128,9 +156,9 @@ panic: Unknown db_backend leveldb, expected either goleveldb or memdb or fsdb
 
 Change the config to `goleveldb` in `config.toml`.
 
-## Are the private keys same for Heimdall and Bor keystore?
+## Are the private keys the same for Heimdall and Bor keystore?
 
-Yes, the private key used for generating the validator keys and Bor keystore is the same. The private key used in this instance is your wallet's ETH address where your Polygon tokens are stored.
+Yes, the private key used for generating the validator keys and Bor keystore are the same. The private key used in this instance is your wallet's ETH address where your Polygon tokens are stored.
 
 ## Sentry Bor shows 'Looking for peers' and cannot find peers
 
@@ -160,7 +188,7 @@ The message indicates that the Bor node is not the one creating blocks right now
 
 ## Bor shows "Invalid Merkle root" or "Retrieved hash chain is Invalid"
 
-Typically, this issue occurs because of 2 reasons. One where your Bor has seemingly crashed and has started giving you these errors or it has lost out sync with Heimdall.
+Typically, this issue occurs because of 2 reasons. Either your Bor has seemingly crashed and has started giving you these errors or it has lost out sync with Heimdall.
 
 To resolve this there are 2 ways to do this:
 
@@ -231,7 +259,7 @@ See [Validator Node System Requirements](/docs/validate/validate/validator-node-
 
 ## Bridge shows "Error while fetching mainchain receipt error="
 
-These are normal logs. Do not do anything to your bridge. Let it run as is.
+These are normal logs. Do not do anything to your bridge. Let it run as it is.
 
 ## Validator Bor is stuck on a block for a long time
 
@@ -302,6 +330,8 @@ sudo service heimdalld restart
 
 ## Standard upgrade commands for Bor
 
+These are the commands to upgrade Bor:
+
 ```sh
 cd ~/bor
 git pull
@@ -313,7 +343,7 @@ sudo service bor start
 
 ## How do I delete remnants of Heimdall and Bor?
 
-If you want to delete the remnants of Heimdall and Bor, you can run the following commands
+If you want to delete the remnants of Heimdall and Bor, you can run the following commands:
 
 Bor:
 
@@ -355,7 +385,7 @@ Full error:
 '' has invalid keys: clerk_polling_interval, matic_token, span_polling_interval, stake_manager_contract, stakinginfo_contract
 ```
 
-This occurs mostly because when there are typos, or some missing parts or an old config file which is still a remnant. You will need to clear all the remnants and then try setting it up again.
+This occurs mostly because there are typos, some missing parts or an old config file which is still a remnant. You will need to clear all the remnants and then try setting it up again.
 
 ## To stop Heimdall and Bor services
 
