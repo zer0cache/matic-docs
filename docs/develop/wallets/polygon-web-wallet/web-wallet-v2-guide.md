@@ -167,11 +167,7 @@ You can see the details on the transaction itself. Once the checkpoint is arrive
 
 <!-- <img src={useBaseUrl("img/wallet/Wallet-29.png")} width="50%" height="50%"/> -->
 
-Once the checkpoint is arrived, you will need to confirm a second transaction to start the 7-day challenge period.
-
-<!-- <img src={useBaseUrl("img/wallet/Wallet-30.png")} width="50%" height="50%"/> -->
-
-The third and last transaction will be when the 7-day challenge period is complete; to get funds back to Ethereum you will need to confirm one last time.
+To get funds back to Ethereum you will need to confirm one last time.
 Once you have confirmed all these transactions, you will receive your funds back on Ethereum.
 
 <!-- <img src={useBaseUrl("img/wallet/Wallet-31.png")} width="50%" height="50%"/> -->
