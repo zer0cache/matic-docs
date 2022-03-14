@@ -116,12 +116,6 @@ startExit(withdrawTx, proofOfInclusion /* of the withdrawTx in the checkpoint */
 
 Whenever a user wishes to exit the plasma chain, they (or abstracted out by their client app i.e. wallet) should burn the tokens on the side chain, wait for it to get checkpointed and then start an exit from the checkpointed withdraw tx.
 
-*Challenge period*
-
-1. The user burnt all their tokens on the side chain and did not make any more txs, then there is nothing to challenge with and the exit will see it’s due course.
-2. User could choose to burn their balance partially, or could have received tokens that they can potentially spend on the side chain. The fact that the user is not spending any more balance than left on the side chain is guaranteed by the EVM, as long as the operator is not malicious.
-3. If the operator himself creates malformed txs that attempt to spend more tokens than available, the only option is to start mass exiting and exits with MoreVP construction will save the users. See the next 2 scenarios for more details.
-
 ### B. Exit from the last ERC20/721 transfers (MoreVP)
 
 Consider the scenario, user made a ERC20 transfer on the side chain. The operator added a out-of-nowhere tx just before the user’s transfer and colluded with the validators to checkpoint this block. In this scenario and more generally, in the attack vectors A1 through A3 discussed above, the user may not have had the opportunity to burn their tokens before a malicious tx is included and hence would need to start an exit from the last checkpointed tx on the root chain - for this reason, in addition to the burn exit, we need to support exits from a variety of txs like ERC20/721 transfers among others. Building upon this attack vector and breaking down the 2 scenarios:
@@ -157,8 +151,6 @@ startExit(referenceTx, proofOfInclusion, exitTx) {
 }
 
 ```
-
-*Challenge period:* If a user started an exit from a particular state but continued to spend tokens on the side chain, they will be challenged. To challenge, a challenger will provide any tx that the user made that appears chronologically after the reference tx.
 
 ### C. Exit from an in-flight transaction (MoreVP)
 

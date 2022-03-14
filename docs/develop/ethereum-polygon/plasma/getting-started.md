@@ -30,8 +30,7 @@ We will be showcasing the flow for asset transfers on Polygon in this tutorial a
    - The user can now transfer tokens to anyone they want instantly with negligible fees. Polygon chain has faster blocks (approximately 1 second). That way, the transfer will be done almost instantly.
 3. Once a user is ready, they can withdraw remaining tokens from the mainchain. Withdrawal of funds is initiated from the Plasma Sidechain. A checkpoint interval of 5 mins is set, where all the blocks on the Polygon block layer are validated since the last checkpoint.
 4. Once the checkpoint is submitted to the mainchain Ethereum contract, an Exit NFT (ERC721) token is created of equivalent value.
-5. Users need to wait for a challenge period of 7 days.
-6. Once the challenge period is complete, the withdrawn funds can be claimed back to your Ethereum acccount from the mainchain contract using a process-exit procedure.
+5. The withdrawn funds can be claimed back to your Ethereum acccount from the mainchain contract using a process-exit procedure.
    - User can also get a fast exit via 0x or Dharma (coming soon!)
 
 ### Prerequisites:

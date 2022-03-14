@@ -25,10 +25,8 @@ Once you have funds on Polygon, you can use those funds to send to others instan
 #### **Withdraw ERC20 (3 step process)**
 
 1. Withdrawal of funds is initiated from Polygon. A checkpoint interval of 30 mins(For testnets wait for ~10 minutes) is set, where all the blocks on the Polygon block layer are validated since the last checkpoint.
-2. Once the checkpoint is submitted to the mainchain ERC20 contract, an NFT Exit (ERC721) token is created of equivalent value. Users need to wait for a about 2 seconds challenge period (For testnets also)
-3. Once the challenge period is complete, the withdrawn funds can be claimed back to your ERC20 acccount from the mainchain contract using a process-exit procedure.
-
-> For now, just go with the fact that the challenge period for withdrawals is an important part of the Plasma framework to ensure security of your transactions.
+2. Once the checkpoint is submitted to the mainchain ERC20 contract, an NFT Exit (ERC721) token is created of equivalent value.
+3. The withdrawn funds can be claimed back to your ERC20 acccount from the mainchain contract using a process-exit procedure.
 
 ## Setup Details
 
@@ -214,7 +212,7 @@ execute().then(_ => {
 
 ### 3. Process Exit
 
-Once the **_Challenge Period_** has been passed for the transaction present in checkpoint, user should call the **_processExits_** function of **_withdrawManager_** contract and submit the proof of burn. Upon submitting valid proof tokens are transferred to the user. Polygon Plasma client exposes **_withdrawExit_** method to make this call.
+A user should call the **_processExits_** function of **_withdrawManager_** contract and submit the proof of burn. Upon submitting valid proof tokens are transferred to the user. Polygon Plasma client exposes **_withdrawExit_** method to make this call.
 
 ```js
 const { getPlasmaClient, from, plasma } = require('../utils')
@@ -234,5 +232,3 @@ execute().then(_ => {
 ```
 
 _Note: A checkpoint, which is a representation of all transactions happening on the Polygon Network to the ERC20 chain every ~30 minutes, is submitted to the mainchain ERC20 contract._
-
-_Note: Once the checkpoint is submitted, user needs to wait for a challenge period of 2 seconds._

@@ -125,7 +125,7 @@ Procedure of Withdrawal:
    2. After checkpoint submission, a successful execution of this step
       1. marks the initiation of the Challenge Exit Period (which is a 7-day period on main network, and set to 5 minute on test networks)
       2. Mints an `ExitNFT` token to the exitor's account - which is representative of the exit initiated on the child chain by the exitor
-   3. After the challenge period has ended, processExits burns the Exit NFT and transfers the tokens back from Deposit manager to the exitor.
+   3. processExits burns the Exit NFT and transfers the tokens back from Deposit manager to the exitor.
 
 Let **X** be the amount of tokens to be withdrawn.
 

@@ -21,11 +21,11 @@ to optimise for speed and decentralisation. We consciously architected the syste
 
 ## PoS vs Plasma
 
-|                                    | PoS Bridge(Recommended)                                                                  | Plasma Bridge                                                                             |
-| ---------------------------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| **Short Description**              | DApp Developer's looking for flexibility and faster withdrawals with POS system security | DApp Developer's looking for increased security guarantees with Plasma exit mechanism\.   |
-| **Structure**                      | Highly flexible                                                                          | Rigid, Less Flexible                                                                      |
+|                                      | PoS Bridge(Recommended)                                                                  | Plasma Bridge                                                                             |
+| ------------------------------------ | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| **Short Description**                | DApp Developer's looking for flexibility and faster withdrawals with POS system security | DApp Developer's looking for increased security guarantees with Plasma exit mechanism\.   |
+| **Structure**                        | Highly flexible                                                                          | Rigid, Less Flexible                                                                      |
 | **Deposit\(Ethereum → Polygon\)**    | 3-5 mins                                                                                 | 3-5 mins                                                                                  |
-| **Withdrawal\(Polygon → Ethereum\)** | 1 checkpoint = ~ 20 mins to 3 hours                                                                  | 2 seconds \(Challenge Period\)                                                 |
-| **Security**                       | Proof\-of\-Stake system, secured by a robust set of external validators\.                | Polygon’s Plasma contracts piggybacks on Ethereum’s security with 2 seconds challenge period\. |
-| **Support Standards**              | ETH, ERC20, ERC721, ERC1155 and Others                                                   | Only ETH, ERC20, ERC721                                                                   |
+| **Withdrawal\(Polygon → Ethereum\)** | 1 checkpoint = ~ 20 mins to 3 hours                                                      | Call to the process-exit procedure on Ethereum's contract.                                |
+| **Security**                         | Proof\-of\-Stake system, secured by a robust set of external validators\.                | Polygon’s Plasma contracts piggybacks on Ethereum’s security.                             |
+| **Support Standards**                | ETH, ERC20, ERC721, ERC1155 and Others                                                   | Only ETH, ERC20, ERC721                                                                   |
