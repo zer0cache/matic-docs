@@ -41,7 +41,7 @@ One can opt out of the system at any time and can withdraw tokens once the unbon
 
 ## Economics
 
-See [Economics](/docs/validate/polygon-basics/economics).
+See [Rewards](/docs/validate/rewards).
 
 ## Setting up a validator node
 
