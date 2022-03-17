@@ -394,8 +394,7 @@ module.exports = {
         "validate/polygon-basics/what-is-polygon",
         "validate/polygon-basics/who-is-validator",
         "validate/polygon-basics/who-is-delegator",
-        "validate/polygon-basics/what-is-proof-of-stake",
-        "validate/polygon-basics/economics",
+        "validate/polygon-basics/what-is-proof-of-stake"
       ],
     },
     {
