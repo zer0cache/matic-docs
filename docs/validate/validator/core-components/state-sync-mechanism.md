@@ -12,13 +12,24 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 Validators on the [Heimdall](/docs/validate/glossary#heimdall) layer pick up the [StateSynced](https://github.com/maticnetwork/contracts/blob/a4c26d59ca6e842af2b8d2265be1da15189e29a4/contracts/root/stateSyncer/StateSender.sol#L24) event and pass the event on to the [Bor](/docs/validate/glossary#bor) layer. See also [Polygon Architecture](/docs/contribute/polygon-architecture).
 
-The receiver contract inherits [IStateReceiver](https://github.com/maticnetwork/genesis-contracts/blob/master/contracts/IStateReceiver.sol), and custom logic sits inside the [onStateReceive](https://github.com/maticnetwork/genesis-contracts/blob/05556cfd91a6879a8190a6828428f50e4912ee1a/contracts/IStateReceiver.sol#L5) function.
+The **receiver contract** inherits [IStateReceiver](https://github.com/maticnetwork/genesis-contracts/blob/master/contracts/IStateReceiver.sol), and custom logic sits inside the [onStateReceive](https://github.com/maticnetwork/genesis-contracts/blob/05556cfd91a6879a8190a6828428f50e4912ee1a/contracts/IStateReceiver.sol#L5) function.
 
-The latest version, [Heimdall v.0.2.8](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.8), contains few enhancements such as **Restricting data size in state sync txs to 100kb** and **Removing nonce-check for (new) validator-join**
+The latest version, [Heimdall v.0.2.8](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.8), contains few enhancements such as **restricting data size in state sync txs** to:
+* **30Kb** when represented in **bytes**
+* **60Kb** when represented as **string**.
 
-The state sync mechanism requirements for the users:
+For example:
 
-Things required from dapps/users to work with state-sync:
+```
+Data - "abcd1234"
+Length in string format - 8
+Hex Byte representation - [171 205 18 52]
+Length in byte format - 4
+```
+
+## Requirements for the users
+
+Things required from dapps/users to work with state-sync are:
 
 1. Call the [syncState](https://github.com/maticnetwork/contracts/blob/19163ddecf91db17333859ae72dd73c91bee6191/contracts/root/stateSyncer/StateSender.sol#L33) function.
 2. The `syncState` function emits an event called `StateSynced(uint256 indexed id, address indexed contractAddress, bytes data);`
