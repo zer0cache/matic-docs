@@ -346,7 +346,7 @@ module.exports = {
     {
       type: "category",
       label: "API Documentation",
-      items: ["develop/api-documentation","develop/api-documentation/getting-started"]
+      items: ["develop/api-documentation/getting-started"]
     },
   ],
   Integrate: [
