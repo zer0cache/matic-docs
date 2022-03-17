@@ -326,7 +326,18 @@ You have to follow the exact outlined sequence of actions, otherwise you will ru
 
 ## Start the Heimdall Service
 
-The latest version, [Heimdall v.0.2.8](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.8), contains few enhancements such as **Restricting data size in state sync txs to 100kb** and **Removing nonce-check for (new) validator-join**.
+The latest version, [Heimdall v.0.2.8](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.8), contains few enhancements such as **restricting data size in state sync txs** to:
+* **30Kb** when represented in **bytes**
+* **60Kb** when represented as **string**.
+
+For example:
+
+```
+Data - "abcd1234"
+Length in string format - 8
+Hex Byte representation - [171 205 18 52]
+Length in byte format - 4
+```
 
 - Run the full node with the following commands:
     - **To Start Heimdall**:

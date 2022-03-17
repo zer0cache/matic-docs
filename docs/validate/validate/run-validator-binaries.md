@@ -83,9 +83,18 @@ Install the binaries for both on the sentry and validator machines.
 [Heimdall](../validator/core-components/heimdall-chain.md) is the proof-of-stake verifier layer
 responsible for checkpointing the representation of the Plasma blocks to the Ethereum mainnet.
 
-The latest version, [Heimdall v.0.2.8](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.8),
-contains few enhancements such as **restricting data size in state sync txs to 100kb** and
-**removing nonce-check for (new) validator-join**.
+The latest version, [Heimdall v.0.2.8](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.8), contains few enhancements such as **restricting data size in state sync txs** to:
+* **30Kb** when represented in **bytes**
+* **60Kb** when represented as **string**.
+
+For example:
+
+```
+Data - "abcd1234"
+Length in string format - 8
+Hex Byte representation - [171 205 18 52]
+Length in byte format - 4
+```
 
 Clone the [Heimdall repository](https://github.com/maticnetwork/heimdall/):
 

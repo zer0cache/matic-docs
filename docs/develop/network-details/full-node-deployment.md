@@ -43,7 +43,13 @@ Pre-requisite:
 - Check [https://github.com/maticnetwork/node-ansible#requirements](https://github.com/maticnetwork/node-ansible#requirements) for requirements
 - You will also need to make sure that Go is not installed on your VM / Machine. Setting up your full node through ansible will run into issues if you have Go already installed, as ansible requires specific packages of Go to be installed.
 - You will also need to make sure that your VM / Machine does not have any previous setups for Polygon Validator or Heimdall or Bor. You will need to delete them as your setup will run into issues.
-- The latest version, [Heimdall v.0.2.8](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.8), contains few enhancements such as **Restricting data size in state sync txs to 100kb** and **Removing nonce-check for (new) validator-join**.
+- The latest version, [Heimdall v.0.2.8](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.8), contains few enhancements such as **restricting data size in state sync txs to 30Kb (when represented in bytes) and 60Kb (when represented as string)**. For example:
+```
+Data - "abcd1234"
+Length in string format - 8
+Hex Byte representation - [171 205 18 52]
+Length in byte format - 4
+```
 
 Setup full node for Testnetv4/Mumbai testnet
 
@@ -126,10 +132,17 @@ Pre-requisite:
 
 - Ansible should be installed on local machine with Python3.x. The setup will not work if you have Python2.x.
     - To install ansible with Python 3.x you can use this command `pip3 install ansible`. This will install Python 3 dependencies as well as ansible.
-- Check [https://github.com/maticnetwork/node-ansible#requirements](https://github.com/maticnetwork/node-ansible#requirements) for requirements
+- Check [https://github.com/maticnetwork/node-ansible#requirements](https://github.com/maticnetwork/node-ansible#requirements) for requiremRestricting data size in state sync txs to 30Kb (when represented in bytes) and 60Kb (when represented as string).
 - You will also need to make sure that Go is not installed on your VM / Machine. Setting up your full node through ansible will run into issues if you have Go already installed, as ansible requires specific packages of Go to be installed.
 - You will also need to make sure that your VM / Machine does not have any previous setups for Polygon Validator or Heimdall or Bor. You will need to delete them as your setup will run into issues.
-- The latest version, [Heimdall v.0.2.8(https://github.com/maticnetwork/heimdall/releases/tag/v0.2.8), contains few enhancements such as **Restricting data size in state sync txs to 100kb** and **Removing nonce-check for (new) validator-join**.
+- The latest version, [Heimdall v.0.2.8(https://github.com/maticnetwork/heimdall/releases/tag/v0.2.8), contains few enhancements such as **restricting data size in state sync txs to 30Kb (when represented in bytes) and 60Kb (when represented as string)**. For example:
+
+```
+Data - "abcd1234"
+Length in string format - 8
+Hex Byte representation - [171 205 18 52]
+Length in byte format - 4
+```
 
 Setup full node for Polygon mainnet
 
