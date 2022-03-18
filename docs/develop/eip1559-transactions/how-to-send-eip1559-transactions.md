@@ -11,9 +11,9 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 The [London hard fork](https://blog.polygon.technology/eip-1559-upgrades-are-going-live-on-polygon-mainnet/) introduced a new [EIP](https://eips.ethereum.org/EIPS/eip-1559) that modifies how gas estimation and costs work for transactions on Polygon.
 
-Due to this, there is a change in how the transaction object is formed when sending transactions on Polygon. A new transaction type called the **Type 2 Transaction** has been introduced. The legacy type transactions will still be compatible but it is recommended to shift to the new style. You can navigate to the end of this document to directly peek into the code.
+Due to this, there is a change in how the transaction object is formed when sending transactions on Polygon. A new transaction type called **Type 2 Transaction** has been introduced. The legacy type transactions will still be compatible but it is recommended to shift to the new style. You can navigate to the end of this document to directly peek into the code.
 
-## How legacy transactions work
+## How legacy transactions (Type 0) work
 
 When you submit a transaction, you also send a `gasPrice` which is an amount you are offering to pay per gas consumed. Then, when you submit the transaction, miners can decide to include your transaction or not based on your `gasPrice` bid. Miners will prioritize the highest gas prices.
 
@@ -27,11 +27,11 @@ Every transaction needs to pay the `base fee`, which is calculated based on how 
 
 Only the `gasPrice` needed to be mentioned in the legacy transaction prior to the London fork.
 
-The follwing code example shows sending transaction in Legacy method:
+The following code example shows sending transaction using a type 0 transaction:
 
 ```jsx
 const sendLegacyTransaction = async () => {
-    con dest web3 = new Web3('https://polygon-rpc.com');
+    const web3 = new Web3('https://polygon-rpc.com');
 
     await web3.eth.sendTransactions({
         from: 0x05158d7a59FA8AC5007B3C8BabAa216568Fd32B3,
