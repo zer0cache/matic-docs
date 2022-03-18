@@ -182,7 +182,7 @@ module.exports = {
           activeBasePath: "docs/develop",
         },
         {
-          to: "docs/validate/polygon-overview",
+          to: "docs/validate/polygon-basics/what-is-polygon",
           label: "Validate",
           position: "left",
           activeBasePath: "docs/validate",
