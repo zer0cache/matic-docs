@@ -37,7 +37,7 @@ The Polygon system was consciously architected to support arbitrary state transi
 You can participate on the Polygon network as a delegator or validator. See:
 
 * [Who is a Validator](/docs/validate/polygon-basics/who-is-validator)
-* [Who Is a Delegator](/docs/validate/polygon-basics/who-is-delegator)
+* [Who is a Delegator](/docs/validate/polygon-basics/who-is-delegator)
 
 ## Architecture
 
