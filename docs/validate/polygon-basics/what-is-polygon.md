@@ -1,6 +1,6 @@
 ---
 id: what-is-polygon
-title: Polygon Overview
+title: What is Polygon
 description: Learn what the Polygon scaling solution is.
 keywords:
   - docs
@@ -47,7 +47,7 @@ See [Polygon Architecture](/docs/validate/validator/architecture).
 
 ### Components
 
-To have a granular understanding of the Polygon architecture, check out the core components:
+To have a granular understanding of Polygon's architecture, check out the core components:
 
 * [Heimdall](/docs/contribute/heimdall/overview)
 * [Bor](/docs/contribute/bor/overview)
@@ -65,10 +65,14 @@ To have a granular understanding of the core components, see the codebases:
 
 ### Node setup
 
+There are basically two ways of running a Validator Node at Polygon, with Ansible or from Binaries. You can check how to it with the links below:
+
 * [Run a Validator Node with Ansible](/docs/validate/validate/run-validator-ansible)
 * [Run a Validator Node from Binaries](/docs/validate/validate/run-validator-binaries)
 
 ### Staking operations
+
+Check how the staking process is carried out for the validator and delegator profiles:
 
 * [Validator Staking Operations](docs/validate/validate/validator-staking-operations)
 * [Delegate](/docs/validate/delegate)
