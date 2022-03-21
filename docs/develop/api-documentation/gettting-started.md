@@ -7,7 +7,7 @@ JSON-RPC is a stateless, light-weight remote procedure call (RPC) protocol that 
 
 ## API Documentation
 
-To get started with the API, [visit a complete set of API documentation for standard Polygon JSON-RPC calls](https://docs.alchemy.com/alchemy/apis/polygon-api/?a=matic-docs).
+To get started with the API, visit the complete set of API documentation for standard [Polygon JSON-RPC calls](https://docs.alchemy.com/alchemy/apis/polygon-api/?a=matic-docs).
 
 ## No-Code API Requests
 
