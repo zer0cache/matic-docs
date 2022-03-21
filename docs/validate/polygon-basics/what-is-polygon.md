@@ -32,7 +32,7 @@ See also Ethereum Research: [Account based Plasma (MoreVP)](https://ethresear.ch
 
 The Polygon system was consciously architected to support arbitrary state transitions on Polygon sidechains, which are EVM-enabled.
 
-## Validator and delegator roles
+## Delegator and Validator Roles
 
 On the Polygon Network, you can be a validator or a delegator. See:
 
