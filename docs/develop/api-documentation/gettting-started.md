@@ -13,4 +13,4 @@ To get started with the API, [visit a complete set of API documentation for stan
 
 If you want to get started with API requests with no set-up, fix failing requests, or explore new methods on the Polygon network, try out the [Composer App](https://composer.alchemyapi.io?composer_state=%7B%22chain%22%3A2%2C%22network%22%3A401%2C%22methodName%22%3A%22eth_getBlockByNumber%22%2C%22paramValues%22%3A%5B%22latest%22%2Cfalse%5D%7D).
 
-Composer allows developers to save hours of debugging and building time while also providing a UI-friendly interface for sharing API calls with teammates!
+Composer allows developers to save hours of debugging and building time while also providing a friendly UI for sharing API calls.
