@@ -34,7 +34,7 @@ The Polygon system was consciously architected to support arbitrary state transi
 
 ## Delegator and Validator Roles
 
-On the Polygon Network, you can be a validator or a delegator. See:
+You can participate on the Polygon network as a delegator or validator. See:
 
 * [Who Is a Validator](/docs/validate/polygon-basics/who-is-validator)
 * [Who Is a Delegator](/docs/validate/polygon-basics/who-is-delegator)
