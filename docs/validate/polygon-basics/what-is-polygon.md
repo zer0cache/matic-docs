@@ -47,7 +47,7 @@ See [Polygon Architecture](/docs/validate/validator/architecture).
 
 ### Components
 
-To have a granular understanding of the Polygon architecture, see core components:
+To have a granular understanding of the Polygon architecture, check out the core components:
 
 * [Heimdall](/docs/contribute/heimdall/overview)
 * [Bor](/docs/contribute/bor/overview)
