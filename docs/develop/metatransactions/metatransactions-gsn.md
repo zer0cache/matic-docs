@@ -10,9 +10,9 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-In general, for interacting with Polygon DApps users need to have enough Polygon in their account, which requires them to go through lengthy KYC procedure; then buying Polygon on exchange, transfer it to Polygon Chain & start interacting - not a good UX. 
+In general, for interacting with Polygon DApps users need to have enough Matic in their account, which requires them to go through lengthy KYC procedure; then buying Matic on exchange, transfer it to Polygon Chain & start interacting - not a good UX. 
 
-That's where GSN comes into picture with an interesting proposal for improving DApp UX, where gas less transactions can be sent to Polygon Network & user requests to be funded by some party other than user. Now clients without Polygon in their account, can talk to Polygon Blockchain & pay their fees using ERC20 tokens. Using GSN can also improve UX when onboarding new users to dApp.
+That's where GSN comes into picture with an interesting proposal for improving DApp UX, where gas less transactions can be sent to Polygon Network & user requests to be funded by some party other than user. Now clients without Matic in their account, can talk to Polygon Blockchain & pay their fees using ERC20 tokens. Using GSN can also improve UX when onboarding new users to dApp.
 
 <img src={useBaseUrl("img/gsn/paymaster_needs_gas.png")} />
 
