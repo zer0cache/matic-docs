@@ -1,6 +1,6 @@
 ---
-id: polygon-overview
-title: Polygon Overview
+id: polygon-overview-deprecated
+title: Polygon Overview Deprecated
 description: Learn what the Polygon Network is and the Polygon Network core components and roles.
 keywords:
   - docs

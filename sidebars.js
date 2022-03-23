@@ -386,7 +386,6 @@ module.exports = {
     },
   ],
   Validate: [
-    "validate/polygon-overview",
     {
       type: "category",
       label: "Polygon Basics",
