@@ -55,7 +55,7 @@ To have a granular understanding of Polygon's architecture, check out the core c
 
 #### Codebases
 
-To have a granular understanding of the core components, see the codebases:
+To have a granular understanding of the core components, see the following codebases:
 
 * [Heimdall](https://github.com/maticnetwork/heimdall)
 * [Bor](https://github.com/maticnetwork/bor)
@@ -65,7 +65,7 @@ To have a granular understanding of the core components, see the codebases:
 
 ### Node setup
 
-There are basically two ways of running a Validator Node at Polygon, with Ansible or from Binaries. You can check how to it with the links below:
+There are basically two ways of running a Validator Node on Polygon, using Ansible or directly from the binaries. You can check how to do this with the links below:
 
 * [Run a Validator Node with Ansible](/docs/validate/validate/run-validator-ansible)
 * [Run a Validator Node from Binaries](/docs/validate/validate/run-validator-binaries)
