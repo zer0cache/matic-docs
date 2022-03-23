@@ -43,7 +43,7 @@ You can participate on the Polygon network as a delegator or validator. See:
 
 If your goal is to become a validator, it is essential that you understand the Polygon architecture.
 
-See [Polygon Architecture](/docs/validate/validator/architecture).
+See [Polygon Architecture](/docs/validate/validator/architecture) for more information.
 
 ### Components
 
