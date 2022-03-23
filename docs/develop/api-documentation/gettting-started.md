@@ -1,5 +1,5 @@
 ---
-id: getting-started
+id: getting-started-rpc
 title: Getting Started with RPC API Methods
 ---
 
