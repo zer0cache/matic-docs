@@ -7,7 +7,7 @@ keywords:
   - matic
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
-Polygon is a scaling solution for public blockchains. Based on an adapted implementation of Plasma framework (Plasma MoreVP) - with an account based implementation (read more [here](https://ethresear.ch/t/account-based-plasma-morevp/5480)), Polygon supports all the existing Ethereum tooling along with faster and cheaper transactions.
+Polygon is a scaling solution for public blockchains. Polygon PoS supports all the existing Ethereum tooling along with faster and cheaper transactions.
 
 ### Types of Interaction on Polygon
 
