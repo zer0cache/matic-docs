@@ -14,13 +14,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 Polygon strives to solve the scalability and usability issues while not compromising on decentralization and leveraging the existing developer community and ecosystem. Polygon is an ​off-/sidechain scaling solution for existing platforms to provide scalability and superior user experience to DApps and user functionalities.
 
-It is a scaling solution for public blockchains. Based on an adapted implementation of the Plasma framework (Plasma MoreVP) — with an account based implementation, Polygon supports all the existing Ethereum tooling along with faster and cheaper transactions.
-
-:::note
-
-See also Ethereum Research: [Account based Plasma (MoreVP)](https://ethresear.ch/t/account-based-plasma-morevp/5480)
-
-:::
+It is a scaling solution for public blockchains. Polygon PoS supports all the existing Ethereum tooling along with faster and cheaper transactions.
 
 ## Key features & highlights
 
