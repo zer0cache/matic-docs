@@ -7,7 +7,7 @@ keywords:
   - matic
   - polygon
   - architecture
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -30,13 +30,11 @@ The staking contracts implement the following features:
 * Enable penalties/slashing for activities such as double signing, validator downtime, etc.
 * Save [checkpoints](/docs/validate/glossary#checkpoint-transaction) on the Ethereum mainnet.
 
-The PoS mechanism also acts as a mitigation to the data unavailability problem for the Polygon sidechains in terms of Plasma.
-
-The Plasma contracts implement the [MoreVP Plasma framework](https://ethresear.ch/t/more-viable-plasma/2160). See also [an overview of the Polygon MoreVP implementation](https://ethresear.ch/t/account-based-plasma-morevp/5480). 
+The PoS mechanism also acts as a mitigation to the data unavailability problem for the Polygon sidechains.
 
 ## Heimdall (validation layer)
 
-Heimdall layer handles the aggregation of blocks produced by [Bor](/docs/validate/glossary#bor) into a Merkle tree and publishing the Merkle root periodically to the root chain. The periodic publishing of snapshots of the Bor sidechain are called [checkpoints](/docs/validate/glossary#checkpoint-transaction). 
+Heimdall layer handles the aggregation of blocks produced by [Bor](/docs/validate/glossary#bor) into a Merkle tree and publishing the Merkle root periodically to the root chain. The periodic publishing of snapshots of the Bor sidechain are called [checkpoints](/docs/validate/glossary#checkpoint-transaction).
 
 For every few blocks on Bor, a validator on the Heimdall layer:
 
@@ -44,12 +42,12 @@ For every few blocks on Bor, a validator on the Heimdall layer:
 2. Creates a Merkle tree of the block hashes.
 3. Publishes the Merkle root hash to the Ethereum mainnet.
 
-Checkpoints are important for two reasons: 
+Checkpoints are important for two reasons:
 
 1. Providing finality on the root chain.
 2. Providing proof of burn in withdrawal of assets.
 
-An overview of the process: 
+An overview of the process:
 
 * A subset of active validators from the pool is selected to act as [block producers](/docs/validate/glossary#block-producer) for a [span](/docs/validate/glossary#span). These block producers are responsible for creating blocks and broadcasting the created blocks on the network.
 * A checkpoint includes the Merkle root hash of all blocks created during any given interval. All nodes validate the Merkle root hash and attach their signature to it.
@@ -60,7 +58,7 @@ See also [Heimdall architecture](/docs/contribute/heimdall/overview).
 
 ### Bor (block producer layer)
 
-Bor is Polygon's sidechain block producer — the entity responsible for aggregating transactions into blocks. 
+Bor is Polygon's sidechain block producer — the entity responsible for aggregating transactions into blocks.
 
 Bor block producers are a subset of the validators and are shuffled periodically by the [Heimdall](/docs/validate/glossary#heimdall) validators.
 
