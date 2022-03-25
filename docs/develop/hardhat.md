@@ -29,7 +29,7 @@ The sample project will ask you to install hardhat-waffle and hardhat-ethers.You
 ## **hardhat-config**
 
 - Go to hardhat.config.js
-- Update the hardhat-config with matic-network-crendentials.
+- Update the hardhat-config with matic-network-credentials.
 - create .env file in the root to store your private key
 
 ```js
