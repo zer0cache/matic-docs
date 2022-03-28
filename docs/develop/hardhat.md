@@ -17,7 +17,7 @@ There are a few technical requirements before we start. Please install the follo
 
 Once we have those installed, To install hardhat, you need to create an npm project by going to an empty folder, running npm init, and following its instructions. Once your project is ready, you should run
 
-```js
+```bash
 $ npm install --save-dev hardhat
 ```
 To create your Hardhat project run `npx hardhat` in your project folder
