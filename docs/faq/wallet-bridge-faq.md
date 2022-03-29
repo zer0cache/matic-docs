@@ -333,20 +333,20 @@ Unfortunately, we can’t revert unwanted transactions.
 It is always important to be careful with your private keys and **never share them with anyone**.
 If you still have some remaining funds, transfer them immediately to a new wallet.
 
-## Polygon wallet shows ‘Oops our Server Stumbled’ error message.
+## Polygon wallet shows an ‘Oops our Server Stumbled’ error message.
 
 That message might mean that our server is down. However, if everything is working fine, we suggest that you use another browser.
-If you are trying to make a withdrawal, you can also try the [Polygon Withdrawal tool](https://polygon-withdraw.matic.network/). There, you connect your wallet, paste your transaction hash and proceed with the transaction.
+If you are trying to make a withdrawal, you can also try the [Polygon Withdrawal tool](https://polygon-withdraw.matic.network/). There, you can connect your wallet, paste your transaction hash, and proceed with the transaction.
 
 ## Polygon wallet shows ‘User denied transaction signature’ error message.
 
-This usually happens because the user canceled any of Metamask’s demands. When prompted by Metamask wallet, avoid clicking on Cancel and always try to proceed with the transaction.
+This usually happens because the user canceled or refused to sign a transaction via MetaMask. When prompted by the MetaMask wallet, proceed with signing the transaction by clicking on Approve and not on Cancel.
 
 ## I did not receive the tokens I transferred to an exchange
 You transferred coins to Binance (Coinbase, Kucoin or any other exchange) but did not receive them on the exchange side. If that was your case, it's important to know that we currently don’t provide a direct connection with exchanges. Most transactions would actually pass by Ethereum mainnet before reaching the exchange.
 Please, contact the exchange’s support team.
 
-## My Metamask is not connecting with Polygon wallet.
+## My MetaMask wallet is not connecting with Polygon wallet
 
 There are many reasons why this might be happening. We suggest that you **try another time**, **use another browser** or, if any of these doesn’t help, **contact our support team**.
 
