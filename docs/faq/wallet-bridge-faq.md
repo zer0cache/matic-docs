@@ -340,7 +340,7 @@ If you are trying to make a withdrawal, you can also try the [Polygon Withdrawal
 
 ## Polygon wallet shows ‘User denied transaction signature’ error message.
 
-This usually happens because the user canceled any of Metamask’s demands. When prompted by Metamask wallet, avoid clicking on Cancel and always try to proceed with the transaction.
+This usually happens because the user canceled or refused to sign a transaction via MetaMask. When prompted by the MetaMask wallet, proceed with signing the transaction by clicking on Approve and not on Cancel.
 
 ## I transferred coins to Binance (Coinbase, Kucoin or any other exchange) but did not receive them on the exchange side.
 
