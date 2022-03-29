@@ -12,7 +12,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### 1. Error: Bad block/Invalid Merkle
 
-**Description:**
+**description:**
 A Bad Block or Invalid Merkle root error occurs when your Heimdall and Bor are not in sync with each other. Heimdall is the consensus layer for Polygon POS chain, which means that Heimdall directs Bor to create blocks accordingly. A Bad Block occurs when Bor moves ahead to create a block which has not been directed by Heimdall and hence there is an invalid hash been created, which causes the error, Bad Block, or Invalid Merkle root.
 
 **Solution 1**:
@@ -52,12 +52,12 @@ If in any case, none of these solutions work for you, please contact the Polygon
 
 ### 2. Error: Failed Sanity Checks
 
-**Description:**
+**description:**
 `Addressbook` warnings can be ignored without an issue most of the time. If your node is connected to sufficient number of peers these kind of errors can be ignored. Your `pex` is just trying to re-establish it's connections with peers already present in `addrbook.json`
 
 ### 3. Issue: Bor synchronisation is slow
 
-**Description:**
+**description:**
 If Bor synchronisation is slow it could be due to either of the below reasons:
 
 - The node is running on a fork - means at certain point the block production was done by forking on a different block and that has impacted the further block production
@@ -79,7 +79,7 @@ As the issue is more about lack of hardware resources try upgrading it to double
 
 ### 4. Node is not signing any checkpoints
 
-**Description:**
+**description:**
 First of all, your node not signing checkpoints could be for a multiple reasons.
 
 **Solution 1:**
@@ -93,7 +93,7 @@ Check if your Heimdall Bridge is running or not or if it has any errors in the l
 
 ### 5. Issue: Validator Heimdall is unable to connect to Peers
 
-**Description:**
+**description:**
 This typically means that your Sentry Heimdall is running into issues.
 
 **Solution:**
@@ -103,11 +103,11 @@ This typically means that your Sentry Heimdall is running into issues.
 
 ### 6. Error: Error while fetching mainchain receipt error
 
-**Description:** These are normal logs. Do not do anything to your bridge.
+**description:** These are normal logs. Do not do anything to your bridge.
 
 ### 7. Validator bor is stuck on block for a long time
 
-**Description:**
+**description:**
 This means that your Bor on your Sentry is also stuck because your Validator gets information from your Sentry.
 
 **Solution:**
@@ -117,7 +117,7 @@ This means that your Bor on your Sentry is also stuck because your Validator get
 
 ### 8. Error(while upgrading Bor): build [github.com/ethereum/go-ethereum/cmd/geth:](http://github.com/ethereum/go-ethereum/cmd/geth:) cannot load hash/maphash: malformed module path "hash/maphash": missing dot in first path element
 
-**Description:**
+**description:**
 This is because your Go Version is slightly outdated.
 
 **Solution:**
@@ -125,7 +125,7 @@ The recommended Go version is 1.15.x and above
 
 ### 9. Issue: Sentry Bor is still struggling with 'Looking for peers' and Peers are not succeeding
 
-**Description:**
+**description:**
 This could happen when Bor has lost connectivity with other peers.
 
 **Solution:**
@@ -138,7 +138,7 @@ If none of this works, then please contact the **Support Team** immediately for 
 
 ### 10. Error: (in Bor)"Failed to prepare header mining at block 0"
 
-**Description:**
+**description:**
 This happens because of a formatting issue in your `static-nodes.json` file (~/.bor/data/bor/static-nodes.json).
 
 **Solution:**
@@ -148,7 +148,7 @@ This happens because of a formatting issue in your `static-nodes.json` file (~/.
 
 ### 11. Error: "30303" or invalid command
 
-**Description:**
+**description:**
 This is because you haven’t created the bor keystore and the password file for it.
 
 **Solution:**
@@ -157,14 +157,14 @@ Ensure that you follow all the steps from the guide setup.
 
 ### 12. Error: Impossible reorg, please file an issue
 
-**Description:**
+**description:**
 Let these logs be. Your node should ideally not suffer because of this and the issue should be automatically resolved.
 
 If your node is suffering because of this, please contact the support team immdiately.
 
 ### 13. Error: "Host not found" while setting up a node using Ansible
 
-**Description:**
+**description:**
 This could be because your `inventory.yml` file may have some formatting issues.
 
 **Solution:**
@@ -172,7 +172,7 @@ Correct them with proper indentation and then try again
 
 ### 14. Issue: "Dialling failed" in Heimdall
 
-**Description:**
+**description:**
 This is related to connectivity and more specifically a port related problem
 
 **Solution:**
@@ -270,7 +270,7 @@ have to add address
 
 ### 19. Error: Failed to unlock account (0x...) No key for given address or file
 
-**Description:**
+**description:**
 
 This error happens in light of the fact that the way for the password.txt record is erroneous. You can follow the beneath steps to amend this.
 
@@ -355,7 +355,7 @@ This occurs mainly because of a previous installation of Matic on machine. To re
 
 ### 23. Error: "Wrong Block.Header.AppHash."
 
-**Description:**
+**description:**
 This error usually occurs due to Infura requests getting exhausted. When you setup a node on Matic, you add an Infura Key to the Config file (Heimdall). By default you are allowed 100k Requests per day, if this limit is crossed, then you would face such problems.
 
 **Solution**
@@ -370,7 +370,7 @@ To resolve this you can create a new API key and add it to the `config.toml` f
 
 ### 25. Error: err="insufficient funds for gas * price + value"
 
-**Description:**
+**description:**
 
 These logs throw up when there is no enough ETH in your signer wallet.
 

@@ -12,7 +12,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 Here is a list of default ports used across Polygon nodes:
 ## BoR
 
-| ﻿Name                   | Port  | Tags                      | Description                                                                                                    |
+| ﻿Name                   | Port  | Tags                      | description                                                                                                    |
 |------------------------|-------|---------------------------|----------------------------------------------------------------------------------------------------------------|
 | Network listening port | 30303 | public                    | Network listening port. Bor uses this port to connect to peers and sync                                        |
 | RPC server             | 8545  | can-be-public, internal   | RPC port to send transaction and get data from Bor. Heimdall uses this port to get Bor headers for checkpoints |
@@ -25,7 +25,7 @@ Here is a list of default ports used across Polygon nodes:
 
 ## Heimdall
 
-| ﻿Name                   | Port  | Tags                      | Description                                                                                                    |
+| ﻿Name                   | Port  | Tags                      | description                                                                                                    |
 |------------------------|-------|---------------------------|----------------------------------------------------------------------------------------------------------------|
 | Network listening port | 30303 | public                    | Network listening port. Bor uses this port to connect to peers and sync                                        |
 | RPC server             | 8545  | can-be-public, internal   | RPC port to send transaction and get data from Bor. Heimdall uses this port to get Bor headers for checkpoints |

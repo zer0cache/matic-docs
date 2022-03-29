@@ -160,7 +160,7 @@ tx_fees: "1000000000000000"
 
 ## REST APIs
 
-|Name                  |Endpoint|Description       |
+|Name                  |Endpoint|description       |
 |----------------------|--------|------------------|
 |Account details       |/auth/accounts/{address}|Returns all details for an address|
 |Account sequence details|/auth/accounts/{address}/sequence|Returns only necessary details for signing|
