@@ -329,7 +329,7 @@ If you have started the transaction, it is important not to cancel it. Instead, 
 
 ## There are some unauthorized transactions in my wallet. Is my wallet hacked?
 
-As we never ask for your private keys or use them in any way, we can’t revert unwanted transactions. 
+Unfortunately, we can’t revert unwanted transactions. 
 It is always important to be careful with your private keys and **never share them with anyone**.
 If you still have some remaining funds, transfer them immediately to a new wallet.
 
@@ -342,9 +342,8 @@ If you are trying to make a withdrawal, you can also try the [Polygon Withdrawal
 
 This usually happens because the user canceled any of Metamask’s demands. When prompted by Metamask wallet, avoid clicking on Cancel and always try to proceed with the transaction.
 
-## I transferred coins to Binance (Coinbase, Kucoin or any other exchange) but did not receive them on the exchange side.
-
-We currently don’t provide a direct connection with exchanges. Most transactions would actually pass by Ethereum mainnet before reaching the exchange.
+## I did not receive the tokens I transferred to an exchange
+You transferred coins to Binance (Coinbase, Kucoin or any other exchange) but did not receive them on the exchange side. If that was your case, it's important to know that we currently don’t provide a direct connection with exchanges. Most transactions would actually pass by Ethereum mainnet before reaching the exchange.
 Please, contact the exchange’s support team.
 
 ## My Metamask is not connecting with Polygon wallet.
