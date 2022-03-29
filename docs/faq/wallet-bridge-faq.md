@@ -333,7 +333,7 @@ As we never ask for your private keys or use them in any way, we can’t revert 
 It is always important to be careful with your private keys and **never share them with anyone**.
 If you still have some remaining funds, transfer them immediately to a new wallet.
 
-## Polygon wallet shows ‘Oops our Server Stumbled’ error message.
+## Polygon wallet shows an ‘Oops our Server Stumbled’ error message.
 
 That message might mean that our server is down. However, if everything is working fine, we suggest that you use another browser.
 If you are trying to make a withdrawal, you can also try the [Polygon Withdrawal tool](https://polygon-withdraw.matic.network/). There, you connect your wallet, paste your transaction hash and proceed with the transaction.
