@@ -345,7 +345,7 @@ This usually happens because the user canceled any of Metamask’s demands. When
 ## I transferred coins to Binance (Coinbase, Kucoin or any other exchange) but did not receive them on the exchange side.
 
 We currently don’t provide a direct connection with exchanges. Most transactions would actually pass by Ethereum mainnet before reaching the exchange.
-Please, contact the exchange’s support team.
+Please contact the exchange’s support team.
 
 ## My Metamask is not connecting with Polygon wallet.
 
