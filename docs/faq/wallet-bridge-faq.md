@@ -320,7 +320,7 @@ For speeding up transactions via Metamask, please go to this [link](https://meta
 
 ## I was trying to make a deposit but the transaction stopped at the Approve step.
 
-If the transaction is still at the **Approve** step, it has not been completed yet. To fulfill it, you need to pay the gas fee and then it should go through.
+If the transaction is still at the **Approve** step, it is not yet complete. To fulfill it, you need to pay the gas fee and then it should go through.
 
 ## The gas fee for my withdrawal transaction is too high.
 
