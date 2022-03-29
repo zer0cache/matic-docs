@@ -336,7 +336,7 @@ If you still have some remaining funds, transfer them immediately to a new walle
 ## Polygon wallet shows an ‘Oops our Server Stumbled’ error message.
 
 That message might mean that our server is down. However, if everything is working fine, we suggest that you use another browser.
-If you are trying to make a withdrawal, you can also try the [Polygon Withdrawal tool](https://polygon-withdraw.matic.network/). There, you connect your wallet, paste your transaction hash and proceed with the transaction.
+If you are trying to make a withdrawal, you can also try the [Polygon Withdrawal tool](https://polygon-withdraw.matic.network/). There, you can connect your wallet, paste your transaction hash, and proceed with the transaction.
 
 ## Polygon wallet shows ‘User denied transaction signature’ error message.
 
