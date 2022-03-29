@@ -347,7 +347,7 @@ This usually happens because the user canceled or refused to sign a transaction 
 We currently don’t provide a direct connection with exchanges. Most transactions would actually pass by Ethereum mainnet before reaching the exchange.
 Please contact the exchange’s support team.
 
-## My Metamask is not connecting with Polygon wallet.
+## My MetaMask wallet is not connecting with Polygon wallet
 
 There are many reasons why this might be happening. We suggest that you **try another time**, **use another browser** or, if any of these doesn’t help, **contact our support team**.
 
