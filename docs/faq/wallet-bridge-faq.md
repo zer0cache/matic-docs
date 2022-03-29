@@ -355,5 +355,8 @@ There are many reasons why this might be happening. We suggest that you **try an
 
 We provide a [Gas Swap](https://wallet.polygon.technology/gas-swap/) service that will help you with that. You choose an amount of MATIC you need to complete your transaction and you can swap it for other tokens such as Ether or USDT. It’s worth noting that this is a **gas-less transaction**.
 
+## Token Swap is too slow.
+
+If you are trying to swap tokens and it is taking too long, you could try the same transaction on a different browser. If that doesn’t work and you’re facing an error, please send a screenshot to our Support team.
 
 
