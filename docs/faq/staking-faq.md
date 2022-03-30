@@ -20,7 +20,7 @@ There is no minimum stake amount to delegate.
 
 ### How to stake tokens on Polygon?
 
-For Staking you would need to have funds on the Ethereum Mainnet (more information [here](https://etherscan.io/gastracker)). Log into Metamask on the Ethereum network using the Staking Dashboard. https://wallet.polygon.technology/staking/
+For Staking you would need to have funds on the Ethereum Mainnet. Log into Metamask on the Ethereum network using the Staking Dashboard. https://wallet.polygon.technology/staking/
 
 Please watch this video for a graphical illustration of how this works:
 
