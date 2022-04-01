@@ -549,7 +549,14 @@ module.exports = {
     "faq/staking-faq",
     "faq/validator-faq",
     // "faq/staking-tutorials",
+    {
+      type: "category",
+      label: "Wallet FAQs",
+      items: [
     "faq/wallet-bridge-faq",
+    "faq/adding-a-custom-token",
+          ],
+        },
     "faq/consensys-framework",
     "faq/widget-faq",
     "faq/wallet-list",
