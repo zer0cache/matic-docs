@@ -26,24 +26,24 @@ So when selecting a token, you will be able to search by:
 
 Here is how it works:
 
-![](001.jpeg)
+<img src={useBaseUrl("docs/faq/001.png")} height="420px"/>
 
 1. Easily add any token to your list by adding the contract address as a custom token (we support
 
 contract addresses on both Polygon or Ethereum):
 
-![](002.jpeg)
+<img src={useBaseUrl("docs/faq/002.png")} height="600px"/>
 
 2. Once the token information is fetched, you will see a confirmation screen with all the token information. You can then add it as a custom token which will be stored locally in your system, We suggest you reverify the token contracts twice as there are a lot of clone or scam tokens:
 
-![](003.jpeg)
+<img src={useBaseUrl("docs/faq/003.png")} height="600px"/>
 
-![](004.jpeg)
+<img src={useBaseUrl("docs/faq/004.png")} height="600px"/>
 
 3. Your added token is now shown when selecting a token:
 
-![](005.jpeg)
+<img src={useBaseUrl("docs/faq/005.png")} height="600px"/>
 
 4. You can add a token directly from the tokens tab of the **Manage** screen:
 
-![](006.jpeg)
+<img src={useBaseUrl("docs/faq/006.png")} height="600px"/>
