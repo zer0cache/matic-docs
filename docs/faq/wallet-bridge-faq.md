@@ -1,17 +1,21 @@
 ---
 id: wallet-bridge-faq
-title: Wallet and Bridge FAQ 
+title: General
 description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
   - wallet
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Where can I use the Matic Web Wallet?
 [https://wallet.polygon.technology/](https://wallet.polygon.technology/)
+
+## How do I find the token contract?
+
+Pleas check [Adding a Custom Token](../faq/adding-a-custom-token) article
 
 ## Which wallets are currently supported?
 
@@ -190,10 +194,10 @@ Unfortunately, Polygon cannot cancel a withdrawal once the process is initialise
 ## My transaction is stuck.
 
 We have listed some common errors that the users might face. You can find the solution below the image of the error. In case you're shown a different error, please [raise a support ticket](https://support.polygon.technology/support/home) for our team to troubleshoot.
-  
+
   - ### Common Errors
   a. Withdrawal stuck on the Initialised phase.   
-  
+
     <img src={useBaseUrl("img/wallet-bridge/stuckAtIntialised.png")} height="500px"/>
 
     This normally occurs when the transaction gets replaced and the wallet web application is not able to detect the replaced transaction hash. Please follow the instructions on [https://polygon-withdraw.matic.network/](https://polygon-withdraw.matic.network/) and complete your withdrawal.
@@ -205,12 +209,12 @@ We have listed some common errors that the users might face. You can find the so
     The current RPC error you're facing might be due to an RPC overload.
 
     Please try changing your RPC and proceed with the transaction. You may follow this link [here](https://docs.polygon.technology/docs/develop/network-details/network#matic-mainnet) for more information.
-  
-  c. 
+
+  c.
 
   <img src={useBaseUrl("img/wallet-bridge/serversStumbled.png")} height="500px"/>  
 
-  This is usually an off-and-on error that gets resolved automatically. In case you are still receiving the same error while reinitiating the step, do [raise a support ticket](https://support.polygon.technology/) with all the relevant information to troubleshoot this further. 
+  This is usually an off-and-on error that gets resolved automatically. In case you are still receiving the same error while reinitiating the step, do [raise a support ticket](https://support.polygon.technology/) with all the relevant information to troubleshoot this further.
 
 ## I made the mistake of sending funds to an exchange/wallet directly from Polygon Wallet. Can you help?
 
@@ -222,7 +226,7 @@ It's important to note that you shouldn't send funds directly to exchanges that 
 
 ## I'm shown an insufficient balance error.
 
-Withdrawals and deposits on the Polygon network are cheap. What is to be understood is that the insufficient balance error can be cleared by getting some ETH balance on the ethereum mainnet. That generally clears out the problem of an insufficient balance. 
+Withdrawals and deposits on the Polygon network are cheap. What is to be understood is that the insufficient balance error can be cleared by getting some ETH balance on the ethereum mainnet. That generally clears out the problem of an insufficient balance.
 
 If this is a transaction on the Polygon mainnet, we'll require that you have sufficient amount of matic tokens.
 
@@ -243,8 +247,8 @@ Unfortunately, nothing can be done. Only the owner of the private keys to that p
 
 ## My transactions are not visible on the explorer. What should I do?
 
-This is probably an indexing issue with Polygonscan. Please contact the [Support Team](https://support.polygon.technology/support/home) for more clarifications. 
-You may also try these block explorers 
+This is probably an indexing issue with Polygonscan. Please contact the [Support Team](https://support.polygon.technology/support/home) for more clarifications.
+You may also try these block explorers
 
 [https://polygon-explorer-mainnet.chainstacklabs.com](https://polygon-explorer-mainnet.chainstacklabs.com/) <br />
 [https://explorer-mainnet.maticvigil.com](https://explorer-mainnet.maticvigil.com/) <br />
@@ -257,15 +261,15 @@ You may also try these block explorers
 Your supplied gas is probably too low. You should wait a while and redo the transaction if it doesn't get mined. In case of additional help, please reach out to the [support team](https://support.polygon.technology/support/home) with your wallet address, transaction hashes (if any) and relevant screenshots.
 
 
-## I have a token withdrawal issue with OpenSea or any other application which uses polygon bridge. 
+## I have a token withdrawal issue with OpenSea or any other application which uses polygon bridge.
 
 If you have an issue with your withdrawal transaction being stuck, Polygon offers the withdraw bridge with https://polygon-withdraw.matic.network/ to help get you off the ground if you have your burn hash. With this tool, you're quickly onboarded and the issue will be resolved. Other questions concerning your transaction with OpenSea and other dApps will have to be handled by the application's team.
 
 
 ## Where can I get MATIC tokens directly?
 
-So MATIC tokens can be bought from any centralized ([Binance](https://www.binance.com/en), [Coinbase](https://www.coinbase.com/), et.al) or Decentralised ([Uniswap](https://uniswap.org/), [QuickSwap](https://quickswap.exchange/#/swap)) exchange. You may also research and try some on-ramps like [Transak](https://transak.com/), [Ramp](https://ramp.network/). 
-The purpose for your purchase of MATIC coins should also determine where you'll buy them from and the network. It is advisable to have MATIC on Ethereum Main-net if your intention is either staking or delegation. if your intent is a transaction on the Polygon mainnet, you should hold and transact with MATIC on Polygon mainnet. 
+So MATIC tokens can be bought from any centralized ([Binance](https://www.binance.com/en), [Coinbase](https://www.coinbase.com/), et.al) or Decentralised ([Uniswap](https://uniswap.org/), [QuickSwap](https://quickswap.exchange/#/swap)) exchange. You may also research and try some on-ramps like [Transak](https://transak.com/), [Ramp](https://ramp.network/).
+The purpose for your purchase of MATIC coins should also determine where you'll buy them from and the network. It is advisable to have MATIC on Ethereum Main-net if your intention is either staking or delegation. if your intent is a transaction on the Polygon mainnet, you should hold and transact with MATIC on Polygon mainnet.
 
 
 ## I'm not getting a transaction hash and my deposits aren't going through? What is happening?
@@ -273,7 +277,7 @@ The purpose for your purchase of MATIC coins should also determine where you'll 
 You probably have prior pending transactions, please cancel or speed them up first. Transactions in Ethereum can only happen one after the other.
 
 
-## It shows Polygon does not charge any amount for a withdrawal but we are to pay during the transaction. 
+## It shows Polygon does not charge any amount for a withdrawal but we are to pay during the transaction.
 
 A withdrawal transaction with the Plasma bridge is split into 3 steps, one that happens on the Polygon Mainnet and two steps that are to be completed on the Ethereum Mainnet. On the PoS bridge, the withdrawal transaction happens over two steps: Token burning on the Polygon network and proof submission on the Ethereum network. In every case, token burning that happens on the Polygon Mainnet will be a very minimal cost. The remaining steps that happen on the Ethereum Mainnet will have to be paid in ETH depending on the current gas price which can be verified [here](https://ethgasstation.info/).
 
@@ -297,18 +301,18 @@ So the Polygon Network will support all the hardware wallets compatible with Met
 
 ## I have been scammed. How will I retrieve my tokens?
 
-Unfortunately, there is no recovery process for lost coins. We ask that before you make a transaction, you go on to check and double-check before starting and completing. Please note that the Polygon network and our official handles do not engage in any giveaway posts or token doubling and we will never approach you on behalf of the organisation. Please disregard all attempts as they're most likely scams. All our communications are through are official 
+Unfortunately, there is no recovery process for lost coins. We ask that before you make a transaction, you go on to check and double-check before starting and completing. Please note that the Polygon network and our official handles do not engage in any giveaway posts or token doubling and we will never approach you on behalf of the organisation. Please disregard all attempts as they're most likely scams. All our communications are through are official
 handles.
 
 
-## So Ethereum has Goerli as its test Network. Does Polygon Network have a Test Network. 
+## So Ethereum has Goerli as its test Network. Does Polygon Network have a Test Network.
 
-So how the Ethereum Network has Goerli as its test network, the Polygon Mainnet has Mumbai. All transactions on this test network will be indexed on the Mumbai Explorer. 
+So how the Ethereum Network has Goerli as its test network, the Polygon Mainnet has Mumbai. All transactions on this test network will be indexed on the Mumbai Explorer.
 
 
-## How can  speed up my transaction on Metamask. 
+## How can  speed up my transaction on Metamask.
 
-For speeding up transactions via Metamask, please go to this [link](https://metamask.zendesk.com/hc/en-us/articles/360015489251-How-to-Speed-Up-or-Cancel-a-Pending-Transaction) 
+For speeding up transactions via Metamask, please go to this [link](https://metamask.zendesk.com/hc/en-us/articles/360015489251-How-to-Speed-Up-or-Cancel-a-Pending-Transaction)
 
 
 ## What all information should I provide when I create a ticket?
@@ -317,5 +321,3 @@ For speeding up transactions via Metamask, please go to this [link](https://meta
 - Transaction hash
 - Exact action intended and the result, very descriptive
 - Screenshots or screen recordings of the action
-
-
