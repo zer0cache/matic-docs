@@ -13,6 +13,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 ## Where can I use the Matic Web Wallet?
 [https://wallet.polygon.technology/](https://wallet.polygon.technology/)
 
+## How do I find the token contract?
+
+Pleas check [Adding a Custom Token](../faq/adding-a-custom-token) article
+
 ## Which wallets are currently supported?
 
 - Metamask
