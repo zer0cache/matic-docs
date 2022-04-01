@@ -124,7 +124,7 @@ Genesis transactions from current validators are executed with `gasPrice = 0`.
 
 #### Genesis Contracts
 
-[BorValidatorSet(0x1000)](https://github.com/maticnetwork/genesis-contracts/blob/master/contracts/BorValidatorSet.sol) ⇒ This contract manages validator set for each span and sprint.
+[BorValidatorSet(0x1000)](https://github.com/maticnetwork/genesis-contracts/blob/master/contracts/BorValidatorSet.template) ⇒ This contract manages validator set for each span and sprint.
 
 [BorStateReceiver(0x1001)](https://github.com/maticnetwork/genesis-contracts/blob/master/contracts/StateReceiver.sol) ⇒ This Contract manages the transfer of arbitrary contract data from Ethereum contracts to Polygon contracts
 
