@@ -29,11 +29,14 @@ The sample project will ask you to install hardhat-waffle and hardhat-ethers.You
 ## **hardhat-config**
 
 - Go to hardhat.config.js
-- Update the hardhat-config with matic-network-credentials.
-- create .env file in the root to store your private key
+- Update the hardhat-config with matic-network-credentials
+- Create .env file in the root to store your private key
+- Add Polygonscan API key to .env file to verify the contract on Polygonscan. You can generate an API key by [creating an account](https://polygonscan.com/register)
 
 ```js
+require('dotenv').config();
 require("@nomiclabs/hardhat-ethers");
+require("@nomiclabs/hardhat-etherscan");
 const fs = require('fs');
 const privateKey = fs.readFileSync(".secret").toString().trim();
 module.exports = {
@@ -45,6 +48,9 @@ module.exports = {
       url: "https://rpc-mumbai.maticvigil.com",
       accounts: [process.env.PRIVATE_KEY]
     }
+  },
+  etherscan: {
+    apiKey: process.env.POLYGONSCAN_API_KEY
   },
   solidity: {
     version: "0.7.0",
@@ -83,7 +89,13 @@ Greeter deployed to: 0xfaFfCAD549BAA6110c5Cc03976d9383AcE90bdBE
 
 You can check the deployment status here: https://mumbai.polygonscan.com/
 
+## **Verifying contract on Polygonscan**
 
+Run the following commands to quickly verify your contract on Polygonscan. This makes it easy for anyone to see the source code of your deployed contract.
 
+```bash
+$ npm install --save-dev @nomiclabs/hardhat-etherscan
+$ npx hardhat verify --network matic 0xfaFfCAD549BAA6110c5Cc03976d9383AcE90bdBE
+```
 
-
+> Remember to update your address to your own deployed contract address. When the command is successful, you will see your contract verified on Polygonscan!
