@@ -37,8 +37,7 @@ The sample project will ask you to install hardhat-waffle and hardhat-ethers.You
 require('dotenv').config();
 require("@nomiclabs/hardhat-ethers");
 require("@nomiclabs/hardhat-etherscan");
-const fs = require('fs');
-const privateKey = fs.readFileSync(".secret").toString().trim();
+
 module.exports = {
   defaultNetwork: "matic",
   networks: {
@@ -46,7 +45,7 @@ module.exports = {
     },
     matic: {
       url: "https://rpc-mumbai.maticvigil.com",
-      accounts: [privateKey]
+      accounts: [process.env.PRIVATE_KEY]
     }
   },
   etherscan: {
@@ -63,6 +62,8 @@ module.exports = {
   },
 }
 ```
+
+> Make sure to update the Solidity compiler version here based on what is required in your contract(s).
 
 ## **Compile Smart contract file**
 
@@ -91,7 +92,7 @@ You can check the deployment status here: https://mumbai.polygonscan.com/
 
 ## **Verifying contract on Polygonscan**
 
-Run the following commands to quickly verify your contract on Polygonscan. This makes it easy for anyone to see the source code of your deployed contract.
+Run the following commands to quickly verify your contract on Polygonscan. This makes it easy for anyone to see the source code of your deployed contract. For contracts that have a constructor with a complex argument list, see [here](https://hardhat.org/plugins/nomiclabs-hardhat-etherscan.html).
 
 ```bash
 $ npm install --save-dev @nomiclabs/hardhat-etherscan
