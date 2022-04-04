@@ -333,7 +333,7 @@ If you have started the transaction, it is important not to cancel it. Instead, 
 
 ## There are some unauthorized transactions in my wallet. Is my wallet hacked?
 
-Unfortunately, we can’t revert unwanted transactions. 
+Unfortunately, the network cannot revert unwanted transactions. 
 It is always important to be careful with your private keys and **never share them with anyone**.
 If you still have some remaining funds, transfer them immediately to a new wallet.
 
