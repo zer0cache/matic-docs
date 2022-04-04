@@ -121,3 +121,4 @@ image: https://matic.network/banners/matic-network-16x9.png
 |117|Narkasa             |CEX         |                                                                                                                             |
 |118|EQONEX              |CEX         |                                                                                                                             |
 |119|Tokpie              |CEX         |                                                                                                                             |
+|120|MAX                 |CEX         |MATIC                                                                                                                             |

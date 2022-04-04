@@ -17,7 +17,7 @@ There are a few technical requirements before we start. Please install the follo
 
 Once we have those installed, To install hardhat, you need to create an npm project by going to an empty folder, running npm init, and following its instructions. Once your project is ready, you should run
 
-```js
+```bash
 $ npm install --save-dev hardhat
 ```
 To create your Hardhat project run `npx hardhat` in your project folder
@@ -29,7 +29,7 @@ The sample project will ask you to install hardhat-waffle and hardhat-ethers.You
 ## **hardhat-config**
 
 - Go to hardhat.config.js
-- Update the hardhat-config with matic-network-crendentials.
+- Update the hardhat-config with matic-network-credentials.
 - create .env file in the root to store your private key
 
 ```js

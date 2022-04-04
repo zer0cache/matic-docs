@@ -62,3 +62,4 @@ image: https://matic.network/banners/matic-network-16x9.png
 |50 |Atomic          |Available       |               |           |             |              |                    |                           |                         |
 |51 |Venmo           |                |               |           |             |              |                    |                           |                         |
 |52 |Ambire          |Available (Soon)|:white_check_mark:       |           |             |              |Yes (Ramp)          |Non-custodial              |                         |
+|53 |[Qubic](https://www.qubic.app/en.html) |Available|:white_check_mark:       |:white_check_mark: |:white_check_mark:  |:white_check_mark: | No | Non-custodial |                         |
