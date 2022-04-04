@@ -321,3 +321,43 @@ For speeding up transactions via Metamask, please go to this [link](https://meta
 - Transaction hash
 - Exact action intended and the result, very descriptive
 - Screenshots or screen recordings of the action
+
+## I was trying to make a deposit but the transaction stopped at the Approve step.
+
+If the transaction is still at the **Approve** step, it is not yet complete. To fulfill it, you need to pay the gas fee and then it should go through.
+
+## The gas fee for my withdrawal transaction is too high.
+
+Gas fees on the Polygon network are always very low, but we can’t say the same for the Ethereum mainnet fees. 
+If you have started the transaction, it is important not to cancel it. Instead, you can wait for the gas fees to lower or add more ETH to your account. 
+
+## There are some unauthorized transactions in my wallet. Is my wallet hacked?
+
+Unfortunately, the network cannot revert unwanted transactions. 
+It is always important to be careful with your private keys and **never share them with anyone**.
+If you still have some remaining funds, transfer them immediately to a new wallet.
+
+## Polygon wallet shows an ‘Oops our Server Stumbled’ error message.
+
+That message might mean that our server is down. However, if everything is working fine, we suggest that you use another browser.
+If you are trying to make a withdrawal, you can also try the [Polygon Withdrawal tool](https://polygon-withdraw.matic.network/). There, you can connect your wallet, paste your transaction hash, and proceed with the transaction.
+
+## Polygon wallet shows ‘User denied transaction signature’ error message.
+
+This usually happens because the user canceled or refused to sign a transaction via MetaMask. When prompted by the MetaMask wallet, proceed with signing the transaction by clicking on Approve and not on Cancel.
+
+## I did not receive the tokens I transferred to an exchange
+You transferred coins to Binance (Coinbase, Kucoin or any other exchange) but did not receive them on the exchange side. If that was your case, it's important to know that we currently don’t provide a direct connection with exchanges. Most transactions would actually pass by Ethereum mainnet before reaching the exchange.
+Please, contact the exchange’s support team.
+
+## My MetaMask wallet is not connecting with Polygon wallet
+
+There are many reasons why this might be happening. We suggest that you **try another time**, **use another browser** or, if any of these doesn’t help, **contact our support team**.
+
+## How can I get MATIC tokens to pay for gas fees?
+
+We provide a [Gas Swap](https://wallet.polygon.technology/gas-swap/) service that will help you with that. You choose an amount of MATIC you need to complete your transaction and you can swap it for other tokens such as Ether or USDT. It’s worth noting that this is a **gas-less transaction**.
+
+## Token Swap is too slow.
+
+If you are trying to swap tokens and it is taking too long, you could try the same transaction on a different browser. If that doesn’t work and you’re facing an error, please send a screenshot to our Support team.
