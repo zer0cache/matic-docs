@@ -395,12 +395,10 @@ module.exports = {
   Validate: [
     {
       type: "category",
-      label: "Validator Overview",
+      label: "Overview",
       items: [
         "validate/validator/introduction",
-        "validate/polygon-basics/who-is-validator",
         "validate/validator/architecture",
-        "validate/validator/responsibilities",
         {
           type: "category",
           label: "Core Components",
@@ -412,20 +410,12 @@ module.exports = {
             "validate/validator/core-components/key-management",
             // "validate/validator/bridge",
             "validate/validator/core-components/staking",
-            "validate/validator/core-components/delegation",
             "validate/validator/core-components/derivatives",
             "validate/validator/core-components/proposer-bonus",
             "validate/validator/core-components/transaction-fees",
             "validate/validator/core-components/state-sync-mechanism",
           ],
         },
-      ],
-    },
-    {
-      type: "category",
-      label: "Delegate",
-      items: ["validate/delegate",
-              "validate/polygon-basics/who-is-delegator"
       ],
     },
     //"validate/delegator-faq",
@@ -445,6 +435,13 @@ module.exports = {
         "validate/validate/replace-validator",
         "validate/validate/change-signer-address",
         "validate/validate/validator-commission-operations",
+      ],
+    },
+    {
+      type: "category",
+      label: "Delegate",
+      items: ["validate/polygon-basics/who-is-delegator",
+              "validate/delegate"
       ],
     },
     {

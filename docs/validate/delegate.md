@@ -1,13 +1,13 @@
 ---
 id: delegate
-title: Delegate
+title: Become a Delegator
 description: Learn how to become a delegator on the Polygon Network.
 keywords:
   - docs
   - matic
   - polygon
   - delegate
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -68,12 +68,6 @@ The fund locking for the unbonding period is in place to ensure there is no mali
 
 ## Move stake from one node to another node
 
-:::note
-
-Moving stake is allowed between any nodes. The only exception is moving stake from one Foundation node to another Foundation node is not allowed.
-
-:::
-
 Moving stake from one node to another node is a single transaction. There are no delays or unbonding periods during this event.
 
 1. Log in to the [My Account](https://wallet-dev.polygon.technology/staking/my-account) on the staking dashboard.
@@ -82,3 +76,7 @@ Moving stake from one node to another node is a single transaction. There are no
 1. Provide the stake amount and click **Move Stake**.
 
 This will move the stake. The dashboard will update after 12 block confirmations.
+
+:::note
+Moving stake is allowed between any nodes. The only exception is moving stake from one Foundation node to another Foundation node is not allowed.
+:::
