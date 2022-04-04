@@ -16,7 +16,6 @@ module.exports = {
         "home/blockchain-basics/blockchain-types",
         "home/blockchain-basics/consensus-mechanism",
         "home/blockchain-basics/ethereum",
-        "home/blockchain-basics/polygon",
         "home/blockchain-basics/solidity",
         "home/blockchain-basics/transactions",
         "home/blockchain-basics/gas",
@@ -24,6 +23,14 @@ module.exports = {
         "home/blockchain-basics/sidechain",
         "home/blockchain-basics/import-account-to-metamask",
       ],
+    },
+    {
+      type: "category",
+      label: "Polygon Basics",
+      items: [
+        "home/polygon-basics/what-is-polygon",
+        "home/polygon-basics/what-is-proof-of-stake"
+      ]
     },
     "home/architecture/polygon-architecture",
     "home/architecture/security-models",
@@ -388,19 +395,10 @@ module.exports = {
   Validate: [
     {
       type: "category",
-      label: "Polygon Basics",
-      items: [
-        "validate/polygon-basics/what-is-polygon",
-        "validate/polygon-basics/who-is-validator",
-        "validate/polygon-basics/who-is-delegator",
-        "validate/polygon-basics/what-is-proof-of-stake"
-      ],
-    },
-    {
-      type: "category",
       label: "Validator Overview",
       items: [
         "validate/validator/introduction",
+        "validate/polygon-basics/who-is-validator",
         "validate/validator/architecture",
         "validate/validator/responsibilities",
         {
@@ -423,7 +421,13 @@ module.exports = {
         },
       ],
     },
-    "validate/delegate",
+    {
+      type: "category",
+      label: "Delegate",
+      items: ["validate/delegate",
+              "validate/polygon-basics/who-is-delegator"
+      ],
+    },
     //"validate/delegator-faq",
     // "validate/port_management",
     {
