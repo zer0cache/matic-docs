@@ -329,7 +329,7 @@ If the transaction is still at the **Approve** step, it is not yet complete. To 
 ## The gas fee for my withdrawal transaction is too high.
 
 Gas fees on the Polygon network are always very low, but we can’t say the same for the Ethereum mainnet fees. 
-If you have started the transaction, it is important not to cancel it. Instead, you can wait for it to lower or add more Ether to your account. 
+If you have started the transaction, it is important not to cancel it. Instead, you can wait for the gas fees to lower or add more ETH to your account. 
 
 ## There are some unauthorized transactions in my wallet. Is my wallet hacked?
 
