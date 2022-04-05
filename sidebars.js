@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-module.exports = {
+ module.exports = {
   introduction: [
     "home/new-to-polygon",
     {
@@ -385,62 +385,80 @@ module.exports = {
         ],
     },
   ],
-  Validate: [
+  Maintain: [
     {
       type: "category",
-      label: "Polygon Basics",
+      label: "Knowledge Base",
       items: [
-        "validate/polygon-basics/what-is-polygon",
-        "validate/polygon-basics/who-is-validator",
+        "validate/polygon-basics/what-is-proof-of-stake",
         "validate/polygon-basics/who-is-delegator",
-        "validate/polygon-basics/what-is-proof-of-stake"
-      ],
-    },
-    {
-      type: "category",
-      label: "Validator Overview",
-      items: [
-        "validate/validator/introduction",
-        "validate/validator/architecture",
-        "validate/validator/responsibilities",
+        "validate/polygon-basics/who-is-validator",
         {
           type: "category",
-          label: "Core Components",
+          label: "Validator Overview",
           items: [
-            "validate/validator/core-components/heimdall-chain",
-            "validate/validator/core-components/bor-chain",
-            "validate/validator/core-components/checkpoint-mechanism",
-            "validate/validator/core-components/proposer-producer-selection",
-            "validate/validator/core-components/key-management",
-            // "validate/validator/bridge",
-            "validate/validator/core-components/staking",
-            "validate/validator/core-components/delegation",
-            "validate/validator/core-components/derivatives",
-            "validate/validator/core-components/proposer-bonus",
-            "validate/validator/core-components/transaction-fees",
-            "validate/validator/core-components/state-sync-mechanism",
+            "validate/validator/introduction",
+            "validate/validator/architecture",
+            "validate/validator/responsibilities",
+            {
+              type: "category",
+              label: "Core Components",
+              items: [
+                "validate/validator/core-components/heimdall-chain",
+                "validate/validator/core-components/bor-chain",
+                "validate/validator/core-components/checkpoint-mechanism",
+                "validate/validator/core-components/proposer-producer-selection",
+                "validate/validator/core-components/key-management",
+                "validate/validator/core-components/staking",
+                "validate/validator/core-components/delegation",
+                "validate/validator/core-components/derivatives",
+                "validate/validator/core-components/proposer-bonus",
+                "validate/validator/core-components/transaction-fees",
+                "validate/validator/core-components/state-sync-mechanism",
+              ],
+            },
           ],
         },
+        ],
+    },
+    {
+      type: "category",
+      label: "Delegate",
+      items: [
+        "validate/polygon-basics/who-is-delegator",
       ],
     },
-    "validate/delegate",
-    //"validate/delegator-faq",
-    // "validate/port_management",
     {
       type: "category",
       label: "Validate",
       items: [
         "validate/validate/getting-started",
-        "validate/validate/core-components",
-        "validate/validate/validator-responsibilities",
+        "validate/polygon-basics/who-is-validator",
         "validate/validate/validator-node-system-requirements",
-        "validate/validate/run-validator-ansible",
-        "validate/validate/run-validator-binaries",
-        "validate/validate/install-gcp",
-        "validate/validate/validator-staking-operations",
-        "validate/validate/replace-validator",
-        "validate/validate/change-signer-address",
-        "validate/validate/validator-commission-operations",
+        {
+          type: "category",
+          label: "Node Deployment",
+          items: [
+            "validate/validate/run-validator-binaries",
+            "validate/validate/run-validator-ansible",
+            "validate/validate/install-gcp",
+          ],
+        },
+        {
+          type: "category",
+          label: "Validator Staking Operations",
+          items: [
+            "validate/validate/validator-staking-operations",
+            "validate/validate/validator-commission-operations",
+          ],
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Govern",
+      items: [
+        "validate/polygon-basics/what-is-polygon",
       ],
     },
     {
@@ -448,7 +466,6 @@ module.exports = {
       label: "Knowledge Base",
       items: ["validate/knowledge-base/known-issues","validate/knowledge-base/how-to",]
     },
-    //"validate/general-faq",
     "validate/bug-bounty-program",
     "validate/reporting-issues",
     "validate/rewards",
