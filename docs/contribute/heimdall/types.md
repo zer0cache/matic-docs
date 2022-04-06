@@ -1,7 +1,7 @@
 ---
 id: types
 title: Types
-description: description of HeimdallAddress, Pubkey, & HeimdallHash.
+description: Description of HeimdallAddress, Pubkey, & HeimdallHash.
 keywords:
   - docs
   - matic

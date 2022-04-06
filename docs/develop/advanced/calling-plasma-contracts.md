@@ -46,7 +46,7 @@ Link to the explorer - https://mumbai.polygonscan.com/
 
 ### 1. Deposit ERC20 token from Goerli to Polygon
 
-**description**: To deposit assets (ERC20) from Goerli to Polygon
+**Description**: To deposit assets (ERC20) from Goerli to Polygon
 
 Let the required amount of tokens be **X**.
 
@@ -84,7 +84,7 @@ depositManagerContract.methods.depositERC20ForUser(
 
 ### 2. Transfer tokens on Polygon
 
-**description**: To transfer tokens on Polygon testnet
+**Description**: To transfer tokens on Polygon testnet
 
 1. Invokes the standard `transfer` function of ERC20 contract.
    - **Contract**: `ChildERC20.sol`
@@ -102,7 +102,7 @@ depositManagerContract.methods.depositERC20ForUser(
 
 ### 3. Display account balances for users on Polygon
 
-**description**: Query ERC20 token balances for user on Polygon and Goerli
+**Description**: Query ERC20 token balances for user on Polygon and Goerli
 
 1. Invokes the standard `balanceOf` function of ERC20 contract.
    - **Contract**: `ChildERC20.sol`
@@ -115,7 +115,7 @@ depositManagerContract.methods.depositERC20ForUser(
 
 ### 4. Withdraw ERC20 tokens from Polygon to Goerli
 
-**description**: To withdraw assets (ERC20) from Polygon testnet to Goerli
+**Description**: To withdraw assets (ERC20) from Polygon testnet to Goerli
 
 Procedure of Withdrawal:
 
