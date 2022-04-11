@@ -452,6 +452,16 @@
             "maintain/validate/validator-commission-operations",
           ],
         },
+        {
+          type: "category",
+          label: "FAQ",
+          items: [
+            "maintain/validate/validator-commission-operations",
+            "maintain/validate/faq/known-issues",
+            "maintain/validate/faq/how-to",
+            "maintain/validate/faq/validator-faq",
+          ]
+        },
       ],
     },
     {
@@ -462,15 +472,9 @@
         "maintain/govern/polygon-dao",
       ],
     },
-    {
-      type: "category",
-      label: "Knowledge Base",
-      items: ["maintain/knowledge-base/known-issues","maintain/knowledge-base/how-to",]
-    },
     "maintain/bug-bounty-program",
     "maintain/reporting-issues",
     "maintain/rewards",
-    "maintain/validator-faq",
     "maintain/glossary",
   ],
   Contributors: [
