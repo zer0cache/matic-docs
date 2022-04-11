@@ -458,7 +458,8 @@
       type: "category",
       label: "Govern",
       items: [
-        "maintain/polygon-basics/what-is-polygon",
+        "maintain/govern/governance",
+        "maintain/govern/polygon-dao",
       ],
     },
     {
