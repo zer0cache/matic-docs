@@ -65,7 +65,7 @@ The following technical node operations are done automatically by the nodes:
 
 A node's uptime on the Polygon network is based on the number of [checkpoint transactions](/docs/validate/glossary#checkpoint-transaction) that the validator node has signed.
 
-Approximately every 34 minutes a proposer submits a checkpoint transaction to the Ethereum mainnet. The checkpoint transaction must be signed by every [validator](/docs/validate/glossary#validator) on the Polygon Network.
+Approximately every 34 minutes, a proposer submits a checkpoint transaction to the Ethereum mainnet. The checkpoint transaction must be signed by every [validator](/docs/validate/glossary#validator) on the Polygon network.
 
 Failure to sign a checkpoint transction results in the decrease of your validator node performance.
 
