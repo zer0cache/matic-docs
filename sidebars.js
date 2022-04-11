@@ -425,7 +425,7 @@
       type: "category",
       label: "Delegate",
       items: [
-        "maintain/polygon-basics/who-is-delegator",
+        "maintain/delegate/delegate",
       ],
     },
     {
