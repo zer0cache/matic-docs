@@ -79,4 +79,5 @@ This will move the stake. The dashboard will update after 12 block confirmations
 
 :::note
 Moving stake is allowed between any nodes. The only exception is moving stake from one Foundation node to another Foundation node is not allowed.
+
 :::
