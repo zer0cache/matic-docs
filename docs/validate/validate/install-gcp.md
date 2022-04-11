@@ -9,7 +9,7 @@ keywords:
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## Description
+## description
 In this document, we will describe how to deploy Polygon nodes into VM instance in Google Cloud
 ## Hardware requirements
 Check the minimum and recommended [hardware requirements](https://docs.polygon.technology/docs/validate/validate/validator-node-system-requirements) in Polygon docs

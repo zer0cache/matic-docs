@@ -128,6 +128,139 @@ module.exports = {
         "develop/ethereum-polygon/getting-started",
         {
           type: "category",
+          label: "Matic.js",
+          items: ["develop/ethereum-polygon/matic-js/get-started",
+                  "develop/ethereum-polygon/matic-js/installation",
+                  {
+                    type: "category",
+                    label: "Setup",
+                    items: ["develop/ethereum-polygon/matic-js/setup/index",
+                            "develop/ethereum-polygon/matic-js/setup/web3",
+                            "develop/ethereum-polygon/matic-js/setup/ethers"]
+                  },
+                  "develop/ethereum-polygon/matic-js/api-architecture",
+                  {
+                    type: "category",
+                    label: "POS",
+                    items: [ "develop/ethereum-polygon/matic-js/pos/index",
+                            {
+                              type: "category",
+                              label: "ERC20",
+                              items: ["develop/ethereum-polygon/matic-js/pos/erc20/index", 
+                                      "develop/ethereum-polygon/matic-js/pos/erc20/get-balance",
+                                      "develop/ethereum-polygon/matic-js/pos/erc20/approve",
+                                      "develop/ethereum-polygon/matic-js/pos/erc20/approve-max",
+                                      "develop/ethereum-polygon/matic-js/pos/erc20/get-allowance",
+                                      "develop/ethereum-polygon/matic-js/pos/erc20/deposit",
+                                      "develop/ethereum-polygon/matic-js/pos/erc20/transfer",
+                                      "develop/ethereum-polygon/matic-js/pos/erc20/withdraw-start",
+                                      "develop/ethereum-polygon/matic-js/pos/erc20/withdraw-exit",
+                                      "develop/ethereum-polygon/matic-js/pos/erc20/withdraw-exit-faster",
+                                      "develop/ethereum-polygon/matic-js/pos/erc20/is-withdraw-exited"
+                                      ]
+                            },
+                            {
+                              type: "category",
+                              label: "ERC721",
+                              items: ["develop/ethereum-polygon/matic-js/pos/erc721/index", 
+                                      "develop/ethereum-polygon/matic-js/pos/erc721/get-tokens-count",
+                                      "develop/ethereum-polygon/matic-js/pos/erc721/get-token-id-at-index-for-user",
+                                      "develop/ethereum-polygon/matic-js/pos/erc721/get-all-tokens",
+                                      "develop/ethereum-polygon/matic-js/pos/erc721/is-approved",
+                                      "develop/ethereum-polygon/matic-js/pos/erc721/is-approved-all",
+                                      "develop/ethereum-polygon/matic-js/pos/erc721/approve",
+                                      "develop/ethereum-polygon/matic-js/pos/erc721/approve-all",
+                                      "develop/ethereum-polygon/matic-js/pos/erc721/deposit",
+                                      "develop/ethereum-polygon/matic-js/pos/erc721/deposit-many",
+                                      "develop/ethereum-polygon/matic-js/pos/erc721/withdraw-start",
+                                      "develop/ethereum-polygon/matic-js/pos/erc721/withdraw-start-many",
+                                      "develop/ethereum-polygon/matic-js/pos/erc721/withdraw-exit",
+                                      "develop/ethereum-polygon/matic-js/pos/erc721/withdraw-exit-many",
+                                      "develop/ethereum-polygon/matic-js/pos/erc721/withdraw-exit-faster",
+                                      "develop/ethereum-polygon/matic-js/pos/erc721/withdraw-exit-faster-many",
+                                      "develop/ethereum-polygon/matic-js/pos/erc721/is-withdraw-exited",
+                                      "develop/ethereum-polygon/matic-js/pos/erc721/is-withdraw-exited-many",
+                                      "develop/ethereum-polygon/matic-js/pos/erc721/transfer",
+                                      "develop/ethereum-polygon/matic-js/pos/erc721/withdraw-start-with-meta-data"
+                                      ]
+                              },
+                            {
+                              type: "category",
+                              label: "ERC1155",
+                              items: ["develop/ethereum-polygon/matic-js/pos/erc1155/get-balance",
+                                      "develop/ethereum-polygon/matic-js/pos/erc1155/approve-all",
+                                      "develop/ethereum-polygon/matic-js/pos/erc1155/approve-all-for-mintable",
+                                      "develop/ethereum-polygon/matic-js/pos/erc1155/is-approved-all",
+                                      "develop/ethereum-polygon/matic-js/pos/erc1155/deposit",
+                                      "develop/ethereum-polygon/matic-js/pos/erc1155/deposit-many",
+                                      "develop/ethereum-polygon/matic-js/pos/erc1155/withdraw-start",
+                                      "develop/ethereum-polygon/matic-js/pos/erc1155/withdraw-start-many",
+                                      "develop/ethereum-polygon/matic-js/pos/erc1155/withdraw-exit",
+                                      "develop/ethereum-polygon/matic-js/pos/erc1155/withdraw-exit-faster",
+                                      "develop/ethereum-polygon/matic-js/pos/erc1155/withdraw-exit-many",
+                                      "develop/ethereum-polygon/matic-js/pos/erc1155/withdraw-exit-faster-many",
+                                      "develop/ethereum-polygon/matic-js/pos/erc1155/is-withdraw-exited",
+                                      "develop/ethereum-polygon/matic-js/pos/erc1155/is-withdraw-exited-many",
+                                      "develop/ethereum-polygon/matic-js/pos/erc1155/transfer"
+                                    ]
+                            },
+                            "develop/ethereum-polygon/matic-js/pos/is-check-pointed",
+                            "develop/ethereum-polygon/matic-js/pos/is-deposited",
+                            "develop/ethereum-polygon/matic-js/pos/deposit-ether"
+                          ]
+                  },
+                  {
+                    type: "category",
+                    label: "Plasma",
+                    items: [{
+                              type: "category",
+                              label: "ERC20",
+                              items: ["develop/ethereum-polygon/matic-js/plasma/erc20/index", 
+                                      "develop/ethereum-polygon/matic-js/plasma/erc20/get-balance",
+                                      "develop/ethereum-polygon/matic-js/plasma/erc20/approve",
+                                      "develop/ethereum-polygon/matic-js/plasma/erc20/approve-max",
+                                      "develop/ethereum-polygon/matic-js/plasma/erc20/get-allowance",
+                                      "develop/ethereum-polygon/matic-js/plasma/erc20/deposit",
+                                      "develop/ethereum-polygon/matic-js/plasma/erc20/transfer",
+                                      "develop/ethereum-polygon/matic-js/plasma/erc20/withdraw-start",
+                                      "develop/ethereum-polygon/matic-js/plasma/erc20/withdraw-confirm",
+                                      "develop/ethereum-polygon/matic-js/plasma/erc20/withdraw-confirm-faster",
+                                      "develop/ethereum-polygon/matic-js/plasma/erc20/withdraw-exit"
+                                      ]
+                            },
+                            {
+                              type: "category",
+                              label: "ERC721",
+                              items: ["develop/ethereum-polygon/matic-js/plasma/erc721/index", 
+                                      "develop/ethereum-polygon/matic-js/plasma/erc721/get-tokens-count",
+                                      "develop/ethereum-polygon/matic-js/plasma/erc721/get-token-id-at-index-for-user",
+                                      "develop/ethereum-polygon/matic-js/plasma/erc721/get-all-tokens",
+                                      "develop/ethereum-polygon/matic-js/plasma/erc721/safe-deposit",
+                                      "develop/ethereum-polygon/matic-js/plasma/erc721/withdraw-start",
+                                      "develop/ethereum-polygon/matic-js/plasma/erc721/withdraw-confirm",
+                                      "develop/ethereum-polygon/matic-js/plasma/erc721/withdraw-confirm-faster",
+                                      "develop/ethereum-polygon/matic-js/plasma/erc721/withdraw-exit",
+                                      "develop/ethereum-polygon/matic-js/plasma/erc721/transfer"
+                                      ]
+                            },
+                            "develop/ethereum-polygon/matic-js/plasma/is-deposited",
+                            "develop/ethereum-polygon/matic-js/plasma/is-check-pointed",
+                            "develop/ethereum-polygon/matic-js/plasma/withdraw-exit",
+                            "develop/ethereum-polygon/matic-js/plasma/deposit-ether"
+                    ]
+                  },
+                  "develop/ethereum-polygon/matic-js/fx-portal",
+                  "develop/ethereum-polygon/matic-js/set-proof-api",
+                  {
+                    type: "category",
+                    label: "Advanced",
+                    items: ["develop/ethereum-polygon/matic-js/advanced/abi-manager",
+                            "develop/ethereum-polygon/matic-js/advanced/plugin",
+                            "develop/ethereum-polygon/matic-js/advanced/exit-util"]
+                  }]
+        },
+        {
+          type: "category",
           label: "PoS Bridge",
           items: [
             "develop/ethereum-polygon/pos/getting-started",
