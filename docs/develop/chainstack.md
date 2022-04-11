@@ -32,9 +32,15 @@ Foundry is a development toolkit to work with smart contracts.
 
 ## Initialize with Foundry
 
-To create a boilerplate project, navigate to your project directory and run:
+To create a boilerplate project, navigate to your working directory and run:
 
-`foundry init`.
+``` sh
+forge init PROJECT_NAME
+```
+
+where
+
+* PROJECT_NAME - name of project
 
 ## Fund Your Account
 
