@@ -13,6 +13,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 A blockchain validator is someone who is responsible for validating transactions within a blockchain. On the Polygon Network, any participant can be qualified to become a Polygon's validator by running a full node to earn rewards and collect transaction fees. To ensure the good participation by validators, they lock up at least 1 MATIC token as a stake in the ecosystem.
 
 :::note
+
 Currently, there is a limit of 100 active validators at a time.
 For a detailed description on what a validator is, see [Validator](/docs/validate/validator/introduction).
 :::
