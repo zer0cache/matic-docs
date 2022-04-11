@@ -393,6 +393,7 @@
         "maintain/polygon-basics/what-is-proof-of-stake",
         "maintain/polygon-basics/who-is-delegator",
         "maintain/polygon-basics/who-is-validator",
+        "maintain/rewards",
         {
           type: "category",
           label: "Validator Overview",
@@ -433,7 +434,6 @@
       label: "Validate",
       items: [
         "maintain/validate/getting-started",
-        "maintain/polygon-basics/who-is-validator",
         "maintain/validate/validator-node-system-requirements",
         {
           type: "category",
@@ -456,7 +456,6 @@
           type: "category",
           label: "FAQ",
           items: [
-            "maintain/validate/validator-commission-operations",
             "maintain/validate/faq/known-issues",
             "maintain/validate/faq/how-to",
             "maintain/validate/faq/validator-faq",
@@ -474,7 +473,6 @@
     },
     "maintain/bug-bounty-program",
     "maintain/reporting-issues",
-    "maintain/rewards",
     "maintain/glossary",
   ],
   Contributors: [
