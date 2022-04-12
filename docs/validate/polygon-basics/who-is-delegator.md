@@ -37,7 +37,6 @@ should aim to elect validators that are behaving well.
 
 :::
 
-
 ## See also
 
 * [Delegate](/docs/validate/delegate)
