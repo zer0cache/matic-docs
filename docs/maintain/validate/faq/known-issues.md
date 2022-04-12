@@ -1,6 +1,6 @@
 ---
 id: known-issues
-title: Known issues and Errors
+title: Known Issues & Errors
 description: Knowledge Base
 keywords:
   - docs

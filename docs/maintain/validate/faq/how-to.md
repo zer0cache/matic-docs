@@ -1,6 +1,6 @@
 ---
 id: how-to
-title: Pre-requisite and How To?
+title: Pre-requisites & How Tos
 description: Knowledge Base
 keywords:
   - docs

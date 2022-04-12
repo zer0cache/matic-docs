@@ -1,6 +1,6 @@
 ---
 id: delegate
-title: Delegate
+title: How to Delegate
 description: Learn how to become a delegator on the Polygon Network.
 keywords:
   - docs

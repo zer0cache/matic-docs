@@ -74,4 +74,3 @@ To avail the bonus completely, the [proposer](/docs/validate/glossary#proposer) 
 ## Transaction fees
 
 Each block producer at [Bor](/docs/validate/glossary#bor) is given a certain percentage of the transaction fees collected in each block. The selection of producers for any given span is also dependent on the validator’s ratio in the overall stake. The remaining transaction fees flow through the same funnel as the rewards which get shared among all validators working at the [Heimdall](/docs/validate/glossary#heimdall) layer.
-
