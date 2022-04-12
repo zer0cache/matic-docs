@@ -16,7 +16,7 @@ The MATIC tokens are bonded with the next [checkpoint](/docs/validate/glossary#c
 
 ## Fees and Rewards
 
-Delegators delegate staking tokens to a validator and obtain a part of their rewards in exchange. Because delegators share rewards with their validators, delegators also share risks. Should a validator misbehave, each of their delegators will be partially slashed in proportion to their delegated stake.
+Delegators stake their tokens by delegating them to validator, obtaining a percentage of their rewards in exchange. Because delegators share rewards with their validators, delegators also share risks. Should a validator misbehave, each of their delegators are at risk of being partially slashed in proportion to their delegated stake.
 
 To stake with the validators, delegators pay a [commission](/docs/validate/glossary#commission) to the validator of their choice. Also, they have an option to re-delegate their MATIC tokens with another validator. Rewards are accumulated at every checkpoint.
 
