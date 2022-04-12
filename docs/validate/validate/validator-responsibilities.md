@@ -14,6 +14,7 @@ A blockchain validator is someone who is responsible for validating transactions
 
 :::note
 
+
 Currently, there is a limit of 100 active validators at a time.
 For a detailed description on what a validator is, see [Validator](/docs/validate/validator/introduction).
 :::
