@@ -18,7 +18,25 @@ The MATIC tokens are bonded with the next [checkpoint](/docs/validate/glossary#c
 
 Delegators stake their tokens by delegating them to validator, obtaining a percentage of their rewards in exchange. Because delegators share rewards with their validators, delegators also share risks. Should a validator misbehave, each of their delegators are at risk of being partially slashed in proportion to their delegated stake.
 
-To stake with the validators, delegators pay a [commission](/docs/validate/glossary#commission) to the validator of their choice. Also, they have an option to re-delegate their MATIC tokens with another validator. Rewards are accumulated at every checkpoint.
+Validators set a [commission](/docs/validate/glossary#commission) percentage to determine the percentage of rewards that will go to them. Delegators are able to view the commission rate of each validator to understand each validator's reward distribution and a relative rate of return on their stake.
+
+:::caution Validators with a 100% commission rate
+
+These are validators who take all of the rewards and are not looking for delegation, 
+as they have enough to self-stake to stake on their own.
+
+:::
+
+Delegators have the option to re-delegate their tokens with other validators. Rewards are accumulated at every checkpoint.
+
+:::tip Being an active delegator
+
+Delegation should not be seen as a passive activity, as delegators are an integral part of maintaining
+the Polygon network. Each delegator is responsible for managing their own risk, but in doing so, delegators 
+should aim to elect validators that are behaving well.
+
+:::
+
 
 ## See also
 
