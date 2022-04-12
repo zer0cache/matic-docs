@@ -1,6 +1,6 @@
 ---
 id: what-is-polygon
-title: What is Polygon
+title: What is Polygon?
 description: Learn what the Polygon scaling solution is.
 keywords:
   - docs

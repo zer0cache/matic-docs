@@ -16,7 +16,6 @@ module.exports = {
         "home/blockchain-basics/blockchain-types",
         "home/blockchain-basics/consensus-mechanism",
         "home/blockchain-basics/ethereum",
-        "home/blockchain-basics/polygon",
         "home/blockchain-basics/solidity",
         "home/blockchain-basics/transactions",
         "home/blockchain-basics/gas",
@@ -24,6 +23,14 @@ module.exports = {
         "home/blockchain-basics/sidechain",
         "home/blockchain-basics/import-account-to-metamask",
       ],
+    },
+    {
+      type: "category",
+      label: "Polygon Basics",
+      items: [
+        "home/polygon-basics/what-is-polygon",
+        "home/polygon-basics/what-is-proof-of-stake"
+      ]
     },
     "home/architecture/polygon-architecture",
     "home/architecture/security-models",
@@ -521,21 +528,10 @@ module.exports = {
   Validate: [
     {
       type: "category",
-      label: "Polygon Basics",
-      items: [
-        "validate/polygon-basics/what-is-polygon",
-        "validate/polygon-basics/who-is-validator",
-        "validate/polygon-basics/who-is-delegator",
-        "validate/polygon-basics/what-is-proof-of-stake"
-      ],
-    },
-    {
-      type: "category",
-      label: "Validator Overview",
+      label: "Overview",
       items: [
         "validate/validator/introduction",
         "validate/validator/architecture",
-        "validate/validator/responsibilities",
         {
           type: "category",
           label: "Core Components",
@@ -547,7 +543,6 @@ module.exports = {
             "validate/validator/core-components/key-management",
             // "validate/validator/bridge",
             "validate/validator/core-components/staking",
-            "validate/validator/core-components/delegation",
             "validate/validator/core-components/derivatives",
             "validate/validator/core-components/proposer-bonus",
             "validate/validator/core-components/transaction-fees",
@@ -556,7 +551,6 @@ module.exports = {
         },
       ],
     },
-    "validate/delegate",
     //"validate/delegator-faq",
     // "validate/port_management",
     {
@@ -574,6 +568,13 @@ module.exports = {
         "validate/validate/replace-validator",
         "validate/validate/change-signer-address",
         "validate/validate/validator-commission-operations",
+      ],
+    },
+    {
+      type: "category",
+      label: "Delegate",
+      items: ["validate/polygon-basics/who-is-delegator",
+              "validate/delegate"
       ],
     },
     {

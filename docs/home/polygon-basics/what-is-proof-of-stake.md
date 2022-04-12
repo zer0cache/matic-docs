@@ -1,6 +1,6 @@
 ---
 id: what-is-proof-of-stake
-title: What Is Proof of Stake
+title: What is Proof of Stake?
 description: Learn what is Proof of Stake.
 keywords:
   - docs
