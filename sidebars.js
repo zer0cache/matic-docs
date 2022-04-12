@@ -16,7 +16,6 @@
         "home/blockchain-basics/blockchain-types",
         "home/blockchain-basics/consensus-mechanism",
         "home/blockchain-basics/ethereum",
-        "home/blockchain-basics/polygon",
         "home/blockchain-basics/solidity",
         "home/blockchain-basics/transactions",
         "home/blockchain-basics/gas",
@@ -24,6 +23,14 @@
         "home/blockchain-basics/sidechain",
         "home/blockchain-basics/import-account-to-metamask",
       ],
+    },
+    {
+      type: "category",
+      label: "Polygon Basics",
+      items: [
+        "home/polygon-basics/what-is-polygon",
+        "home/polygon-basics/what-is-proof-of-stake"
+      ]
     },
     "home/architecture/polygon-architecture",
     "home/architecture/security-models",
