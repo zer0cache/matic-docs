@@ -395,6 +395,11 @@ Length in byte format - 4
   1. Visit [QuickNode](https://www.quicknode.com/chains/matic) and sign up for a free account
   2. Get your free trial node
   3. Use your QuickNode node to access Polygon Mainnet
+  
+## Full Node and Block Explorer Access (via NOWNodes)
+  1. Visit [nownodes.io](https://nownodes.io) and sign up for a free account
+  2. Get your free API key
+  3. Use your NOWNodes account to access Polygon Mainnet
 
 </TabItem>
 </Tabs>
