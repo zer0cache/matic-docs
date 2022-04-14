@@ -182,7 +182,7 @@ module.exports = {
           activeBasePath: "docs/develop",
         },
         {
-          to: "docs/maintain/polygon-basics/what-is-polygon",
+          to: "docs/maintain/polygon-basics/who-is-delegator", 
           label: "Maintain",
           position: "left",
           activeBasePath: "docs/maintain",

@@ -1,7 +1,7 @@
 ---
 id: who-is-delegator
 title: Who is a Delegator
-description: Build your next blockchain app on Polygon.
+description: Learn about what a delegator is on the Polygon network.
 keywords:
   - docs
   - matic

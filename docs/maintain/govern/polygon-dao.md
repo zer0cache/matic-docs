@@ -12,3 +12,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 
 <!-- This page is a WIP -->
+
+:::note This page is under construction
+
+:::

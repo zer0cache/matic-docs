@@ -530,8 +530,6 @@
       type: "category",
       label: "Knowledge Base",
       items: [
-        "maintain/polygon-basics/what-is-polygon",
-        "maintain/polygon-basics/what-is-proof-of-stake",
         "maintain/polygon-basics/who-is-delegator",
         "maintain/polygon-basics/who-is-validator",
         "maintain/rewards",
@@ -539,7 +537,6 @@
           type: "category",
           label: "Validator Overview",
           items: [
-            "maintain/validator/introduction",
             "maintain/validator/architecture",
             "maintain/validator/responsibilities",
             {
