@@ -12,14 +12,14 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 ## Overview
 
-For the detailed description on what is a validator, see [Validator](/docs/validate/validator/introduction).
+For the detailed description on what a validator is, see [Validator](/docs/validate/validator/introduction).
 
 Any [validator](/docs/validate/glossary#validator) on the Polygon Network has the following responsibilities:
 
 * Technical node operations done by the nodes.
 * Operations:
   * Maintain high uptime.
-  * Check daily the node related services and processes.
+  * Check node-related services and processes daily.
   * Run node monitoring.
   * Keep ETH balance on the signer address.
 * Delegation:
@@ -39,10 +39,10 @@ The following technical node operations are done automatically by the nodes:
   * Select a subset of validators for the block producer set for each [span](/docs/validate/glossary#span)
   * For each span, select the block producer set again on [Heimdall](/docs/validate/glossary#heimdall) and transmit the selection information to [Bor](/docs/validate/glossary#bor) periodically.
 * Validating blocks on Bor:
-  * For a set of Bor sidechain blocks, each validator independently reads block data for these blocks and validates the data on Heimdall
+  * For a set of Bor sidechain blocks, each validator independently reads block data for these blocks and validates the data on Heimdall.
 * Checkpoint submission:
   * A [proposer](/docs/validate/glossary#proposer) is chosen among the validators for each Heimdall block. The [checkpoint](/docs/validate/glossary#checkpoint-transaction) proposer creates the checkpoint of Bor block data, validates, and broadcasts the signed transaction for other validators to consent to.
-  * If >2/3 of the active validators reach consensus on the checkpoint, the checkpoint submitted to the Ethereum mainnet.
+  * If more than 2/3 of the active validators reach consensus on the checkpoint, the checkpoint is submitted to the Ethereum mainnet.
 * Sync changes to Polygon staking contracts on Ethereum:
   * Continuing from the checkpoint submission step, since this is an external network call, the checkpoint transaction on Ethereum may or may not be confirmed, or may be pending due to Ethereum congestion issues.
   * In this case, there is an `ack/no-ack` process that is followed to ensure that the next checkpoint contains a snapshot of the previous Bor blocks as well. For example, if checkpoint 1 is for Bor blocks 1-256, and it failed for some reason, the next checkpoint 2 will be for Bor blocks 1-512. See also [Heimdall architecture: Checkpoint](/docs/contribute/heimdall/checkpoint).
@@ -65,7 +65,7 @@ Failure to sign a checkpoint transction results in the decrease of your validato
 
 The process of signing the checkpoint transactions is automated. To ensure your validator node is signing all valid checkpoint transactions, you must maintain and monitor your node health.
 
-#### Check daily node services and processes
+#### Check node services and processes daily 
 
 You must check daily the services and processes associated with [Heimdall](/docs/validate/glossary#heimdall) and [Bor](docs/validate/glossary#bor).
 
