@@ -12,7 +12,7 @@ export const firstRow = [
         description: "Complete information including easy tutorials you need to build, deploy, and manage apps on Polygon"
     },
     {
-        title: "Polygon SDK",
+        title: "Polygon Edge",
         class_name: "polygon-banner",
         linkUrl: "https://sdk-docs.polygon.technology/docs/overview/",
         imageUrl: "img/home/polygon-sdk.svg",

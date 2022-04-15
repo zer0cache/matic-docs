@@ -32,7 +32,7 @@ Once you have funds on Polygon, you can use those funds to send to others instan
 
 ---
 
-### Configuring Polygon SDK
+### Configuring Polygon Edge
 
 Install Matic SDK (**_3.0.0)_**
 
