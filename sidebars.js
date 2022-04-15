@@ -273,7 +273,7 @@ module.exports = {
             "develop/ethereum-polygon/pos/getting-started",
             {
               type: "category",
-              label: "Using SDK",
+              label: "Using Polygon Edge",
               items: [
                 "develop/ethereum-polygon/pos/using-sdk/getting-started",
                 "develop/ethereum-polygon/pos/using-sdk/eth",

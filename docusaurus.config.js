@@ -211,7 +211,7 @@ module.exports = {
           "aria-label": "GitHub repository",
         },
         {
-          label: "Polygon SDK",
+          label: "Polygon Edge",
           href: "https://sdk-docs.polygon.technology/docs/overview/",
           position: "left",
         },

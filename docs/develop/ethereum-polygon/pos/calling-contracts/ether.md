@@ -62,7 +62,7 @@ Exit function on **_RootChainManager_** contract has to be called to unlock and 
 9. branchMask - 32 bits denoting the path of receipt in merkle patricia tree
 10. receiptLogIndex - Log Index to read from the receipt
 
-Generating proof manually can be tricky so it is advisable to use the Polygon SDK. If you want to send the transaction manually, you can pass **_encodeAbi_** as **_true_** in the options object to get raw calldata.
+Generating proof manually can be tricky so it is advisable to use Polygon Edge. If you want to send the transaction manually, you can pass **_encodeAbi_** as **_true_** in the options object to get raw calldata.
 ```js
 const exitCalldata = await maticPOSClient
   .exitERC20(burnTxHash, { from, encodeAbi: true })
