@@ -132,7 +132,7 @@ Once you have confirmed the second transaction, you will receive your funds back
 
 >Note: You can view the successful transactions after “Transfer in Progress/Action required” transactions in the “Action Required” popup.
 
-Please watch this video below for a graphical illustration of how withdrawals work:
+Please watch the following video for a tutorial on withdrawals:
 
 <video loop autoplay width="70%" height="70%" controls="true" >
   <source type="video/mp4" src="/img/wallet/WithdrawMatic.mp4"></source>
