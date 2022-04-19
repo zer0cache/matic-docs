@@ -74,7 +74,7 @@ Click on the Deposit success transaction to see the “Transfer Completed” pop
 
 <img src={useBaseUrl("img/wallet/Wallet-11.png")} width="50%" height="50%" /> 
 
-Please watch this video below for a graphical illustration of how deposits work:
+Please watch the following video for a tutorial on deposits:
 
 <video loop autoplay width="70%" height="70%" controls="true" >
   <source type="video/mp4" src="/img/wallet/depositMatic.mp4"></source>
