@@ -54,5 +54,5 @@ In addition to Polygon faucets, [Alchemy’s Mumbai Faucet](https://mumbaifaucet
  <img src={useBaseUrl("img/tools/submitted.png")} />
 
 :::note
-If you already have enough MATIC testnet Tokens in your account to pay the gas fees, the transaction may fail. If you require testnet tokens in bulk, please contact us on <ins>**[Discord](https://discord.com/invite/polygon)**</ins>.
+If you don't have enough MATIC testnet Tokens in your account to pay the gas fees, the transaction may fail. If you require testnet tokens in bulk, please contact us on <ins>**[Discord](https://discord.com/invite/polygon)**</ins>.
 :::
