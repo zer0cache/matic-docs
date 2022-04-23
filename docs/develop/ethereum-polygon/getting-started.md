@@ -23,7 +23,7 @@ to optimise for speed and decentralisation. We consciously architected the syste
 
 |                                      | PoS Bridge(Recommended)                                                                  | Plasma Bridge                                                                             |
 | ------------------------------------ | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| **Short description**                | DApp Developer's looking for flexibility and faster withdrawals with POS system security | DApp Developer's looking for increased security guarantees with Plasma exit mechanism\.   |
+| **Short description**                | DApp Developers looking for flexibility and faster withdrawals with POS system security | DApp Developers looking for increased security guarantees with Plasma exit mechanism\.   |
 | **Structure**                        | Highly flexible                                                                          | Rigid, Less Flexible                                                                      |
 | **Deposit\(Ethereum → Polygon\)**    | 3-5 mins                                                                                 | 3-5 mins                                                                                  |
 | **Withdrawal\(Polygon → Ethereum\)** | 1 checkpoint = ~ 20 mins to 3 hours                                                      | Call to the process-exit procedure on Ethereum's contract.                                |
