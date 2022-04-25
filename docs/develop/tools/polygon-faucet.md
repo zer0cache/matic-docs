@@ -12,10 +12,10 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-[Polygon Faucet](https://faucet.polygon.technology/) is a tool that allows you to get free MATIC tokens on testnet to help you get started with polygon network. The tokens enable you to work with Polygon features without spending real MATIC on the mainnet.
+[Polygon Faucet](https://faucet.polygon.technology/) is a tool that allows you to get free MATIC tokens on testnet to help you get started with Polygon network. The tokens enable you to work with Polygon features without spending real MATIC on the mainnet.
 
 :::note
-Tokens on testnet networks has no value as they are only used for testing purposes.
+Tokens on testnet networks have no value as they are only used for testing purposes.
 :::
 
 ### How to use Polygon Faucet
@@ -27,7 +27,9 @@ Tokens on testnet networks has no value as they are only used for testing purpos
     - **Goerli** - Ethereum test network
     - **DA Testnet** - Internal testing
 
+
  <img src={useBaseUrl("img/tools/faucet.png")} />
+
 
 3. Select the type of the testnet token that you want to receive, where:
    - **MATIC Token** - Testnet token of Polygon network
@@ -44,9 +46,13 @@ Tokens on testnet networks has no value as they are only used for testing purpos
 6. Click on the button "Confirm" to agree on the entered details
  <img src={useBaseUrl("img/tools/confirm-transaction.png")} />
 
-7. Congratulations, you have successfully submitted your request. You will receive the requested testnet tokens within 1 to 2 minutes
+7. Congratulations, you have successfully submitted your request. You will receive the requested testnet tokens within 1 to 2 minutes.
  <img src={useBaseUrl("img/tools/submitted.png")} />
 
 :::note
-If you already have enough MATIC testnet Tokens in your account to pay the gas fees, the transaction may fail. If you require testnet tokens in bulk, please contact us on <ins>**[Discord](https://discord.com/invite/polygon)**</ins>.
+If you don't have enough MATIC testnet Tokens in your account to pay the gas fees, the transaction may fail. If you require testnet tokens in bulk, please contact us on <ins>**[Discord](https://discord.com/invite/polygon)**</ins>.
+:::
+
+:::tip
+In addition to Polygon faucets, [Alchemy’s Mumbai Faucet](https://mumbaifaucet.com/) will allow you to test your Polygon applications before going live, by providing test MATIC tokens. [Here's how to use it](/docs/develop/tools/alchemy-faucet).
 :::
