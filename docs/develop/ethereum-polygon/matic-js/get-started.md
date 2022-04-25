@@ -115,7 +115,6 @@ const txHash = await approveResult.getTransactionHash();
 const txReceipt = await approveResult.getReceipt();
 ```
 
- class="mt-20px mb-20px top-border">>
 
 As you can see, with its simple APIs maticjs makes it very easy to interact with maticjs bridge. **Let's get started with creating something awesome**
 
