@@ -117,7 +117,7 @@ Go to Solidity Compiler
 - Put in a Network name - “Matic Mumbai Testnet”
 - In URL field you can add the URL as "https://rpc-mumbai.maticvigil.com"
 - Enter the Chain ID: 80001
-- (Optional Fields) Symbol: "maticmum" and Block Explorer URL: "https://mumbai.polygonscan.com/"
+- (Optional Fields) Currency Symbol: "maticmum" and Block Explorer URL: "https://mumbai.polygonscan.com/"
 <div
         style={{
           display: "flex",
