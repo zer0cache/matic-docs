@@ -70,6 +70,7 @@ module.exports = {
       items: [
         "develop/tools/polygon-faucet",
         "develop/tools/polygon-gas-station",
+        "develop/tools/alchemy-faucet"
       ],
     },
     {
