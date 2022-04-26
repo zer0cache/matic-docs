@@ -484,6 +484,11 @@ module.exports = {
       label: "DID Implementation",
       items: ["develop/did-implementation/introduction","develop/did-implementation/getting-started"]
     },
+    {
+      type: "category",
+      label: "API Documentation",
+      items: ["develop/api-documentation/getting-started-rpc"]
+    },
   ],
   Integrate: [
     "integrate/quickstart",
