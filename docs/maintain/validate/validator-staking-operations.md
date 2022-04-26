@@ -1,6 +1,6 @@
 ---
 id: validator-staking-operations
-title: Validator Staking Operations
+title: Stake on Polygon
 description: Learn how to stake as a validator on the Polygon Network
 keywords:
   - docs
@@ -9,7 +9,7 @@ keywords:
   - stake
   - claim
   - unstake
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

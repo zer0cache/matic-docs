@@ -1,6 +1,6 @@
 ---
 id: validator-commission-operations
-title: Validator Commission Operations
+title: Commission Operations
 description: Learn how to set up and change your validator commission on the Polygon Network.
 keywords:
   - docs
@@ -8,7 +8,7 @@ keywords:
   - polygon
   - validator
   - commission
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
