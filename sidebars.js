@@ -393,7 +393,6 @@ module.exports = {
       type: "category",
       label: "Architecture",
       items: [
-        "contribute/polygon-architecture",
         {
           type: "category",
           label: "Heimdall",
@@ -532,7 +531,6 @@ module.exports = {
       label: "Overview",
       items: [
         "validate/validator/introduction",
-        "validate/validator/architecture",
         {
           type: "category",
           label: "Core Components",

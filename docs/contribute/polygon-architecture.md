@@ -1,13 +1,13 @@
 ---
 id: polygon-architecture
 title: Overview
-description: Architecturally, the beauty of Polygon is its elegant design, which features a generic validation layer separated from varying execution environments like Plasma enabled chains, full blown EVM sidechains, and in the future, other Layer 2 approaches such as Optimistic Rollups.
+description: The architecture of Polygon
 keywords:
-  - docs
-  - matic
+  - architecture
+  - layers
+  - polygon
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
-
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Polygon
@@ -16,57 +16,86 @@ Polygon is a blockchain application platform that provides hybrid Proof-of-Stake
 
 Architecturally, the beauty of Polygon is its elegant design, which features a generic validation layer separated from varying execution environments like Plasma enabled chains, full-blown EVM sidechains, and in the future, other Layer 2 approaches such as Optimistic Rollups. 
 
-Currently, developers can use **Plasma** for specific state transitions for which Plasma predicates have been written such as ERC20, ERC721, asset swaps, or other custom predicates. For arbitrary state transitions, they can use PoS. Or both! This is made possible by Polygon's hybrid construction.
+The Polygon Network has a three-layer architecture:
 
-To enable the PoS mechanism on our platform, a set of **staking** management contracts are deployed on Ethereum, as well as a set of incentivized validators running **Heimdall** and **Bor** nodes. Ethereum is the first basechain Polygon supports, but Polygon intends to offer support for additional basechains, based on community suggestions and consensus, to enable an interoperable decentralized Layer 2 blockchain platform.
+* Ethereum layer — a set of contracts on the Ethereum mainnet.
+* Heimdall layer — a set of proof-of-stake Heimdall nodes running in parallel to the Ethereum mainnet, monitoring the set of staking contracts deployed on the Ethereum mainnet, and committing the Polygon Network checkpoints to the Ethereum mainnet. Heimdall is based on Tendermint.
+* Bor layer — a set of block-producing Bor nodes shuffled by Heimdall nodes. Bor is based on Go Ethereum.
 
-Polygon has a three-layer architecture:
+<img src={useBaseUrl("img/staking/architecture.png")} />
 
-1. Staking and Plasma smart contracts on Ethereum
-2. Heimdall (Proof of Stake layer) 
-3. Bor (Block producer layer)
+Currently, developers can use **Plasma** for specific state transitions for which Plasma predicates have 
+been written such as ERC20, ERC721, asset swaps, or other custom predicates. For arbitrary state transitions, 
+they can use PoS. Or both! This is made possible by Polygon's hybrid construction.
 
+To enable the PoS mechanism on our platform, a set of **staking** management contracts are deployed on 
+Ethereum, as well as a set of incentivized validators running **Heimdall** and **Bor** nodes. Ethereum is 
+the first basechain Polygon supports, but Polygon intends to offer support for additional basechains, based 
+on community suggestions and consensus, to enable an interoperable decentralized Layer 2 blockchain platform.
 
 <img src={useBaseUrl("img/matic/Architecture.png")} />;
 
-### Polygon smart contracts (on Ethereum)
+## Staking Contracts
 
-Polygon maintains a set of smart contracts on Ethereum, which handle the following:
+To enable the [Proof of Stake (PoS)](docs/home/polygon-basics/what-is-proof-of-stake) mechanism on Polygon, 
+the system employs a set of [staking](/docs/validate/glossary#staking) management contracts on the Ethereum mainnet.
 
-- Staking management for the Proof-of-Stake layer
-- Delegation management including validator shares
-- Plasma contracts for MoreVP, including checkpoints/snapshots of sidechain state
+The staking contracts implement the following features:
 
-### Heimdall (Proof-of-Stake validator layer)
+* The ability for anyone to stake MATIC tokens on the staking contracts on the Ethereum mainnet and join the system as a [validator](/docs/validate/glossary#validator).
+* Earn staking rewards for validating state transitions on the Polygon Network.
+* Enable penalties/slashing for activities such as double signing, validator downtime, etc.
+* Save [checkpoints](/docs/validate/glossary#checkpoint-transaction) on the Ethereum mainnet.
 
-**Heimdall** is the PoS validator node that works in consonance with the Staking contracts on Ethereum to enable the PoS mechanism on Polygon. We have implemented this by building on top of the Tendermint consensus engine with changes to the signature scheme and various data structures. It is responsible for block validation, block producer committee selection, checkpointing a representation of the sidechain blocks to Ethereum in our architecture, and various other responsibilities.
+The PoS mechanism also acts as a mitigation to the data unavailability problem for the Polygon sidechains.
 
-Heimdall layer handles the aggregation of blocks produced by Bor into a Merkle tree and publishing the Merkle root periodically to the root chain. This periodic publishing is called `checkpoints`. For every few blocks on Bor, a validator (on the Heimdall layer): 
+## Heimdall
 
-1. Validates all the blocks since the last checkpoint
-2. Creates a Merkle tree of the block hashes
-3. Publishes the Merkle root to the main chain
+Heimdall is the proof of stake validation layer handles the aggregation of blocks produced 
+by [Bor](/docs/validate/glossary#bor) into a Merkle tree and publishing the Merkle root periodically to the 
+root chain. The periodic publishing of snapshots of the Bor sidechain are called [checkpoints](/docs/validate/glossary#checkpoint-transaction).
 
-Checkpoints are important for two reasons: 
+Heimdall layer handles the aggregation of blocks produced by Bor into a Merkle tree and publishing the 
+Merkle root periodically to the root chain. This periodic publishing is called `checkpoints`. For every few 
+blocks on Bor, a validator (on the Heimdall layer): 
 
-1. Providing finality on the Root Chain
-2. Providing proof of burn in withdrawal of assets
+1. Validates all the blocks since the last checkpoint.
+2. Creates a Merkle tree of the block hashes.
+3. Publishes the Merkle root hash to the Ethereum mainnet.
 
-A bird’s eye view of the process can be explained as: 
+Checkpoints are important for two reasons:
 
-- A subset of active validators from the pool is selected to act as block producers for a span. The Selection of each span will also be consented by at least ⅔ in power. These block producers are responsible for creating blocks and broadcasting it to the remaining of the network.
-- A checkpoint includes the root of all blocks created during any given interval. All nodes validate the same and attach their signature to it.
-- A selected proposer from the validator set is responsible for collecting all signatures for a particular checkpoint and committing the same on the main-chain.
-- The responsibility of creating blocks and also proposing checkpoints is variably dependent on a validator’s stake ratio in the overall pool.
+1. Providing finality on the root chain.
+2. Providing proof of burn in withdrawal of assets.
 
-### Bor (Block Producer Layer)
+An overview of the process:
+
+* A subset of active validators from the pool is selected to act as [block producers](/docs/validate/glossary#block-producer) for a [span](/docs/validate/glossary#span). These block producers are responsible for creating blocks and broadcasting the created blocks on the network.
+* A checkpoint includes the Merkle root hash of all blocks created during any given interval. All nodes validate the Merkle root hash and attach their signature to it.
+* A selected [proposer](/docs/validate/glossary#proposer) from the validator set is responsible for collecting all signatures for a particular checkpoint and committing the checkpoint on the Ethereum mainnet.
+* The responsibility of creating blocks and proposing checkpoints is variably dependent on a validator’s stake ratio in the overall pool.
+
+More details on Heimdall are available on the [Heimdall architecture](/docs/contribute/heimdall/overview) guide.
+
+### Bor
+
+Bor is Polygon's sidechain block producer — the entity responsible for aggregating transactions into blocks.
+
+Bor block producers are a subset of the validators and are shuffled periodically by the [Heimdall](/docs/validate/glossary#heimdall) validators.
+
+See also [Bor architecture](/docs/contribute/bor/overview).
 
 Bor is Polygon's block producer layer - the entity responsible for aggregating transactions into blocks.  Currently, it is a basic Geth implementation with custom changes done to the consensus algorithm. 
 
-Block producers are periodically shuffled via committee selection on Heimdall in durations termed as a `span` in Polygon. Blocks are produced at the **Bor** node and the sidechain VM is EVM-compatible. Blocks produced on Bor are also validated periodically by Heimdall nodes, and a checkpoint consisting of the Merkle tree hash of a set of blocks on Bor is committed to Ethereum periodically.
+Block producers are periodically shuffled via committee selection on Heimdall in durations termed 
+as a `span` in Polygon. Blocks are produced at the **Bor** node and the sidechain VM is EVM-compatible. 
+Blocks produced on Bor are also validated periodically by Heimdall nodes, and a checkpoint consisting of 
+the Merkle tree hash of a set of blocks on Bor is committed to Ethereum periodically.
 
-### **:scroll:Resources**
+More details are available on the [Bor architecture](/docs/contribute/bor/overview) guide.
 
-:paperclip: Bor Architecture: [https://forum.matic.network/t/matic-system-overview-bor/126](https://forum.matic.network/t/matic-system-overview-bor/126) <br/>
-:paperclip: Heimdall Architecture: [https://forum.matic.network/t/matic-system-overview-heimdall/125](https://forum.matic.network/t/matic-system-overview-heimdall/125) <br/>
-:paperclip: Checkpoint Mechanism: [https://forum.matic.network/t/checkpoint-mechanism-on-heimdall/127](https://forum.matic.network/t/checkpoint-mechanism-on-heimdall/127)
+### Resources
+
+* Bor Architecture: [https://forum.matic.network/t/matic-system-overview-bor/126](https://forum.matic.network/t/matic-system-overview-bor/126)
+* Heimdall Architecture: [https://forum.matic.network/t/matic-system-overview-heimdall/125](https://forum.matic.network/t/matic-system-overview-heimdall/125)
+* Checkpoint Mechanism: [https://forum.matic.network/t/checkpoint-mechanism-on-heimdall/127](https://forum.matic.network/t/checkpoint-mechanism-on-heimdall/127)
