@@ -32,7 +32,7 @@ module.exports = {
         "home/polygon-basics/what-is-proof-of-stake"
       ]
     },
-    "home/architecture/polygon-architecture",
+    "contribute/polygon-architecture",
     "home/architecture/security-models",
     "home/faq",
   ],
