@@ -58,7 +58,7 @@ Block Producers for the Bor layer are a committee selected from the Validator po
 
 Ratio of Stake/Staking power specifies the probability to be selected as a member of the block producer committee. 
 
-<img src={useBaseUrl("img/Bor/bor-span.png")} />
+<img src={useBaseUrl("img/Bor/bor-span-updated.png")} />
 
 #### Selection Process
 
