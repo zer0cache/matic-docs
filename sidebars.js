@@ -532,7 +532,7 @@
       items: [
         "maintain/polygon-basics/who-is-delegator",
         "maintain/polygon-basics/who-is-validator",
-        "maintain/rewards",
+        "maintain/validator/rewards",
         {
           type: "category",
           label: "Validator Overview",
