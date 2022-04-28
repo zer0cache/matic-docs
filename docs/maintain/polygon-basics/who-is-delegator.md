@@ -40,4 +40,4 @@ should aim to elect validators that are behaving well.
 ## See also
 
 * [Delegate](../delegate/delegate)
-* [Delegator FAQ](../validate/faq/validator-faq)
+* [Validator FAQ](../validate/faq/validator-faq)
