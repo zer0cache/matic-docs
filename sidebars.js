@@ -533,6 +533,9 @@
       items: [
         "maintain/polygon-basics/who-is-delegator",
         "maintain/polygon-basics/who-is-validator",
+        "maintain/polygon-basics/liquid-delegation",
+        "maintain/polygon-basics/proposers-producers-selection",
+        "maintain/polygon-basics/checkpoint-mechanism",
         "maintain/validator/rewards",
         {
           type: "category",

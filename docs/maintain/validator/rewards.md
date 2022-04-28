@@ -11,7 +11,6 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 For an introduction to Polygon and the Proof of Stake algorithm, see:
 
-* [What Is Polygon](/docs/home/polygon-basics/what-is-polygon)
 * [What Is Proof of Stake](/docs/home/polygon-basics/what-is-proof-of-stake)
 
 In Polygon, validators stake their MATIC tokens as collateral to work for the security of the network, and in exchange for their service, earn rewards.
