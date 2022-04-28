@@ -570,7 +570,7 @@
       type: "category",
       label: "Validate",
       items: [
-        "maintain/validate/getting-started",
+        "maintain/validate/validator-index",
         "maintain/validate/validator-node-system-requirements",
         {
           type: "category",

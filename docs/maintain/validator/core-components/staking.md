@@ -8,6 +8,7 @@ keywords:
   - matic
   - polygon
   - staking
+slug: staking
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
@@ -17,7 +18,7 @@ Validators in Polygon Network are selected via an on-chain auction process which
 
 A validator has two addresses an owner address and a signer address. The staking is done with the owner address.
 
-See also [Key Management](/docs/validate/validator/key-management).
+See also [Key Management](key-management).
 
 ## Stake
 
@@ -29,7 +30,7 @@ A new validator can only join the active set when a currently active validator u
 
 :::
 
-To join the validator set, you must stake your MATIC tokens. See [Validator Staking Operations](/docs/validate/validate/validator-staking-operations).
+To join the validator set, you must stake your MATIC tokens. See [Validator Staking Operations](../../validate/validator-staking-operations).
 
 ## Unstake
 

@@ -5,13 +5,18 @@ sidebar_label: Rewards
 description: Polygon has allocated 12% of its total supply of 10 billion tokens to fund the staking rewards. This is to ensure that the network is seeded well enough until transaction fees gain traction.
 keywords:
   - docs
+  - polygon
   - matic
+  - rewards
+slug: rewards
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
 Polygon has allocated 12% of its total supply of 10 billion tokens to fund the staking rewards. This is to ensure that the network is seeded well enough until transaction fees gain traction. These rewards are primarily meant to jump-start the network. While the protocol in the long run is intended to sustain itself on the basis of transaction fees.
 
-> Validator Rewards = Staking Rewards + Transaction Fees
+:::info Validator Rewards = Staking Rewards + Transaction Fees
+
+:::
 
 This is allocated in a way to ensure gradual decoupling of staking rewards from being the dominant component of the validator rewards.
 

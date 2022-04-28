@@ -4,12 +4,17 @@ title: Proposers & Producers Selections
 description: Learn how the selection of proposers and block producers is done on the Polygon Network
 keywords:
   - docs
+  - polygon
   - matic
+  - proposer
+  - producer
+  - block producer
+slug: proposer-producer-selection
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-The ratio of [stake](/docs/validate/glossary#staking) specifies the probability to be selected as a member of [block producers](/docs/validate/glossary#block-producer) committee.
+The ratio of [stake](../../glossary#staking) specifies the probability to be selected as a member of [block producers](../../glossary#block-producer) committee.
 
 ## Selection process
 
