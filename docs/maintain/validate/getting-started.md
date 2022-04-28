@@ -24,7 +24,6 @@ A new auction process for validator replacement will be rolled out.
 
 :::
 
-
 ## Overview
 
 Polygon consists of the three following layers:

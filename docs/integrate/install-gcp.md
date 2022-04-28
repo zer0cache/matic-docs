@@ -1,7 +1,7 @@
 ---
 id: install-gcp
 title: Deploy Polygon nodes in Google Cloud
-sidebar_label: Google Cloud simple deploy
+sidebar_label: Google Cloud Deployment
 description: Simple deployment of your Polygon nodes in Google Cloud
 keywords:
 - docs
@@ -12,16 +12,24 @@ slug: install-gcp
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## description
+## Description
+
 In this document, we will describe how to deploy Polygon nodes into VM instance in Google Cloud
+
 ## Hardware requirements
+
 Check the minimum and recommended [hardware requirements](validator-node-system-requirements) in Polygon docs
+
 ## Software requirements
+
 Use any modern Debian or Ubuntu Linux OS with long-term support, i.e. Debian 11, Ubuntu 20.04. We'll focus on Ubuntu 20.04 in this manual
+
 ## Deploy instance (2 ways)
+
 You may use at least two ways to create an instance in Google Cloud:
+
 * gcloud cli, local or [Cloud Shell](https://cloud.google.com/shell)
-* web console
+* Web console
 
 We'll cover the first case in this manual. Let's start with deployment using CLI:
 1. Follow ["Before you begin" section](https://cloud.google.com/compute/docs/instances/create-start-instance#before-you-begin) to install and configure gcloud command-line tool.
@@ -69,7 +77,9 @@ Pay attention to default region and zone, choose ones closer to you or your cust
    - screen -dmS polygon su -l -c bash -c "curl -L https://raw.githubusercontent.com/maticnetwork/node-ansible/master/install-gcp.sh | bash -s -- -n '${POLYGON_NETWORK}' -m '${POLYGON_NODETYPE}' -s '${POLYGON_BOOTSTRAP_MODE}' -p '${POLYGON_RPC_PORT}' -e \"'${EXTRA_VAR}'\"; bash"'
 ```
 The instance should be created during a couple of minutes
+
 ## Login to instance (optional)
+
 It will take a couple of minutes to install all the required software and a couple of hours to download a snapshot when chosen.
 You should see working `bor` and `heimdalld` processes filling up additional drives. You may run the following commands to check it.
 Connect to instance SSH service using `gcloud` SSH wrapper:

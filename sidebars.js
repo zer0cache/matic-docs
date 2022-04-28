@@ -521,7 +521,8 @@
       items: [
           "develop/network-details/technical-requirements",
           "integrate/full-node-deployment",
-          "integrate/full-node-binaries"
+          "integrate/full-node-binaries",
+          "integrate/install-gcp",
         ],
     },
   ],
@@ -578,7 +579,6 @@
           items: [
             "maintain/validate/run-validator-binaries",
             "maintain/validate/run-validator-ansible",
-            "maintain/validate/install-gcp",
           ],
         },
         {
