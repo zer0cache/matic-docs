@@ -1,7 +1,8 @@
 ---
 id: checkpoint-mechanism
 title: Checkpoint Mechanism
-description: Build your next blockchain app on Polygon.
+sidebar_label: Checkpoints
+description: Learn about the checkpoint mechanism
 keywords:
   - docs
   - polygon
