@@ -575,13 +575,21 @@
       label: "Validate",
       items: [
         "maintain/validate/validator-index",
-        "maintain/validate/validator-node-system-requirements",
         {
           type: "category",
           label: "Node Deployment",
           items: [
+            "maintain/validate/validator-node-system-requirements",
             "maintain/validate/run-validator-binaries",
             "maintain/validate/run-validator-ansible",
+          ],
+        },
+        {
+          type: "category",
+          label: "Node Management",
+          items: [
+            "maintain/port-management",
+            "maintain/validate/change-signer-address",
           ],
         },
         {

@@ -1,6 +1,6 @@
 ---
 id: liquid-delegation
-title: Liquid Delegation in Polygon
+title: Liquid Delegation on Polygon
 description: Build your next blockchain app on Polygon.
 keywords:
   - docs
