@@ -4,7 +4,11 @@ title: Moving Stake
 description: Build your next blockchain app on Polygon.
 keywords:
   - docs
+  - polygon
   - matic
+  - stake
+  - move stake
+slug: move-stake
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -62,9 +66,4 @@ Once you have entered the amount you can then click on Stake Funds button. This 
 
 Once you have signed the transaction your stake would have successfully moved from the Foundation node to the External node. However, you will have to wait for 12 block confirmations for it reflect on the Staking UI. If your moved funds do not show up after 12 block confirmations, try refreshing the page once to see updated stakes.
 
-
-
-If you have any questions or any issues please submit a ticket here: https://support.polygon.technology/support/home
-
-
-
+If you have any questions or any issues please submit a ticket [here](https://support.polygon.technology/support/home).

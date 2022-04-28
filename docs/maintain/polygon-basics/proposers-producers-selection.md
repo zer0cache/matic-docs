@@ -4,7 +4,12 @@ title: Proposers & Producers Selection
 description: Build your next blockchain app on Matic.
 keywords:
   - docs
+  - polygon
   - matic
+  - proposers
+  - producers
+  - selection
+slug: proposers-producers-selection
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';

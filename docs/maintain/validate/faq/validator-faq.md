@@ -92,8 +92,8 @@ Then start Heimdall services again.
 
 See:
 
-* [Run a Validator Node with Ansible](/docs/validate/validate/run-validator-ansible)
-* [Run a Validator Node from Binaries](/docs/validate/validate/run-validator-binaries)
+* [Run a Validator Node with Ansible](../run-validator-ansible)
+* [Run a Validator Node from Binaries](../run-validator-binaries)
 
 ## Heimdall shows "dpkg: error processing archive"
 
@@ -199,7 +199,7 @@ If the issue is not resolved, contact support team on [Discord](https://discord.
 
 ## Bor shows "Address is required as argument"
 
-This means that you have not added your [signer address](/docs/validate/glossary#signer-address) to the metadata. You can add it using this path `/etc/matic/metadata` . Once the address is added, you can then restart the Bor service and everything should be fine.
+This means that you have not added your [signer address](../../glossary#signer-address) to the metadata. You can add it using this path `/etc/matic/metadata` . Once the address is added, you can then restart the Bor service and everything should be fine.
 
 ## Bor shows "Failed to unlock account (0x...) No key for given address or file"
 
@@ -228,18 +228,18 @@ If none of this is the issue, contact support team on [Discord](https://discord.
 
 ## How to set up a validator node on the mainnet?
 
-See [Getting Started](/docs/validate/validate/getting-started)
+See [Getting Started](../getting-started)
 
 ## How to set up a non-validating node?
 
 See:
 
-* [Run a Validator Node with Ansible](/docs/validate/validate/run-validator-ansible)
-* [Run a Validator Node from Binaries](/docs/validate/validate/run-validator-binaries)
+* [Run a Validator Node with Ansible](../run-validator-ansible)
+* [Run a Validator Node from Binaries](../run-validator-binaries)
 
 ## Why do I have to keep ETH in my signer account?
 
-ETH is required on your [signer account](/docs/validate/glossary#signer-address) because for submitting checkpoints to Ethereum, all transactions require ETH to be used as gas. Hence ETH is required on your signer account.
+ETH is required on your [signer account](../../glossary#signer-address) because for submitting checkpoints to Ethereum, all transactions require ETH to be used as gas. Hence ETH is required on your signer account.
 
 ## Setting up a node with Ansible errors out with "Host not found"
 
@@ -255,7 +255,7 @@ Your sentry node gleans information / blocks from the network and then relays th
 
 ## What is the minimum disk space required to run a Validator node?
 
-See [Validator Node System Requirements](/docs/validate/validate/validator-node-system-requirements).
+See [Validator Node System Requirements](../validator-node-system-requirements).
 
 ## Bridge shows "Error while fetching mainchain receipt error="
 
@@ -287,8 +287,8 @@ There is no light node option as of now.
 
 To run a full node, see:
 
-* [Run a Validator Node with Ansible](/docs/validate/validate/run-validator-ansible)
-* [Run a Validator Node from Binaries](/docs/validate/validate/run-validator-binaries)
+* [Run a Validator Node with Ansible](../run-validator-ansible)
+* [Run a Validator Node from Binaries](../run-validator-binaries)
 
 ## What is the uptime percentage calculation on the staking dashboard?
 

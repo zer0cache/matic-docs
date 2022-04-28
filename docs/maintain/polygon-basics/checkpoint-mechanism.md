@@ -4,7 +4,11 @@ title: Checkpoint Mechanism
 description: Build your next blockchain app on Polygon.
 keywords:
   - docs
+  - polygon
   - matic
+  - checkpoint
+  - commit
+slug: checkpoint-mechanism
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 

@@ -9,6 +9,7 @@ keywords:
   - stake
   - claim
   - unstake
+slug: validator-staking-operations
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -21,8 +22,8 @@ Your validator node fully set up and synced.
 
 See:
 
-* [Run a Validator Node with Ansible](docs/validate/validate/run-validator-ansible)
-* [Run a Validator Node from Binaries](/docs/validate/validate/run-validator-binaries)
+* [Run a Validator Node with Ansible](run-validator-ansible)
+* [Run a Validator Node from Binaries](run-validator-binaries)
 
 ### Account setup
 
@@ -105,7 +106,7 @@ heimdallcli query auth account SIGNER_ADDRESS --chain-id CHAIN_ID
 
 where
 
-* SIGNER_ADDRESS — your [signer address](/docs/validate/glossary#validator).
+* SIGNER_ADDRESS — your [signer address](../glossary#validator).
 * CHAIN_ID — the Polygon mainnet chain ID with the client prefix: `heimdall-137`.
 
 The following output should appear:

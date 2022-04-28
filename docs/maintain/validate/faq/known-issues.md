@@ -5,6 +5,12 @@ description: Knowledge Base
 keywords:
   - docs
   - polygon
+  - matic
+  - issues
+  - errors
+  - invalid
+  - command
+slug: known-issues
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 

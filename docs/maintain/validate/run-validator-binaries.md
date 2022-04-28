@@ -10,6 +10,7 @@ keywords:
   - node
   - validator
   - sentry
+slug: run-validator-binaries
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -34,7 +35,7 @@ see [Run a Validator Node with Ansible](run-validator-ansible.md).
 
 ## Prerequisites
 
-* Two machines — one [sentry](/docs/validate/glossary#sentry) and one [validator](/docs/validate/glossary#validator).
+* Two machines — one [sentry](../glossary#sentry) and one [validator](../glossary#validator).
 * `build-essential` installed on both the sentry and the validator machines.
 
   To install:
@@ -137,8 +138,8 @@ Before proceeding, Heimdall should be installed on both the sentry and validator
 ### Installing Bor
 
 [Bor](../../contribute/bor/) is the sidechain operator that acts as the block production layer,
-which syncs with Heimdall to select block producers and verifiers for each [span](../glossary.md#span)
-and [sprint]((../glossary.md#sprint)).
+which syncs with Heimdall to select block producers and verifiers for each [span](../glossary#span)
+and [sprint]((../glossary#sprint)).
 
 Clone the [Bor repository](https://github.com/maticnetwork/bor):
 
@@ -513,7 +514,7 @@ Save the changes in `static-nodes.json`.
 On Polygon, it is recommended that you keep the owner and signer keys different.
 
 * Signer — the address that signs the
-  [checkpoint transactions](/docs/validate/glossary#checkpoint-transaction). The recommendation is
+  [checkpoint transactions](../glossary#checkpoint-transaction). The recommendation is
   to keep at least 1 ETH on the signer address.
 * Owner — the address that does the staking transactions. The recommendation is to keep the MATIC
   tokens on the owner address.

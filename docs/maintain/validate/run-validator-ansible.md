@@ -10,6 +10,7 @@ keywords:
   - node
   - validator
   - sentry
+slug: run-validator-ansible
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -25,13 +26,13 @@ There is limited space for accepting new validators. New validators can only joi
 
 This section guides you through starting and running the validator node through an Ansible playbook.
 
-For the system requirements, see [Validator Node System Requirements](https://docs.polygon.technology/docs/validate/validate/validator-node-system-requirements).
+For the system requirements, see [Validator Node System Requirements](validator-node-system-requirements).
 
-If you would like to start and run the validator node from binaries, see [Run a Validator Node from Binaries](https://docs.polygon.technology/docs/validate/validate/run-validator-binaries).
+If you would like to start and run the validator node from binaries, see [Run a Validator Node from Binaries](run-validator-binaries).
 
 ## Prerequisites
 
-* Three machines — one local machine on which you will run the Ansible playbook; two remote machines — one [sentry](/docs/validate/glossary#sentry) and one [validator](/docs/validate/glossary#validator).
+* Three machines — one local machine on which you will run the Ansible playbook; two remote machines — one [sentry](../glossary#sentry) and one [validator](../glossary#validator).
 * On the local machine, [Ansible](https://www.ansible.com/) installed.
 * On the local machine, [Python 3.x](https://www.python.org/downloads/) installed.
 * On the remote machines, make sure Go is *not* installed.
@@ -447,7 +448,7 @@ Save the changes in `static-nodes.json`.
 
 On Polygon, you should keep the owner and signer keys different.
 
-* Signer — the address that signs the [checkpoint transactions](/docs/validate/glossary#checkpoint-transaction). The recommendation is to keep at least 1 ETH on the signer address.
+* Signer — the address that signs the [checkpoint transactions](../glossary#checkpoint-transaction). The recommendation is to keep at least 1 ETH on the signer address.
 * Owner — the address that does the staking transactions. The recommendation is to keep the MATIC tokens on the owner address.
 
 ### Generate a Heimdall private key
@@ -600,4 +601,4 @@ Now that your sentry and validator nodes are synced and running, head over to [D
 
 ## Proceed to staking
 
-Now that you have your sentry and validator nodes health-checked, proceed to [Staking](https://docs.polygon.technology/docs/validate/validator/core-components/staking).
+Now that you have your sentry and validator nodes health-checked, proceed to [Staking](../validator/core-components/staking).

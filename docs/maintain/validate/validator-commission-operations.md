@@ -8,21 +8,22 @@ keywords:
   - polygon
   - validator
   - commission
+slug: validator-commission-operations
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can set up and change your [commission](/docs/validate/glossary#commission) as a validator.
+You can set up and change your [commission](../glossary#commission) as a validator.
 
 A validator is entitled to charge any commission rate. The minimum commission would be 0% and the maximum commission would be 100% of the rewards earned.
 
 You are allowed to change the commission rates as many times as you would like.
 
-As a validator, it is one of your responsibilities to inform the community on commission changes. See [Validator Responsibilities](/docs/validate/validator/responsibilities).
+As a validator, it is one of your responsibilities to inform the community on commission changes. See [Validator Responsibilities](../validator/responsibilities).
 
 ## Set up your commission rate as a validator
 
-You set up the commission rate as part of your initial validator staking process. See [Validator Staking Operations](/docs/validate/validate/validator-staking-operations).
+You set up the commission rate as part of your initial validator staking process. See [Validator Staking Operations](validator-staking-operations).
 
 ## Change your commission rate
 

@@ -7,11 +7,13 @@ keywords:
   - matic
   - polygon
   - signer
+slug: change-signer-address
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-For information on what a [signer address](/docs/validate/glossary#signer-address) is, see [Key Management](/docs/validate/validator/core-components/key-management).
+For information on what a [signer address](../glossary#signer-address) is, see 
+[Key Management](../validator/core-components/key-management).
 
 ## Prerequisites
 

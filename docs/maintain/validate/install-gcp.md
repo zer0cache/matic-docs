@@ -5,14 +5,17 @@ sidebar_label: Google Cloud simple deploy
 description: Simple deployment of your Polygon nodes in Google Cloud
 keywords:
 - docs
-- matic
+- polygon
+- gcp
+- google cloud
+slug: install-gcp
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## description
 In this document, we will describe how to deploy Polygon nodes into VM instance in Google Cloud
 ## Hardware requirements
-Check the minimum and recommended [hardware requirements](https://docs.polygon.technology/docs/validate/validate/validator-node-system-requirements) in Polygon docs
+Check the minimum and recommended [hardware requirements](validator-node-system-requirements) in Polygon docs
 ## Software requirements
 Use any modern Debian or Ubuntu Linux OS with long-term support, i.e. Debian 11, Ubuntu 20.04. We'll focus on Ubuntu 20.04 in this manual
 ## Deploy instance (2 ways)

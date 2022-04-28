@@ -8,6 +8,7 @@ keywords:
   - polygon
   - DAO
   - governance
+slug: governance
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 

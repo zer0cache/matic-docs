@@ -11,7 +11,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-This is a step-by-step guide to help you become a [delegator](/docs/validate/glossary#delegator) on the Polygon Network.
+This is a step-by-step guide to help you become a [delegator](../glossary#delegator) on the Polygon Network.
 
 The only prerequisite is to have your MATIC tokens and ETH on the Ethereum mainnet address.
 
@@ -62,7 +62,7 @@ The will  withdraw your rewards from the validator and your entire stake from th
 
 Your withdrawn rewards will show up immediately on your Ethereum address.
 
-Your withdrawn stake funds will be locked for 80 [checkpoints](/docs/validate/glossary#checkpoint-transaction).
+Your withdrawn stake funds will be locked for 80 [checkpoints](../glossary#checkpoint-transaction).
 
 The fund locking for the unbonding period is in place to ensure there is no malicious behaviour on the network.
 

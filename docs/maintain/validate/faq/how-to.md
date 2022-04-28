@@ -5,6 +5,9 @@ description: Knowledge Base
 keywords:
   - docs
   - polygon
+  - how to
+  - knowledge
+slug: how-to
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
