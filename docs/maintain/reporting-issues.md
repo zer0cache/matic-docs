@@ -4,7 +4,13 @@ title: Reporting Issues
 description: Report issues on attacks and bugs on the Polygon Network.
 keywords:
   - docs
+  - polygon
   - matic
+  - issues
+  - report
+  - bugs
+  - attacks
+slug: reporting-issues
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 

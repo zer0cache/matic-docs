@@ -1,16 +1,23 @@
 ---
-id: port_management
+id: port-management
 title: Technical infrastructure for nodes
 sidebar_label: Port management
 description: Build your next blockchain app on Polygon.
 keywords:
   - docs
+  - polygon
   - matic
+  - port
+  - port management
+  - infrastructure
+
+slug: port-management
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
 Here is a list of default ports used across Polygon nodes:
-## BoR
+
+## Bor
 
 | ﻿Name                   | Port  | Tags                      | description                                                                                                    |
 |------------------------|-------|---------------------------|----------------------------------------------------------------------------------------------------------------|
