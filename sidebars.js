@@ -608,14 +608,13 @@
         "maintain/govern/polygon-dao",
       ],
     },
-    "maintain/bug-bounty-program",
     "maintain/reporting-issues",
     "maintain/glossary",
   ],
   Contributors: [
     "contribute/orientation",
     "contribute/community-maintainers",
-    "maintain/bug-bounty-program",
+    "contribute/bug-bounty-program",
     {
       type: "category",
       label: "Architecture",
