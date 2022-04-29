@@ -171,7 +171,7 @@ module.exports = {
       items: [
         {
           to: "docs/home/new-to-polygon",
-          label: "Basics",
+          label: "Core Concepts",
           position: "left",
           activeBasePath: "docs/home",
         },
@@ -182,10 +182,10 @@ module.exports = {
           activeBasePath: "docs/develop",
         },
         {
-          to: "docs/validate/validator/introduction",
-          label: "Validate",
+          to: "docs/maintain/polygon-basics/who-is-delegator", 
+          label: "Maintain",
           position: "left",
-          activeBasePath: "docs/validate",
+          activeBasePath: "docs/maintain",
         },
         {
           to: "docs/integrate/quickstart",

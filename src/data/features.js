@@ -24,7 +24,7 @@ export const firstRow = [
 export const secondRow = [
     {
         title: "Validators",
-        linkUrl: "docs/validate/polygon-overview",
+        linkUrl: "docs/maintain/polygon-basics/who-is-validator",
         imageUrl: "img/home/core-contribution.svg",
         description: 'Learn how to stake with Polygon, and setup you own nodes to maintain the network and earn rewards'
     },
