@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-module.exports = {
+ module.exports = {
   introduction: [
     "home/new-to-polygon",
     {
@@ -154,7 +154,7 @@ module.exports = {
                             {
                               type: "category",
                               label: "ERC20",
-                              items: ["develop/ethereum-polygon/matic-js/pos/erc20/index", 
+                              items: ["develop/ethereum-polygon/matic-js/pos/erc20/index",
                                       "develop/ethereum-polygon/matic-js/pos/erc20/get-balance",
                                       "develop/ethereum-polygon/matic-js/pos/erc20/approve",
                                       "develop/ethereum-polygon/matic-js/pos/erc20/approve-max",
@@ -170,7 +170,7 @@ module.exports = {
                             {
                               type: "category",
                               label: "ERC721",
-                              items: ["develop/ethereum-polygon/matic-js/pos/erc721/index", 
+                              items: ["develop/ethereum-polygon/matic-js/pos/erc721/index",
                                       "develop/ethereum-polygon/matic-js/pos/erc721/get-tokens-count",
                                       "develop/ethereum-polygon/matic-js/pos/erc721/get-token-id-at-index-for-user",
                                       "develop/ethereum-polygon/matic-js/pos/erc721/get-all-tokens",
@@ -223,7 +223,7 @@ module.exports = {
                     items: [{
                               type: "category",
                               label: "ERC20",
-                              items: ["develop/ethereum-polygon/matic-js/plasma/erc20/index", 
+                              items: ["develop/ethereum-polygon/matic-js/plasma/erc20/index",
                                       "develop/ethereum-polygon/matic-js/plasma/erc20/get-balance",
                                       "develop/ethereum-polygon/matic-js/plasma/erc20/approve",
                                       "develop/ethereum-polygon/matic-js/plasma/erc20/approve-max",
@@ -239,7 +239,7 @@ module.exports = {
                             {
                               type: "category",
                               label: "ERC721",
-                              items: ["develop/ethereum-polygon/matic-js/plasma/erc721/index", 
+                              items: ["develop/ethereum-polygon/matic-js/plasma/erc721/index",
                                       "develop/ethereum-polygon/matic-js/plasma/erc721/get-tokens-count",
                                       "develop/ethereum-polygon/matic-js/plasma/erc721/get-token-id-at-index-for-user",
                                       "develop/ethereum-polygon/matic-js/plasma/erc721/get-all-tokens",
@@ -483,6 +483,11 @@ module.exports = {
       label: "DID Implementation",
       items: ["develop/did-implementation/introduction","develop/did-implementation/getting-started"]
     },
+    {
+      type: "category",
+      label: "API Documentation",
+      items: ["develop/api-documentation/getting-started-rpc"]
+    },
   ],
   Integrate: [
     "integrate/quickstart",
@@ -521,77 +526,111 @@ module.exports = {
       items: [
           "develop/network-details/technical-requirements",
           "integrate/full-node-deployment",
-          "integrate/full-node-binaries"
+          "integrate/full-node-binaries",
+          "integrate/install-gcp",
         ],
     },
   ],
-  Validate: [
+  Maintain: [
     {
       type: "category",
-      label: "Overview",
+      label: "Knowledge Base",
       items: [
-        "validate/validator/introduction",
+        "maintain/polygon-basics/who-is-delegator",
+        "maintain/polygon-basics/who-is-validator",
+        "maintain/polygon-basics/liquid-delegation",
+        "maintain/polygon-basics/proposers-producers-selection",
+        "maintain/polygon-basics/checkpoint-mechanism",
+        "maintain/validator/rewards",
         {
           type: "category",
-          label: "Core Components",
+          label: "Validator Overview",
           items: [
-            "validate/validator/core-components/heimdall-chain",
-            "validate/validator/core-components/bor-chain",
-            "validate/validator/core-components/checkpoint-mechanism",
-            "validate/validator/core-components/proposer-producer-selection",
-            "validate/validator/core-components/key-management",
-            // "validate/validator/bridge",
-            "validate/validator/core-components/staking",
-            "validate/validator/core-components/derivatives",
-            "validate/validator/core-components/proposer-bonus",
-            "validate/validator/core-components/transaction-fees",
-            "validate/validator/core-components/state-sync-mechanism",
+            "maintain/validator/architecture",
+            "maintain/validator/responsibilities",
+            "maintain/validator/core-components/staking",
+            {
+              type: "category",
+              label: "Core Components",
+              items: [
+                "maintain/validator/core-components/heimdall-chain",
+                "maintain/validator/core-components/bor-chain",
+                "maintain/validator/core-components/checkpoint-mechanism",
+                "maintain/validator/core-components/proposer-producer-selection",
+                "maintain/validator/core-components/key-management",
+                "maintain/validator/core-components/derivatives",
+                "maintain/validator/core-components/proposer-bonus",
+                "maintain/validator/core-components/transaction-fees",
+                "maintain/validator/core-components/state-sync-mechanism",
+              ],
+            },
           ],
         },
-      ],
-    },
-    //"validate/delegator-faq",
-    // "validate/port_management",
-    {
-      type: "category",
-      label: "Validate",
-      items: [
-        "validate/validate/getting-started",
-        "validate/validate/core-components",
-        "validate/validate/validator-responsibilities",
-        "validate/validate/validator-node-system-requirements",
-        "validate/validate/run-validator-ansible",
-        "validate/validate/run-validator-binaries",
-        "validate/validate/install-gcp",
-        "validate/validate/validator-staking-operations",
-        "validate/validate/replace-validator",
-        "validate/validate/change-signer-address",
-        "validate/validate/validator-commission-operations",
-      ],
+        ],
     },
     {
       type: "category",
       label: "Delegate",
-      items: ["validate/polygon-basics/who-is-delegator",
-              "validate/delegate"
+      items: [
+        "maintain/delegate/delegate",
       ],
     },
     {
       type: "category",
-      label: "Knowledge Base",
-      items: ["validate/knowledge-base/known-issues","validate/knowledge-base/how-to",]
+      label: "Validate",
+      items: [
+        "maintain/validate/validator-index",
+        {
+          type: "category",
+          label: "Node Deployment",
+          items: [
+            "maintain/validate/validator-node-system-requirements",
+            "maintain/validate/run-validator-binaries",
+            "maintain/validate/run-validator-ansible",
+          ],
+        },
+        {
+          type: "category",
+          label: "Node Management",
+          items: [
+            "maintain/port-management",
+            "maintain/validate/change-signer-address",
+          ],
+        },
+        {
+          type: "category",
+          label: "Staking Operations",
+          items: [
+            "maintain/validate/validator-staking-operations",
+            "maintain/validate/validator-commission-operations",
+          ],
+        },
+        {
+          type: "category",
+          label: "FAQ",
+          items: [
+            "maintain/validate/faq/known-issues",
+            "maintain/validate/faq/how-to",
+            "maintain/validate/faq/validator-faq",
+          ]
+        },
+      ],
     },
-    //"validate/general-faq",
-    "validate/bug-bounty-program",
-    "validate/reporting-issues",
-    "validate/rewards",
-    "validate/validator-faq",
-    "validate/glossary",
+    {
+      type: "category",
+      label: "Govern",
+      items: [
+        "maintain/govern/governance",
+        "maintain/govern/polygon-dao",
+      ],
+    },
+    "maintain/reporting-issues",
+    "maintain/glossary",
   ],
   Contributors: [
     "contribute/orientation",
     "contribute/community-maintainers",
-    "validate/bug-bounty-program",
+    "contribute/bug-bounty-program",
     {
       type: "category",
       label: "Architecture",
