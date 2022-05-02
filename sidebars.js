@@ -557,7 +557,7 @@
                 "maintain/validator/core-components/checkpoint-mechanism",
                 "maintain/validator/core-components/key-management",
                 "maintain/validator/core-components/derivatives",
-                "maintain/validator/core-components/proposer-producer-selection",
+                "maintain/validator/core-components/proposers-producers-selection",
                 "maintain/validator/core-components/proposer-bonus",
                 "maintain/validator/core-components/transaction-fees",
                 "maintain/validator/core-components/state-sync-mechanism",
