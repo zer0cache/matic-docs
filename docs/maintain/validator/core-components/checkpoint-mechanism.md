@@ -1,6 +1,7 @@
 ---
 id: checkpoint-mechanism
 title: Checkpoint Mechanism
+sidebar_label: Checkpoints
 description: Learn how checkpointing the system state to the Ethereum mainnet works on the Polygon Network.
 keywords:
   - docs
@@ -11,9 +12,12 @@ slug: checkpoint-mechanism
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
-Polygon is *not* a Layer 1 platform as Polygon depends on the Ethereum mainnet as a Layer-1 settlement layer.
+:::info Polygon is not a Layer 1 platform
 
-Polygon depending on the Ethereum mainnet means all staking mechanics need to be in sync with the contracts on the Ethereum mainnet.
+Polygon depends on the Ethereum Mainnet as its Layer 1 Settlement Layer.
+All staking mechanics need to be in sync with the contracts on the Ethereum mainnet.
+
+:::
 
 [Proposers](../../glossary#proposer) for a checkpoint are initially selected via Tendermint’s weighted [round-robin algorithm](https://docs.tendermint.com/master/spec/consensus/proposer-selection.html). A further custom check is implemented based on the checkpoint submission success. This allows the Polygon system to decouple with Tendermint proposer selection and provides Polygon with the abilities like selecting a proposer only when the checkpoint transaction on the Ethereum mainnet succeeds or submitting a checkpoint transaction for the blocks belonging to previous failed checkpoints.
 
