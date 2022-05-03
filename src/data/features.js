@@ -1,15 +1,15 @@
 export const firstRow = [
     {
-        title: "Blockchain Basics",
+        title: "Polygon PoS",
         linkUrl: "docs/home/new-to-polygon",
         imageUrl: "img/home/blockchain-basics.svg",
-        description: "Learn about Blockchain and Polygon"
+        description: "Learn about Polygon PoS, how to develop Dapps, and how to become a validator"
     },
     {
-        title: "Dapp Developers",
-        linkUrl: "docs/develop/getting-started",
-        imageUrl: "img/home/dapp-developers.svg",
-        description: "Complete information including easy tutorials you need to build, deploy, and manage apps on Polygon"
+        title: "Polygon Nightfall",
+        linkUrl: "docs/nightfall/introduction/overview",
+        imageUrl: "docs/nightfall/imgs/Nightfall.png",
+        description: "Polygon Nightfall's main value proposition is to enable secure, private, and low-cost transfers of data in a decentralized network."
     },
     {
         title: "Polygon Edge",
@@ -64,5 +64,3 @@ export const thirdRow = [
         description: "Interact with Ethereum and Polygon Chain"
     },
 ];
-
-

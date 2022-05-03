@@ -6,7 +6,12 @@
  */
 
  module.exports = {
-  introduction: [
+
+  PoS: [
+  {
+  type: "category",
+  label: "Core Concepts",
+  items: [
     "home/new-to-polygon",
     {
       type: "category",
@@ -36,7 +41,12 @@
     "home/architecture/security-models",
     "home/faq",
   ],
-  development: [
+},
+////////////////////////////////////////////////
+    {
+    type: "category",
+    label: "Develop",
+    items: [
     "develop/getting-started",
     {
       type: "category",
@@ -488,51 +498,16 @@
       type: "category",
       label: "API Documentation",
       items: ["develop/api-documentation/getting-started-rpc"]
-    },
-  ],
-  Integrate: [
-    "integrate/quickstart",
-    {
-      type: "category",
-      label: "Network Information",
-      items: [
-        "integrate/network",
-        {
-          type: "category",
-          label: "Network Details",
-          items: [
-            "integrate/network-detail",
-            {
-              type: "link",
-              label: "Polygon-Mainnet",
-              href: "https://github.com/maticnetwork/static/blob/master/network/mainnet/v1/index.json",
-            },
-            {
-              type: "link",
-              label: "Mumbai",
-              href: "https://static.matic.network/network/testnet/mumbai/index.json",
-            },
-          ],
-        },
-        {
-          type: "link",
-          label: "Polygon Faucet",
-          href: "https://faucet.polygon.technology/",
-        },
-      ],
-    },
-    {
-      type: "category",
-      label: "Advanced",
-      items: [
-          "develop/network-details/technical-requirements",
-          "integrate/full-node-deployment",
-          "integrate/full-node-binaries",
-          "integrate/install-gcp",
-        ],
-    },
-  ],
-  Maintain: [
+    }
+]
+},
+
+//////////////////////////////////////////////////////////
+
+{
+type: "category",
+label: "Maintain",
+items: [
     {
       type: "category",
       label: "Knowledge Base",
@@ -625,8 +600,64 @@
     },
     "maintain/reporting-issues",
     "maintain/glossary",
-  ],
-  Contributors: [
+  ]
+},
+
+///////////////////////////////////////////////
+
+{
+type: "category",
+label: "Integrate",
+items: [
+    "integrate/quickstart",
+    {
+      type: "category",
+      label: "Network Information",
+      items: [
+        "integrate/network",
+        {
+          type: "category",
+          label: "Network Details",
+          items: [
+            "integrate/network-detail",
+            {
+              type: "link",
+              label: "Polygon-Mainnet",
+              href: "https://github.com/maticnetwork/static/blob/master/network/mainnet/v1/index.json",
+            },
+            {
+              type: "link",
+              label: "Mumbai",
+              href: "https://static.matic.network/network/testnet/mumbai/index.json",
+            },
+          ],
+        },
+        {
+          type: "link",
+          label: "Polygon Faucet",
+          href: "https://faucet.polygon.technology/",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Advanced",
+      items: [
+          "develop/network-details/technical-requirements",
+          "integrate/full-node-deployment",
+          "integrate/full-node-binaries",
+          "integrate/install-gcp",
+        ],
+    }
+  ]
+},
+
+
+///////////////////////////////////////////////////
+{
+type: "category",
+label: "Contribute",
+items: [
     "contribute/orientation",
     "contribute/community-maintainers",
     "contribute/bug-bounty-program",
@@ -709,10 +740,16 @@
         },
 
         "home/architecture/security-models",
-      ],
-    },
-  ],
-  faq: [
+      ]
+    }
+  ]
+},
+
+//////////////////////////////////////////////////
+{
+  type: "category",
+  label: "FAQs",
+  items: [
     "faq/general-faq",
     "faq/technical-faqs",
     // "faq/delegator-faq",
@@ -732,4 +769,20 @@
     "faq/widget-faq",
     "faq/wallet-list",
   ],
+},
+],
+
+//////////////////////////////////
+
+nightfall: [
+      "nightfall/introduction/overview",
+      {
+        type: "category",
+        label: "Network Deployments",
+        items: [
+          "nightfall/deployments/mainnet",
+          "nightfall/deployments/testnet",
+        ],
+      },
+]
 };

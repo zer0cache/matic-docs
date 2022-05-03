@@ -170,36 +170,6 @@ module.exports = {
       },
       items: [
         {
-          to: "docs/home/new-to-polygon",
-          label: "Core Concepts",
-          position: "left",
-          activeBasePath: "docs/home",
-        },
-        {
-          to: "docs/develop/getting-started",
-          label: "Develop",
-          position: "left",
-          activeBasePath: "docs/develop",
-        },
-        {
-          to: "docs/maintain/polygon-basics/who-is-delegator", 
-          label: "Maintain",
-          position: "left",
-          activeBasePath: "docs/maintain",
-        },
-        {
-          to: "docs/integrate/quickstart",
-          label: "Integrate",
-          position: "left",
-          activeBasePath: "docs/integrate",
-        },
-        {
-          to: "docs/contribute/orientation",
-          label: "Contribute",
-          position: "left",
-          activeBasePath: "docs/contribute",
-        },
-        {
           label: "Support",
           href: "https://polygon.technology/developer-support-program/",
           position: "right",
@@ -209,17 +179,6 @@ module.exports = {
           position: "right",
           className: "header-github-link",
           "aria-label": "GitHub repository",
-        },
-        {
-          label: "Polygon Edge",
-          href: "https://sdk-docs.polygon.technology/docs/overview/",
-          position: "left",
-        },
-        {
-          to: "docs/faq/technical-faqs",
-          label: "FAQ",
-          position: "left",
-          activeBasePath: "docs/faq",
         },
       ],
     },
