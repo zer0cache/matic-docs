@@ -37,7 +37,7 @@ Polygon is allocating 12% of its total supply of 10 billion tokens to fund the s
 
 First year will see the maximum amount of tokens allocated as staking rewards. This is allocated in a way to ensure gradual decoupling of staking rewards from being the dominant component of the validator rewards.
 
-See also [Rewards](/docs/validate/rewards).
+See also [Rewards](https://docs.polygon.technology/docs/maintain/validator/rewards/).
 
 ### Can I participate in the staking process, even if I do not want to run a node?
 
