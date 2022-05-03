@@ -8,9 +8,10 @@ keywords:
   - matic
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
+
 **How to add custom restrictions to your ERC20 token on Polygon**
 
-ERC20 tokens on the Polygon chain are standard contracts, auto-deployed by the Plasma root chain contracts, while registering a new ERC20 token on the Polygon. These cannot be modified, in order to ensure all state transitions are mapped to fraud proofs in the root chain contracts, which basically allow these contracts to maintain the same security as the Ethereum network - this is a key component of the Plasma framework (fraud proofs).
+ERC20 tokens on the Polygon chain are standard contracts, auto-deployed by the Plasma root chain contracts, while registering a new ERC20 token on the Polygon. These cannot be modified, in order to ensure all state transitions are mapped to fraud proofs in the root chain contracts, which basically allow these contracts to maintain the same security as the Ethereum network.
 
 However, in a real-world scenario, the ERC20 token owner may need to add custom restrictions on the contract, especially on the `transfer` function. 
 

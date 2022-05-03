@@ -12,7 +12,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 ## What is Polygon Network?
 
-Polygon Network is a Layer 2 scaling solution that achieves scale by utilizing sidechains for off-chain computation, while ensuring asset security using the Plasma framework and a decentralized network of Proof-of-Stake (PoS) validators.
+Polygon Network is a Layer 2 scaling solution that achieves scale by utilizing sidechains for off-chain computation, while ensuring asset security and decentralization through Proof-of-Stake (PoS) validators.
 
 See also [What Is Polygon](/docs/home/polygon-basics/what-is-polygon).
 

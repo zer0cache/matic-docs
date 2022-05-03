@@ -9,7 +9,10 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 ## What is Polygon?
 
-Polygon is a sidechain based scaling solution for public blockchains. It is based on an adapted implementation of Plasma framework. Polygon provides scalability while ensuring a superior user experience in a secured and decentralized manner. It has a working implementation for Ethereum on Kovan Testnet. Polygon intends to support other blockchains in the future which will enable it to provide interoperability features alongside offering scalability to existing public blockchains.
+Polygon is a sidechain based scaling solution for public blockchains. Polygon provides scalability while 
+ensuring a superior user experience in a secured and decentralized manner. It has a working implementation 
+for Ethereum on Kovan Testnet. Polygon intends to support other blockchains in the future which will enable 
+it to provide interoperability features alongside offering scalability to existing public blockchains.
 
 ## How is Polygon different from other implementations of Plasma?
 
@@ -25,7 +28,7 @@ Polygon Network is a "side chain" solution where Ethereum mainchain assets, i.e.
 
 - L2 scaling solutions
 
-Polygon is committed to achieving scale with decentralization. Polygon uses periodic checkpoints and fraud proofs, as described in Plasma framework. When users want to withdraw their assets, they use the checkpoints to prove their assets on side-chain, while fraud proofs are needed to challenge fraud or any bad behavior and slash stakers.
+Polygon is committed to achieving scale with decentralization. Polygon uses periodic checkpoints and fraud proofs. When users want to withdraw their assets, they use the checkpoints to prove their assets on side-chain, while fraud proofs are needed to challenge fraud or any bad behavior and slash stakers.
 
 Other projects like Loom are also offering L2 scaing solutions. Loom recently announced plans of Zombiechain that may have similarities to Polygon. But there two key elements that we differ on:
 
@@ -64,8 +67,6 @@ Also, Polygon's core focus on creating applications having an enhanced user expe
 
 ## How does Polygon compare with other sidechain solutions like POA/Go-Chain?
 
-Polygon's biggest differentiator is Plasma Framework which ensures Decentralization and Security of side chain transactions.
-
 Projects like POA use block producers notarised by Government and Go-Chain relies on institutions across various countries. Such public block producers have a big chance of getting influenced by powerful external agencies and self-interests. Also, side chain transactions are secured only by side chain consensus in which the participants are very low in number 3-25 while on Polygon, all side transactions are secured by multiple mechanisms on the side chain as well as mainchain.
 
 On sidechain, any transactions done by Block producer layer are verified and checkpointed to the mainchain by a highly decentralized checkpointing layer. So if any fraudulent transaction happens on sidechain it can be detected and handled by the checkpointing layer. Even in extreme and highly unlikely scenario wherein the block producer layer as well as the checkpointing layer both collude, even then Mainchain has fraud proofs on which anyone from the public can come and challenge any transaction that they deem fraudulent on the sidechain. If the challenge is successful, there is a huge economic disincentive/financial punishment to the colluding parties as their stakes are slashed. Also, the public challenger is rewarded with slashed stakes of the fraudulent sidechain actors.
@@ -74,21 +75,9 @@ This makes Polygon an economically incentivized side chain network which has a h
 
 Secondly, capacity and TPS of Polygon sidechains are much higher than that of POA and Go-chain. Especially when Polygon can have thousands of transactions while POA and Go-chain are single sidechains which have a higher limit of a few thousand transactions.
 
-<!--## How will Multi Chain Support work?
-
-Polygon uses Plasma framework which has few key principles. In simple words, proofs of the transactions happening off chain should be pushed on Mainchain, Fraud proofs on the mainchains and safe exit mechanisms in case of a fraudulent activity for ex. Exit queues.
-
-The same mechanisms can be implemented on any smart contract enabled chain to support side chains.
-
-Basically any asset being deposited to Polygon is deposited as a equivalent protocol contract. For example an ERC20 on Ethereum Mainchain is deployed as a ERC20 on the Polygon sidechain. Similarly for ERC721 or any other standard. The same will go for say, a NEP5 standard. It will have an equivalent protocol contract on the Polygon side chain.
-
-Also, if by Multi Chain support you mean multiple side chains, then yes Polygon checkpointing layer can support multiple side chains. A single side chain can have tens of thousands of TPS. Multiple side chains can provide a capacity of millions of transactions per second to Polygon.
-
-The Plasma whitepaper itself has made it very clear on how multiple sidechains can be implemented. The Plasma sidechain tree architecture is the best way to implement this. You can have a number of side-chains of arbitrary depth, with different use cases possible as you go up and down the tree. Sidechain exits are an important design consideration in Plasma, and therefore, we will need to implement multiple sidechains, because if exits happen in one child chain, users can easily shift to another side chain. The entire element of the Proof of Stake layer is to mitigate the possibility of such exits, so that user experience is not spoilt. -->
-
 ## Via what principles will new Side Chains be added? Will there be any special requirements for private companies' local Side Chains?
 
-As mentioned above, sidechains for a single Layer 1 blockchain (say Ethereum) can be implemented using the Plasma framework. Relative to state channels, Plasma represents a superior alternative to scaling frameworks, chiefly due to the security guarantees provided by the framework - which basically say that users will never lose funds in any eventuality. Sure, there could be delays in getting back the money, but a Byzantine Plasma operator cannot create money out of thin air, or double spend a transaction.
+Relative to state channels, Plasma represents a superior alternative to scaling frameworks, chiefly due to the security guarantees provided by the framework - which basically say that users will never lose funds in any eventuality. Sure, there could be delays in getting back the money, but a Byzantine Plasma operator cannot create money out of thin air, or double spend a transaction.
 
 Polygon will strive to be a completely open and public blockchain infra in the future wherein the economic incentives/disincentives will primarily drive the security and stability of the system. So anyone should be able to join the system and participate in the consensus. In the network seeding stage however, initially Polygon will have to play a larger role to enable side chains.
 
@@ -102,8 +91,7 @@ Polygon is aiming to build a DApp developer ecosystem. Since it uses an account-
 
 ## Will side chains also be synced with the Mainchain (Ethereum)?
 
-Absolutely! As discussed previously, we are implementing the Polygon infrastructure on the foundation of Plasma.
-For this, Plasma framework mandates proofs of the transactions/blocks produced on the side chains to be published on the mainchain. The public checkpointing layer will validate all the transactions happening on the side chains and publish the proofs to the mainchain. To ensure foolproof security of side chain transactions, the mainchain Plasma contract contains various kinds of Fraud Proofs where any sidechain transactions can be challenged for any fraudulent activity. If a challenger succeeds, the stakes of the side chain actors involved in the fraud are slashed and are transferred to the challenger. This is equivalent to an ever running high stake bug bounty.A good diagram for understanding is as below:.
+Absolutely. The public checkpointing layer will validate all the transactions happening on the side chains and publish the proofs to the mainchain. To ensure foolproof security of side chain transactions, the mainchain Plasma contract contains various kinds of Fraud Proofs where any sidechain transactions can be challenged for any fraudulent activity. If a challenger succeeds, the stakes of the side chain actors involved in the fraud are slashed and are transferred to the challenger. This is equivalent to an ever running high stake bug bounty.A good diagram for understanding is as below:.
 
 ![Screenshot](../../static/img/matic/Architecture.png)
 
