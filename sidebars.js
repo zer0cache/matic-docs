@@ -32,7 +32,7 @@
         "home/polygon-basics/what-is-proof-of-stake"
       ]
     },
-    "home/architecture/polygon-architecture",
+    "contribute/polygon-architecture",
     "home/architecture/security-models",
     "home/faq",
   ],
@@ -393,7 +393,6 @@
       type: "category",
       label: "Architecture",
       items: [
-        "contribute/polygon-architecture",
         {
           type: "category",
           label: "Heimdall",
