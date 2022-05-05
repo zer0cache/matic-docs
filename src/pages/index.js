@@ -5,7 +5,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
-import { firstRow, secondRow, networkBanner } from "../data/features";
+import { firstRow, secondRow, thirdRow, networkBanner } from "../data/features";
 import SearchBar from '@theme-original/SearchBar';
 
 function NetworkBanner({title, class_name, description, linkUrl, imageUrl}) {
@@ -45,6 +45,8 @@ function FirstRow({ title, description, linkUrl, imageUrl }) {
   );
 }
 
+
+
 function SecondRow({ title, description, linkUrl, imageUrl }) {
   // const imgUrl = useBaseUrl(imageUrl);
   return (
@@ -62,6 +64,25 @@ function SecondRow({ title, description, linkUrl, imageUrl }) {
   );
 }
 
+function ThirdRow({ title, description, linkUrl, imageUrl }) {
+  // const imgUrl = useBaseUrl(imageUrl);
+  return (
+
+    <div className="col-md-4 p-8">
+      <Link to={useBaseUrl(linkUrl)} activeClassName="active">
+        <div className="show-card">
+          <div className="icon-wrapper">
+            <img src={useBaseUrl(imageUrl)} alt={title} className="icon" />
+          </div>
+          <div className="title">{title}</div>
+          <div className="descriptions">{description}</div>
+        </div>
+      </Link>
+    </div>
+
+  );
+}
+
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
@@ -69,8 +90,8 @@ function Home() {
     <Layout>
       <div
         className="bootstrap-wrapper"
-      >
-        <h1 align="center" style={{ fontWeight: '600' }}> Welcome to the Docs of all Polygon Products</h1>
+      >        
+        <h1 align="center" style={{ fontWeight: '600' }}> The Official Polygon Docs</h1>
           <body>
            <center>
             <SearchBar/>{' '}
@@ -98,6 +119,13 @@ function Home() {
               secondRow.map((props, idx) => (
                 <SecondRow key={idx} {...props} />
               ))}{" "}
+          <div className="row">
+            {thirdRow &&
+              thirdRow.length &&
+              thirdRow.map((props, idx) => (
+                <ThirdRow key={idx} {...props} />
+              ))}{" "}
+          </div>
           </div>
         </div>
       </div>

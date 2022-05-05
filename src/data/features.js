@@ -1,15 +1,30 @@
 export const firstRow = [
     {
+        title: "Basics",
+        linkUrl: "docs/home/new-to-polygon",
+        imageUrl: "img/home/blockchain-basics.svg",
+        description: "Learn about the basics of Polygon."
+    },
+    {
+        title: "Validate",
+        linkUrl: "docs/contribute/orientation",
+        imageUrl: "img/home/core-contributors.svg",
+        description: "Learn how to stake and setup you own nodes to maintain the networks"
+    },
+    {
+        title: "Integrate",
+        linkUrl: "docs/contribute/orientation",
+        imageUrl: "img/home/core-contributors.svg",
+        description: "Learn about how to integrate with Polygon."
+    },
+];
+
+export const secondRow = [
+    {
         title: "Polygon PoS",
         linkUrl: "docs/home/new-to-polygon",
         imageUrl: "img/home/blockchain-basics.svg",
-        description: "Learn about Polygon PoS, how to develop Dapps, and how to become a validator"
-    },
-    {
-        title: "Polygon Nightfall",
-        linkUrl: "docs/nightfall/introduction/overview",
-        imageUrl: "docs/nightfall/imgs/Nightfall.png",
-        description: "Polygon Nightfall's main value proposition is to enable secure, private, and low-cost transfers of data in a decentralized network."
+        description: "An EVM compatible Ethereum sidechain that follows delegated proof of stake."
     },
     {
         title: "Polygon Edge",
@@ -18,31 +33,54 @@ export const firstRow = [
         imageUrl: "img/home/polygon-sdk.svg",
         description: "A modular and extensible framework for building Ethereum-compatible blockchain networks."
     },
-
-];
-
-export const secondRow = [
     {
-        title: "Validators",
-        linkUrl: "docs/maintain/polygon-basics/who-is-validator",
-        imageUrl: "img/home/core-contribution.svg",
-        description: 'Learn how to stake with Polygon, and setup you own nodes to maintain the network and earn rewards'
+        title: "Polygon Supernets",
+        linkUrl: "docs/nightfall/introduction/overview",
+        imageUrl: "docs/nightfall/imgs/Nightfall.png",
+        description: "Application-specific chains that are interoperable, scalable & secure, powered by Polygon Edge."
     },
-    {
-        title: "Integration ",
-        linkUrl: "docs/integrate/quickstart",
-        imageUrl: "img/home/integration.svg",
-        description: "Key information for projects looking to integrate with Polygon. Wallets, developer tools, oracles and more - get all the info you need"
-    },
-    {
-        title: "Core Contributors",
-        linkUrl: "docs/contribute/orientation",
-        imageUrl: "img/home/core-contributors.svg",
-        description: "Contribute and get involved with the Polygon code base. Spin up a local testnet, or just submit a Pull Request on one of our repos"
-    }
 ];
 
 export const thirdRow = [
+    {
+        title: "Polygon Avail",
+        linkUrl: "docs/maintain/polygon-basics/who-is-validator",
+        imageUrl: "img/home/core-contribution.svg",
+        description: 'A general-purpose, scalable, data availability-focused blockchain.'
+    },
+    {
+        title: "Polygon Hermez",
+        linkUrl: "docs/nightfall/introduction/overview",
+        imageUrl: "docs/nightfall/imgs/Nightfall.png",
+        description: "A zk-rollup solution for scaling payments and token transfers."
+    },
+    {
+        title: "Polygon Zero",
+        linkUrl: "docs/nightfall/introduction/overview",
+        imageUrl: "docs/nightfall/imgs/Nightfall.png",
+        description: "A highly scalable, Ethereum-compatiable zk-rollup."
+    },
+    {
+        title: "Polygon Miden",
+        linkUrl: "docs/nightfall/introduction/overview",
+        imageUrl: "docs/nightfall/imgs/Nightfall.png",
+        description: "A STARK-based zk-rollup solution that supports arbitrary smart contracts"
+    },
+    {
+        title: "Polygon Nightfall",
+        linkUrl: "docs/maintain/polygon-basics/who-is-validator",
+        imageUrl: "img/home/core-contribution.svg",
+        description: 'The first rollup solution designed for enterprises that supports private transactions'
+    },
+    {
+        title: "Polygon ID",
+        linkUrl: "docs/integrate/quickstart",
+        imageUrl: "img/home/integration.svg",
+        description: "A blockchain-native identity and authentication solution."
+    },
+];
+
+export const FourthRow = [
     {
         title: "Key Management",
         // imageUrl: [{card:"img/basic.svg" , basic:"img/basic.svg"}],
