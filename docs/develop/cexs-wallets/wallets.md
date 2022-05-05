@@ -35,7 +35,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 |23 |Liquality       |Available       |:white_check_mark:       |           |             |:white_check_mark:      |No                  |Non-custodial              |                         |
 |24 |Minerva         |Available       |:white_check_mark:       |           |             |:white_check_mark:      |Yes                 |Non-custodial              |                         |
 |25 |Coinhub         |Available       |:white_check_mark:       |:white_check_mark:   |             |              |No                  |Non-custodial              |                         |
-|26 |BeePay          |Available       |:white_check_mark:       |:white_check_mark:   |             |:white_check_mark:      |No                  |Non-custodial              |                         |
+|26 |BeFi Wallet         |Available       |:white_check_mark:       |:white_check_mark:   |             |:white_check_mark:      |No                  |Non-custodial              |                         |
 |27 |Sapiency        |Available       |:white_check_mark:       |           |             |              |No                  |Non-custodial              |                         |
 |28 |Safepal wallet  |Available       |:white_check_mark:       |:white_check_mark:   |             |:white_check_mark:      |Yes (Simplex)       |Non-custodial              |Not tracking             |
 |29 |Infinity wallet |Available (Soon)|:white_check_mark:       |           |             |:white_check_mark:      |No                  |Non-custodial              |                         |
