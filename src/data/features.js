@@ -3,7 +3,7 @@ export const firstRow = [
         title: "Polygon PoS",
         linkUrl: "docs/home/new-to-polygon",
         imageUrl: "img/home/blockchain-basics.svg",
-        description: "Polygon PoS is a Layer 2 scaling solution for Ethereum-based public blockchains."
+        description: "A Layer 2 proof of stake scaling solution for Ethereum-based public blockchains."
     },
     {
         title: "Polygon Edge",
@@ -16,7 +16,7 @@ export const firstRow = [
         title: "Polygon Supernets: WIP",
         linkUrl: "",
         imageUrl: "img/supernet.svg",
-        description: "Application-specific chains that are interoperable, scalable & secure, powered by Polygon Edge."
+        description: "Application-specific chains that are interoperable, scalable & secure: powered by Polygon Edge."
     },
 ];
 
@@ -58,19 +58,19 @@ export const thirdRow = [
         title: "Polygon Miden: WIP",
         linkUrl: "",
         imageUrl: "img/miden.svg",
-        description: "A STARK-based zk-rollup solution that supports arbitrary smart contracts"
+        description: "A STARK-based zk-rollup solution that supports arbitrary smart contracts."
     },
     {
         title: "Polygon Nightfall",
         linkUrl: "docs/nightfall/introduction/overview",
         imageUrl: "docs/nightfall/imgs/Nightfall.png",
-        description: "Nightfall is an Optimist Rollup aimed to lower the transactions cost of ERC20, ERC721 and ERC1155 token private transfers."
+        description: "An optimistic rollup solution designed for enterprises that supports private transactions."
     },
     {
         title: "Polygon Avail",
         linkUrl: "",
         imageUrl: "img/avail.svg",
-        description: 'A general-purpose, scalable, data availability-focused blockchain. Avail can allocate data transactions in a scalable manner and check whether the stored data is available. '
+        description: 'A general-purpose, scalable, data availability-focused blockchain.'
     },
     {
         title: "Polygon ID: WIP",
