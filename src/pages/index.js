@@ -45,8 +45,6 @@ function FirstRow({ title, description, linkUrl, imageUrl }) {
   );
 }
 
-
-
 function SecondRow({ title, description, linkUrl, imageUrl }) {
   // const imgUrl = useBaseUrl(imageUrl);
   return (
@@ -90,10 +88,12 @@ function Home() {
     <Layout>
       <div
         className="bootstrap-wrapper"
-      >        
-        <h1 align="center" style={{ fontWeight: '600' }}> The Official Polygon Docs</h1>
+      > 
+        <br/>
+        <h1 align="center" style={{ fontWeight: '600' }}> The Official Polygon Documentation</h1>
           <body>
            <center>
+            <br/>
             <SearchBar/>{' '}
            </center>
           </body>
@@ -126,6 +126,9 @@ function Home() {
                 <ThirdRow key={idx} {...props} />
               ))}{" "}
           </div>
+          <br/>
+          <br/>
+          <br/>
           </div>
         </div>
       </div>
