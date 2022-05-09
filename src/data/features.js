@@ -51,7 +51,7 @@ export const thirdRow = [
     {
         title: "Polygon Nightfall",
         linkUrl: "docs/nightfall/introduction/overview",
-        imageUrl: "docs/nightfall/imgs/Nightfall.png",
+        imageUrl: "img/Nightfall.png",
         description: "An optimistic rollup solution designed for enterprises that supports private transactions."
     },
     {

@@ -124,8 +124,14 @@ module.exports = {
           activeBasePath: "docs/contribute",
         },
         {
-          to: "https://polygon.technology/community/",
+          to: "docs/faq/technical-faqs",
+          label: "FAQ",
+          position: "right",
+          activeBasePath: "docs/faq",
+        },
+        {
           label: "Community",
+          href: "https://polygon.technology/community/",
           position: "right",
         },
         {
@@ -134,17 +140,17 @@ module.exports = {
           position: "right",
         },
         {
-          to: "docs/faq/technical-faqs",
-          label: "FAQ",
-          position: "right",
-          activeBasePath: "docs/faq",
-        },
-        {
           href: "https://github.com/maticnetwork",
           position: "right",
           className: "header-github-link",
           "aria-label": "GitHub repository",
         },
+        /*
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
+        */
       ],
     },
   },
