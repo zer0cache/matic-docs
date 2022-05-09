@@ -1,5 +1,26 @@
 export const firstRow = [
     {
+        title: "Develop a Dapp",
+        linkUrl: "docs/develop/getting-started",
+        imageUrl: "img/develop.png",
+        description: "Build your blockchain application and deploy on Polygon."
+    },
+    {
+        title: "Operate a Node",
+        linkUrl: "docs/maintain/validate/getting-started",
+        imageUrl: "img/validate.png",
+        description: "Secure the network by staking and operating a node on Polygon."
+    },
+    {
+        title: "Integrate a Solution",
+        linkUrl: "docs/contribute/orientation",
+        imageUrl: "img/home/integration.svg",
+        description: "Integrate your application, tool, wallet, oracle, and more with Polygon."
+    },
+];
+
+export const secondRow = [
+    {
         title: "Polygon PoS",
         linkUrl: "docs/home/new-to-polygon",
         imageUrl: "img/home/blockchain-basics.svg",
@@ -20,31 +41,10 @@ export const firstRow = [
     },
 ];
 
-export const secondRow = [
-    {
-        title: "Develop a Dapp",
-        linkUrl: "docs/develop/getting-started",
-        imageUrl: "img/develop.png",
-        description: "Build your blockchain application and deploy on the Polygon PoS."
-    },
-    {
-        title: "Operate a Node",
-        linkUrl: "docs/maintain/validate/getting-started",
-        imageUrl: "img/validate.png",
-        description: "Secure the network by staking and operating a node on the Polygon PoS chain."
-    },
-    {
-        title: "Integrate with Polygon",
-        linkUrl: "docs/contribute/orientation",
-        imageUrl: "img/home/integration.svg",
-        description: "Integrate your project, tool, or solution with the Polygon PoS chain."
-    },
-];
-
 export const thirdRow = [
     {
         title: "Polygon Avail",
-        linkUrl: "",
+        linkUrl: "https://avail-docs.matic.today/",
         imageUrl: "img/avail.svg",
         description: 'A general-purpose, scalable, data availability-focused blockchain.'
     },
@@ -73,7 +73,7 @@ export const thirdRow = [
         description: "A STARK-based zk-rollup solution that supports arbitrary smart contracts."
     },
     {
-        title: "Polygon Zero",
+        title: "Polygon Zero: WIP",
         linkUrl: "",
         imageUrl: "img/zero.svg",
         description: "A highly scalable, Ethereum-compatiable zk-rollup."

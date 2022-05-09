@@ -114,6 +114,9 @@ function Home() {
                 <FirstRow key={idx} {...props} />
               ))}{" "}
           </div>
+          <br/>
+          <br/>
+          <h1 align="center" style={{ fontWeight: '600' }}>Scale with Polygon</h1>
           <div className="row">
             {secondRow &&
               secondRow.length &&

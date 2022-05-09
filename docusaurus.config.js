@@ -163,10 +163,12 @@ module.exports = {
       hideOnScroll: true,
       logo: {
         alt: "Polygon logo",
-        src: "/img/polygon/polygon-logo.webp",
+        src: "/img/polygon/polygon-logo.svg",
         srcDark: "/img/polygon/polygon-logo-inverted.png",
         // href: 'https://docs.polygon.technology/', // default to siteConfig.baseUrl
         target: "_self", // by default, this value is calculated based on the `href` attribute (the external link will open in a new tab, all others in the current one)
+        width: 100,
+        height: 100,
       },
       items: [
         {
