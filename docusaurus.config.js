@@ -175,6 +175,12 @@ module.exports = {
           position: "right",
         },
         {
+          to: "docs/faq/technical-faqs",
+          label: "FAQ",
+          position: "right",
+          activeBasePath: "docs/faq",
+        },
+        {
           href: "https://github.com/maticnetwork",
           position: "right",
           className: "header-github-link",
