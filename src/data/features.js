@@ -13,7 +13,7 @@ export const firstRow = [
     },
     {
         title: "Integrate a Solution",
-        linkUrl: "docs/contribute/orientation",
+        linkUrl: "docs/integrate/quickstart",
         imageUrl: "img/home/integration.svg",
         description: "Integrate an application, tool, wallet, oracle, and more with Polygon."
     },
