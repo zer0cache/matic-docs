@@ -118,6 +118,12 @@ module.exports = {
           activeBasePath: "docs/home/",
         },
         {
+          to: "docs/maintain/delegate/",
+          label: "Stake",
+          position: "right",
+          activeBasePath: "docs/maintain/delegate/",
+        },
+        {
           to: "docs/contribute/orientation/",
           label: "Contribute",
           position: "right",
