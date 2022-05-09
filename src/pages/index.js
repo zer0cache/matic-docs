@@ -90,7 +90,8 @@ function Home() {
         className="bootstrap-wrapper"
       > 
         <br/>
-        <h1 align="center" style={{ fontWeight: '600' }}> The Official Polygon Documentation</h1>
+        <h2 align="center" style={{ fontWeight: '650' }}>Welcome to the Polygon Wiki</h2>
+        <h1 align="center" style={{ fontWeight: '650' }}>What Would you like to Learn?</h1>
           <body>
            <center>
             <br/>
