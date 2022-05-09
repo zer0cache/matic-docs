@@ -112,6 +112,12 @@ module.exports = {
       },
       items: [
         {
+          to: "docs/home/new-to-polygon/",
+          label: "Get Started",
+          position: "right",
+          activeBasePath: "docs/home/",
+        },
+        {
           to: "docs/contribute/orientation/",
           label: "Contribute",
           position: "right",
