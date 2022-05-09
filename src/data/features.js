@@ -2,20 +2,20 @@ export const firstRow = [
     {
         title: "Develop a DApp",
         linkUrl: "docs/develop/getting-started",
-        imageUrl: "img/develop.png",
-        description: "Build your blockchain application and deploy on Polygon."
+        imageUrl: "img/home/dapp-developers.svg",
+        description: "Build an application and deploy on Polygon."
     },
     {
         title: "Operate a Node",
         linkUrl: "docs/maintain/validate/getting-started",
-        imageUrl: "img/validate.png",
+        imageUrl: "img/home/core-contribution.svg",
         description: "Secure the network by staking and operating a node on Polygon."
     },
     {
         title: "Integrate a Solution",
         linkUrl: "docs/contribute/orientation",
         imageUrl: "img/home/integration.svg",
-        description: "Integrate your application, tool, wallet, oracle, and more with Polygon."
+        description: "Integrate an application, tool, wallet, oracle, and more with Polygon."
     },
 ];
 
