@@ -43,10 +43,22 @@ export const secondRow = [
 
 export const thirdRow = [
     {
-        title: "Polygon Zero",
+        title: "Polygon Avail",
         linkUrl: "",
-        imageUrl: "img/zero.svg",
-        description: "A highly scalable, Ethereum-compatiable zk-rollup."
+        imageUrl: "img/avail.svg",
+        description: 'A general-purpose, scalable, data availability-focused blockchain.'
+    },
+    {
+        title: "Polygon Nightfall",
+        linkUrl: "docs/nightfall/introduction/overview",
+        imageUrl: "docs/nightfall/imgs/Nightfall.png",
+        description: "An optimistic rollup solution designed for enterprises that supports private transactions."
+    },
+    {
+        title: "Polygon ID: WIP",
+        linkUrl: "",
+        imageUrl: "img/polygon-id.svg",
+        description: "A blockchain-native identity and authentication solution."
     },
     {
         title: "Polygon Hermez",
@@ -61,22 +73,10 @@ export const thirdRow = [
         description: "A STARK-based zk-rollup solution that supports arbitrary smart contracts."
     },
     {
-        title: "Polygon Nightfall",
-        linkUrl: "docs/nightfall/introduction/overview",
-        imageUrl: "docs/nightfall/imgs/Nightfall.png",
-        description: "An optimistic rollup solution designed for enterprises that supports private transactions."
-    },
-    {
-        title: "Polygon Avail",
+        title: "Polygon Zero",
         linkUrl: "",
-        imageUrl: "img/avail.svg",
-        description: 'A general-purpose, scalable, data availability-focused blockchain.'
-    },
-    {
-        title: "Polygon ID: WIP",
-        linkUrl: "",
-        imageUrl: "img/polygon-id.svg",
-        description: "A blockchain-native identity and authentication solution."
+        imageUrl: "img/zero.svg",
+        description: "A highly scalable, Ethereum-compatiable zk-rollup."
     },
 ];
 
