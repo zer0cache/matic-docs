@@ -130,7 +130,7 @@ module.exports = {
           activeBasePath: "docs/contribute",
         },
         {
-          to: "docs/faq/technical-faqs",
+          to: "docs/faq/general-faq",
           label: "FAQ",
           position: "right",
           activeBasePath: "docs/faq",
