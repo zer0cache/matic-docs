@@ -12,5 +12,5 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 
 :::tip
-If you are a validator, please read the [Validator FAQ article](../validate/validator-faq).
+If you are a validator, please read the [Validator FAQ article](../maintain/validate/faq/validator-faq.md).
 ::: 
