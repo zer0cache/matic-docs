@@ -14,64 +14,6 @@ module.exports = {
     footer: {
       links: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Home',
-              to: '/',
-            },
-            {
-              label: 'Develop',
-              to: '/docs/develop/getting-started',
-            },
-            {
-              label: 'Docs GitHub',
-              href: 'https://github.com/maticnetwork/matic-docs',
-            },
-            {
-              label: 'Support',
-              href: 'https://polygon.technology/developer-support-program/',
-            },
-            {
-              label: 'FAQs',
-              to: '/docs/faq/technical-faqs',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Polygon Community',
-              href: 'https://polygon.technology/community',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discord.com/invite/polygon',
-            },
-            {
-              href: "https://forum.polygon.technology/",
-              label: "Forum",
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/0xPolygon',
-            },
-            {
-              label: 'Reddit',
-              href: 'https://www.reddit.com/r/0xPolygon/',
-            },
-            {
-              label: 'Telegram',
-              href: 'https://t.me/polygonofficial',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/maticnetwork',
-            },
-          ],
-        },
-        {
           title: "Developers",
           items: [
           {
@@ -114,7 +56,7 @@ module.exports = {
         {
           label: "Brand Kit",
           href: "https://www.notion.so/polygontechnology/Brand-Resources-2cd18ae436584e98a6c5aae56db73058"
-      },
+        },
         {
             label: "Careers",
             href: "https://polygon.technology/careers/"
@@ -169,6 +111,17 @@ module.exports = {
         target: "_self", // by default, this value is calculated based on the `href` attribute (the external link will open in a new tab, all others in the current one)
       },
       items: [
+        {
+          to: "docs/contribute/orientation/",
+          label: "Contribute",
+          position: "right",
+          activeBasePath: "docs/contribute",
+        },
+        {
+          to: "https://polygon.technology/community/",
+          label: "Community",
+          position: "right",
+        },
         {
           label: "Support",
           href: "https://polygon.technology/developer-support-program/",

@@ -1,6 +1,6 @@
 export const firstRow = [
     {
-        title: "Develop a Dapp",
+        title: "Develop a DApp",
         linkUrl: "docs/develop/getting-started",
         imageUrl: "img/develop.png",
         description: "Build your blockchain application and deploy on Polygon."
