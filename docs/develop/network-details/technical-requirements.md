@@ -13,7 +13,7 @@ For the upcoming testnet event, this is the minimal hardware configuration:
 ### Minimal hardware Configuration for Full Node
 - RAM: 16-32 GB
 - CPU: 4-8 core CPU (t3 xLarge)
-- Storage: Minimum 650GB SSD (make sure it is extendable) 
+- Storage: Minimum 1.2TB SSD (make sure it is extendable) 
 
 While we do not favor any operating system, more secure and stable Linux server distributions (like CentOS) should be preferred over desktop operating systems (like Mac OS and Windows).
 
