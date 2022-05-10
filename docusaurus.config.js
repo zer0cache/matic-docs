@@ -118,7 +118,7 @@ module.exports = {
         alt: "Polygon logo",
         src: "/img/polygon/polygon-logo.webp",
         srcDark: "/img/polygon/polygon-logo-inverted.png",
-        width: 100,
+        // width: 100,
         // height: 500,
         // href: 'https://docs.polygon.technology/', // default to siteConfig.baseUrl
         target: "_self", // by default, this value is calculated based on the `href` attribute (the external link will open in a new tab, all others in the current one)
