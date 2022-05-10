@@ -113,13 +113,27 @@ For Binaries:
 
 ### 4. Error: Wrong Block.Header.AppHash. Expected xxxx
 
-This usually occurs due to an incorrect installation of heimdall. You can follow the steps below to rectify this:
+This error usually occurs when Heimdall service is stuck on a block and there are no Rewind options available on Heimdall.
 
-run 
+To resolve this, you need to reset Heimdall completely:
 
-    heimdalld unsafe-reset-all 
+```jsx
+    sudo service heimdalld stop
 
-and start Heimdall services again. You can refer to this guide - https://docs.polygon.technology/docs/validate/mainnet/validator-guide
+    heimdalld unsafe-reset-all
+```
+
+After that, you should sync from the snapshot again:
+
+```jsx
+    wget -c <Snapshot URL>
+
+    tar -xzvf <snapshot file> -C <HEIMDALL_DATA_DIRECTORY>
+
+```
+
+Then start Heimdall services again.
+
 
 ### 5. From where do I create the API key?
 
