@@ -131,8 +131,8 @@ module.exports = {
           activeBasePath: "docs/home/",
         },
         {
-          to: "docs/maintain/validate/validator-staking-operations",
-          label: "Stake",
+          to: "docs/maintain/delegate",
+          label: "Delegate",
           position: "right",
           activeBasePath: "docs/maintain/delegate/",
         },
