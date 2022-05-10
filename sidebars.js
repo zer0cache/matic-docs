@@ -6,13 +6,44 @@
  */
 
  module.exports = {
-////////////////////////////////////////////////
-    
+
 develop: [
 {
     type: "category",
     label: "Develop",
     items: [
+=======
+  introduction: [
+    "home/new-to-polygon",
+    {
+      type: "category",
+      label: "Blockchain Basics",
+      items: [
+        "home/blockchain-basics/blockchain",
+        "home/blockchain-basics/blockchain-types",
+        "home/blockchain-basics/consensus-mechanism",
+        "home/blockchain-basics/ethereum",
+        "home/blockchain-basics/solidity",
+        "home/blockchain-basics/transactions",
+        "home/blockchain-basics/gas",
+        "home/blockchain-basics/accounts",
+        "home/blockchain-basics/sidechain",
+        "home/blockchain-basics/import-account-to-metamask",
+      ],
+    },
+    {
+      type: "category",
+      label: "Polygon Basics",
+      items: [
+        "home/polygon-basics/what-is-polygon",
+        "home/polygon-basics/what-is-proof-of-stake"
+      ]
+    },
+    "contribute/polygon-architecture",
+    "home/architecture/security-models",
+    "home/faq",
+  ],
+  development: [
     "develop/getting-started",
     {
       type: "category",
@@ -369,7 +400,6 @@ develop: [
       type: "category",
       label: "Architecture",
       items: [
-        "contribute/polygon-architecture",
         {
           type: "category",
           label: "Heimdall",
