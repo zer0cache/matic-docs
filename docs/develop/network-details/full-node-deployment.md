@@ -43,7 +43,7 @@ Pre-requisite:
 - Check [https://github.com/maticnetwork/node-ansible#requirements](https://github.com/maticnetwork/node-ansible#requirements) for requirements
 - You will also need to make sure that Go is not installed on your VM / Machine. Setting up your full node through ansible will run into issues if you have Go already installed, as ansible requires specific packages of Go to be installed.
 - You will also need to make sure that your VM / Machine does not have any previous setups for Polygon Validator or Heimdall or Bor. You will need to delete them as your setup will run into issues.
-- The latest version, [Heimdall v.0.2.8](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.8), contains few enhancements such as **restricting data size in state sync txs to 30Kb (when represented in bytes) and 60Kb (when represented as string)**. For example:
+- The latest version, [Heimdall v.0.2.9](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.9), contains few enhancements such as **increasing the delay time between the contract events of different validators to ensure that the mempool doesn't get filled very quickly in case of a burst of events which can hamper the progress of the chain.Additionally, the data size is restricted in state sync txs to 30Kb (when represented in bytes) and 60Kb (when represented as string)**. For example:
 ```
 Data - "abcd1234"
 Length in string format - 8
@@ -61,7 +61,7 @@ Setup full node for Testnetv4/Mumbai testnet
 - For a test run to confirm if the correct remote machine / VM is configured, run the following command:
 
 
-    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.8 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai" --list-hosts`
+    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.9 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai" --list-hosts`
 
 
     It should output the remote machine IP(s) you have configured
@@ -71,7 +71,7 @@ Setup full node for Testnetv4/Mumbai testnet
 - Setup the full node with this command:
 
 
-    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.8 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai"`
+    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.9 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai"`
 
 
 - In case you run into any issues, delete and clean the whole setup using
@@ -135,7 +135,7 @@ Pre-requisite:
 - Check [https://github.com/maticnetwork/node-ansible#requirements](https://github.com/maticnetwork/node-ansible#requirements) for requirements.
 - You will also need to make sure that Go is not installed on your VM / Machine. Setting up your full node through ansible will run into issues if you have Go already installed, as ansible requires specific packages of Go to be installed.
 - You will also need to make sure that your VM / Machine does not have any previous setups for Polygon Validator or Heimdall or Bor. You will need to delete them as your setup will run into issues.
-- The latest version, [Heimdall v.0.2.8(https://github.com/maticnetwork/heimdall/releases/tag/v0.2.8), contains few enhancements such as **restricting data size in state sync txs to 30Kb (when represented in bytes) and 60Kb (when represented as string)**. For example:
+- The latest version, [Heimdall v.0.2.9(https://github.com/maticnetwork/heimdall/releases/tag/v0.2.9), contains few enhancements such as **increasing the delay time between the contract events of different validators to ensure that the mempool doesn't get filled very quickly in case of a burst of events which can hamper the progress of the chain.Additionally, the data size is restricted in state sync txs to 30Kb (when represented in bytes) and 60Kb (when represented as string)**. For example:
 
 ```
 Data - "abcd1234"
@@ -154,7 +154,7 @@ Setup full node for Polygon mainnet
 - For a test run to confirm if the correct remote machine / VM is configured, run the following command:
 
 
-    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.8 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts`
+    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.9 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts`
 
     It should output the remote machine IP(s) you have configured
 
@@ -163,7 +163,7 @@ Setup full node for Polygon mainnet
 - Setup the full node with this command:
 
 
-    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.8 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"`
+    `ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.9 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"`
 
 - In case you run into any issues, delete and clean the whole setup using
 

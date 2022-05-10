@@ -326,7 +326,7 @@ make install
 sudo service heimdalld restart
 ```
 
-The latest version, [Heimdall v.0.2.8](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.8), contains few enhancements such as **restricting data size in state sync txs** to:
+The latest version, [Heimdall v.0.2.9](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.9), contains few enhancements such as **restricting data size in state sync txs** to:
 * **30Kb** when represented in **bytes**
 * **60Kb** when represented as **string**.
 
