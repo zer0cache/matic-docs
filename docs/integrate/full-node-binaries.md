@@ -382,11 +382,13 @@ sudo ln -nfs ~/.go/bin/go /usr/bin/go
 
 ***This is required for your full node***
 
-Next, install the latest version of Heimdall and services. Make sure you checkout the correct [released version](https://github.com/maticnetwork/heimdall/releases) on Git. Note that The latest version, [Heimdall v.0.2.9](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.9), contains a few enhancements such as **restricting data size in state sync txs** to:
-* **30Kb** when represented in **bytes**
-* **60Kb** when represented as **string**.
+Next, install the latest version of Heimdall and services. Make sure you checkout the correct [released version](https://github.com/maticnetwork/heimdall/releases) on Git. Note that the latest version, [Heimdall v.0.2.9](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.9), contains a few enhancements such as:
+1. Restricting data size in state sync txs to:
+    * **30Kb** when represented in **bytes**
+    * **60Kb** when represented as **string**.
+2. Restricting the **delay time** between the contract events of different validators to ensure that the mempool doesn't get filled very quickly in case of a burst of events which can hamper the progress of the chain.
 
-For example:
+The following example shows how the data size is restricted:
 
 ```
 Data - "abcd1234"
