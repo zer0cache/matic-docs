@@ -113,7 +113,7 @@ For Binaries:
 
 ### 4. Error: Wrong Block.Header.AppHash. Expected xxxx
 
-This error usually occurs when Heimdall service is stuck on a block and there are no Rewind options available on Heimdall.
+This error usually occurs when the Heimdall service is stuck on a block; there is no reversal method available on Heimdall.
 
 To resolve this, you need to reset Heimdall completely:
 
