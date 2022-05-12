@@ -6,7 +6,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 import { firstRow, secondRow, networkBanner } from "../data/features";
-import SearchBar from '@theme-original/SearchBar';
+/*import SearchBar from '@theme-original/SearchBar';*/
 
 function NetworkBanner({title, class_name, description, linkUrl, imageUrl}) {
   return (
@@ -69,16 +69,11 @@ function Home() {
     <Layout>
       <div
         className="bootstrap-wrapper"
-      > 
+      >
         <br/>
-        <h2 align="center" style={{ fontWeight: '650' }}>Welcome to the Polygon Wiki</h2>
-        <h1 align="center" style={{ fontWeight: '650' }}>What Would you like to Learn?</h1>
-          <body>
-           <center>
-            <br/>
-            <SearchBar/>{' '}
-           </center>
-          </body>
+        <h1 align="center" style={{ fontWeight: '650' }}>Welcome to the Polygon Wiki</h1>
+        
+
 
         <div className="container">
           <div className="row pt-40">
