@@ -132,7 +132,7 @@ After that, you should sync from the snapshot again:
 
 ```
 
-Then start Heimdall services again.
+Then, start the Heimdall services again.
 
 
 ### 5. From where do I create the API key?
