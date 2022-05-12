@@ -1,5 +1,17 @@
 export const firstRow = [
     {
+        title: "Quick Start",
+        linkUrl: "docs/home/new-to-polygon/",
+        imageUrl: "img/supernet.svg",
+        description: "Learn about the basics of blockchain and Polygon and how to get started."
+    },
+    {
+        title: "Delegate MATIC",
+        linkUrl: "docs/maintain/delegate/delegate",
+        imageUrl: "img/supernet.svg",
+        description: "Secure the network by staking MATIC tokens & delegate your stake to Polygon validators."
+    },
+    {
         title: "Develop a DApp",
         linkUrl: "docs/develop/getting-started",
         imageUrl: "img/home/dapp-developers.svg",
@@ -9,7 +21,7 @@ export const firstRow = [
         title: "Operate a Node",
         linkUrl: "docs/maintain/validate/getting-started",
         imageUrl: "img/home/core-contribution.svg",
-        description: "Secure the network by staking and operating a node on Polygon."
+        description: "Secure the network by staking and operating a node to validate on Polygon."
     },
     {
         title: "Integrate a Solution",
@@ -17,11 +29,23 @@ export const firstRow = [
         imageUrl: "img/home/integration.svg",
         description: "Integrate an application, tool, wallet, oracle, and more with Polygon."
     },
+    {
+        title: "Identify with Polygon ID",
+        linkUrl: "",
+        imageUrl: "img/polygon-id.svg",
+        description: "A blockchain-native identity and authentication solution."
+    },
 ];
 
 export const secondRow = [
     {
-        title: "Polygon PoS",
+        title: "Polygon PoS v1",
+        linkUrl: "docs/home/new-to-polygon",
+        imageUrl: "img/home/blockchain-basics.svg",
+        description: "A Layer 2 proof of stake scaling solution for Ethereum-based public blockchains."
+    },
+    {
+        title: "Polygon PoS v3",
         linkUrl: "docs/home/new-to-polygon",
         imageUrl: "img/home/blockchain-basics.svg",
         description: "A Layer 2 proof of stake scaling solution for Ethereum-based public blockchains."
@@ -39,9 +63,6 @@ export const secondRow = [
         imageUrl: "img/supernet.svg",
         description: "Application-specific chains that are interoperable, scalable & secure: powered by Polygon Edge."
     },
-];
-
-export const thirdRow = [
     {
         title: "Polygon Avail",
         linkUrl: "https://avail-docs.matic.today/",
@@ -53,12 +74,6 @@ export const thirdRow = [
         linkUrl: "docs/nightfall/introduction/overview",
         imageUrl: "img/Nightfall.png",
         description: "An optimistic rollup solution designed for enterprises that supports private transactions."
-    },
-    {
-        title: "Polygon ID: WIP",
-        linkUrl: "",
-        imageUrl: "img/polygon-id.svg",
-        description: "A blockchain-native identity and authentication solution."
     },
     {
         title: "Polygon Hermez",
@@ -77,28 +92,5 @@ export const thirdRow = [
         linkUrl: "",
         imageUrl: "img/zero.svg",
         description: "A highly scalable, Ethereum-compatiable zk-rollup."
-    },
-];
-
-export const FourthRow = [
-    {
-        title: "Key Management",
-        // imageUrl: [{card:"img/basic.svg" , basic:"img/basic.svg"}],
-        description: "Connect to Web3!!!"
-    },
-    {
-        title: "Meta Transactions",
-        // imageUrl: [{card:"img/basic.svg" , basic:"img/basic.svg"}],
-        description: "Gasless Transactions on Polygon Chain!!!"
-    },
-    {
-        title: "Realtime Updates",
-        // imageUrl: [{card:"img/basic.svg" , basic:"img/basic.svg"}],
-        description: 'Realtime updates from Ethereum Blockchain'
-    },
-    {
-        title: "Ethereum ↔️ Polygon",
-        // imageUrl: [{card:"img/basic.svg" , basic:"img/basic.svg"}],
-        description: "Interact with Ethereum and Polygon Chain"
     },
 ];

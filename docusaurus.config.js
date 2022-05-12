@@ -125,28 +125,10 @@ module.exports = {
       },
       items: [
         {
-          to: "docs/home/new-to-polygon/",
-          label: "Get Started",
-          position: "right",
-          activeBasePath: "docs/home/",
-        },
-        {
-          to: "docs/maintain/delegate/delegate",
-          label: "Delegate",
-          position: "right",
-          activeBasePath: "docs/maintain/delegate/",
-        },
-        {
           to: "docs/contribute/orientation/",
           label: "Contribute",
           position: "right",
           activeBasePath: "docs/contribute",
-        },
-        {
-          to: "docs/faq/general-faq",
-          label: "FAQ",
-          position: "right",
-          activeBasePath: "docs/faq",
         },
         {
           label: "Community",
