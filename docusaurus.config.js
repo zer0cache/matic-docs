@@ -125,6 +125,59 @@ module.exports = {
       },
       items: [
         {
+          href: 'https://polygon.technology/developers/',
+          label: "Developer Resources",
+          position: "right",
+        },
+        {
+          label: "dApps",
+          position: "right",
+          items: [
+                  {
+                    href: 'https://wallet.polygon.technology/login?next=%2Fwallet',
+                    label: 'PoS Wallet',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://wallet.polygon.technology/login?next=%2Fbridge',
+                    label: 'PoS Bridge',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://polygon.technology/staking',
+                    label: 'PoS Staking',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://wallet.polygon.technology/login?next=%2Fwidget-dashboard',
+                    label: 'PoS Widget',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://polygonscan.com/',
+                    label: 'PoS Explorer',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://hermez.io/wallet',
+                    label: 'Hermez Wallet',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://explorer.hermez.io/',
+                    label: 'Hermez Explorer',
+                    target: '_blank',
+                    rel: null,
+                  },
+                ],
+        },
+        {
           to: "docs/contribute/orientation/",
           label: "Contribute",
           position: "right",

@@ -6,7 +6,7 @@
  */
 
  module.exports = {
-     
+
   develop: [
   {
       type: "category",
@@ -72,7 +72,7 @@
           },
         ],
       },
-  
+
       {
         type: "category",
         label: "Wallets",
@@ -319,7 +319,7 @@
           "develop/ipfs",
           "develop/filecoinhelpers",
           "develop/nftstorage",
-  
+
         ],
       },
       {
@@ -348,8 +348,8 @@
           },
         ],
       },
-  
-  
+
+
       {
         type: "category",
         label: "Tutorials",
@@ -452,7 +452,7 @@
           "develop/cexs-wallets/cexs",
           "develop/cexs-wallets/wallets",
         ],
-  
+
       },
       {
         type: "category",
@@ -467,7 +467,7 @@
   ]
   },
   ],
-  
+
   maintain: [
   {
   type: "category",
@@ -568,9 +568,9 @@
     ]
   },
   ],
-  
+
   ///////////////////////////////////////////////
-  
+
   integrate: [
   {
   type: "category",
@@ -618,11 +618,11 @@
       }
     ]
   },
-  
+
   ],
-  
+
   // ############################## Header ########################################
-  
+
   basics: [
     {
     type: "category",
@@ -659,11 +659,11 @@
     ],
     }
   ],
-  
+
   delegate: [
     "maintain/delegate/delegate",
   ],
-  
+
   contribute: [
   {
       type: "category",
@@ -672,7 +672,7 @@
         "contribute/orientation",
         "contribute/community-maintainers",
         "contribute/bug-bounty-program",
-        {
+    /*    {
           type: "category",
           label: "Architecture",
           items: [
@@ -749,14 +749,14 @@
                 "contribute/state-sync/how-state-sync-works",
               ],
             },
-  
+
             "home/architecture/security-models",
           ]
-        }
+        }*/
       ],
     },
   ],
-  
+
   faq: [
       "faq/general-faq",
       "faq/technical-faqs",
@@ -777,7 +777,7 @@
       "faq/widget-faq",
       "faq/wallet-list",
   ],
-  
+
   nightfall: [
         "nightfall/introduction/overview",
         {
