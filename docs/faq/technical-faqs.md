@@ -117,7 +117,7 @@ This error usually occurs when Heimdall service is stuck on a block and there ar
 
 To resolve this, you need to reset Heimdall completely:
 
-```jsx
+```bash
     sudo service heimdalld stop
 
     heimdalld unsafe-reset-all
