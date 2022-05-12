@@ -125,7 +125,7 @@ To resolve this, you need to reset Heimdall completely:
 
 After that, you should sync from the snapshot again:
 
-```jsx
+```bash
     wget -c <Snapshot URL>
 
     tar -xzvf <snapshot file> -C <HEIMDALL_DATA_DIRECTORY>
