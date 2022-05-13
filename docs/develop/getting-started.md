@@ -70,6 +70,7 @@ All the network related details can be found in [network docs](/docs/develop/net
 - Getting to know your tools:
 
     - [Web3js](https://www.dappuniversity.com/articles/web3-js-intro), [Ethers.js](https://docs.ethers.io/v5/),[Remix](https://docs.polygon.technology/docs/develop/remix/), [Truffle](https://docs.polygon.technology/docs/develop/truffle), [Metamask](/docs/develop/metamask/overview), [Arkane](/docs/develop/wallets/arkane/intro)
+- [Develop a dApp using Fauna, Polygon and React](../develop/dapp-fauna-polygon-react)
 - [Integrating Webhooks](https://docs.alchemy.com/alchemy/guides/v2-alchemy-notify)
 - [Archive Nodes with Debug namespace](https://www.quicknode.com/chains/matic?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide)
 

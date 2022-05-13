@@ -378,7 +378,7 @@
     {
       type: "category",
       label: "Tutorials",
-      items: ["develop/pos-using-metamask", "develop/plasma-using-metamask", "develop/nft-tutorial"],
+      items: ["develop/pos-using-metamask", "develop/plasma-using-metamask", "develop/nft-tutorial", "develop/dapp-fauna-polygon-react"],
     },
     {
       type: "category",

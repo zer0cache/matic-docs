@@ -152,6 +152,7 @@ module.exports = {
       theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("prism-react-renderer/themes/dracula"),
       defaultLanguage: "javascript",
+      additionalLanguages: ['solidity']
     },
     algolia: {
       appId: 'BH4D9OD16A',
