@@ -7,7 +7,7 @@ export const firstRow = [
     },
     {
         title: "Delegate MATIC",
-        linkUrl: "docs/maintain/delegate/delegate",
+        linkUrl: "docs/maintain/delegate/delegate/",
         imageUrl: "img/supernet.svg",
         description: "Secure the network by staking MATIC tokens & delegate your stake to Polygon validators."
     },
@@ -25,7 +25,7 @@ export const firstRow = [
     },
     {
         title: "Operate a Node",
-        linkUrl: "docs/maintain/validate/getting-started",
+        linkUrl: "docs/maintain/validate/validator-index/",
         imageUrl: "img/home/core-contribution.svg",
         description: "Secure the network by staking and operating a node to validate on Polygon."
     },
