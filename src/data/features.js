@@ -12,7 +12,7 @@ export const firstRow = [
         description: "Secure the network by staking MATIC tokens & delegate your stake to Polygon validators."
     },
     {
-        title: "Participate in Governance: WIP",
+        title: "Participate in Governance: Coming Soon",
         linkUrl: "docs/maintain/govern/governance",
         imageUrl: "img/supernet.svg",
         description: "Vote on proposals and participate in the Polygon DAO."
@@ -39,7 +39,7 @@ export const firstRow = [
 
 export const secondRow = [
     {
-        title: "Polygon PoS v3: WIP",
+        title: "Polygon PoS v3: Coming Soon",
         linkUrl: "",
         imageUrl: "img/home/blockchain-basics.svg",
         description: "A Layer 2 proof of stake scaling solution for Ethereum-based public blockchains."
@@ -52,7 +52,7 @@ export const secondRow = [
         description: "A modular and extensible framework for building Ethereum-compatible blockchain networks."
     },
     {
-        title: "Polygon Supernets: WIP",
+        title: "Polygon Supernets: Coming Soon",
         linkUrl: "",
         imageUrl: "img/supernet.svg",
         description: "Application-specific chains that are interoperable, scalable & secure: powered by Polygon Edge."
@@ -76,19 +76,19 @@ export const secondRow = [
         description: "A zk-rollup solution for scaling payments and token transfers."
     },
     {
-        title: "Polygon Miden: WIP",
+        title: "Polygon Miden: Coming Soon",
         linkUrl: "",
         imageUrl: "img/miden.svg",
         description: "A STARK-based zk-rollup solution that supports arbitrary smart contracts."
     },
     {
-        title: "Polygon Zero: WIP",
+        title: "Polygon Zero: Coming Soon",
         linkUrl: "",
         imageUrl: "img/zero.svg",
         description: "A highly scalable, Ethereum-compatiable zk-rollup."
     },
     {
-        title: "Polygon ID: WIP",
+        title: "Polygon ID: Coming Soon",
         linkUrl: "",
         imageUrl: "img/polygon-id.svg",
         description: "A blockchain-native identity and authentication solution."
