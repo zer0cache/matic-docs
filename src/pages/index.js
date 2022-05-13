@@ -71,10 +71,7 @@ function Home() {
         className="bootstrap-wrapper"
       >
         <br/>
-        <h1 align="center" style={{ fontWeight: '650' }}>Welcome to the Polygon Wiki</h1>
-        
-
-
+        <h1 align="center" style={{ fontWeight: '650' }}>Get Started with Polygon</h1>
         <div className="container">
           <div className="row pt-40">
             {networkBanner &&

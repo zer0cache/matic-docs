@@ -125,9 +125,10 @@ module.exports = {
       },
       items: [
         {
-          href: 'https://polygon.technology/developers/',
-          label: "Developer Resources",
+          to: "docs/contribute/orientation/",
+          label: "Contribute",
           position: "right",
+          activeBasePath: "docs/contribute",
         },
         {
           label: "dApps",
@@ -178,10 +179,9 @@ module.exports = {
                 ],
         },
         {
-          to: "docs/contribute/orientation/",
-          label: "Contribute",
+          href: 'https://polygon.technology/developers/',
+          label: "Developer Resources",
           position: "right",
-          activeBasePath: "docs/contribute",
         },
         {
           label: "Community",

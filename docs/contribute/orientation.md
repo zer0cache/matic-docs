@@ -1,6 +1,6 @@
 ---
 id: orientation
-title: How to contribute
+title: How to Contribute
 description: We believe one of the things that makes Polygon special is its coherent design and we seek to retain this defining characteristic.
 keywords:
   - docs

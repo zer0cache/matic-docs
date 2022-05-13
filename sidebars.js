@@ -650,11 +650,11 @@
         label: "Polygon Basics",
         items: [
           "home/polygon-basics/what-is-polygon",
-          "home/polygon-basics/what-is-proof-of-stake"
+          "home/polygon-basics/what-is-proof-of-stake",
+          "home/architecture/polygon-architecture",
+          "home/architecture/security-models",
         ]
       },
-      "home/architecture/polygon-architecture",
-      "home/architecture/security-models",
       "home/faq",
     ],
     }
@@ -665,10 +665,7 @@
   ],
 
   contribute: [
-  {
-      type: "category",
-      label: "Contribute",
-      items: [
+
         "contribute/orientation",
         "contribute/community-maintainers",
         "contribute/bug-bounty-program",
@@ -753,8 +750,6 @@
             "home/architecture/security-models",
           ]
         }*/
-      ],
-    },
   ],
 
   faq: [

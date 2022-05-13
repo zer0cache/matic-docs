@@ -12,7 +12,13 @@ export const firstRow = [
         description: "Secure the network by staking MATIC tokens & delegate your stake to Polygon validators."
     },
     {
-        title: "Develop a DApp",
+        title: "Participate in Governance: WIP",
+        linkUrl: "docs/maintain/govern/governance",
+        imageUrl: "img/supernet.svg",
+        description: "Vote on proposals and participate in the Polygon DAO."
+    },
+    {
+        title: "Develop a dApp",
         linkUrl: "docs/develop/getting-started",
         imageUrl: "img/home/dapp-developers.svg",
         description: "Build an application and deploy on Polygon."
@@ -29,24 +35,12 @@ export const firstRow = [
         imageUrl: "img/home/integration.svg",
         description: "Integrate an application, tool, wallet, oracle, and more with Polygon."
     },
-    {
-        title: "Identify with Polygon ID",
-        linkUrl: "",
-        imageUrl: "img/polygon-id.svg",
-        description: "A blockchain-native identity and authentication solution."
-    },
 ];
 
 export const secondRow = [
     {
-        title: "Polygon PoS v1",
-        linkUrl: "docs/home/new-to-polygon",
-        imageUrl: "img/home/blockchain-basics.svg",
-        description: "A Layer 2 proof of stake scaling solution for Ethereum-based public blockchains."
-    },
-    {
-        title: "Polygon PoS v3",
-        linkUrl: "docs/home/new-to-polygon",
+        title: "Polygon PoS v3: WIP",
+        linkUrl: "",
         imageUrl: "img/home/blockchain-basics.svg",
         description: "A Layer 2 proof of stake scaling solution for Ethereum-based public blockchains."
     },
@@ -92,5 +86,11 @@ export const secondRow = [
         linkUrl: "",
         imageUrl: "img/zero.svg",
         description: "A highly scalable, Ethereum-compatiable zk-rollup."
+    },
+    {
+        title: "Polygon ID: WIP",
+        linkUrl: "",
+        imageUrl: "img/polygon-id.svg",
+        description: "A blockchain-native identity and authentication solution."
     },
 ];
