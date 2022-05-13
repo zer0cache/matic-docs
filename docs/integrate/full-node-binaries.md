@@ -386,7 +386,7 @@ Next, install the latest version of Heimdall and services. Make sure you checkou
 1. Restricting data size in state sync txs to:
     * **30Kb** when represented in **bytes**
     * **60Kb** when represented as **string**.
-2. Restricting the **delay time** between the contract events of different validators to ensure that the mempool doesn't get filled very quickly in case of a burst of events which can hamper the progress of the chain.
+2. Increasing the **delay time** between the contract events of different validators to ensure that the mempool doesn't get filled very quickly in case of a burst of events which can hamper the progress of the chain.
 
 The following example shows how the data size is restricted:
 
