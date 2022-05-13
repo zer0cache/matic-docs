@@ -10,6 +10,7 @@ keywords:
   - polygon
   - react
 image: https://matic.network/banners/matic-network-16x9.png 
+slug: dapp-fauna-polygon-react
 ---
 
 **dApps**, or decentralized applications, are apps built on the blockchain structure. There are different types of blockchains that applications can be built off of - some you might’ve heard of are Solana and Ethereum. These primary networks are sometimes supplemented by **sidechains**, or secondary blockchains, that run parallel to the primary blockchain. Sidechains, such as Polygon, allow for tokens and other digital assets to be used between multiple blockchains, greatly expanding the capabilities of primary blockchains and allowing use cases such as reduction of transaction fees, making primary blockchains more scalable, and having more optimized transaction traffic and capacity since sidechains only periodically update their root chain, while primary blockchains update every new block. 
