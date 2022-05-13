@@ -84,11 +84,13 @@ Install the binaries for both on the sentry and validator machines.
 [Heimdall](../validator/core-components/heimdall-chain.md) is the proof-of-stake verifier layer
 responsible for checkpointing the representation of the Plasma blocks to the Ethereum mainnet.
 
-The latest version, [Heimdall v.0.2.8](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.8), contains few enhancements such as **restricting data size in state sync txs** to:
-* **30Kb** when represented in **bytes**
-* **60Kb** when represented as **string**.
+The latest version, [Heimdall v.0.2.9](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.9), contains a few enhancements such as:
+1. Restricting data size in state sync txs to:
+    * **30Kb** when represented in **bytes**
+    * **60Kb** when represented as **string**.
+2. Increasing the **delay time** between the contract events of different validators to ensure that the mempool doesn't get filled very quickly in case of a burst of events which can hamper the progress of the chain.
 
-For example:
+The following example shows how the data size is restricted:
 
 ```
 Data - "abcd1234"
@@ -114,7 +116,7 @@ where `RELEASE_TAG` is the tag of the release version that you install.
 For instance:
 
 ```sh
-git checkout v0.2.8
+git checkout v0.2.9
 ```
 
 Once you are on the correct release, install Heimdall:

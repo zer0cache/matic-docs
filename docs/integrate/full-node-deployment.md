@@ -84,7 +84,7 @@ You must follow the exact outlined sequence of actions, otherwise you will run i
 - For a test run to confirm if the correct remote machine / VM is configured, run the following command:
 
     ```js
-    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14-beta2 heimdall_branch=v0.2.8 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai" --list-hosts
+    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14-beta2 heimdall_branch=v0.2.9 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai" --list-hosts
     ```
 
     This will be the output
@@ -99,7 +99,7 @@ You must follow the exact outlined sequence of actions, otherwise you will run i
 - Setup the full node with this command:
 
     ```js
-    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14-beta2 heimdall_branch=v0.2.8 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai"
+    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14-beta2 heimdall_branch=v0.2.9 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai"
     ```
 
 - In case you run into any issues, delete and clean the whole setup using
@@ -266,7 +266,7 @@ You have to follow the exact outlined sequence of actions, otherwise you will ru
 - For a test run to confirm if the correct remote machine / VM is configured, run the following command:
 
     ```js
-    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.8 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
+    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.9 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
     ```
 
     This will be the output
@@ -282,7 +282,7 @@ You have to follow the exact outlined sequence of actions, otherwise you will ru
 
     ```js
 
-    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.8  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"
+    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.14 heimdall_branch=v0.2.9  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"
     ```
 
 - In case you run into any issues, delete and clean the whole setup using
@@ -326,11 +326,13 @@ You have to follow the exact outlined sequence of actions, otherwise you will ru
 
 ## Start the Heimdall Service
 
-The latest version, [Heimdall v.0.2.8](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.8), contains few enhancements such as **restricting data size in state sync txs** to:
-* **30Kb** when represented in **bytes**
-* **60Kb** when represented as **string**.
+The latest version, [Heimdall v.0.2.9](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.9), contains a few enhancements such as:
+1. Restricting data size in state sync txs to:
+    * **30Kb** when represented in **bytes**
+    * **60Kb** when represented as **string**.
+2. Increasing the **delay time** between the contract events of different validators to ensure that the mempool doesn't get filled very quickly in case of a burst of events which can hamper the progress of the chain.
 
-For example:
+The following example shows how the data size is restricted:
 
 ```
 Data - "abcd1234"
@@ -395,7 +397,7 @@ Length in byte format - 4
   1. Visit [QuickNode](https://www.quicknode.com/chains/matic) and sign up for a free account
   2. Get your free trial node
   3. Use your QuickNode node to access Polygon Mainnet
-  
+
 ## Full Node and Block Explorer Access (via NOWNodes)
   1. Visit [nownodes.io](https://nownodes.io) and sign up for a free account
   2. Get your free API key
