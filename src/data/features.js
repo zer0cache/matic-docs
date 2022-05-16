@@ -14,7 +14,7 @@ export const firstRowBeginner = [
       description: "Secure the network by staking MATIC tokens & delegate your stake to Polygon validators."
   },
   {
-      title: "Participate in Governance",
+      title: "Vote with MATIC",
       status: "Beginner: Docs Coming Soon",
       linkUrl: "docs/maintain/govern/governance",
       imageUrl: "img/supernet.svg",
@@ -85,28 +85,28 @@ export const secondRow = [
     },
     {
         title: "Polygon Hermez",
-        status: "Zk Rollup",
+        status: "ZK Rollup",
         linkUrl: "https://docs.hermez.io/",
         imageUrl: "img/hermez.svg",
         description: "A zk-rollup solution for scaling payments and token transfers."
     },
     {
         title: "Polygon Miden",
-        status: "STARK-based Zk Rollup: Docs Coming Soon",
+        status: "STARK-based ZK Rollup: Docs Coming Soon",
         linkUrl: "",
         imageUrl: "img/miden.svg",
         description: "A STARK-based zk-rollup solution that supports arbitrary smart contracts."
     },
     {
         title: "Polygon Zero",
-        status: "Zk Rollup: Docs Coming Soon",
+        status: "ZK Rollup: Docs Coming Soon",
         linkUrl: "",
         imageUrl: "img/zero.svg",
         description: "A highly scalable, Ethereum-compatiable zk-rollup."
     },
     {
         title: "Polygon ID",
-        status: "Identity & Authentication: Docs Coming Soon",
+        status: "Privacy: Docs Coming Soon",
         linkUrl: "",
         imageUrl: "img/polygon-id.svg",
         description: "A blockchain-native identity and authentication solution."

@@ -105,9 +105,9 @@ function Home() {
 defaultValue="beginner"
 className="tabs"
 values={[
-{label: 'New users', value: 'beginner'},
-{label: 'Experienced users', value: 'advanced'},
-{label: 'Browse by product ', value: 'products'},
+{label: 'New Users', value: 'beginner'},
+{label: 'Experienced Users', value: 'advanced'},
+{label: 'All Products', value: 'products'},
 ]}>
 
 <TabItem value="beginner">

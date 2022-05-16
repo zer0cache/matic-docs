@@ -125,12 +125,6 @@ module.exports = {
       },
       items: [
         {
-          to: "docs/contribute/orientation/",
-          label: "Contribute",
-          position: "right",
-          activeBasePath: "docs/contribute",
-        },
-        {
           label: "dApps",
           position: "right",
           items: [
@@ -198,6 +192,12 @@ module.exports = {
           position: "right",
           className: "header-github-link",
           "aria-label": "GitHub repository",
+        },
+        {
+          to: "docs/contribute/orientation/",
+          label: "Contribute to the Wiki",
+          position: "right",
+          activeBasePath: "docs/contribute",
         },
         /*
         {
