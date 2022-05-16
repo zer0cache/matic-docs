@@ -14,8 +14,8 @@ export const firstRowBeginner = [
       description: "Secure the network by staking MATIC tokens & delegate your stake to Polygon validators."
   },
   {
-      title: "Participate in Governance: Coming Soon",
-      status: "Beginner",
+      title: "Participate in Governance",
+      status: "Beginner: Docs Coming Soon",
       linkUrl: "docs/maintain/govern/governance",
       imageUrl: "img/supernet.svg",
       description: "Vote on proposals and participate in the Polygon DAO."
@@ -25,21 +25,21 @@ export const firstRowBeginner = [
 export const firstRowAdvanced = [
     {
         title: "Develop a dApp",
-        status: "Advanced",
+        status: "Intermediate",
         linkUrl: "docs/develop/getting-started",
         imageUrl: "img/home/dapp-developers.svg",
         description: "Build an application and deploy on Polygon."
     },
     {
         title: "Operate a Node",
-        status: "Advanced",
+        status: "Intermediate",
         linkUrl: "docs/maintain/validate/validator-index/",
         imageUrl: "img/home/core-contribution.svg",
         description: "Secure the network by staking and operating a node to validate on Polygon."
     },
     {
         title: "Integrate a Solution",
-        status: "Advanced",
+        status: "Intermediate",
         linkUrl: "docs/integrate/quickstart",
         imageUrl: "img/home/integration.svg",
         description: "Integrate an application, tool, wallet, oracle, and more with Polygon."
@@ -49,7 +49,7 @@ export const firstRowAdvanced = [
 export const secondRow = [
     {
         title: "Polygon PoS",
-        status: "V3: Coming Soon",
+        status: "v3: Docs Coming Soon",
         linkUrl: "",
         imageUrl: "img/home/blockchain-basics.svg",
         description: "A Layer 2 proof of stake scaling solution for Ethereum-based public blockchains."
@@ -64,7 +64,7 @@ export const secondRow = [
     },
     {
         title: "Polygon Supernets",
-        status: "Coming Soon",
+        status: "Appchains: Docs Coming Soon",
         linkUrl: "",
         imageUrl: "img/supernet.svg",
         description: "Application-specific chains that are interoperable, scalable & secure: powered by Polygon Edge."
@@ -92,21 +92,21 @@ export const secondRow = [
     },
     {
         title: "Polygon Miden",
-        status: "STARK-based Zk Rollup: Coming Soon",
+        status: "STARK-based Zk Rollup: Docs Coming Soon",
         linkUrl: "",
         imageUrl: "img/miden.svg",
         description: "A STARK-based zk-rollup solution that supports arbitrary smart contracts."
     },
     {
         title: "Polygon Zero",
-        status: "Zk Rollup: Coming Soon",
+        status: "Zk Rollup: Docs Coming Soon",
         linkUrl: "",
         imageUrl: "img/zero.svg",
         description: "A highly scalable, Ethereum-compatiable zk-rollup."
     },
     {
         title: "Polygon ID",
-        status: "Identity & Authentication: Coming Soon",
+        status: "Identity & Authentication: Docs Coming Soon",
         linkUrl: "",
         imageUrl: "img/polygon-id.svg",
         description: "A blockchain-native identity and authentication solution."

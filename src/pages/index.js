@@ -96,7 +96,7 @@ function Home() {
         className="bootstrap-wrapper"
       >
         <br/>
-        <h1 align="center" style={{ fontWeight: '650' }}>Get Started with Polygon</h1>
+        <h1 align="center" style={{ fontWeight: '650' }}>Welcome to the Polygon Wiki</h1>
 
 
         <div className="container">
@@ -105,8 +105,8 @@ function Home() {
 defaultValue="beginner"
 className="tabs"
 values={[
-{label: 'Beginner', value: 'beginner'},
-{label: 'Advanced', value: 'advanced'},
+{label: 'New users', value: 'beginner'},
+{label: 'Experienced users', value: 'advanced'},
 {label: 'Browse by product ', value: 'products'},
 ]}>
 
@@ -118,7 +118,8 @@ networkBanner.map((props, idx) => (
  <NetworkBanner key={idx} {...props} />
 ))}{" "}
 </div>
-  <div id="Beginner" className="row">
+  <h1 align="center" style={{ fontWeight: '600' }}>Get Started with Polygon</h1>
+  <div id="Get Started" className="row">
     {firstRowBeginner &&
       firstRowBeginner.length &&
       firstRowBeginner.map((props, idx) => (
@@ -137,6 +138,7 @@ networkBanner.map((props, idx) => (
         <NetworkBanner key={idx} {...props} />
       ))}{" "}
   </div>
+  <h1 align="center" style={{ fontWeight: '600' }}>Build & Operate with Polygon</h1>
   <div className="row">
     {firstRowAdvanced &&
       firstRowAdvanced.length &&
