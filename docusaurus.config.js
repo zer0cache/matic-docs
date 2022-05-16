@@ -173,13 +173,50 @@ module.exports = {
                 ],
         },
         {
-          href: 'https://polygon.technology/developers/',
-          label: "Developer Resources",
+          label: "Community",
           position: "right",
+          items: [
+                  {
+                    href: 'https://discord.com/invite/polygon',
+                    label: 'Discord',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://forum.polygon.technology/',
+                    label: 'Forum',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://www.reddit.com/r/0xPolygon/',
+                    label: 'Reddit',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://twitter.com/0xPolygon',
+                    label: 'Twitter',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://t.me/polygonofficial',
+                    label: 'Telegram',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://polygon.technology/community/',
+                    label: 'View all communities',
+                    target: '_blank',
+                    rel: null,
+                  },
+                ],
         },
         {
-          label: "Community",
-          href: "https://polygon.technology/community/",
+          href: 'https://polygon.technology/developers/',
+          label: "Developer Resources",
           position: "right",
         },
         {
