@@ -585,6 +585,7 @@ develop: [
 ],
 
 maintain: [
+  "maintain/validate/validator-index",
     {
       type: "category",
       label: "Validator Overview",
@@ -616,9 +617,6 @@ maintain: [
     type: "category",
     label: "Validate",
     items: [
-
-      "maintain/validate/validator-index",
-
       {
         type: "category",
         label: "Node Deployment",
