@@ -40,7 +40,7 @@ In this tutorial, we’ll be using Fauna as a method of storing private transact
 
 In order to get started with building, follow these steps:
 
-- Create a Fauna Account — you can sign up [here](https://dashboard.fauna.com/accounts/register).
+- Create a Fauna Account — you can sign up [here](https://dashboard.fauna.com/accounts/register?utm_source=polygon.technology&utm_medium=referral&utm_campaign=docs-tutorial).
 - Create a Metamask Wallet with Polygon’s Test Network (Mumbai-Testnet) configured.
     - First, get set up with Metamask [here](../develop/metamask/tutorial-metamask.md). Make sure you save your Secret Recovery Phrase.
     - Then, configure the Mumbai-Testnet on your Metamask by following the instructions [here](../develop/metamask/config-polygon-on-metamask.md).
