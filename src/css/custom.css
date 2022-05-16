@@ -935,3 +935,23 @@ strong {
 .mx-4 {
   margin: 0px 4px;
 }
+
+.show-card .status {
+  font-size: 0.8rem;
+  position: absolute;
+  top: 130px;
+  color: #3b465c;
+
+  -webkit-transition: color 2s;
+    transition: color 2s;
+}
+
+
+
+.show-card .status:hover {
+  color: #003cb2;
+}
+
+.tabs {
+  justify-content: center;
+}
