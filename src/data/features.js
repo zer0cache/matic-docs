@@ -14,7 +14,7 @@ export const firstRowBeginner = [
       description: "Secure the network by staking MATIC tokens & delegate your stake to Polygon validators."
   },
   {
-      title: "Vote",
+      title: "Govern",
       status: "Beginner: Docs Coming Soon",
       linkUrl: "docs/maintain/govern/governance",
       imageUrl: "img/supernet.svg",
