@@ -1,6 +1,6 @@
 ---
 id: wallet-bridge-faq
-title: General
+title: Wallet <> Bridge FAQs
 description: Build your next blockchain app on Polygon.
 keywords:
   - docs

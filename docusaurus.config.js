@@ -235,6 +235,18 @@ module.exports = {
                 ],
         },
         {
+          label: "FAQs",
+          position: "right",
+          items: [
+                  {
+                    href: 'docs/pos/faq/general-faq/',
+                    label: 'PoS FAQs',
+                    target: '_blank',
+                    rel: null,
+                  },
+                ],
+        },
+        {
           href: 'https://polygon.technology/developers/',
           label: "Developer Resources",
           position: "right",

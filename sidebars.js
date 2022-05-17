@@ -42,6 +42,7 @@
 
 delegate: [
   "maintain/delegate/delegate",
+  "maintain/delegate/delegator-faq",
 ],
 
 govern: [
@@ -627,9 +628,19 @@ pos: [
     "home/architecture/security-models",
     ],
   },
+  {
+    type: "category",
+    label: "FAQs",
+    items: [
+      "pos/faq/general-faq",
+      "pos/faq/technical-faqs",
+      "pos/faq/wallet-bridge-faq",
+      "pos/faq/widget-faq",
+    ],
+  },
 ],
 
-  nightfall: [
+nightfall: [
         "nightfall/introduction/overview",
         {
           type: "category",
