@@ -3,7 +3,7 @@
 </p>
 
 <div align="Center">
-<h1>Polygon Documentation</h1>
+<h1>Polygon Wiki</h1>
 <h3> Previously Matic Network </h3>
 </div>
 
@@ -22,14 +22,14 @@
 Polygon is a scaling solution for public blockchains that combines the best of Ethereum and sovereign blockchains 
 to offer a full-stack scaling solution.
 
-The [Polygon documentation website](https://docs.polygon.technology/) is built using [Docusaurus](https://docusaurus.io/), 
+The [Polygon Wiki](https://docs.polygon.technology/) is built using [Docusaurus](https://docusaurus.io/), 
 a modern static website generator.
 
-## How to Contribute to Polygon Documentation
+## How to Contribute to Polygon Wiki
 
 We believe one of the things that makes Polygon unique is its coherent design, and we seek to retain this defining 
 characteristic. We have defined some guidelines to ensure new contributions only ever enhance the 
-documentation from the outset.
+Wiki from the outset.
 
 ### Requirements
 
@@ -38,7 +38,7 @@ documentation from the outset.
 
 > Note that on macOS you also need Xcode and Command Line Tools.
 
-### Run the documentation locally
+### Run the Wiki locally
 
 1. Fork the repo. 
    > For help, refer to [GitHub Docs: Fork a repo](https://help.github.com/en/articles/fork-a-repo).
@@ -76,8 +76,20 @@ documentation from the outset.
     ```
     yarn install
     ```
+    
+   The site is built using Docusaurus. You may need to install Docusaurus before running the Wiki locally.
 
-7. Run the documentation locally. 
+   ```
+   yarn add docusaurus
+   ```
+   
+   Alternatively, you can upgrade Docusaurus.
+
+   ```
+   yarn upgrade @docusaurus/core@latest @docusaurus/preset-classic@latest
+   ```
+
+7. Run the Wiki locally. 
    The following command will start a local development server and open a browser window. 
    Most changes are reflected live without having to restart the server.
 
@@ -87,7 +99,7 @@ documentation from the outset.
 
 ### Make changes using Git GUI and code editor
 
-After running the documentation locally on your machine, use a code editor to apply your changes before submitting 
+After running the Wiki locally on your machine, use a code editor to apply your changes before submitting 
 your PR. Note that you must have a GitHub account and an understanding of Markdown syntax.
 
 1. Create a new branch for your changes.
@@ -126,12 +138,11 @@ You can apply UI changes, sidebar, and configuration design through the followin
 - To modify the website page layout, edit **docusaurus.config.js**
 - To modify the blocks structure and the footer links, edit **src/pages/index.js**
 
-### Making changes using the documentation website
+### Making changes using the Wiki website
 
 You can easily submit an edit suggestion. Note that you must have a GitHub account and good knowledge of Markdown syntax.
 
-1. Navigate to the [Polygon documentation page](https://docs.polygon.technology/docs/develop/getting-started/) 
-   that you want to edit
+1. Navigate to the [Polygon Wiki page](https://docs.polygon.technology/) that you want to edit.
 2. Scroll down until the end of that page
 3. Click on the link: **Edit this page**. It will forward you to the same page (Markdown format) hosted on GitHub.
 4. On the related GitHub page, click the pencil icon (similar to  ) near the upper right corner of the file
@@ -145,7 +156,7 @@ You can easily submit an edit suggestion. Note that you must have a GitHub accou
 10. Click on the green button **Propose changes** to submit your changes. Note that submitting a change will write 
     it to a new branch in your fork.
 
-One of the documentation maintainers will review your PR and either accept it or submit our review. 
+One of the Wiki maintainers will review your PR and either accept it or submit our review. 
 Acceptable PRs will be approved & merged into the `master` branch.
 
 ## Submit an Issue
