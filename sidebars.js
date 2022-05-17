@@ -37,86 +37,6 @@
         "home/architecture/security-models",
       ]
     },
-    {
-      type: "category",
-      label: "Architecture",
-      items: [
-        "contribute/polygon-architecture",
-        {
-          type: "category",
-          label: "Heimdall",
-          items: [
-            "contribute/heimdall/overview",
-            {
-              type: "category",
-              label: "Core Concepts",
-              items: [
-                "contribute/heimdall/encoder",
-                "contribute/heimdall/transactions",
-                "contribute/heimdall/stdtx",
-                "contribute/heimdall/types",
-                "contribute/heimdall/validators",
-                "contribute/heimdall/checkpoint",
-                "contribute/heimdall/validator-key-management",
-                "contribute/heimdall/antehandler",
-              ],
-            },
-            {
-              type: "category",
-              label: "Modules",
-              items: [
-                "contribute/heimdall/modules/auth",
-                "contribute/heimdall/modules/bank",
-                "contribute/heimdall/modules/governance",
-                "contribute/heimdall/modules/staking",
-                "contribute/heimdall/modules/checkpoint",
-                "contribute/heimdall/modules/bor",
-                "contribute/heimdall/modules/topup",
-                "contribute/heimdall/modules/clerk",
-                "contribute/heimdall/modules/chainmanager",
-              ],
-            },
-            "contribute/peppermint",
-          ],
-        },
-        {
-          type: "category",
-          label: "Bor",
-          items: [
-            "contribute/bor/overview",
-            "contribute/bor/bor",
-            "contribute/bor/core_concepts",
-            "contribute/bor/consensus",
-          ],
-        },
-        {
-          type: "category",
-          label: "Contracts",
-          items: [
-            "contribute/contracts/stakingmanager",
-            "contribute/contracts/delegation",
-            {
-              type: "category",
-              label: "Plasma Contracts",
-              items: [
-                "contribute/contracts/plasma_contracts/account_based_plasma",
-                "contribute/contracts/plasma_contracts/predicates",
-                "contribute/contracts/plasma_contracts/important-contracts",
-              ],
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "State Sync",
-          items: [
-            "contribute/state-sync/state-sync",
-            "contribute/state-sync/how-state-sync-works",
-          ],
-        },
-        "home/architecture/security-models",
-      ],
-    },
   "home/faq",
 ],
 
@@ -484,86 +404,6 @@ develop: [
     },
     {
       type: "category",
-      label: "Architecture",
-      items: [
-        "contribute/polygon-architecture",
-        {
-          type: "category",
-          label: "Heimdall",
-          items: [
-            "contribute/heimdall/overview",
-            {
-              type: "category",
-              label: "Core Concepts",
-              items: [
-                "contribute/heimdall/encoder",
-                "contribute/heimdall/transactions",
-                "contribute/heimdall/stdtx",
-                "contribute/heimdall/types",
-                "contribute/heimdall/validators",
-                "contribute/heimdall/checkpoint",
-                "contribute/heimdall/validator-key-management",
-                "contribute/heimdall/antehandler",
-              ],
-            },
-            {
-              type: "category",
-              label: "Modules",
-              items: [
-                "contribute/heimdall/modules/auth",
-                "contribute/heimdall/modules/bank",
-                "contribute/heimdall/modules/governance",
-                "contribute/heimdall/modules/staking",
-                "contribute/heimdall/modules/checkpoint",
-                "contribute/heimdall/modules/bor",
-                "contribute/heimdall/modules/topup",
-                "contribute/heimdall/modules/clerk",
-                "contribute/heimdall/modules/chainmanager",
-              ],
-            },
-            "contribute/peppermint",
-          ],
-        },
-        {
-          type: "category",
-          label: "Bor",
-          items: [
-            "contribute/bor/overview",
-            "contribute/bor/bor",
-            "contribute/bor/core_concepts",
-            "contribute/bor/consensus",
-          ],
-        },
-        {
-          type: "category",
-          label: "Contracts",
-          items: [
-            "contribute/contracts/stakingmanager",
-            "contribute/contracts/delegation",
-            {
-              type: "category",
-              label: "Plasma Contracts",
-              items: [
-                "contribute/contracts/plasma_contracts/account_based_plasma",
-                "contribute/contracts/plasma_contracts/predicates",
-                "contribute/contracts/plasma_contracts/important-contracts",
-              ],
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "State Sync",
-          items: [
-            "contribute/state-sync/state-sync",
-            "contribute/state-sync/how-state-sync-works",
-          ],
-        },
-        "home/architecture/security-models",
-      ],
-    },
-    {
-      type: "category",
       label: "CEXs, Wallets & Fiat-on-ramps",
       items: [
         "develop/cexs-wallets/fiat-ramps",
@@ -575,7 +415,7 @@ develop: [
     {
       type: "category",
       label: "DID Implementation",
-      items: ["develop/did-implementation/introduction","develop/did-implementation/getting-started"]
+      items: ["develop/did-implementation/introduction", "develop/did-implementation/getting-started"]
     },
     {
       type: "category",
@@ -704,112 +544,90 @@ contribute: [
       "contribute/orientation",
       "contribute/community-maintainers",
       "contribute/bug-bounty-program",
-  /*    {
-        type: "category",
-        label: "Architecture",
-        items: [
-          "contribute/polygon-architecture",
-          {
-            type: "category",
-            label: "Heimdall",
-            items: [
-              "contribute/heimdall/overview",
-              {
-                type: "category",
-                label: "Core Concepts",
-                items: [
-                  "contribute/heimdall/encoder",
-                  "contribute/heimdall/transactions",
-                  "contribute/heimdall/stdtx",
-                  "contribute/heimdall/types",
-                  "contribute/heimdall/validators",
-                  "contribute/heimdall/checkpoint",
-                  "contribute/heimdall/validator-key-management",
-                  "contribute/heimdall/antehandler",
-                ],
-              },
-              {
-                type: "category",
-                label: "Modules",
-                items: [
-                  "contribute/heimdall/modules/auth",
-                  "contribute/heimdall/modules/bank",
-                  "contribute/heimdall/modules/governance",
-                  "contribute/heimdall/modules/staking",
-                  "contribute/heimdall/modules/checkpoint",
-                  "contribute/heimdall/modules/bor",
-                  "contribute/heimdall/modules/topup",
-                  "contribute/heimdall/modules/clerk",
-                  "contribute/heimdall/modules/chainmanager",
-                ],
-              },
-              "contribute/peppermint",
-            ],
-          },
-          {
-            type: "category",
-            label: "Bor",
-            items: [
-              "contribute/bor/overview",
-              "contribute/bor/bor",
-              "contribute/bor/core_concepts",
-              "contribute/bor/consensus",
-            ],
-          },
-          {
-            type: "category",
-            label: "Contracts",
-            items: [
-              "contribute/contracts/stakingmanager",
-              "contribute/contracts/delegation",
-              {
-                type: "category",
-                label: "Plasma Contracts",
-                items: [
-                  "contribute/contracts/plasma_contracts/account_based_plasma",
-                  "contribute/contracts/plasma_contracts/predicates",
-                  "contribute/contracts/plasma_contracts/important-contracts",
-                ],
-              },
-            ],
-          },
-          {
-            type: "category",
-            label: "State Sync",
-            items: [
-              "contribute/state-sync/state-sync",
-              "contribute/state-sync/how-state-sync-works",
-            ],
-          },
-
-          "home/architecture/security-models",
-        ]
-      }*/
 ],
 
-// ############################## Header ########################################
-
-
-  faq: [
-      "faq/general-faq",
-      "faq/technical-faqs",
-      // "faq/delegator-faq",
-      "faq/commit-chain-multisigs",
-      "faq/staking-faq",
-      "faq/validator-faq",
-      // "faq/staking-tutorials",
+pos: [
+  "pos/polygon-architecture",
+  {
+    type: "category",
+    label: "Architecture",
+    items: [
       {
         type: "category",
-        label: "Wallet FAQs",
+        label: "Heimdall",
         items: [
-          "faq/wallet-bridge-faq",
-          "faq/adding-a-custom-token",
+          "pos/heimdall/overview",
+          {
+            type: "category",
+            label: "Core Concepts",
+            items: [
+              "pos/heimdall/encoder",
+              "pos/heimdall/transactions",
+              "pos/heimdall/stdtx",
+              "pos/heimdall/types",
+              "pos/heimdall/validators",
+              "pos/heimdall/checkpoint",
+              "pos/heimdall/validator-key-management",
+              "pos/heimdall/antehandler",
+            ],
+          },
+          {
+            type: "category",
+            label: "Modules",
+            items: [
+              "pos/heimdall/modules/auth",
+              "pos/heimdall/modules/bank",
+              "pos/heimdall/modules/governance",
+              "pos/heimdall/modules/staking",
+              "pos/heimdall/modules/checkpoint",
+              "pos/heimdall/modules/bor",
+              "pos/heimdall/modules/topup",
+              "pos/heimdall/modules/clerk",
+              "pos/heimdall/modules/chainmanager",
+            ],
+          },
+          "pos/peppermint",
         ],
       },
-      "faq/consensys-framework",
-      "faq/widget-faq",
-      "faq/wallet-list",
-  ],
+      {
+        type: "category",
+        label: "Bor",
+        items: [
+          "pos/bor/overview",
+          "pos/bor/bor",
+          "pos/bor/core_concepts",
+          "pos/bor/consensus",
+        ],
+      },
+      {
+        type: "category",
+        label: "Contracts",
+        items: [
+          "pos/contracts/stakingmanager",
+          "pos/contracts/delegation",
+          {
+            type: "category",
+            label: "Plasma Contracts",
+            items: [
+              "pos/contracts/plasma_contracts/account_based_plasma",
+              "pos/contracts/plasma_contracts/predicates",
+              "pos/contracts/plasma_contracts/important-contracts",
+            ],
+          },
+        ],
+      },
+      {
+        type: "category",
+        label: "State Sync",
+        items: [
+          "pos/state-sync/state-sync",
+          "pos/state-sync/how-state-sync-works",
+        ],
+      },
+    "home/architecture/security-models",
+    ],
+  },
+],
 
   nightfall: [
         "nightfall/introduction/overview",

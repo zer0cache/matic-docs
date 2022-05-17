@@ -50,7 +50,7 @@ export const secondRow = [
     {
         title: "PoS",
         status: "v3: Docs Coming Soon",
-        linkUrl: "",
+        linkUrl: "docs/pos/polygon-architecture",
         imageUrl: "img/home/blockchain-basics.svg",
         description: "A Layer 2 proof of stake scaling solution for Ethereum-based public blockchains."
     },
