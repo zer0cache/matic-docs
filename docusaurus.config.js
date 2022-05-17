@@ -244,23 +244,21 @@ module.exports = {
           position: "right",
         },
         {
+          to: "docs/contribute/orientation/",
+          label: "Contribute to the Wiki",
+          position: "right",
+          activeBasePath: "docs/contribute",
+        },
+        {
           href: "https://github.com/maticnetwork",
           position: "right",
           className: "header-github-link",
           "aria-label": "GitHub repository",
         },
         {
-          to: "docs/contribute/orientation/",
-          label: "Contribute to the Wiki",
-          position: "right",
-          activeBasePath: "docs/contribute",
-        },
-        /*
-        {
           type: 'localeDropdown',
           position: 'right',
         },
-        */
       ],
     },
   },
