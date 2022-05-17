@@ -31,7 +31,7 @@ export const firstRowAdvanced = [
         description: "Build an application and deploy on Polygon."
     },
     {
-        title: "Operate",
+        title: "Validate",
         status: "Intermediate",
         linkUrl: "docs/maintain/validate/validator-index/",
         imageUrl: "img/home/core-contribution.svg",
