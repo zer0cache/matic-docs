@@ -93,6 +93,7 @@ module.exports = {
     },
       ],
       */
+     
       logo: {
         alt: 'Polygon Logo',
         src: 'img/polygon/polygon-logo.svg',
