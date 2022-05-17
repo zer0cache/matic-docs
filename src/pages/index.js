@@ -107,7 +107,7 @@ className="tabs"
 values={[
 {label: 'New Users', value: 'beginner'},
 {label: 'Experienced Users', value: 'advanced'},
-{label: 'All Products', value: 'products'},
+{label: 'Browse by Product', value: 'products'},
 ]}>
 
 <TabItem value="beginner">

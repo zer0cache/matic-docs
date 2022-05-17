@@ -48,14 +48,14 @@ export const firstRowAdvanced = [
 
 export const secondRow = [
     {
-        title: "Polygon PoS",
+        title: "PoS",
         status: "v3: Docs Coming Soon",
         linkUrl: "",
         imageUrl: "img/home/blockchain-basics.svg",
         description: "A Layer 2 proof of stake scaling solution for Ethereum-based public blockchains."
     },
     {
-        title: "Polygon Edge",
+        title: "Edge",
         status: "SDK",
         class_name: "polygon-banner",
         linkUrl: "https://sdk-docs.polygon.technology/docs/overview/",
@@ -63,42 +63,42 @@ export const secondRow = [
         description: "A modular and extensible framework for building Ethereum-compatible blockchain networks."
     },
     {
-        title: "Polygon Supernets",
+        title: "Supernets",
         status: "Appchains: Docs Coming Soon",
         linkUrl: "",
         imageUrl: "img/supernet.svg",
         description: "Application-specific chains that are interoperable, scalable & secure: powered by Polygon Edge."
     },
     {
-        title: "Polygon Avail",
+        title: "Avail",
         status: "Data Availability",
         linkUrl: "https://avail-docs.matic.today/",
         imageUrl: "img/avail.svg",
         description: 'A general-purpose, scalable, data availability-focused blockchain.'
     },
     {
-        title: "Polygon Nightfall",
+        title: "Nightfall",
         status: "Optimistic Rollup",
         linkUrl: "docs/nightfall/introduction/overview",
         imageUrl: "img/Nightfall.png",
         description: "An optimistic rollup solution designed for enterprises that supports private transactions."
     },
     {
-        title: "Polygon Hermez",
+        title: "Hermez",
         status: "ZK Rollup",
         linkUrl: "https://docs.hermez.io/",
         imageUrl: "img/hermez.svg",
         description: "A zk-rollup solution for scaling payments and token transfers."
     },
     {
-        title: "Polygon Miden",
+        title: "Miden",
         status: "STARK-based ZK Rollup: Docs Coming Soon",
         linkUrl: "",
         imageUrl: "img/miden.svg",
         description: "A STARK-based zk-rollup solution that supports arbitrary smart contracts."
     },
     {
-        title: "Polygon Zero",
+        title: "Zero",
         status: "ZK Rollup: Docs Coming Soon",
         linkUrl: "",
         imageUrl: "img/zero.svg",
