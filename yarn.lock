@@ -1296,7 +1296,7 @@
     postcss "^8.4.13"
     postcss-sort-media-queries "^4.2.1"
 
-"@docusaurus/logger@2.0.0-beta.20":
+"@docusaurus/logger@2.0.0-beta.20", "@docusaurus/logger@^2.0.0-beta.20":
   version "2.0.0-beta.20"
   resolved "https://registry.yarnpkg.com/@docusaurus/logger/-/logger-2.0.0-beta.20.tgz#bb49e8516e48082ab96bca11569a18541476d5a6"
   integrity sha512-7Rt7c8m3ZM81o5jsm6ENgdbjq/hUICv8Om2i7grynI4GT2aQyFoHcusaNbRji4FZt0DaKT2CQxiAWP8BbD4xzQ==
