@@ -9,6 +9,25 @@ module.exports = {
   customFields: {
     description: "Build your next blockchain app on Polygon.",
   },
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/',
+            from: ['/en/latest', '/en/'],
+          },
+        ],
+        createRedirects: function (existingPath) {
+          if (existingPath.startsWith('/docs/validate/')) {
+            return [existingPath.replace('/docs/maintain/')
+          ];
+          }
+        },
+      },
+    ],
+  ],
   onBrokenLinks: 'log',
   themeConfig: {
     footer: {
@@ -117,7 +136,7 @@ module.exports = {
       logo: {
         alt: "Polygon logo",
         src: "/img/polygon/polygon-logo.webp",
-        srcDark: "/img/polygon/polygon-logo-inverted.png",
+        srcDark: "/img/polygon/polygon-logo.webp",
         // width: 100,
         // height: 500,
         // href: 'https://docs.polygon.technology/', // default to siteConfig.baseUrl
