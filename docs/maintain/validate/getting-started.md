@@ -9,7 +9,7 @@ keywords:
   - validator
   - maintain
   - architecture
-slug: getting-started
+slug: validator-index
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 

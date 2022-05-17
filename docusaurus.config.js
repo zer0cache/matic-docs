@@ -9,68 +9,30 @@ module.exports = {
   customFields: {
     description: "Build your next blockchain app on Polygon.",
   },
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/',
+            from: ['/en/latest', '/en/'],
+          },
+        ],
+        createRedirects: function (existingPath) {
+          if (existingPath.startsWith('/docs/validate/')) {
+            return [existingPath.replace('/docs/maintain/')
+          ];
+          }
+        },
+      },
+    ],
+  ],
   onBrokenLinks: 'log',
   themeConfig: {
     footer: {
+      /*
       links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Home',
-              to: '/',
-            },
-            {
-              label: 'Develop',
-              to: '/docs/develop/getting-started',
-            },
-            {
-              label: 'Docs GitHub',
-              href: 'https://github.com/maticnetwork/matic-docs',
-            },
-            {
-              label: 'Support',
-              href: 'https://polygon.technology/developer-support-program/',
-            },
-            {
-              label: 'FAQs',
-              to: '/docs/faq/technical-faqs',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Polygon Community',
-              href: 'https://polygon.technology/community',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discord.com/invite/polygon',
-            },
-            {
-              href: "https://forum.polygon.technology/",
-              label: "Forum",
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/0xPolygon',
-            },
-            {
-              label: 'Reddit',
-              href: 'https://www.reddit.com/r/0xPolygon/',
-            },
-            {
-              label: 'Telegram',
-              href: 'https://t.me/polygonofficial',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/maticnetwork',
-            },
-          ],
-        },
         {
           title: "Developers",
           items: [
@@ -114,7 +76,7 @@ module.exports = {
         {
           label: "Brand Kit",
           href: "https://www.notion.so/polygontechnology/Brand-Resources-2cd18ae436584e98a6c5aae56db73058"
-      },
+        },
         {
             label: "Careers",
             href: "https://polygon.technology/careers/"
@@ -130,11 +92,13 @@ module.exports = {
     ]
     },
       ],
+      */
       logo: {
         alt: 'Polygon Logo',
         src: 'img/polygon/polygon-logo.svg',
+        href: 'https://polygon.technology/',
       },
-      copyright: `Copyright © ${new Date().getFullYear()} Polygon technology`,
+      copyright: `Copyright © ${new Date().getFullYear()} Polygon Technology`,
     },
     announcementBar: {
       id: "support_us",
@@ -160,50 +124,131 @@ module.exports = {
       indexName: "matic_developer",
       algoliaOptions: {},
     },
+    announcementBar: {
+      id: 'doc revamp message',
+      content:
+        'The team is currently revamping the docs site.',
+      backgroundColor: '#eacbfc',
+      textColor: '91E42',
+      isCloseable: true,
+    },
     navbar: {
       hideOnScroll: true,
       logo: {
         alt: "Polygon logo",
         src: "/img/polygon/polygon-logo.webp",
-        srcDark: "/img/polygon/polygon-logo-inverted.png",
+        srcDark: "/img/polygon/polygon-logo.webp",
+        // width: 100,
+        // height: 500,
         // href: 'https://docs.polygon.technology/', // default to siteConfig.baseUrl
         target: "_self", // by default, this value is calculated based on the `href` attribute (the external link will open in a new tab, all others in the current one)
       },
       items: [
         {
-          to: "docs/home/new-to-polygon",
-          label: "Core Concepts",
-          position: "left",
-          activeBasePath: "docs/home",
+          label: "dApps",
+          position: "right",
+          items: [
+                  {
+                    href: 'https://wallet.polygon.technology/login?next=%2Fwallet',
+                    label: 'PoS Wallet',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://wallet.polygon.technology/login?next=%2Fbridge',
+                    label: 'PoS Bridge',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://polygon.technology/staking',
+                    label: 'PoS Staking',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://wallet.polygon.technology/login?next=%2Fwidget-dashboard',
+                    label: 'PoS Widget',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://polygonscan.com/',
+                    label: 'PoS Explorer',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://hermez.io/wallet',
+                    label: 'Hermez Wallet',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://explorer.hermez.io/',
+                    label: 'Hermez Explorer',
+                    target: '_blank',
+                    rel: null,
+                  },
+                ],
         },
         {
-          to: "docs/develop/getting-started",
-          label: "Develop",
-          position: "left",
-          activeBasePath: "docs/develop",
+          label: "Community",
+          position: "right",
+          items: [
+                  {
+                    href: 'https://discord.com/invite/polygon',
+                    label: 'Discord',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://forum.polygon.technology/',
+                    label: 'Forum',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://www.reddit.com/r/0xPolygon/',
+                    label: 'Reddit',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://twitter.com/0xPolygon',
+                    label: 'Twitter',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://t.me/polygonofficial',
+                    label: 'Telegram',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    href: 'https://polygon.technology/community/',
+                    label: 'View all communities',
+                    target: '_blank',
+                    rel: null,
+                  },
+                ],
         },
         {
-          to: "docs/maintain/polygon-basics/who-is-delegator", 
-          label: "Maintain",
-          position: "left",
-          activeBasePath: "docs/maintain",
-        },
-        {
-          to: "docs/integrate/quickstart",
-          label: "Integrate",
-          position: "left",
-          activeBasePath: "docs/integrate",
-        },
-        {
-          to: "docs/contribute/orientation",
-          label: "Contribute",
-          position: "left",
-          activeBasePath: "docs/contribute",
+          href: 'https://polygon.technology/developers/',
+          label: "Developer Resources",
+          position: "right",
         },
         {
           label: "Support",
           href: "https://polygon.technology/developer-support-program/",
           position: "right",
+        },
+        {
+          to: "docs/contribute/orientation/",
+          label: "Contribute to the Wiki",
+          position: "right",
+          activeBasePath: "docs/contribute",
         },
         {
           href: "https://github.com/maticnetwork",
@@ -212,15 +257,8 @@ module.exports = {
           "aria-label": "GitHub repository",
         },
         {
-          label: "Polygon Edge",
-          href: "https://sdk-docs.polygon.technology/docs/overview/",
-          position: "left",
-        },
-        {
-          to: "docs/faq/technical-faqs",
-          label: "FAQ",
-          position: "left",
-          activeBasePath: "docs/faq",
+          type: 'localeDropdown',
+          position: 'right',
         },
       ],
     },
