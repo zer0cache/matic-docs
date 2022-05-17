@@ -6,7 +6,7 @@ keywords:
   - architecture
   - layers
   - polygon
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -14,9 +14,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Polygon is a blockchain application platform that provides hybrid Proof-of-Stake and Plasma-enabled sidechains.
 
-Architecturally, the beauty of Polygon is its elegant design, which features a generic validation layer separated from varying execution environments like Plasma enabled chains, full-blown EVM sidechains, and in the future, other Layer 2 approaches such as Optimistic Rollups. 
+Architecturally, the beauty of Polygon is its elegant design, which features a generic validation layer separated from varying execution environments like Plasma enabled chains, full-blown EVM sidechains, and in the future, other Layer 2 approaches such as Optimistic Rollups.
 
-The Polygon Network has a three-layer architecture:
+The Polygon PoS Network has a three-layer architecture:
 
 * Ethereum layer — a set of contracts on the Ethereum mainnet.
 * Heimdall layer — a set of proof-of-stake Heimdall nodes running parallel to the Ethereum mainnet, monitoring the set of staking contracts deployed on the Ethereum mainnet and committing the Polygon Network checkpoints to the Ethereum mainnet. Heimdall is based on Tendermint.
@@ -24,20 +24,20 @@ The Polygon Network has a three-layer architecture:
 
 <img src={useBaseUrl("img/staking/architecture.png")} />
 
-Currently, developers can use **Plasma** for specific state transitions for which Plasma predicates have 
-been written, such as ERC20, ERC721, asset swaps, or other custom predicates. For arbitrary state transitions, 
+Currently, developers can use **Plasma** for specific state transitions for which Plasma predicates have
+been written, such as ERC20, ERC721, asset swaps, or other custom predicates. For arbitrary state transitions,
 they can use PoS. Or both! This is made possible by Polygon's hybrid construction.
 
-To enable the PoS mechanism on our platform, a set of **staking** management contracts are deployed on 
-Ethereum, and a set of incentivized validators running **Heimdall** and **Bor** nodes. Ethereum is 
-the first basechain Polygon supports, but Polygon intends to offer support for additional basechains to 
+To enable the PoS mechanism on our platform, a set of **staking** management contracts are deployed on
+Ethereum, and a set of incentivized validators running **Heimdall** and **Bor** nodes. Ethereum is
+the first basechain Polygon supports, but Polygon intends to offer support for additional basechains to
 enable an interoperable decentralized Layer 2 blockchain platform based on community suggestions and consensus.
 
 <img src={useBaseUrl("img/matic/Architecture.png")} />;
 
 ## Staking Contracts
 
-To enable the [Proof of Stake (PoS)](docs/home/polygon-basics/what-is-proof-of-stake) mechanism on Polygon, 
+To enable the [Proof of Stake (PoS)](docs/home/polygon-basics/what-is-proof-of-stake) mechanism on Polygon,
 the system employs a set of [staking](/docs/validate/glossary#staking) management contracts on the Ethereum mainnet.
 
 The staking contracts implement the following features:
@@ -51,8 +51,8 @@ The PoS mechanism also acts as a mitigation to the data unavailability problem f
 
 ## Heimdall
 
-Heimdall is the proof of stake validation layer that handles the aggregation of blocks produced 
-by [Bor](/docs/validate/glossary#bor) into a Merkle tree and publishes the Merkle root periodically to the 
+Heimdall is the proof of stake validation layer that handles the aggregation of blocks produced
+by [Bor](/docs/validate/glossary#bor) into a Merkle tree and publishes the Merkle root periodically to the
 root chain. The periodic publishing of snapshots of the Bor sidechain is called [checkpoints](/docs/validate/glossary#checkpoint-transaction).
 
 1. Validates all the blocks since the last checkpoint.
@@ -81,11 +81,11 @@ Bor block producers are a subset of the validators and are shuffled periodically
 
 See also [Bor architecture](/docs/contribute/bor/overview).
 
-Bor is Polygon's block producer layer - the entity responsible for aggregating transactions into blocks.  Currently, it is a basic Geth implementation with custom changes done to the consensus algorithm. 
+Bor is Polygon's block producer layer - the entity responsible for aggregating transactions into blocks.  Currently, it is a basic Geth implementation with custom changes done to the consensus algorithm.
 
-Block producers are periodically shuffled via committee selection on Heimdall in durations termed 
-as a `span` in Polygon. Blocks are produced at the **Bor** node, and the sidechain VM is EVM-compatible. 
-Blocks produced on Bor are also validated periodically by Heimdall nodes, and a checkpoint consisting of 
+Block producers are periodically shuffled via committee selection on Heimdall in durations termed
+as a `span` in Polygon. Blocks are produced at the **Bor** node, and the sidechain VM is EVM-compatible.
+Blocks produced on Bor are also validated periodically by Heimdall nodes, and a checkpoint consisting of
 the Merkle tree hash of a set of blocks on Bor is committed to Ethereum periodically.
 
 More details are available on the [Bor architecture](/docs/contribute/bor/overview) guide.
