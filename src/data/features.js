@@ -7,14 +7,14 @@ export const firstRowBeginner = [
       description: "Learn about the basics of blockchain and Polygon and how to get started."
   },
   {
-      title: "Delegate MATIC",
+      title: "Delegate",
       status: "Beginner",
       linkUrl: "docs/maintain/delegate/delegate/",
       imageUrl: "img/supernet.svg",
       description: "Secure the network by staking MATIC tokens & delegate your stake to Polygon validators."
   },
   {
-      title: "Vote with MATIC",
+      title: "Vote",
       status: "Beginner: Docs Coming Soon",
       linkUrl: "docs/maintain/govern/governance",
       imageUrl: "img/supernet.svg",
@@ -24,21 +24,21 @@ export const firstRowBeginner = [
 
 export const firstRowAdvanced = [
     {
-        title: "Develop a dApp",
+        title: "Develop",
         status: "Intermediate",
         linkUrl: "docs/develop/getting-started",
         imageUrl: "img/home/dapp-developers.svg",
         description: "Build an application and deploy on Polygon."
     },
     {
-        title: "Operate a Node",
+        title: "Operate",
         status: "Intermediate",
         linkUrl: "docs/maintain/validate/validator-index/",
         imageUrl: "img/home/core-contribution.svg",
         description: "Secure the network by staking and operating a node to validate on Polygon."
     },
     {
-        title: "Integrate a Solution",
+        title: "Integrate",
         status: "Intermediate",
         linkUrl: "docs/integrate/quickstart",
         imageUrl: "img/home/integration.svg",
@@ -105,7 +105,7 @@ export const secondRow = [
         description: "A highly scalable, Ethereum-compatiable zk-rollup."
     },
     {
-        title: "Polygon ID",
+        title: "ID",
         status: "Privacy: Docs Coming Soon",
         linkUrl: "",
         imageUrl: "img/polygon-id.svg",
