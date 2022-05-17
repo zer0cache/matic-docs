@@ -76,6 +76,18 @@ Wiki from the outset.
     ```
     yarn install
     ```
+    
+   The site is built using Docusaurus. You may need to install Docusaurus before running the Wiki locally.
+
+   ```
+   yarn add docusaurus
+   ```
+   
+   Alternatively, you can upgrade Docusaurus.
+
+   ```
+   yarn upgrade @docusaurus/core@latest @docusaurus/preset-classic@latest
+   ```
 
 7. Run the Wiki locally. 
    The following command will start a local development server and open a browser window. 
