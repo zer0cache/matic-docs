@@ -629,6 +629,40 @@ pos: [
   },
 ],
 
+  avail: [
+    {
+      type: "category",
+      label: "Introduction",
+      items: [
+        "avail/introduction/what-is-avail",
+        "avail/introduction/data-availability",
+        "avail/introduction/rollup-scaling",
+      ],
+    },
+    {
+      type: "category",
+      label: "Architecture",
+      items: [
+        "avail/architecture/avail-system-overview",
+        "avail/architecture/avail-components",
+      ],
+    },
+    {
+      type: "category",
+      label: "Quick Start",
+      items: [
+        "avail/how-tos/avail-quick-start",
+      ],
+    },
+    {
+      type: "category",
+      label: "Node Management",
+      items: [
+        "avail/node/avail-node-management",
+      ],
+    },
+  ],
+
   nightfall: [
         "nightfall/introduction/overview",
         {
