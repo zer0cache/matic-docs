@@ -244,6 +244,12 @@ module.exports = {
                     target: '_blank',
                     rel: null,
                   },
+                  {
+                    href: 'docs/nightfall/faq/faq/',
+                    label: 'Nightfall FAQ',
+                    target: '_blank',
+                    rel: null,
+                  }
                 ],
         },
         {
