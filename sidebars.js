@@ -639,6 +639,40 @@ pos: [
             "nightfall/deployments/testnet",
           ],
         },
+        {
+          type: "category",
+          label: "Protocol",
+          items: [
+            {
+              type: "category",
+              label: "Nightfall Protocol",
+              items: [
+                "nightfall/protocol/actors",
+                "nightfall/protocol/contracts",
+                "nightfall/protocol/circuits",
+                "nightfall/protocol/commitments",
+                "nightfall/protocol/secrets",
+                "nightfall/protocol/protocol"
+              ]
+            },
+            {
+              type: "category",
+              label: "Proposers & Challengers",
+              items: [
+                "nightfall/protocol/proposers",
+                "nightfall/protocol/challengers"
+              ]
+            }
+          ]
+        },
+        {
+          type: "category",
+          label: "Tools",
+          items: [
+            "nightfall/tools/nightfall-wallet"
+          ]
+        },
+        "nightfall/faq/faq",
   ]
 
 };
