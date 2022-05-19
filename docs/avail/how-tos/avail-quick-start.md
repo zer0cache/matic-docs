@@ -1,7 +1,7 @@
 ---
 id: avail-quick-start
 title: How to use Polygon Avail
-sidebar_label: How to use Polygon Avail
+sidebar_label: How to use Avail
 description: Learn how to use Polygon Avail
 keywords:
   - docs
