@@ -277,14 +277,15 @@ medium.
 
 ## Receive AVL Testnet Tokens
 
-* Head over to the [Polygon faucet](https://faucet.polygon.technology).
+Head over to the [Polygon faucet](https://faucet.polygon.technology).
 
-* On the faucet page, select `DA (Test Token)` and `DA Network` as the token and network, 
-  respectively. Paste your account address and click on **Submit**. The transfer will up to one 
-  minute to complete.
+On the faucet page, select `DA (Test Token)` and `DA Network` as the token and network, 
+respectively. Paste your account address and click on **Submit**. The transfer will up to one 
+minute to complete.
 
-* Upon successful transfer, your account should now have a non-zero balance. If you face any issues obtaining tokens from the facuet, 
-  please reach out to the [support team](https://support.polygon.technology/support/home).
+<img src={useBaseUrl("img/avail/faucet.png")} width="100%" height="100%"/> 
+
+Upon successful transfer, your account should now have a non-zero balance. If you face any issues obtaining tokens from the facuet, please reach out to the [support team](https://support.polygon.technology/support/home).
 
 ### Balance Check with `@polkadot/api`
 
