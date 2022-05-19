@@ -78,7 +78,7 @@ your account.
 
 :::
 
-## Receive AVL testnet tokens
+## Receive AVL Testnet Tokens
 
 On Avail Apps, click on the icon next to your account name to copy your address.
 Alternatively, you can copy the address manually.
@@ -181,20 +181,37 @@ is available.
 </TabItem>
 <TabItem value="library">
 
-Alternatively, you can use the console/typescript to create an Avail account 
+Alternatively, you can use the console/typescript to generate an Avail account 
 via [`@polkadot/api`](https://polkadot.js.org/docs/). Create a new folder and add the 
 JS library using `yarn add @polkadot/api` or `npm install @polkadot/api`
 
-:::note
+:::info
 
-Make sure Typescript dependencies are added for running the script. Here, we are using the 
-`@polkadot/api` version `7.9.1`.
+Make sure Typescript dependencies are added for running the script. Here,
+`@polkadot/api` version `7.9.1` is used.
+
+You can use `ts-node` to execute Typescript files in the console. Either use 
+`yarn add ts-node typescript '@types/node'` or `npm i ts-node typescript '@types/node'` 
+to install the packages.
+
+For instance, if you create a script called `account.ts`, you can execute the script
+in the command line by running:
+
+```bash
+
+ts-node account.ts
+
+```
+
+You will also need to **[connect to a node](../node/avail-node-management.md)** before running 
+the scripts. 
 
 :::
 
 To generate an account, run the following script:
-  
+
 ```typescript
+
 const { ApiPromise, WsProvider, Keyring } = require('@polkadot/api');
 const {mnemonicGenerate, cryptoWaitReady } = require('@polkadot/util-crypto');
 
@@ -226,6 +243,21 @@ main().catch(console.error)
 
 ```
 
+Sample Result:
+
+```
+
+test_pair has address 5Gq1hKAiSKFkdmcFjTt3U8KEaxDHp613hbdSmqJCRswMkwCB and the mnemonic is decrease lunar scatter pattern spoil alpha index trend vacant sorry scatter never
+
+```
+
+:::info Address Format
+
+As Avail is implemented using [Substrate](https://substrate.io/), generic Substrate addresses 
+always start with a 5 and follow the **[SS58 address format](https://docs.substrate.io/v3/advanced/ss58/)**.
+
+:::
+
 :::info Key derivation and signing algorithm
 
 The reasons for using `sr25519` are outlined **[here](https://wiki.polkadot.network/docs/learn-cryptography#keypairs-and-signing)**.
@@ -234,7 +266,16 @@ The reasons for using `sr25519` are outlined **[here](https://wiki.polkadot.netw
 
 Save the newly generated address and mnemonic phrase for next steps.
 
-## Receive AVL testnet tokens
+:::caution Key Management
+
+The seed phrase is your account key, which controls your account.
+You should not store your seed phrase on a device that has or may have access to 
+an internet connection. The seed phrase should be written down and stored on a non-digital 
+medium.
+
+:::
+
+## Receive AVL Testnet Tokens
 
 * Head over to the [Polygon faucet](https://faucet.polygon.technology).
 
@@ -250,6 +291,7 @@ Save the newly generated address and mnemonic phrase for next steps.
 Use the following script to check the balance of the account you just created:
 
 ```typescript
+
 const { ApiPromise, WsProvider, Keyring } = require('@polkadot/api');
 const {mnemonicGenerate, cryptoWaitReady } = require('@polkadot/util-crypto');
 
@@ -329,6 +371,7 @@ async function main () {
     }
 }
 main().catch(console.error)
+
 ```
 
 > You should get balance as `0` if the account is newly created and you have not used the facuet. 
@@ -347,9 +390,10 @@ You can use the following script to sign and submit transactions.
 Replace `value` and `APP_ID` with those you want to submit.
 
 Also, replace the mnemonic string with your own. 
-The following script is to create an application key: 
+The following script creates an application key: 
 
 ```typescript
+
 const { ApiPromise, WsProvider, Keyring } = require('@polkadot/api');
 const {mnemonicGenerate, cryptoWaitReady } = require('@polkadot/util-crypto');
 
@@ -449,11 +493,12 @@ main().catch(console.error)
 
 ```
 
-This next script is to submit the data:
+This next script submits the data:
+
 ```typescript 
+
 const { ApiPromise, WsProvider, Keyring } = require('@polkadot/api');
 const {mnemonicGenerate, cryptoWaitReady } = require('@polkadot/util-crypto');
-
 
 import type { EventRecord, ExtrinsicStatus, H256, SignedBlock } from '@polkadot/types/interfaces';
 import type { ISubmittableResult} from '@polkadot/types/types';
@@ -549,8 +594,8 @@ async function main () {
     }
 }
 main().catch(console.error)
-```
 
+```
 You can head over to the [Network Explorer](https://devnet-avail.polygon.technology/#/explorer), and the
 recent event list should list your transaction. You can click on the event and expand it to check out 
 the transaction details.
@@ -561,7 +606,9 @@ You can use the following curl request to check out the confidence level. Just r
 one you wish to get availability guarantees for. 
 
 ```bash
+
 curl -s -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"get_blockConfidence","params": {"number": block_number_here}, "id": 1}' 'https://polygon-da-light.matic.today/v1/json-rpc'
+
 ```
 :::
 
