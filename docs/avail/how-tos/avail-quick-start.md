@@ -17,37 +17,56 @@ slug: avail-quick-start
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## Generate an Avail account
+:::note We appreciate you using our devnet and providing us with valuable feedback. We are working on improving many of the current features, and we will keep you updated.
+
+:::
+ 
+## Generate an Avail Account
 
 <Tabs
   defaultValue="apps"
   values={[
-    { label: 'Avail-JS Apps', value: 'apps', },
+    { label: 'Avail Apps', value: 'apps', },
     { label: '@polkadot/api', value: 'library', },
   ]
 }>
 <TabItem value="apps">
 
-Head over to [Avail-JS Apps](https://devnet-avail.polygon.technology/). 
+Head over to [Avail Apps](https://devnet-avail.polygon.technology/). 
+
+<img src={useBaseUrl("img/avail/avail-explorer.png")} width="100%" height="100%"/> 
 
 :::note
 
-The Avail-JS App uses an implementation of **[Polkadot-JS Apps](https://polkadot.js.org/)**. 
-If you are familar with Polkadot-JS Apps, the interface and navigation are the same.
+**[Avail Apps](https://github.com/maticnetwork/avail-apps.git)** is a fork 
+of **[Polkadot-JS Apps](https://polkadot.js.org/)**. The interface and navigation are the same 
+if you are familiar with Polkadot-JS Apps.
 
 :::
 
 Navigate to the **Accounts** tab and click on the **Accounts** sub-tab.
+
+<img src={useBaseUrl("img/avail/account.png")} width="100%" height="100%"/> 
+
+:::info Address Format
+
+As Avail is implemented using [Substrate](https://substrate.io/), generic Substrate addresses 
+always start with a 5 and follow the **[SS58 address format](https://docs.substrate.io/v3/advanced/ss58/)**.
+
+:::
   
 On the Accounts page, click on the **Add account** button and follow the steps in the pop-up window.
 
+<img src={useBaseUrl("img/avail/add-account.png")} width="100%" height="100%"/> 
+
 :::caution Key Management
 
-The seed phrase is your account key, which gives control to your account.
+The seed phrase is your account key, which controls your account.
 You should not store your seed phrase on a device that has or may have access to 
-an internet connection. The seed phrase should be written down stored on a non-digital 
-device.
+an internet connection. The seed phrase should be written down and stored on a non-digital 
+medium.
 
 :::
 
@@ -59,41 +78,105 @@ your account.
 
 :::
 
-:::info Address Format
-
-As Avail is implemented using [Substrate](https://substrate.io/), generic Substrate addresses 
-always start with a 5 and follow the **[SS58 address format](https://docs.substrate.io/v3/advanced/ss58/)**.
-
-:::
-
 ## Receive AVL testnet tokens
 
-* On Avail-JS Apps, click on the icon next to your account name; this will copy your address.
+On Avail Apps, click on the icon next to your account name to copy your address.
 Alternatively, you can copy the address manually.
 
-* Head over to the [Polygon faucet](https://faucet.polygon.technology).
+Head over to the [Polygon faucet](https://faucet.polygon.technology).
 
-* On the faucet page, select `DA (Test Token)` and `DA Network` as the token and network, 
-  respectively. Paste your account address and click on **Submit**. The transfer will up to one 
-  minute to complete.
+On the faucet page, select `DA Network`  and  `DA (Test Token)` as the network and token. 
+Paste your account address and click on **Submit**. The transfer will up to one 
+minute to complete.
 
-* Upon successful transfer, your account should now have a non-zero balance. If you face any issues obtaining tokens from the facuet, 
-  please reach out to the [support team](https://support.polygon.technology/support/home).
+<img src={useBaseUrl("img/avail/faucet.png")} width="100%" height="100%"/> 
+
+Upon successful transfer, your account should now have a non-zero balance. If you face any issues 
+obtaining tokens from the facuet, please reach out to the 
+[support team](https://support.polygon.technology/support/home).
 
 ## Submit a New Transaction
 
-- On the explorer, go to Developer -> Extrinsics
-- Select your newly created account. 
-- On the extrinsic dropdown, select `dataAvailability`.
-- Select the dropdown to create an application key or submit data. 
-- Select the dropdown `SubmitData` and enter the value you wish to submit as part of this transaction using the `App_ID` or without its default key value as `0` . Click on submit transaction. 
-- Before sending a transaction using App_ID, it must be created using the `createApplicationKey` field.
-- On successful inclusion of the transaction, head over to Network -> Explorer. On the recent event list you should see your transaction. You can click on it and expand to check out the details. 
+On Avail Apps, navigate to the **Developer** tab and click on the **Extrinsics** sub-tab.
 
-## How to get guarantees that the data behind the transaction is available?
+<img src={useBaseUrl("img/avail/developer.png")} width="100%" height="100%"/> 
 
-We have abstracted out the gory details of verifying data availability and hosted a light client for your use. Just click on the block number against your desired transaction. You will see all the block details. Along with that, you will see a confidence factor. If it shows `0%`, give it some time and recheck it later. Otherwise, it should show a non-zero confidence level showing the probability with which the underlying data is available. 
+Select your newly created account. 
 
+<img src={useBaseUrl("img/avail/developer-account.png")} width="100%" height="100%"/> 
+
+There are many extrinsics to choose from; go ahead and select
+the `dataAvailability` extrinsic from the **extrinsic dropdown menu**.
+
+:::info What are extrinsics
+
+Extrinsics are a form of external information and can either be inherents, signed transactions,
+or unsigned Transactions. More details about extrinsics are available in the 
+[Substrate documentation](https://docs.substrate.io/v3/concepts/extrinsics/).
+
+:::
+
+You can then use the dropdown menu on the right-hand side to create an application key or 
+submit data.
+
+<Tabs
+  defaultValue="key"
+  values={[
+    { label: 'Create an application key', value: 'key', },
+    { label: 'Submit data', value: 'data', },
+  ]
+}>
+<TabItem value="key">
+
+In this example, `createApplicationKey` is used to create an application key.
+
+<img src={useBaseUrl("img/avail/da-app-key.png")} width="100%" height="100%"/> 
+
+Enter the value you wish to submit as part of this transaction using the `App_ID` or 
+without its default key value as `0`.
+
+<img src={useBaseUrl("img/avail/da-app-data.png")} width="100%" height="100%"/> 
+
+:::note
+
+Before sending a transaction using `App_ID`, it must be created using the `createApplicationKey` field.
+
+:::
+
+Submit the transaction. Head over to the [Network Explorer](https://devnet-avail.polygon.technology/#/explorer). 
+The recent event list should list your transaction. You can click on the event and expand it to check out 
+the transaction details.
+
+</TabItem>
+
+<TabItem value="data">
+
+In this example, `submitBlockLengthProposal` is used to submit data.
+
+<img src={useBaseUrl("img/avail/extrinsic-da.png")} width="100%" height="100%"/> 
+
+Enter the values you wish to submit as part of this transaction for `row` and `col`.
+
+<img src={useBaseUrl("img/avail/da-row-col.png")} width="100%" height="100%"/> 
+
+Submit the transaction. Head over to the [Network Explorer](https://devnet-avail.polygon.technology/#/explorer). 
+The recent event list should list your transaction. You can click on the event and expand it to check out 
+the transaction details.
+
+</TabItem>
+</Tabs>
+
+:::info How to get guarantees that the data behind the transaction is available?
+
+We have abstracted out the nitty-gritty of verifying data availability and have hosted a light client 
+for your use. All you need to do is click on the block number against your desired transaction and
+see all of the block details. 
+
+You will also see a *confidence factor*. If it shows `0%`, give it some time and recheck it later. 
+Otherwise, it should show a non-zero confidence level indicating the probability with which the underlying data 
+is available. 
+
+:::
 
 </TabItem>
 <TabItem value="library">
@@ -251,17 +334,20 @@ main().catch(console.error)
 > You should get balance as `0` if the account is newly created and you have not used the facuet. 
 > You should also see the confirmation of the transaction.
 
-:::tip Using Avail-JS Apps
+:::tip Using Avail Apps
 
-For convienence, can add the account you generated with `@polkadot/api` on the Apps UI to perform 
-account actions.
+For convenience, you can add the account you generated with `@polkadot/api` on the Apps UI to 
+perform account actions.
 
 :::
 
 ## Submit a New Transaction
 
-You can use the following script to sign and submit transactions. Replace `value` and `APP_ID` with the ones you want to submit. Also, replace the mnemonic string with your own. 
-The following script is to create an Application key: 
+You can use the following script to sign and submit transactions. 
+Replace `value` and `APP_ID` with those you want to submit.
+
+Also, replace the mnemonic string with your own. 
+The following script is to create an application key: 
 
 ```typescript
 const { ApiPromise, WsProvider, Keyring } = require('@polkadot/api');
@@ -461,21 +547,23 @@ async function main () {
     }catch(e){
         console.error(e);
     }
-    
-
 }
 main().catch(console.error)
 ```
-You can even head over to the explorer on your browser to check your sent transaction.
 
-## How to get guarantees that the data behind the transaction is available?
+You can head over to the [Network Explorer](https://devnet-avail.polygon.technology/#/explorer), and the
+recent event list should list your transaction. You can click on the event and expand it to check out 
+the transaction details.
 
-You can use the following curl request to check out the confidence level. Just replace the block number with the one you wish to get availability guarantees for. 
+:::info How to get guarantees that the data behind the transaction is available?
 
-`curl -s -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"get_blockConfidence","params": {"number": block_number_here}, "id": 1}' 'https://polygon-da-light.matic.today/v1/json-rpc'`
+You can use the following curl request to check out the confidence level. Just replace the block number with the 
+one you wish to get availability guarantees for. 
 
-We appreciate you using our devnet and providing us valuable feedback. We are working on improving a lot of the current features and we will keep you updated. 
+```bash
+curl -s -H 'Content-Type: application/json' -d '{"jsonrpc":"2.0","method":"get_blockConfidence","params": {"number": block_number_here}, "id": 1}' 'https://polygon-da-light.matic.today/v1/json-rpc'
+```
+:::
 
 </TabItem>
 </Tabs>
- 
