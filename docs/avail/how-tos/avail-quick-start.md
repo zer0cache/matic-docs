@@ -108,7 +108,7 @@ Select your newly created account.
 There are many extrinsics to choose from; go ahead and select
 the `dataAvailability` extrinsic from the **extrinsic dropdown menu**.
 
-:::info What are extrinsics
+:::info What are extrinsics?
 
 Extrinsics are a form of external information and can either be inherents, signed transactions,
 or unsigned Transactions. More details about extrinsics are available in the 
@@ -386,10 +386,24 @@ perform account actions.
 
 ## Submit a New Transaction
 
-You can use the following script to sign and submit transactions. 
-Replace `value` and `APP_ID` with those you want to submit.
+You can use the provided scripts in this section to sign and submit transactions. 
 
-Also, replace the mnemonic string with your own. 
+:::note
+
+Replace `value` and `APP_ID` with those you want to submit.
+Also, replace the mnemonic string with your own.
+
+:::
+
+<Tabs
+  defaultValue="key-script"
+  values={[
+    { label: 'Create an application key', value: 'key-script', },
+    { label: 'Submit data', value: 'data-script', },
+  ]
+}>
+<TabItem value="key-script">
+
 The following script creates an application key: 
 
 ```typescript
@@ -493,7 +507,10 @@ main().catch(console.error)
 
 ```
 
-This next script submits the data:
+</TabItem>
+<TabItem value="data-script">
+
+The following script submits data: 
 
 ```typescript 
 
@@ -596,6 +613,10 @@ async function main () {
 main().catch(console.error)
 
 ```
+
+</TabItem>
+</Tabs>
+
 You can head over to the [Network Explorer](https://devnet-avail.polygon.technology/#/explorer), and the
 recent event list should list your transaction. You can click on the event and expand it to check out 
 the transaction details.
