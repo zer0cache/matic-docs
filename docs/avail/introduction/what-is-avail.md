@@ -21,11 +21,11 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 :::note A Robust General-Purpose Scalable Data Availability Layer
 
 * Enable standalone chains or sidechains with arbitrary execution environments to bootstrap 
-  validator security without needing to create and manage their own validator set by guaranteeing transaction 
-  data availability
+  validator security without needing to create and manage their own validator set by guaranteeing 
+  transaction data availability.
 
-* Layer-2 solutions such as Validiums to offer increased scalability throughput by using Avail as an off-chain 
-  data availability layer
+* Layer-2 solutions such as Validiums to offer increased scalability throughput by using Avail as an 
+  off-chain data availability layer.
 
 :::
  
@@ -40,7 +40,39 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 }>
 <TabItem value="da">
 
-### What is the Data Availability problem?
+### What is the data availability problem?
+
+
+### Avail's approach to data dvailability
+
+#### High Guarantee
+
+Avail provides a provable high guarantee that the data is available. In constant time get close to 100% 
+guarantee.
+
+#### Minimum Trust
+
+No need to be a validator or host a full node. Even with a light client, get guaranteed availability.
+
+#### Easy to Use
+
+Built using modified Substrate, the solution focuses on ease of use, whether you host an application or 
+operate an off-chain scaling solution.
+
+#### Perfect for Off-Chain Scaling
+
+Unlock the full scaling potential of your off-chain scaling solution by keeping the data with us and 
+still avoiding the DA problem on L1.
+
+#### Bootstrapping Security
+
+Standalone chains can use Avail to ensure ordered data is always available, irrespective of the application 
+logic.
+
+#### Fast provable finality using NPoS
+
+Fast provable finality via Nominated Proof of Stake using MATIC token. Backed by KGZ commitments and erasure 
+coding.
 
 </TabItem>
 <TabItem value="scaling">
@@ -50,3 +82,4 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 </TabItem>
 </Tabs>
+

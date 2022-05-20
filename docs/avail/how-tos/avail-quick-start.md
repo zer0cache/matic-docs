@@ -19,11 +19,18 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-:::note We appreciate you using our devnet and providing us with valuable feedback. We are working on improving many of the current features, and we will keep you updated.
+:::note We are working on improving many of the current features
+
+We appreciate you using our devnet and encourage your valuable feedback
+through one of our **[community channels](https://polygon.technology/community/)**.
 
 :::
  
 ## Generate an Avail Account
+
+You can generate an account using one of two methods:
+- [Avail Apps](https://devnet-avail.polygon.technology/)
+- Console/Typescript
 
 <Tabs
   defaultValue="apps"
@@ -68,13 +75,9 @@ You should not store your seed phrase on a device that has or may have access to
 an internet connection. The seed phrase should be written down and stored on a non-digital 
 medium.
 
-:::
-
-:::tip Account JSON file
-
 Storing your account's JSON file does not have to be as rigourous as storing the seed phrase,
-as long as you use a strong password to encrypt the file. You can import the JSON file to access
-your account.
+as long as you use a strong password to encrypt the file. You can import the JSON file to 
+access your account.
 
 :::
 
@@ -82,6 +85,8 @@ your account.
 
 On Avail Apps, click on the icon next to your account name to copy your address.
 Alternatively, you can copy the address manually.
+
+<img src={useBaseUrl("img/avail/account-icon.png")} width="100%" height="100%"/> 
 
 Head over to the [Polygon faucet](https://faucet.polygon.technology).
 
@@ -92,7 +97,7 @@ minute to complete.
 <img src={useBaseUrl("img/avail/faucet.png")} width="100%" height="100%"/> 
 
 Upon successful transfer, your account should now have a non-zero balance. If you face any issues 
-obtaining tokens from the facuet, please reach out to the 
+obtaining tokens from the faucet, please reach out to the 
 [support team](https://support.polygon.technology/support/home).
 
 ## Submit a New Transaction
@@ -132,8 +137,8 @@ In this example, `createApplicationKey` is used to create an application key.
 
 <img src={useBaseUrl("img/avail/da-app-key.png")} width="100%" height="100%"/> 
 
-Enter the value you wish to submit as part of this transaction using the `App_ID` or 
-without its default key value as `0`.
+Enter the value you wish to submit as part of this transaction using the `App_ID`, or 
+without a default key value as `0`.
 
 <img src={useBaseUrl("img/avail/da-app-data.png")} width="100%" height="100%"/> 
 
@@ -280,12 +285,12 @@ medium.
 Head over to the [Polygon faucet](https://faucet.polygon.technology).
 
 On the faucet page, select `DA (Test Token)` and `DA Network` as the token and network, 
-respectively. Paste your account address and click on **Submit**. The transfer will up to one 
+respectively. Paste your account address and click on **Submit**. The transfer will take up to one 
 minute to complete.
 
 <img src={useBaseUrl("img/avail/faucet.png")} width="100%" height="100%"/> 
 
-Upon successful transfer, your account should now have a non-zero balance. If you face any issues obtaining tokens from the facuet, please reach out to the [support team](https://support.polygon.technology/support/home).
+Upon successful transfer, your account should now have a non-zero balance. If you face any issues obtaining tokens from the faucet, please reach out to the [support team](https://support.polygon.technology/support/home).
 
 ### Balance Check with `@polkadot/api`
 
@@ -375,7 +380,7 @@ main().catch(console.error)
 
 ```
 
-> You should get balance as `0` if the account is newly created and you have not used the facuet. 
+> You should get balance as `0` if the account is newly created and you have not used the faucet. 
 > You should also see the confirmation of the transaction.
 
 :::tip Using Avail Apps
