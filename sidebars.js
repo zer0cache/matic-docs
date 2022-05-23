@@ -451,7 +451,7 @@ maintain: [
             "maintain/validator/core-components/state-sync-mechanism",
           ],
         },
-        
+
       ],
     },
   {
@@ -628,16 +628,6 @@ pos: [
     "home/architecture/security-models",
     ],
   },
-  {
-    type: "category",
-    label: "FAQs",
-    items: [
-      "pos/faq/general-faq",
-      "pos/faq/technical-faqs",
-      "pos/faq/wallet-bridge-faq",
-      "pos/faq/widget-faq",
-    ],
-  },
 ],
 
 nightfall: [
@@ -650,6 +640,27 @@ nightfall: [
             "nightfall/deployments/testnet",
           ],
         },
-  ]
+        "nightfall/faq/faq",
+  ],
 
+  faq: [
+      "faq/general-faq",
+      "faq/technical-faqs",
+      // "faq/delegator-faq",
+      "faq/commit-chain-multisigs",
+      "maintain/delegate/delegator-faq",
+      "maintain/validate/faq/validator-faq",
+      // "faq/staking-tutorials",
+      {
+        type: "category",
+        label: "Wallet FAQs",
+        items: [
+      "faq/wallet-bridge-faq",
+      "faq/adding-a-custom-token",
+            ],
+          },
+      "faq/consensys-framework",
+      "faq/widget-faq",
+      "faq/wallet-list",
+    ],
 };

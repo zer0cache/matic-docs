@@ -193,6 +193,11 @@ module.exports = {
                 ],
         },
         {
+          href: 'https://polygon.technology/developers/',
+          label: "Developer resources",
+          position: "right",
+        },
+        {
           label: "Community",
           position: "right",
           items: [
@@ -235,32 +240,27 @@ module.exports = {
                 ],
         },
         {
+          label: "Support",
+          href: "https://polygon.technology/developer-support-program/",
+          position: "right",
+        },
+        {
           label: "FAQs",
           position: "right",
           items: [
                   {
-                    href: 'docs/pos/faq/general-faq/',
-                    label: 'PoS FAQs',
+                    to: 'docs/faq/general-faq/',
+                    label: 'PoS FAQ',
                     target: '_blank',
                     rel: null,
                   },
                   {
-                    href: 'docs/nightfall/faq/faq/',
+                    to: 'docs/nightfall/faq/',
                     label: 'Nightfall FAQ',
                     target: '_blank',
                     rel: null,
                   }
                 ],
-        },
-        {
-          href: 'https://polygon.technology/developers/',
-          label: "Developer Resources",
-          position: "right",
-        },
-        {
-          label: "Support",
-          href: "https://polygon.technology/developer-support-program/",
-          position: "right",
         },
         {
           to: "docs/contribute/orientation/",
