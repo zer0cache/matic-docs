@@ -1,10 +1,11 @@
 ---
 id: faq
 title: FAQ
-sidebar_label: FAQ
-description: Nightfall frequently asked questions
-
 ---
+
+:::tip
+If you do not find your question in this list, please submit your question on the <ins>**[Polygon Nightfall discord server](https://discord.com/invite/pZkC3JV2bR)**</ins>.
+:::
 
 ## Where can I find the Smart Contracts?
 Polygon Nightfall contracts have been deployed in [testnet Goerli](../deployments/testnet.md) and [mainnet](../deployments/mainnet.md). The contracts addresses are (TODO):
@@ -14,14 +15,14 @@ Polygon Nightfall contracts have been deployed in [testnet Goerli](../deployment
     - Proposers:
     - Challengers:
     - State:
-    - Verifier: 
+    - Verifier:
 
 - Goerli
     - Shield:
     - Proposers:
     - Challengers:
     - State:
-    - Verifier: 
+    - Verifier:
 
 ## What's the state of Polygon Nightfall's security audit?
 Polygon Nightfall is currently undergoing a security audit that is planned to be finished during Q3. Meanwhile, several restrictions have been added to the protocol:
@@ -38,16 +39,15 @@ Polygon Nightfall is currently undergoing a security audit that is planned to be
 | USDT        | 1000 USDT   | 1000 USDT    |
 | USDC        | 1000 USDC   | 1000 USDC    |
 
-## How do I set up my Nightfall Wallet? 
+
+## How do I set up my Nightfall Wallet?
 There is a complete wallet tutorial [here](../tools/nightfall-wallet.md) with all details on how to get started with Polygon Nightfall wallet.
 
-## How long do transfers take on Polygon Nightfall Network from start to finish? 
-Current proposer takes transactions from users and makes blocks of up to 32 transactions. As soon as enough transactions are collected to
-build a block, the transaction will be processed.
-
+## How long do transfers take on Polygon Nightfall Network from start to finish?
+Current proposer takes transactions from users and makes blocks of 32 transactions. As soon as enough transactions are collected to build a block, the transaction will be processed.
 Additionally, there is an upper limit on the block generation period so that at least one block is proposed every 6 hours (regardless of the number of transactions collected by the proposer).
 
-## Who can I transact with? 
+## Who can I transact with?
 To transfer assets within Polygon Nightfall one only needs the `Destination Wallet Address`. Read the [wallet tutorial](../tools/nightfall-wallet.md) to understand how to share your Wallet Address to receive funds.
 
 ## What are some privacy recommendations?
@@ -83,10 +83,8 @@ Funds can be withdrawn with Polygon Nightfall wallet. Withdrawals have a **one w
 ## How much will transactions cost on Nightfall?
 There are two types of transactions that bear different costs:
 
-
 - On-chain transactions: These transactions are sent to the smart contract and require gas fees on Ethereum to be mined. Any proposer can take this transaction and put it in a block. Currently, `deposit` and `finalize withdrawal` are on-chain transactions.
 - Off-chain transactions: These transactions are sent directly to the proposer. Currently, all `transfer` and `withdrawal` are configured as off-chain transactions. These transactions cost `1 MATIC` paid in the PoS network.
-
 
 ## Which tokens can I use on Nightfall Network?
 The following tokens are operative on Nightfall:
@@ -97,7 +95,8 @@ The following tokens are operative on Nightfall:
 - USDC
 
 ## Do I need MATIC tokens to use Nightfall?
+
 Yes. You need MATIC on PoS to be able to send off-chain transactions to the proposer.
 
 ## Where can I submit a bug report or contact Nightfall for additional help?
-Best way is to join our [Polygon Nightfall discord server](https://discord.com/invite/pZkC3JV2bR) and submit your question
+Best way is to join our [Polygon Nightfall discord server](https://discord.com/invite/pZkC3JV2bR) and submit your question.

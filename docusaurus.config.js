@@ -119,9 +119,10 @@ module.exports = {
       additionalLanguages: ['solidity']
     },
     algolia: {
-      appId: 'BH4D9OD16A',
-      apiKey: "c3ad4eabc5af314ea3ed331efbe0a5c4",
       indexName: "matic_developer",
+      appId: '16JCDEHCCN',
+      apiKey: "757c19b23127e9c6959da7f13b71cfab",
+      contextualSearch: false,
       algoliaOptions: {},
     },
     announcementBar: {
@@ -193,6 +194,11 @@ module.exports = {
                 ],
         },
         {
+          href: 'https://polygon.technology/developers/',
+          label: "Developer resources",
+          position: "right",
+        },
+        {
           label: "Community",
           position: "right",
           items: [
@@ -235,14 +241,27 @@ module.exports = {
                 ],
         },
         {
-          href: 'https://polygon.technology/developers/',
-          label: "Developer Resources",
-          position: "right",
-        },
-        {
           label: "Support",
           href: "https://polygon.technology/developer-support-program/",
           position: "right",
+        },
+        {
+          label: "FAQs",
+          position: "right",
+          items: [
+                  {
+                    to: 'docs/faq/general-faq/',
+                    label: 'PoS FAQ',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    to: 'docs/nightfall/faq/',
+                    label: 'Nightfall FAQ',
+                    target: '_blank',
+                    rel: null,
+                  }
+                ],
         },
         {
           to: "docs/contribute/orientation/",
