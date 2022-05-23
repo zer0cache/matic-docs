@@ -29,7 +29,7 @@ Polygon is a scaling solution for public blockchains. Polygon PoS supports all t
 * Configure the Web3 RPC-URL to https://rpc-mumbai.matic.today, *Everything else remains the same*
 
 ## What is a Blockchain?
-Simply put, Blockchain is a shared, immutable ledger for recording transactions, tracking assets and building trust. Head over to [Blockchain Basics](blockchain-basics/blockchain) to read more.
+Simply put, Blockchain is a shared, immutable ledger for recording transactions, tracking assets and building trust. Head over to [Blockchain Basics](blockchain-basics/basics-blockchain.md) to read more.
 
 :movie_camera: [Your first DApp](https://www.youtube.com/watch?v=rzvk2kdjr2I)
 
