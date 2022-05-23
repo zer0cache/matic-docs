@@ -1,46 +1,98 @@
-# Nightfall wallet
-> Nightfall is currently undergoing a security audit, and it is expected to complete in Q3 2022. 
+---
+id: nightfall-wallet
+title: Nightfall Wallet
+sidebar: Nightfall Wallet
+description: Polygon Nightfall wallet guide
+keywords:
+  - docs
+  - matic
+  - polygon
+  - nightfall
+  - wallet
+slug: nightfall-wallet
+image: https://matic.network/banners/matic-network-16x9.png 
+---
 
-## Introduction
-*Polygon Nightfall enables secure, private low cost transfers of tokens in a decentralized network. Nightfall accomplishes this by pairing zero-knowledge (ZK) technology and Optimistic rollups.*
+The Polygon Nightfall wallet is a browser wallet that is able to interact with the
+Nightfall mainnet beta release.
 
-Use the Nightfall wallet to make deposits, transfers and withdrawals. The following tokens are operative:
+:::note Use the Nightfall wallet to make deposits, transfers, and withdrawals
+
+The following tokens are currently operative:
 
 - MATIC
 - WETH
 - DAI
 - USDC
 
-**We highly recommend you to use Nightfall on [Google Chrome](#browser)**.
+Note the following deposit and withdrawal restrictions
 
-## Before you start
 
-### Learn about commitments
-A commitment is a cryptographic primitive that allows one to commit to a chosen value while keeping it hidden to others, with the ability to reveal the committed value later.
+| ERC20 token | Max Deposit | Max Withdraw |
+|-------------|-------------|--------------|
+| MATIC       | 250 MATIC   | 1000 MATIC   |
+| WETH        | 0.25 WETH   | 1 WETH       |
+| DAI         | 250 DAI     | 1000 DAI     |
+| USDT        | 250 USDT    | 1000 USDT    |
+| USDC        | 250 USDC    | 1000 USDC    |
 
-Every time you perform a transaction using Nightfall, the browser wallet computes a Zero Knowledge Proof (ZKP) and creates (or nullifies) a commitment. E.g. you create a commitment when you make a deposit, you nullify a commitment when you make a withdrawal.
+:::
 
-ZKP computation relies on [circuits](../protocol/circuits.md) that define the rules that a transaction must follow to be correct. During Beta there are just a few rules in place, which require you to operate as follows: 
+:::caution Security measures
 
-- Withdraw value must exactly match the amount in one of the commitments owned
+The Nightfall wallet is tested on a Chrome browser. During Beta, mileage may vary on other 
+browsers. 
+
+**We highly recommend you to use Nightfall on Chrome**.
+
+Your wallet keys and transactions are stored in the browser (IndexedDb). 
+This data is currently not exported anywhere for security measures. As a result, you will not 
+have access to your wallet when using a different browser or a different machine unless you transfer 
+the IndexedDB contents, or recover your account.
+
+We may change this in future depending on the Beta phase feedback.
+
+:::
+
+## What are Commitments?
+
+A commitment is a cryptographic primitive that allows a user to commit to a chosen value 
+while keeping it hidden to others, with the ability to reveal the committed value later.
+
+Every time a user performs a transaction using Nightfall, the browser wallet computes a Zero 
+Knowledge Proof (ZKP) and creates (or nullifies) a commitment. 
+For instance, you create a commitment when you make a deposit and nullify a commitment when you 
+make a withdrawal.
+
+ZKP computation relies on [circuits](../protocol/circuits.md) that define the rules which a 
+transaction must follow to be correct. During Beta, there are a limited number of rules in place which require you to operate as follows: 
+
+- The Withdraw value must exactly match the amount in one of the commitments owned
 - [About transfers](#important-information-about-transfers)
 
 The key takeaway is that Nightfall handles commitments. Commitments are created during deposits and transfers, and are spent during transfers and withdrawals transactions. Even though the wallet shows the aggregated commitment value per asset, **commitments are not aggregated together**. When spending a commitment, its value of the commitment spent needs to match exactly an existing commitment, (`withdraw` and `single transfer`) or must be a linear combination of any two commitments owned (`double transfer`).
 
-## Getting started
-Go to the Polygon web [mainnet wallet](https://wallet-beta.polygon.technology) or [testnet wallet](https://wallet.testnet.polygon-nightfall.technology/), connect your Metamask and select the Polygon Wallet on the left. If you need help with Metamask refer to the <a href="https://docs.polygon.technology/docs/develop/metamask/hello" target="_blank">Polygon documentation</a>.
+## Getting Started
+
+Visit the Polygon web [mainnet wallet](https://wallet-beta.polygon.technology) or 
+[testnet wallet](https://wallet.testnet.polygon-nightfall.technology/), connect your MetaMask 
+account and select the Polygon Wallet on the left. If you need help with MetaMask, refer to the 
+[Polygon documentation on MetaMask](../../develop/metamask/tutorial-metamask.md)
 
 ![](../imgs/tools-wallet/polygon-wallet-click-nf.png)
 
-At this point, wallet will prompt you to Switch to Polygon Network, and a Metamask popup will request to confirm the switch.
+At this point, the wallet will prompt you to Switch to Polygon Network, and a Metamask popup will
+request to confirm the switch.
 
 ![](../imgs/tools-wallet/polygon-network.png)
 
-Next, in the top wallet section, click in the Dropdown menu and select `Polygon Nightfall`, and a new request to switch to Ethereum Mainnet will appear. Please, accept to switch to Ethereum mainnet to operate with Polygon Nightfall.
+Next, in the top wallet section, click in the Dropdown menu and select `Polygon Nightfall`, and a 
+new request to switch to Ethereum Mainnet will appear. Please, accept to switch to Ethereum mainnet 
+to operate with Polygon Nightfall.
 
 ![](../imgs/tools-wallet/polygon-network-dropdown-nf.png)
 
-If you are working on testnet, the wallet URL will inmediatelly take you to the landing page of Polygon Nightfall wallet.
+If you are working on testnet, the wallet URL will immediatelly take you to the landing page of Polygon Nightfall wallet.
 
 ![](../imgs/tools-wallet/wallet-main-screen.png)
 
@@ -147,20 +199,3 @@ be able to finalize and claim withdrawal amount.
 Check the status of your deposits, transfers and withdrawals on the Transactions page. Note that each transaction is processed as soon as there are enough transactions to produce a block or after 6 hours.
 
 ![](../imgs/tools-wallet/transactions.png)
-
-## Security measures
-
-### Browser
-Nightfall is tested on a Chrome browser. During Beta, mileage may vary on other browsers.
-
-### Wallet
-Your wallet keys as well as encrypted transactions are stored in the browser, in its IndexedDb. For security reasons, currently this data is not exported anywhere. Thus, if you use a different browser or a different machine, you will not have access to your wallet unless you transfer the IndexedDB contents. We may change this in future, depending on Beta feedback.
-
-### Deposit and withdrawal restrictions
-| ERC20 token | Max Deposit | Max Withdraw |
-|-------------|-------------|--------------|
-| MATIC       | 250 MATIC   | 1000 MATIC   |
-| WETH        | 0.25 WETH   | 1 WETH       |
-| DAI         | 250 DAI     | 1000 DAI     |
-| USDT        | 250 USDT    | 1000 USDT    |
-| USDC        | 250 USDC    | 1000 USDC    |
