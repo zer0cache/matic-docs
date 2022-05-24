@@ -637,6 +637,7 @@ avail: [
     "avail/architecture/avail-system-overview",
     "avail/how-tos/avail-quick-start",
     "avail/how-tos/avail-node-management",
+    "avail/faq"
   ],
 
 nightfall: [
