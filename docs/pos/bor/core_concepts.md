@@ -264,7 +264,7 @@ contract BorValidatorSet {
 	/// Get current validator set (last enacted or initial if no changes ever made) with a current stake.
 	function getInitialValidators() public view returns (address[] memory, uint256[] memory;
 
-  /// Retuns bor validator set at given block number
+  /// Returns bor validator set at given block number
   function getBorValidators(uint256 number) public view returns (address[] memory, uint256[] memory);
 
   /// Proposes new span in case of force-ful span change
