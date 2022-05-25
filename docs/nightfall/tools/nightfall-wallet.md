@@ -1,135 +1,201 @@
-# Intro
-The Polygon Nightfall wallet 
-## Generating a Web Component
-*We decided to use a web component standard because this way would be better to do the integration between: Polygon Wallet, developed in Vue.js, and Polygon Nightfall Wallet, developed in React.js.*
+---
+id: nightfall-wallet
+title: Nightfall Wallet
+sidebar: Nightfall Wallet
+description: Polygon Nightfall wallet guide
+keywords:
+  - docs
+  - matic
+  - polygon
+  - nightfall
+  - wallet
+slug: nightfall-wallet
+image: https://matic.network/banners/matic-network-16x9.png 
+---
 
-**How we are doing this?**
+The Polygon Nightfall wallet is a browser wallet that is able to interact with the
+Nightfall mainnet beta release.
 
-Instead of create a JSX element and put it within a html root div. We're creating a class and extending a HTMLElement interface that allow us to create a Web Component.
+:::note Use the Nightfall wallet to make deposits, transfers, and withdrawals
 
-You can learn more about this standard here: *https://developer.mozilla.org/en-US/docs/Web/Web_Components*
+The following tokens are currently operative:
 
-## Integration with Polygon Wallet
-![image](https://user-images.githubusercontent.com/73957838/164309540-f6067154-2013-424a-ba86-f025cf1f1cdd.png)
+- MATIC
+- WETH
+- DAI
+- USDC
+
+### Note the following deposit and withdrawal restrictions:
 
 
+| ERC20 token | Max Deposit | Max Withdraw |
+|-------------|-------------|--------------|
+| MATIC       | 250 MATIC   | 1000 MATIC   |
+| WETH        | 0.25 WETH   | 1 WETH       |
+| DAI         | 250 DAI     | 1000 DAI     |
+| USDT        | 250 USDT    | 1000 USDT    |
+| USDC        | 250 USDC    | 1000 USDC    |
 
-## 1. User amount
-![](https://i.imgur.com/hxEMlQv.png)
-- **Where does this value comes?**
-    - This comes from the sum of each token in tokenList. The sum of each token balance comes from getWalletBalance.
-- **In which file is the code responsible for this functionality?**
-    - `/Wallet/` contains the database call that calculates the balance of each token.
-    - `/Assets/` contains the code that adds up all the token balance.
-- **When should we calculate this?**
-    - I see two options:
-        - (Current) We can calculate in useEffect in the assets component or;
-        - We can calculate it every time that changes using the context api.
+:::
 
-## 2. Receive and send buttons
-![](https://i.imgur.com/UDQeUsa.png)
-- **What the browser need to show when user click on receive?**
-    - A modal that shows the user's compressed pkd and a QR representation.
-- **What the browser need to show when user click on send?**
-    - The send modal.
-- **There are some difference between this button and the send button in the assets?**
-    - ...
-- **In which file is the code responsible for this functionality?**
-    - TBD
+:::caution Security measures
 
-## 3. Balances on Nightfall
-![](https://i.imgur.com/ehpK1Pz.png)
-- **Where does this values comes?**
-    - The `getWalletBalance()` as part of rendering this page.
-- **In which file is the code responsible for this functionality?**
-    - `/Wallet/` does the calculation, rendered by `/TokenItem/`
-- **How and where will change each balance?**
-    - The balance will change the local indexedDB is updated.   
-    - Currently we are needing to refresh the page to update the values. We should to figure out how to do it. 
+The Nightfall wallet is tested on a Chrome browser. During Beta, mileage may vary on other 
+browsers. 
 
-## 4. Deposit
-![](https://i.imgur.com/nk8FvqL.png)
-- **What the browser need to show when user click on deposit?**
-    - Goes to bridge page with deposit option choosed in the togle button.
-    ![](https://i.imgur.com/aDQSqaz.png)
+**We highly recommend you to use Nightfall on Chrome**.
 
-- **What is the complete flow for deposit?**
-    - Image from https://whimsical.com/polygonwalletflow-Em1JwN4CBQ8DXoTPeGSqJ:
-    ![](https://i.imgur.com/gWNOn93.png)
-    - ***We need to create the two first modals***
+Your wallet keys and transactions are stored in the browser (IndexedDb). 
+This data is currently not exported anywhere for security measures. As a result, you will not 
+have access to your wallet when using a different browser or a different machine unless you transfer 
+the IndexedDB contents, or recover your account.
 
-- **In which file is the code responsible for this functionality?**
-    - Write here...
-- **How will we pass the token choosed like a parameter for the bridge component?**
-    - Write here...
+We may change this in future depending on the Beta phase feedback.
 
-## 5. Withdraw
-![](https://i.imgur.com/HK7t8rN.png)
-- **What the browser need to show when user click on withdraw?**
-    - Write here...
-- **What is the complete flow for withdraw?**
-    - Write here...
-- **In which file is the code responsible for this functionality?**
-    - Write here...
-- **How will we pass the token choosed like a parameter for the bridge component?**
-    - Write here...
+:::
 
-## 6. Send
-![](https://i.imgur.com/17RI9YJ.png)
-- **What the browser need to show when user click on send?**
-    - The send modal (this already exists but needs a visual update)
-    - The send modal will receive the name of the token choosed and might filter. This way we can get the address of the token.
-- State
-    - We should to storage the address using useState in the send component. ***(This component will be created)***
-- **What is the complete flow for send?**
-![](https://i.imgur.com/Fa0palL.png)
-- **In which file is the code responsible for this functionality?**
-    - `/components/TokenItem`
+## What are Commitments?
 
-## 7. Bridge component
-- **Which are the states necessary in the Bridge component?**
-    - **Context api**: `zkpKeys` & `shieldContractAddress`
-    - **tokenAddress**: Should get it from the dropdown (see Bridge Page tokens modal).
-    - **tokenBalance**: Should be loaded using `getWalletBalance()`;
+A commitment is a cryptographic primitive that allows a user to commit to a chosen value 
+while keeping it hidden to others, with the ability to reveal the committed value later.
 
-## 8. Bridge Page tokens modal
-![](https://i.imgur.com/ojFkKBL.png)
+Every time a user performs a transaction using Nightfall, the browser wallet computes a Zero 
+Knowledge Proof (ZKP) and creates (or nullifies) a commitment. 
+For instance, you create a commitment when you make a deposit and nullify a commitment when you 
+make a withdrawal.
 
-![](https://i.imgur.com/Ev3hGvV.png)
-*Image taken from the Polygon Wallet website*
+ZKP computation relies on [circuits](../protocol/circuits.md) that define the rules which a 
+transaction must follow to be correct. During Beta, there are a limited number of rules in place which require you to operate as follows: 
 
-- **Where does nigthfall list of token comes?**
-    - A JSON file, we will use a hard-coded one for now, but in the future we will make a request to a polygon url for this info.
-- **In which file is the code responsible for this functionality?**
-    - TBD
+- The Withdraw value must exactly match the amount in one of the commitments owned
+- [About transfers](#important-information-about-transfers)
 
-## 9. Brige token balance
-![](https://i.imgur.com/gYd4Ds9.png)
+The key takeaway is that Nightfall handles commitments. Commitments are created during deposits and transfers, and are spent during transfers and withdrawals transactions. Even though the wallet shows the aggregated commitment value per asset, **commitments are not aggregated together**. When spending a commitment, its value of the commitment spent needs to match exactly an existing commitment, (`withdraw` and `single transfer`) or must be a linear combination of any two commitments owned (`double transfer`).
 
-- **Where does the token balance comes? We need to show this.**
-    - The balance comes from `getWalletBalance()`
+## Getting Started
 
-## 10. Bridge Max Button
-![](https://i.imgur.com/i26GUFJ.png)
+Visit the Polygon web [mainnet wallet](https://wallet-beta.polygon.technology) or 
+[testnet wallet](https://wallet.testnet.polygon-nightfall.technology/), connect your MetaMask 
+account and select the Polygon Wallet on the left. If you need help with MetaMask, refer to the 
+[Polygon documentation on MetaMask](../../develop/metamask/tutorial-metamask.md)
 
-- **Leave for now.**
+![](../imgs/tools-wallet/polygon-wallet-click-nf.png)
 
-## 11. Transactions Page
-![](https://i.imgur.com/RCsHy8u.jpg)
-1. **Click on Transaction Row**
-    - Show "Information Modal" about transaction.
-    - What informations will be necessary in this modal???
-2. **Transaction value**
-    - Based on current exchange rate.
-3. **Etherscan arrow**
-    - Need an icon, redirects to L1 transaction on Etherscan (if available) 
-4. **Transaction Row for Withdraw**
-    - Needs an "Instant Withdrawal" + "Finalise Withdrawal" button. Example below.
-![](https://i.imgur.com/FPa0XiH.png)
-5. **Value Of Transfer Transaction**
-    - Needs to come from the COMMITMENTS_COLLECTION
-6. **Timing of Transaction**
-    - Decide whether to update this time when the transaction is actually confirmed on L1 or when the transaction is made on L2.
-7. **Transaction Filter Tab**
-    - Split tabs by transaction type
+At this point, the wallet will prompt you to Switch to Polygon Network, and a Metamask popup will
+request to confirm the switch.
 
+![](../imgs/tools-wallet/polygon-network.png)
+
+Next, in the top wallet section, click in the Dropdown menu and select `Polygon Nightfall`, and a 
+new request to switch to Ethereum Mainnet will appear. Please, accept to switch to Ethereum mainnet 
+to operate with Polygon Nightfall.
+
+![](../imgs/tools-wallet/polygon-network-dropdown-nf.png)
+
+If you are working on testnet, the wallet URL will immediatelly take you to the landing page of Polygon Nightfall wallet.
+
+![](../imgs/tools-wallet/wallet-main-screen.png)
+
+On your first visit your Nightfall wallet will have to be created. A pop-up should appear for generating a mnemonic and creating the wallet. Click `Generate Mnemonic`, then `Create Wallet`. **Note that you can only use this wallet on your current device**.
+
+![](../imgs/tools-wallet/generate-mnemonic-create-wallet.png)
+
+At this point you should be able to see both your Metamask and your Nightfall wallet addresses (top-right).
+
+**Allow a few more minutes to complete wallet setup before start making transactions**.
+
+On the bottom left corner of the wallet, the wallet status will show as `Syncing Nightfall`. In this state, the wallet is retrieving the
+ZK circuits and network state required to perform transactions.
+
+![](../imgs/tools-wallet/wallet-state-syncing.png)
+
+Please, wait until wallet status changes to `Nightfall Synced`
+
+![](../imgs/tools-wallet/wallet-state-synced.png)
+
+### Your wallet address
+Get your Nightfall wallet address from the Nightfall Assets page by clicking on `Receive`.
+
+![](../imgs/tools-wallet/nightfall-wallet-address.png)
+
+## How to make deposits
+From the Nightfall Assets page, click on the `Deposit` button to the right of the chosen asset, or navigate to the L2 Bridge page.
+
+1. Check that Transfer mode is set to `Deposit`
+2. Check that the desired token is selected (WETH, MATIC, etc.)
+3. Enter the value to be deposited in your Nightfall wallet, click `Transfer`
+4. Review the transaction on the pop-up
+5. Click `Create Transaction`
+
+![](../imgs/tools-wallet/deposit-click-transfer.png)
+
+A process will kick off to compute the ZKP and prepare the transaction - grant Metamask with access to your account balances. When this ends, click `Send Transaction` - grant Metamask with further permissions for contract interaction.
+
+![](../imgs/tools-wallet/deposit-tx-created-and-ready-to-be-sent.png)
+
+Go to the Transactions page to [view your deposit](#view-transactions).
+
+### Important information about deposits
+- [Deposit amounts are restricted](#note-the-following-deposit-and-withdrawal-restrictions) while in Beta
+
+## How to make transfers
+From the Nightfall Assets page, click on the `Send` button to the right of the chosen asset.
+
+1. Enter a valid address existing on the Polygon Nightfall L2
+2. Check that the desired token is selected (WETH, MATIC, etc.)
+3. Enter the value to be transferred from your Nightfall wallet, click `Continue`
+
+![](../imgs/tools-wallet/send-nf.png)
+
+A process will kick off to compute the ZKP and prepare the transaction. When this ends, click `Send Transaction`.
+
+Go to the Transactions page to [view your transfer](#view-transactions).
+
+### Important information about transfers
+Current ZKP transfer circuits used in Nightfall restrict transfer amounts to either exactly matching the value of one of 
+an existing commitment, or any linear combination of two existing commitments.
+
+To illustrate transfer restrictions with an example, observe the following commitment sets:
+
+- Set A: [1, 1, 1, 1, 1, 1]
+- Set B: [2, 2, 2]
+- Set C: [2, 4]
+
+While all three sets have equivalent total sums of 6, only the following transfers are available:
+
+- Set A: Any transfer between 0 and 2 (both excluded)
+- Set B: Any transfer between 0 and 4 (both excluded)
+- Set C: Any transfer between 0 and 6 (both excluded)
+
+To continue with the example, if Alex owns Set C of commitments, available transfers inlcude any amount between 0 and 6, excluding both limit values. If Alex decides to transfer 3.5 to Bob, Alex will end up with a single commitment of 2.5 and Bob will receive a commitment of 3.5 once the block is proposed.
+
+On the other hand, if Alex decides to transfer an amount of 6 to Bob, the ZK proof will fail because there won't be a valid combination of commitments. 
+
+**It is important to note that these values represent commitments owned**, not e.g. deposits. Further information available on the [commitments](../protocol/commitments.md) section of these docs.
+
+## How to make withdrawals
+From the Nightfall Assets page, click on the `Withdraw` button to the right of the chosen asset, or navigate to the L2 Bridge page.
+
+1. Check that Transfer mode is set to `Withdraw`
+2. Check that the desired token is selected (WETH, MATIC, etc.)
+3. Enter the value to be withdrawn from your Nightfall wallet, click on `Transfer`
+4. Review the transaction on the pop-up
+5. Click `Create Transaction`
+
+A process will kick off to compute the ZKP and prepare the transaction. When this ends, click `Send Transaction`.
+
+Go to the Transactions page to [view your withdrawal](#view-transactions). After the one week finalization period expires, user will
+be able to finalize and claim withdrawal amount.
+
+### Important information about withdrawals
+- Withdraw value must exactly match the amount in one of the commitments owned (more about [about commitments](#learn-about-commitments))
+- Withdrawals have a **one week** finalization period from the moment when the block including the withdraw transaction was created. Once this time period has elapsed, you can finalize the withdrawal to have your funds sent to your Ethereum account.
+- [Withdraw amounts are restricted](#note-the-following-deposit-and-withdrawal-restrictions) while in Beta
+- Withdrawals are an onchain transaction, and will pay for gas fees during the transaction request and also when withdraw is finalized.
+
+![](../imgs/tools-wallet/cooling-off-vs-ready.png)
+
+## View transactions
+Check the status of your deposits, transfers and withdrawals on the Transactions page. Note that each transaction is processed as soon as there are enough transactions to produce a block or after 6 hours.
+
+![](../imgs/tools-wallet/transactions.png)
