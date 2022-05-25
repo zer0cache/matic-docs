@@ -483,6 +483,7 @@ maintain: [
           "maintain/validate/validator-commission-operations",
         ],
       },
+      "avail/node/avail-node-management",
       {
         type: "category",
         label: "FAQ",
@@ -634,14 +635,7 @@ pos: [
     "avail/introduction/what-is-avail",
     "avail/architecture/avail-system-overview",
     "avail/how-tos/avail-quick-start",
-    {
-      type: "category",
-      label: "Run a Node",
-      items: [
-        "avail/node/avail-node-management",
-        "avail/node/avail-run-validator",
-      ],
-    },
+    "avail/node/avail-node-management",
   ],
 
 nightfall: [
