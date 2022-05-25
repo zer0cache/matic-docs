@@ -25,7 +25,7 @@ The following tokens are currently operative:
 - DAI
 - USDC
 
-Note the following deposit and withdrawal restrictions
+### Note the following deposit and withdrawal restrictions:
 
 
 | ERC20 token | Max Deposit | Max Withdraw |
@@ -96,7 +96,7 @@ If you are working on testnet, the wallet URL will immediatelly take you to the 
 
 ![](../imgs/tools-wallet/wallet-main-screen.png)
 
-On your first visit your Nightfall wallet will have to be created. A pop-up should appear for generating a mnemonic and creating the wallet. Click `Generate Mnemonic`, then `Create Wallet`. **Note that you can only [use this wallet on your current device](#wallet)**.
+On your first visit your Nightfall wallet will have to be created. A pop-up should appear for generating a mnemonic and creating the wallet. Click `Generate Mnemonic`, then `Create Wallet`. **Note that you can only use this wallet on your current device**.
 
 ![](../imgs/tools-wallet/generate-mnemonic-create-wallet.png)
 
@@ -123,7 +123,7 @@ From the Nightfall Assets page, click on the `Deposit` button to the right of th
 
 1. Check that Transfer mode is set to `Deposit`
 2. Check that the desired token is selected (WETH, MATIC, etc.)
-3. Enter the value to be deposited in your Nightfall wallet, click [`Transfer`](#deposit-and-withdrawal-restrictions)
+3. Enter the value to be deposited in your Nightfall wallet, click `Transfer`
 4. Review the transaction on the pop-up
 5. Click `Create Transaction`
 
@@ -136,7 +136,7 @@ A process will kick off to compute the ZKP and prepare the transaction - grant M
 Go to the Transactions page to [view your deposit](#view-transactions).
 
 ### Important information about deposits
-- [Deposit amounts are restricted](#deposit-and-withdrawal-restrictions) while in Beta
+- [Deposit amounts are restricted](#note-the-following-deposit-and-withdrawal-restrictions) while in Beta
 
 ## How to make transfers
 From the Nightfall Assets page, click on the `Send` button to the right of the chosen asset.
@@ -178,7 +178,7 @@ From the Nightfall Assets page, click on the `Withdraw` button to the right of t
 
 1. Check that Transfer mode is set to `Withdraw`
 2. Check that the desired token is selected (WETH, MATIC, etc.)
-3. Enter the value to be withdrawn from your Nightfall wallet, click [`Transfer`](#deposit-and-withdrawal-restrictions)
+3. Enter the value to be withdrawn from your Nightfall wallet, click on `Transfer`
 4. Review the transaction on the pop-up
 5. Click `Create Transaction`
 
@@ -190,7 +190,7 @@ be able to finalize and claim withdrawal amount.
 ### Important information about withdrawals
 - Withdraw value must exactly match the amount in one of the commitments owned (more about [about commitments](#learn-about-commitments))
 - Withdrawals have a **one week** finalization period from the moment when the block including the withdraw transaction was created. Once this time period has elapsed, you can finalize the withdrawal to have your funds sent to your Ethereum account.
-- [Withdraw amounts are restricted](#deposit-and-withdrawal-restrictions) while in Beta
+- [Withdraw amounts are restricted](#note-the-following-deposit-and-withdrawal-restrictions) while in Beta
 - Withdrawals are an onchain transaction, and will pay for gas fees during the transaction request and also when withdraw is finalized.
 
 ![](../imgs/tools-wallet/cooling-off-vs-ready.png)

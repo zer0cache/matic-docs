@@ -29,16 +29,7 @@ Polygon Nightfall is currently undergoing a security audit that is planned to be
 
 - Single proposer running, and managed by Polygon
 
-- [Restricted deposit and withdrawal amounts](../tools/nightfall-wallet.md#deposit-and-withdraw-restrictions)
-
-| ERC20 token | Max Deposit | Max Withdraw |
-|-------------|-------------|--------------|
-| MATIC       | 1000 MATIC  | 1000 MATIC   |
-| WETH        | 1 WETH      | 1 WETH       |
-| DAI         | 1000 DAI    | 1000 DAI     |
-| USDT        | 1000 USDT   | 1000 USDT    |
-| USDC        | 1000 USDC   | 1000 USDC    |
-
+- [Restricted deposit and withdrawal amounts](../tools/nightfall-wallet.md#note-the-following-deposit-and-withdrawal-restrictions)
 
 ## How do I set up my Nightfall Wallet?
 There is a complete wallet tutorial [here](../tools/nightfall-wallet.md) with all details on how to get started with Polygon Nightfall wallet.
