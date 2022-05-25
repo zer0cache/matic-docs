@@ -32,7 +32,7 @@ func GetPulpHash(name string) []byte {
 The below returns prefix-bytes for a given `msg`.  Here is an example on how to register an object for pulp encoding.
 
 ```go
-RegisterConcreate(name, obj) {
+RegisterConcrete(name, obj) {
 	rtype := reflect.TypeOf(obj)
 	// set record for name => type of the object
 	p.typeInfos[hex.EncodeToString(GetPulpHash(name))] = rtype
