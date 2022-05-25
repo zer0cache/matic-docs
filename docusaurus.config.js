@@ -256,6 +256,12 @@ module.exports = {
                     rel: null,
                   },
                   {
+                    to: 'docs/avail/faq',
+                    label: 'Avail FAQ',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
                     to: 'docs/nightfall/faq/',
                     label: 'Nightfall FAQ',
                     target: '_blank',
