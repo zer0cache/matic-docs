@@ -10,7 +10,7 @@ keywords:
   - availability
   - scale
   - rollup
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 slug: what-is-avail
 ---
 
@@ -20,15 +20,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::note A Robust General-Purpose Scalable Data Availability Layer
 
-* Enable standalone chains or sidechains with arbitrary execution environments to bootstrap 
-  validator security without needing to create and manage their own validator set by guaranteeing 
+* Enable standalone chains or sidechains with arbitrary execution environments to bootstrap
+  validator security without needing to create and manage their own validator set by guaranteeing
   transaction data availability.
 
-* Layer-2 solutions such as Validiums to offer increased scalability throughput by using Avail as an 
+* Layer-2 solutions such as Validiums to offer increased scalability throughput by using Avail as an
   off-chain data availability layer.
 
 :::
- 
+
 ## Current Availability and Scaling Challenges
 
 <Tabs
@@ -47,7 +47,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 #### High Guarantee
 
-Avail provides a provable high guarantee that the data is available. In constant time get close to 100% 
+Avail provides a provable high guarantee that the data is available. In constant time get close to 100%
 guarantee.
 
 #### Minimum Trust
@@ -56,22 +56,22 @@ No need to be a validator or host a full node. Even with a light client, get gua
 
 #### Easy to Use
 
-Built using modified Substrate, the solution focuses on ease of use, whether you host an application or 
+Built using modified Substrate, the solution focuses on ease of use, whether you host an application or
 operate an off-chain scaling solution.
 
 #### Perfect for Off-Chain Scaling
 
-Unlock the full scaling potential of your off-chain scaling solution by keeping the data with us and 
+Unlock the full scaling potential of your off-chain scaling solution by keeping the data with us and
 still avoiding the DA problem on L1.
 
 #### Bootstrapping Security
 
-Standalone chains can use Avail to ensure ordered data is always available, irrespective of the application 
+Standalone chains can use Avail to ensure ordered data is always available, irrespective of the application
 logic.
 
 #### Fast provable finality using NPoS
 
-Fast provable finality via Nominated Proof of Stake using MATIC token. Backed by KGZ commitments and erasure 
+Fast provable finality via Nominated Proof of Stake using MATIC token. Backed by KGZ commitments and erasure
 coding.
 
 </TabItem>
@@ -83,3 +83,7 @@ coding.
 </TabItem>
 </Tabs>
 
+## See also
+
+* [Introducing Avail by Polygon — a Robust General-Purpose Scalable Data Availability Layer](https://polygontech.medium.com/introducing-avail-by-polygon-a-robust-general-purpose-scalable-data-availability-layer-98bc9814c048)
+* [The Data Availability Problem](https://blog.polygon.technology/the-data-availability-problem-6b74b619ffcc/)

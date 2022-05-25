@@ -8,21 +8,23 @@ keywords:
   - polygon
   - avail
   - node
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 slug: avail-node-management
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+:::tip
+Users often run nodes on a cloud server. You may consider using a VPS provider to run your node.
+:::
+
 ## Prerequisites
 
-Users often run nodes on a cloud server. You may consider using a VPS provider to run your node.
-
-The following list of standard hardware is a recommendation of hardware specs that your environment should have 
+The following list of standard hardware is a recommendation of hardware specs that your environment should have
 
 * CPU - Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz
-* Storage - A NVMe solid state drive with about 256GB. Should be reasonably sized to deal with blockchain growth. 
+* Storage - A NVMe solid state drive with about 256GB. Should be reasonably sized to deal with blockchain growth.
 * Memory - 64GB ECC
 
 ### Node prerequisites: Install Rust & dependencies
@@ -31,7 +33,7 @@ The following list of standard hardware is a recommendation of hardware specs th
 
 Avail is a Substrate-based chain and requires the same configuration to run a Substrate chain.
 
-Additional installation documentation is available in the Substrate 
+Additional installation documentation is available in the Substrate
 **[getting started documentation](https://docs.substrate.io/v3/getting-started/installation/)**.
 
 :::
@@ -108,11 +110,11 @@ The easiest way to deploy your own Avail validator node is using Docker.
 Use the default parameters and expose the P2P port with `-p 30333` by running:
 
 ```shell
-docker run -p 30333 --name my_val 0xpolygon/avail:latest 
+docker run -p 30333 --name my_val 0xpolygon/avail:latest
 ```
 
-Any extra parameter will be added to the `data-avail` binary as an argument. 
-If you want to use a specific node key and limit the maximum number of incoming connections 
+Any extra parameter will be added to the `data-avail` binary as an argument.
+If you want to use a specific node key and limit the maximum number of incoming connections
 to `10`, you can use:
 
 ```shell
@@ -131,8 +133,8 @@ docker run -p 30333 --name my_val -v /volumes/da/state:/da/state -v /volumes/da/
 
 ### Insert private keys
 
-These private keys will be used by the validator to sign blocks and finalize the chain when it 
-acts as an active validator. They are stored into `/da/keystore` in plain text format, so you 
+These private keys will be used by the validator to sign blocks and finalize the chain when it
+acts as an active validator. They are stored into `/da/keystore` in plain text format, so you
 should take extra care over that volume.
 
 In order to insert these keys, we will open a shell inside the running container:
@@ -149,11 +151,11 @@ root@5f55e51e5a85:/da# /da/bin/data-avail key insert \
 ```
 
 The **--suri** parameter is the private key as a mnemonic phrase (or secret phrase) where you can generate
-one using the `subkey` tool in Substrate. 
+one using the `subkey` tool in Substrate.
 
 :::note Learn about subkey
 
-To learn about how to use subkey, visit the 
+To learn about how to use subkey, visit the
 [Subkey Substrate documentation](https://docs.substrate.io/v3/tools/subkey/).
 
 :::
@@ -171,7 +173,7 @@ and scheme** shown in the following table:
 
 ## Bond AVL tokens
 
-It is highly recommended that you set up a stash and controller account and have seperate key 
+It is highly recommended that you set up a stash and controller account and have seperate key
 (two seperate accounts) for both.
 
 :::info Stash and Controller Keys
@@ -186,59 +188,59 @@ to learn more about stash and controller accounts and how to manage them.
 
 :::
 
-You will start by creating two accounts; ensure each account has enough funds to pay the fees for 
-making transactions. 
+You will start by creating two accounts; ensure each account has enough funds to pay the fees for
+making transactions.
 
 :::tip Storing funds
 
-Keep most of your funds in the stash account since it is meant to be the custodian of 
+Keep most of your funds in the stash account since it is meant to be the custodian of
 your staking funds, and have just enough funds in the controller account to pay for fees.
 
-Make sure not to bond all your AVL balance since you will be unable to pay transaction fees from your bonded 
+Make sure not to bond all your AVL balance since you will be unable to pay transaction fees from your bonded
 balance.
 
 :::
 
 It is now time to set up your validator by doing the following:
 
- - Bond the AVL of the Stash account. These token will be put at stake for the security of the network and 
+ - Bond the AVL of the Stash account. These token will be put at stake for the security of the network and
    subject to slashing.
  - Select the Controller. This is the account that will decide when to start or stop validating.
 
-First, go to the **Developer** tab in the [Avail Apps](https://devnet-avail.polygon.technology/) 
-navbar and click on **Extrinsics**. 
+First, go to the **Developer** tab in the [Avail Apps](https://devnet-avail.polygon.technology/)
+navbar and click on **Extrinsics**.
 
-* **Stash** account - Select your Stash account. In this example, we bond 1001 AVL tokens, where the 
-  minimum bonding amount is 1000. Make sure that your Stash account contains at least this much. 
+* **Stash** account - Select your Stash account. In this example, we bond 1001 AVL tokens, where the
+  minimum bonding amount is 1000. Make sure that your Stash account contains at least this much.
   You can, of course, stake more than this.
-* **Controller** account - Select the Controller account created earlier. This account will need a 
+* **Controller** account - Select the Controller account created earlier. This account will need a
   small amount of AVL in order to start and stop validating.
-* **Value** bonded - The amount of AVL tokens you want to bond from your Stash account. 
-  
+* **Value** bonded - The amount of AVL tokens you want to bond from your Stash account.
+
   :::note
 
-  You do not need to bond all of the AVL in that account. Also note that you can always bond more `AVL` later. 
+  You do not need to bond all of the AVL in that account. Also note that you can always bond more `AVL` later.
   However, withdrawing any bonded amount requires the duration of the unbonding period.
 
   :::
 
-* **Payment** destination - The account where the rewards from validating are sent. More information can be found 
+* **Payment** destination - The account where the rewards from validating are sent. More information can be found
   [here](https://wiki.polkadot.network/docs/learn-staking#reward-distribution).
 
-<img src={useBaseUrl("img/avail/dev-ext.png")} width="100%" height="100%"/> 
+<img src={useBaseUrl("img/avail/dev-ext.png")} width="100%" height="100%"/>
 
-Select the **staking** pallet, and the **bond** extrinsic. 
+Select the **staking** pallet, and the **bond** extrinsic.
 
-<img src={useBaseUrl("img/avail/add_validator_bound_step.png")} width="100%" height="100%"/> 
+<img src={useBaseUrl("img/avail/add_validator_bound_step.png")} width="100%" height="100%"/>
 
-Create a transaction where your **stash** account bounds 1001 AVLs at least to your **controller** account, 
-as shown below. 
+Create a transaction where your **stash** account bounds 1001 AVLs at least to your **controller** account,
+as shown below.
 
-<img src={useBaseUrl("img/avail/bond-avl-val.png")} width="100%" height="100%"/> 
+<img src={useBaseUrl("img/avail/bond-avl-val.png")} width="100%" height="100%"/>
 
 ## Set Session Keys
 
-Once your node is **fully synced**, you need to rotate and submit your session keys. 
+Once your node is **fully synced**, you need to rotate and submit your session keys.
 
 ### Rotate you session keys
 
@@ -252,30 +254,30 @@ root@5f55e51e5a85:/da# curl \
       http://localhost:9933
 ```
 
-The output will have a hex-encoded "result" field. The result is the concatenation of the four public keys. 
+The output will have a hex-encoded "result" field. The result is the concatenation of the four public keys.
 Save this result for a later step.
 
 You can restart your node at this point.
 
 ### Submitting the `setKeys` transaction
 
-You need to tell the chain your Session keys by signing and submitting an extrinsic. This is what associates 
+You need to tell the chain your Session keys by signing and submitting an extrinsic. This is what associates
 your validator with your Controller account.
 
-Navigate to the [Network > Staking](https://devnet-avail.polygon.technology/#/staking). 
-Here, you can perform various staking actions. Navigate to **Account actions** , and select **Set Session Key** 
-on the bonding account you generated earlier. Enter the output `from author_rotateKeys` in the field and click on 
+Navigate to the [Network > Staking](https://devnet-avail.polygon.technology/#/staking).
+Here, you can perform various staking actions. Navigate to **Account actions** , and select **Set Session Key**
+on the bonding account you generated earlier. Enter the output `from author_rotateKeys` in the field and click on
 "Set Session Key".
 
-<img src={useBaseUrl("img/avail/set-session-keys.png")} width="100%" height="100%"/> 
+<img src={useBaseUrl("img/avail/set-session-keys.png")} width="100%" height="100%"/>
 
 After submitting this extrinsic, you are ready to start validating.
 
 ## Validate
 
-To verify that your node is live and synchronized, navigate to 
+To verify that your node is live and synchronized, navigate to
 [Network > Staking](https://devnet-avail.polygon.technology/#/staking) and select
-**Waiting**. Your account should be shown there. A new validator set is selected every **era**, 
+**Waiting**. Your account should be shown there. A new validator set is selected every **era**,
 based on the staking amount.
 
 </TabItem>
@@ -289,7 +291,7 @@ Clone the repo and checkout to the right branch:
 git clone git@github.com:maticnetwork/avail.git
 ```
 
-Only build the node binaries 
+Only build the node binaries
 
 ```shell
 cargo build --release -p data-avail
@@ -302,7 +304,7 @@ the source code.
 
 :::
 
-The `srtool` allows building **WASM runtimes in a deterministic way**, allowing CIs and users, with 
+The `srtool` allows building **WASM runtimes in a deterministic way**, allowing CIs and users, with
 various machines and OS, to produce a *strictly identical* WASM runtime.
 
 1. Install [srtool-cli](https://github.com/chevdor/srtool-cli)
@@ -310,7 +312,7 @@ various machines and OS, to produce a *strictly identical* WASM runtime.
 2. Move to your `substrate` root folder and build the WASM runtime:
 
 ```shell
-srtool build -r runtime/ --package da-runtime 
+srtool build -r runtime/ --package da-runtime
 ```
 
 You should expect an output like the following:
@@ -334,7 +336,7 @@ Downloading crates ...
   Downloaded addr2line v0.17.0
   Downloaded void v1.0.2
   ...
-  
+
   Compiling pallet-staking v3.0.0 (/build/frame/staking)
   Compiling pallet-babe v3.0.0 (/build/frame/babe)
     Finished release [optimized] target(s) in 5m 31s
@@ -380,14 +382,14 @@ docker build --ssh default -t client:asdr --build-arg BRANCH=feature/app-specifi
 Next, run the services using `docker-compose.light-client.yml`:
 
 ```shell
-docker-compose -f docker-compose.light-client.yml up 
+docker-compose -f docker-compose.light-client.yml up
 ```
 
 ### Using Monk templates
 
 #### DevNet using three validators
 
-In the **DevNet**, validators use the development accounts: `Alice`, `Bob`, and `Charlie`. 
+In the **DevNet**, validators use the development accounts: `Alice`, `Bob`, and `Charlie`.
 
 #### Step 1: Build images
 
@@ -422,7 +424,7 @@ Now you can check logs using `monk logs`, i.e.:
 
 ```shell
 monk logs -f -l 100 polygon/da-dev-validator-1
-    
+
     2022-03-22 10:52:20 ✨ Imported #9 (0x911b…bdf5)    
     2022-03-22 10:52:23 💤 Idle (2 peers), best: #9 (0x911b…bdf5), finalized #7 (0x6309…0366), ⬇ 1.5kiB/s ⬆ 1.8kiB/s    
     2022-03-22 10:52:28 💤 Idle (2 peers), best: #9 (0x911b…bdf5), finalized #7 (0x6309…0366), ⬇ 1.2kiB/s ⬆ 1.2kiB/s    

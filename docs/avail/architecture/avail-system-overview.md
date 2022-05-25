@@ -10,6 +10,12 @@ keywords:
   - data
   - availability
   - architecture
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 slug: avail-system-overview
 ---
+
+<!-- This page is a WIP -->
+
+:::note This page is under construction
+
+:::
