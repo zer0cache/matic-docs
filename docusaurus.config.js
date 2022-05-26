@@ -19,7 +19,7 @@ module.exports = {
             from: ['/en/latest', '/en/'],
           },
           {
-            to: '/docs/contribute/orientation/',
+            to: '/docs/contribute/orientation',
             from: '/docs/pos/orientation',
           },
           {
