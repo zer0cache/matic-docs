@@ -30,10 +30,6 @@ module.exports = {
             to: '/docs/contribute/bug-bountry-program',
             from: '/docs/pos/bug-bountry-programs',
           },
-          {
-            to: 'https://docs.polygon.technology/docs/integrate/full-node-deployment',
-            from: 'https://docs.matic.network/docs/integrate/full-node-deployment',
-          },
 
         ],
         createRedirects: function (existingPath) {
