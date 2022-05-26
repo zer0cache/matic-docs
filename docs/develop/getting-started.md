@@ -33,18 +33,22 @@ All the network related details can be found in [network docs](/docs/develop/net
     - [Using Replit](/docs/develop/replit)
 - Connecting to Polygon [with RPC](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask) by adding Polygon on Metamask or directly via [Arkane](/docs/develop/wallets/arkane/network).
 
-  Note that same RPC can be used with web3js.
+:::note
+You can use the same RPC with web3.js.
+:::
 
-    ```jsx
-    // Javascript
+```jsx
+// Javascript
+const Web3 = require('Web3')
 
-    const Web3 = require('Web3')
+// Sign up for a free dedicated RPC URL at https://rpc.maticvigil.com/ or other hosted node providers.
+const web3 = new Web3('https://rpc-mumbai.matic.today')
 
-    // Sign up for a free dedicated RPC URL at https://rpc.maticvigil.com/ or other hosted node providers.
-    const web3 = new Web3('https://rpc-mumbai.matic.today')
+// Sign up for a free dedicated RPC URL at https://www.alchemy.com or other hosted node providers.
+const web3 = new Web3('https://polygon-mainnet.g.alchemy.com/v2/<your-api-key>')
 
-    // web3 object is now connected with Polygon's node
-        ```
+// web3 object is now connected with Polygon's node
+```
 
 ---
 
