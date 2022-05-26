@@ -18,6 +18,19 @@ module.exports = {
             to: '/',
             from: ['/en/latest', '/en/'],
           },
+          {
+            to: '/docs/contribute/orientation',
+            from: '/docs/pos/orientation',
+          },
+          {
+            to: '/docs/contribute/community-maintainers',
+            from: '/docs/pos/community-maintainers',
+          },
+          {
+            to: '/docs/contribute/bug-bountry-program',
+            from: '/docs/pos/bug-bountry-programs',
+          },
+
         ],
         createRedirects: function (existingPath) {
           if (existingPath.startsWith('/docs/validate/')) {
