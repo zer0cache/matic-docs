@@ -18,6 +18,23 @@ module.exports = {
             to: '/',
             from: ['/en/latest', '/en/'],
           },
+          {
+            to: '/docs/contribute/orientation/',
+            from: '/docs/pos/orientation',
+          },
+          {
+            to: '/docs/contribute/community-maintainers',
+            from: '/docs/pos/community-maintainers',
+          },
+          {
+            to: '/docs/contribute/bug-bountry-program',
+            from: '/docs/pos/bug-bountry-programs',
+          },
+          {
+            to: 'https://docs.polygon.technology/docs/integrate/full-node-deployment',
+            from: 'https://docs.matic.network/docs/integrate/full-node-deployment',
+          },
+
         ],
         createRedirects: function (existingPath) {
           if (existingPath.startsWith('/docs/validate/')) {
