@@ -12,7 +12,6 @@ To interact with the Nightfall wallet, you'll need a [Metamask](https://metamask
 ## Tools
 
 - [Web wallet](https://wallet.testnet.polygon-nightfall.technology) to send transactions to Nightfall Rollup
-- [Proposer](https://proposer.testnet.polygon-nightfall.technology/healthcheck) API
 
 ## Proposers
 

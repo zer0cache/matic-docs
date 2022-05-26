@@ -9,12 +9,11 @@ Nightfall is currently undergoing a security audit, and it is expected to comple
 
 :::
 
-Polygon Nightfall is not yet deployed on Mainnet
+
+Polygon Nightfall is now deployed on Mainnet
 
 ## Tools
-
-- [Web wallet](https://wallet.polygon-nightfall.technology) to send transactions to Nightfall Rollup
-- [Proposer](https://proposer.polygon-nightfall.technology/healthcheck) API
+- [Web wallet](https://wallet-beta.polygon.technology/) to send transactions to Nightfall Rollup
 
 ## Proposers
 

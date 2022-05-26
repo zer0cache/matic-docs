@@ -54,6 +54,11 @@ We may change this in future depending on the Beta phase feedback.
 
 :::
 
+## How to connect a Ledger Hardware Wallet to Nightfall
+There is a guide to connect your Ledger Hardware Wallet with Metamask in the official Metamask site [here](https://support.ledger.com/hc/en-us/articles/4404366864657-How-to-access-your-Ledger-Ethereum-ETH-account-via-Metamask?docs=true).
+
+Be sure to connect the Ehtereum App in your wallet and enable "blind signing" in the Ethereum App settings.
+
 ## What are Commitments?
 
 A commitment is a cryptographic primitive that allows a user to commit to a chosen value 
