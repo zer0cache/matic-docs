@@ -15,19 +15,19 @@ Staking module manages validator related transactions and state for Heimdall. No
 
 ## Key management
 
-For key management, please refer to [Validator key management](/docs/contribute/heimdall/validator-key-management)
+For key management, please refer to [Validator key management](/docs/pos/heimdall/validator-key-management)
 
 ## Delegation
 
 This module only manages validator staking on Heimdall. The delegation is only available on smart contracts on the Ethereum chain. To optimize the delegation rewards calculation on smart contracts, we are using validator shares (ERC20 per validator). 
 
-More details here: [Delegation (Validator shares)](/docs/contribute/contracts/delegation)
+More details here: [Delegation (Validator shares)](/docs/pos/contracts/delegation)
 
 ## Rewards
 
 All rewards are distributed on the Ethereum chain. The validators and delegators claim their rewards or re-stake by simply sending the transaction on `StakeManager.sol` 
 
-More details here: [Rewards](/docs/validate/economics#what-is-the-incentive)
+More details here: [Rewards](/docs/maintain/validator/rewards#what-is-the-incentive)
 
 ## Messages
 

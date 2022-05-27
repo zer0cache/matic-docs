@@ -38,22 +38,22 @@ enable an interoperable decentralized Layer 2 blockchain platform based on commu
 ## Staking Contracts
 
 To enable the [Proof of Stake (PoS)](docs/home/polygon-basics/what-is-proof-of-stake) mechanism on Polygon,
-the system employs a set of [staking](/docs/validate/glossary#staking) management contracts on the Ethereum mainnet.
+the system employs a set of [staking](/docs/maintain/glossary#staking) management contracts on the Ethereum mainnet.
 
 The staking contracts implement the following features:
 
-* Anyone can stake MATIC tokens on the staking contracts on the Ethereum mainnet and join the system as a [validator](/docs/validate/glossary#validator).
+* Anyone can stake MATIC tokens on the staking contracts on the Ethereum mainnet and join the system as a [validator](/docs/maintain/glossary#validator).
 * Earn staking rewards for validating state transitions on the Polygon Network.
 * Enable penalties/slashing for activities such as double signing, validator downtime, etc.
-* Save [checkpoints](/docs/validate/glossary#checkpoint-transaction) on the Ethereum mainnet.
+* Save [checkpoints](/docs/maintain/glossary#checkpoint-transaction) on the Ethereum mainnet.
 
 The PoS mechanism also acts as a mitigation to the data unavailability problem for the Polygon sidechains.
 
 ## Heimdall
 
 Heimdall is the proof of stake validation layer that handles the aggregation of blocks produced
-by [Bor](/docs/validate/glossary#bor) into a Merkle tree and publishes the Merkle root periodically to the
-root chain. The periodic publishing of snapshots of the Bor sidechain is called [checkpoints](/docs/validate/glossary#checkpoint-transaction).
+by [Bor](/docs/maintain/glossary#bor) into a Merkle tree and publishes the Merkle root periodically to the
+root chain. The periodic publishing of snapshots of the Bor sidechain is called [checkpoints](/docs/maintain/glossary#checkpoint-transaction).
 
 1. Validates all the blocks since the last checkpoint.
 2. Creates a Merkle tree of the block hashes.
@@ -66,20 +66,20 @@ Checkpoints are important for two reasons:
 
 An overview of the process:
 
-* A subset of active validators from the pool is selected to act as [block producers](/docs/validate/glossary#block-producer) for a [span](/docs/validate/glossary#span). These block producers are responsible for creating blocks and broadcasting the created blocks on the network.
+* A subset of active validators from the pool is selected to act as [block producers](/docs/maintain/glossary#block-producer) for a [span](/docs/maintain/glossary#span). These block producers are responsible for creating blocks and broadcasting the created blocks on the network.
 * A checkpoint includes the Merkle root hash of all blocks created during any given interval. All nodes validate the Merkle root hash and attach their signature to it.
-* A selected [proposer](/docs/validate/glossary#proposer) from the validator set is responsible for collecting all signatures for a particular checkpoint and committing the checkpoint on the Ethereum mainnet.
+* A selected [proposer](/docs/maintain/glossary#proposer) from the validator set is responsible for collecting all signatures for a particular checkpoint and committing the checkpoint on the Ethereum mainnet.
 * The responsibility of creating blocks and proposing checkpoints is variably dependent on a validator’s stake ratio in the overall pool.
 
-More details on Heimdall are available on the [Heimdall architecture](/docs/contribute/heimdall/overview) guide.
+More details on Heimdall are available on the [Heimdall architecture](/docs/pos/heimdall/overview) guide.
 
 ### Bor
 
 Bor is Polygon's sidechain block producer — the entity responsible for aggregating transactions into blocks.
 
-Bor block producers are a subset of the validators and are shuffled periodically by the [Heimdall](/docs/validate/glossary#heimdall) validators.
+Bor block producers are a subset of the validators and are shuffled periodically by the [Heimdall](/docs/maintain/glossary#heimdall) validators.
 
-See also [Bor architecture](/docs/contribute/bor/overview).
+See also [Bor architecture](/docs/pos/bor/overview).
 
 Bor is Polygon's block producer layer - the entity responsible for aggregating transactions into blocks.  Currently, it is a basic Geth implementation with custom changes done to the consensus algorithm.
 
@@ -88,7 +88,7 @@ as a `span` in Polygon. Blocks are produced at the **Bor** node, and the sidecha
 Blocks produced on Bor are also validated periodically by Heimdall nodes, and a checkpoint consisting of
 the Merkle tree hash of a set of blocks on Bor is committed to Ethereum periodically.
 
-More details are available on the [Bor architecture](/docs/contribute/bor/overview) guide.
+More details are available on the [Bor architecture](/docs/pos/bor/overview) guide.
 
 ### Resources
 

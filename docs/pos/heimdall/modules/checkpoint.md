@@ -15,7 +15,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 All related to checkpoint data is explained in details here: 
 
-[Checkpoint](/docs/contribute/heimdall/checkpoint)
+[Checkpoint](/docs/pos/heimdall/checkpoint)
 
 ## Checkpoint life-cycle
 

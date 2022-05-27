@@ -9,7 +9,7 @@ description: 'Get started with maticjs'
 `withdrawExitFasterMany` method can be used to exit the withdraw process by using the txHash from `withdrawStartMany` method.
 
  class="highlight mb-20px mt-20px">
-It is fast because it generates proof in backend. You need to configure <a href="docs/set-proof-api">setProofAPI</a>
+It is fast because it generates proof in backend. You need to configure [setProofAPI](/docs/develop/ethereum-polygon/matic-js/set-proof-api).
 >
 
 **Note**- withdrawStart transaction must be checkpointed in order to exit the withdraw.

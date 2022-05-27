@@ -70,7 +70,7 @@ For more details, refer https://docs.polygon.technology/docs/develop/ethereum-po
 
 ### - How soon are those funds available on the Polygon PoS?
 
-Around ~7-8 minutes. This is done via a message passing mechanism that is termed as `state sync`. More details can be found here: https://docs.polygon.technology/docs/contribute/state-sync/state-sync/
+Around ~7-8 minutes. This is done via a message passing mechanism that is termed as `state sync`. More details can be found here: https://docs.polygon.technology/docs/pos/state-sync/state-sync/
 
 Does Polygon PoS provide support for users entering without a L1 lock-up (i.e. in the case of onboarding a user directly onto Polygon, then the user wishes to exit to Ethereum mainnet)?
 
@@ -80,12 +80,12 @@ You can read about them here: https://docs.polygon.technology/docs/develop/ether
 
 ### - How would a user dispute an invalid Polygon PoS transaction? Prove a valid Polygon PoS transaction?
 
-There is currently no way on-chain to dispute an invalid Polygon PoS transaction. However, validators of the Polygon PoS chain submit periodic checkpoints to Ethereum - you can see more details here: https://docs.polygon.technology/docs/contribute/heimdall/modules/checkpoint/
+There is currently no way on-chain to dispute an invalid Polygon PoS transaction. However, validators of the Polygon PoS chain submit periodic checkpoints to Ethereum - you can see more details here: https://docs.polygon.technology/docs/pos/heimdall/modules/checkpoint/
 It is possible to verify a transaction on Polygon PoS chain on Ethereum by constructing a Merkle tree proof and verifying it against the periodic checkpoints that happen on Ethereum of the Polygon PoS transaction and receipt Merkle tree roots.
 
 Once a Polygon user wishes to exit, how soon are the locked-up Layer 1 funds (plus or minus any L2 gains or losses) available back on L1?
 
-Approximately ~1-3 hours depending on the frequency of the checkpoints (https://docs.polygon.technology/docs/contribute/heimdall/modules/checkpoint/). The frequency is majorly a function of the cost that the validators are willing to spend on ETH gas fees to submit checkpoints.
+Approximately ~1-3 hours depending on the frequency of the checkpoints (https://docs.polygon.technology/docs/pos/heimdall/modules/checkpoint/). The frequency is majorly a function of the cost that the validators are willing to spend on ETH gas fees to submit checkpoints.
 
 ### - Do you anticipate there being Liquidity Providers on Layer 1 willing to provide immediately redeemable L1 funds to existing Polygon PoS users?
 

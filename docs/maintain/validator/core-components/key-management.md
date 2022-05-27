@@ -9,7 +9,7 @@ keywords:
   - key
   - key management
   - signer
-slug: state-sync-mechanism
+slug: key-management
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 

@@ -13,8 +13,7 @@ After this process is successful, challenge period is started and upon completio
 The challenge period is 7 days for mainnet.
 
  class="highlight mb-20px mt-20px">
-It is fast because it generates proof in backend. You need to configure <a href="docs/set-proof-api">setProofAPI</a>
->
+It is fast because it generates proof in backend. You need to configure [setProofAPI](/docs/develop/ethereum-polygon/matic-js/set-proof-api).
 
 ```
 const erc721Token = plasmaClient.erc721(<token address>, true);

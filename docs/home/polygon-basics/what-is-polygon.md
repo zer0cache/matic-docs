@@ -30,22 +30,22 @@ The Polygon system was consciously architected to support arbitrary state transi
 
 You can participate on the Polygon network as a delegator or validator. See:
 
-* [Who is a Validator](/docs/validate/polygon-basics/who-is-validator)
-* [Who is a Delegator](/docs/validate/polygon-basics/who-is-delegator)
+* [Who is a Validator](/docs/maintain/polygon-basics/who-is-validator)
+* [Who is a Delegator](/docs/maintain/polygon-basics/who-is-delegator)
 
 ## Architecture
 
 If your goal is to become a validator, it is essential that you understand the Polygon architecture.
 
-See [Polygon Architecture](/docs/validate/validator/architecture) for more information.
+See [Polygon Architecture](/docs/maintain/validator/architecture) for more information.
 
 ### Components
 
 To have a granular understanding of Polygon's architecture, check out the core components:
 
-* [Heimdall](/docs/contribute/heimdall/overview)
-* [Bor](/docs/contribute/bor/overview)
-* [Contracts](/docs/contribute/contracts/stakingmanager)
+* [Heimdall](/docs/pos/heimdall/overview)
+* [Bor](/docs/pos/bor/overview)
+* [Contracts](/docs/pos/contracts/stakingmanager)
 
 #### Codebases
 
@@ -61,12 +61,12 @@ To have a granular understanding of the core components, see the following codeb
 
 There are basically two ways of running a Validator Node on Polygon, using Ansible or directly from the binaries. You can check how to do this with the links below:
 
-* [Run a Validator Node with Ansible](/docs/validate/validate/run-validator-ansible)
-* [Run a Validator Node from Binaries](/docs/validate/validate/run-validator-binaries)
+* [Run a Validator Node with Ansible](/docs/maintain/validate/run-validator-ansible)
+* [Run a Validator Node from Binaries](/docs/maintain/validate/run-validator-binaries)
 
 ### Staking operations
 
 Check how the staking process is carried out for the validator and delegator profiles:
 
-* [Validator Staking Operations](docs/validate/validate/validator-staking-operations)
-* [Delegate](/docs/validate/delegate)
+* [Validator Staking Operations](docs/maintain/validate/validator-staking-operations)
+* [Delegate](/docs/maintain/delegate/delegate)

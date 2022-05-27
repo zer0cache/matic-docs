@@ -38,7 +38,7 @@ import { Web3ClientPlugin } from '@maticnetwork/maticjs-web3'
 use(Web3ClientPlugin)
 ```
 
-In the above code we are initiating maticjs with `web3js` but you can also similarly initiate with [ethers](docs/setup/ethers).
+In the above code we are initiating maticjs with `web3js` but you can also similarly initiate with [ethers](/docs/develop/ethereum-polygon/matic-js/setup/ethers).
 
 ## POS client
 

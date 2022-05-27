@@ -15,7 +15,7 @@ The usual mechanism to natively read Ethereum data from Polygon is using `State 
 
 ## What is [Fx-Portal](https://github.com/fx-portal/contracts)?
 
-It is a powerful yet simple implementation Polygon [state sync](https://docs.polygon.technology/docs/contribute/state-sync/state-sync/) mechanism. The Polygon PoS bridge is built on the same architecture. The code in the `examples` folder are some examples of usage. You can easily use these examples to build your own implementations or own custom bridge which allows any state-syncs without mapping.
+It is a powerful yet simple implementation Polygon [state sync](https://docs.polygon.technology/docs/pos/state-sync/state-sync/) mechanism. The Polygon PoS bridge is built on the same architecture. The code in the `examples` folder are some examples of usage. You can easily use these examples to build your own implementations or own custom bridge which allows any state-syncs without mapping.
 
 ## How does it work?
 
