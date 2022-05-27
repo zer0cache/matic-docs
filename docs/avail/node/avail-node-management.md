@@ -387,9 +387,9 @@ docker-compose -f docker-compose.light-client.yml up
 
 ### Using Monk templates
 
-#### DevNet using three validators
+#### Testnet using three validators
 
-In the **DevNet**, validators use the development accounts: `Alice`, `Bob`, and `Charlie`.
+On the testnet, validators use the development accounts: `Alice`, `Bob`, and `Charlie`.
 
 #### Step 1: Build images
 
@@ -400,7 +400,7 @@ docker build -t da:ava-33  --build-arg BRANCH=miguel/ava-33-create-monk-template
 
 #### Step 2: Load Monk templates
 
-The DevNet only need to load two monk templates:
+The testnet only need to load two monk templates:
 
 - `monk/polygon-da-base.matic.today.yaml`, which contains common definition for DevNet & TestNet.
 - `monk/polygon-da-devnet.matic.today.yaml`, where validators are defined.

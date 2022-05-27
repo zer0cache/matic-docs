@@ -42,6 +42,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### What is the data availability problem?
 
+Peers in a blockchain network need a way to ensure that all the data of a newly proposed block is 
+readily available. If the data is not available, the block might contain malicious transactions 
+which are being hidden by the block producer. Even if the block contains non-malicious transactions, 
+hiding them might compromise the security of the system.
 
 ### Avail's approach to data dvailability
 

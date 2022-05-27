@@ -21,7 +21,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::note We are working on improving many of the current features
 
-We appreciate you using our devnet and encourage your valuable feedback
+We appreciate you using our testnet and encourage your valuable feedback
 through one of our **[community channels](https://polygon.technology/community/)**.
 
 :::
