@@ -63,6 +63,26 @@ Verify your installation with:
 rustc --version
 ```
 
+:::info Deployment Repo
+
+The **[Avail deployment repo](https://github.com/maticnetwork/avail-deployment)** 
+includes the data availability deployment scripts.
+
+```shell
+git clone git@github.com:maticnetwork/avail-deployment.git
+```
+
+Current Testnet Deployment:
+
+| Bootnode   | Node IP  | P2P Discovery Address | 
+| ---------- | -------- | ------------------------------------------------------------------------------------------------ |
+| Bootnode 1 | `13.38.227.125`  | `/ip4/52.47.205.129/tcp/30333/p2p/12D3KooW9tVuCzq3eknsevL5uyqQ3LpVcuqtkTqropjNccbhsWBz`  |
+| Bootnode 2 | `15.237.127.118` | `/ip4/15.237.127.118/tcp/30333/p2p/12D3KooWQtxig5HukFDwQzshGWgQEZAqGqdCN7AQBW7cQRJWCyxL` |
+| Bootnode 3 | `52.47.205.129`  | `/ip4/52.47.205.129/tcp/30333/p2p/12D3KooW9tVuCzq3eknsevL5uyqQ3LpVcuqtkTqropjNccbhsWBz`  |
+| Full Node  | `35.180.61.81`   | [Explorer dApp](https://devnet-avail.polygon.technology/) | 
+
+:::
+
 <Tabs
   defaultValue="node"
   values={[
@@ -79,7 +99,7 @@ rustc --version
 Clone the [Avail source code](https://github.com/maticnetwork/avail):
 
 ```sh
-git clone https://github.com/maticnetwork/avail.git
+git clone git@github.com:maticnetwork/avail.git
 ```
 
 Compile the source code:
