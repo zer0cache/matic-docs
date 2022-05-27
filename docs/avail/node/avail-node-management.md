@@ -15,17 +15,58 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-:::tip
+:::tip Common practice
+
 Users often run nodes on a cloud server. You may consider using a VPS provider to run your node.
+
+:::
+
+:::warning System administration
+
+Although Polygon Avail is in testnet phase, in general, users should have **significant system 
+administration experience** when running validator nodes. 
+
+Validator nodes are responsbile for maintaining and securing the network by staking tokens with real
+value. Validators need to understand how to manage their node, its associated hardware & configuration, 
+and be wary that they are subject to being slashed due to actions like being offline or equivocation. 
+
+When in doubt, reach out to the Validator Engagement team.
+
 :::
 
 ## Prerequisites
 
-The following list of standard hardware is a recommendation of hardware specs that your environment should have
+The following list of standard hardware is a recommendation of hardware specs that your environment should 
+have.
+
+<Tabs
+  defaultValue="val"
+  values={[
+    { label: 'Running Avail locally', value: 'non-val', },
+    { label: 'Running a Validator node', value: 'val', },
+  ]
+}>
+
+<TabItem value="non-val">
+
+The hardware specs should at least have:
+
+* 4GB RAM
+* 2 core CPU
+* 20-40 GB SSD
+
+</TabItem>
+<TabItem value="val">
+
+The hardware recommendations for running a validator on a Substrate-based chain:
 
 * CPU - Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz
-* Storage - A NVMe solid state drive with about 256GB. Should be reasonably sized to deal with blockchain growth.
+* Storage - A NVMe solid state drive with about 256GB. Should be reasonably sized to deal with 
+  blockchain growth.
 * Memory - 64GB ECC
+
+</TabItem>
+</Tabs>
 
 ### Node prerequisites: Install Rust & dependencies
 
@@ -62,26 +103,6 @@ Verify your installation with:
 ```sh
 rustc --version
 ```
-
-:::info Deployment Repo
-
-The **[Avail deployment repo](https://github.com/maticnetwork/avail-deployment)** 
-includes the data availability deployment scripts.
-
-```shell
-git clone git@github.com:maticnetwork/avail-deployment.git
-```
-
-Current Testnet Deployment:
-
-| Bootnode   | Node IP  | P2P Discovery Address | 
-| ---------- | -------- | ------------------------------------------------------------------------------------------------ |
-| Bootnode 1 | `13.38.227.125`  | `/ip4/52.47.205.129/tcp/30333/p2p/12D3KooW9tVuCzq3eknsevL5uyqQ3LpVcuqtkTqropjNccbhsWBz`  |
-| Bootnode 2 | `15.237.127.118` | `/ip4/15.237.127.118/tcp/30333/p2p/12D3KooWQtxig5HukFDwQzshGWgQEZAqGqdCN7AQBW7cQRJWCyxL` |
-| Bootnode 3 | `52.47.205.129`  | `/ip4/52.47.205.129/tcp/30333/p2p/12D3KooW9tVuCzq3eknsevL5uyqQ3LpVcuqtkTqropjNccbhsWBz`  |
-| Full Node  | `35.180.61.81`   | [Explorer dApp](https://devnet-avail.polygon.technology/) | 
-
-:::
 
 <Tabs
   defaultValue="node"
@@ -121,7 +142,27 @@ Run a local dev node with temporary datastore:
 </TabItem>
 <TabItem value="validator">
 
-## Using Docker
+:::info Deployment Repo
+
+The **[Avail deployment repo](https://github.com/maticnetwork/avail-deployment)** 
+includes the data availability deployment scripts.
+
+```shell
+git clone git@github.com:maticnetwork/avail-deployment.git
+```
+
+Current Testnet Deployment:
+
+| Bootnode   | Node IP  | P2P Discovery Address | 
+| ---------- | -------- | ------------------------------------------------------------------------------------------------ |
+| Bootnode 1 | `13.38.227.125`  | `/ip4/52.47.205.129/tcp/30333/p2p/12D3KooW9tVuCzq3eknsevL5uyqQ3LpVcuqtkTqropjNccbhsWBz`  |
+| Bootnode 2 | `15.237.127.118` | `/ip4/15.237.127.118/tcp/30333/p2p/12D3KooWQtxig5HukFDwQzshGWgQEZAqGqdCN7AQBW7cQRJWCyxL` |
+| Bootnode 3 | `52.47.205.129`  | `/ip4/52.47.205.129/tcp/30333/p2p/12D3KooW9tVuCzq3eknsevL5uyqQ3LpVcuqtkTqropjNccbhsWBz`  |
+| Full Node  | `35.180.61.81`   | [Explorer dApp](https://devnet-avail.polygon.technology/) | 
+
+:::
+
+## Docker Setup
 
 The easiest way to deploy your own Avail validator node is using Docker.
 
@@ -189,7 +230,6 @@ and scheme** shown in the following table:
 | gran     | *Ed25519* |
 | imon     | Sr25519   |
 | audi     | Sr25519   |
-
 
 ## Bond AVL tokens
 
@@ -303,7 +343,7 @@ based on the staking amount.
 </TabItem>
 <TabItem value ="build">
 
-## Build from source code
+## Build from the Source Code
 
 Clone the repo and checkout to the right branch:
 
@@ -319,7 +359,7 @@ cargo build --release -p data-avail
 
 ### Optional: How to generate deterministic WASM
 
-:::note This step is **not required** and it should only be used to verify that *WASM* matches with
+:::note This step is **not required** and it should only be used to verify that WASM matches with
 the source code.
 
 :::
@@ -438,7 +478,6 @@ Once templates are loaded, we only need to run three nodes:
 ```shell
 monk run polygon/da-dev-validator-1 polygon/da-dev-validator-2 polygon/da-dev-validator-3
 ```
-
 
 Now you can check logs using `monk logs`, i.e.:
 
