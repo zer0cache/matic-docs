@@ -1,7 +1,7 @@
 ---
 id: deposit
-title: deposit 
-keywords: 
+title: deposit
+keywords:
     - pos client
     - erc20
     - approveMax
@@ -24,4 +24,4 @@ const txReceipt = await result.getReceipt();
 
 ```
 
-It might take some time to reflect the deposited amount on polygon chain. You can use [isDeposited](docs/pos/is-deposited) method for checking status.
+It might take some time to reflect the deposited amount on polygon chain. You can use [isDeposited](/docs/develop/ethereum-polygon/matic-js/pos/is-deposited) method for checking status.

@@ -36,13 +36,17 @@ Polygon relies on a set of [validators](../glossary#validator) to secure the net
 
 ## End-to-end flow for a Polygon validator
 
-Validators set up their signing nodes, sync data and then stake their tokens on the Ethereum mainnet staking contracts to be accepted as a validator in the current set. If a slot is vacant, the validator is accepted immediately. Otherwise, one needs to go through the [replacement mechanism](../validate/replace-validator) to get a slot.
+Validators set up their signing nodes, sync data and then stake their tokens on the Ethereum mainnet staking contracts to be accepted as a validator in the current set. If a slot is vacant, the validator is accepted immediately. Otherwise, one needs to go through the replacement mechanism to get a slot.
+
+:::note
+There is limited space for accepting new validators. New validators can only join the active set when a currently active validator unbonds. A new auction process for validator replacement will be rolled out.
+:::
 
 Block producers are chosen from the validator set where it is the responsibility of the selected validators to produce blocks for a given [span](../glossary#span).
 
 Nodes at Heimdall validate the blocks being produced, participate in consensus and commit checkpoints on the Ethereum mainnet at defined intervals.
 
-The probability of validators to get selected as the block producer or checkpoint [proposer](../validate/glossary#proposer) is dependent on one’s stake ratio including delegations in the overall pool.
+The probability of validators to get selected as the block producer or checkpoint [proposer](../glossary#proposer) is dependent on one’s stake ratio including delegations in the overall pool.
 
 Validators receive rewards at every checkpoint as per their stake ratio, after deducting the proposer bonus which is disbursed to the checkpoint proposer.
 
@@ -50,14 +54,14 @@ One can opt out of the system at any time and can withdraw tokens once the unbon
 
 ## Economics
 
-See [Rewards](../rewards).
+See [Rewards](/docs/maintain/validator/rewards).
 
 ## Setting up a validator node
 
-See [Validate](../validate/getting-started).
+See [Validate](../validate/validator-index).
 
 ## See also
 
 * [Validator Responsibilities](../validate/validator-responsibilities)
-* [Validate](../validate/getting-started)
+* [Validate](../validate/validator-index)
 * [Validator FAQ](../validate/faq/validator-faq)

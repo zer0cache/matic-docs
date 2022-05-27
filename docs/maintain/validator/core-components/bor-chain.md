@@ -18,4 +18,4 @@ The sidechain VM is EVM-compatible. Currently, Bor is a basic Geth implementatio
 
 Block producers are chosen from the [validator](../../glossary#validator) set and are shuffled using historical Ethereum block hashes.
 
-See also [Bor architecture](../../../contribute/bor/overview).
+See also [Bor architecture](../../../pos/bor/overview).

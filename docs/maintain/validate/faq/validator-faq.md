@@ -228,7 +228,7 @@ If none of this is the issue, contact support team on [Discord](https://discord.
 
 ## How to set up a validator node on the mainnet?
 
-See [Getting Started](../getting-started)
+See [Getting Started](../validator-index)
 
 ## How to set up a non-validating node?
 

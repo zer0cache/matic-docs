@@ -139,9 +139,9 @@ Before proceeding, Heimdall should be installed on both the sentry and validator
 
 ### Installing Bor
 
-[Bor](../../contribute/bor/) is the sidechain operator that acts as the block production layer,
+[Bor](../../pos/bor/) is the sidechain operator that acts as the block production layer,
 which syncs with Heimdall to select block producers and verifiers for each [span](../glossary#span)
-and [sprint]((../glossary#sprint)).
+and [sprint](../glossary#sprint).
 
 Clone the [Bor repository](https://github.com/maticnetwork/bor):
 

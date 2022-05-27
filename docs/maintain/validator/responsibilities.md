@@ -15,7 +15,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 ## Overview
 
-Any [validator](/docs/validate/glossary#validator) on the Polygon Network has the following responsibilities:
+Any [validator](/docs/maintain/glossary#validator) on the Polygon Network has the following responsibilities:
 
 * Technical node operations done by the nodes.
 * Operations:
@@ -46,13 +46,13 @@ The following technical node operations are done automatically by the nodes:
   * If more than 2/3 of the active validators reach consensus on the checkpoint, the checkpoint is submitted to the Ethereum mainnet.
 * Sync changes to Polygon staking contracts on Ethereum:
   * Continuing from the checkpoint submission step, since this is an external network call, the checkpoint transaction on Ethereum may or may not be confirmed, or may be pending due to Ethereum congestion issues.
-  * In this case, there is an `ack/no-ack` process that is followed to ensure that the next checkpoint contains a snapshot of the previous Bor blocks as well. For example, if checkpoint 1 is for Bor blocks 1-256, and it failed for some reason, the next checkpoint 2 will be for Bor blocks 1-512. See also [Heimdall architecture: Checkpoint](../../contribute/heimdall/checkpoint).
+  * In this case, there is an `ack/no-ack` process that is followed to ensure that the next checkpoint contains a snapshot of the previous Bor blocks as well. For example, if checkpoint 1 is for Bor blocks 1-256, and it failed for some reason, the next checkpoint 2 will be for Bor blocks 1-512. See also [Heimdall architecture: Checkpoint](../../pos/heimdall/checkpoint).
 * State sync from the Ethereum mainnet to the Bor sidechain:
   * Contract state can be moved between Ethereum and Polygon, specifically through [Bor](../glossary#bor):
   * A DApp contract on Ethereum calls a function on a special Polygon contract on Ethereum.
   * The corresponding event is relayed to Heimdall and then Bor.
   * A state-sync transaction gets called on a Polygon smart contract and the DApp can get the value on Bor via a function call on Bor itself.
-  * A similar mechanism is in place for sending state from Polygon to Ethereum. See also [State Sync Mechanism](../../contribute/state-sync/state-sync).
+  * A similar mechanism is in place for sending state from Polygon to Ethereum. See also [State Sync Mechanism](../../pos/state-sync/state-sync).
 
 ### Operations
 

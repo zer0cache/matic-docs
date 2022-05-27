@@ -1,5 +1,5 @@
 ---
-id: ethereum-matic
+id: ethereum-polygon
 title: Ethereum ↔ Polygon
 description: Build your next blockchain app on Polygon.
 keywords:

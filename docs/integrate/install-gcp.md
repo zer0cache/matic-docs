@@ -18,7 +18,7 @@ In this document, we will describe how to deploy Polygon nodes into VM instance 
 
 ## Hardware requirements
 
-Check the minimum and recommended [hardware requirements](validator-node-system-requirements) in Polygon docs
+Check the minimum and recommended [hardware requirements](/docs/maintain/validate/validator-node-system-requirements) in Polygon docs
 
 ## Software requirements
 

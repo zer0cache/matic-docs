@@ -33,8 +33,8 @@ The Polygon CLI repository is an easy way to setup and manage the entire Polygon
 
 If you want to run a full node on the Polygon Mainnet or Mumbai Testnet, you can follow the links below:
 
-* [Run a Validator Node with Ansible](/docs/validate/validate/run-validator-ansible)
-* [Run a Validator Node from Binaries](/docs/validate/validate/run-validator-binaries)
+* [Run a Validator Node with Ansible](/docs/maintain/validate/run-validator-ansible)
+* [Run a Validator Node from Binaries](/docs/maintain/validate/run-validator-binaries)
 
 ## Getting tokens for testing
 
