@@ -21,19 +21,6 @@ Users often run nodes on a cloud server. You may consider using a VPS provider t
 
 :::
 
-:::warning System administration
-
-Although Polygon Avail is in testnet phase, in general, users should have **significant system 
-administration experience** when running validator nodes. 
-
-Validator nodes are responsbile for maintaining and securing the network by staking tokens with real
-value. Validators need to understand how to manage their node, its associated hardware & configuration, 
-and be wary that they are subject to being slashed due to actions like being offline or equivocation. 
-
-When in doubt, reach out to the Validator Engagement team.
-
-:::
-
 ## Prerequisites
 
 The following list of standard hardware is a recommendation of hardware specs that your environment should 
@@ -42,8 +29,8 @@ have.
 <Tabs
   defaultValue="val"
   values={[
-    { label: 'Running Avail locally', value: 'non-val', },
-    { label: 'Running a Validator node', value: 'val', },
+    { label: 'Run Avail Locally', value: 'non-val', },
+    { label: 'Run a Validator Node', value: 'val', },
   ]
 }>
 
@@ -107,15 +94,14 @@ rustc --version
 <Tabs
   defaultValue="node"
   values={[
-    { label: 'Run Avail locally', value: 'node', },
-    { label: 'Run an Avail Validator node', value: 'validator', },
-    { label: 'Build Data Availability', value: 'build', },
+    { label: 'Run a Local Node', value: 'node', },
+    { label: 'Run a Validator Node', value: 'deploy', },
   ]
 }>
 
 <TabItem value="node">
 
-## Run locally
+## Run Avail Locally
 
 Clone the [Avail source code](https://github.com/maticnetwork/avail):
 
@@ -140,7 +126,9 @@ Run a local dev node with temporary datastore:
 ```
 
 </TabItem>
-<TabItem value="validator">
+<TabItem value="deploy">
+
+## Data Availability Deployments
 
 :::info Deployment Repo
 
@@ -161,6 +149,30 @@ Current Testnet Deployment:
 | Full Node  | `35.180.61.81`   | [Explorer dApp](https://devnet-avail.polygon.technology/) | 
 
 :::
+
+:::warning System administration
+
+Although Polygon Avail is in testnet phase, in general, users should have **significant system 
+administration experience** when running validator nodes. 
+
+Validator nodes are responsbile for maintaining and securing the network by staking tokens with real
+value. Validators need to understand how to manage their node, its associated hardware & configuration, 
+and be wary that they are subject to being slashed due to actions like being offline or equivocation. 
+
+When in doubt, reach out to the Validator Engagement team.
+
+:::
+
+<Tabs
+  defaultValue="validator"
+  values={[
+    { label: 'Avail Validator Setup', value: 'validator', },
+    { label: 'Build Data Availability', value: 'build', },
+    { label: 'Build and Run Light Client with Data Availability', value: 'light', },
+  ]
+}>
+
+<TabItem value="validator">
 
 ## Docker Setup
 
@@ -427,9 +439,10 @@ Now you only need to replace the WASM file in your `target/release` folder and r
 binary. Another option is to replace the WASM code in `genesis > runtime > frameSystem > code` in
 your `chain.spec` file.
 
-## Development Environment
+</TabItem>
+<TabItem value='light'>
 
-### Build & run `avail-light` & `data-avail` in Dev
+## Build & Run `avail-light` & `data-avail`
 
 First, build the Docker images, `client:asdr` (using branch `feature/app-specific-data-retrieval_2`) and `da:asdr`
 (using branch `feature/app-specific-data-retrieval`):
@@ -439,7 +452,7 @@ export DOCKER_BUILDKIT = 1
 docker build --ssh default -t client:asdr --build-arg BRANCH=feature/app-specific-data-retrieval_2 -f images/client/Dockerfile images/client/
 ```
 
-Next, run the services using `docker-compose.light-client.yml`:
+Next, run the services using **docker-compose.light-client.yml**:
 
 ```shell
 docker-compose -f docker-compose.light-client.yml up
@@ -462,8 +475,8 @@ docker build -t da:ava-33  --build-arg BRANCH=miguel/ava-33-create-monk-template
 
 The testnet only need to load two monk templates:
 
-- `monk/polygon-da-base.matic.today.yaml`, which contains common definition for DevNet & TestNet.
-- `monk/polygon-da-devnet.matic.today.yaml`, where validators are defined.
+- **monk/polygon-da-base.matic.today.yaml**, which contains common definition for DevNet & TestNet.
+- **monk/polygon-da-devnet.matic.today.yaml**, where validators are defined.
 
 ```shell
 monk s ns-delete /templates/local/polygon
@@ -483,6 +496,11 @@ Now you can check logs using `monk logs`, i.e.:
 
 ```shell
 monk logs -f -l 100 polygon/da-dev-validator-1
+```
+
+You should expect:
+
+```shell
 
     2022-03-22 10:52:20 ✨ Imported #9 (0x911b…bdf5)    
     2022-03-22 10:52:23 💤 Idle (2 peers), best: #9 (0x911b…bdf5), finalized #7 (0x6309…0366), ⬇ 1.5kiB/s ⬆ 1.8kiB/s    
@@ -517,5 +535,7 @@ you can remove these folders or just use `monk purge`:
 monk purge polygon/da-dev-validator-1 polygon/da-dev-validator-2 polygon/da-dev-validator-3
 ```
 
+</TabItem>
+</Tabs>
 </TabItem>
 </Tabs>
