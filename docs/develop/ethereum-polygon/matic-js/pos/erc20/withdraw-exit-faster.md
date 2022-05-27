@@ -8,9 +8,9 @@ description: 'withdrawExitFaster method can be used to exit the withdraw process
 
 `withdrawExitFaster` method can be used to exit the withdraw process faster by using the txHash from `withdrawStart` method.
 
- class="highlight mb-20px mt-20px">
+
 It is generally fast because it generates proof in the backend. You need to configure <a href="docs/set-proof-api">setProofAPI</a>
->
+
 
 **Note**- withdrawStart transaction must be checkpointed in order to exit the withdraw.
 
