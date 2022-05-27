@@ -36,7 +36,11 @@ Polygon relies on a set of [validators](../glossary#validator) to secure the net
 
 ## End-to-end flow for a Polygon validator
 
-Validators set up their signing nodes, sync data and then stake their tokens on the Ethereum mainnet staking contracts to be accepted as a validator in the current set. If a slot is vacant, the validator is accepted immediately. Otherwise, one needs to go through the [replacement mechanism](../maintain/replace-validator) to get a slot.
+Validators set up their signing nodes, sync data and then stake their tokens on the Ethereum mainnet staking contracts to be accepted as a validator in the current set. If a slot is vacant, the validator is accepted immediately. Otherwise, one needs to go through the replacement mechanism to get a slot.
+
+:::note
+There is limited space for accepting new validators. New validators can only join the active set when a currently active validator unbonds. A new auction process for validator replacement will be rolled out.
+:::
 
 Block producers are chosen from the validator set where it is the responsibility of the selected validators to produce blocks for a given [span](../glossary#span).
 
