@@ -29,25 +29,25 @@ through one of our **[community channels](https://polygon.technology/community/)
 ## Generate an Avail Account
 
 You can generate an account using one of two methods:
-- [Avail Apps](https://devnet-avail.polygon.technology/)
+- [Avail Explorer](https://testnet.polygonavail.net/)
 - Console/Typescript
 
 <Tabs
-  defaultValue="apps"
+  defaultValue="explorer"
   values={[
-    { label: 'Avail Apps', value: 'apps', },
+    { label: 'Avail Explorer', value: 'explorer', },
     { label: '@polkadot/api', value: 'library', },
   ]
 }>
-<TabItem value="apps">
+<TabItem value="explorer">
 
-Head over to [Avail Apps](https://devnet-avail.polygon.technology/). 
+Head over to [Avail Explorer](https://testnet.polygonavail.net/). 
 
 <img src={useBaseUrl("img/avail/avail-explorer.png")} width="100%" height="100%"/> 
 
 :::note
 
-**[Avail Apps](https://github.com/maticnetwork/avail-apps.git)** is a fork 
+**[Avail Explorer](https://testnet.polygonavail.net/)** is a fork 
 of **[Polkadot-JS Apps](https://polkadot.js.org/)**. The interface and navigation are the same 
 if you are familiar with Polkadot-JS Apps.
 
@@ -83,8 +83,8 @@ access your account.
 
 ## Receive AVL Testnet Tokens
 
-On Avail Apps, click on the icon next to your account name to copy your address.
-Alternatively, you can copy the address manually.
+On the Avail Explorer, click on the icon next to your account name to
+copy your address.  Alternatively, you can copy the address manually.
 
 <img src={useBaseUrl("img/avail/account-icon.png")} width="100%" height="100%"/> 
 
@@ -102,7 +102,8 @@ obtaining tokens from the faucet, please reach out to the
 
 ## Submit a New Transaction
 
-On Avail Apps, navigate to the **Developer** tab and click on the **Extrinsics** sub-tab.
+On the Avail Explorer, navigate to the **Developer** tab and click on
+the **Extrinsics** sub-tab.
 
 <img src={useBaseUrl("img/avail/developer.png")} width="100%" height="100%"/> 
 
@@ -148,7 +149,7 @@ Before sending a transaction using `App_ID`, it must be created using the `creat
 
 :::
 
-Submit the transaction. Head over to the [Network Explorer](https://devnet-avail.polygon.technology/#/explorer). 
+Submit the transaction. Head over to the [Avail Explorer](https://testnet.polygonavail.net/#/explorer). 
 The recent event list should list your transaction. You can click on the event and expand it to check out 
 the transaction details.
 
@@ -164,7 +165,7 @@ Enter the values you wish to submit as part of this transaction for `row` and `c
 
 <img src={useBaseUrl("img/avail/da-row-col.png")} width="100%" height="100%"/> 
 
-Submit the transaction. Head over to the [Network Explorer](https://devnet-avail.polygon.technology/#/explorer). 
+Submit the transaction. Head over to the [Avail Explorer](https://testnet.polygonavail.net/#/explorer). 
 The recent event list should list your transaction. You can click on the event and expand it to check out 
 the transaction details.
 
@@ -307,7 +308,7 @@ const keyring = new Keyring({ type: 'sr25519' });
 
 async function createApi() {
   // Initialise the provider to connect to the local node
-  const provider = new WsProvider('wss://devnet-avail.polygon.technology/ws');
+  const provider = new WsProvider('wss://testnet.polygonavail.net/ws');
 
   // Create the API and wait until ready
   return ApiPromise.create({ 
@@ -383,10 +384,10 @@ main().catch(console.error)
 > You should get balance as `0` if the account is newly created and you have not used the faucet. 
 > You should also see the confirmation of the transaction.
 
-:::tip Using Avail Apps
+:::tip Using The Avail Explorer
 
-For convenience, you can add the account you generated with `@polkadot/api` on the Apps UI to 
-perform account actions.
+For convenience, you can add the account you generated with
+`@polkadot/api` on the Avail Explorer UI to perform account actions.
 
 :::
 
@@ -530,7 +531,7 @@ const keyring = new Keyring({ type: 'sr25519' });
 
 async function createApi() {
   // Initialise the provider to connect to the local node
-  const provider = new WsProvider('wss://devnet-avail.polygon.technology/ws');
+  const provider = new WsProvider('wss://testnet.polygonavail.net/ws');
 
   // Create the API and wait until ready
   return ApiPromise.create({ 
@@ -623,7 +624,7 @@ main().catch(console.error)
 </TabItem>
 </Tabs>
 
-You can head over to the [Network Explorer](https://devnet-avail.polygon.technology/#/explorer), and the
+You can head over to the [Avail Explorer](https://testnet.polygonavail.net/#/explorer), and the
 recent event list should list your transaction. You can click on the event and expand it to check out 
 the transaction details.
 
