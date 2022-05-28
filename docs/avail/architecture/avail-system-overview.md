@@ -14,10 +14,45 @@ image: https://matic.network/banners/matic-network-16x9.png
 slug: avail-system-overview
 ---
 
-We recognize that to achieve higher throughput, we not only need to put execution off-chain but also need to have a scalable data hosting layer that guarantees data availability.
+Avail makes it possible to prove that block data is available without
+downloading the whole block by leveraging Kate polynomial commitments,
+erasure coding, and other technologies to allow light clients (which
+download only the _headers_ of the chain) to efficiently and randomly
+sample small amounts of the block data to verify its full
+availability.
 
-This blockchain design needs to address the following components:
+Note that Avail does not have an execution environment (it does not
+run smart contracts itself), but it makes it possible for other chains
+to make their transaction data available through Avail. These chains
+may implement their own execution environments of any kind, EVM, Wasm,
+or anything else.
 
-* **Data Hosting and Ordering**: Receives transactional data and orders it without any execution. It would then store the data and ensure complete data availability in a decentralized manner. This is the crux of Avail.
-* **Execution**: The execution component should take ordered transactions from Avail and execute them. It should create a checkpoint/assertion/proof and submit it to the data verification layer. We call this the execution layer.
-* **Verification/Dispute Resolution**: This component represents the main chain to which the system is anchored. The security of the design is dependent on the robustness and security properties of this component. The checkpoints/assertion/proof submitted by the execution layer is processed by this layer to guarantee that only valid state transitions are accepted in the system (provided that the data is available). We refer to this component as the data verification layer.
+The Avail network consists of these types of entities/participants:
+
+* **Validator nodes**
+  - Responsible for creating and reaching consensus on the next block
+    of the chain
+* **Avail (DA) full nodes**
+  - Download and make available all block data, for all applications
+    using Avail
+* **Avail (DA) light clients:**
+  - Download headers, but not full blocks
+  - Randomly sample small parts of the block to verify availability
+  - Expose a local API to interact with the Avail network
+
+This allows applications that wish to use Avail to embed the DA light
+client. They can then build:
+
+* **App full nodes**
+  - Embed an Avail (DA) light client
+  - Download all data for a specific appID
+  - Implement an execution environment to run transactions
+  - Maintain application state
+* **App light clients**
+  - Embed an Avail (DA) light client
+  - Implement end user facing functionality
+
+The Avail ecosystem will also feature bridges to enable specific
+use-cases. One such bridge being designed at this time is an
+_attestation bridge_ that will post attestations of data available on
+Avail to Ethereum, thus allowing validiums to be built.

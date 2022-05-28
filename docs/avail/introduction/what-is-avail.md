@@ -18,14 +18,22 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+Avail is a blockchain that is laser-focused on data availability:
+ordering and recording blockchain transactions, and making it possible
+to prove that block data is available without downloading the whole
+block. This allows it to scale in ways that monolithic blockchains
+cannot.
+
 :::note A Robust General-Purpose Scalable Data Availability Layer
 
-* Enable standalone chains or sidechains with arbitrary execution environments to bootstrap
-  validator security without needing to create and manage their own validator set by guaranteeing
-  transaction data availability.
+* Enables Layer-2 solutions to offer increased scalability throughput
+  by leveraging Avail to build Validiums with off-chain data
+  availability.
 
-* Layer-2 solutions such as Validiums to offer increased scalability throughput by using Avail as an
-  off-chain data availability layer.
+* Enables standalone chains or sidechains with arbitrary execution
+  environments to bootstrap validator security without needing to
+  create and manage their own validator set by guaranteeing
+  transaction data availability.
 
 :::
 
@@ -51,12 +59,14 @@ hiding them might compromise the security of the system.
 
 #### High Guarantee
 
-Avail provides a provable high guarantee that the data is available. In constant time get close to 100%
-guarantee.
+Avail provides a provable high level of guarantee that the data is
+available. Light clients can independendly verify availability in a
+constant number of queries, without downloading the entire block.
 
 #### Minimum Trust
 
-No need to be a validator or host a full node. Even with a light client, get guaranteed availability.
+No need to be a validator or host a full node. Even with a light
+client, get verifiable availability.
 
 #### Easy to Use
 
@@ -68,15 +78,25 @@ operate an off-chain scaling solution.
 Unlock the full scaling potential of your off-chain scaling solution by keeping the data with us and
 still avoiding the DA problem on L1.
 
+#### Execution Agnostic
+
+Chains that use Avail can implement any type of execution environment
+irrespective of the application logic. Transactions from any
+environment are supported: EVM, Wasm, or even new VMs that have not
+been built yet. Avail is perfect for experimenting with new execution
+layers.
+
 #### Bootstrapping Security
 
-Standalone chains can use Avail to ensure ordered data is always available, irrespective of the application
-logic.
+Avail enables new chains to be created without needing to spin up a
+new validator set, and leverage Avail's instead. Avail takes care of
+transaction sequencing, consensus, and availability in exchange for
+simple transaction fees (gas).
 
 #### Fast provable finality using NPoS
 
-Fast provable finality via Nominated Proof of Stake using MATIC token. Backed by KGZ commitments and erasure
-coding.
+Fast provable finality via Nominated Proof of Stake. Backed by KGZ
+commitments and erasure coding.
 
 </TabItem>
 <TabItem value="scaling">
