@@ -381,6 +381,14 @@ main().catch(console.error)
 
 ```
 
+Sample Result:
+
+```
+You are connected to chain Avail-Testnet using Polygon Avail Node v3.0.0-6c8781e-x86_64-linux-gnu
+5HBCFfAs5gfqYgSinsr5s1nSZY2uRCh8MhYhXXp6Y9jNRJFB
+5HBCFfAs5gfqYgSinsr5s1nSZY2uRCh8MhYhXXp6Y9jNRJFB has balance of 0
+```
+
 > You should get balance as `0` if the account is newly created and you have not used the faucet. 
 > You should also see the confirmation of the transaction.
 
