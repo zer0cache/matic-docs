@@ -24,46 +24,52 @@ If you do not find your question on this page, please submit your question on th
 
 ## What is a light client? 
 
-Light clients allow users to interact with a blockchain network without having to sync the full 
-blockchain while maintaining decentralization and security.
+Light clients allow users to interact with a blockchain network
+without having to sync the full blockchain while maintaining
+decentralization and security. Generally, they download the blockchain
+headers, but not the contents of each block. Avail (DA) light clients
+additionally verify that block contents are available by performing
+Data Availability Sampling, a technique where small random sections of
+a block are downloaded.
 
 ## What is a popular use case of a light client?
 
-We refer to any node which needs not to invest many resources to be part of the system as a light 
-client. In practice, Ethereum nodes are light clients on most shards. This allows them to keep track 
-of the sharded chain without participating as a full node for that shard.
-In the context of data availability, we consider the application clients which use the DA layer but 
-do not want to host a full node as light clients. The goal is to not put resource assumptions on 
-participants, but still give a high guarantee that the data is available.
+There are many use-cases which today rely on an intermediary to
+maintain a full node, such that end users of a blockchain do not
+communicate directly with the blockchain but instead through the
+intermediary. Light clients have until now not been a suitable
+replacement for this architecture because they lacked data
+availability guarantees. Avail solves this issue, thus enabling more
+applications to directly participate on the blockchain network without
+intermediaries. Although Avail does support full nodes, we expect most
+applications will not need to run one, or will need to run fewer.
 
-## If the data availability guarantee is inherent to the consensus protocol, why do we need to use redundancy in block generation when consensus assumes two-thirds of validators are honest?
+## What is data availability sampling?
 
-We want to ensure that minimum trust is needed on the DA layer. For consensus, we assume a 
-super-majority of validators to remain honest and make sure the blockchain progresses and finalizes. 
-However, we want the applications using the DA layer not to have to participate as a validator (or full 
-node) to ensure that the data is available. Only a very limited amount of data querying should provide 
-enough confidence for the applications to keep using the proposed data layer. This is why we modify our block 
-structure and make sure that a block header with a constant number of data query is sufficient to provide 
-~100% guarantee that the entire block is available. We emphasize the fact that none of these guarantees 
-about DA assume any dependency on any other honest participant, as far as availability is concerned.
+Avail light clients, like other light clients, only download the
+headers of the blockchain. However, they additional perform data
+availability sampling: a technique that randomly samples small
+sections of the block data and verifies they are correct. When
+combined with erasure coding and Kate polynomial commitments, Avail
+clients are able to provide strong (nearly 100%) guarantees of
+availability without relying on fraud proofs, and with only a small
+constant number of queries.
 
-Also, the applications can choose to keep only parts of the block which are relevant to their application. 
-If enough applications are present in the system, it collectively ensures the entire block data 
-is available.
+## How is erasure coding used to increase data availability guarantees?
 
-## Why are we keeping so much extra data inside a block? Isn't it a waste of space?
+Erasure coding is a technique that encodes data in a way that spreads
+out the information over multiple "shards", such that the loss of some
+number of those shards can be tolerated. That is, the information can
+be reconstructed from the other shards. Applied to the blockchain,
+this means that we effectively increase the size of each block, but we
+prevent a malicious actor from being able to hide any part of a block
+up to the redundant shard size.
 
-Redundancy of data is extremely important to give data availability guarantees. 
-
-Suppose we have four data chunks. If the block producer wants to hide a particular chunk out of the 4 data 
-chunks, then being a light client, the probability of querying a data chunk at random and selecting the exact 
-chunk the producer wants to hide is 1/4. Now suppose the block producer erasure codes the chunks such that 4 
-chunks are extended to 8 chunks in a way that any 4 out of 8 chunks are sufficient to generate the entire data. 
-Now, to even hide a particular chunk, the producer needs to make sure 5 out of 8 chunks are hidden, otherwise, revealing even one more chunk reveals the entire data. Now, a light client randomly querying a chunk has a 
-probability of 5/8 of choosing a data chunk that the producer wants to hide, hence having a much higher chance 
-of catching a data hiding attempt, even with a single query. Repeating such querying multiple times allows us 
-to amplify the probability of detecting data availability attacks. Hence, redundancy is very important, even 
-if it comes at the cost of increasing storage and communication bandwidth requirements.
+Since a malicious actor needs to hide a large part of the block in
+order to attempt to hide even a a single transaction, it makes it much
+more likely that random sampling would catch the large gaps in the
+data. Effectively, erasure coding makes the data availibility sampling
+technique much more powerful.
 
 ## What are Kate commitments?
 
@@ -82,3 +88,15 @@ In our construction, we use Kate commitments for the following reasons:
 correctness of commitment construction without having access to the entire data of the block. -->
 
 In the future, we might use other polynomial commitment schemes, if that gives us better bounds or guarantees.
+
+## Since Avail is used by multiple blockchains, does that mean chains have to download transactions from other chains?
+
+No. Avail headers contain an index that allows a given application to
+determine and download only the sections of a block that have data for
+that application. Thus, they are largely unaffected by other chains
+using Avail at the same time or by block sizes.
+
+The only exception is data availability sampling. In order to verify
+that data is available (and due to the nature of erasure coding),
+clients sample small parts of the block at random, including possibly
+sections that contain data for other applications.
