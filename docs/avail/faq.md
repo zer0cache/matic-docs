@@ -89,7 +89,7 @@ correctness of commitment construction without having access to the entire data 
 
 In the future, we might use other polynomial commitment schemes, if that gives us better bounds or guarantees.
 
-## Since Avail is used by multiple blockchains, does that mean chains have to download transactions from other chains?
+## Since Avail is used by multiple applications, does that mean chains have to download transactions from other chains?
 
 No. Avail headers contain an index that allows a given application to
 determine and download only the sections of a block that have data for
