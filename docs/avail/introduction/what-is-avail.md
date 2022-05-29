@@ -55,7 +55,7 @@ readily available. If the data is not available, the block might contain malicio
 which are being hidden by the block producer. Even if the block contains non-malicious transactions, 
 hiding them might compromise the security of the system.
 
-### Avail's approach to data dvailability
+### Avail's approach to data availability
 
 #### High Guarantee
 
