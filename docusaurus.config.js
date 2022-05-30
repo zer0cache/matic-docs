@@ -199,7 +199,6 @@ module.exports = {
       isCloseable: true,
     },
     navbar: {
-      style: 'primary',
       hideOnScroll: true,
       logo: {
         alt: "Polygon logo",
