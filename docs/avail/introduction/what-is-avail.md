@@ -59,7 +59,7 @@ hiding them might compromise the security of the system.
 
 #### High Guarantee
 
-Avail provides a provable high level of guarantee that the data is
+Avail provides a provable, high-level of guarantee that data is
 available. Light clients can independendly verify availability in a
 constant number of queries, without downloading the entire block.
 
@@ -101,8 +101,36 @@ commitments and erasure coding.
 </TabItem>
 <TabItem value="scaling">
 
+## Avail-Powered Validiums
 
+Due to the architecture of monolithic blockchains 
+(such as Ethereum in its current state), operating the blockchain is 
+expensive, resulting in high transaction fees. Rollups attempt to extract 
+the burden of execution by running transactions off-chain and then posting
+the execution results and the [usually compressed] transaction data.
 
+Validiums are the next step: instead of posting the transaction data,
+it is kept available off-chain, where a proof/attestation is only
+posted to the base layer. This is by far the most cost-effective solution 
+because both execution and data availability are kept off-chain while still
+allowing for final verification and settlement on the layer 1 chain.
+
+Avail is a blockchain optimized for data availability. Any rollup that
+wishes to become a validium can switch to post transaction data to
+Avail instead of the layer 1 and deploy a verification contract that, in
+addition to verifying the correct execution, also verifies data
+availability.
+
+:::note Attestation
+
+The Avail team will make this data availability verification simple on
+Ethereum by building an attestation bridge to post data availability
+attestations directly to Ethereum. This will make the verification
+contract's job a simple one, since the DA attestations will already be
+on-chain. This bridge is currently in design; please reach out to the
+Avail team for more information or to join our early access program.
+
+:::
 
 </TabItem>
 </Tabs>
