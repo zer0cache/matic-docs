@@ -15,6 +15,7 @@ The following wallets will be discussed:
 
 - [Metamask](metamask)
 - [Arkane](arkane/intro)
+- [Coinbase Wallet](https://github.com/coinbase/coinbase-wallet-sdk/)
 - [Fortmatic](fortmatic)
 - [Portis](portis)
 - [Torus](torus)
@@ -23,6 +24,8 @@ The following wallets will be discussed:
 ### Wallets
 
 * [**Arkane**](https://arkane.network/): Arkane is a user-friendly, secure, and custodial key management system for DApps. Arkane supports both Web and mobile, and can service both crypto savvy users as well as a more mainstream audience. Being blockchain agnostic they are a great fit for supporting both Polygon and Ethereum. [For more...](arkane/intro)
+
+* [**Coinbase Wallet**](https://github.com/coinbase/coinbase-wallet-sdk/): Coinbase Wallet is a self-custody crypto wallet, available as a browser extension and a mobile app on Android and iOS. Coinbase Wallet SDK (formerly WalletLink) is an open source SDK which allows you to connect your dapps to millions of Coinbase Wallet users, including their assets and NFTs. It works with all EVM-compatible L1/L2 networks, supports NFTs, and is multi-platform (browser extension, iOS and Android mobile apps). [For more...](https://github.com/coinbase/coinbase-wallet-sdk/)
 
 * [**Fortmatic**](https://fortmatic.com/): Fortmatic SDK allows you to easily integrate your app with the Ethereum blockchain, whether you already have a dApp integrated with web3 or are starting from scratch. Fortmatic provides a smooth and delightful experience for both you and your app's users. [For more...](fortmatic)
 
