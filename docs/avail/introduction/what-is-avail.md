@@ -101,6 +101,9 @@ commitments and erasure coding.
 </TabItem>
 <TabItem value="scaling">
 
+Start by checking out this [blog post](https://blog.polygon.technology/polygon-research-ethereum-scaling-with-rollups-8a2c221bf644/) on scaling
+Ethereum with Rollups.
+
 ## Avail-Powered Validiums
 
 Due to the architecture of monolithic blockchains 
