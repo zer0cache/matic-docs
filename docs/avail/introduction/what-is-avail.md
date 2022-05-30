@@ -97,7 +97,7 @@ simple transaction fees (gas).
 
 #### Fast provable finality using NPoS
 
-Fast provable finality via Nominated Proof of Stake. Backed by KGZ
+Fast provable finality via Nominated Proof of Stake. Backed by KZG
 commitments and erasure coding.
 
 </TabItem>
