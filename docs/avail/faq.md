@@ -66,7 +66,7 @@ prevent a malicious actor from being able to hide any part of a block
 up to the redundant shard size.
 
 Since a malicious actor needs to hide a large part of the block in
-order to attempt to hide even a a single transaction, it makes it much
+order to attempt to hide even a single transaction, it makes it much
 more likely that random sampling would catch the large gaps in the
 data. Effectively, erasure coding makes the data availibility sampling
 technique much more powerful.
@@ -75,7 +75,7 @@ technique much more powerful.
 
 Kate commitments, introduced by Aniket Kate, Gregory M. Zaverucha, and Ian Goldberg in 2010, provide a 
 way to commit to polynomials in a succinct manner. Recently, polynomial commitments came to the forefront, 
-being primarily used as vector commitments in PLONK-like zero knowledge constructions.
+being primarily used as commitments in PLONK-like zero knowledge constructions.
 
 In our construction, we use Kate commitments for the following reasons:
 

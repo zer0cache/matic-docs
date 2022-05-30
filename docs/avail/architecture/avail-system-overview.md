@@ -54,17 +54,27 @@ Historic transactions would be stored elsewhere (i.e. off chain).
 
 :::
 
-The Avail network consists of these types of network maintainers:
+The Avail network consists of these types of network maintainers: validators, full nodes,
+and light clients.
+
+:::info The goal of Avail is to not be reliant on full nodes to keep data available
+
+  The aim is to give the same DA guarantees to a light client as a full node. Users
+  are encouraged to use Avail light clients. However, users are able to run Avail full nodes 
+  and it is well supported.
+
+:::
 
 * **Validator nodes**
-  - Responsible for creating and reaching consensus on the next block
-    of the chain
+  - Protocol incentivized full nodes that participate in the consensus.
 
 * **Avail (DA) full nodes**
   - Download and make available all block data, for all applications
     using Avail
 
 * **Avail (DA) light clients:**
+  :::caution This API is a WIP and is not yet stable
+  :::
   - Download headers, but not full blocks
   - Randomly sample small parts of the block to verify availability
   - Expose a local API to interact with the Avail network
