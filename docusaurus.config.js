@@ -203,7 +203,7 @@ module.exports = {
           position: "right",
           items: [
                   {
-                    href: 'https://discord.com/invite/polygon',
+                    href: 'https://discord.gg/tCmCbEff66',
                     label: 'Discord',
                     target: '_blank',
                     rel: null,

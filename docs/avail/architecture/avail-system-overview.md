@@ -25,32 +25,18 @@ availability.
 
 :::info Avail does not have an execution environment
 
-Avail does not run smart contracts itself, but it makes it possible 
-for other chains to make their transaction data available through Avail. 
-These chains may implement their own execution environments of any kind, 
+Avail does not run smart contracts itself, but it makes it possible
+for other chains to make their transaction data available through Avail.
+These chains may implement their own execution environments of any kind,
 EVM, Wasm, or anything else.
 
 :::
 
-:::info Data on Avail is not necessarily meant to be persistent forever
-
-Avail is meant to act as a window in time where consensus is enforced
-and trust is guaranteed about what blocks contain and represent.
-
-:::
-
-:::info Avail doesn't care what the data is 
+:::info Avail doesn't care what the data is
 
 Avail guarantees that block data is available, but does not care about
 what that data is. The data can of course be transactions, but can take
 on other forms too.
-
-:::
-
-:::info Blocks can be stored elsewhere
-
-After reaching consensus, the blocks themselves can be stored elsewhere.
-Historic transactions would be stored elsewhere (i.e. off chain).
 
 :::
 
@@ -60,7 +46,7 @@ and light clients.
 :::info The goal of Avail is to not be reliant on full nodes to keep data available
 
   The aim is to give the same DA guarantees to a light client as a full node. Users
-  are encouraged to use Avail light clients. However, users are able to run Avail full nodes 
+  are encouraged to use Avail light clients. However, users are able to run Avail full nodes
   and it is well supported.
 
 :::
@@ -73,11 +59,12 @@ and light clients.
     using Avail
 
 * **Avail (DA) light clients:**
-  :::caution This API is a WIP and is not yet stable
-  :::
   - Download headers, but not full blocks
   - Randomly sample small parts of the block to verify availability
   - Expose a local API to interact with the Avail network
+
+:::caution The local API is a WIP and is not yet stable
+:::
 
 This allows applications that wish to use Avail to embed the DA light
 client. They can then build:
@@ -87,7 +74,7 @@ client. They can then build:
   - Download all data for a specific appID
   - Implement an execution environment to run transactions
   - Maintain application state
-  
+
 * **App light clients**
   - Embed an Avail (DA) light client
   - Implement end user facing functionality
