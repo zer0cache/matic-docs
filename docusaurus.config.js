@@ -216,7 +216,7 @@ module.exports = {
           position: "right",
           items: [
                   {
-                    href: 'https://discord.com/invite/polygon',
+                    href: 'https://discord.gg/tCmCbEff66',
                     label: 'Discord',
                     target: '_blank',
                     rel: null,
@@ -265,6 +265,12 @@ module.exports = {
                   {
                     to: 'docs/faq/general-faq/',
                     label: 'PoS FAQ',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
+                    to: 'docs/avail/faq',
+                    label: 'Avail FAQ',
                     target: '_blank',
                     rel: null,
                   },

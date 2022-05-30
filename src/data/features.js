@@ -72,7 +72,7 @@ export const secondRow = [
     {
         title: "Avail",
         status: "Data Availability",
-        linkUrl: "https://avail-docs.matic.today/",
+        linkUrl: "docs/avail/introduction/what-is-avail",
         imageUrl: "img/avail.svg",
         description: 'A general-purpose, scalable, data availability-focused blockchain.'
     },
