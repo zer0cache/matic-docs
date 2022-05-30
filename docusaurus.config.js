@@ -193,9 +193,9 @@ module.exports = {
     announcementBar: {
       id: 'doc revamp message',
       content:
-        'The team is currently revamping the docs site.',
-      backgroundColor: '#eacbfc',
-      textColor: '91E42',
+        'The team is revamping the docs site.',
+      backgroundColor: '#AA84ED',
+      textColor: '#0A0B0D',
       isCloseable: true,
     },
     navbar: {
