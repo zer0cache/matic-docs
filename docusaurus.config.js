@@ -261,7 +261,7 @@ module.exports = {
         },
         {
           href: 'https://polygon.technology/developers/',
-          label: "Developer resources",
+          label: "Developer Resources",
           position: "right",
         },
         {
