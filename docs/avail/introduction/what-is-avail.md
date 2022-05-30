@@ -14,6 +14,8 @@ image: https://matic.network/banners/matic-network-16x9.png
 slug: what-is-avail
 ---
 
+<!-- Page is WIP -->
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import useBaseUrl from '@docusaurus/useBaseUrl';
