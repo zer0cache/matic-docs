@@ -10,7 +10,7 @@ keywords:
   - testnet
   - address
 image: https://matic.network/banners/matic-network-16x9.png
-slug: testnet
+slug: nightfall-testnet
 ---
 
 Polygon Nightfall is now live on **Goerli**.

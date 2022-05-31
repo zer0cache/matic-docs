@@ -9,7 +9,7 @@ keywords:
   - nightfall
   - faq
 image: https://matic.network/banners/matic-network-16x9.png
-slug: faq
+slug: nightfall-faq
 ---
 
 :::tip

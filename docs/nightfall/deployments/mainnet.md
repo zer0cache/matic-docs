@@ -10,7 +10,7 @@ keywords:
   - mainnet
   - address
 image: https://matic.network/banners/matic-network-16x9.png
-slug: mainnet
+slug: nightfall-mainnet
 ---
 
 :::note
