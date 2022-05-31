@@ -1,3 +1,18 @@
+---
+id: zk-proofs
+title: ZK Proofs
+sidebar_label: ZK Proofs
+description: ZK Proofs
+keywords:
+  - docs
+  - polygon
+  - nightfall
+  - zk
+  - proof
+image: https://matic.network/banners/matic-network-16x9.png
+slug: zk-proofs
+---
+
 ## ZK-Proofs
 
 User transactions are always verified by an Ethereum smart contract by verifying the ZK-Proof supplied by the user.
