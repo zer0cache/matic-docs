@@ -12,8 +12,6 @@ image: https://matic.network/banners/matic-network-16x9.png
 slug: challengers
 ---
 
-# Challengers
-
 ## Overview
 In this first version of Polygon Nightfall, only a boot Challenger managed by Polygon is active. Ability to register additional challengers is coming soon.
 

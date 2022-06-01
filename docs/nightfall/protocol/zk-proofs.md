@@ -13,7 +13,6 @@ image: https://matic.network/banners/matic-network-16x9.png
 slug: zk-proofs
 ---
 
-## ZK-Proofs
 
 User transactions are always verified by an Ethereum smart contract by verifying the ZK-Proof supplied by the user.
 The specific ZK-SNARK that is used in these ZK-Proofs is [`Groth16`](https://eprint.iacr.org/2016/260.pdf).

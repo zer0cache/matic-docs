@@ -13,6 +13,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 slug: block-explorer
 ---
 
-# Block Explorer
-Coming soon
+:::note This page is under construction
+
+:::
 
