@@ -1,19 +1,4 @@
----
-id: circuits
-title: Circuits
-sidebar_label: Circuits
-description: Circuits on Nightfall
-keywords:
-  - docs
-  - polygon
-  - nightfall
-  - circuits
-  - deposit
-  - transfer
-image: https://matic.network/banners/matic-network-16x9.png
-slug: circuits
----
-
+# Circuits
 Circuits are used to define the rules that a transaction must follow to be considered correct. There are broadly four types of circuits, one for each type of transaction:
 
 - [Deposit](#deposit)
