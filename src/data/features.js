@@ -80,7 +80,7 @@ export const secondRow = [
         title: "Nightfall",
         status: "Optimistic Rollup",
         linkUrl: "docs/nightfall/introduction/overview",
-        imageUrl: "img/Nightfall.png",
+        imageUrl: "img/nightfall.png",
         description: "An optimistic rollup solution designed for enterprises that supports private transactions."
     },
     {

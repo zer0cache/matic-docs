@@ -44,74 +44,126 @@ module.exports = {
   onBrokenLinks: 'log',
   themeConfig: {
     footer: {
-      /*
+      style: 'dark',
       links: [
+        {
+          title: "Scaling Solutions",
+          items: [
+          {
+              label: "Polygon PoS",
+              href: "https://polygon.technology/solutions/polygon-pos/"
+          },
+          {
+            label: "Polygon Edge",
+            href: "https://polygon.technology/solutions/polygon-edge/"
+          },
+          {
+              label: "Polygon Supernets",
+              href: "https://polygon.technology/polygon-edge-supernets/"
+          },
+          {
+            label: "Polygon Hermez",
+            href: "https://polygon.technology/solutions/polygon-hermez/"
+          },
+          {
+            label: "Polygon Avail",
+            href: "https://polygon.technology/solutions/polygon-avail/"
+          },
+          {
+              label: "Polygon Nightfall",
+              href: "https://polygon.technology/solutions/polygon-nightfall/"
+          },
+          {
+            label: "Polygon Zero",
+            href: "https://polygon.technology/solutions/polygon-zero/"
+          },
+          {
+            label: "Polygon Miden",
+            href: "https://polygon.technology/solutions/polygon-miden/"
+          },
+       ]
+       },
         {
           title: "Developers",
           items: [
           {
               label: "Get Started",
-              href: "https://docs.polygon.technology/docs/develop/getting-started"
+              href: "https://docs.polygon.technology/docs/develop/getting-started/"
           },
           {
               label: "Advocate Program",
-              href: "https://polygon.technology/advocate-program"
+              href: "https://polygon.technology/advocate-program/"
           },
           {
-            label: "Funds",
+            label: "Polygon Funds",
             href: "https://polygon.technology/funds/"
+          },
+          {
+            label: "Polygon Studios",
+            href: "https://polygonstudios.com/"
           },
           {
               label: "Bug Bounty",
               href: "https://immunefi.com/bounty/polygon/"
           },
           {
-            label: "DApps",
-            href: "https://polygon.technology/ecosystem"
+            label: "dApps",
+            href: "https://polygon.technology/ecosystem/"
           },
           {
-            label: "PoS Wallet",
-            href: "https://wallet.polygon.technology/"
+            label: "Polygon Lightpaper",
+            href: "https://polygon.technology/lightpaper-polygon.pdf"
+          },
+          {
+            label: "Matic Whitepaper",
+            href: "https://github.com/maticnetwork/whitepaper/"
           },
       ]
       },
+     {
+      title: "Company",
+      items: [
       {
-        title: "Company",
-        items: [
-        {
-            label: "Polygon Technology",
-            href: "https://polygon.technology/"
-        },
-        {
-            label: "Blogs",
-            href: "https://blog.polygon.technology/"
-        },
-        {
-          label: "Brand Kit",
-          href: "https://www.notion.so/polygontechnology/Brand-Resources-2cd18ae436584e98a6c5aae56db73058"
-        },
-        {
-            label: "Careers",
-            href: "https://polygon.technology/careers/"
-        },
-        {
-          label: "Contact",
-          href: "https://polygon.technology/contact-us/"
-        },
-        {
-          label: "About Us",
-          href: "https://polygon.technology/about/"
-        },
+        label: "About Us",
+        href: "https://polygon.technology/about/"
+      },
+      {
+        label: "Contact",
+        href: "https://polygon.technology/contact-us/"
+      },
+      {
+        label: "Transparency Sheet",
+        href: "https://polygon.technology/transparency-sheet/"
+    },
+      {
+          label: "Blogs",
+          href: "https://blog.polygon.technology/"
+      },
+      {
+        label: "Brand Kit",
+        href: "https://www.notion.so/polygontechnology/Brand-Resources-2cd18ae436584e98a6c5aae56db73058/"
+      },
+      {
+        label: "Media Kit",
+        href: "https://www.notion.so/polygontechnology/Polygon-Brand-Resources-2cd18ae436584e98a6c5aae56db73058/"
+      },
+      {
+          label: "Careers",
+          href: "https://polygon.technology/careers/"
+      },
+      {
+        label: "Ecosystem Careers",
+        href: "https://ecosystemjobs.polygon.technology/jobs/"
+    },
     ]
     },
-      ],
-      */
-      logo: {
-        alt: 'Polygon Logo',
-        src: 'img/polygon/polygon-logo.svg',
-        href: 'https://polygon.technology/',
-      },
-      copyright: `Copyright © ${new Date().getFullYear()} Polygon Technology`,
+    ],   
+    logo: {
+      alt: 'Polygon Logo',
+      src: 'img/polygon/polygon-logo.svg',
+      href: 'https://polygon.technology/',
+    },
+    copyright: `Copyright © ${new Date().getFullYear()} Polygon Technology`,
     },
     announcementBar: {
       id: "support_us",
@@ -141,9 +193,9 @@ module.exports = {
     announcementBar: {
       id: 'doc revamp message',
       content:
-        'The team is currently revamping the docs site.',
-      backgroundColor: '#eacbfc',
-      textColor: '91E42',
+        'The team is revamping the docs site.',
+      backgroundColor: '#AA84ED',
+      textColor: '#0A0B0D',
       isCloseable: true,
     },
     navbar: {
@@ -208,7 +260,7 @@ module.exports = {
         },
         {
           href: 'https://polygon.technology/developers/',
-          label: "Developer resources",
+          label: "Developer Resources",
           position: "right",
         },
         {

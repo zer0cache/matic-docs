@@ -105,8 +105,7 @@ function Home() {
 defaultValue="beginner"
 className="tabs"
 values={[
-{label: 'New Users', value: 'beginner'},
-{label: 'Experienced Users', value: 'advanced'},
+{label: 'Learn | Build | Operate', value: 'beginner'},
 {label: 'Browse by Product', value: 'products'},
 ]}>
 
@@ -127,10 +126,6 @@ networkBanner.map((props, idx) => (
       ))}{" "}
   </div>
 
-
-
-</TabItem>
-<TabItem value="advanced">
 <div className="row pt-40">
     {networkBanner &&
       networkBanner.length &&
