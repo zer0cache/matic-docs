@@ -1,17 +1,6 @@
 ---
 id: overview
 title: Overview
-sidebar_label: Overview
-description: An overview on Nightfall
-keywords:
-  - docs
-  - polygon
-  - nightfall
-  - privacy
-  - rollup
-  - zk
-image: https://matic.network/banners/matic-network-16x9.png
-slug: nightfall-overview
 ---
 
 Polygon believes in a vision that sees many companies in the near future interacting with each

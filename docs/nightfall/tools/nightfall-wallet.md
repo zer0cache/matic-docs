@@ -9,8 +9,8 @@ keywords:
   - polygon
   - nightfall
   - wallet
-image: https://matic.network/banners/matic-network-16x9.png
 slug: nightfall-wallet
+image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
 The Polygon Nightfall wallet is a browser wallet that is able to interact with the

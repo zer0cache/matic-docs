@@ -1,16 +1,4 @@
----
-id: proposers
-title: Proposers
-sidebar_label: Proposers
-description: Proposers on Nightfall
-keywords:
-  - docs
-  - polygon
-  - nightfall
-  - proposer
-image: https://matic.network/banners/matic-network-16x9.png
-slug: proposers
----
+# Proposers
 
 ## Overview
 In this first version of Polygon Nightfall, only a boot Proposer managed by Polygon is active. Ability to register additional proposers is coming soon.
