@@ -1,6 +1,6 @@
 ---
 id: getting-started
-title: Application development on Polygon
+title: Developing on Polygon PoS
 sidebar_label: Getting Started
 description: Build your next blockchain app on Polygon.
 keywords:
@@ -8,6 +8,13 @@ keywords:
   - matic
 image: https://matic.network/banners/matic-network-16x9.png
 ---
+
+:::caution Updating the Develop Docs
+
+The docs are being updated, enhanced, and improved. They are subject to change.
+Please feel free to raise an issue or pull request if you have any queries or suggestions.
+
+:::
 
 Welcome to the most exciting and innovative platform to build your blockchain application on **Polygon Blockchain**. Blockchain technology is poised to revolutionise the way the digital world handles data and does business. Be a part of this revolution and get a head start with decentralised application development on Polygon.
 
