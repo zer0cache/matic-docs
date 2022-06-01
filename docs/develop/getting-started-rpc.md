@@ -10,7 +10,7 @@ keywords:
   - DID
   - identity
 image: https://matic.network/banners/matic-network-16x9.png
-slug: getting-started-rpc
+slug: api-documentation/getting-started-rpc
 ---
 
 JSON-RPC is a stateless, light-weight remote procedure call (RPC) protocol that is commonly used for interacting with the Polygon network layer. Polygon JSON-RPC methods allow developers to query for data, write to the blockchain, and build dApps.

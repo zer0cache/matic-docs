@@ -10,7 +10,7 @@ keywords:
   - DID
   - identity
 image: https://matic.network/banners/matic-network-16x9.png
-slug: getting-started
+slug: did-implementation/getting-started
 ---
 
 This is a startup guide for users who wish to use the implementation packages published by Polygon team, to generate and publish a Polygon DID on the Polygon ledger.
