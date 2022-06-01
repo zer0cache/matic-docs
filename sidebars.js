@@ -374,7 +374,6 @@ develop: [
         "develop/oracles/tellor",
       ],
     },
-    "develop/fiat-on-ramp",
     {
       type: "category",
       label: "Indexing Services",
@@ -402,16 +401,6 @@ develop: [
         "develop/advanced/swap-assets",
         "develop/advanced/custom-restrictions",
       ],
-    },
-    {
-      type: "category",
-      label: "CEXs, Wallets & Fiat-on-ramps",
-      items: [
-        "develop/cexs-wallets/fiat-ramps",
-        "develop/cexs-wallets/cexs",
-        "develop/cexs-wallets/wallets",
-      ],
-
     },
     {
       type: "category",
