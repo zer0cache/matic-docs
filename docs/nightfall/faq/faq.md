@@ -1,6 +1,15 @@
 ---
 id: faq
 title: FAQ
+sidebar_label: FAQ
+description: Frequently asked questions about Nightfall
+keywords:
+  - docs
+  - polygon
+  - nightfall
+  - faq
+image: https://matic.network/banners/matic-network-16x9.png
+slug: nightfall-faq
 ---
 
 :::tip
