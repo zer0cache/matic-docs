@@ -1,11 +1,35 @@
 ---
-id: getting-started
-title: Getting Started
+id: did-implementation
+title: Polygon DID Implementation
+sidebar_label: Decentralized Identifiers
+description: Learn about DID implementation on Polygon
+keywords:
+  - docs
+  - polygon
+  - matic
+  - DID
+  - identity
+image: https://matic.network/banners/matic-network-16x9.png
+slug: did-implementation/getting-started
 ---
 
 This is a startup guide for users who wish to use the implementation packages published by Polygon team, to generate and publish a Polygon DID on the Polygon ledger.
 
 The Polygon DID method Implementation comprises of 3 packages, namely the polygon-did-registrar, polygon-did-resolver and polygon-did-registry-contract. A user who wants to incorporate the functionality to either register or read a DID on or from Polygon network can use the following guide.
+
+A DID is essentially a unique identifier, that has been created without the presence of a central authority.  DID in context of Verifiable Credentials is used to sign documents, thereby facilitating the user to prove ownership of the document when required.
+
+## Polygon DID Method
+
+The Polygon DID method definition conforms to the DID-Core specifications and standards. A DID URI is composed of three components separated by colons, the scheme, followed by the method name and finally a method specific identifier. For Polygon the URI looks like
+```
+did:polygon:<Ethereum address>
+```
+Here the scheme is ‘did’, method name is ‘polygon’ and method specific identifier is an ethereum address. 
+
+## Polygon DID Implementation
+
+Polygon DID can be implemented with help of two packages, user can import the respective npm libraries and use them to incorporate Polygon DID methodologies in thier respective applications. Details for implementation are provided in next section.
 
 ## Create DID 
 

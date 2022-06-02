@@ -1,17 +1,4 @@
----
-id: secrets
-title: In Band Secret Distribution
-sidebar_label: In Band Secret Distribution
-description: In Band Secret Distribution
-keywords:
-  - docs
-  - polygon
-  - nightfall
-  - secret
-  - encryption
-image: https://matic.network/banners/matic-network-16x9.png
-slug: encryption
----
+# In Band Secret Distribution
 
 ## Overview
 

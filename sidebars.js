@@ -50,20 +50,7 @@ govern: [
 ],
 
 develop: [
-
     "develop/getting-started",
-    {
-      type: "category",
-      label: "Deploying on Polygon",
-      items: ["develop/alchemy", "develop/quicknode", "develop/chainstack", "develop/remix", "develop/truffle", "develop/hardhat","develop/replit"],
-    },
-    {
-      type: "category",
-      label: "EIP1559 Transactions",
-      items: [
-        "develop/eip1559-transactions/how-to-send-eip1559-transactions",
-      ],
-    },
     {
       type: "category",
       label: "Network Details",
@@ -80,43 +67,46 @@ develop: [
     },
     {
       type: "category",
-      label: "Tools",
+      label: "Deploying on Polygon",
       items: [
-        "develop/tools/polygon-faucet",
-        "develop/tools/polygon-gas-station",
-        "develop/tools/alchemy-faucet"
+        "develop/alchemy", 
+        "develop/quicknode", 
+        "develop/chainstack", 
+        "develop/remix", 
+        "develop/truffle", 
+        "develop/hardhat",
+        "develop/replit"
       ],
     },
-    {
-      type: "category",
-      label: "Configure Polygon on Wallets",
-      items: [
-        {
-          type: "category",
-          label: "Metamask",
-          items: [
-            "develop/metamask/overview",
-            "develop/metamask/hello",
-            "develop/metamask/config-polygon-on-metamask",
-            "develop/metamask/custom-tokens",
-            "develop/metamask/multiple-accounts",
-          ],
-        },
-        {
-          type: "category",
-          label: "Wallet Link",
-          items: [
-            "develop/metamask/config-polygon-on-wallet-link",
-          ],
-        },
-      ],
-    },
-
     {
       type: "category",
       label: "Wallets",
       items: [
         "develop/wallets/getting-started",
+        {
+          type: "category",
+          label: "Configure Polygon on Wallets",
+          items: [
+            {
+              type: "category",
+              label: "Metamask",
+              items: [
+                "develop/metamask/overview",
+                "develop/metamask/hello",
+                "develop/metamask/config-polygon-on-metamask",
+                "develop/metamask/custom-tokens",
+                "develop/metamask/multiple-accounts",
+              ],
+            },
+            {
+              type: "category",
+              label: "Wallet Link",
+              items: [
+                "develop/metamask/config-polygon-on-wallet-link",
+              ],
+            },
+          ],
+        },
         {
           type: "category",
           label: "Arkane",
@@ -145,7 +135,24 @@ develop: [
     },
     {
       type: "category",
-      label: "Ethereum ↔ Polygon",
+      label: "Transactions",
+      items: [
+        "develop/eip1559",
+        {
+          type: "category",
+          label: "Meta Transactions",
+          items: [
+            "develop/metatransactions/getting-started",
+            "develop/metatransactions/metatransactions-biconomy",
+            "develop/metatransactions/metatransactions-gsn",
+            "develop/metatransactions/network-agnostics",
+          ],
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Cross-Layer Communication",
       items: [
         "develop/ethereum-polygon/getting-started",
         {
@@ -331,34 +338,8 @@ develop: [
         },
         "develop/ethereum-polygon/submit-mapping-request",
         "develop/ethereum-polygon/mintable-assets",
-      ],
-    },
-    {
-      type: "category",
-      label: "L1 ↔ L2 Communication",
-      items: [
         "develop/l1-l2-communication/state-transfer",
         "develop/l1-l2-communication/fx-portal",
-      ],
-    },
-    {
-      type: "category",
-      label: "Meta Transactions",
-      items: [
-        "develop/metatransactions/getting-started",
-        "develop/metatransactions/metatransactions-biconomy",
-        "develop/metatransactions/metatransactions-gsn",
-        "develop/metatransactions/network-agnostics",
-      ],
-    },
-    {
-      type: "category",
-      label: "IPFS - Filecoin",
-      items: [
-        "develop/ipfs",
-        "develop/filecoinhelpers",
-        "develop/nftstorage",
-
       ],
     },
     {
@@ -376,23 +357,34 @@ develop: [
     },
     {
       type: "category",
-      label: "Indexing Services",
+      label: "Decentralized Storage",
       items: [
-        "develop/graph",
+        "develop/ipfs",
+        "develop/filecoinhelpers",
+        "develop/nftstorage",
+
+      ],
+    },
+    {
+      type: "category",
+      label: "Decentralized Data",
+      items: [
         {
-          type: "link",
-          label: "Covalent",
-          href: "https://www.covalenthq.com/docs/api/",
+          type: "category",
+          label: "Indexing and Querying",
+          items: [
+            "develop/the-graph",
+            {
+              type: "link",
+              label: "Covalent",
+              href: "https://www.covalenthq.com/docs/api/",
+            },
+          ],
         },
       ],
     },
-
-
-    {
-      type: "category",
-      label: "Tutorials",
-      items: ["develop/pos-using-metamask", "develop/plasma-using-metamask", "develop/nft-tutorial", "develop/dapp-fauna-polygon-react"],
-    },
+      "develop/did-implementation",
+      "develop/getting-started-rpc",
     {
       type: "category",
       label: "Advanced",
@@ -404,14 +396,23 @@ develop: [
     },
     {
       type: "category",
-      label: "DID Implementation",
-      items: ["develop/did-implementation/introduction", "develop/did-implementation/getting-started"]
+      label: "Tutorials",
+      items: [
+        "develop/pos-using-metamask", 
+        "develop/plasma-using-metamask", 
+        "develop/nft-tutorial", 
+        "develop/dapp-fauna-polygon-react"
+      ],
     },
     {
       type: "category",
-      label: "API Documentation",
-      items: ["develop/api-documentation/getting-started-rpc"]
-    }
+      label: "Tools",
+      items: [
+        "develop/tools/polygon-faucet",
+        "develop/tools/polygon-gas-station",
+        "develop/tools/alchemy-faucet"
+      ],
+    },
 ],
 
 maintain: [

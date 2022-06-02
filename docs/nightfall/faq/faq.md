@@ -1,15 +1,6 @@
 ---
 id: faq
 title: FAQ
-sidebar_label: FAQ
-description: Frequently asked questions about Nightfall
-keywords:
-  - docs
-  - polygon
-  - nightfall
-  - faq
-image: https://matic.network/banners/matic-network-16x9.png
-slug: nightfall-faq
 ---
 
 :::tip
@@ -17,6 +8,7 @@ If you do not find your question in this list, please submit your question on th
 :::
 
 ## Where can I find the Smart Contracts?
+
 Polygon Nightfall contracts have been deployed in [testnet Goerli](../deployments/testnet.md) and [mainnet](../deployments/mainnet.md).
 
 ## What's the state of Polygon Nightfall's security audit?

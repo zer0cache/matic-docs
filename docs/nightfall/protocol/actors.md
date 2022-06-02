@@ -1,21 +1,4 @@
----
-id: actors
-title: Actors
-sidebar_label: Actors
-description: Actors on Nightfall
-keywords:
-  - docs
-  - polygon
-  - nightfall
-  - transactor
-  - proposer
-  - challenger
-  - liquidity
-  - provider
-image: https://matic.network/banners/matic-network-16x9.png
-slug: actors
----
-
+# Actors
 There are four actors involved in the network:
 
 - [Transactors](#transactor)

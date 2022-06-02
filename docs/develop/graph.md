@@ -1,11 +1,18 @@
 ---
-id: graph
-title: Setting up hosted project with The Graph and Matic
-description: Learn how to set up a hosted project with The Graph and Matic.
+id: the-graph
+title: Setting up a Project with The Graph and Polygon PoS
+sidebar_label: The Graph
+description: Learn how to set up a hosted project with The Graph and Polygon.
 keywords:
-  - graph
+  - polygon
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+  - graph 
+  - the graph
+  - index
+  - query
+  - subgraph
+image: https://matic.network/banners/matic-network-16x9.png
+slug: graph 
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
