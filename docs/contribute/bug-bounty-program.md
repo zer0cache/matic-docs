@@ -15,7 +15,7 @@ Polygon is working with the community to find security vulnerabilities to keep t
 
 The bounty program is to ensure everyone has an opportunity to find bugs in the Polygon system, which will in turn help the team ensure the security of Polygon. Payouts will go up to $5,000 for critical issues.
 
-## Getting started
+## Getting Started
 
 If you are new to blockchains and/or to Polygon, see [Polygon Architecture](/docs/home/architecture/polygon-architecture).
 
@@ -25,7 +25,7 @@ Explore the [code on GitHub](https://github.com/maticnetwork). There are 3 main 
 * [Bor](https://github.com/maticnetwork/bor)
 * [Contracts](https://github.com/maticnetwork/contracts)
 
-## Setting up
+## Setting Up
 
 Set up a test network locally. See [Running a node on the local environment](https://github.com/maticnetwork/matic-cli)
 
@@ -36,7 +36,7 @@ If you want to run a full node on the Polygon Mainnet or Mumbai Testnet, you can
 * [Run a Validator Node with Ansible](/docs/maintain/validate/run-validator-ansible)
 * [Run a Validator Node from Binaries](/docs/maintain/validate/run-validator-binaries)
 
-## Getting tokens for testing
+## Getting Tokens for Testing
 
 To get tokens, you can access the [Polygon faucet](https://faucet.polygon.technology/) and choose the Goerli network to get some tokens.
 
@@ -47,4 +47,4 @@ Check out the forum and join the discussion on Discord.
 * [Forum](https://forum.polygon.technology)
 * [Discord](https://discord.gg/polygon)
 
-See also the [Immunefi  bug bountry program](https://immunefi.com/bounty/polygon/).
+See also the [Immunefi  Bug Bountry Program](https://immunefi.com/bounty/polygon/).

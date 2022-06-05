@@ -8,7 +8,7 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
-## **Identifying an area to contribute**
+## **Identifying an Area to Contribute**
 
 There are several ways to identify an area where you can contribute to Polygon:
 
@@ -23,7 +23,7 @@ There are several ways to identify an area where you can contribute to Polygon:
   - Sample PR: https://github.com/maticnetwork/matic-docs/pull/360
   > If you are adding a new document, it is recommended to just have a basic summary/introduction and a link to your github or documentation for more details.
 
-## **Contribution guidelines**
+## **Contribution Guidelines**
 
 We believe one of the things that makes Polygon special is its coherent design and we seek to retain this defining characteristic. From the outset we defined some guidelines to ensure new contributions only ever enhance the project:
 
@@ -35,7 +35,7 @@ We believe one of the things that makes Polygon special is its coherent design a
 
 We use `gitchangelog` for all of our repos for change logs. For that, we need to follow the following convention for commit message. There will be no merge if you are not following this convention.
 
-**Commit message convention**
+**Commit Message Convention**
 
 The following are suggestions to what might be useful to think about adding in your commit messages. You might want to separate roughly your commits into big sections:
 
@@ -64,6 +64,6 @@ This is a standard git log `--oneline` to show how these information could be st
 * 6b891bc new: add utf-8 encoding declaration !minor 
 ```
 
-For more info please refer here ⇒ [https://stackoverflow.com/questions/3523534/good-ways-to-manage-a-changelog-using-git/23047890#23047890](https://stackoverflow.com/questions/3523534/good-ways-to-manage-a-changelog-using-git/23047890#23047890)
+For more info please refer to [What Are Some Good Ways to Manage a Changelog Using Git?](https://stackoverflow.com/questions/3523534/good-ways-to-manage-a-changelog-using-git/23047890#23047890)
 
-Refer this link for more details: [https://chris.beams.io/posts/git-commit/](https://chris.beams.io/posts/git-commit/)
+For more details, see [https://chris.beams.io/posts/git-commit/](https://chris.beams.io/posts/git-commit/)
