@@ -19,9 +19,16 @@
     "avn-nvm": "^0.2.2",
     "browserslist": "^4.20.3",
     "classnames": "^2.3.1",
+    "copy-webpack-plugin": "^5.1.2",
+    "css-select": "^2.0.1",
     "docusaurus": "^1.14.7",
+    "highlight.js": "^10.4.1",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dev-utils": "^9.0.6",
+    "react-dom": "^16.8.4",
+    "semver-regex": "^3.1.4",
+    "trim": "^0.0.3",
+    "trim-newlines": "^3.0.1"
   },
   "browserslist": {
     "production": [
