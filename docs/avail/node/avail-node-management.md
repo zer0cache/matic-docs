@@ -27,7 +27,7 @@ The following list of standard hardware is a recommendation of hardware specs th
 have.
 
 <Tabs
-  defaultValue="val"
+  defaultValue="non-val"
   values={[
     { label: 'Run Avail Locally', value: 'non-val', },
     { label: 'Run a Validator Node', value: 'val', },
@@ -130,23 +130,10 @@ Run a local dev node with temporary datastore:
 
 ## Data Availability Deployments
 
-:::info Deployment Repo
+:::info Onboarding validators
 
-The **[Avail deployment repo](https://github.com/maticnetwork/avail-deployment)** 
-includes the data availability deployment scripts.
-
-```shell
-git clone git@github.com:maticnetwork/avail-deployment.git
-```
-
-Current Testnet Deployment:
-
-| Bootnode   | Node IP  | P2P Discovery Address | 
-| ---------- | -------- | ------------------------------------------------------------------------------------------------ |
-| Bootnode 1 | `13.38.227.125`  | `/ip4/52.47.205.129/tcp/30333/p2p/12D3KooW9tVuCzq3eknsevL5uyqQ3LpVcuqtkTqropjNccbhsWBz`  |
-| Bootnode 2 | `15.237.127.118` | `/ip4/15.237.127.118/tcp/30333/p2p/12D3KooWQtxig5HukFDwQzshGWgQEZAqGqdCN7AQBW7cQRJWCyxL` |
-| Bootnode 3 | `52.47.205.129`  | `/ip4/52.47.205.129/tcp/30333/p2p/12D3KooW9tVuCzq3eknsevL5uyqQ3LpVcuqtkTqropjNccbhsWBz`  |
-| Full Node  | `35.180.61.81`   | [Explorer dApp](https://devnet-avail.polygon.technology/) | 
+In Avail's current state, the Avail team will maintain the network and run 
+internal validators.
 
 :::
 
@@ -500,30 +487,28 @@ monk logs -f -l 100 polygon/da-dev-validator-1
 
 You should expect:
 
-```shell
-
-    2022-03-22 10:52:20 ✨ Imported #9 (0x911b…bdf5)    
-    2022-03-22 10:52:23 💤 Idle (2 peers), best: #9 (0x911b…bdf5), finalized #7 (0x6309…0366), ⬇ 1.5kiB/s ⬆ 1.8kiB/s    
-    2022-03-22 10:52:28 💤 Idle (2 peers), best: #9 (0x911b…bdf5), finalized #7 (0x6309…0366), ⬇ 1.2kiB/s ⬆ 1.2kiB/s    
-    2022-03-22 10:52:33 💤 Idle (2 peers), best: #9 (0x911b…bdf5), finalized #7 (0x6309…0366), ⬇ 1.2kiB/s ⬆ 1.2kiB/s    
-    2022-03-22 10:52:38 💤 Idle (2 peers), best: #9 (0x911b…bdf5), finalized #7 (0x6309…0366), ⬇ 1.1kiB/s ⬆ 1.1kiB/s    
-    2022-03-22 10:52:40 Rows: 1 Cols: 4 Size: 128    
-    2022-03-22 10:52:40 Time to extend block 150.509µs    
-    2022-03-22 10:52:40 Time to prepare 181.938µs    
-    2022-03-22 10:52:40 Number of CPU cores: 16    
-    2022-03-22 10:52:40 Time to build a commitment 1.766672ms    
-    2022-03-22 10:52:40 ✨ Imported #10 (0x64f4…84b5)    
-    2022-03-22 10:52:43 💤 Idle (2 peers), best: #10 (0x64f4…84b5), finalized #8 (0x3c88…cfe1), ⬇ 1.6kiB/s ⬆ 1.6kiB/s    
-    2022-03-22 10:52:48 💤 Idle (2 peers), best: #10 (0x64f4…84b5), finalized #8 (0x3c88…cfe1), ⬇ 1.1kiB/s ⬆ 1.1kiB/s    
-    2022-03-22 10:52:53 💤 Idle (2 peers), best: #10 (0x64f4…84b5), finalized #8 (0x3c88…cfe1), ⬇ 1.2kiB/s ⬆ 1.2kiB/s    
-    2022-03-22 10:52:58 💤 Idle (2 peers), best: #10 (0x64f4…84b5), finalized #8 (0x3c88…cfe1), ⬇ 1.2kiB/s ⬆ 1.2kiB/s    
-    2022-03-22 10:53:00 Rows: 1 Cols: 4 Size: 128    
-    2022-03-22 10:53:00 Time to extend block 146.593µs    
-    2022-03-22 10:53:00 Time to prepare 175.756µs    
-    2022-03-22 10:53:00 Number of CPU cores: 16    
-    2022-03-22 10:53:00 Time to build a commitment 1.891133ms    
-    2022-03-22 10:53:00 ✨ Imported #11 (0x0a5e…43d6)
-
+```
+2022-03-22 10:52:20 ✨ Imported #9 (0x911b…bdf5)    
+2022-03-22 10:52:23 💤 Idle (2 peers), best: #9 (0x911b…bdf5), finalized #7 (0x6309…0366), ⬇ 1.5kiB/s ⬆ 1.8kiB/s    
+2022-03-22 10:52:28 💤 Idle (2 peers), best: #9 (0x911b…bdf5), finalized #7 (0x6309…0366), ⬇ 1.2kiB/s ⬆ 1.2kiB/s    
+2022-03-22 10:52:33 💤 Idle (2 peers), best: #9 (0x911b…bdf5), finalized #7 (0x6309…0366), ⬇ 1.2kiB/s ⬆ 1.2kiB/s    
+2022-03-22 10:52:38 💤 Idle (2 peers), best: #9 (0x911b…bdf5), finalized #7 (0x6309…0366), ⬇ 1.1kiB/s ⬆ 1.1kiB/s    
+2022-03-22 10:52:40 Rows: 1 Cols: 4 Size: 128    
+2022-03-22 10:52:40 Time to extend block 150.509µs    
+2022-03-22 10:52:40 Time to prepare 181.938µs    
+2022-03-22 10:52:40 Number of CPU cores: 16    
+2022-03-22 10:52:40 Time to build a commitment 1.766672ms    
+2022-03-22 10:52:40 ✨ Imported #10 (0x64f4…84b5)    
+2022-03-22 10:52:43 💤 Idle (2 peers), best: #10 (0x64f4…84b5), finalized #8 (0x3c88…cfe1), ⬇ 1.6kiB/s ⬆ 1.6kiB/s    
+2022-03-22 10:52:48 💤 Idle (2 peers), best: #10 (0x64f4…84b5), finalized #8 (0x3c88…cfe1), ⬇ 1.1kiB/s ⬆ 1.1kiB/s    
+2022-03-22 10:52:53 💤 Idle (2 peers), best: #10 (0x64f4…84b5), finalized #8 (0x3c88…cfe1), ⬇ 1.2kiB/s ⬆ 1.2kiB/s    
+2022-03-22 10:52:58 💤 Idle (2 peers), best: #10 (0x64f4…84b5), finalized #8 (0x3c88…cfe1), ⬇ 1.2kiB/s ⬆ 1.2kiB/s    
+2022-03-22 10:53:00 Rows: 1 Cols: 4 Size: 128    
+2022-03-22 10:53:00 Time to extend block 146.593µs    
+2022-03-22 10:53:00 Time to prepare 175.756µs    
+2022-03-22 10:53:00 Number of CPU cores: 16    
+2022-03-22 10:53:00 Time to build a commitment 1.891133ms    
+2022-03-22 10:53:00 ✨ Imported #11 (0x0a5e…43d6)
 ```
 
 #### Purge Node State
