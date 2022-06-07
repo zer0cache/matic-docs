@@ -1,44 +1,41 @@
-export const firstRowBeginner = [
+export const firstRow = [
   {
-      title: "Quick Start",
+      title: "Learning",
       status: "Beginner",
       linkUrl: "docs/home/new-to-polygon/",
       imageUrl: "img/supernet.svg",
       description: "Learn about the basics of blockchain and Polygon and how to get started."
   },
   {
-      title: "Delegate",
+      title: "Staking",
       status: "Beginner",
       linkUrl: "docs/maintain/delegate/delegate/",
       imageUrl: "img/supernet.svg",
-      description: "Secure the network by staking MATIC tokens & delegate your stake to Polygon validators."
+      description: "Secure the network by staking tokens & delegating your stake to validators."
   },
   {
-      title: "Govern",
+      title: "Governance",
       status: "Beginner: Docs Coming Soon",
       linkUrl: "docs/maintain/govern/governance",
       imageUrl: "img/supernet.svg",
       description: "Vote on proposals and participate in the Polygon DAO."
   },
-];
-
-export const firstRowAdvanced = [
-    {
-        title: "Develop",
+   {
+        title: "Developer",
         status: "Intermediate",
         linkUrl: "docs/develop/getting-started",
         imageUrl: "img/home/dapp-developers.svg",
         description: "Build an application and deploy on Polygon."
     },
     {
-        title: "Validate",
+        title: "Validator",
         status: "Intermediate",
         linkUrl: "docs/maintain/validate/validator-index/",
         imageUrl: "img/home/core-contribution.svg",
         description: "Secure the network by staking and operating a node to validate on Polygon."
     },
     {
-        title: "Integrate",
+        title: "Integrator",
         status: "Intermediate",
         linkUrl: "docs/integrate/quickstart",
         imageUrl: "img/home/integration.svg",
@@ -49,7 +46,7 @@ export const firstRowAdvanced = [
 export const secondRow = [
     {
         title: "PoS",
-        status: "v3: Docs Coming Soon",
+        status: "PoS v3: Docs Coming Soon",
         linkUrl: "docs/pos/polygon-architecture",
         imageUrl: "img/home/blockchain-basics.svg",
         description: "A Layer 2 proof of stake scaling solution for Ethereum-based public blockchains."

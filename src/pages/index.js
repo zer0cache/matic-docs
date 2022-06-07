@@ -5,7 +5,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
-import { firstRowBeginner, firstRowAdvanced, secondRow, networkBanner } from "../data/features";
+import { firstRow, secondRow, networkBanner } from "../data/features";
 /*import SearchBar from '@theme-original/SearchBar';*/
 
 import Tabs from '@theme/Tabs';
@@ -29,27 +29,7 @@ function NetworkBanner({title, class_name, description, linkUrl, imageUrl}) {
   );
 }
 
-function FirstRowBeginner({ title, status, description, linkUrl, imageUrl }) {
-  // const imgUrl = useBaseUrl(imageUrl);
-  return (
-
-    <div className="col-md-4 p-8">
-      <Link to={useBaseUrl(linkUrl)} activeClassName="active">
-        <div className="show-card">
-          <div className="icon-wrapper">
-            <img src={useBaseUrl(imageUrl)} alt={title} className="icon" />
-          </div>
-          <div className="status">{status}</div>
-          <div className="title">{title}</div>
-          <div className="descriptions">{description}</div>
-        </div>
-      </Link>
-    </div>
-
-  );
-}
-
-function FirstRowAdvanced({ title, status, description, linkUrl, imageUrl }) {
+function FirstRow({ title, status, description, linkUrl, imageUrl }) {
   // const imgUrl = useBaseUrl(imageUrl);
   return (
 
@@ -105,7 +85,7 @@ function Home() {
 defaultValue="beginner"
 className="tabs"
 values={[
-{label: 'Learn | Build | Operate', value: 'beginner'},
+{label: 'Choose a Hub', value: 'beginner'},
 {label: 'Browse by Product', value: 'products'},
 ]}>
 
@@ -117,15 +97,13 @@ networkBanner.map((props, idx) => (
  <NetworkBanner key={idx} {...props} />
 ))}{" "}
 </div>
-  <h1 align="center" style={{ fontWeight: '600' }}>Get Started with Polygon</h1>
   <div id="Get Started" className="row">
-    {firstRowBeginner &&
-      firstRowBeginner.length &&
-      firstRowBeginner.map((props, idx) => (
-        <FirstRowBeginner key={idx} {...props} />
+    {firstRow &&
+      firstRow.length &&
+      firstRow.map((props, idx) => (
+        <FirstRow key={idx} {...props} />
       ))}{" "}
   </div>
-
 <div className="row pt-40">
     {networkBanner &&
       networkBanner.length &&
@@ -133,17 +111,6 @@ networkBanner.map((props, idx) => (
         <NetworkBanner key={idx} {...props} />
       ))}{" "}
   </div>
-  <h1 align="center" style={{ fontWeight: '600' }}>Build & Operate with Polygon</h1>
-  <div className="row">
-    {firstRowAdvanced &&
-      firstRowAdvanced.length &&
-      firstRowAdvanced.map((props, idx) => (
-        <FirstRowAdvanced key={idx} {...props} />
-      ))}{" "}
-  </div>
-  <br/>
-  <br/>
-
 </TabItem>
 <TabItem value="products">
 <div className="row pt-40">
@@ -153,20 +120,17 @@ networkBanner.map((props, idx) => (
         <NetworkBanner key={idx} {...props} />
       ))}{" "}
   </div>
-
-  <h1 align="center" style={{ fontWeight: '600' }}>Scale with Polygon</h1>
   <div className="row">
     {secondRow &&
       secondRow.length &&
       secondRow.map((props, idx) => (
         <SecondRow key={idx} {...props} />
       ))}{" "}
-  <br/>
-  <br/>
-  <br/>
   </div>
 </TabItem>
 </Tabs>
+  <br/>
+  <br/>
  </div>
 </div>
 </Layout>
