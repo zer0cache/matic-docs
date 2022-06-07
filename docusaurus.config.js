@@ -30,7 +30,18 @@ module.exports = {
             to: '/docs/contribute/bug-bountry-program',
             from: '/docs/pos/bug-bountry-programs',
           },
-
+          {
+            to: '/docs/develop/meta-transactions/meta-transactions',
+            from: '/docs/develop/metatransactions/metatransactions-biconomy',
+          },
+          {
+            to: '/docs/develop/meta-transactions/meta-transactions',
+            from: '/docs/develop/metatransactions/metatransactions-gsn',
+          },
+          {
+            to: '/docs/develop/meta-transactions/network-agnostics',
+            from: '/docs/develop/metatransactions/network-agnostics',
+          },
         ],
         createRedirects: function (existingPath) {
           if (existingPath.startsWith('/docs/validate/')) {
