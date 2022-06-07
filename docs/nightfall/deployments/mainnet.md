@@ -1,6 +1,15 @@
 ---
 id: mainnet
 title: Mainnet
+sidebar_label: Mainnet
+description: Useful information for Nightfall's mainnet
+keywords:
+  - docs
+  - polygon
+  - nightfall
+  - mainnet
+  - address
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 
 :::note

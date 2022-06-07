@@ -1,4 +1,16 @@
-## ZK-Proofs
+---
+id: zk-proofs
+title: ZK Proofs
+sidebar_label: ZK Proofs
+description: ZK Proofs
+keywords:
+  - docs
+  - polygon
+  - nightfall
+  - zk
+  - proof
+image: https://matic.network/banners/matic-network-16x9.png
+---
 
 User transactions are always verified by an Ethereum smart contract by verifying the ZK-Proof supplied by the user.
 The specific ZK-SNARK that is used in these ZK-Proofs is [`Groth16`](https://eprint.iacr.org/2016/260.pdf).

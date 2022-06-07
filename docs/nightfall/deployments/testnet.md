@@ -1,6 +1,15 @@
 ---
 id: testnet
 title: Testnet
+sidebar_label: Testnet
+description: Useful information for Nightfall's testnet
+keywords:
+  - docs
+  - polygon
+  - nightfall
+  - testnet
+  - address
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 
 Polygon Nightfall is now live on **Goerli**.

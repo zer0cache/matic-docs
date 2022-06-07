@@ -1,4 +1,18 @@
-# Smart Contracts
+---
+id: contracts
+title: Smart Contracts
+sidebar_label: Smart Contracts
+description: Smart Contracts on Nightfall
+keywords:
+  - docs
+  - polygon
+  - nightfall
+  - smart
+  - contracts
+  - shield
+image: https://matic.network/banners/matic-network-16x9.png
+---
+
 Contracts define the rules that each Nightfall actor needs to follow in order to operate in the network. 
 The Smart Contracts include:
 

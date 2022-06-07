@@ -1,4 +1,17 @@
-# Commitment Selection
+---
+id: commitments
+title: Commitment Selection
+sidebar_label: Commitment Selection
+description: Commitment Selection on Nightfall
+keywords:
+  - docs
+  - polygon
+  - nightfall
+  - commitment
+  - selection
+  - transfer
+image: https://matic.network/banners/matic-network-16x9.png
+---
 
 Current ZKP transfer circuits used in Nightfall are restricted to 2 input - 2 output and 1 input - 1 output transfers, with all inputs and outputs having a value > 0.
 If a transactor's set of commitments contain primarily low value commitments (dust), they may find it hard to conduct future transfers.

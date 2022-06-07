@@ -1,4 +1,19 @@
-# Nightfall Protocol
+---
+id: protocol
+title: Nightfall Protocol
+sidebar_label: Nightfall Protocol
+description: Nightfall Protocol
+keywords:
+  - docs
+  - polygon
+  - nightfall
+  - protocol
+  - chain
+  - block
+  - structure
+  - layer
+image: https://matic.network/banners/matic-network-16x9.png
+---
 
 We assume that at least 1 Proposer has registered with the system, posting a minimum Stake.
 
