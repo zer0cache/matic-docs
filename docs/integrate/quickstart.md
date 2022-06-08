@@ -5,7 +5,7 @@ description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 
 Polygon is a scaling solution for public blockchains. Polygon supports all existing Ethereum tooling along with faster and cheaper transactions.
@@ -18,6 +18,12 @@ If you are looking to integrate with Polygon, you have come to the right place. 
 - building a developer tool for Ethereum or other blockchains,
 
 this section is for you.
+
+## Setup a Full Node
+
+Follow the instructions on the articles:
+* [Full Node Deployment](/docs/develop/network-details/full-node-deployment)
+* [Full Node Binaries](/docs/develop/network-details/full-node-binaries)
 
 ## Deploy smart contracts
 

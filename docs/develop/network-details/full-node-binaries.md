@@ -138,7 +138,7 @@ cd bor
 
 # Checkout to a proper version
 
-# For eg: git checkout v0.2.14
+# For eg: git checkout v0.2.16
 
 git checkout <TAG OR BRANCH>
 make bor-all
@@ -429,7 +429,7 @@ cd bor
 
 # Checkout to a proper version
 
-# For eg: git checkout 0.2.14
+# For eg: git checkout 0.2.16
 
 git checkout <TAG OR BRANCH>
 make bor-all

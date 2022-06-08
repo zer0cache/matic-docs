@@ -42,6 +42,14 @@ module.exports = {
             to: '/docs/develop/meta-transactions/network-agnostics',
             from: '/docs/develop/metatransactions/network-agnostics',
           },
+          {
+            to: '/docs/develop/network-details/full-node-binaries',
+            from: '/docs/integrate/full-node-binaries',
+          },
+          {
+            to: '/docs/develop/network-details/full-node-deployment',
+            from: '/docs/integrate/full-node-deployment',
+          },
         ],
         createRedirects: function (existingPath) {
           if (existingPath.startsWith('/docs/validate/')) {
@@ -168,7 +176,7 @@ module.exports = {
     },
     ]
     },
-    ],   
+    ],
     logo: {
       alt: 'Polygon Logo',
       src: 'img/polygon/polygon-logo.svg',

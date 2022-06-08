@@ -160,6 +160,60 @@ Change the config to `goleveldb` in `config.toml`.
 
 Yes, the private key used for generating the validator keys and Bor keystore are the same. The private key used in this instance is your wallet's ETH address where your Polygon tokens are stored.
 
+## Error: (Heimdall) Please repair the WAL file before restarting module=consensus
+
+This issue happens when the WAL file is corrupted.
+
+**Solution:**
+
+Run the following commands:
+```
+WALFILE=~/.heimdalld/data/cs.wal/wal
+cp $WALFILE ${WALFILE}.bak
+git clone https://github.com/maticnetwork/tendermint.git
+cd tendermint
+go run scripts/wal2json/main.go $WALFILE > wal.json
+rm $WALFILE
+go run scripts/json2wal/main.go wal.json $WALFILE
+```
+
+## Bor shows 'Looking for peers' and cannot find peers
+
+This could happen when Bor has lost connectivity with other peers. In the case of the validator, this occurs when the connectivity with the sentry has failed
+
+**Solution**
+
+1. Create the file `~/node/bor/bor_config.toml` on your sentry node with the following content:
+
+    ```bash
+    [Node.P2P]
+    TrustedNodes = ["enode://<enode_id_of_validator_node>"]
+    ```
+
+2. This is also a good time to move the list of static nodes you had configured earlier in `~/.bor/data/bor/static-nodes.json` as this file is being deprecated in the upcoming version of Bor. So your `~/node/bor/bor_config.toml`  file will look somewhat like:
+
+    ```bash
+    [Node.P2P]
+    StaticNodes = ["enode://static_node_enode1@ip:port", "enode://static_node_enode2@ip:port", ... ]
+    TrustedNodes = ["enode://<enode_id_of_validator_node>"]
+    ```
+
+3. In `~/node/bor/start.sh`, add the following line in the Bor invocation command, along with the remaining flags that are already present:
+
+    ```bash
+    --config ~/node/bor/bor_config.toml \
+    ```
+
+    Please note the `\` at the end of the line if this is not the last line of the bor invocation command.
+
+4. Now restart Bor: `sudo service bor restart`
+5. Follow the same steps on your validator node and instead of `enode_id_of_validator_node`, you need to provide the `enode_id_of_sentry_node` in `TrustedNodes`.
+
+
+:::note
+If the above steps didn’t work then please reach out to the Validator Team for assistance. This might be an issue with the genesis file.
+:::
+
 ## Sentry Bor shows 'Looking for peers' and cannot find peers
 
 This could happen when Bor has lost connectivity with other peers. Generally checking the `~/node/bor/start.sh` file should show you your bootnodes. Check if the bootnodes are entered correctly without any formatting issues. If you have made any changes to the file, then please restart your Bor service and check if the issue is resolved.

@@ -61,19 +61,19 @@ develop: [
         "develop/network-details/genesis-contracts",
         "develop/network-details/technical-requirements",
         "develop/network-details/snapshot-instructions-heimdall-bor",
-        "integrate/full-node-binaries",
-        "integrate/full-node-deployment",
+        "develop/network-details/full-node-binaries",
+        "develop/network-details/full-node-deployment",
       ],
     },
     {
       type: "category",
       label: "Deploying on Polygon",
       items: [
-        "develop/alchemy", 
-        "develop/quicknode", 
-        "develop/chainstack", 
-        "develop/remix", 
-        "develop/truffle", 
+        "develop/alchemy",
+        "develop/quicknode",
+        "develop/chainstack",
+        "develop/remix",
+        "develop/truffle",
         "develop/hardhat",
         "develop/replit"
       ],
@@ -394,9 +394,9 @@ develop: [
       type: "category",
       label: "Tutorials",
       items: [
-        "develop/pos-using-metamask", 
-        "develop/plasma-using-metamask", 
-        "develop/nft-tutorial", 
+        "develop/pos-using-metamask",
+        "develop/plasma-using-metamask",
+        "develop/nft-tutorial",
         "develop/dapp-fauna-polygon-react"
       ],
     },
@@ -521,8 +521,6 @@ integrate: [
       label: "Advanced",
       items: [
           "develop/network-details/technical-requirements",
-          "integrate/full-node-deployment",
-          "integrate/full-node-binaries",
           "integrate/install-gcp",
         ],
     }
