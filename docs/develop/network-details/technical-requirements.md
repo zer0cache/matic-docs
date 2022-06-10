@@ -1,11 +1,11 @@
 ---
 id: technical-requirements
-title: Minimum Technical Requirements
+title: Technical Requirements
 description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 
 For the upcoming testnet event, this is the minimal hardware configuration:
@@ -13,11 +13,11 @@ For the upcoming testnet event, this is the minimal hardware configuration:
 ### Minimal hardware Configuration for Full Node
 - RAM: 16-32 GB
 - CPU: 4-8 core CPU (t3 xLarge)
-- Storage: Minimum 1.2TB SSD (make sure it is extendable) 
+- Storage: Minimum 1.2TB SSD (make sure it is extendable)
 
 :::tip
 
-The minimum storage requirements grow as the network grows. 
+The minimum storage requirements grow as the network grows.
 It is recommended to use more than the minimum requirements to run a robust full node.
 
 :::

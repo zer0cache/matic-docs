@@ -1,6 +1,6 @@
 ---
 id: nftstorage
-title: Mint with NFT.storage on Polygon
+title: Mint NFTs
 description: Mint with NFT.storage and Polygon
 keywords:
   - nft.storage
@@ -89,7 +89,7 @@ module.exports = {
     hardhat: {
     },
     PolygonMumbai : {
-      url: "https://rpc-mumbai.maticvigil.com", 
+      url: "https://rpc-mumbai.maticvigil.com",
       accounts: [PRIVATE_KEY]
     }
   },

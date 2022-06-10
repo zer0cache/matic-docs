@@ -1,6 +1,6 @@
 ---
 id: dapp-fauna-polygon-react
-title: Safeguarding your dApp data with Fauna, Polygon, and React
+title: dApps Data Tutorial
 description: Build dapps using Fauna, Polygon, and React.
 keywords:
   - docs
@@ -9,15 +9,17 @@ keywords:
   - fauna
   - polygon
   - react
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 slug: dapp-fauna-polygon-react
 ---
 
-**dApps**, or decentralized applications, are apps built on the blockchain structure. There are different types of blockchains that applications can be built off of - some you might’ve heard of are Solana and Ethereum. These primary networks are sometimes supplemented by **sidechains**, or secondary blockchains, that run parallel to the primary blockchain. Sidechains, such as Polygon, allow for tokens and other digital assets to be used between multiple blockchains, greatly expanding the capabilities of primary blockchains and allowing use cases such as reduction of transaction fees, making primary blockchains more scalable, and having more optimized transaction traffic and capacity since sidechains only periodically update their root chain, while primary blockchains update every new block. 
+**dApps**, or decentralized applications, are apps built on the blockchain structure. There are different types of blockchains that applications can be built off of - some you might’ve heard of are Solana and Ethereum. These primary networks are sometimes supplemented by **sidechains**, or secondary blockchains, that run parallel to the primary blockchain. Sidechains, such as Polygon, allow for tokens and other digital assets to be used between multiple blockchains, greatly expanding the capabilities of primary blockchains and allowing use cases such as reduction of transaction fees, making primary blockchains more scalable, and having more optimized transaction traffic and capacity since sidechains only periodically update their root chain, while primary blockchains update every new block.
 
-The use cases for dApps are expanding by the day - due to its growing popularity, more and more apps are imagining how they can fit their application into the decentralized world. Just as with centralized apps, some of these dApps may still require the usage of private data for scenarios like authenticating identities or purchasing something that’s being shipped to your physical address. 
+The use cases for dApps are expanding by the day - due to its growing popularity, more and more apps are imagining how they can fit their application into the decentralized world. Just as with centralized apps, some of these dApps may still require the usage of private data for scenarios like authenticating identities or purchasing something that’s being shipped to your physical address.
 
 Having private application data transmitted and stored on a public blockchain, while necessary for dApps, can end up causing huge privacy breaches from bad actors. So how can we protect private data from making its way into the public and immutable nature of the blockchain?
+
+## Safeguarding your dApp data with Fauna, Polygon, and React
 
 In this tutorial, we’ll be building a simple allowlisting app that utilizes React for the UI and functionality, the Polygon sidechain for transactions, and Fauna for storing private data from transactions that we may not necessarily want to surface publicly in the blockchain. “Allowlisting”, also known as “whitelisting”, is a concept that is very common in the decentralized world - when signing up for a allowlist, you typically gain access to special privileges, such as being able to be the first to purchase digital assets.
 
@@ -44,7 +46,7 @@ In order to get started with building, follow these steps:
 - Create a Metamask Wallet with Polygon’s Test Network (Mumbai-Testnet) configured.
     - First, get set up with Metamask [here](../develop/metamask/tutorial-metamask.md). Make sure you save your Secret Recovery Phrase.
     - Then, configure the Mumbai-Testnet on your Metamask by following the instructions [here](../develop/metamask/config-polygon-on-metamask.md).
-- Once you have Metamask set up and configured for the Mumbai-Testnet, you’ll need some MATIC to add to your wallet 
+- Once you have Metamask set up and configured for the Mumbai-Testnet, you’ll need some MATIC to add to your wallet
     - MATIC is the native cryptocurrency of the Polygon network and it’s used to pay network fees, for staking, and also for governance to the Polygon blockchain (MATIC holders can vote on Polygon changes). In the context of this project, you will need MATIC to pay gas fees that are charged for each transaction. You can learn more about MATIC [here](https://www.kraken.com/en-us/learn/what-is-polygon-matic#:~:text=MATIC%20is%20the%20native%20cryptocurrency,services%20to%20the%20Polygon%20network.).
     - To get started, use the [MATIC faucet](https://faucet.polygon.technology/) to get free MATIC sent to your wallet (note: this MATIC will only be available on the Mumbai-Testnet and is only for development purposes). Once on the webpage, make sure the following options are selected:
     ![img](/img/dapp-fauna-polygon-react/faucet.png)
@@ -52,7 +54,7 @@ In order to get started with building, follow these steps:
     - To find out what your wallet address is, you can pull it from Metamask:
 
     ![img](/img/dapp-fauna-polygon-react/metamask_wallet_address.png)
-    
+
     Go into Metamask from your browser. At the top under your Account Name, you’ll see a long string. That’s your account ID. Copy that ID by clicking on it.
 
     :::note
@@ -85,36 +87,36 @@ If you’re someone that prefers walking through code independently, the GitHub 
 3. Once inside the directory, it’s time to set up the app. Truffle makes it easier for us to build a decentralized application with a React front-end. To set up your initial project, run `truffle unbox react`.
     1. Once the command has run, if you were to run `ls` in your current directory, you’d notice a variety of different subdirectories that weren’t there before. The most important ones we’ll be focusing on are:
         1. `client` - this is where your application, its primary functionality, and its front-end will live. Within client, the structure looks exactly like a regular React project.
-        2. `contracts` - this directory is where your smart contracts will live. Smart contracts are programs that will execute specified functionality within an account on the blockchain when the functionality is called. You might notice that the files in this directory end in `.sol` - this is because they are built with [Solidity](https://docs.soliditylang.org/), which is an object-oriented, high-level language for implementing smart contracts. 
-        3. `migrations` - within this directory, there are preconfigured scripts that will allow you to deploy the smart contracts in `contracts` on the specified network, which will end up being the Mumbai-Testnet network. 
-        
+        2. `contracts` - this directory is where your smart contracts will live. Smart contracts are programs that will execute specified functionality within an account on the blockchain when the functionality is called. You might notice that the files in this directory end in `.sol` - this is because they are built with [Solidity](https://docs.soliditylang.org/), which is an object-oriented, high-level language for implementing smart contracts.
+        3. `migrations` - within this directory, there are preconfigured scripts that will allow you to deploy the smart contracts in `contracts` on the specified network, which will end up being the Mumbai-Testnet network.
+
   :::note
-    
+
     If you use an IDE to code, now would be the perfect time to open your project in the IDE! We’re going to start editing some files pretty soon.
 
   :::    
 
 ### Smart contract configuration and functionality
 
-1. Currently, the project is pointed towards deploying on the Ethereum blockchain directory. We’re going to need to update this to point to the Mumbai-Testnet that we want to work off of. 
+1. Currently, the project is pointed towards deploying on the Ethereum blockchain directory. We’re going to need to update this to point to the Mumbai-Testnet that we want to work off of.
     - To do this, first we’ll need to run these commands in your command line to install some necessary packages:
-        
+
         `npm install @truffle/hdwallet-provider`
-        
+
         and
-        
+
         `npm install dotenv`
-        
+
     - Then, create a file called `.env` in the directory you’re currently in. Within `.env`, do the following:
         - Create an environment variable called `MNEMONIC` and make it equal to the Secret Recovery Phrase for your Metamask wallet - if you didn’t write it down, you can follow [this guide](https://metamask.zendesk.com/hc/en-us/articles/360015290032-How-to-reveal-your-Secret-Recovery-Phrase) to reveal it once again.
         - Create an environment variable called `RPC_APP_ID` and
-        
+
         Your `.env` should look something like this:
         ```js
           MNEMONIC=your secret phrase should go here
         ```
     - Finally, replace the truffle-config.js file that was generated through Truffle with the following (note: it should be in the same directory as the client, contracts, and migrations folders):   
-    ```js 
+    ```js
     const HDWalletProvider = require("@truffle/hdwallet-provider");
     const path = require("path");
     require("dotenv").config(); // Load .env file
@@ -146,20 +148,20 @@ If you’re someone that prefers walking through code independently, the GitHub 
 2. Once you’ve set up your configuration, test it and make sure it points to your account.
   - To test this, migrate your current smart contracts (Truffle has auto-populated some for you) by running `truffle migrate --network matic`. If it’s not your first time running this `deploy` command for this project, you’ll want to run `truffle migrate --network matic --reset` so it runs a fresh copy of migrations and pulls the most recent code updates.
 
-:::note 
+:::note
 
   if you run into any issues, check the following things:
   Make sure your `MNEMONIC` environment variable is defined in a `.env` file in your root directory.
   *If you are running into continuous errors and you’ve checked the above, try other RPC URLs in place of the [matic-mubai.chainstacklabs.com](http://matic-mubai.chainstacklabs.com) URL in `truffle-config.js`. A list of additional URLs for the Mumbai-Testnet can be found on [this page](https://docs.polygon.technology/docs/develop/network-details/network/) under the “Mumbai-Testnet” section.*
-            
+
 :::
 
 - Then, test being able to connect to your new application by running the front-end. Truffle added some pre-configured logic that will allow you to test this connection. You can test it by running the following from your main directory:
-        
+
         `cd client`
-        
+
         `npm run start`
-        
+
 :::note
 
   You will only be able to start your application inside the `client` folder.
@@ -170,7 +172,7 @@ If you’re someone that prefers walking through code independently, the GitHub 
 
   ![img](/img/dapp-fauna-polygon-react/metamask_notification.png)
 
-  - To go through with the transaction, click “Confirm”. The Metamask window will disappear and you should get a small “Transaction Confirmed” notification in your browser. To verify that your wallet has been connected successfully, you should see this page: 
+  - To go through with the transaction, click “Confirm”. The Metamask window will disappear and you should get a small “Transaction Confirmed” notification in your browser. To verify that your wallet has been connected successfully, you should see this page:
 
   ![img](/img/dapp-fauna-polygon-react/truffe_box_installed.png)
 
@@ -400,10 +402,10 @@ Additional note: If you receive a warning about old stylesheets, this is probabl
 :::
 
 5. To wire up the styling with the component, add the following import statement at the top of your `AllowlistForm.js` component:
-    
+
     `import "./AllowlistForm.css";`
-    
-6. Finally, we need to actually surface the form in our demo app. 
+
+6. Finally, we need to actually surface the form in our demo app.
     - We’ll do this by updating the `App.js` file in the `client` directory. Replace the current contents of `App.js` with the following:
 
 ```js
@@ -560,7 +562,7 @@ The `faunadb` [package website](https://www.npmjs.com/package/faunadb) is a grea
 
 ### Submit form responses to Fauna
 
-With the Fauna API client added in and a way to add new items to our collection, let’s wire it up to our form! 
+With the Fauna API client added in and a way to add new items to our collection, let’s wire it up to our form!
 
 If you recall from the user flow, we want the following things to happen when someone submits the form:
 
@@ -570,9 +572,9 @@ If you recall from the user flow, we want the following things to happen when so
 Now that we have the functionality in place to send information to Fauna, let’s use it to accomplish goal #2.
 
 1. Add the following import at the top of your `AllowlistForm.js` file:
-    
+
     `import { *addDocument* } from "../api/fauna";`
-    
+
 2. Then, inside the `submitForm` function in `AllowlistForm.js`, replace the `console.log` statement with the following:
 ``` js
 // add data to Fauna
@@ -584,7 +586,7 @@ await addDocument(uuid, data.firstName, data.lastName, data.walletAddress)
 )
 ```
 
-In this snippet, we are programmatically generating a UUID using the built-in `crypto.randomUUID()` [function](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID), which will generate a 36-character-long v4 UUID. Once the UUID has been generated, we call the `addDocument` function we just added. Within `addDocument`, we’re passing information from the form submission (captured in `data`, which is being initially passed into `submitForm` - `data.firstName`, `data.lastName`, and `data.walletAddress`) as well as the generated UUID. Finally, the API response is logged to the console, which will help us determine if the API call successfully went through. 
+In this snippet, we are programmatically generating a UUID using the built-in `crypto.randomUUID()` [function](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID), which will generate a 36-character-long v4 UUID. Once the UUID has been generated, we call the `addDocument` function we just added. Within `addDocument`, we’re passing information from the form submission (captured in `data`, which is being initially passed into `submitForm` - `data.firstName`, `data.lastName`, and `data.walletAddress`) as well as the generated UUID. Finally, the API response is logged to the console, which will help us determine if the API call successfully went through.
 
 3. At this point, your form is now configured to send information to Fauna when submitting a fully filled out form. You can test this by filling out each field in the form and submitting it. It should log an object in the console with a `data` property inside it that shows all the information submitted to Fauna. To confirm that it successfully submitted, you can pull up your collection in Fauna and see if the entry is there. It should look something like this:
 
@@ -626,7 +628,7 @@ export async function findUUID(uuid) {
 
 Very similarly to the `addDocuments` function, we need to do some initial setup and configurations with the Fauna client in this function. Then, we’re calling a query that looks into a specific index (in this case `allowlist_members_by_uuid` ) and sees if there are any matching items that have the `uuid` passed in as a function argument. In the event that there are no matches, an empty array is returned, so the function then checks for an empty array and returns `false` (indicating the UUID has not been found and is therefore not taken) - otherwise, it’ll return `true` (indicating the UUID has a match).
 
-4. Now that we have a way to check for existing UUIDs, we can add this in to our `submitForm` function in our `AllowlistForm.js` component. 
+4. Now that we have a way to check for existing UUIDs, we can add this in to our `submitForm` function in our `AllowlistForm.js` component.
     - To do this, we’ll add the `findUUID` function in to the `../api/fauna` import statement at the top of the file like so:
     ``` js
     import { addDocument, findUUID } from "../api/fauna";
@@ -689,12 +691,12 @@ async function submitForm(data) {
 
 Now that we’re able to write transactions to Fauna and then the blockchain, how can we actually find the data we need from a transaction we’ve submitted?
 
-Luckily, the public nature of the blockchain makes it easy to track down transactions and also find the metadata associated with a given transaction. 
+Luckily, the public nature of the blockchain makes it easy to track down transactions and also find the metadata associated with a given transaction.
 
 1. We’ll be using the Mumbai Polygonscan tool to find all the transactions associated with the wallet we’ve used to develop the application. This tool allows you to look up any wallet on the Mumbai-Testnet by its address and see a history of all of its transactions as well as the amount of MATIC inside the wallet.
     - To find your wallet, you can go to this url: [https://mumbai.polygonscan.com/address/](https://mumbai.polygonscan.com/address/)[put your wallet address here]
 2. Once you navigate to this page, you’ll see a list of all of the transactions associated with your wallet. The transactions display from most to least recent.
-    
+
 Click on a transaction to see more information by clicking on the transaction hash - this hash is uniquely generated and is what identifies your transaction.
 
 ![img](/img/dapp-fauna-polygon-react/transaction_hash.png)  
@@ -755,7 +757,7 @@ The final touch for this program to run will be to add in the input data hash fo
 ```jsx
     node scripts/decode-transaction.js
 ```
-    
+
 You’ll receive a response back that looks like this:
 
 ```js
@@ -776,9 +778,9 @@ This response indicates that the transaction was initialized by the `_createAllo
 Our `uuid` has been successfully identified from the transaction - in this particular response, it’s `2bb542ef-39b7-4991-bfa8-aac848fdce39`.
 
 9. Now that we have the `uuid`, we can search in Fauna using it to find the data behind the transaction. To do so, navigate to your [Fauna Dashboard](https://dashboard.fauna.com/), click on the Database you used for your application, and then click on “Indexes” in the sidebar for that database. Make sure that the index you used for the app is displaying at the top of the page - if not, then select it from the list of indexes below to ensure you’re querying from the right one.
-    
+
 Once you have the right index pulled up, paste your UUID into the field under “data.uuid” and make sure the dropdown above the field says “String”.
-    
+
 When you click the search button, an entry should appear below the search field:
 
 ![img](/img/dapp-fauna-polygon-react/search_index.png)  
@@ -787,7 +789,7 @@ Once you expand the entry, you’ll see all of the original data passed in to th
 
 ### Error and success messaging
 
-We’ve written a React form application that stores its data directly in Fauna and then submits it as a transaction to the blockchain where its private details are stored as a UUID, which can be used to reference the record in Fauna. We also showed how to take a transaction from the blockchain, parse its input data, and use it to search up the records in Fauna. 
+We’ve written a React form application that stores its data directly in Fauna and then submits it as a transaction to the blockchain where its private details are stored as a UUID, which can be used to reference the record in Fauna. We also showed how to take a transaction from the blockchain, parse its input data, and use it to search up the records in Fauna.
 
 However, while working through form submission and testing everything in the application, you might’ve noticed it was sometimes difficult to tell when a record was successfully submitted or not. To mitigate this, we can add in some error and success messaging that will surface to indicate an errored form submission (either from a Fauna or Polygon issue) or a successful form submission. This part of the tutorial will focus on changing some API call logic in `AllowlistForm.js`.
 
@@ -801,7 +803,7 @@ import React, { useEffect, useState } from "react";
 ```
 
 2. Once imported, we can initialize our variable. We’ll call it `formField` - this will be added in after the `useForm()` usage at the top of the component:
-    
+
     ```jsx
     const {
         register,
@@ -811,11 +813,11 @@ import React, { useEffect, useState } from "react";
     } = useForm(); // this is already in the code, add the line below
     const [formFail, setFormFail] = useState(false);
     ```
-    
+
 To initialize a new state variable, we need to declare a name (`formFail`) and also a function to set it (`setFormFail`). We also need to set it to a default value (since `formFail` will be a boolean indicating whether or not the form has failed, we can set the default value to `false`).
-    
+
 3. Now, we need to make sure that we add in error messaging that uses this state variable. If `formFail` becomes `true`, we’d want to surface the error messaging. We can add in this snippet of `jsx` within the `wrapper` div class in the `return()` function at the bottom of the file:
-    
+
     ```jsx
     {formFail && (
       <div className="errorMessage">
@@ -823,9 +825,9 @@ To initialize a new state variable, we need to declare a name (`formFail`) and a
       </div>
     )}
     ```
-    
+
 4. In addition to adding the error message block, we need to add some styling for the error message in `AllowlistForm.css`:
-    
+
     ```jsx
       .errorMessage {
         background-color: #fe6f5e;
@@ -835,9 +837,9 @@ To initialize a new state variable, we need to declare a name (`formFail`) and a
         margin: 10px;
       }
     ```
-    
+
 5. Finally, we need to actually set `formFail` to `true` in areas where the form fails. To do this, we’ll hop back into `AllowlistForm.js` and update our `submitForm` function’s API calls to Fauna and the blockchain so that they have `.catch()` statements:
-    
+
     ```jsx
     async function submitForm(data) {
     	... // some logic exists here
@@ -865,25 +867,25 @@ To initialize a new state variable, we need to declare a name (`formFail`) and a
     	}
     }
     ```
-    
+
 In addition to adding `.catch` statements to each API call (`addDocument` and `_createAllowlister`), the code above also adds a block that checks for a scenario where Fauna may not throw an error, but does return an error response (meaning that the API does not return a `res.ok` and that the `res.status` is greater than or equal to a `400` response code, which indicates an error).
-    
+
 Your error messaging will look like this:
 
 ![img](/img/dapp-fauna-polygon-react/error_msg.png)
 
 **Success Messaging**
 1. Let’s say we want a success message that surfaces what we submitted in the form within the message - to do so, we’ll need to store what we submitted in the form (first name, last name, and wallet address, which are all strings) as state variables, as well as one to track a successful form submission. To do so, add the following state variable initializations into your code:
-    
+
     ```jsx
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [walletAddress, setWalletAddress] = useState("");
     const [formSuccess, setFormSuccess] = useState(false);
     ```
-    
+
 2. Within the `wrapper` div in the `return()` in `AllowlistForm.js`, just as you added a `jsx` block for the error message, add one for the success message above or below it. The message will surface the form input-related state variables:
-    
+
     ```jsx
     {formSuccess && (
       <div className="successMessage">
@@ -894,9 +896,9 @@ Your error messaging will look like this:
       </div>
     )}
     ```
-    
+
 3. Add some styling for the success message in `AllowlistForm.css`:
-    
+
     ```jsx
     .successMessage {
       background-color: #e2fee2;
@@ -907,7 +909,7 @@ Your error messaging will look like this:
     }
     ```
 4. Finally, update all of your newly added state variables in a place where, after the API calls are executed, the form is considered fully submitted:
-    
+
     ```jsx
     async function submitForm(data) {
     	... // some logic exists here
@@ -940,9 +942,9 @@ Your error messaging will look like this:
         });
     }
     ```
-    
+
 The form submission would be considered successful once both the Fauna and Polygon API calls went through. Because of this, we’ve added the logic to set the `firstName`, `lastName`, `walletAddress`, and `formSuccess` variables as a `.then()` block attached to `_createAllowlister` - this is the last API call that happens before the `submitForm` function ends, and adding in a `.then()` ensures that the states are only updated once the last API call has been completed.
-    
+
 Your success messaging will look like this:
 
 ![img](/img/dapp-fauna-polygon-react/success_msg.png)

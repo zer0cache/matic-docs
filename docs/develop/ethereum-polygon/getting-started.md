@@ -1,7 +1,7 @@
 ---
 id: getting-started
 title: Ethereum↔Polygon Bridge
-sidebar_label: Getting Started
+sidebar_label: Overview
 description: Build your next blockchain app on Polygon.
 keywords:
   - docs

@@ -50,6 +50,10 @@ module.exports = {
             to: '/docs/develop/network-details/full-node-deployment',
             from: '/docs/integrate/full-node-deployment',
           },
+          {
+            to: '/docs/develop/metamask/overview',
+            from: '/docs/develop/wallets/metamask',
+          }
         ],
         createRedirects: function (existingPath) {
           if (existingPath.startsWith('/docs/validate/')) {

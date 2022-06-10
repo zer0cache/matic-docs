@@ -1,6 +1,6 @@
 ---
 id: full-node-deployment
-title: Full Node Deployment
+title: Set up a Full Node
 description: Build your next blockchain app on Polygon.
 keywords:
   - docs

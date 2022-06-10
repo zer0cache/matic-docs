@@ -1,7 +1,7 @@
 ---
 id: getting-started
 title: Developing on Polygon PoS
-sidebar_label: Getting Started
+sidebar_label: Quick Start
 description: Build your next blockchain app on Polygon.
 keywords:
   - docs

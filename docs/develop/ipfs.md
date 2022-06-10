@@ -1,11 +1,11 @@
 ---
 id: ipfs
-title: Using IPFS
+title: IPFS
 description: IPFS
 keywords:
   - IPFS
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 
 
@@ -20,7 +20,5 @@ IPFS is a distributed system for storing and accessing files, websites, applicat
 ### Example Projects
 
  1)  Tutorial in scaffold-eth that demonstrates how to mint an NFT on Polygon with IPFS [link](https://github.com/scaffold-eth/scaffold-eth/tree/simple-nft-example)
- 
- 2) Building a full stack web3 app with Next.js, Polygon, Solidity, The Graph, IPFS, and Hardhat [link](https://dev.to/dabit3/the-complete-guide-to-full-stack-web3-development-4g74)
 
- 
+ 2) Building a full stack web3 app with Next.js, Polygon, Solidity, The Graph, IPFS, and Hardhat [link](https://dev.to/dabit3/the-complete-guide-to-full-stack-web3-development-4g74)

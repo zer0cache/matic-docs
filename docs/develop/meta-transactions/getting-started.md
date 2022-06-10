@@ -1,7 +1,7 @@
 ---
 id: meta-transactions
 title: Meta Transactions
-sidebar_label: Meta Transactions
+sidebar_label: Overview
 description: Learn about meta transactions and how you can use them.
 keywords:
   - docs

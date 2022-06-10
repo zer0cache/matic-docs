@@ -1,6 +1,6 @@
 ---
 id: snapshot-instructions-heimdall-bor
-title: Snapshot Instructions for Heimdall and Bor
+title: Heimdall and Bor Snapshots
 description: Snapshot Instructions for Heimdall and Bor
 keywords:
   - docs

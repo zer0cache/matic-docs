@@ -1,7 +1,7 @@
 ---
 id: did-implementation
 title: Polygon DID Implementation
-sidebar_label: Decentralized Identifiers
+sidebar_label: Identity
 description: Learn about DID implementation on Polygon
 keywords:
   - docs
