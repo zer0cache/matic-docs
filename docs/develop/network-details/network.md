@@ -74,7 +74,7 @@ The native token of the Polygon PoS is MATIC and is used for gas.
 | RPC Endpoint                       | [https://polygon-rpc.com/](https://polygon-rpc.com/)                     | 
 | Node Endpoint                      | [wss://rpc-mainnet.matic.network](wss://rpc-mainnet.matic.network)       |
 | Heimdall API                       | [https://heimdall.api.matic.network](https://heimdall.api.matic.network) |
-| Block Explorer                     | [https://mumbai.polygonscan.com/](https://mumbai.polygonscan.com/)       |
+| Block Explorer                     | [https://polygonscan.com/](https://polygonscan.com/)       |
 
 :::note More details 
 
