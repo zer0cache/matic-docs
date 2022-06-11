@@ -44,7 +44,7 @@ Pay attention to default region and zone, choose ones closer to you or your cust
    * `INSTANCE_TYPE` - GCP [machine type](https://cloud.google.com/compute/docs/machine-types), default value is recommended, You may change it later if required
    * `BOR_EXT_DISK_SIZE` - additional disk size in GB to use with Bor, default value with `fullnode` is recommended, You may expand it later if required. You'll need 8192GB+ with `archive` node though
    * `HEIMDALL_EXT_DISK_SIZE` - additional disk size in GB to use with Heimdall, default value is recommended
-   * `DISK_TYPE` - GCP [disk type](https://cloud.google.com/compute/docs/disks#disk-types), SSD is highly recommended
+   * `DISK_TYPE` - GCP [disk type](https://cloud.google.com/compute/docs/disks#disk-types), SSD is highly recommended. You may need to increase the total SSD GB quota in the region you are spinning up the node.
 
 3. Use the following command to create an instance with correct hardware and software requirements. In the example below we deploy Polygon `mainnet` from `snapshot` with `fullnode` mode:
 ```bash
@@ -53,7 +53,7 @@ Pay attention to default region and zone, choose ones closer to you or your cust
    export POLYGON_BOOTSTRAP_MODE=snapshot
    export POLYGON_RPC_PORT=8747
    export GCP_NETWORK_TAG=polygon
-   export EXTRA_VAR="bor_branch=v0.2.16 heimdall_branch=v0.2.9  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=${POLYGON_NETWORK}"
+   export EXTRA_VAR=(bor_branch=v0.2.16 heimdall_branch=v0.2.9  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=${POLYGON_NETWORK})
    gcloud compute firewall-rules create "polygon-p2p" --allow=tcp:26656,tcp:30303,udp:30303 --description="polygon p2p" --target-tags=${GCP_NETWORK_TAG}
    gcloud compute firewall-rules create "polygon-rpc" --allow=tcp:${POLYGON_RPC_PORT} --description="polygon rpc" --target-tags=${GCP_NETWORK_TAG}
    export INSTANCE_NAME=polygon-0
