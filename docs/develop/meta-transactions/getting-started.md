@@ -106,7 +106,7 @@ end, and the vote executes on behalf of the user.
 Assuming your familiarity with the different approaches you can take to integrate meta transactions in your 
 dApp, and depending on whether you're migrating to meta transactions or building fresh dApp on using it.
 
-To integrate your dApp with Meta Transactions on Polygon, you can choose to go with either the following two 
+To integrate your dApp with Meta Transactions on Polygon, you can choose to go with one of the following 
 relayers or spin up a custom solution:
 
 * [Biconomy](https://docs.biconomy.io/products/enable-gasless-transactions)
