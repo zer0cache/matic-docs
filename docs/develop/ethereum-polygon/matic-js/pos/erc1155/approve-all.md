@@ -1,6 +1,6 @@
 ---
 id: approve-all
-title: approve
+title: approveAll
 keywords: 
 - 'pos client, erc1155, approve, polygon, sdk'
 description: 'Approve erc1155 token'
