@@ -730,6 +730,5 @@ nightfall: [
           },
       "faq/consensys-framework",
       "faq/widget-faq",
-      "faq/wallet-list",
     ],
 };
