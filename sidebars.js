@@ -51,6 +51,7 @@ govern: [
 
 develop: [
     "develop/getting-started",
+    "develop/developer-resources",
     {
       type: "category",
       label: "Nodes",
@@ -427,7 +428,7 @@ develop: [
       "develop/did-implementation",
     {
       type: "category",
-      label: "Resources",
+      label: "Miscellaneous",
       items: [
         {
           type: "category",
@@ -450,7 +451,7 @@ develop: [
           items: [
             "develop/ethereum-polygon/tools/widget"
           ]
-        }
+        },
       ],
     },
 ],
