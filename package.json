@@ -6,12 +6,16 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy"
+    "deploy": "docusaurus deploy",
+    "crowdin": "crowdin",
+    "write-translations": "docusaurus write-translations",
+    "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download"
   },
   "dependencies": {
+    "@crowdin/cli": "3",
     "@docsearch/js": "^3.1.0",
-    "@docusaurus/core": "^2.0.0-beta.20",
-    "@docusaurus/logger": "^2.0.0-beta.20",
+    "@docusaurus/core": "^2.0.0-beta.21",
+    "@docusaurus/logger": "^2.0.0-beta.21",
     "@docusaurus/plugin-client-redirects": "^2.0.0-beta.20",
     "@docusaurus/preset-classic": "^2.0.0-beta.20",
     "@docusaurus/theme-live-codeblock": "^2.0.0-beta.20",
@@ -23,6 +27,7 @@
     "css-select": "^2.0.1",
     "docusaurus": "^1.14.7",
     "highlight.js": "^10.4.1",
+    "i18n": "^0.15.0",
     "react": "^16.8.4",
     "react-dev-utils": "^11.0.4",
     "react-dom": "^16.8.4",
