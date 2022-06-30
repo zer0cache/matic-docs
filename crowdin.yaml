@@ -1,5 +1,5 @@
 project_id: '522988'
-api_token: 'adcb612fc9e04d625728657e09baf14fd58ad26762319d0ce5d6bd019caada93f8181842c4b023b7'
+api_token: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
 preserve_hierarchy: true
 languages_mapping: &languages_mapping
 files:
