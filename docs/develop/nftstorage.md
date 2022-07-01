@@ -126,7 +126,7 @@ Execute the following command:
 mkdir contracts assets scripts
 ```
 
-Lastly, we will add an image to the `assets` folder. This image will be our artwork that we will upload to NFT.Storage and mint on Polygon. We will name it `ExampleNFT.png` for now. If you do not have some nice art ready, you can [download a simple pattern](https://ipfs.io/ipfs/bafkreiawxb4aji744637trok275odl33ioiijsvvahnat2kw5va3at45mu).
+Lastly, we will add an image to the `assets` folder. This image will be our artwork that we will upload to NFT.Storage and mint on Polygon. We will name it `MyExampleNFT.png` for now. If you do not have some nice art ready, you can [download a simple pattern](https://ipfs.io/ipfs/bafkreiawxb4aji744637trok275odl33ioiijsvvahnat2kw5va3at45mu).
 
 ## Minting your NFT
 
