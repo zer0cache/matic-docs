@@ -69,7 +69,7 @@ As a summary, Nightfall makes the following security assumptions:
 
 ## Efficiency
 
-Block proposers collect transactions from various users and batch them toguether into an L2 Block.
+Block proposers collect transactions from various users and batch them together into an L2 Block.
 Typical L2 block sizes contain about 32 transactions.
 
 The expected gas costs for a deposit, single transfer, double transfer, and withdrawal are 8200, 11400,
