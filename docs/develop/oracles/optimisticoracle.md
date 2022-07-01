@@ -27,9 +27,9 @@ If a dispute is raised, a request is sent to the DVM. All contracts built on UMA
 
 The Data Verification Mechanism (DVM) is the dispute resolution service for contracts built on UMA Protocol. The DVM is powerful because it encompasses an element of human judgment to ensure contracts are securely and correctly managed when issues arise from volatile (and sometimes manipulatable) markets.
 
-## Optmisitc Oracle Interface
+## Optimistic Oracle Interface
 
-The vast majority of projects will only require the Optmisitc Oracle for their implimentations. 
+The vast majority of projects will only require the Optimistic Oracle for their implimentations. 
 
 This section explains how different participants can interact with the Optimistic Oracle. To view the most updated mainnet, kovan or L2 deployments of the Optimistic Oracle contracts, refer to the [production addresses](https://docs.umaproject.org/dev-ref/addresses).
 
