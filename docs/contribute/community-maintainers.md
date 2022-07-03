@@ -18,7 +18,7 @@ slug: community-maintainers
 The following is a list of regular contributors to the Polygon Wiki that include
 their contact information.
 
-if one of these people ever contacts you directly, first check the contact
+If one of these people ever contacts you directly, first check the contact
 information to see that it matches the origin of the message, and then feel free
 to get in touch with someone else on this list to verify the legitimacy of the original
 inquiry.

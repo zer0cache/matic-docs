@@ -14,7 +14,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 slug: orientation
 ---
 
-## Identify an area to Contribute too
+## Identify an area to Contribute to
 
 There are several ways to identify an area where you can contribute to the Wiki:
 
@@ -35,12 +35,17 @@ There are several ways to identify an area where you can contribute to the Wiki:
   - The documentation team will review the PR or reach out accordingly. 
   - Repository: https://github.com/maticnetwork/matic-docs
   - Sample PR: https://github.com/maticnetwork/matic-docs/pull/360
-    > If you are adding a new document, it is recommended to just have a basic summary/introduction and a link to your github or documentation for more details.
+
+:::tip
+
+If you are adding a new document, it is recommended to just have a basic summary/introduction and a link to your github or documentation for more details.
+
+:::
 
 ## Git rules
 
 We use `gitchangelog` for all of our repos for change logs. For that, we need to 
-follow the following convention for commit message. There will be no merge if you are 
+comply with the following convention for commit message. There will be no merge if you are 
 not following this convention.
 
 ### Commit message convention

@@ -107,7 +107,7 @@ The Style guide takes motivation from the following style manuals:
 
 ## Structure
 
-Documents should be organized by sections. Each section should be responsible for
+Documents should be organized in sections. Each section should be responsible for
 presenting a theme or topic. Within each section, one or multiple paragraphs will exist.
 Each paragraph should convey only one thought. Try to avoid repeating the same thoughts
 in different sections, and split paragraphs that have multiple points of discussion.
@@ -118,9 +118,9 @@ The reader should understand what a paragraph is about from its first sentence.
 If you are writing about a specific product, ensure the document resembles that 
 product. Previously, the Polygon documentation was generalized, based around Polygon PoS. 
 Now that there are multiple Polygon-based products, contributors need be wary about their 
-contributions.
+additions.
 
-For instance, "Deloying a smart contract on Polygon using ####" is ambiguous. If this tutorial
+For instance, "Deploying a smart contract on Polygon using ####" is ambiguous. If this tutorial
 was referring to Polygon PoS, it should be clear, as in, 
 "Deploying a smart contract on Polygon PoS using ####". Using the same example with a 
 Polygon Rollup, like Polygon Hermez, "Deploying a smart contract on Polygon Hermez using ####".
@@ -152,6 +152,7 @@ Conisder the following when documentating an API:
   * Special formatting 
 * Code examples for multiple languages.
 * A sample call with the expected output.
-* Error Codes. Edge cases
+* Error Codes. Edge cases.
+* Instructions on how to acquire API keys, if needed.
 * Noting common FAQs or scenarios is always useful.
 * Links to additional resources such as social media posts, blogs, or video content.

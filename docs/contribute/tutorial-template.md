@@ -16,8 +16,7 @@ slug: tutorial-template
 ---
 
 This template should be used when contributing a tutorial to the Polygon 
-Wiki. You may choose to contribute a tutorial on a topic of your choosing,
-or choose on from this [list].
+Wiki. You may choose to contribute a tutorial on a topic of your choosing.
 
 ## General guidelines
 

@@ -719,6 +719,9 @@ module.exports = {
     {
       type: "category",
       label: "Become a Contributor",
+      link: {
+        type: "generated-index",
+      },
       items: [
         "contribute/contributor-guidelines",
         "contribute/bug-bounty-program",
@@ -728,6 +731,9 @@ module.exports = {
     {
       type: "category",
       label: "Style Guide",
+      link: {
+        type: "generated-index",
+      },
       items: [
         "contribute/writing-style",
         "contribute/tutorial-template",
@@ -736,6 +742,9 @@ module.exports = {
     {
       type: "category",
       label: "Translations",
+      link: {
+        type: "generated-index",
+      },
       items: [
         "contribute/non-native-speakers",
         "contribute/how-to-translate",
