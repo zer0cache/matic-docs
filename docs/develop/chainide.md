@@ -80,7 +80,7 @@ You need to write down all the required functions that you want to implement in 
 
 The ChainIDE team has prepared a complete ERC-721 template contract that includes all the required functions; you may use this built-in template and add/delete functions according to your requirements.
 
-Visit the [ChainIDE site](www.chainide.com) and click on "Try Now".
+Visit the [ChainIDE site](https://chainide.com/) and click on "Try Now".
 
 <img src="https://3869740696-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MYy-lqJKjq1m0yBAX4r%2Fuploads%2Fnpdf7fg51675wYmFcL6b%2Fimage.png?alt=media&token=353fc876-a319-49cb-92d5-1ed23c39aa90" width="100%" height="100%" />
 

@@ -54,7 +54,7 @@ module.exports = {
             to: '/docs/develop/wallets/getting-started',
             from: '/docs/develop/fiat-ramps'
           },
-          {  
+          {
             to: '/docs/develop/network-details/full-node-binaries',
             from: '/docs/integrate/full-node-binaries',
           },
@@ -65,6 +65,10 @@ module.exports = {
           {
             to: '/docs/develop/metamask/overview',
             from: '/docs/develop/wallets/metamask',
+          },
+          {
+            to: '/docs/develop/wallets/getting-started',
+            from: '/docs/develop/cexs-wallets/cexs',
           },
         ],
         createRedirects: function (existingPath) {
