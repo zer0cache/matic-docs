@@ -44,7 +44,7 @@ To transfer assets within Polygon Nightfall one only needs the `Destination Wall
 Some privacy guidelines include:
 - Don't deposit a very unique coin value (e.g. 3.1415 USDC) and then withdraw the same amount. People will be able to guess who you probably sent it to. Likewise don't deposit and withdraw exceptionally large values.
 - Withdraw different amounts from what you deposit. This makes it harder to guess who you paid.
-- Wait awhile. You should ensure that there are at least a few other transactions between the deposit and withdraw. If there are no other transactions in the time you make a deposit and withdraw, people may be able to guess that they are connected.
+- Wait a while. You should ensure that there are at least a few other transactions between the deposit and withdraw. If there are no other transactions during the time you make a deposit and withdraw, people may be able to guess that they are connected.
 - Don't make regular or predictable transactions. For example, if a deposit from a particular Ethereum address is always made at 12:01 on the first of the month and a withdraw is always made to a particular Ethereum address at 12:05 on the second of the month people may guess that they are related; you expose yourself to statistical analysis even if the amounts are uncorrelated.
 
 When used correctly, the Polygon Nightfall wallet can provide fully private transfers of ERC20 tokens.
@@ -67,7 +67,7 @@ Funds can be withdrawn with Polygon Nightfall wallet. Withdrawals have a **one w
 There are two types of transactions that bear different costs:
 
 - On-chain transactions: These transactions are sent to the smart contract and require gas fees on Ethereum to be mined. Any proposer can take this transaction and put it in a block. Currently, `deposit` and `finalize withdrawal` are on-chain transactions.
-- Off-chain transactions: These transactions are sent directly to the proposer. Currently, all `transfer` and `withdrawal` are configured as off-chain transactions. These transactions cost `1 MATIC` paid in the PoS network.
+- Off-chain transactions: These transactions are sent directly to the proposer. Currently, all `transfer` and `withdrawals` are configured as off-chain transactions. These transactions cost `1 MATIC` paid in the PoS network.
 
 ## Which tokens can I use on Nightfall Network?
 The following tokens are operative on Nightfall:
