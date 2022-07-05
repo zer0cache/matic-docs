@@ -556,7 +556,7 @@ heimdallcli generate-keystore ETHEREUM_PRIVATE_KEY
 
 where
 
-* ETHEREUM_PRIVATE_KEY — your Ethereum private key.
+* ETHEREUM_PRIVATE_KEY — your Ethereum wallet address.
 
 When prompted, set up a password to the keystore file.
 

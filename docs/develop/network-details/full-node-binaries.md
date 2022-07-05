@@ -83,7 +83,7 @@ sudo apt-get install build-essential
 ### **Install GO**
 
 ```bash
-wget https://gist.githubusercontent.com/ssandeep/a6c7197811c83c71e5fead841bab396c/raw/go-install.sh
+wget https://raw.githubusercontent.com/maticnetwork/node-ansible/master/go-install.sh
 bash go-install.sh
 sudo ln -nfs ~/.go/bin/go /usr/bin/go
 ```
@@ -167,7 +167,7 @@ To set up the network directory, network name and type of node are required.
 
 Available networks: `mainnet-v1` and `testnet-v4`
 
-Node types: `sentry` and `validator`
+Node type: `sentry`
 
 ```bash
 cd ~/
@@ -318,7 +318,7 @@ For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.ma
 
 ```bash
 sudo apt-get install build-essential
-- Go 1.17 installed.
+- Go 1.18 installed.
 
 ## Overview
 
@@ -435,7 +435,7 @@ To set up the network directory, the network name and type of node are required.
 
 Available networks: `mainnet-v1`
 
-Node types: `sentry` and `validator`
+Node type: `sentry`
 
 ```bash
 cd ~/
