@@ -950,4 +950,133 @@ module.exports = {
       "faq/consensys-framework",
       "faq/widget-faq",
     ],
+
+  edge: [
+      "edge/overview",
+      {
+          type: "category",
+          label: "Get started",
+          items: [
+              "edge/get-started/installation",
+              "edge/get-started/set-up-ibft-locally",
+              "edge/get-started/set-up-ibft-on-the-cloud",
+              "edge/get-started/cli-commands",
+              "edge/get-started/json-rpc-commands",
+          ]
+      },
+      {
+          type: "category",
+          label: "Configuration",
+          items: [
+              "edge/configuration/sample-config",
+              "edge/configuration/manage-private-keys",
+              "edge/configuration/enable-metrics",
+              {
+                  type: "category",
+                  label: "Secret Managers",
+                  items: [
+                      "edge/configuration/secret-managers/set-up-aws-ssm",
+                      "edge/configuration/secret-managers/set-up-gcp-secrets-manager",
+                      "edge/configuration/secret-managers/set-up-hashicorp-vault",
+                  ]
+              }
+          ]
+      },
+      {
+          type: "category",
+          label: "Working with a node",
+          items: [
+              "edge/working-with-node/query-json-rpc",
+              "edge/working-with-node/query-operator-info",
+              "edge/working-with-node/backup-restore",
+          ]
+      },
+      {
+          type: "category",
+          label: "Consensus",
+          items: [
+              "edge/consensus/poa",
+              "edge/consensus/pos-concepts",
+              "edge/consensus/pos-stake-unstake",
+              "edge/consensus/migration-to-pos"
+          ]
+      },
+      {
+          type: "category",
+          label: "Additional features",
+          items: [
+              {
+                  type: "category",
+                  label: "Chainbridge",
+                  items: [
+                      "edge/additional-features/chainbridge/overview",
+                      "edge/additional-features/chainbridge/requirements",
+                      "edge/additional-features/chainbridge/deploy-contracts",
+                      "edge/additional-features/chainbridge/setup-relayer",
+                      "edge/additional-features/chainbridge/setup-erc20-transfer",
+                      "edge/additional-features/chainbridge/setup-erc721-transfer",
+                      "edge/additional-features/chainbridge/roles-in-bridge"
+                  ]
+              },
+              "edge/additional-features/stress-testing",
+              "edge/additional-features/blockscout",
+          ]
+      },
+      {
+          type: "category",
+          label: "Architecture",
+          items: [
+              "edge/architecture/overview",
+              {
+                  type: "category",
+                  label: "Modules",
+                  items: [
+                      "edge/architecture/modules/blockchain",
+                      "edge/architecture/modules/minimal",
+                      "edge/architecture/modules/networking",
+                      "edge/architecture/modules/state",
+                      "edge/architecture/modules/txpool",
+                      "edge/architecture/modules/json-rpc",
+                      "edge/architecture/modules/consensus",
+                      "edge/architecture/modules/storage",
+                      "edge/architecture/modules/types",
+                      "edge/architecture/modules/protocol",
+                      "edge/architecture/modules/sealer",
+                      "edge/architecture/modules/other-modules"
+                  ]
+              }
+          ]
+      },
+      {
+          type: "category",
+          label: "Concepts",
+          items: [
+              "edge/concepts/ethereum-state"
+          ]
+      },
+      {
+          type: "category",
+          label: "Community",
+          items: [
+              "edge/community/propose-new-feature",
+              "edge/community/report-bug"
+          ]
+      },
+      {
+          type: "category",
+          label: "Performance Reports",
+          items: [
+              "edge/performance-reports/overview",
+              {
+                  type: "category",
+                  label: "Test History",
+                  items: [
+                      "edge/performance-reports/test-history/test-2022-03-23",
+                      "edge/performance-reports/test-history/test-2022-03-02",
+                      "edge/performance-reports/test-history/test-2022-01-21",
+                  ]
+              }
+          ]
+      }
+  ]
 };
