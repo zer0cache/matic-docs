@@ -57,7 +57,7 @@ We may change this in future depending on the Beta phase feedback.
 ## How to connect a Ledger Hardware Wallet to Nightfall
 There is a guide to connect your Ledger Hardware Wallet with Metamask in the official Metamask site [here](https://support.ledger.com/hc/en-us/articles/4404366864657-How-to-access-your-Ledger-Ethereum-ETH-account-via-Metamask?docs=true).
 
-Be sure to connect the Ehtereum App in your wallet and enable "blind signing" in the Ethereum App settings.
+Be sure to connect the Ethereum App in your wallet and enable "blind signing" in the Ethereum App settings.
 
 ## What are Commitments?
 
@@ -172,7 +172,7 @@ While all three sets have equivalent total sums of 6, only the following transfe
 - Set B: Any transfer between 0 and 4 (both excluded)
 - Set C: Any transfer between 0 and 6 (both excluded)
 
-To continue with the example, if Alex owns Set C of commitments, available transfers inlcude any amount between 0 and 6, excluding both limit values. If Alex decides to transfer 3.5 to Bob, Alex will end up with a single commitment of 2.5 and Bob will receive a commitment of 3.5 once the block is proposed.
+To continue with the example, if Alex owns Set C of commitments, available transfers include any amount between 0 and 6, excluding both limit values. If Alex decides to transfer 3.5 to Bob, Alex will end up with a single commitment of 2.5 and Bob will receive a commitment of 3.5 once the block is proposed.
 
 On the other hand, if Alex decides to transfer an amount of 6 to Bob, the ZK proof will fail because there won't be a valid combination of commitments. 
 
