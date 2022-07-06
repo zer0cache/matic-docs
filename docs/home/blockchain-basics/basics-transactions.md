@@ -2,7 +2,7 @@
 id: transactions
 title: What are Transactions?
 sidebar_label: Transactions
-description: Build your next blockchain app on Matic.
+description: "Sending messages betwen accounts."
 keywords:
   - docs
   - matic

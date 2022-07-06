@@ -1,7 +1,7 @@
 ---
 id: polygon-architecture
 title: Polygon PoS Architecture
-description: Build your next blockchain app on Polygon.
+description: "Staking, Heimdall and Bor."
 keywords:
   - docs
   - matic

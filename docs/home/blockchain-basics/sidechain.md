@@ -1,7 +1,7 @@
 ---
 id: sidechain
 title: Sidechains and Plasma
-description: Build your next blockchain app on Polygon.
+description: "Scaling solutions for the Blockchain."
 keywords:
   - docs
   - matic

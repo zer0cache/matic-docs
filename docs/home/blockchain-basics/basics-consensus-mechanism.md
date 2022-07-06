@@ -1,7 +1,7 @@
 ---
 id: consensus-mechanism
 title: Consensus Mechanism
-description: Build your next blockchain app on Polygon.
+description: "PoW, PoS, DPoS, PoSpace and PoET."
 keywords:
   - docs
   - matic

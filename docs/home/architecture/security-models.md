@@ -1,7 +1,7 @@
 ---
 id: security-models
 title: Security Models
-description: Build your next blockchain app on Polygon.
+description: "PoS, Plasma and Hybrid securities."
 keywords:
   - docs
   - matic

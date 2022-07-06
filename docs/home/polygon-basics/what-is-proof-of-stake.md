@@ -1,7 +1,7 @@
 ---
 id: what-is-proof-of-stake
 title: What is Proof of Stake?
-description: Learn what is Proof of Stake.
+description: "A consensus algorithm reliant to validators."
 keywords:
   - docs
   - matic

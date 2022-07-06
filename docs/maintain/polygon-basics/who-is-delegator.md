@@ -1,7 +1,7 @@
 ---
 id: who-is-delegator
 title: Who is a Delegator
-description: Learn about what a delegator is on the Polygon network.
+description: "Token holders who do not run a node."
 keywords:
   - docs
   - matic

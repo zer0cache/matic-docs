@@ -2,7 +2,7 @@
 id: who-is-validator
 title: Who is a Validator
 sidebar_label: Who is a Validator
-description: Learn about what a validator is on the Polygon Network.
+description: "A participant in the network who runs Heimdall and Bor nodes."
 keywords:
   - docs
   - matic

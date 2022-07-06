@@ -2,7 +2,7 @@
 id: import-account-to-metamask
 title: Importing an Account to Metamask
 sidebar_label: Importing an Account to Metamask
-description: Build your next blockchain app on Matic.
+description: "Using the seed phrase to import an account to Metamask."
 keywords:
   - docs
   - matic

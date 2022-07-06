@@ -2,7 +2,7 @@
 id: polygon
 title: What is Polygon?
 sidebar_label: Polygon
-description: Build your next blockchain app on Polygon.
+description: "Polygon main features and solutions."
 keywords:
   - docs
   - matic

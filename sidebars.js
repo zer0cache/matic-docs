@@ -12,6 +12,9 @@ module.exports = {
     {
       type: "category",
       label: "Blockchain Basics",
+      link: {
+        type: "generated-index",
+      },
       items: [
         "home/blockchain-basics/blockchain",
         "home/blockchain-basics/blockchain-types",
@@ -28,13 +31,15 @@ module.exports = {
     {
       type: "category",
       label: "Polygon Basics",
+      link: {
+        type: "generated-index",
+      },
       items: [
         "home/polygon-basics/what-is-polygon",
         "home/polygon-basics/what-is-proof-of-stake",
         "maintain/polygon-basics/who-is-delegator",
         "maintain/polygon-basics/who-is-validator",
-        "home/architecture/polygon-architecture",
-        "home/architecture/security-models",
+        "home/architecture/polygon-architecture"
       ]
     },
     "home/faq",
