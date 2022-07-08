@@ -1014,13 +1014,13 @@ module.exports = {
                   type: "category",
                   label: "Chainbridge",
                   items: [
-                      "edge/additional-features/chainbridge/overview",
-                      "edge/additional-features/chainbridge/requirements",
-                      "edge/additional-features/chainbridge/deploy-contracts",
-                      "edge/additional-features/chainbridge/setup-relayer",
-                      "edge/additional-features/chainbridge/setup-erc20-transfer",
-                      "edge/additional-features/chainbridge/setup-erc721-transfer",
-                      "edge/additional-features/chainbridge/roles-in-bridge"
+                    "edge/additional-features/chainbridge/overview",
+                    "edge/additional-features/chainbridge/definitions",
+                    "edge/additional-features/chainbridge/setup",
+                    "edge/additional-features/chainbridge/setup-erc20-transfer",
+                    "edge/additional-features/chainbridge/setup-erc721-transfer",
+                    "edge/additional-features/chainbridge/use-case-erc20-bridge",
+                    "edge/additional-features/chainbridge/use-case-erc721-bridge",
                   ]
               },
               "edge/additional-features/stress-testing",
