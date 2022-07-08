@@ -1,7 +1,7 @@
 ---
 id: run-validator-ansible
 title: Run a Validator Node with Ansible
-description: Use Ansible to set up your validator node on the Polygon Network.
+description: "Use Ansible to set up your validator node."
 keywords:
   - docs
   - matic
