@@ -1076,9 +1076,11 @@ module.exports = {
                   type: "category",
                   label: "Test History",
                   items: [
+                      "edge/performance-reports/test-history/test-2022-07-04",
                       "edge/performance-reports/test-history/test-2022-03-23",
                       "edge/performance-reports/test-history/test-2022-03-02",
                       "edge/performance-reports/test-history/test-2022-01-21",
+        
                   ]
               }
           ]
