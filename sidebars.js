@@ -578,6 +578,7 @@ module.exports = {
 
   maintain: [
     "maintain/validate/validator-index",
+    "maintain/validate/validator-responsibilities",
     {
       type: "category",
       label: "Validator Overview",
