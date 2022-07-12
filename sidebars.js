@@ -1046,7 +1046,7 @@ module.exports = {
                       "edge/architecture/modules/consensus",
                       "edge/architecture/modules/storage",
                       "edge/architecture/modules/types",
-                      "edge/architecture/modules/protocol",
+                      "edge/architecture/modules/syncer",
                       "edge/architecture/modules/sealer",
                       "edge/architecture/modules/other-modules"
                   ]
