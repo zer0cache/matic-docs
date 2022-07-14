@@ -962,6 +962,9 @@ module.exports = {
       {
           type: "category",
           label: "Get started",
+          link: {
+            type: "generated-index",
+          },
           items: [
               "edge/get-started/installation",
               "edge/get-started/set-up-ibft-locally",
@@ -973,6 +976,9 @@ module.exports = {
       {
           type: "category",
           label: "Configuration",
+          link: {
+            type: "generated-index",
+          },
           items: [
               "edge/configuration/sample-config",
               "edge/configuration/manage-private-keys",
@@ -980,6 +986,9 @@ module.exports = {
               {
                   type: "category",
                   label: "Secret Managers",
+                  link: {
+                    type: "generated-index",
+                  },
                   items: [
                       "edge/configuration/secret-managers/set-up-aws-ssm",
                       "edge/configuration/secret-managers/set-up-gcp-secrets-manager",
@@ -991,6 +1000,9 @@ module.exports = {
       {
           type: "category",
           label: "Working with a node",
+          link: {
+            type: "generated-index",
+          },
           items: [
               "edge/working-with-node/query-json-rpc",
               "edge/working-with-node/query-operator-info",
@@ -1000,6 +1012,9 @@ module.exports = {
       {
           type: "category",
           label: "Consensus",
+          link: {
+            type: "generated-index",
+          },
           items: [
               "edge/consensus/poa",
               "edge/consensus/pos-concepts",
@@ -1010,10 +1025,16 @@ module.exports = {
       {
           type: "category",
           label: "Additional features",
+          link: {
+            type: "generated-index",
+          },
           items: [
               {
                   type: "category",
                   label: "Chainbridge",
+                  link: {
+                    type: "generated-index",
+                  },
                   items: [
                     "edge/additional-features/chainbridge/overview",
                     "edge/additional-features/chainbridge/definitions",
@@ -1031,11 +1052,17 @@ module.exports = {
       {
           type: "category",
           label: "Architecture",
+          link: {
+            type: "generated-index",
+          },
           items: [
               "edge/architecture/overview",
               {
                   type: "category",
                   label: "Modules",
+                  link: {
+                    type: "generated-index",
+                  },
                   items: [
                       "edge/architecture/modules/blockchain",
                       "edge/architecture/modules/minimal",
@@ -1056,6 +1083,9 @@ module.exports = {
       {
           type: "category",
           label: "Concepts",
+          link: {
+            type: "generated-index",
+          },
           items: [
               "edge/concepts/ethereum-state"
           ]
@@ -1063,6 +1093,9 @@ module.exports = {
       {
           type: "category",
           label: "Community",
+          link: {
+            type: "generated-index",
+          },
           items: [
               "edge/community/propose-new-feature",
               "edge/community/report-bug"
@@ -1071,11 +1104,17 @@ module.exports = {
       {
           type: "category",
           label: "Performance Reports",
+          link: {
+            type: "generated-index",
+          },
           items: [
               "edge/performance-reports/overview",
               {
                   type: "category",
                   label: "Test History",
+                  link: {
+                    type: "generated-index",
+                  },
                   items: [
                       "edge/performance-reports/test-history/test-2022-07-04",
                       "edge/performance-reports/test-history/test-2022-03-23",
