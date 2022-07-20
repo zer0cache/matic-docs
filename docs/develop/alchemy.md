@@ -33,7 +33,7 @@ Name your app “Hello World”, offer a short description, select “Staging”
 
 Click “Create app” and that’s it! Your app should appear in the table below.
 
-### Step 3: Create an wallet address
+### Step 3: Create a wallet address
 
 Since Polygon is a Layer-2 scaling solution for Ethereum, we need to get an Ethereum wallet and add a custom Polygon URL to send and receive transactions on the Polygon network. For this tutorial, we’ll use Metamask, a virtual wallet in the browser used to manage your wallet address. If you want to understand more about how transactions on Ethereum work, check out [this page](https://ethereum.org/en/developers/docs/transactions/) from the Ethereum foundation.
 
@@ -41,7 +41,7 @@ To get your customer Polygon RPC URL from Alchemy, go to your "Hello World" app 
 
 You can download and create a Metamask account for free [here](https://metamask.io/download.html). Once you've created an account, follow these steps to set up the Polygon network on your wallet.
 
-1. Select “Settings” from the drop down menu on the top right corner of your Metamask wallet.
+1. Select “Settings” from the drop-down menu in the top right corner of your Metamask wallet.
 2. Select “Networks” from the menu to the left.
 3. Connect your wallet to the Mumbai Testnet using the following parameters.
 
@@ -61,7 +61,7 @@ In order to deploy our smart contract to the test network, we’ll need some fak
 
 ### Step 5: Check your Balance
 
-To double check our balance is there, let’s make an [eth\_getBalance](https://docs.alchemy.com/alchemy/apis/polygon-api/eth_getbalance) request using [Alchemy’s composer tool](https://composer.alchemyapi.io/). Select "Polygon" as the chain, "Polygon Mumbai" as the network, "eth_getBalance" as the method, and input your address. This will return the amount of MATIC in our wallet. Check out [this video](https://youtu.be/r6sjRxBZJuU) for instructions on how to use the composer tool!
+To double-check our balance is there, let’s make an [eth\_getBalance](https://docs.alchemy.com/alchemy/apis/polygon-api/eth_getbalance) request using [Alchemy’s composer tool](https://composer.alchemyapi.io/). Select "Polygon" as the chain, "Polygon Mumbai" as the network, "eth_getBalance" as the method, and input your address. This will return the amount of MATIC in our wallet. Check out [this video](https://youtu.be/r6sjRxBZJuU) for instructions on how to use the composer tool!
 
 After you input your Metamask account address and click “Send Request”, you should see a response that looks like this:
 
@@ -253,7 +253,7 @@ To actually connect these to our code, we’ll reference these variables in our 
 
 ### Step 12: Install Ethers.js
 
-Ethers.js is a library that makes it easier to interact and make requests to Ethereum by wrapping [standard JSON-RPC methods](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc) with more user friendly methods.
+Ethers.js is a library that makes it easier to interact and make requests to Ethereum by wrapping [standard JSON-RPC methods](https://docs.alchemyapi.io/alchemy/documentation/alchemy-api-reference/json-rpc) with more user-friendly methods.
 
 Hardhat makes it super easy to integrate [Plugins](https://hardhat.org/plugins/) for additional tooling and extended functionality. We’ll be taking advantage of the [Ethers plugin](https://hardhat.org/plugins/nomiclabs-hardhat-ethers.html) for contract deployment ([Ethers.js](https://github.com/ethers-io/ethers.js/) has some super clean contract deployment methods).
 
@@ -310,7 +310,7 @@ You might get a warning about `SPDX license identifier not provided in source fi
 
 Now that our contract is written and our configuration file is good to go, it’s time to write our contract deploy script.
 
-Navigate to the `scripts/` folder and create a new file called `deploy.js` , adding the following contents to it:
+Navigate to the `scripts/` folder and create a new file called `deploy.js`, adding the following contents to it:
 
 ```javascript
 async function main() {
@@ -359,7 +359,7 @@ Contract deployed to address: 0x3d94af870ED272Cd5370e4135F9B2Bd0e311d65D
 
 **Please copy and paste this address to save it somewhere**, as we will be using this address for later tutorials, so you don't want to lose it.
 
-If we go to the [Polygon Mumbai explorer](https://mumbai.polygonscan.com/) and search for our contract address we should able to see that it has been deployed successfully.
+If we go to the [Polygon Mumbai explorer](https://mumbai.polygonscan.com/) and search for our contract address we should be able to see that it has been deployed successfully.
 
 The `From` address should match your Metamask account address and the To address will say “Contract Creation”. But if we click into the transaction, we’ll see our contract address in the `To` field:
 
