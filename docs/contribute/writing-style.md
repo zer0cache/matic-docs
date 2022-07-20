@@ -24,7 +24,7 @@ and consistent. The Polygon team treats the Polygon Wiki as an official Docs pro
 
 We believe one of the things that makes Polygon special is its coherent design and we 
 seek to retain this defining characteristic. The Polygon team treats the Polygon Wiki 
-as an official Docs product.From the outset we defined some guidelines to ensure new 
+as an official Docs product. From the outset we defined some guidelines to ensure new 
 contributions only ever enhance the overall project:
 
 - **Quality**: Code in the Polygon project should meet the style guidelines, with 
@@ -142,7 +142,7 @@ structure, parameters, and return values for each function or method in the API.
 
 ## API documentation
 
-Conisder the following when documentating an API:
+Consider the following when documenting an API:
 
 * A solid introduction that provides a starting point.
 * A clear description of the call or request. Describe what the endpoint does.
