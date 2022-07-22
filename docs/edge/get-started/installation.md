@@ -1,7 +1,7 @@
 ---
 id: installation
 title: Installation
-description: How to install Polygon Edge.
+description: "How to install Polygon Edge."
 keywords:
   - docs
   - polygon

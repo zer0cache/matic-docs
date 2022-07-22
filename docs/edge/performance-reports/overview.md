@@ -1,7 +1,7 @@
 ---
 id: overview 
 title: Overview
-description: Introduction to Polygon Edge testing .
+description: "Introduction to Polygon Edge testing."
 keywords:
   - docs
   - polygon

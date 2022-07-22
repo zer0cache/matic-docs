@@ -1,7 +1,7 @@
 ---
 id: pos-concepts
 title: Proof of Stake
-description: Explanation and instructions regarding Proof of Stake (PoS).
+description: "Explanation and instructions regarding Proof of Stake."
 keywords:
   - docs
   - polygon

@@ -1,7 +1,7 @@
 ---
 id: set-up-ibft-locally
 title: Local Setup
-description: How to do the local setup for Polygon Edge.
+description: "Step-by-step local setup guide."
 keywords:
   - docs
   - polygon

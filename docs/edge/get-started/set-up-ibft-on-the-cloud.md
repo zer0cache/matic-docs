@@ -1,7 +1,7 @@
 ---
 id: set-up-ibft-on-the-cloud
 title: Cloud Setup
-description: How to do the cloud setup for Polygon Edge.
+description: "Step-by-step cloud setup guide."
 keywords:
   - docs
   - polygon
