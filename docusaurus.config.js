@@ -229,14 +229,6 @@ module.exports = {
       contextualSearch: false,
       algoliaOptions: {},
     },
-    announcementBar: {
-      id: 'doc revamp message',
-      content:
-        'The team is revamping the docs site.',
-      backgroundColor: '#AA84ED',
-      textColor: '#0A0B0D',
-      isCloseable: true,
-    },
     navbar: {
       hideOnScroll: true,
       logo: {
