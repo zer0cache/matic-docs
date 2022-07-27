@@ -1,6 +1,6 @@
 ---
 id: full-node-binaries
-title: Full Node Binaries
+title: Run a full node with Binaries
 description: Deploy a Full Node using binaries.
 keywords:
   - docs

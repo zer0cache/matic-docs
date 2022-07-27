@@ -67,6 +67,7 @@ module.exports = {
         "develop/network-details/technical-requirements",
         "develop/network-details/full-node-deployment",
         "develop/network-details/full-node-binaries",
+        "develop/network-details/full-node-docker",
         "develop/network-details/snapshot-instructions-heimdall-bor",
         "develop/network-details/network-rpc-endpoints",
       ],
