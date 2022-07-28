@@ -1125,6 +1125,19 @@ module.exports = {
                   ]
               }
           ]
-      }
+      },
+      {
+        type: "category",
+        label: "FAQ",
+        link: {
+          type: "generated-index",
+        },
+        items: [
+            "edge/faq/validators",
+            "edge/faq/gas",
+            "edge/faq/contracts",
+            "edge/faq/tokens",
+        ]
+    }
   ]
 };

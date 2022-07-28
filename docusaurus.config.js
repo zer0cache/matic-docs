@@ -358,6 +358,12 @@ module.exports = {
                     label: 'Nightfall FAQ',
                     target: '_blank',
                     rel: null,
+                  },
+                  {
+                    to: 'docs/edge/faq/validators/',
+                    label: 'Edge FAQ',
+                    target: '_blank',
+                    rel: null,
                   }
                 ],
         },
