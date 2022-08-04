@@ -1084,16 +1084,6 @@ module.exports = {
       },
       {
           type: "category",
-          label: "Concepts",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-              "edge/concepts/ethereum-state"
-          ]
-      },
-      {
-          type: "category",
           label: "Community",
           link: {
             type: "generated-index",
