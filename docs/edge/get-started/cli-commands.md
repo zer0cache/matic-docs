@@ -527,26 +527,6 @@ Sets block production time in seconds. Default: `2`
 
 ---
 
-<h4><i>ibft-base-timeout</i></h4>
-<Tabs>
-  <TabItem value="syntax" label="Syntax" default>
-
-    server [--ibft-base-timeout IBFT_BASE_TIMEOUT]
-
-  </TabItem>
-  <TabItem value="example" label="Example">
-
-    server --ibft-base-timeout 10
-
-  </TabItem>
-</Tabs>
-
-Sets the base value of timeout on IBFT consensus.  
-IBFT consensus timeout is calculated by `BaseTimeout + 2^(round)`, or `BaseTimeout * 30` where round exceeds 8.  
-It needs to be larger than block time and `BlockTime * 5` is set if it's not specified.
-
----
-
 <h4><i>access-control-allow-origins</i></h4>
 <Tabs>
   <TabItem value="syntax" label="Syntax" default>
