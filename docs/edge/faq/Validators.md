@@ -42,3 +42,7 @@ If we are talking about practical limitations, you're gonna see a more degraded 
 
 PoA is the default consensus mechanism. For a new cluster, to switch to PoS, you will need to add the `--pos` flag when generating the genesis file. If you have a running cluster, you can find [here](/docs/edge/consensus/migration-to-pos) how to make the switch. All the info you need about our consensus mechanisms and setup can be found on our [consensus section](/docs/edge/consensus/poa).
 
+## How do I update my nodes when there's a breaking change?
+
+You can find a detailed guide on how to do this procedure [here](/docs/edge/validator-hosting#update).
+
