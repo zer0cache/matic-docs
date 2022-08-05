@@ -9,6 +9,27 @@ module.exports = {
   customFields: {
     description: "Build your next blockchain app on Polygon.",
   },
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'ko'],
+    path: 'i18n',
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        calendar: 'gregory',
+        path: 'en',
+      },
+      ko: {
+        label: '한국어',
+        direction: 'ltr',
+        htmlLang: 'ko-KR',
+        calendar: 'gregory',
+        path: 'ko',
+      },
+    },
+  },
   plugins: [
     [
       '@docusaurus/plugin-client-redirects',

@@ -75,6 +75,10 @@
     "message": "View all communities",
     "description": "Navbar item with label View all communities"
   },
+    "item.label.End-user support": {
+    "message": "End-user support",
+    "description": "Navbar item with label End-user support"
+  },
   "item.label.PoS FAQ": {
     "message": "PoS FAQ",
     "description": "Navbar item with label PoS FAQ"
