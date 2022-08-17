@@ -97,7 +97,7 @@ You will see the testnet tokens in your MetaMask account soon after.
 
 ### Step 5: Check your Balance
 
-To double-check our balance is there, let’s make an [eth\_getBalance](https://docs.alchemy.com/alchemy/apis/polygon-api/eth_getbalance) request using [Alchemy’s composer tool](https://composer.alchemyapi.io/). Select "Polygon" as the chain, "Polygon Mumbai" as the network, "eth_getBalance" as the method, and input your address. This will return the amount of MATIC in our wallet. Check out [this video](https://youtu.be/r6sjRxBZJuU) for instructions on how to use the composer tool.
+To double-check our balance is there, let’s make an [eth\_getBalance](https://docs.alchemy.com/reference/eth-getbalance-polygon) request using [Alchemy’s composer tool](https://composer.alchemyapi.io/). Select "Polygon" as the chain, "Polygon Mumbai" as the network, "eth_getBalance" as the method, and input your address. This will return the amount of MATIC in our wallet. Check out [this video](https://youtu.be/r6sjRxBZJuU) for instructions on how to use the composer tool.
 
 ![img](/img/alchemy/get-balance.png)
 
