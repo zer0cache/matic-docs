@@ -43,7 +43,7 @@ Python is one of the most versatile programming languages; from researchers runn
 ## What is Brownie?
 -----------------
 
-Smart contract development is majorly dominated by JavaScript-based libraries like [web3.js](https://web3js.readthedocs.io/), [ethers.js](https://docs.ethers.io/), [Truffle](https://www.trufflesuite.com/docs/truffle/overview), and [Hardhat](https://hardhat.org/). Python is a versatile, highly used language and can also be used for smart contracts/web3 development; [web3.py](https://web3py.readthedocs.io/en/stable/) is a compelling Python library that fulfills web3 needs. Brownie framework is built on top of web3.py.
+Smart contract development is majorly dominated by JavaScript-based libraries like [web3.js](https://web3js.readthedocs.io/), [ethers.js](https://docs.ethers.io/), [Truffle](https://www.trufflesuite.com/docs/truffle/), and [Hardhat](https://hardhat.org/). Python is a versatile, highly used language and can also be used for smart contracts/web3 development; [web3.py](https://web3py.readthedocs.io/en/stable/) is a compelling Python library that fulfills web3 needs. Brownie framework is built on top of web3.py.
 
 [Brownie](https://eth-brownie.readthedocs.io/en/latest/index.html#brownie) is a Python-based framework to develop and test smart contracts. Brownie has support for both Solidity and Vyper contracts, and it even provides contract testing via [pytest](https://github.com/pytest-dev/pytest).
 
