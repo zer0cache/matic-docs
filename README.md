@@ -23,7 +23,7 @@ Polygon is a scaling solution for public blockchains that combines the best of E
 to offer a full-stack scaling solution.
 
 The [Polygon Wiki](https://docs.polygon.technology/) is built using [Docusaurus](https://docusaurus.io/), 
-a modern static website generator.
+a modern static website generator to build optimized websites quickly.
 
 ## How to Contribute to Polygon Wiki
 
