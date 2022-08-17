@@ -523,12 +523,8 @@ module.exports = {
             type: "generated-index",
           },
           items: [
-            "develop/the-graph",
-            {
-              type: "link",
-              label: "Covalent",
-              href: "https://www.covalenthq.com/docs/api/",
-            },
+            "develop/data/the-graph",
+            "develop/data/covalent",
           ],
         },
         "develop/dapp-fauna-polygon-react",
