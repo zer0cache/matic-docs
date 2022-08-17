@@ -45,25 +45,25 @@ To interact with the Nightfall wallet, you'll need a [Metamask](https://metamask
 - **Shield**:
 
 ```bash
-    0xff07Edffc0127E5905Fabc40Ff9718eFfE4C14a1
+   0x2eEeeC446F92c868220CAB1A2ff3cd77937e6560 
 ```
 
 - **State**:
 
 ```bash
-    0xD0CBb553d459C8d162e2F5EA585171e1C0029809
+    0xB7262d293D1cAF4F99DB4468CD5882f06e959A62
 ```
 
 
 - **Proposers**:
 
 ```bash
-    0x572f7db8Ce0131da625faD1a52e7aC87b872FBc8
+    0x14d5A90408E6a2d99fd57CF1706Ef0643122aA4d
 ```
 
 
 - **Challenges**:
 
 ```bash
-    0xB3621823bab7DE20490b5bB21284fCEdF031A7E2
+    0x77342c9ee6D9085Ef42FC7400f073FA0f361cF78
 ```
