@@ -1,7 +1,7 @@
 ---
 id: web-wallet-v2-guide
 title: Web Wallet Usage Guide
-description: Learn how to use the Polygon Web Wallet.
+description: Learn how to use the Polygon Wallet Suite.
 keywords:
   - wallet
   - matic
@@ -10,27 +10,27 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-We have revamped the Polygon Web wallet interface, which has some great UX fixes, a streamlined deposit and withdrawal process, a superior deposit and withdraw tracking module, and notifications on the application to see the status properly.
+We have revamped the Polygon Wallet Suite interface, which has some great UX fixes, a streamlined deposit and withdrawal process, a superior deposit and withdraw tracking module, and notifications on the application to see the status properly.
 
 :::note
 
-Most of the images we use here come from the Testnet environment. The Mainnet version might show a few sublte differences. 
+Most of the images we use here come from the Testnet environment. The Mainnet version might show a few sublte differences.
 
 :::
 
-:::note 
+:::note
 
 To deposit and withdraw funds, you can either start by choosing the Polygon Wallet or the Polygon Bridge on the landing page. In this tutorial, we choose to begin with the wallet link.
 
 :::
 
-## Logging into the Polygon Web Wallet
+## Logging into the Polygon Wallet Suite
 
 On how to connect to Polygon to Metamask, please refer to this [guide](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/).
 
-To log into the Polygon Web Wallet you need to access the following URL: https://wallet.polygon.technology/.
+To log into the Polygon Wallet Suite you need to access the following URL: https://wallet.polygon.technology/.
 
-To log into the testnet version of Polygon Web Wallet, you need to access the following URL: https://wallet-dev.polygon.technology/.
+To log into the testnet version of Polygon Wallet Suite, you need to access the following URL: https://wallet-dev.polygon.technology/.
 
 To learn how to connect Polygon to Metamask, please refer to this [guide](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/).
 
@@ -42,7 +42,7 @@ Once you connect your account with the Web Wallet, you will be taken to the land
 
 <img src={useBaseUrl("img/wallet/wallet-landing-page.png")} width="100%" height="100%"/>
 
-Click on the Polygon Wallet or Polygon Bridge, and you will see all your token balances on the Polygon Wallet across the bridges(PoS and Plasma). 
+Click on the Polygon Wallet or Polygon Bridge, and you will see all your token balances on the Polygon Wallet across the bridges(PoS and Plasma).
 
 <!-- <img src={useBaseUrl("img/wallet/wallet-one.png")} width="100%" height="100%"/> -->
 
@@ -117,7 +117,7 @@ You can either follow the video tutorial or follow the step-by-step guide.
 </video>
 :::
 
-### Step-by-step guide 
+### Step-by-step guide
 
 Withdrawing funds from Polygon back to the Ethereum mainnet via PoS Bridge is a simple 2-step process. For the funds to be available back on Ethereum it will take about 3 hours. To withdraw funds, click on the ‘Withdraw’ link from any of the PoS token on ‘Your tokens on Polygon Mainnet’ section.
 

@@ -125,7 +125,7 @@ module.exports = {
         "develop/wallets/walletconnect",
         {
           type: "category",
-          label: "Polygon Web Wallet",
+          label: "Polygon Wallet Suite",
           link: {
             type: "generated-index",
           },
@@ -1105,7 +1105,7 @@ module.exports = {
                       "edge/performance-reports/test-history/test-2022-03-23",
                       "edge/performance-reports/test-history/test-2022-03-02",
                       "edge/performance-reports/test-history/test-2022-01-21",
-        
+
                   ]
               }
           ]

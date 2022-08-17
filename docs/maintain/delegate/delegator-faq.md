@@ -121,7 +121,7 @@ Check for the following:
 
 ### How do I send funds from Binance or other exchanges to Polygon wallet?
 
-Technically, the Polygon web wallet/Staking interface is just a web application. Currently it supports the following wallets - Metamask. WalletConnect and WalletLink
+Technically, the Polygon Wallet Suite/Staking interface is just a web application. Currently it supports the following wallets - Metamask. WalletConnect and WalletLink
 
 So first you must withdraw your funds from Binance or any other exchange to your Ethereum address on Metamask. If you don't know how to use Metamask, google it a bit. There are plenty of videos and blogs to get started with it.
 
@@ -130,7 +130,7 @@ So first you must withdraw your funds from Binance or any other exchange to your
 A user can earn a validator spot only by if the below conditions come into play:
 1. When a validator decides to unstake from the network or
 2. Wait for the auction mechanism and replace the inactive validator.
- 
+
 The minimum stake depends on the auction process where one user outbids another.
 
 ### If I have earned rewards while delegating, and if I add additional funds to the same validator node, what happens?
