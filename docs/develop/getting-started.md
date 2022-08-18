@@ -17,40 +17,39 @@ Please feel free to raise an issue or pull request if you have any queries or su
 
 :::
 
-Welcome to **Polygon**, the most innovative and interesting platform on which to develop your blockchain application. Blockchain technology is poised to revolutionise the way the digital world handles data and does business. You can be a part of this revolution and get a head start with decentralised application (dApp) development on Polygon.
+Welcome to **Polygon (previously Matic Network)**! The most innovative and exciting platform to develop your blockchain application. Blockchain technology is poised to revolutionize how the digital world manages data and conducts business. You can join this revolution by getting a head start on Polygon's decentralized application (dApp) development.
 
-This page will be your guide into the Polygon Ecosystem. You'll find links to useful resources and websites that will bring you up to speed on how to get started with building on not only on Polygon but on the Blockchain as a whole. 
+This guide will introduce you to the Polygon ecosystem. You'll find links to valuable resources and websites that will bring you up to speed on building, not only on Polygon but also on general blockchain application development.
 
-## Key Features of Polygon
-- **Speed**
-The Matic Network employs a high throughput blockchain with consensus provided by a set of Block Producers, chosen by Staker's for each checkpoint using a Proof Of Stake layer to validate blocks and publish periodic proofs of Block Producers to the Ethereum mainnet. This allows for a high level of decentralization while maintaining a fast (approx. < 2 seconds) block confirmation times, ultimately leading to a high throughput for the Network.
+## **Key Features of Polygon**
 
-- **Scalability**
-The Polygon Network easily achieves a hypothetical transaction speed of fewer than 2 seconds on a single side chain. Using multiple side chains helps the network to handle millions of transactions per second. This mechanism (already demonstrated in the first Matic side-chain) permits the Polygon network to scale easily.
+- **Speed** The Polygon Network uses a high-throughput blockchain with consensus provided by a group of Block Producers selected by stakeholders at each checkpoint. A Proof of Stake layer is used to validate blocks and periodically post proofs of Block Producers to the Ethereum mainnet. This enables rapid block confirmation rates of about 2 seconds while preserving a high amount of decentralization, resulting in excellent throughput for the network.
+- **Scalability** Polygon Network achieves a hypothetical transaction speed of fewer than 2 seconds on a single sidechain. Using multiple sidechains helps the network to handle millions of transactions per second. This mechanism (already demonstrated in the first Matic sidechain) allows the Polygon network to scale easily.
+- **Security** Polygon's smart contracts rely on Ethereum’s security. To safeguard the network, it employs three critical security models. It uses Ethereum's **staking management contracts** and a group of incentivized validators running **Heimdall** and **Bor** nodes. Developers can also implement both models (Hybrid) into their dApp.
 
-- **Security**
-Polygon’s smart contracts rely on Ethereum’s security. It possesses three main security models it uses to secure the Network. It employs the use of staking management contracts on Ethereum as well as a set of incentivized validators running Heimdall and Bor nodes. Developers also have the option to implement both models (Hybrid) into their dApp.
+## Building on **Polygon**
 
-## Developing with Polygon
-You are already a Polygon developer if you are an Ethereum developer. All the tools you are familiar with on the Ethereum Blockchain are supported on Polygon right out of the box. Examples include Truffle, Remix, and Web3js. Switch over to Polygon RPC and get started!
+If you are an Ethereum developer, you are already a Polygon developer. Simply switch to the [Polygon RPC](https://polygon-rpc.com/) and get started. All the tools you are familiar with on the Ethereum blockchain are supported on Polygon by default, such as Truffle, Remix, and Web3js.
 
-You can deploy decentralized applications to either the Polygon Test Network or the Main Network. The Polygon Test Network(**Mumbai-Testnet**) connects with the Ethereum Goërli Testnet, which acts as its ParentChain. You can find all the network-related details here in the [network documentation](/docs/develop/network-details/network.md).
+You can deploy decentralized applications to either Polygon Mumbai Testnet or the Mainnet. The Polygon Mumbai Testnet connects with the Ethereum Goërli Testnet, which acts as its ParentChain. You can find all the network-related details in the [network documentation](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/network-details/network.md).
 
-### Deploying to the Polygon Network
-#### Wallets
-To interact with the Polygon Network, you need to have an Ethereum - based wallet because Polygon runs on EVM(Ethereum Virtual Machine). You can choose to set up a [Metamask](/docs/develop/metamask/overview) Wallet or [Arkane](/docs/develop/wallets/arkane/intro) Wallet. You can find more information on wallet-related details and why you need to have one in our wallet documentation.
+### **Deploying to the Polygon Network**
 
-#### Smart Contracts
-Polygon supports a good number of services you can use to test, compile, debug and deploy decentralized applications onto the Polygon Network. These include deployment using [Alchemy](/docs/develop/alchemy), [Chainstack](/docs/develop/chainstack), [QuickNode](/docs/develop/quicknode), [Remix](/docs/develop/remix), [Truffle](/docs/develop/truffle), [Hardhat](/docs/develop/hardhat) and even [Replit](/docs/develop/replit).
+### **Wallets**
 
-#### Connecting to Polygon
-You can add Polygon to Metamask or directly using Arkane, which allows you to connect to Polygon using [RPC](/docs/develop/metamask/config-polygon-on-metamask).
+To interact with the Polygon Network, you need to have an Ethereum-based wallet because Polygon runs on Ethereum Virtual Machine (EVM). You can choose to set up a [Metamask](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/metamask/overview) or [Arkane](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/wallets/arkane/intro) Wallet. More information on wallet-related details and why you need one can be found in our [wallet documentation](https://docs.polygon.technology/docs/develop/wallets/getting-started).
 
-:::note
-You can use the same RPC with web3.js.
-:::
+### **Smart Contracts**
 
-```jsx
+Polygon supports many services you can use to test, compile, debug, and deploy decentralized applications onto the Polygon Network. These include deployment using [Alchemy](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/alchemy), [Chainstack](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/chainstack), [QuickNode](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/quicknode), [Remix](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/remix), [Truffle](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/truffle), [Hardhat](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/hardhat), and [Replit](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/replit).
+
+### **Connecting to Polygon**
+
+You can add Polygon to Metamask or directly use Arkane, which allows you to connect to Polygon using [RPC](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/).
+
+:::note You can use the same RPC with web3.js. :::
+
+```js
 // Javascript
 const Web3 = require('Web3')
 
@@ -63,10 +62,12 @@ const web3 = new Web3('https://polygon-mainnet.g.alchemy.com/v2/<your-api-key>')
 // web3 object is now connected with Polygon's node
 ```
 
-### Building a new dApp on Polygon?
-Decentralized applications (dApps) act as the bridge between users and their data privacy on the blockchain. The growing number of dApps confirms their effectiveness within the blockchain ecosystem, solving problems like completing transactions between two participants without the prerequisite of central authority through smart contracts.
+### **Building a new dApp on Polygon?**
 
-If you do not have experience building Decentralized applications (dApps), below are links to resources that can bring you up to speed on the tools required to build, debug and deploy Decentralized applications (dApps) to the Polygon Network and the blockchain as a whole.
+Decentralized applications (dApps) act as the bridge between users and their data privacy on the blockchain. The increasing number of dApps validates their usefulness within the blockchain ecosystem, solving challenges like executing transactions between two participants without the need for central authority via smart contracts.
+
+Suppose you have no prior experience building decentralized applications (dApps). In that case, the below-mentioned resources will give you a head start on the tools required to build, debug, and deploy dApps on the Polygon Network.
+
 - [Full Stack dApp: Tutorial Series](https://kauri.io/full-stack-dapp-tutorial-series/5b8e401ee727370001c942e3/c)
 - [Web3.js](https://www.dappuniversity.com/articles/web3-js-intro)
 - [Ethers.js](https://docs.ethers.io/v5/)
@@ -76,19 +77,20 @@ If you do not have experience building Decentralized applications (dApps), below
 - [Arkane](https://docs.polygon.technology/docs/develop/wallets/arkane/intro)
 - [Develop a dApp using Fauna, Polygon and React](https://docs.polygon.technology/docs/develop/dapp-fauna-polygon-react)
 
-### Already have a dApp?
-If you already have a decentralized application (dApp) and you are looking for a platform to help you efficiently scale, then you are in the right place because Polygon allows you to:
+### **Already have a dApp?**
 
-1. **Easily migrate from Ethereum Virtual Machine (EVM) based chain**: Polygon prides itself in being the ultimate Layer-2 scaling solution for Ethereum. You don't have to worry about the underlying architecture when deploying or moving your dApps to the Polygon chain as long as it is EVM compatible.
-2. **Use Polygon as a faster transactions layer**: Deploying your dApp to the Polygon Mainnet allows you to use Polygon as a faster transaction layer for your dApps, you can get your tokens mapped by us. You can join our [telegram technical group](http://bit.ly/matic-technical-group) to learn more.
+If you already have a decentralized application (dApp) and are looking for a platform to help you scale efficiently, then you are at the right place because Polygon allows you to:
 
-## Side note
-If this is overwhelming, that’s okay! You can jump right into the fire and start hacking. You’ve got this! 
-Here are a few notes to take before you start diving into resources, repositories, and documentation:
+1. **Easily migrate from Ethereum Virtual Machine (EVM) based chain**: Polygon prides itself in being the ultimate Layer-2 scaling solution for Ethereum. You don't have to worry about the underlying architecture while moving or deploying your dApps to the Polygon Network as long as it is EVM-compatible.
+2. **Use Polygon as a faster transaction layer**: Deploying your dApp to the Polygon Mainnet allows you to leverage Polygon as a faster transaction layer for your dApp. Additionally, you can get your tokens mapped by us. You can join our [technical discussions group](http://bit.ly/matic-technical-group) on Telegram to learn more.
 
-1. **Beware the cost of being on the bleeding edge**: Like typical niche programming, dApps and blockchain development moves very quickly. While researching, you may find complex code repositories, 404s on a documentation site, or even no documentation. Use the opportunity and see it as an invitation to reach out to us on any of our social channels. The community is very open and welcoming.
+## **Side Note**
 
-2. **The learning curve may be daunting, but the barrier to entry is low**: The community is very open and welcoming. Projects welcome Pull Requests(PRs) from outsiders, and support will be there if you’ve exhausted every other resource. We’re working on creating a better world and can use all the help we can get. We’re just glad you’re here.
+If this is overwhelming, that’s alright! You can jump right into the action and start hacking. You’ve got this! Here are some notes before you start diving into resources, repositories, and docs:
 
-## Stay Updated
-Decentralized application (dApp) development encourages network decentralization and embodies it. As developers worldwide, the best way to stay connected with the Polygon development is to follow our Social Media accounts. Links to all the Polygon community are [here](https://polygon.technology/community/).
+1. **Beware the cost of being on the bleeding edge**: Like typical niche programming, dApps and blockchain development moves very quickly. While researching, you may find complex code repositories, 404s on a documentation site, or even no documentation. Use that opportunity to reach out to us via any social media channel.
+2. **The learning curve may be daunting, but the barrier to entry is low**: The community is very open and welcoming! Projects welcome pull requests from outsiders and resolve any blockers actively. We’re working on creating a better world and contribution in any form is appreciated. We’ll be grateful to onboard you into this amazing Web3 ecosystem.
+
+## **Stay Updated**
+
+Decentralized application development encourages network decentralization. Follow our social media handles for more insights and updates about the Polygon ecosystem. You can find the links to all the Polygon communities [here](https://polygon.technology/community/).
