@@ -50,11 +50,11 @@ Assuming that you have already added the network and custom RPC for Polygon main
 
 <img src={useBaseUrl("img/wallet-bridge/wallet-faq-1.png")} width="30%" height="30%" />
 
-1. Once the window expands you can select Polygon Network to switch.
+1. Once the window expands you can select Polygon Mainnet to switch:
 
-<img src={useBaseUrl("img/wallet-bridge/wallet-faq-2.png")} width="30%" height="30%" />
+<img src={useBaseUrl("img/wallet-bridge/wallet-faq-2.png")} width="357" height="600" />
 
-You have now switched to Polygon mainnet.
+You have now switched to Polygon Mainnet.
 
 You can refer to this link if you are looking for instructions on how to add the network to Metamask: [https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/)
 
@@ -66,20 +66,16 @@ Please follow the guide provided [here](https://docs.polygon.technology/docs/de
 
 You need to manually add the custom token address of WETH to Metamask.
 
-Open Metamask and scroll down to click on add tokens.
+Open Metamask and scroll down to click on **Import tokens**.
 
-<img src={useBaseUrl("img/wallet-bridge/wallet-faq-3.png")} width="30%" height="30%" />
+<img src={useBaseUrl("img/wallet-bridge/wallet-faq-3.png")} width="357" height="600" />
 
 
-Then, select Custom Token to add the relevant contract address, symbol and the decimal precision. Contract addresses (PoS-WETH in this case) can be found on this link: [https://docs.polygon.technology/docs/develop/network-details/mapped-tokens/](https://docs.polygon.technology/docs/develop/network-details/mapped-tokens/)
+Then, add the relevant contract address, symbol and the decimal precision. Contract addresses (PoS-WETH in this case) can be found on this link: [https://docs.polygon.technology/docs/develop/network-details/mapped-tokens/](https://docs.polygon.technology/docs/develop/network-details/mapped-tokens/). You will need to add the child token address to view balances on Polygon Mainnet. Decimal of precision is 18 for WETH (generally, for most tokens decimal of precision is 18).
 
-You will need to add the child token address to view balances on Polygon mainnet.
+Once you fill in all the fields, you can click on **Add Custom Token** and your token will be added.
 
-Decimal of precision is 18 for WETH (generally, for most tokens decimal of precision is 18).
-
-Once you fill in all the fields, you can click on next and your token will be added.
-
-<img src={useBaseUrl("img/wallet-bridge/wallet-faq-4.png")} width="30%" height="30%" />
+<img src={useBaseUrl("img/wallet-bridge/wallet-faq-4.png")} width="357" height="600" />
 
 
 ## Can I send my tokens from Polygon to any other wallet/exchange ?
@@ -198,13 +194,13 @@ We have listed some common errors that the users might face. You can find the so
   - ### Common Errors
   a. Withdrawal stuck on the Initialised phase.   
 
-    <img src={useBaseUrl("img/wallet-bridge/stuckAtIntialised.png")} height="500px"/>
+    <img src={useBaseUrl("img/wallet-bridge/plasma-progress-stuck.png")} width="357" height="800"/>
 
-    This normally occurs when the transaction gets replaced and the wallet web application is not able to detect the replaced transaction hash. Please follow the instructions on [https://polygon-withdraw.matic.network/](https://polygon-withdraw.matic.network/) and complete your withdrawal.
+    This normally occurs when the transaction gets replaced and the wallet web application is not able to detect the replaced transaction hash. Please follow the instructions on [https://withdraw.polygon.technology/](https://withdraw.polygon.technology/) and complete your withdrawal.
 
   b. RPC Error
 
-    <img src={useBaseUrl("img/wallet-bridge/RPCError.png")} height="500px"/>   
+    <img src={useBaseUrl("img/wallet-bridge/checkpoint-rpc-error.png")} width="357" height="600"/>   
 
     The current RPC error you're facing might be due to an RPC overload.
 
@@ -212,7 +208,7 @@ We have listed some common errors that the users might face. You can find the so
 
   c.
 
-  <img src={useBaseUrl("img/wallet-bridge/serversStumbled.png")} height="500px"/>  
+  <img src={useBaseUrl("img/wallet-bridge/checkpoint-stumbled-error.png")} width="357" height="600"/>  
 
   This is usually an off-and-on error that gets resolved automatically. In case you are still receiving the same error while reinitiating the step, do [raise a support ticket](https://support.polygon.technology/) with all the relevant information to troubleshoot this further.
 
@@ -328,12 +324,12 @@ If the transaction is still at the **Approve** step, it is not yet complete. To 
 
 ## The gas fee for my withdrawal transaction is too high.
 
-Gas fees on the Polygon network are always very low, but we can’t say the same for the Ethereum mainnet fees. 
-If you have started the transaction, it is important not to cancel it. Instead, you can wait for the gas fees to lower or add more ETH to your account. 
+Gas fees on the Polygon network are always very low, but we can’t say the same for the Ethereum mainnet fees.
+If you have started the transaction, it is important not to cancel it. Instead, you can wait for the gas fees to lower or add more ETH to your account.
 
 ## There are some unauthorized transactions in my wallet. Is my wallet hacked?
 
-Unfortunately, the network cannot revert unwanted transactions. 
+Unfortunately, the network cannot revert unwanted transactions.
 It is always important to be careful with your private keys and **never share them with anyone**.
 If you still have some remaining funds, transfer them immediately to a new wallet.
 

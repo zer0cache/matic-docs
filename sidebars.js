@@ -930,7 +930,7 @@ module.exports = {
       "faq/commit-chain-multisigs",
       "maintain/delegate/delegator-faq",
       "maintain/validate/faq/validator-faq",
-      // "faq/staking-tutorials",
+      "faq/staking-faq",
       {
         type: "category",
         label: "Wallet FAQs",
