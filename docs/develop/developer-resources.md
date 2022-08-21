@@ -40,7 +40,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 ## External Documentation
 
-- [Alchemy's Polygon Docs](https://alchemy.com/?a=polygon-docs)
+- [Alchemy's Polygon Docs](https://docs.alchemy.com/reference/polygon-api-quickstart)
 - [QuickNode's Polygon Docs](https://www.quicknode.com/docs/polygon?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide)
 - [ConsenSys Academy Developer Course](https://consensys.net/academy/ondemand/)
 - [Infura Docs](https://infura.io/docs)
