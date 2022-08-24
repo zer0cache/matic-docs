@@ -86,7 +86,7 @@ defaultValue="beginner"
 className="tabs"
 values={[
 {label: 'Choose a Hub', value: 'beginner'},
-{label: 'Browse by Product', value: 'products'},
+{label: 'Browse by product', value: 'products'},
 ]}>
 
 <TabItem value="beginner">
