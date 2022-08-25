@@ -35,6 +35,8 @@ Follow the instructions on the articles:
     - [Using Truffle](/docs/develop/truffle)
 * Configure the Web3 RPC-URL to https://rpc-mumbai.matic.today, *Everything else remains the same*
 
+
+
 ## Jump to the Essentials
 
 - [Network Details](/docs/integrate/network-detail) -> Information on all Polygon Testnets and Beta-Mainnet.
