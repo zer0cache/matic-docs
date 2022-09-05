@@ -78,7 +78,13 @@ node-3> polygon-edge secrets init --data-dir data-dir
 node-4> polygon-edge secrets init --data-dir data-dir
 ````
 
-Each of these commands will print the [node ID](https://docs.libp2p.io/concepts/peer-id/). You will need that information for the next step.
+Each of these commands will print the validator key, bls public key and the [node ID](https://docs.libp2p.io/concepts/peer-id/). You will need the Node ID of the first node for the next step.
+
+:::warning Save BLS public key
+
+If the network is running with BLS, which it does by default, the BLS public key is required for proposing in the PoA mode and for staking in the PoS mode. Polygon Edge only saves BLS private key, it is your responsibility to preserve BLS public key.
+
+:::
 
 :::warning Keep your data directory to yourself!
 
@@ -145,6 +151,7 @@ you may securely generate the genesis.json with those validators in the initial 
 ```
 [SECRETS INIT]
 Public key (address) = 0xC12bB5d97A35c6919aC77C709d55F6aa60436900
+BLS Public key       = 0x9952735ca14734955e114a62e4c26a90bce42b4627a393418372968fa36e73a0ef8db68bba11ea967ff883e429b3bfdf
 Node ID              = 16Uiu2HAmVZnsqvTwuzC9Jd4iycpdnHdyVZJZTpVC8QuRSKmZdUrf
 ```
 
