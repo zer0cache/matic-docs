@@ -29,7 +29,7 @@ Here, the Remix team also provides some explanation about a smart contract typic
 - Verify the smart contract
 
 ## Getting started with [Remix IDE](https://remix.ethereum.org/)
-Remix is a Ethereum-focused IDE: an online platform to develop smart contracts. To start building a smart contract, click on **New File** nd name it `HelloWorld.sol`:
+Remix is a Ethereum-focused IDE: an online platform to develop smart contracts. To start building a smart contract, click on **New File** and name it `HelloWorld.sol`:
 
 <img src={useBaseUrl("img/remix/new-file.png")} />
 
