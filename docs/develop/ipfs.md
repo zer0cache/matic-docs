@@ -11,11 +11,20 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 ### Context
 
-Polygon blockchain can be used to store data. But is it really worth the cost? To put into perspective 1 byte of a data can cost you 50 gwei gas in matic token, or equal to about $0.0166 in today's market. It's maybe small for just one byte of data but let's say you want to store a file with 1 GB data (10^6 bytes) it will cost you 6.4x10^11 gwei or 640 matic. Even matic consumes less gas then too its not easy task to store it in on-chain. The solution for this is IPFS, the InterPlanetary File System.&#x20;
+Polygon blockchain reduces transaction costs to store data versus Ethereum mainnet; however, even these lower costs add up quickly when storing sizable files. Developers also must consider block size constraints and transaction speed limitations when storing data onchain. One solution which addresses all of these concerns is IPFS, the InterPlanetary File System.&#x20;
 
 #### What is IPFS?&#x20;
 
-IPFS is a distributed system for storing and accessing files, websites, applications, and data. Using IPFS as a storage you don't need to store entire files to polygon blockchain you just need to store the hash of the IPFS to the polygon blockchain, thus make it much cheaper than just storing the file. For more details refer [IPFS docs](https://docs.ipfs.io/). &#x20;
+IPFS is a distributed system for storing and accessing files, websites, applications, and data. IPFS uses decentralization, content addressing, and a robust peer-to-peer network of active participants to allow users to store, request, and transfer verifiable data with each other. 
+
+Decentralization makes it possible to download a file from many locations that aren't managed by one organization, providing resilience and censorship resistance right out of the box.  
+
+Content addressing uses cryptography to create a uniquely verifable hash based upon what is in a file rather than where it is located. The resulting content identifier (CID) provides assurance a piece of data is identical regardless of where it is stored.
+
+Finally, an ever growing active community of users makes this peer-to-peer sharing of content possible. Developers upload and pin content to IPFS while Filecoin storage providers help to ensure persistent storage of that content. 
+
+
+IPFS based storage allows you to simply store the CID for your content rather than loading entire files to Polygon blockchain; allowing for decreased costs, larger file sizes, and provably persistent storage. For more details refer [IPFS Docs](https://docs.ipfs.io/). &#x20;
 
 ### Example Projects
 
