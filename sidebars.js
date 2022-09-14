@@ -518,6 +518,7 @@ module.exports = {
       items: [
         "develop/ipfs",
         "develop/filecoinhelpers",
+        "develop/crusthelpers",
         "develop/nftstorage",
       ],
     },
