@@ -92,7 +92,7 @@ Click on the “Continue” button from “Confirm Transfer” popup.
 After you click on the “Continue” button, you need to confirm all your transactions in your MetaMask to make the transaction successful.
 
 Once you confirm the transaction, you will see a “Transfer in Progress” popup which will show you the Deposit status.
-It will take ~7-8 minutes for the tokens to show up on Polygon.
+It will take ~22-30 minutes for the tokens to show up on Polygon.
 
 <img src={useBaseUrl("img/wallet/Wallet-8.png")} width="50%" height="50%"/>
 

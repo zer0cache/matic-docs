@@ -141,7 +141,7 @@ Reach out to the Polygon team on Discord or Telegram and get your token listed. 
 
 ## What do I do if the deposit is confirmed but the balance is not getting updated?
 
-It takes 7-8 minutes for the deposit transaction to complete. Please wait for some time and click on "refresh balance".
+It takes 22-30 minutes for the deposit transaction to complete. Please wait for some time and click on "refresh balance".
 
 ## What should I do if the checkpoint is not happening?
 

@@ -44,7 +44,7 @@ The child and root tunnel contracts enable the deposit of tokens on the root cha
 3. Proceed to call `deposit()` with the address of the receiver and amount on the root chain to receive the equivalent child token on the child chain. This will also map the token automatically. Alternatively, you can call `mapToken()` first before depositing.
 4. That's it! 🎉 After mapping, you should now be able to execute cross-chain transfers using the `deposit` and `withdraw` functions of the tunnel.
 
-**Note:** After you have performed `deposit()` on the root chain, it will take 10-15 minutes for state sync to happen. Once  state sync happens, you will get the tokens deposited at the given address.
+**Note:** After you have performed `deposit()` on the root chain, it will take 22-30 minutes for state sync to happen. Once  state sync happens, you will get the tokens deposited at the given address.
 
 ### Steps for ERC20 transfer from Polygon to Ethereum
 
@@ -56,7 +56,7 @@ The child and root tunnel contracts enable the deposit of tokens on the root cha
 2. Approve the tokens for transfer by calling the `approve()` function of the root token with the address of the root tunnel and the token ID as the arguments.
 3. Proceed to call `deposit()` with the address of the receiver and token ID on the root chain to receive the equivalent child token on the child chain. This will also map the token automatically. Alternatively, you can call `mapToken()` first before depositing.
 
-**Note:** After you have performed `deposit()` on the root chain, it will take 10-15 minutes for state sync to happen. Once  state sync happens, you will get the tokens deposited at the given address.
+**Note:** After you have performed `deposit()` on the root chain, it will take 22-30 minutes for state sync to happen. Once  state sync happens, you will get the tokens deposited at the given address.
 
 #### Steps for ERC721 transfer from Polygon to Ethereum
 
@@ -83,7 +83,7 @@ The child and root tunnel contracts enable the deposit of tokens on the root cha
 3. Call `mapToken()` on FxERC1155RootTunnel with your deployed token's address as `rootToken`. This will send a message to FxERC1155ChildTunnel instructing it to deploy and map the ERC1155 token on Polygon. To query your child token address, call `rootToChildToken` on FxERC1155ChildTunnel.
 4. Call `deposit()` on FxERC1155RootTunnel with the address of the token on Ethereum as `rootToken`, receiver as `user`, token Id as `id` and the amount as `amount`. Alternatively, you can also call `depositBatch()` for multiple token ids.
 
-**Note:** After you have performed `deposit()` on the root chain, it will take 10-15 minutes for state sync to happen. Once  state sync happens, you will get the tokens deposited at the given address.
+**Note:** After you have performed `deposit()` on the root chain, it will take 22-30 minutes for state sync to happen. Once  state sync happens, you will get the tokens deposited at the given address.
 
 #### Steps to withdraw ERC1155 tokens from Polygon to Ethereum
 
@@ -124,7 +124,7 @@ Feed the generated burn proof as the argument to `receiveMessage()` in `FxMintab
 
 1. Make sure you approve `FxMintableERC20RootTunnel` to transfer your tokens.
 2. Call `deposit()` in `FxMintableERC20RootTunnel` with the `rootToken` as address of root token and `user` as the recipient.
-3. Wait for the state sync event (~10-15 mins). After this, you can query the target recipient's balance on the child chain.
+3. Wait for the state sync event (~22-30 mins). After this, you can query the target recipient's balance on the child chain.
 
 ## Example deployments
 
