@@ -6,7 +6,6 @@
  */
 
 module.exports = {
-
   basics: [
     "home/new-to-polygon",
     {
@@ -39,20 +38,15 @@ module.exports = {
         "home/polygon-basics/what-is-proof-of-stake",
         "maintain/polygon-basics/who-is-delegator",
         "maintain/polygon-basics/who-is-validator",
-        "home/architecture/polygon-architecture"
-      ]
+        "home/architecture/polygon-architecture",
+      ],
     },
     "home/faq",
   ],
 
-  delegate: [
-    "maintain/delegate/delegate",
-    "maintain/delegate/delegator-faq",
-  ],
+  delegate: ["maintain/delegate/delegate", "maintain/delegate/delegator-faq"],
 
-  govern: [
-    "maintain/govern/governance",
-  ],
+  govern: ["maintain/govern/governance"],
 
   develop: [
     "develop/getting-started",
@@ -79,8 +73,8 @@ module.exports = {
           items: [
             "develop/network-details/erigon/client-setup",
             "develop/network-details/erigon/archive-node-ansible",
-            "develop/network-details/erigon/archive-node-binaries"
-          ]
+            "develop/network-details/erigon/archive-node-binaries",
+          ],
         },
       ],
     },
@@ -112,9 +106,7 @@ module.exports = {
           link: {
             type: "generated-index",
           },
-          items: [
-            "develop/metamask/config-polygon-on-wallet-link",
-          ],
+          items: ["develop/metamask/config-polygon-on-wallet-link"],
         },
 
         {
@@ -167,7 +159,7 @@ module.exports = {
             "develop/ethereum-polygon/matic-js/setup/index",
             "develop/ethereum-polygon/matic-js/setup/web3",
             "develop/ethereum-polygon/matic-js/setup/ethers",
-          ]
+          ],
         },
         "develop/ethereum-polygon/matic-js/api-architecture",
         {
@@ -196,7 +188,7 @@ module.exports = {
                 "develop/ethereum-polygon/matic-js/pos/erc20/withdraw-exit",
                 "develop/ethereum-polygon/matic-js/pos/erc20/withdraw-exit-faster",
                 "develop/ethereum-polygon/matic-js/pos/erc20/is-withdraw-exited",
-              ]
+              ],
             },
             {
               type: "category",
@@ -225,7 +217,7 @@ module.exports = {
                 "develop/ethereum-polygon/matic-js/pos/erc721/is-withdraw-exited-many",
                 "develop/ethereum-polygon/matic-js/pos/erc721/transfer",
                 "develop/ethereum-polygon/matic-js/pos/erc721/withdraw-start-with-meta-data",
-              ]
+              ],
             },
             {
               type: "category",
@@ -249,12 +241,12 @@ module.exports = {
                 "develop/ethereum-polygon/matic-js/pos/erc1155/is-withdraw-exited",
                 "develop/ethereum-polygon/matic-js/pos/erc1155/is-withdraw-exited-many",
                 "develop/ethereum-polygon/matic-js/pos/erc1155/transfer",
-              ]
+              ],
             },
             "develop/ethereum-polygon/matic-js/pos/is-check-pointed",
             "develop/ethereum-polygon/matic-js/pos/is-deposited",
-            "develop/ethereum-polygon/matic-js/pos/deposit-ether"
-          ]
+            "develop/ethereum-polygon/matic-js/pos/deposit-ether",
+          ],
         },
         {
           type: "category",
@@ -262,50 +254,51 @@ module.exports = {
           link: {
             type: "generated-index",
           },
-          items: [{
-            type: "category",
-            label: "ERC20",
-            link: {
-              type: "generated-index",
+          items: [
+            {
+              type: "category",
+              label: "ERC20",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "develop/ethereum-polygon/matic-js/plasma/erc20/index",
+                "develop/ethereum-polygon/matic-js/plasma/erc20/get-balance",
+                "develop/ethereum-polygon/matic-js/plasma/erc20/approve",
+                "develop/ethereum-polygon/matic-js/plasma/erc20/approve-max",
+                "develop/ethereum-polygon/matic-js/plasma/erc20/get-allowance",
+                "develop/ethereum-polygon/matic-js/plasma/erc20/deposit",
+                "develop/ethereum-polygon/matic-js/plasma/erc20/transfer",
+                "develop/ethereum-polygon/matic-js/plasma/erc20/withdraw-start",
+                "develop/ethereum-polygon/matic-js/plasma/erc20/withdraw-confirm",
+                "develop/ethereum-polygon/matic-js/plasma/erc20/withdraw-confirm-faster",
+                "develop/ethereum-polygon/matic-js/plasma/erc20/withdraw-exit",
+              ],
             },
-            items: [
-              "develop/ethereum-polygon/matic-js/plasma/erc20/index",
-              "develop/ethereum-polygon/matic-js/plasma/erc20/get-balance",
-              "develop/ethereum-polygon/matic-js/plasma/erc20/approve",
-              "develop/ethereum-polygon/matic-js/plasma/erc20/approve-max",
-              "develop/ethereum-polygon/matic-js/plasma/erc20/get-allowance",
-              "develop/ethereum-polygon/matic-js/plasma/erc20/deposit",
-              "develop/ethereum-polygon/matic-js/plasma/erc20/transfer",
-              "develop/ethereum-polygon/matic-js/plasma/erc20/withdraw-start",
-              "develop/ethereum-polygon/matic-js/plasma/erc20/withdraw-confirm",
-              "develop/ethereum-polygon/matic-js/plasma/erc20/withdraw-confirm-faster",
-              "develop/ethereum-polygon/matic-js/plasma/erc20/withdraw-exit",
-            ]
-          },
-          {
-            type: "category",
-            label: "ERC721",
-            link: {
-              type: "generated-index",
+            {
+              type: "category",
+              label: "ERC721",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "develop/ethereum-polygon/matic-js/plasma/erc721/index",
+                "develop/ethereum-polygon/matic-js/plasma/erc721/get-tokens-count",
+                "develop/ethereum-polygon/matic-js/plasma/erc721/get-token-id-at-index-for-user",
+                "develop/ethereum-polygon/matic-js/plasma/erc721/get-all-tokens",
+                "develop/ethereum-polygon/matic-js/plasma/erc721/safe-deposit",
+                "develop/ethereum-polygon/matic-js/plasma/erc721/withdraw-start",
+                "develop/ethereum-polygon/matic-js/plasma/erc721/withdraw-confirm",
+                "develop/ethereum-polygon/matic-js/plasma/erc721/withdraw-confirm-faster",
+                "develop/ethereum-polygon/matic-js/plasma/erc721/withdraw-exit",
+                "develop/ethereum-polygon/matic-js/plasma/erc721/transfer",
+              ],
             },
-            items: [
-              "develop/ethereum-polygon/matic-js/plasma/erc721/index",
-              "develop/ethereum-polygon/matic-js/plasma/erc721/get-tokens-count",
-              "develop/ethereum-polygon/matic-js/plasma/erc721/get-token-id-at-index-for-user",
-              "develop/ethereum-polygon/matic-js/plasma/erc721/get-all-tokens",
-              "develop/ethereum-polygon/matic-js/plasma/erc721/safe-deposit",
-              "develop/ethereum-polygon/matic-js/plasma/erc721/withdraw-start",
-              "develop/ethereum-polygon/matic-js/plasma/erc721/withdraw-confirm",
-              "develop/ethereum-polygon/matic-js/plasma/erc721/withdraw-confirm-faster",
-              "develop/ethereum-polygon/matic-js/plasma/erc721/withdraw-exit",
-              "develop/ethereum-polygon/matic-js/plasma/erc721/transfer",
-            ]
-          },
             "develop/ethereum-polygon/matic-js/plasma/is-deposited",
             "develop/ethereum-polygon/matic-js/plasma/is-check-pointed",
             "develop/ethereum-polygon/matic-js/plasma/withdraw-exit",
-            "develop/ethereum-polygon/matic-js/plasma/deposit-ether"
-          ]
+            "develop/ethereum-polygon/matic-js/plasma/deposit-ether",
+          ],
         },
         "develop/ethereum-polygon/matic-js/fx-portal",
         "develop/ethereum-polygon/matic-js/set-proof-api",
@@ -319,7 +312,7 @@ module.exports = {
             "develop/ethereum-polygon/matic-js/advanced/abi-manager",
             "develop/ethereum-polygon/matic-js/advanced/plugin",
             "develop/ethereum-polygon/matic-js/advanced/exit-util",
-          ]
+          ],
         },
       ],
     },
@@ -347,9 +340,7 @@ module.exports = {
           link: {
             type: "generated-index",
           },
-          items: [
-            "develop/nft-tutorial",
-          ],
+          items: ["develop/nft-tutorial"],
         },
       ],
     },
@@ -374,7 +365,7 @@ module.exports = {
             "develop/remix",
             "develop/truffle",
             "develop/hardhat",
-            "develop/replit"
+            "develop/replit",
           ],
         },
         "develop/network-details/genesis-contracts",
@@ -395,9 +386,7 @@ module.exports = {
           link: {
             type: "generated-index",
           },
-          items: [
-            "develop/advanced/calling-plasma-contracts",
-          ],
+          items: ["develop/advanced/calling-plasma-contracts"],
         },
       ],
     },
@@ -469,7 +458,7 @@ module.exports = {
             "develop/ethereum-polygon/pos/deposit-withdraw-event-pos",
             "develop/ethereum-polygon/pos/deployment",
             "develop/ethereum-polygon/pos/mapping-assets",
-            "develop/pos-using-metamask"
+            "develop/pos-using-metamask",
           ],
         },
         {
@@ -485,7 +474,7 @@ module.exports = {
             "develop/ethereum-polygon/plasma/erc721",
             "develop/ethereum-polygon/plasma/deposit-withdraw-event-plasma",
             "develop/ethereum-polygon/plasma/mapping-assets",
-            "develop/plasma-using-metamask"
+            "develop/plasma-using-metamask",
           ],
         },
         "develop/ethereum-polygon/mintable-assets",
@@ -515,6 +504,7 @@ module.exports = {
       link: {
         type: "generated-index",
       },
+      items: ["develop/ipfs", "develop/filecoinhelpers", "develop/nftstorage"],
       items: [
         "develop/ipfs",
         "develop/filecoinhelpers",
@@ -537,6 +527,9 @@ module.exports = {
           },
           items: [
             "develop/data/the-graph",
+            "develop/data/graph-data",
+            "develop/data/graph-entities",
+            "develop/data/graph-queries",
             "develop/data/covalent",
           ],
         },
@@ -559,8 +552,8 @@ module.exports = {
           },
           items: [
             "develop/tools/polygon-faucet",
-            "develop/tools/alchemy-faucet"
-          ]
+            "develop/tools/alchemy-faucet",
+          ],
         },
         {
           type: "category",
@@ -568,9 +561,7 @@ module.exports = {
           link: {
             type: "generated-index",
           },
-          items: [
-            "develop/tools/polygon-gas-station"
-          ]
+          items: ["develop/tools/polygon-gas-station"],
         },
         {
           type: "category",
@@ -578,9 +569,7 @@ module.exports = {
           link: {
             type: "generated-index",
           },
-          items: [
-            "develop/ethereum-polygon/tools/widget"
-          ]
+          items: ["develop/ethereum-polygon/tools/widget"],
         },
       ],
     },
@@ -619,7 +608,6 @@ module.exports = {
             "maintain/validator/core-components/state-sync-mechanism",
           ],
         },
-
       ],
     },
     {
@@ -674,7 +662,7 @@ module.exports = {
             "maintain/validate/faq/known-issues",
             "maintain/validate/faq/how-to",
             "maintain/validate/faq/validator-faq",
-          ]
+          ],
         },
         "maintain/reporting-issues",
         "maintain/glossary",
@@ -703,12 +691,14 @@ module.exports = {
             {
               type: "link",
               label: "Polygon-Mainnet",
-              href: "https://github.com/maticnetwork/static/blob/master/network/mainnet/v1/index.json",
+              href:
+                "https://github.com/maticnetwork/static/blob/master/network/mainnet/v1/index.json",
             },
             {
               type: "link",
               label: "Mumbai",
-              href: "https://static.matic.network/network/testnet/mumbai/index.json",
+              href:
+                "https://static.matic.network/network/testnet/mumbai/index.json",
             },
           ],
         },
@@ -725,10 +715,8 @@ module.exports = {
       link: {
         type: "generated-index",
       },
-      items: [
-        "integrate/install-gcp",
-      ],
-    }
+      items: ["integrate/install-gcp"],
+    },
   ],
 
   contribute: [
@@ -750,10 +738,7 @@ module.exports = {
       link: {
         type: "generated-index",
       },
-      items: [
-        "contribute/writing-style",
-        "contribute/tutorial-template",
-      ],
+      items: ["contribute/writing-style", "contribute/tutorial-template"],
     },
     {
       type: "category",
@@ -761,10 +746,7 @@ module.exports = {
       link: {
         type: "generated-index",
       },
-      items: [
-        "contribute/non-native-speakers",
-        "contribute/how-to-translate",
-      ],
+      items: ["contribute/non-native-speakers", "contribute/how-to-translate"],
     },
   ],
 
@@ -917,10 +899,10 @@ module.exports = {
             "nightfall/protocol/commitments",
             "nightfall/protocol/secrets",
             "nightfall/protocol/circuits",
-            "nightfall/protocol/protocol"
-          ]
+            "nightfall/protocol/protocol",
+          ],
         },
-      ]
+      ],
     },
     {
       type: "category",
@@ -931,210 +913,206 @@ module.exports = {
       items: [
         "nightfall/tools/nightfall-wallet",
         "nightfall/tools/explorer",
-        "nightfall/tools/nightfall-sdk"
-      ]
+        "nightfall/tools/nightfall-sdk",
+      ],
     },
     "nightfall/faq/faq",
   ],
 
   faq: [
-      "faq/general-faq",
-      "faq/technical-faqs",
-      // "faq/delegator-faq",
-      "faq/commit-chain-multisigs",
-      "maintain/delegate/delegator-faq",
-      "maintain/validate/faq/validator-faq",
-      "faq/staking-faq",
-      {
-        type: "category",
-        label: "Wallet FAQs",
-        link: {
-          type: "generated-index",
-        },
-        items: [
-          "faq/wallet-bridge-faq",
-          "faq/adding-a-custom-token",
-            ],
-          },
-      "faq/consensys-framework",
-      "faq/widget-faq",
-    ],
+    "faq/general-faq",
+    "faq/technical-faqs",
+    // "faq/delegator-faq",
+    "faq/commit-chain-multisigs",
+    "maintain/delegate/delegator-faq",
+    "maintain/validate/faq/validator-faq",
+    "faq/staking-faq",
+    {
+      type: "category",
+      label: "Wallet FAQs",
+      link: {
+        type: "generated-index",
+      },
+      items: ["faq/wallet-bridge-faq", "faq/adding-a-custom-token"],
+    },
+    "faq/consensys-framework",
+    "faq/widget-faq",
+  ],
 
   edge: [
-      "edge/overview",
-      {
-          type: "category",
-          label: "Get started",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-              "edge/get-started/installation",
-              "edge/get-started/set-up-ibft-locally",
-              "edge/get-started/set-up-ibft-on-the-cloud",
-              "edge/get-started/cli-commands",
-              "edge/get-started/json-rpc-commands",
-              "edge/get-started/terraform-aws-deployment",
-          ]
+    "edge/overview",
+    {
+      type: "category",
+      label: "Get started",
+      link: {
+        type: "generated-index",
       },
-      {
-          type: "category",
-          label: "Configuration",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-              "edge/configuration/sample-config",
-              "edge/configuration/manage-private-keys",
-              "edge/configuration/prometheus-metrics",
-              {
-                  type: "category",
-                  label: "Secret Managers",
-                  link: {
-                    type: "generated-index",
-                  },
-                  items: [
-                      "edge/configuration/secret-managers/set-up-aws-ssm",
-                      "edge/configuration/secret-managers/set-up-gcp-secrets-manager",
-                      "edge/configuration/secret-managers/set-up-hashicorp-vault",
-                  ]
-              }
-          ]
-      },
-      "edge/validator-hosting",
-      {
-          type: "category",
-          label: "Working with a node",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-              "edge/working-with-node/query-json-rpc",
-              "edge/working-with-node/query-operator-info",
-              "edge/working-with-node/backup-restore",
-          ]
-      },
-      {
-          type: "category",
-          label: "Consensus",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-              "edge/consensus/poa",
-              "edge/consensus/pos-concepts",
-              "edge/consensus/pos-stake-unstake",
-              "edge/consensus/migration-to-pos",
-              "edge/consensus/bls"
-          ]
-      },
-      {
-          type: "category",
-          label: "Additional features",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-              {
-                  type: "category",
-                  label: "Chainbridge",
-                  link: {
-                    type: "generated-index",
-                  },
-                  items: [
-                    "edge/additional-features/chainbridge/overview",
-                    "edge/additional-features/chainbridge/definitions",
-                    "edge/additional-features/chainbridge/setup",
-                    "edge/additional-features/chainbridge/setup-erc20-transfer",
-                    "edge/additional-features/chainbridge/setup-erc721-transfer",
-                    "edge/additional-features/chainbridge/use-case-erc20-bridge",
-                    "edge/additional-features/chainbridge/use-case-erc721-bridge",
-                  ]
-              },
-              "edge/additional-features/stress-testing",
-              "edge/additional-features/blockscout",
-              "edge/additional-features/permission-contract-deployment",
-          ]
-      },
-      {
-          type: "category",
-          label: "Architecture",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-              "edge/architecture/overview",
-              {
-                  type: "category",
-                  label: "Modules",
-                  link: {
-                    type: "generated-index",
-                  },
-                  items: [
-                      "edge/architecture/modules/blockchain",
-                      "edge/architecture/modules/minimal",
-                      "edge/architecture/modules/networking",
-                      "edge/architecture/modules/state",
-                      "edge/architecture/modules/txpool",
-                      "edge/architecture/modules/json-rpc",
-                      "edge/architecture/modules/consensus",
-                      "edge/architecture/modules/storage",
-                      "edge/architecture/modules/types",
-                      "edge/architecture/modules/syncer",
-                      "edge/architecture/modules/sealer",
-                      "edge/architecture/modules/other-modules"
-                  ]
-              }
-          ]
-      },
-      {
-          type: "category",
-          label: "Community",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-              "edge/community/propose-new-feature",
-              "edge/community/report-bug"
-          ]
-      },
-      {
-          type: "category",
-          label: "Performance Reports",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-              "edge/performance-reports/overview",
-              {
-                  type: "category",
-                  label: "Test History",
-                  link: {
-                    type: "generated-index",
-                  },
-                  items: [
-                      "edge/performance-reports/test-history/test-2022-07-04",
-                      "edge/performance-reports/test-history/test-2022-03-23",
-                      "edge/performance-reports/test-history/test-2022-03-02",
-                      "edge/performance-reports/test-history/test-2022-01-21",
-
-                  ]
-              }
-          ]
-      },
-      {
-        type: "category",
-        label: "FAQ",
-        link: {
-          type: "generated-index",
-        },
-        items: [
-            "edge/faq/validators",
-            "edge/faq/gas",
-            "edge/faq/contracts",
-            "edge/faq/tokens",
-        ]
+      items: [
+        "edge/get-started/installation",
+        "edge/get-started/set-up-ibft-locally",
+        "edge/get-started/set-up-ibft-on-the-cloud",
+        "edge/get-started/cli-commands",
+        "edge/get-started/json-rpc-commands",
+        "edge/get-started/terraform-aws-deployment",
+      ],
     },
-    "edge/troubleshooting"
-  ]
+    {
+      type: "category",
+      label: "Configuration",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "edge/configuration/sample-config",
+        "edge/configuration/manage-private-keys",
+        "edge/configuration/prometheus-metrics",
+        {
+          type: "category",
+          label: "Secret Managers",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "edge/configuration/secret-managers/set-up-aws-ssm",
+            "edge/configuration/secret-managers/set-up-gcp-secrets-manager",
+            "edge/configuration/secret-managers/set-up-hashicorp-vault",
+          ],
+        },
+      ],
+    },
+    "edge/validator-hosting",
+    {
+      type: "category",
+      label: "Working with a node",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "edge/working-with-node/query-json-rpc",
+        "edge/working-with-node/query-operator-info",
+        "edge/working-with-node/backup-restore",
+      ],
+    },
+    {
+      type: "category",
+      label: "Consensus",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "edge/consensus/poa",
+        "edge/consensus/pos-concepts",
+        "edge/consensus/pos-stake-unstake",
+        "edge/consensus/migration-to-pos",
+        "edge/consensus/bls",
+      ],
+    },
+    {
+      type: "category",
+      label: "Additional features",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        {
+          type: "category",
+          label: "Chainbridge",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "edge/additional-features/chainbridge/overview",
+            "edge/additional-features/chainbridge/definitions",
+            "edge/additional-features/chainbridge/setup",
+            "edge/additional-features/chainbridge/setup-erc20-transfer",
+            "edge/additional-features/chainbridge/setup-erc721-transfer",
+            "edge/additional-features/chainbridge/use-case-erc20-bridge",
+            "edge/additional-features/chainbridge/use-case-erc721-bridge",
+          ],
+        },
+        "edge/additional-features/stress-testing",
+        "edge/additional-features/blockscout",
+        "edge/additional-features/permission-contract-deployment",
+      ],
+    },
+    {
+      type: "category",
+      label: "Architecture",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "edge/architecture/overview",
+        {
+          type: "category",
+          label: "Modules",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "edge/architecture/modules/blockchain",
+            "edge/architecture/modules/minimal",
+            "edge/architecture/modules/networking",
+            "edge/architecture/modules/state",
+            "edge/architecture/modules/txpool",
+            "edge/architecture/modules/json-rpc",
+            "edge/architecture/modules/consensus",
+            "edge/architecture/modules/storage",
+            "edge/architecture/modules/types",
+            "edge/architecture/modules/syncer",
+            "edge/architecture/modules/sealer",
+            "edge/architecture/modules/other-modules",
+          ],
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Community",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "edge/community/propose-new-feature",
+        "edge/community/report-bug",
+      ],
+    },
+    {
+      type: "category",
+      label: "Performance Reports",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "edge/performance-reports/overview",
+        {
+          type: "category",
+          label: "Test History",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "edge/performance-reports/test-history/test-2022-07-04",
+            "edge/performance-reports/test-history/test-2022-03-23",
+            "edge/performance-reports/test-history/test-2022-03-02",
+            "edge/performance-reports/test-history/test-2022-01-21",
+          ],
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "FAQ",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "edge/faq/validators",
+        "edge/faq/gas",
+        "edge/faq/contracts",
+        "edge/faq/tokens",
+      ],
+    },
+    "edge/troubleshooting",
+  ],
 };
