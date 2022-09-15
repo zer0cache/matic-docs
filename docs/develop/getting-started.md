@@ -35,7 +35,7 @@ team and the community by subscribing to the
 - **Scalability** Polygon Network achieves a hypothetical transaction speed of fewer than 2 seconds on a single sidechain. Using multiple sidechains helps the network to handle millions of transactions per second. This mechanism (already demonstrated in the first Matic sidechain) allows the Polygon network to scale easily.
 - **Security** Polygon's smart contracts rely on Ethereum’s security. To safeguard the network, it employs three critical security models. It uses Ethereum's **staking management contracts** and a group of incentivized validators running **Heimdall** and **Bor** nodes. Developers can also implement both models (Hybrid) into their dApp.
 
-## Building on **Polygon**
+## **Building on Polygon**
 
 If you are an Ethereum developer, you are already a Polygon developer. Simply switch to the [Polygon RPC](https://polygon-rpc.com/) and get started. All the tools you are familiar with on the Ethereum blockchain are supported on Polygon by default, such as Truffle, Remix, and Web3js.
 
