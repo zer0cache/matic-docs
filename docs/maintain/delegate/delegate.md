@@ -38,25 +38,25 @@ After the delegation transaction completes, you will see the *Delegation Complet
 
 ## View your delegations
 
-To view your delegations, click [My Account](https://wallet.polygon.technology/staking/my-account).
+To view your delegations, click [My Account](https://staking.polygon.technology/account).
 
 ## Withdraw rewards
 
-1. Click [My Account](https://wallet.polygon.technology/staking/my-account).
+1. Click [My Account](https://staking.polygon.technology/account).
 1. Under your delegated validator, click **Withdraw Reward**.
 
 This will withdraw the MATIC token rewards to your Ethereum address.
 
 ## Restake rewards
 
-1. Click [My Account](https://wallet.polygon.technology/staking/my-account).
+1. Click [My Account](https://staking.polygon.technology/account).
 1. Under your delegated validator, click **Restake Reward**.
 
 The will restake the MATIC token rewards to the validator and increase your delegation stake.
 
 ## Unbond from a validator
 
-1. Click [My Account](https://wallet.polygon.technology/staking/my-account).
+1. Click [My Account](https://staking.polygon.technology/account).
 1. Under your delegated validator, click **Unbond**.
 
 The will  withdraw your rewards from the validator and your entire stake from the validator.

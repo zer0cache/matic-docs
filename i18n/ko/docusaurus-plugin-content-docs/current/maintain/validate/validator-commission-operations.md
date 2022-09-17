@@ -30,7 +30,7 @@ You set up the commission rate as part of your initial validator staking process
 
 You can change your commission rate.
 
-1. With your owner address, login to the [staking dashboard](https://wallet.polygon.technology/staking/).
+1. With your owner address, login to the [staking dashboard](https://staking.polygon.technology/).
 1. On your profile, click **Edit Profile**.
 1. In the *Commission* field, provide your new commission rate.
 

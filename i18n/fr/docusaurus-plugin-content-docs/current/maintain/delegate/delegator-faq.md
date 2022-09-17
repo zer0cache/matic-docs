@@ -13,7 +13,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### What is the Staking Dashboard URL?
 
-The staking dashboard URL is https://wallet.polygon.technology/staking/.
+The staking dashboard URL is https://staking.polygon.technology/.
 
 ### What is the Minimum stake amount?
 
@@ -21,7 +21,7 @@ There is no minimum stake amount to delegate. However, you can always start with
 
 ### How many rewards will I get if I delegate?
 
-Please use the Staking Rewards Calculator to determine your estimates. https://wallet.polygon.technology/staking-rewards
+Please use the Staking Rewards Calculator to determine your estimates. https://staking.polygon.technology/rewards-calculator
 
 ### Why does my transaction take so long?
 

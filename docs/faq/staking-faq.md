@@ -13,7 +13,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### How to stake tokens on Polygon?
 
-For Staking you would need to have funds on the Ethereum Mainnet (more information [here](https://etherscan.io/gastracker)). Log into Metamask on the Ethereum network using the Staking Dashboard. https://wallet.polygon.technology/staking/
+For Staking you would need to have funds on the Ethereum Mainnet (more information [here](https://etherscan.io/gastracker)). Log into Metamask on the Ethereum network using the Staking Dashboard. https://staking.polygon.technology/
 
 Please watch this video for a graphical illustration of how this works:
 
@@ -44,7 +44,7 @@ Once logged into https://wallet.polygon.technology/ you need to  click on apps >
 
 ### How do I know which Validator to select for better rewards?
 
-It depends on your understanding and research on which validator you would want to stake on. You can find the list of validators here : https://wallet.polygon.technology/staking/validators
+It depends on your understanding and research on which validator you would want to stake on. You can find the list of validators here : https://staking.polygon.technology/validators
 
 ### How to unbond?
 
