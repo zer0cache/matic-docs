@@ -1644,13 +1644,34 @@
     joi "^17.6.0"
     js-yaml "^4.1.0"
     tslib "^2.4.0"
-
+    
 "@docusaurus/utils@2.1.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-2.1.0.tgz#b77b45b22e61eb6c2dcad8a7e96f6db0409b655f"
   integrity sha512-fPvrfmAuC54n8MjZuG4IysaMdmvN5A/qr7iFLbSGSyDrsbP4fnui6KdZZIa/YOLIPLec8vjZ8RIITJqF18mx4A==
   dependencies:
     "@docusaurus/logger" "2.1.0"
+    "@svgr/webpack" "^6.2.1"
+    file-loader "^6.2.0"
+    fs-extra "^10.1.0"
+    github-slugger "^1.4.0"
+    globby "^11.1.0"
+    gray-matter "^4.0.3"
+    js-yaml "^4.1.0"
+    lodash "^4.17.21"
+    micromatch "^4.0.5"
+    resolve-pathname "^3.0.0"
+    shelljs "^0.8.5"
+    tslib "^2.4.0"
+    url-loader "^4.1.1"
+    webpack "^5.73.0"
+
+"@docusaurus/utils@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-2.0.1.tgz#37b4b42e29175e5d2d811fcbf9f93bffeca7c353"
+  integrity sha512-u2Vdl/eoVwMfUjDCkg7FjxoiwFs/XhVVtNxQEw8cvB+qaw6QWyT73m96VZzWtUb1fDOefHoZ+bZ0ObFeKk9lMQ==
+  dependencies:
+    "@docusaurus/logger" "2.0.1"
     "@svgr/webpack" "^6.2.1"
     file-loader "^6.2.0"
     fs-extra "^10.1.0"
