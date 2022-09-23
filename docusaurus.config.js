@@ -4,7 +4,7 @@ const katex = require('rehype-katex');
 module.exports = {
   title: "Polygon Technology | Documentation",
   tagline: "Welcome to Polygon developer documentation",
-  url: "https://docs.polygon.technology/",
+  url: "https://wiki.polygon.technology",
   baseUrl: "/",
   favicon: "img/polygon/polygon-logo.svg",
   organizationName: "Polygon Technology",
@@ -151,7 +151,7 @@ module.exports = {
           items: [
           {
               label: "Get Started",
-              href: "https://docs.polygon.technology/docs/develop/getting-started/"
+              href: "https://wiki.polygon.technology/docs/develop/getting-started/"
           },
           {
               label: "Advocate Program",
@@ -250,7 +250,7 @@ module.exports = {
         srcDark: "/img/polygon/polygon-logo.webp",
         // width: 100,
         // height: 500,
-        // href: 'https://docs.polygon.technology/', // default to siteConfig.baseUrl
+        // href: 'https://wiki.polygon.technology/', // default to siteConfig.baseUrl
         target: "_self", // by default, this value is calculated based on the `href` attribute (the external link will open in a new tab, all others in the current one)
       },
       items: [

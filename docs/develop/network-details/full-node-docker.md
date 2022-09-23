@@ -15,7 +15,7 @@ The Polygon team distributes official Docker images which can be used to run nod
 
 
 :::note Snapshots
-You’ll find that syncing from scratch can take a very long time. If you’d like to speed the process up, you can follow the instructions listed here: https://docs.polygon.technology/docs/develop/network-details/snapshot-instructions-heimdall-bor/
+You’ll find that syncing from scratch can take a very long time. If you’d like to speed the process up, you can follow the instructions listed here: [<ins>https://docs.polygon.technology/docs/develop/network-details/snapshot-instructions-heimdall-bor/</ins>](https://docs.polygon.technology/docs/develop/network-details/snapshot-instructions-heimdall-bor/)
 
 This will be the most up to date instructions, but roughly you can do something like the steps below:
 ```bash
