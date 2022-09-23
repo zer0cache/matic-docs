@@ -26,27 +26,17 @@ However, this page helps developers, who have a good understanding of smart cont
 
 ### Tokens for testing
 
-To get some `TEST` tokens on Goerli network, you can access the Polygon Faucet by clicking on the link below:
-
-<div style={{textAlign: 'center', paddingTop: '15px', paddingBottom: '15px'}}>
-  <button className="btn btn-primary btn-md">
-    <a href="https://faucet.polygon.technology" target="_blank" style={{color: 'inherit'}}>
-      Get Test Tokens
-    </a>
-  </button>
-</div>
+To get some test tokens on Goerli network, you can access the [Polygon Faucet](https://faucet.polygon.technology).
 
 ### Polygon Explorer
 
-You can also check transaction procesed on the Polygon Sidechain using the Polygon Explorer.
-
-Link to the explorer - https://mumbai.polygonscan.com/
+You can also check transaction procesed on the Polygon Sidechain using the [Polygon Explorer](https://mumbai.polygonscan.com/).
 
 ## Workflow
 
 ### 1. Deposit ERC20 token from Goerli to Polygon
 
-**Description**: To deposit assets (ERC20) from Goerli to Polygon
+**Description**: To deposit assets (ERC20) from Goerli to Polygon.
 
 Let the required amount of tokens be **X**.
 
@@ -70,7 +60,7 @@ RootERC20Contract.methods.approve(
    - **Network**: Goerli
    - **Function**: [`despositERC20ForUser()`](https://github.com/maticnetwork/contracts/blob/6413308db75ecdbf8ab9ec2beee1db0d362acea3/contracts/root/depositManager/DepositManager.sol#L129)
 
-Transfers the amount of tokens from msg.sender to DepositManager. Emits [NewDepositBlock](https://github.com/maticnetwork/contracts/blob/6413308db75ecdbf8ab9ec2beee1db0d362acea3/contracts/root/depositManager/DepositManager.sol#L223) event.
+Transfer the amount of tokens from msg.sender to DepositManager. Emit [NewDepositBlock](https://github.com/maticnetwork/contracts/blob/6413308db75ecdbf8ab9ec2beee1db0d362acea3/contracts/root/depositManager/DepositManager.sol#L223) event.
 
 ```javascript
 depositManagerContract.methods.depositERC20ForUser(
@@ -80,11 +70,15 @@ depositManagerContract.methods.depositERC20ForUser(
 );
 ```
 
-> Depositing tokens on Polygon, mints new tokens for ChildERC20 contract on Polygon. ChildERC20 contract is the contract that is deployed with the process of mapping, which is representative of the token present on main network.
+:::note
+
+Depositing tokens on Polygon mints new tokens for ChildERC20 contracts on Polygon. ChildERC20 contract is the contract that is deployed with the process of mapping, which is representative of the token present on main network.
+
+:::
 
 ### 2. Transfer tokens on Polygon
 
-**Description**: To transfer tokens on Polygon testnet
+**Description**: Transfer tokens on Polygon testnet
 
 1. Invokes the standard `transfer` function of ERC20 contract.
    - **Contract**: `ChildERC20.sol`
@@ -92,13 +86,13 @@ depositManagerContract.methods.depositERC20ForUser(
    - **Function**: `transfer`
 
 
-    ```javascript
-    ChildERC20.methods
-      .transfer(
-        recipientAddress,
-        this.encode(amount)
-      )
-    ```
+```js
+ChildERC20.methods
+  .transfer(
+    recipientAddress,
+    this.encode(amount)
+  )
+```
 
 ### 3. Display account balances for users on Polygon
 
@@ -115,7 +109,7 @@ depositManagerContract.methods.depositERC20ForUser(
 
 ### 4. Withdraw ERC20 tokens from Polygon to Goerli
 
-**Description**: To withdraw assets (ERC20) from Polygon testnet to Goerli
+**Description**: Withdraw assets (ERC20) from Polygon testnet to Goerli
 
 Procedure of Withdrawal:
 
@@ -125,7 +119,7 @@ Procedure of Withdrawal:
    2. After checkpoint submission, a successful execution of this step
       1. marks the initiation of the Challenge Exit Period (which is a 7-day period on main network, and set to 5 minute on test networks)
       2. Mints an `ExitNFT` token to the exitor's account - which is representative of the exit initiated on the child chain by the exitor
-   3. processExits burns the Exit NFT and transfers the tokens back from Deposit manager to the exitor.
+   3. `processExits` burns the Exit NFT and transfers the tokens back from Deposit manager to the exitor.
 
 Let **X** be the amount of tokens to be withdrawn.
 
@@ -135,9 +129,9 @@ Let **X** be the amount of tokens to be withdrawn.
    - **Network**: Polygon
    - **Function**: `withdraw`
 
-   Burns tokens on Polygon and emits [Withdraw](https://github.com/maticnetwork/contracts/blob/6413308db75ecdbf8ab9ec2beee1db0d362acea3/contracts/child/ChildERC20.sol#L52) event
+   Burns tokens on Polygon and emits [Withdraw](https://github.com/maticnetwork/contracts/blob/6413308db75ecdbf8ab9ec2beee1db0d362acea3/contracts/child/ChildERC20.sol#L52) event.
 
-   ```javascript
+   ```js
    ChildToken.methods.withdraw(amount);
    ```
 
@@ -156,15 +150,15 @@ Let **X** be the amount of tokens to be withdrawn.
 
    To build payload for the exit:
 
-   1. Get last child block from RootChain.sol - this is the number of block which was checkpointed last on the root chain
+   1. Get last child block from RootChain.sol - this is the number of blocks which was checkpointed last on the root chain.
    2. If the last checkpointed block is less than the block containing the burn transaction - wait until the block is checkpointed.
    3. If the checkpoint has been included
-      1. find HeaderBlockNumber from RootChain.sol
-         1. From the last checkpointed block to the block consisting of burn transaction perform search (matic.js performs a binary search) to find the block with the burn tx.
+      1. find `HeaderBlockNumber` from RootChain.sol
+         1. From the last checkpointed block to the block consisting of burn transaction perform search (Matic.js performs a binary search) to find the block with the burn tx.
          2. Query RootChain.sol with the header block number
       2. Build Block Proof, sample: https://github.com/maticnetwork/contracts/blob/fa6862dc6ddae97351aa1b4d16c087861b5a489e/contracts-core/helpers/proofs.js#L24
       3. Build Receipt Proof, sample: https://github.com/maticnetwork/contracts/blob/fa6862dc6ddae97351aa1b4d16c087861b5a489e/contracts-core/helpers/proofs.js#L106
-   4. Return hex encoded string of bytes: `headernumber`, `blockProof`, `block number of burn transaction`, `timestamp of the burn tx block`, `root of block`, `root of receipts`, `RLP encoded receipt bytes`, `receipt parent nodes`, `receipt path`, `logIndex`
+   4. Return hex-encoded string of bytes: `headernumber`, `blockProof`, `block number of burn transaction`, `timestamp of the burn tx block`, `root of block`, `root of receipts`, `RLP encoded receipt bytes`, `receipt parent nodes`, `receipt path`, `logIndex`
 
    ````javascript
    private async _buildPayloadForExit(burnTxHash) {
@@ -259,11 +253,12 @@ Let **X** be the amount of tokens to be withdrawn.
 
 3. Process Exits
 
-   Third and final step for the withdrawal process is to Process pending exits on the root chain.
+   Third and final step for the withdrawal process is to process pending exits on the root chain.
 
    - **Contract**: `WithdrawManager.sol`
    - **Network**: Goerli
    - **Function**: `processExits`
-     ```javascript
+
+     ```js
      withdrawManager.methods.processExits(token);
      ```

@@ -10,6 +10,8 @@ image: https://matic.network/banners/matic-network-16x9.png
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+Here you will find a list of contracts deployed on Polygon together with their initial address, that is, their location on the blockchain. 
+
 <Tabs
   defaultValue="mainnet"
   values={[

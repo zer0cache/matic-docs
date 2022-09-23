@@ -372,17 +372,6 @@ module.exports = {
         "develop/network-details/genesis-contracts",
         {
           type: "category",
-          label: "ERC Standards",
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "develop/advanced/swap-assets",
-            "develop/advanced/custom-restrictions",
-          ],
-        },
-        {
-          type: "category",
           label: "Plasma Contracts",
           link: {
             type: "generated-index",
