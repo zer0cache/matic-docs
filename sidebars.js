@@ -127,6 +127,7 @@ module.exports = {
         "develop/wallets/portis",
         "develop/wallets/torus",
         "develop/wallets/walletconnect",
+        "develop/wallets/slashauth",
         {
           type: "category",
           label: "Polygon Wallet Suite",
