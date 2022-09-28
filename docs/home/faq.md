@@ -1,17 +1,17 @@
 ---
 id: faq
-title: FAQ 
+title: FAQ
 description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 ## What is Polygon?
 
-Polygon is a sidechain based scaling solution for public blockchains. Polygon provides scalability while 
-ensuring a superior user experience in a secured and decentralized manner. It has a working implementation 
-for Ethereum on Kovan Testnet. Polygon intends to support other blockchains in the future which will enable 
+Polygon is a sidechain based scaling solution for public blockchains. Polygon provides scalability while
+ensuring a superior user experience in a secured and decentralized manner. It has a working implementation
+for Ethereum on Kovan Testnet. Polygon intends to support other blockchains in the future which will enable
 it to provide interoperability features alongside offering scalability to existing public blockchains.
 
 ## How is Polygon different from other implementations of Plasma?
@@ -22,7 +22,7 @@ Secondly, Polygon uses a public checkpointing layer which publishes checkpoints 
 
 ## Your project provides scalability for Ethereum using plasma chains, is it a protocol or a native blockchain in itself?
 
-Polygon Network is a "side chain" solution where Ethereum mainchain assets, i.e. all Dapps/Tokens/Protocols of the main chain can be moved/migrated to Polygon side chain(s) and when needed, one can withdraw assets back to mainchain. 
+Polygon Network is a "side chain" solution where Ethereum mainchain assets, i.e. all Dapps/Tokens/Protocols of the main chain can be moved/migrated to Polygon side chain(s) and when needed, one can withdraw assets back to mainchain.
 
 ## What are the competitive advantages of Polygon over its competitor?
 
@@ -148,7 +148,7 @@ We are starting out on Ethereum as our first base chain, but in the future Polyg
 Polygon intends to enable Dapps to pay Polygon fees in Dapp-coins by abstracting a token swap mechanism using a liquidity pool like Kyber. The user simply uses her Dapp-coins to pay fees, in the background the Dappcoin is swapped for Matic tokens. Hence the DApp developers who want to provide a seamless user experience will help maintain a Polygon liquidity pool.
 
 ### Seeding the network in nascent stages:
-It’s practically impossible to seed the system when there are little to no txns in the network at the start, as we cannot distribute Eth to the highly decentralized Validator layer and the block producers. Whilst with Matic tokens, we have provisioned a large percentage of tokens to be distributed for seeding block producer, checkpointer stakes and subsequently offer block rewards. This provision ensures that the stakers receive rewards even if the network takes some time to assume network effects. It is akin to why Block Mining rewards were kept for Bitcoin, stakers and block producers can be incentivized in this way to keep the network secure. 
+It’s practically impossible to seed the system when there are little to no txns in the network at the start, as we cannot distribute Eth to the highly decentralized Validator layer and the block producers. Whilst with Matic tokens, we have provisioned a large percentage of tokens to be distributed for seeding block producer, checkpointer stakes and subsequently offer block rewards. This provision ensures that the stakers receive rewards even if the network takes some time to assume network effects. It is akin to why Block Mining rewards were kept for Bitcoin, stakers and block producers can be incentivized in this way to keep the network secure.
 
 If your concern is about Devs, one of the pillars of our strategy is to keep the entry barrier for devs very low. We have made sure that all the Ethereum dev tools work out of the box on Polygon. In terms of the tokens needed for paying fees on testnet, it is no different for a developer developing on Ethereum. The dev gets free tokens for the testnet from a Polygon faucet and gets going, just like it is on Ethereum. You need Matic tokens only when you want to deploy on Polygon Mainnet, where the gas fee is much lower than Ethereum, around 1/100th of a txn fee you pay on Ethereum.
 
@@ -180,7 +180,7 @@ Yes. The demo is available [Here](https://www.youtube.com/watch?v=l1vb5pjezJ8)
 
 ## What is the transaction per seconds?
 
-Currently “a single Polygon side chain” can theoretically handle 2^16 (65,000+) transactions per second
+Currently “a single Polygon side chain” can theoretically handle 2^16 (7,000+) transactions per second
 
 ## Is token type ERC20?
 
@@ -197,7 +197,7 @@ In terms of the Roadmap, we are going to publish a detailed roadmap soon.
 
 ## What is the expected TPS you'll be able to bring to the Ethereum network? What are you running at now on testnet?
 
-A single side chain has the capacity of 2^16 (65,000+) transactions per second. Polygon has the capability to add multiple side chains, But currently, our focus would be on stabilizing the network with one side chain.
+A single side chain has the capacity of 2^16 (7,000+) transactions per second. Polygon has the capability to add multiple side chains, But currently, our focus would be on stabilizing the network with one side chain.
 
 ## "We have chosen Ethereum as the first platform to showcase our scalability" What other platforms are you aiming toward, and is there a timeline for implementation
 
