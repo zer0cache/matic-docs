@@ -43,7 +43,7 @@ The Tokens that will be minted on Polygon first and subsequently migrated to Eth
 
 :::
 
-In case of a custom token mapping, you can visit our [Fx-Portal](https://wiki.polygon.technology/docs/develop/l1-l2-communication/fx-portal/) and use the data provided to build your custom token.
+In case of a custom token mapping, you can visit our [Fx-Portal](/docs/develop/l1-l2-communication/fx-portal) and use the data provided to build your custom token.
 
 ## **Mapping Checklist**
 
