@@ -33,7 +33,7 @@ Ethereum, and a set of incentivized validators running **Heimdall** and **Bor** 
 the first basechain Polygon supports, but Polygon intends to offer support for additional basechains to
 enable an interoperable decentralized Layer 2 blockchain platform based on community suggestions and consensus.
 
-<img src={useBaseUrl("img/matic/Architecture.png")} />;
+<img src={useBaseUrl("img/matic/Architecture.png")} />
 
 ## Staking Contracts
 
