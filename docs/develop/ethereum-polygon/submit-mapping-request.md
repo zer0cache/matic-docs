@@ -67,4 +67,10 @@ Checkout the documentation for Mintable tokens available at [<ins>https://wiki.p
 3. Mint function is an internal function. (This gets called by deposit function internally)
 
 ## **Video Guide**
-Here is a [<ins>quick video tutorial</ins>](https://www.loom.com/share/11b93e804af74fc9aeef2d7118b2a678) on how to map tokens between **Ethereum Goerli &harr; Polygon Mumbai Testnet**.
+
+Here is a quick video tutorial on how to map tokens between **Ethereum Goerli &harr; Polygon Mumbai Testnet**:
+
+<video autoplay width="100%" height="100%" controls="true" >
+  <source type="video/mp4" src="/img/token-mapping/token-mapping-tutorial.mp4"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
