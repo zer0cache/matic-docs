@@ -32,7 +32,7 @@ Official Docker images are hosted under the [hub.docker.com registry](https://hu
 
 ## Building from source
 
-Prior to using `go install` make sure that you have Go `>=1.17` installed and properly configured.
+Prior to using `go install` make sure that you have Go `>=1.18` installed and properly configured.
 
 The stable branch is `develop`.
 
