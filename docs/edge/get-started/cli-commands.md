@@ -700,7 +700,7 @@ Sets the epoch size for the chain. Default `100000`.
 
 Sets the premined accounts and balances in the format `address:amount`.
 The amount can be in either decimal or hex.
-Default premined balance: `0x3635C9ADC5DEA00000`.
+Default premined balance: `0xD3C21BCECCEDA1000000`(1 million native currency tokens).
 
 ---
 
