@@ -53,12 +53,12 @@ This premines 1000000000000000000000 WEI to 0x3956E90e632AEbBF34DEB49b71c28A83Bc
  
 ## ERC20 tokens not released while using Chainbridge
 
-If you try to transfer ERC20 tokens between Polygon POS and a local Edge network, and your ERC20 tokens are deposited, also proposal is executed at relayer, but the tokens are not released in your Edge network, please make sure the ERC20 Handler in Polygon Edge chain has enough tokens to release. <br/>
+If you try to transfer ERC20 tokens between Polygon PoS and a local Edge network, and your ERC20 tokens are deposited, also proposal is executed at relayer, but the tokens are not released in your Edge network, please make sure the ERC20 Handler in Polygon Edge chain has enough tokens to release. <br/>
 The Handler contract in the destination chain must have enough tokens to release for lock-release mode. If you don't have any ERC20 tokens in the ERC20 Handler of your local Edge network, please mint new tokens and transfer them to the ERC20 Handler.
 
 ## `Incorrect fee supplied` error when using Chainbridge
 
-You might get this error when trying to transfer ERC20 tokens between Mumbai Polygon POS chain and a local Polygon Edge setup. This error appears when you set the fee on deploying using the `--fee` flag, but you don't set the same value in the deposit transaction. 
+You might get this error when trying to transfer ERC20 tokens between Mumbai Polygon PoS chain and a local Polygon Edge setup. This error appears when you set the fee on deploying using the `--fee` flag, but you don't set the same value in the deposit transaction. 
 You can use the below command to change the fee:
 ```` bash
  $ cb-sol-cli admin set-fee --bridge <BRIDGE_ADDRESS> --fee 0 --url <JSON_RPC_URL> --privateKey <PRIVATE_KEY>

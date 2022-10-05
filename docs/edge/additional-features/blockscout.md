@@ -1,7 +1,7 @@
 ---
 id: blockscout 
-title: Blockscout
-description: How to set up a Blockscout instance to work with Polygon Edge.
+title: BlockScout
+description: How to set up a BlockScout instance to work with Polygon Edge.
 keywords:
   - docs
   - polygon
@@ -13,8 +13,8 @@ keywords:
 ---
 
 ## Overview
-This guide goes into details on how to compile and deploy Blockscout instance to work with Polygon-Edge.
-Blockscout has its own [documentation](https://docs.blockscout.com/for-developers/manual-deployment), but this guide focuses on simple but detailed step-by-step instructions on how to setup Blockscout instance.
+This guide goes into details on how to compile and deploy BlockScout instance to work with Polygon-Edge.
+BlockScout has its own [documentation](https://docs.blockscout.com/for-developers/manual-deployment), but this guide focuses on simple but detailed step-by-step instructions on how to setup BlockScout instance.
 
 ## Environment
 * Operating System: Ubuntu Server 20.04 LTS [download link](https://releases.ubuntu.com/20.04/) with sudo permissions
@@ -27,11 +27,11 @@ This guide will not go into details on how to deploy and configure PostgreSQL se
 There are plenty of guides on now to do this, for example [DigitalOcean Guide](https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-20-04-quickstart)
 
 :::info DISCLAIMER
-This guide is meant only to help you to get Blockscout up and running on a single instance which is not ideal production setup.   
+This guide is meant only to help you to get BlockScout up and running on a single instance which is not ideal production setup.   
 For production, you'll probably want to introduce reverse proxy, load balancer, scalability options, etc. into the architecture.
 :::
 
-# Blockscout Deployment Procedure
+# BlockScout Deployment Procedure
 
 ## Part 1 - install dependencies
 Before we start we need to make sure we have all the binaries installed that the blockscout is dependent on.
@@ -105,10 +105,10 @@ Elixir 1.13.4 (compiled with Erlang/OTP 22)
 
 :::warning
 `Erlang/OTP` must be version `24` and `Elixir` must be version `1.13.*`.    
-If that is not the case, you will run into issues with compiling Blockscout and/or running it.
+If that is not the case, you will run into issues with compiling BlockScout and/or running it.
 :::   
 :::info
-Check out the official ***[Blockscout requirements page](https://docs.blockscout.com/for-developers/information-and-settings/requirements)***
+Check out the official ***[BlockScout requirements page](https://docs.blockscout.com/for-developers/information-and-settings/requirements)***
 :::
 
 ### Install NodeJS
@@ -132,7 +132,7 @@ sudo apt install -y postgresql-client
 ```
 
 ## Part 2 - set environment variables
-We need to set the environment variables, before we begin with Blockscout compilation.
+We need to set the environment variables, before we begin with BlockScout compilation.
 In this guide we'll set only the basic minimum to get it working.
 Full list of variables that can be set you can find [here](https://docs.blockscout.com/for-developers/information-and-settings/env-variables)
 
@@ -180,10 +180,10 @@ Enter name of role to add: blockscout
 Shall the new role be a superuser? (y/n) y
 ```
 
-## Part 3 - clone and compile Blockscout
-Now we finally get to start the Blockscout installation.
+## Part 3 - clone and compile BlockScout
+Now we finally get to start the BlockScout installation.
 
-### Clone Blockscout repo
+### Clone BlockScout repo
 ```bash
 cd ~
 git clone https://github.com/Trapesys/blockscout
@@ -252,7 +252,7 @@ When compile process is finished, it should output something like: `webpack 5.69
 :::
 
 ### Build static assets
-For this step you need to return to the root of your Blockscout clone folder.
+For this step you need to return to the root of your BlockScout clone folder.
 ```bash
 cd ~/blockscout
 sudo mix phx.digest
@@ -267,8 +267,8 @@ cd apps/block_scout_web
 mix phx.gen.cert blockscout blockscout.local
 ```
 
-## Part 4 - create and run Blockscout service
-In this part we need to set up a system service as we want Blockscout to run in the background and persist after system reboot.
+## Part 4 - create and run BlockScout service
+In this part we need to set up a system service as we want BlockScout to run in the background and persist after system reboot.
 
 ### Create service file
 ```bash
@@ -283,7 +283,7 @@ sudo vi /etc/systemd/system/explorer.service
 The contents of the explorer.service file should look like this:
 ```bash
 [Unit]
-Description=Blockscout Server
+Description=BlockScout Server
 After=network.target
 StartLimitIntervalSec=0
 
@@ -308,13 +308,13 @@ sudo systemctl daemon-reload
 sudo systemctl enable explorer.service
 ```
 
-### Move your Blockscout clone folder to system-wide location
-Blockscout service needs to have access to the folder you've cloned from Blockscout repo and compiled all the assets.
+### Move your BlockScout clone folder to system-wide location
+BlockScout service needs to have access to the folder you've cloned from BlockScout repo and compiled all the assets.
 ```bash
 sudo mv ~/blockscout /usr/local
 ```
 
-### Create env vars file which will be used by Blockscout service
+### Create env vars file which will be used by BlockScout service
 
 ```bash
 sudo touch /usr/local/blockscout/env_vars.env
@@ -329,7 +329,7 @@ SECRET_KEY_BASE="912X3UlQ9p9yFEBD0JU+g27v43HLAYl38nQzJGvnQsir2pMlcGYtSeRY0sSdLkV
 ETHEREUM_JSONRPC_WS_URL="ws://localhost:8545/ws" # websocket API of the chain
 CHAIN_ID=93201 # chain id
 HEART_COMMAND="systemctl restart explorer" # command used by blockscout to restart it self in case of failure
-SUBNETWORK="Supertestnet POA" # this will be in html title
+SUBNETWORK="Supertestnet PoA" # this will be in html title
 LOGO="/images/polygon_edge_logo.svg" # logo location
 LOGO_FOOTER="/images/polygon_edge_logo.svg" # footer logo location
 COIN="EDGE" # coin
@@ -354,13 +354,13 @@ Use `SECRET_KEY_BASE` you've generated in Part 3.
 :::
 Save the file and exit.
 
-### Finally, start Blockscout service
+### Finally, start BlockScout service
 ```bash
 sudo systemctl start explorer.service
 ```
 
-## Part 5 - test out the functionality of your Blockscout instance
-Now all that's left to do is to check if Blockscout service is running.
+## Part 5 - test out the functionality of your BlockScout instance
+Now all that's left to do is to check if BlockScout service is running.
 Check service status with:
 ```bash
 sudo systemctl status explorer.service
@@ -384,17 +384,17 @@ tcp        0      0 0.0.0.0:5432            0.0.0.0:*               LISTEN      
 tcp        0      0 0.0.0.0:4000            0.0.0.0:*               LISTEN      42148/beam.smp
 ```
 
-Blockscout web service runs the port and protocol defined in env file. In this example it runs on `4000`(http).   
-If everything is ok, you should be able to access the Blockscout web portal with `http://<host_ip>:4000`.
+BlockScout web service runs the port and protocol defined in env file. In this example it runs on `4000`(http).   
+If everything is ok, you should be able to access the BlockScout web portal with `http://<host_ip>:4000`.
 
 ## Considerations
 For best performance, it is advisable to have a dedicated/local `polygon-edge` full archive non-validator node 
-that will be used exclusively for Blockscout queries.    
-The `json-rpc` API of this node, doesn't need to be exposed publicly, as Blockscout runs all queries from the backend.
+that will be used exclusively for BlockScout queries.    
+The `json-rpc` API of this node, doesn't need to be exposed publicly, as BlockScout runs all queries from the backend.
 
 
 ## Final thoughts
-We've just deployed a single Blockscout instance, which works fine, but for production you should consider placing this instance behind a reverse proxy like Nginx.
+We've just deployed a single BlockScout instance, which works fine, but for production you should consider placing this instance behind a reverse proxy like Nginx.
 You should also think about database and instance scalability, depending on your use case.
 
-You should definitely check out the official [Blockscout documentation](https://docs.blockscout.com/) as there a lot of customisation options.
+You should definitely check out the official [BlockScout documentation](https://docs.blockscout.com/) as there a lot of customisation options.
