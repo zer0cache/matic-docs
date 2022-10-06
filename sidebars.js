@@ -857,77 +857,40 @@ module.exports = {
     "avail/faq",
   ],
 
-  hermez: [
-    "hermez/zkEVM-Architectural-Overview",
+  zkEVM: [
+    "zkEVM/overview",
+    "zkEVM/proof-of-efficiency",
+    "zkEVM/zkNode",
+    "zkEVM/Architecture/zkProver",
+    "zkEVM/lx-ly-bridge",
     {
       type: "category",
-      label: "Basic Concepts",
+      label: "zk Assembly",
       link: {
         type: "generated-index"
       },
       items:[
-        "hermez/Basic-Concepts/introduction",
-        "hermez/Basic-Concepts/fibonacci",
-        "hermez/Basic-Concepts/simple-state-machine",
-        "hermez/Basic-Concepts/modular-design"
+        "zkEVM/zkASM/introduction",
+        "zkEVM/zkASM/basic-syntax",
+        "zkEVM/zkASM/some-examples"
       ]
     },
     {
       type: "category",
-      label: "Architecture",
+      label: "Polynomial Identity Language",
       link: {
         type: "generated-index"
       },
       items:[
-        "hermez/Architecture/zkProver-State-Machines",
-        "hermez/Architecture/zkProver"
+        "zkEVM/PIL/introduction",
+        "zkEVM/PIL/hello-world-examples",
+        "zkEVM/PIL/components",
+        "zkEVM/PIL/cyclical-nature",
+        "zkEVM/PIL/modularity",
+        "zkEVM/PIL/advanced-features",
       ]
     },
-    {
-      type: "category",
-      label: "zkASM",
-      link: {
-        type: "generated-index"
-      },
-      items:[
-        "hermez/zkASM/introduction",
-        "hermez/zkASM/basic-syntax",
-        "hermez/zkASM/some-examples",
-        "hermez/zkASM/related-repos"
-      ]
-    },
-    {
-      type: "category",
-      label: "PIL",
-      link: {
-        type: "generated-index"
-      },
-      items:[
-        "hermez/PIL/introduction",
-        "hermez/PIL/hello-world-examples",
-        "hermez/PIL/components",
-        "hermez/PIL/cyclical-nature",
-        "hermez/PIL/modularity",
-        "hermez/PIL/advanced-features",
-        "hermez/PIL/related-repos",
-      ]
-    },
-    {
-      type: "category",
-      label: "State Machines",
-      link: {
-        type: "generated-index"
-      },
-      items:[
-        "hermez/State-Machines/Arithmetic/Arithmetic-State-Machine-typ",
-        "hermez/State-Machines/Storage/Storage-State-Machine-typ",
-        "hermez/State-Machines/Hashing/Hashing-State-Machine-typ",
-        "hermez/State-Machines/Memory/memory-state-machine",
-        "hermez/State-Machines/Memory-Align/memory-align-state-machine",
-        "hermez/State-Machines/Complementary/complementary-state-machines",
-        "hermez/State-Machines/Complementary/configuration-file"
-      ]
-    }
+    "zkEVM/open-source-repos"
   ],
 
   nightfall: [
