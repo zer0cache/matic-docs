@@ -10,20 +10,20 @@ keywords:
   - delegation
   - liquid delegation
 slug: liquid-delegation
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 
 In a traditional Proof of Stake mechanism, the blockchain keeps track of a set of validators, And anyone can join this rank or right to validate transactions by sending a special type of transaction which stake their coins(in Ethereum's case, ether) and locks up into a deposit. The process of creating and agreeing to new blocks is then done through a consensus algorithm by all current validators.
 
 They lock up part of their stake for a certain amount of time (like a security deposit), and in return they get a chance proportional to that stake to select the next block
 
-Incentives for participants are Staking rewards — and the possibility of slashing — which encourages token holders and validators to secure PoS blockchain. Staking creates the “skin in the game” necessary for good behaviour such as running nodes in the network and discouraging bad behaviours like failing to remain online or double signing.
+Incentives for participants are Staking rewards.
 
 ### Delegation and need for it
 
-Staking can be expensive and makes barrier of entry higher and in which case it promotes rich getting richer. We want everyone to participate in network security and get token appreciation. The only alternative is to participate in staking pool like mining pool in which you need to trust validators. That's why we think that keeping delegation in protocol is best way to go for new delegators. Since capital, rewards and slashing is protected and open via in-protocol mech.
+Staking can be expensive and makes barrier of entry higher and in which case it promotes rich getting richer. We want everyone to participate in network security and get token appreciation. The only alternative is to participate in staking pool like mining pool in which you need to trust validators. That's why we think that keeping delegation in protocol is best way to go for new delegators. Since capital, rewards is protected and open via in-protocol mech.
 
-Delegator's can participate in validation without hosting a full node. But by staking with validators, they can earn reward and strengthen the network by paying a small commission fee(depends on Validator) to a validator of their choice. 
+Delegator's can participate in validation without hosting a full node. But by staking with validators, they can earn reward and strengthen the network by paying a small commission fee(depends on Validator) to a validator of their choice.
 
 ### Limitation of Traditional Delegator and Validator pov
 
@@ -51,15 +51,15 @@ Application level staking liquidation has trust problem, Protocol level staking 
 
 While exploring delegation we realised that delegation needs to be in-protocol in order to have more trust from delegators.
 
-We were facing similar issue to validators capital liquidity and thought of making it a NFT which can be transfers and exploring on similar thoughts like how it can be made more liquid and sikka-chorus.one 's   awesome design 🙏 [https://blog.chorus.one/delegation-vouchers/](https://blog.chorus.one/delegation-vouchers/)  came to attention. 
+We were facing similar issue to validators capital liquidity and thought of making it a NFT which can be transfers and exploring on similar thoughts like how it can be made more liquid and sikka-chorus.one 's   awesome design 🙏 [https://blog.chorus.one/delegation-vouchers/](https://blog.chorus.one/delegation-vouchers/)  came to attention.
 
 Thinking in terms of making is share of validator pool is great idea and since Polygon's staking is implemented on ethereum smart contract it opens up a lot more options for us like making it ERC20 compatible so that it can be used in defi protocols.
 
 As of now each validator has their own VMatic(i.e. for validator Ashish there will be AMatic token)
 
-because each validator has different performance(rewards/slashing and commission rate).
+because each validator has different performance(rewards and commission rate).
 
-Delegators can buy multiple validator share and hedge their risk towards slashing or poor performance of particular validator.
+Delegators can buy multiple validator share and hedge their risk towards poor performance of particular validator.
 
 ### Advantages
 

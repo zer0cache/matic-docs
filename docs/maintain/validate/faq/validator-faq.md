@@ -21,7 +21,7 @@ In any case, there is always the possibility of stake delegation with the curren
 
 * **Active**: Validator is in the current validator set, produces blocks at the Bor layer, participates in Heimdall consensus and commits checkpoint transactions to the Ethereum mainnet.
 * **Notice**: Validator sends a transaction to unbond. Before entering into the unbonding period, validator needs to be in active state creating, signing and proposing blocks for a certain time.
-* **Unbonding**: Validator is inactive in this state and thus earns no reward. However, the validator is still liable for slashing in case they have committed any malicious act previously.
+* **Unbonding**: Validator is inactive in this state and thus earns no reward.
 
 ## Is there a minimum amount of MATIC required to stake to become a validator?
 

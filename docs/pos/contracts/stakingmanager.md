@@ -5,7 +5,7 @@ description: "The main contract for handling validator-related activities."
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -15,7 +15,7 @@ The whole design follows this philosophy of doing less on the Mainnet contract. 
 
 Staking actors (Stakers) are divided into validators, delegators and watchers(for fraud reporting).
 
-StakeManager is the main contract for handling validator related activities like `checkPoint` signature verification, reward distribution, slashing and stake management.
+StakeManager is the main contract for handling validator related activities like `checkPoint` signature verification, reward distribution, and stake management.
 
 Note that from one Ethereum address, a Staker can only be a validator or delegator (It's just a design choice, no hard reasons).
 
@@ -95,7 +95,6 @@ function updateSigner(uint256 validatorId, bytes memory signerPubkey)
 ```
 
 - Allows validators to update signer address(which is used to validate blocks on Polygon chain and checkpoint sigs on stakeManager)
-- Once slashing is implemented there will be cap on how many times a validator can change signer key.
 
 ### topUpForFee
 
@@ -198,7 +197,7 @@ mapping(uint256 => State) public validatorState;
 
 <img src={useBaseUrl("img/staking_manager/staking_manager.png")} />
 
-Diagram trying to explain timeline data structure 
+Diagram trying to explain timeline data structure
 
 ---
 

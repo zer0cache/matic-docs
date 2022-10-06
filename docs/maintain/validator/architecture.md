@@ -28,7 +28,6 @@ The staking contracts implement the following features:
 
 * The ability for anyone to stake MATIC tokens on the staking contracts on the Ethereum mainnet and join the system as a [validator](../glossary#validator).
 * Earn staking rewards for validating state transitions on the Polygon Network.
-* Enable penalties/slashing for activities such as double signing, validator downtime, etc.
 * Save [checkpoints](../glossary#checkpoint-transaction) on the Ethereum mainnet.
 
 The PoS mechanism also acts as a mitigation to the data unavailability problem for the Polygon sidechains.

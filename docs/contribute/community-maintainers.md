@@ -32,20 +32,14 @@ else on this list to verify the legitimacy of the original inquiry.
 
 :::
 
-## Nazim Faour
+## Ashutosh Tripathi
 
-- email: [nazim@polygon.technology](mailto:nazim@polygon.technology)
-- telegram: [@NazimFa](https://t.me/NazimFa)
-- github: [Nazeim](https://github.com/Nazeim)
-
-## Vinícius Gomes
-
-- email: [vinicius@polygon.technology](mailto:vinicius@polygon.technology)
-- telegram: [@cerberushades86](https://t.me/cerberushades86)
-- github: [cerberushades](https://github.com/cerberushades)
+Github: [ashucoder9](https://github.com/ashucoder9)
 
 ## Danny Salman
 
-- email: [danny@polygon.technology](mailto:danny@polygon.technology)
-- telegram: [@dannysalman](https://t.me/dannysalman)
-- github: [dannys03](https://github.com/DannyS03)
+Github: [dannys03](https://github.com/DannyS03)
+
+## Vinícius Gomes
+
+Github: [cerberushades](https://github.com/cerberushades)

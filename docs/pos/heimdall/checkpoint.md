@@ -5,7 +5,7 @@ description: "Snapshots of the Bor chain state submitted to Ethereum."
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -25,13 +25,13 @@ type CheckpointBlockHeader struct {
 
 	// EndBlock: The block number on Bor from which this checkpoint ends
 	EndBlock        uint64                `json:"endBlock"`
-	
-	// RootHash is the Merkle root of all the leaves containing the block 
-	// headers starting from start to the end block 
+
+	// RootHash is the Merkle root of all the leaves containing the block
+	// headers starting from start to the end block
 	RootHash        types.HeimdallHash    `json:"rootHash"`
 
 	// Account root hash for each validator
-  // Hash of data that needs to be passed from Heimdall to Ethereum chain like slashing, withdraw topup etc.
+  // Hash of data that needs to be passed from Heimdall to Ethereum chain like withdraw topup etc.
 	AccountRootHash types.HeimdallHash    `json:"accountRootHash"`
 
   // Timestamp when checkpoint was created on Heimdall
@@ -46,7 +46,7 @@ type CheckpointBlockHeader struct {
 `RootHash` is the Merkle hash of Bor block hashes from `StartBlock` to `EndBlock`. Root hash for the checkpoint is created using the following way:
 
 ```matlab
-blockHash = keccak256([number, time, tx hash, receipt hash]) 
+blockHash = keccak256([number, time, tx hash, receipt hash])
 ```
 
 Pseudocode for the root hash for `1` to `n` Bor blocks:

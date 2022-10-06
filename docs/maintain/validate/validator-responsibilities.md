@@ -38,7 +38,6 @@ Any [validator](../glossary#validator) on the Polygon Network has the following 
   * Provide feedback and suggestions.
 * Stake network tokens and run validator nodes to join the system as a validator.
 * Earn staking rewards for validating state transitions on the blockchain.
-* Subject to penalties/slashing for activities such as double signing, validator downtime, etc.
 
 ### Technical node operations
 

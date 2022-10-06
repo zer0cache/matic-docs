@@ -10,7 +10,7 @@ keywords:
   - delegation
   - shares
 slug: derivatives
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://matic.network/banners/matic-network-16x9.png
 ---
 
 Polygon supports [delegation](../../glossary#delegator) via validator shares. By using this design, it is easier to distribute rewards and slash with scale on the Ethereum mainnet contracts without much computation.
@@ -25,7 +25,7 @@ Initially, Delegator D buys tokens from the Validator A specific pool when the e
 
 When a validator gets rewarded with more MATIC tokens, the new tokens are added to the pool.
 
-Let's say with the current pool of 100 MATIC tokens,  10 MATIC rewards are added to the pool. Since the total supply of VATIC tokens did not change due to the rewards, the exchange rate becomes 1 MATIC per 0.9 VATIC. Now, Delegator D gets more MATIC for the same amount if shares. Similar to slashing, if 10 MATIC gets slashed from the pool, the new exchange rate becomes 1 MATIC per 1.1 VATIC.
+Let's say with the current pool of 100 MATIC tokens,  10 MATIC rewards are added to the pool. Since the total supply of VATIC tokens did not change due to the rewards, the exchange rate becomes 1 MATIC per 0.9 VATIC. Now, Delegator D gets more MATIC for the same amount if shares.
 
 ## The flow in the contract
 
