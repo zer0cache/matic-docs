@@ -38,13 +38,13 @@ While publishing a series of transactions, the **sequencer** must pay a **fee in
 
 An **Aggregator** receives all the transaction information from the Sequencer and sends it to the **Prover** (or zkProver) which provides a byte-sized zk-Proof after complex polynomial computations. The Smart Contract validates this proof. This way, an **Aggregator** collects the data, sends it to the **Prover**, receives its output and finally, sends the information to the smart contract to verify that the **Validity Proof** from the **Prover** is correct.
 
-The **$MATIC** fee paid by the sequencers will be given to the aggregaters. If the chain is overloaded with batches, the **$MATIC cost will increase**, which will better incentivize the aggregators to generate verifiable proofs. The total cost of running aggregators is calculated by two factors: L1 transaction cost, and Server costs (to be defined).
+The **$MATIC** fee paid by the sequencers will be given to the aggregators. If the chain is overloaded with batches, the **$MATIC cost will increase**, which will better incentivize the aggregators to generate verifiable proofs. The total cost of running aggregators is calculated by two factors: L1 transaction cost, and Server costs (to be defined).
 
 ## **Synchronizer**
 
 Other than sequencing and validating processes, the zkNode also enables synchronisation of batches and their validity proofs, which happens only after these have been added to L1. This is accomplished using a subcomponent called the **Synchronizer**.
 
-A Synchronizer is in charge of getting all the data from Smart Contracts, which includes the data posted by the sequencers (transactions) and the data posted by the coordinators (validity proofs). All this data is stored in a huge database and served to third parties through a service called **JSON-RPC**.
+A **Synchronizer** is responsible for getting all the data from Smart Contracts, which includes the data posted by the **sequencers** (transactions) and the data posted by the **aggregators** (validity proofs). All this data is stored in a huge database and served to third parties through a service called **JSON-RPC**.
 
 The Synchronizer is responsible for reading the events from the Ethereum blockchain, including new batches to keep the state fully synced. The information read from these events must be stored in the database. The Synchronizer also handles possible reorgs, which will be detected by checking if the last `ethBlockNum` and the last `ethBlockHash` are synced.
 
@@ -60,4 +60,4 @@ This subcomponent implements the Merkle Tree and connects to the DB backend. It 
 
 All the rules for a transaction to be valid are implemented and enforced in the zkProver. A zkProver performs complex mathematical computations in the form of polynomials and assembly language. These are later verified on a Smart Contract.
 
-These rules could be seen as constraints that a transaction must satisfy in order to be able to modify the state tree or the exit tree. The zkProver is the most complex module which required development of two new programming languages to implement the needed elements. Its detailed architecture is outlined [<ins>here</ins>](architecture/zkProver).
+These rules could be seen as constraints that a transaction must satisfy in order to be able to modify the state tree or the exit tree. The zkProver is the most complex module which required development of two new programming languages to implement the needed elements. Its detailed architecture is outlined [here](https://wiki.polygon.technology/docs/zkEVM/Architecture/zkProver).
