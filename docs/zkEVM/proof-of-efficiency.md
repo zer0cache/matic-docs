@@ -26,7 +26,7 @@ The latest **Proof of Efficiency (PoE)** consensus mechanism leverages the exper
 
 Let's explore in detail why we chose PoE over PoD consensus mechanism.
 
-## **Why is PoD not the Best Option?**
+## **Why PoD is not the Best Option**
 
 The PoD model fell out of our preferable options for the reasons listed below:
 
@@ -67,7 +67,7 @@ Unless, among other things, the proving module can be highly accelerated to miti
 
 The underlying protocol in zkEVM ensures that the state transitions are correct by employing a validity proof. To ensure that a set of pre-determined rules have been followed for allowing transitioning of the state, a smart contract is employed.
 
-A smart contract verifies the validity proofs to ensure that each transition is completed correctly. This is accomplished by employing zk-SNARK circuits. A system of this type requires two processes: *transaction batching* and *transaction validation*.
+A smart contract verifies the validity proofs to ensure that each transition is completed correctly. This is accomplished by employing zk-SNARK circuits. A system of this type requires two processes: **transaction batching** and **transaction validation**.
 
 To carry out these procedures, zkEVM employs two sorts of participants: **Sequencers** and **Aggregators**. Under this two-layer model: 
 

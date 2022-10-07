@@ -890,7 +890,8 @@ module.exports = {
         "zkEVM/PIL/advanced-features",
       ]
     },
-    "zkEVM/open-source-repos"
+    "zkEVM/open-source-repos",
+    "zkEVM/glossary"
   ],
 
   nightfall: [

@@ -32,7 +32,17 @@ The zkNode Architecture modular in nature. You can check out the diagram below f
 
 A **Sequencer** receives L2 transactions from the users, preprocesses them as a new L2 batch, and then proposes the batch to the PoE smart contract as a valid L2 transaction. The **Sequencer** receives **transactions from users** and will **receive all fees** from all published transactions. Sequencer is therefore economically incentivized to post valid transactions in order to profit the most from them. A **Transaction Pool** with a sorting algorithm to choose the most profitable transactions is often used to solve this.
 
-While publishing a series of transactions, the **sequencer** must pay a **fee in $MATIC** tokens. This sum will change depending on the pending batches that need to be validated. If a sequencer shows malicious behavior by **posting invalid transactions** or **creating batches with just one transaction**, the protocol ensures that it will be very expensive to break the chain. This ensures that publishing invalid transactions will result in a loss for the sequencer.
+While publishing a series of transactions, the **Sequencer** must pay a **fee in $MATIC** tokens. This sum will change depending on the pending batches that need to be validated. If a sequencer shows malicious behavior by **posting invalid transactions** or **creating batches with just one transaction**, the protocol ensures that it will be very expensive to break the chain. This ensures that publishing invalid transactions will result in a loss for the sequencer.
+
+Sequencers can be either **Trusted** or **Permissionless**:
+
+### **Trusted**
+
+**Trusted sequencers** are added to the network in order to achieve **fast finality**. The trusted sequencers predicts what the state will look like before it’s actually virtualized on L1.
+
+### **Permissionless**
+
+To improve decentralization of the Polygon zkEVM, we allow permissionless sequencers to run on the network. Anyone with required hardware setup can initialize their own zkNode and participate as an independent, censor-resistant, **permissionless sequencer** in the network.
 
 ## **Aggregators**
 
