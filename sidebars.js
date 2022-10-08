@@ -39,6 +39,7 @@ module.exports = {
         "maintain/polygon-basics/who-is-delegator",
         "maintain/polygon-basics/who-is-validator",
         "home/architecture/polygon-architecture",
+        "home/polygon-basics/zkEVM-basics"
       ],
     },
     "home/faq",
@@ -859,6 +860,7 @@ module.exports = {
 
   zkEVM: [
     "zkEVM/overview",
+    "zkEVM/develop",
     "zkEVM/proof-of-efficiency",
     "zkEVM/zkNode",
     "zkEVM/Architecture/zkProver",

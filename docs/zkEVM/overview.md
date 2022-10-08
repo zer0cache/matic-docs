@@ -20,19 +20,13 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 This documentation is still a **Work In Progress**. Some topics have been discussed in greater depth, while others require additional clarification.
 
+If you are interested in learning about the basics of zero-knowledge, EVM, and other fundamental concepts behind Polygon zkEVM, check out the [<ins>Polygon zkEVM basics</ins>](https://wiki.polygon.technology/docs/home/polygon-basics/zkEVM-basics).
+
 :::
 
 Polygon zkEVM is a decentralized Ethereum Layer 2 scalability solution that uses cryptographic zero-knowledge proofs to offer validity and quick finality to off-chain transaction computation, also known as a **ZK-Rollup**.
 
 The ZK-Rollup executes smart contracts transparently, by publishing zero-knowledge validity proofs, while maintaining opcode compatibility with the Ethereum Virtual Machine. This documentation provides an overview of the Polygon zkEVM.
-
-:::tip **Building on zkEVM**
-
-Building dApps on **zkEVM** is similar to Ethereum. Simply switch to the zkEVM RPC and start building.
-
-**Polygon zkEVM** provides a complete EVM-like experience for Developers and Users alike. You do not need special toolings or new wallets for building or interacting with **zkEVM**.
-
-:::
 
 ## **Architecture of zkEVM**
 
