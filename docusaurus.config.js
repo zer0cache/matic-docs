@@ -312,6 +312,13 @@ module.exports = {
           position: "right",
           items: [
                   {
+                    to: "docs/contribute/orientation/",
+                    label: "Contribute to Wiki",
+                    target: '_blank',
+                    rel: null,
+                    activeBasePath: "docs/contribute",
+                  },
+                  {
                     href: 'https://discord.com/invite/0xPolygon',
                     label: 'Discord',
                     target: '_blank',
@@ -342,6 +349,12 @@ module.exports = {
                     rel: null,
                   },
                   {
+                    label: "Get Updates",
+                    href: 'https://polygon.technology/notifications/',
+                    target: '_blank',
+                    rel: null,
+                  },
+                  {
                     href: 'https://polygon.technology/community/',
                     label: 'View all communities',
                     target: '_blank',
@@ -360,11 +373,6 @@ module.exports = {
               rel: null,
             }
           ]
-        },
-        {
-          label: "Notifications",
-          href: 'https://polygon.technology/notifications/',
-          position: "right",
         },
         {
           label: "FAQs",
@@ -395,12 +403,6 @@ module.exports = {
                     rel: null,
                   }
                 ],
-        },
-        {
-          to: "docs/contribute/orientation/",
-          label: "Contribute to the Wiki",
-          position: "right",
-          activeBasePath: "docs/contribute",
         },
         {
           href: "https://github.com/maticnetwork",
