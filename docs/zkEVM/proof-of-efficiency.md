@@ -46,7 +46,7 @@ The strategic implementation of PoE promises to ensure that the network:
 - Is protected from malicious attacks, especially by validators
 - Maintains a fair balance between overall validation effort and network value
 
-:::info
+:::tip Good to Know
 
 Possibilities of coupling PoE with a PoS (Proof of Stake) are currently being explored. A detailed description of zkEVM's PoE by [<ins>David</ins>](https://twitter.com/davidsrz) and [<ins>Jordi</ins>](https://twitter.com/jbaylina) is published on [<ins>Ethereum Research</ins>](https://ethresear.ch/t/proof-of-efficiency-a-new-consensus-mechanism-for-zk-rollups/11988).
 
@@ -65,7 +65,13 @@ Unless, among other things, the proving module can be highly accelerated to miti
 
 ## **The PoE Smart Contract**
 
-The underlying protocol in zkEVM ensures that the state transitions are correct by employing a validity proof. To ensure that a set of pre-determined rules have been followed for allowing transitioning of the state, a smart contract is employed.
+The underlying protocol in zkEVM ensures that the state transitions are correct by employing a validity proof. To ensure that a set of pre-determined rules have been followed for allowing state transitions, the Proof of Efficiency smart contract is employed.
+
+:::info
+
+The Proof of Efficiency (PoE) smart contract is currently deployed on the Goerli testnet. It is available [here](https://goerli.etherscan.io/address/0x14cB06e8dE2222912138F9a062E5a4d9F4821409).
+
+:::
 
 A smart contract verifies the validity proofs to ensure that each transition is completed correctly. This is accomplished by employing zk-SNARK circuits. A system of this type requires two processes: **transaction batching** and **transaction validation**.
 

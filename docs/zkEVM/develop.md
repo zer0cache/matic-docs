@@ -31,7 +31,18 @@ You don't need special toolings or Wallets to build or interact with Polygon zkE
 Developers will be able to deploy their existing contracts to the zkEVM, and Users can deposit assets from Ethereum and transact off-chain. These transactions are grouped into batches with zero-knowledge proof attesting to the validity of each transaction.
 
 ## **Connecting to zkEVM**
-Check out this awesome video tutorial on how to add Polygon zkEVM Testnet to Metamask and deploy smart contracts. The video has blurred RPC URLs for obvious reasons but we will update the links as soon as Public Testnet launches.
+
+In order to add the **Polygon zkEVM** network to your wallet, you will need to enter the following details:
+
+- **Network Name**: Polygon zkEVM Testnet
+- **RPC URL**: [https://public.zkevm-test.net:2083](https://public.zkevm-test.net:2083)
+- **Chain ID**: 1402
+- **Currency Symbol**: ETH
+- **Block Explorer URL**: [https://public.zkevm-test.net:2083](https://public.zkevm-test.net:2083)
+
+Also, for moving assets across chains, you will need to use the zkEVM Bridge. The bridge is available on [https://public.zkevm-test.net/](https://public.zkevm-test.net/).
+
+Check out this video tutorial on how to add Polygon zkEVM Testnet to Metamask and deploy smart contracts:
 
 <video autoplay width="100%" height="100%" controls="true" >
   <source type="video/mp4" src="/img/zkevm/tutorial.mp4"></source>
