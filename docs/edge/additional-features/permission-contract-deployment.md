@@ -19,6 +19,10 @@ Sometimes network operators wish to prevent users from deploying smart contracts
 1. Whitelist addresses for Smart Contract deployment
 2. Remove addresses from the whitelist for Smart Contract deployment
 
+## Video presentation
+
+[![permission contract deployment - video](https://img.youtube.com/vi/yPOkINpf7hg/0.jpg)](https://www.youtube.com/watch?v=yPOkINpf7hg)
+
 ## How to use it?
 
 

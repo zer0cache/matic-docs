@@ -13,6 +13,10 @@ keywords:
 
 BLS is a signature scheme that can aggregate multiple signatures. In Polygon Edge, BLS is used by default in order to provide better security in the IBFT consensus mode. BLS can aggregate signatures into a single byte array and reduce the block header size. Each chain can choose whether to use BLS or not. The ECDSA key is used regardless of whether the BLS mode is enabled or not.
 
+## Video presentation
+
+[![bls - video](https://img.youtube.com/vi/HbUmZpALlqo/0.jpg)](https://www.youtube.com/watch?v=HbUmZpALlqo)
+
 ## How to setup a new chain using BLS
 
 Refer to the [Local Setup](/docs/edge/get-started/set-up-ibft-locally) / [Cloud Setup](/docs/edge/get-started/set-up-ibft-on-the-cloud) sections for detailed setup instructions.
