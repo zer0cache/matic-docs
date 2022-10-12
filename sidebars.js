@@ -465,7 +465,6 @@ module.exports = {
             "develop/ethereum-polygon/plasma/erc20",
             "develop/ethereum-polygon/plasma/erc721",
             "develop/ethereum-polygon/plasma/deposit-withdraw-event-plasma",
-            "develop/ethereum-polygon/plasma/mapping-assets",
             "develop/plasma-using-metamask",
           ],
         },

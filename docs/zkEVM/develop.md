@@ -48,3 +48,14 @@ Check out this video tutorial on how to add Polygon zkEVM Testnet to Metamask an
   <source type="video/mp4" src="/img/zkevm/tutorial.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
+
+## **zkEVM Support**
+
+If you need help with anything related to the Polygon zkEVM, you can raise a ticket on the [Polygon Support](https://support.polygon.technology/support/tickets/new) portal. Additionally, you can reach out to the support team available on the **#zkevm-support** channel on the [Polygon Discord server](https://discord.com/invite/XvpHAxZ). Instructions for raising a zkEVM testnet support ticket are as follows:
+
+1. Join the **Polygon Discord** server [here](https://discord.gg/0xPolygon).
+2. Accept the invite sent via DM.
+3. Take the **Member** role under **#roles**.
+4. Navigate to the **#zkevm-support** channel.
+
+You can now contact the zkEVM support staff with your questions and concerns. We will actively monitor for issues and work to resolve them as soon as possible.
