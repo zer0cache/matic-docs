@@ -50,9 +50,9 @@ Tokens on testnet networks have no value as they are only used for testing purpo
  <img src={useBaseUrl("img/tools/submitted.png")} />
 
 :::note
-If you don't have enough MATIC testnet Tokens in your account to pay the gas fees, the transaction may fail. If you require testnet tokens in bulk, please contact us on <ins>**[Discord](https://discord.com/invite/polygon)**</ins>.
+If you don't have enough MATIC testnet Tokens in your account to pay the gas fees, the transaction may fail. If you require testnet tokens in bulk, please contact us on <ins>**[Discord](https://discord.com/invite/0xPolygon)**</ins>.
 :::
 
 :::tip
-In addition to Polygon faucets, [Alchemy’s Mumbai Faucet](https://mumbaifaucet.com/) will allow you to test your Polygon applications before going live, by providing test MATIC tokens. [Here's how to use it](/docs/develop/tools/alchemy-faucet).
+In addition to Polygon faucets, [Alchemy’s Mumbai Faucet](https://mumbaifaucet.com/) will allow you to test your Polygon applications before going live, by providing test MATIC tokens. <ins>**[Here's how to use it](/docs/develop/tools/alchemy-faucet)**</ins>.
 :::
