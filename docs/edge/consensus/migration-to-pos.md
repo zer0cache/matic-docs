@@ -30,5 +30,5 @@ Please check [Proof of Stake](/docs/edge/consensus/pos-concepts) for more detail
 :::warning Validators need to stake manually
 Each validator needs to stake after contract is deployed at `deployment` and before `from` in order to be a validator at the beginning of PoS. Each validator will update own validator set by the set in the staking contract at the beginning of PoS.
 
-To find out more about Staking, visit the [Set up and use Proof of Stake ](/docs/edge/consensus/pos-stake-unstake).
+To find out more about Staking, visit the **[Set up and use Proof of Stake ](/docs/edge/consensus/pos-stake-unstake)**.
 :::

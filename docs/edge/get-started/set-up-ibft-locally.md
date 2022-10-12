@@ -17,7 +17,7 @@ The below guide will instruct you on how to set up a Polygon Edge network on you
 purposes.
 
 The procedure differs greatly from the way you would want to set up Polygon Edge network for a real use scenario on
-a cloud provider: [Cloud Setup](/docs/edge/get-started/set-up-ibft-on-the-cloud)
+a cloud provider: **[Cloud Setup](/docs/edge/get-started/set-up-ibft-on-the-cloud)**
 
 :::
 
@@ -357,7 +357,7 @@ Example:
 ````bash
 polygon-edge server --config ./test/config-node1.json
 ````
-Currently, we only support `json` based configuration file, sample config file can be found [here](/docs/edge/configuration/sample-config)
+Currently, we only support `json` based configuration file, sample config file can be found **[here](/docs/edge/configuration/sample-config)**
 
 :::
 

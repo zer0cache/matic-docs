@@ -16,7 +16,7 @@ keywords:
 The below guide will instruct you on how to set up a Polygon Edge network on a cloud provider for a production setup of your testnet or mainnet.
 
 If you would like to setup a Polygon Edge network locally to quickly test the `polygon-edge` before doing a production-like setup, please refer to
-[Local Setup](/docs/edge/get-started/set-up-ibft-locally)
+**[Local Setup](/docs/edge/get-started/set-up-ibft-locally)**
 :::
 
 ## Requirements
@@ -387,7 +387,7 @@ Example :
 ````bash
 polygon-edge server --config ./test/config-node1.json
 ````
-Currently, we only support `json` based configuration file, sample config file can be found [here](/docs/edge/configuration/sample-config)
+Currently, we only support `json` based configuration file, sample config file can be found **[here](/docs/edge/configuration/sample-config)**
 
 :::
 
