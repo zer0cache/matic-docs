@@ -642,6 +642,16 @@ module.exports = {
             "maintain/validate/validator-commission-operations",
           ],
         },
+        {
+          type: "category",
+          label: "Validator Performance Metrics",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "maintain/validate/validator-performance-overview",
+          ],
+        },
         "avail/node/avail-node-management",
         {
           type: "category",
