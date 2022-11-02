@@ -18,7 +18,7 @@ Validators in Polygon Network are selected via an on-chain auction process which
 
 A validator has two addresses an owner address and a signer address. The staking is done with the owner address.
 
-See also [Key Management](key-management).
+See also [Key Management](../key-management).
 
 ## Stake
 
