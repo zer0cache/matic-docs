@@ -15,6 +15,13 @@ Polygon is a scaling solution for public blockchains. Polygon PoS supports all t
 * [Ethereum + Polygon with PoS bridge](https://docs.polygon.technology/docs/develop/ethereum-polygon/pos/getting-started)
 * [Ethereum + Polygon with Plasma bridge](https://docs.polygon.technology/docs/develop/ethereum-polygon/plasma/getting-started)
 
+## Query the blockchain
+
+Most blockchain interactions involve reading its state.
+
+Alchemy offers a reference guide on how to make basic requests to the blockchain.
+Check out their guide on [how  to query Polygon](https://docs.alchemy.com/reference/polygon-sdk-examples).
+
 ## Deploy Smart Contracts
 
 <!-- ### Are you an Experience Blockchain Developer? -->
