@@ -38,14 +38,13 @@ For snapshot download links, see the [<ins>Polygon Chains Snapshots</ins>](https
 - Check the [Polygon PoS Ansible repository](https://github.com/maticnetwork/node-ansible#requirements) for 
   requirements.
 - You will also need to ensure that Go is **not installed** in your environment. You will run into issues if you 
-  attempt to set up your full node through Ansible with Go installed, as Ansible requires specific packages of Go 
+  attempt to set up your full node through Ansible with Go installed as Ansible requires specific packages of Go 
   to be installed.
-- You will also need to ensure that your machine has no previous configurations for a Polygon validator, 
-  including Heimdall and Bor. You must completely remove any existing setups or run into issues.
+- You will also need to make sure that your VM / Machine does not have any previous setups for Polygon Validator or Heimdall or Bor. You will need to delete them as your setup will run into issues.
 
 :::note Heimdall source enhancements
 
-The latest Heimdall version, **[v.0.2.11](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.11)**, contains a few enhancements. 
+The latest Heimdall version, **[v.0.2.12](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.12)**, contains a few enhancements. 
 The delay time between the contract events of different validators **has been increased** to ensure that the mempool doesn't get filled 
 quickly in case of a burst of events that could hamper the chain's progress. 
 
@@ -74,10 +73,10 @@ Length in byte format - 4
 
   ```bash
   # Mainnet:
-  ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.16 heimdall_branch=v0.2.11 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
+  ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.16 heimdall_branch=v0.2.12 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
 
   # Testnet:
-  ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.16 heimdall_branch=v0.2.11 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai" --list-hosts
+  ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.16 heimdall_branch=v0.2.12 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai" --list-hosts
   ```
 
 <img src={useBaseUrl("img/network/full-node-mumbai.png")} />
@@ -86,10 +85,10 @@ Length in byte format - 4
 
   ```bash
   # Mainnet:
-  ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.16 heimdall_branch=v0.2.11 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"
+  ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.16 heimdall_branch=v0.2.12 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"
 
   # Testnet:
-  ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.16 heimdall_branch=v0.2.11 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai"
+  ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.16 heimdall_branch=v0.2.12 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai"
   ```
 
 - In case you run into any issues, delete and clean the whole setup using:

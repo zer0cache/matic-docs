@@ -126,7 +126,7 @@ xxx.xxx.xx.xx | SUCCESS => {
 Do a test run of the sentry node setup:
 
 ```sh
-ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.16 heimdall_branch=v0.2.11  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
+ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.16 heimdall_branch=v0.2.12  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
 ```
 
 This will be the output:
@@ -141,7 +141,7 @@ playbook: playbooks/network.yml
 Run the sentry node setup with sudo privileges:
 
 ```sh
-ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.16 heimdall_branch=v0.2.11  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --ask-become-pass
+ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.16 heimdall_branch=v0.2.12  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --ask-become-pass
 ```
 
 Once the setup is complete, you will see a message of completion on the terminal.
@@ -183,7 +183,7 @@ xxx.xxx.xx.xx | SUCCESS => {
 Do a test run of the validator node setup:
 
 ```sh
-ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.16 heimdall_branch=v0.2.11 network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet" --list-hosts
+ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.16 heimdall_branch=v0.2.12 network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet" --list-hosts
 ```
 
 You should get this as output:
@@ -198,7 +198,7 @@ playbook: playbooks/network.yml
 Run the validator node setup with sudo privileges:
 
 ```sh
-ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.16 heimdall_branch=v0.2.11  network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet" --ask-become-pass
+ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.16 heimdall_branch=v0.2.12  network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet" --ask-become-pass
 ```
 
 Once the setup is complete, you will see a message of completion on the terminal.
@@ -317,7 +317,7 @@ For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.ma
 
 ### Start the Heimdall service
 
-The latest version, [Heimdall v.0.2.11](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.11), contains a few enhancements such as:
+The latest version, [Heimdall v.0.2.12](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.12), contains a few enhancements such as:
 1. Restricting data size in state sync txs to:
     * **30Kb** when represented in **bytes**
     * **60Kb** when represented as **string**.

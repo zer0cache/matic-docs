@@ -130,7 +130,7 @@ At this point, we have a host with docker running on it and we have ample mounte
 First let’s make sure we can run Heimdall with docker. Run the following command:
 
 ```bash
-docker run -it 0xpolygon/heimdall:0.2.11 heimdallcli version
+docker run -it 0xpolygon/heimdall:0.2.12 heimdallcli version
 ```
 
 If this is the first time you’ve run Heimdall with docker, it should pull the required image automatically and output the version information.
@@ -142,10 +142,10 @@ If you’d like to check the details of the Heimdall image or find a different t
 At this point, let’s run the Heimdall `init` command to set up our home directory.
 
 ```bash
-docker run -v /mnt/data/heimdall:/heimdall-home:rw --entrypoint /usr/local/bin/heimdalld -it 0xpolygon/heimdall:0.2.11 init --home=/heimdall-home
+docker run -v /mnt/data/heimdall:/heimdall-home:rw --entrypoint /usr/local/bin/heimdalld -it 0xpolygon/heimdall:0.2.12 init --home=/heimdall-home
 ```
 
-Let’s break this command down a bit in case anything goes wrong. We’re using `docker run` to run a command via docker. The switch `-v /mnt/data/heimdall:/heimdall-home:rw` is very important. It’s mounting the folder that we created earlier `/mnt/data/heimdall` from our host system to `/heimdall-home` within the container as a docker volume. The `rw` allows the command to write to this docker volume. For all intents and purposes, from within the docker container, the home directory for Heimdall will be `/heimdall-home`. The argument `--entrypoint /usr/local/bin/heimdalld` is overriding the default entry point for this container. The switch `-it` is used to run the command interactively. Finally we’re specifying which image we want to run with `0xpolygon/heimdall:0.2.11`. After that `init --home=/heimdall-home` are arguments being passed to the heimdalld executable. `init` is the command we want to run and `--home` is used to specify the location of the home directory.
+Let’s break this command down a bit in case anything goes wrong. We’re using `docker run` to run a command via docker. The switch `-v /mnt/data/heimdall:/heimdall-home:rw` is very important. It’s mounting the folder that we created earlier `/mnt/data/heimdall` from our host system to `/heimdall-home` within the container as a docker volume. The `rw` allows the command to write to this docker volume. For all intents and purposes, from within the docker container, the home directory for Heimdall will be `/heimdall-home`. The argument `--entrypoint /usr/local/bin/heimdalld` is overriding the default entry point for this container. The switch `-it` is used to run the command interactively. Finally we’re specifying which image we want to run with `0xpolygon/heimdall:0.2.12`. After that `init --home=/heimdall-home` are arguments being passed to the heimdalld executable. `init` is the command we want to run and `--home` is used to specify the location of the home directory.
 
 After running the `init` command, your `/mnt/data/heimdall` directory should have some structure and look like this:
 
@@ -219,7 +219,7 @@ docker network create polygon
 Now we’re going to start Heimdall. Run the following command:
 
 ```bash
-docker run -p 26657:26657 -p 26656:26656 -v /mnt/data/heimdall:/heimdall-home:rw --net polygon --name heimdall --entrypoint /usr/local/bin/heimdalld -d --restart unless-stopped  0xpolygon/heimdall:0.2.11 start --home=/heimdall-home
+docker run -p 26657:26657 -p 26656:26656 -v /mnt/data/heimdall:/heimdall-home:rw --net polygon --name heimdall --entrypoint /usr/local/bin/heimdalld -d --restart unless-stopped  0xpolygon/heimdall:0.2.12 start --home=/heimdall-home
 ```
 
 Many of the pieces of this command will look familiar. So let’s talk about what’s new. The `-p 26657:26657` and `-p 26656:26656` switches are port mappings. This will instruct docker to map the host port `26657` to the container port `26657` and the same for `26656`. The `--net polygon` switch is telling docker to run this container in the polygon network. `--name heimdall` is naming the container which is useful for debugging, but it’s all the name that will be used for other containers to connect to Heimdall. The `-d` argument tells docker to run this container in the background. The switch `--restart unless-stopped` tells docker to automatically restart the container unless it was stopped manually. Finally, start is being used to actually run the application instead of `init` which just set `up the home directory.
@@ -305,7 +305,7 @@ At this point, you should have a node that’s successfully running Heimdall. Yo
 Before we get started with Bor, we need to run the Heimdall rest server. This command will start a REST API that Bor uses to retrieve information from Heimdall. The command to start server is
 
 ```bash
-docker run -p 1317:1317 -v /mnt/data/heimdall:/heimdall-home:rw --net polygon --name heimdallrest --entrypoint /usr/local/bin/heimdalld -d --restart unless-stopped 0xpolygon/heimdall:0.2.11 rest-server --home=/heimdall-home --node "tcp://heimdall:26657"
+docker run -p 1317:1317 -v /mnt/data/heimdall:/heimdall-home:rw --net polygon --name heimdallrest --entrypoint /usr/local/bin/heimdalld -d --restart unless-stopped 0xpolygon/heimdall:0.2.12 rest-server --home=/heimdall-home --node "tcp://heimdall:26657"
 ```
 
 There are two pieces of this command that are different and worth noting. Rather than running the `start` command, we’re running the `rest-server` command. Also, we’re passing `~–node “tcp://heimdall:26657”~` which tells the rest server how to communicate with Heimdall.
