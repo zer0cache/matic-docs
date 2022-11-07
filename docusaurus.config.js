@@ -228,7 +228,7 @@ module.exports = {
     },
     copyright: `Copyright © ${new Date().getFullYear()} Polygon Technology`,
     },
-    image: "https://matic.network/banners/matic-network-16x9.png",
+    image: 'img/polygon-wiki.png',
     prism: {
       theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("prism-react-renderer/themes/dracula"),
