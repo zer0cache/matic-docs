@@ -8,20 +8,22 @@ keywords:
   - token mapping
   - pos bridge
   - polygon
-image: https://matic.network/banners/matic-network-16x9.png
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+# Mapping Tokens
+
 Mapping is necessary in order to transfer your assets to and from the Ethereum and Polygon. We offer two bridges to do the same. More details on the bridge can be understood from [here](/docs/develop/ethereum-polygon/getting-started).
 
-### Steps to submit a mapping request
+:::tip
 
-The Polygon PoS bridge is available for both mainnet as well as Mumbai testnet. More information about the bridge can be found [<ins>here</ins>](/docs/develop/ethereum-polygon/pos/getting-started).
+The Polygon PoS bridge is available for both mainnet as well as Mumbai testnet. More information about the bridge can be found [<ins>here</ins>](/docs/develop/ethereum-polygon/pos/getting-started.md).
 
 :::
 
-## How to submit a mapping request
+## Steps to submit a mapping request
 
 In order to map tokens between Ethereum and Polygon, you have to submit a mapping request. It has to be submitted on [https://mapper.polygon.technology/](https://mapper.polygon.technology/). Open the link and click on the **'Map New Token'** button on the top right corner to create a new mapping request.
 
@@ -37,17 +39,7 @@ In order to map tokens between Ethereum and Polygon, you have to submit a mappin
 - You may choose either **"Polygon Mintable"** or a **"Non Polygon Mintable"** token from the drop down. More details on the Polygon Mintable tokens can be found [here](/docs/develop/ethereum-polygon/mintable-assets).
 - It is mandatory to mention your email for communication.
 
-In  case of a custom child mapping, there is a checklist that you need to finish before you submit the mapping request. Tokens that already exist on Ethereum and have to be moved on to the Polygon chain can be called as "Non Polygon-Mintable" tokens and the tokens which are going to be minted on Polygon first and then moved to Ethereum can be called as "Polygon Mintable" tokens. Lets look at the check list for both these types
-
-### Mapping checklist
-
-**Non Polygon-Mintable**
-
-The tokens to be minted on Polygon and subsequently migrated to Ethereum are called **mintable tokens**, whereas tokens that already exist on Ethereum and are migrated over to Polygon are referred to as **non-mintable tokens**.
-
-:::
-
-In the case where you require custom token mapping, you can visit the [Fx-Portal](/docs/develop/l1-l2-communication/fx-portal) and use the data provided to build your custom token.
+In  case of a custom child mapping, there is a checklist that you need to finish before you submit the mapping request. Tokens that already exist on Ethereum and have to be moved on to the Polygon chain can be called as "Non Polygon-Mintable" tokens and the tokens which are going to be minted on Polygon first and then moved to Ethereum can be called as "Polygon Mintable" tokens. Lets look at the check list for both these types.
 
 ## Mapping checklist
 
@@ -55,26 +47,15 @@ In the case where you require custom token mapping, you can visit the [Fx-Portal
 
 :::tip
 
-Checkout the documentation for mintable tokens available at [<ins>https://wiki.polygon.technology/docs/develop/ethereum-polygon/mintable-assets</ins>](/docs/develop/ethereum-polygon/mintable-assets).
+Checkout the documentation for mintable tokens available [<ins>here</ins>](/docs/develop/ethereum-polygon/mintable-assets.md).
 
-**Polygon Mintable ( guide -** [https://docs.polygon.technology/docs/develop/ethereum-polygon/mintable-assets](https://docs.polygon.technology/docs/develop/ethereum-polygon/mintable-assets) )
-
-1. The `deposit` and `withdraw` function is present in the *child* token contract. (Reference Template contract - [ERC20](https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildMintableERC20.sol#L1492-#L1519), [ERC721](https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildMintableERC721.sol#L2160-#L2275), [ERC1155](https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildMintableERC1155.sol#L1784-#L1851))
-2. Only the ChildChainManagerProxy address has the right to call the deposit function. (ChildChainManagerProxy - on [Mumbai](https://mumbai.polygonscan.com/address/0xb5505a6d998549090530911180f38aC5130101c6/transactions) , on [Polygon Mainnet](https://polygonscan.com/address/0xA6FA4fB5f76172d178d61B04b0ecd319C5d1C0aa/) )
+1. The `deposit` and `withdraw` function is present in the ***child*** token contract. (Reference Template contract - [ERC20](https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildMintableERC20.sol#L1492-#L1519), [ERC721](https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildMintableERC721.sol#L2160-#L2275), [ERC1155](https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildMintableERC1155.sol#L1784-#L1851))
+2. Only the ChildChainManagerProxy address has the right to call the `deposit` function. (ChildChainManagerProxy - on [Mumbai](https://mumbai.polygonscan.com/address/0xb5505a6d998549090530911180f38aC5130101c6/transactions) , on [Polygon Mainnet](https://polygonscan.com/address/0xA6FA4fB5f76172d178d61B04b0ecd319C5d1C0aa/))
 3. The root chain contract is a standard [ERC20](https://github.com/maticnetwork/pos-portal/blob/master/flat/DummyMintableERC20.sol#L1481)/[ERC721](https://github.com/maticnetwork/pos-portal/blob/master/flat/DummyMintableERC721.sol#L2169)/[ERC1155](https://github.com/maticnetwork/pos-portal/blob/master/flat/DummyMintableERC1155.sol#L1785)
-4. The `mint` function on the *root* contract can only be called by the corresponding token, **PredicateProxyAddress**. (PredicateProxyAddress for each token type can be found [here](/docs/develop/ethereum-polygon/mintable-assets#contract-to-be-deployed-on-ethereum)).
+4. The `mint` function on the ***root*** contract can only be called by the corresponding token, **PredicateProxyAddress**. (PredicateProxyAddress for each token type can be found [here](/docs/develop/ethereum-polygon/mintable-assets.md#contract-to-be-deployed-on-ethereum)).
 
 ### Non-mintable tokens
 
-1. The deposit and withdraw functions are present in the child token contract. (Reference Template Contract - [ERC20](https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildERC20.sol#L1492-#L1508), [ERC721](https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildERC721.sol#L2157-#L2238), [ERC1155](https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildERC1155.sol#L1784-#L1818))
-2. Only the **ChildChainManagerProxy** address has the right to call the deposit function. (ChildChainManagerProxy - on [Mumbai](https://mumbai.polygonscan.com/address/0xb5505a6d998549090530911180f38aC5130101c6/transactions) , on [Polygon Mainnet](https://polygonscan.com/address/0xA6FA4fB5f76172d178d61B04b0ecd319C5d1C0aa/))
-3. Mint function is an internal function. (This gets called by deposit function internally)
-
-## Video guide
-
-Here is a quick video tutorial on how to map tokens between **Ethereum Goerli &harr; Polygon Mumbai Testnet**:
-
-<video autoplay width="100%" height="100%" controls="true" >
-  <source type="video/mp4" src="/img/token-mapping/token-mapping-tutorial.mp4"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+1. The `deposit` and `withdraw` functions are present in the ***child*** token contract. (Reference Template Contract - [ERC20](https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildERC20.sol#L1492-#L1508), [ERC721](https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildERC721.sol#L2157-#L2238), [ERC1155](https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildERC1155.sol#L1784-#L1818))
+2. Only the **ChildChainManagerProxy** address has the right to call the `deposit` function. (ChildChainManagerProxy - on [Mumbai](https://mumbai.polygonscan.com/address/0xb5505a6d998549090530911180f38aC5130101c6/transactions) , on [Polygon Mainnet](https://polygonscan.com/address/0xA6FA4fB5f76172d178d61B04b0ecd319C5d1C0aa/))
+3. `mint` function is an internal function. (This gets called by deposit function internally)
