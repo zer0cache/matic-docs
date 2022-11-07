@@ -488,6 +488,7 @@ module.exports = {
         "develop/oracles/bandchain",
         "develop/oracles/bandstandarddataset",
         "develop/oracles/tellor",
+        "develop/oracles/api3",
       ],
     },
     {

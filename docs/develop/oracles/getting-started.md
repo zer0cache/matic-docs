@@ -22,6 +22,7 @@ To integrate your DApp with Oracles on Polygon, you can choose to go with one of
  3. [BandChain](bandchain)
  4. [Razor](razor)
  5. [Tellor](tellor.md)
+ 6. [API3](api3.md)
 
 Randomness is also generated through oracles. See the Randomness section of the documentation for more information. 
 
