@@ -19,7 +19,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 - 📺**데모:** [https://www.youtube.com/watch?v=ETvnnZGQDDc&feature=youtu.be](https://www.youtube.com/watch?v=ETvnnZGQDDc&feature=youtu.be)
 - 📺**이더온라인 데모**: [https://youtu.be/5tKzMcflOcY?t=1431](https://youtu.be/5tKzMcflOcY?t=1431)
-- 👩🏻‍💻**코드**: [https://github.com/nglglhtr/ETHOnline-Workshop/tree/master/2-network-agnostic-transfer](https://github.com/nglglhtr/ETHOnline-Workshop/tree/master/2-network-agnostic-transfer)
+- 👩🏻‍💻**코드**: [https://github.com/angelagilhotra/ETHOnline-Workshop/tree/master/2-network-agnostic-transfer](https://github.com/angelagilhotra/ETHOnline-Workshop/tree/master/2-network-agnostic-transfer)
 - 📄**이더온라인을 위한 도움 문서:** [Build on Matic: [Helper Doc]](https://www.notion.so/Build-on-Matic-Helper-Doc-60650299256f4c1c9e90bae365cbd88e)
 
 ## 트랜잭션 실행을 가능하게 하는 것은 무엇인가?
@@ -47,7 +47,7 @@ image: https://matic.network/banners/matic-network-16x9.png
     2. 프론트엔드에 `API key`를 복사합니다.
     3. 그리고 Manage-Api에  `executeMetaTransaction`  함수를 추가하고 meta-tx를 활성화해야 합니다. ('native-metatx' 옵션 체크)
 
-  - 블록체인에서 서명된 트랜잭션을 보내는 자체 사용자 지정 API를 사용하려면, 다음에서 서버코드를 참조할 수 있습니다: [https://github.com/nglglhtr/ETHOnline-Workshop/tree/master/2-network-agnostic-transfer](https://github.com/nglglhtr/ETHOnline-Workshop/tree/master/2-network-agnostic-transfer)
+  - 블록체인에서 서명된 트랜잭션을 보내는 자체 사용자 지정 API를 사용하려면, 다음에서 서버코드를 참조할 수 있습니다: [https://github.com/angelagilhotra/ETHOnline-Workshop/tree/master/2-network-agnostic-transfer](https://github.com/angelagilhotra/ETHOnline-Workshop/tree/master/2-network-agnostic-transfer)
 
 - 상호 작용하려는 컨트랙트가  `NativeMetaTransactions`에서 상속되는지 확인하세요. 👀 컨트랙트의 `executeMetaTransaction`함수를 살펴보세요.
 - Link: [https://github.com/maticnetwork/pos-portal/blob/34be03cfd227c25b49c5791ffba6a4ffc9b76036/flat/ChildERC20.sol#L1338](https://github.com/maticnetwork/pos-portal/blob/34be03cfd227c25b49c5791ffba6a4ffc9b76036/flat/ChildERC20.sol#L1338)
@@ -90,7 +90,7 @@ let data = await web3.eth.abi.encodeFunctionCall({
 
 - 중계자와 컨트랙트 설정이 완료되면 클라이언트가 EIP712 형식 서명을 가져와 필요한 매개변수를 사용하여 API를 간단히 호출할 수 있어야 합니다.
 
-    ref: [https://github.com/nglglhtr/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/sign.js#L47](https://github.com/nglglhtr/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/sign.js#L47)
+    ref: [https://github.com/angelagilhotra/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/sign.js#L47](https://github.com/angelagilhotra/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/sign.js#L47)
 
     ```jsx
 
@@ -125,7 +125,7 @@ let data = await web3.eth.abi.encodeFunctionCall({
       });
     ```
 
-    API 호출하기, ref:[https://github.com/nglglhtr/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/sign.js#L110](https://github.com/nglglhtr/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/sign.js#L110)
+    API 호출하기, ref:[https://github.com/angelagilhotra/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/sign.js#L110](https://github.com/angelagilhotra/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/sign.js#L110)
 
     ```jsx
     const response = await request.post(
@@ -180,7 +180,7 @@ let data = await web3.eth.abi.encodeFunctionCall({
 
 - 사용자 정의 API를 사용하는 경우 컨트랙트에서 `executeMetaTransaction` 함수를 실행합니다:
 
-    (ref: [https://github.com/nglglhtr/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/server/index.js#L40](https://github.com/nglglhtr/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/server/index.js#L40))
+    (ref: [https://github.com/angelagilhotra/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/server/index.js#L40](https://github.com/angelagilhotra/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/server/index.js#L40))
 
     ```jsx
     try {

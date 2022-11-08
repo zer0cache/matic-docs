@@ -19,7 +19,7 @@ Under the hood, user signs on an intent to execute a transaction, which is relay
 
 - 📺**Demo:** [https://www.youtube.com/watch?v=ETvnnZGQDDc&feature=youtu.be](https://www.youtube.com/watch?v=ETvnnZGQDDc&feature=youtu.be)
 - 📺**ETHOnline demo**: [https://youtu.be/5tKzMcflOcY?t=1431](https://youtu.be/5tKzMcflOcY?t=1431)
-- 👩🏻‍💻**Code**: [https://github.com/nglglhtr/ETHOnline-Workshop/tree/master/2-network-agnostic-transfer](https://github.com/nglglhtr/ETHOnline-Workshop/tree/master/2-network-agnostic-transfer)
+- 👩🏻‍💻**Code**: [https://github.com/angelagilhotra/ETHOnline-Workshop/tree/master/2-network-agnostic-transfer](https://github.com/angelagilhotra/ETHOnline-Workshop/tree/master/2-network-agnostic-transfer)
 - 📄**Helper doc for ETHOnline:** [Build on Matic: [Helper Doc]](https://www.notion.so/Build-on-Matic-Helper-Doc-60650299256f4c1c9e90bae365cbd88e)
 
 ## What is enabling transaction execution?
@@ -47,7 +47,7 @@ For any action that requires blockchain interaction,
     2. Copy the`API key` to use in frontend
     3. And Add function `executeMetaTransaction` in Manage-Api and make sure to enable meta-tx. (Check 'native-metatx' option)
 
-  - If you'd like to use your own custom API that sends signed transactions on the blockchain, you can refer to the server code here: [https://github.com/nglglhtr/ETHOnline-Workshop/tree/master/2-network-agnostic-transfer](https://github.com/nglglhtr/ETHOnline-Workshop/tree/master/2-network-agnostic-transfer)
+  - If you'd like to use your own custom API that sends signed transactions on the blockchain, you can refer to the server code here: [https://github.com/angelagilhotra/ETHOnline-Workshop/tree/master/2-network-agnostic-transfer](https://github.com/angelagilhotra/ETHOnline-Workshop/tree/master/2-network-agnostic-transfer)
 
 - Make sure that the contract you'd like to interact with inherits from `NativeMetaTransactions` - 👀 peep into `executeMetaTransaction` function in the contract.
 - Link: [https://github.com/maticnetwork/pos-portal/blob/34be03cfd227c25b49c5791ffba6a4ffc9b76036/flat/ChildERC20.sol#L1338](https://github.com/maticnetwork/pos-portal/blob/34be03cfd227c25b49c5791ffba6a4ffc9b76036/flat/ChildERC20.sol#L1338)
@@ -90,7 +90,7 @@ let data = await web3.eth.abi.encodeFunctionCall({
 
 - Once you have a relayer and the contracts setup, what is required is for the client to be able to fetch an EIP712 formatted signature and simply call the API with the required parameters
 
-    ref: [https://github.com/nglglhtr/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/sign.js#L47](https://github.com/nglglhtr/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/sign.js#L47)
+    ref: [https://github.com/angelagilhotra/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/sign.js#L47](https://github.com/angelagilhotra/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/sign.js#L47)
 
     ```jsx
 
@@ -125,7 +125,7 @@ let data = await web3.eth.abi.encodeFunctionCall({
       });
     ```
 
-    Calling the API, ref: [https://github.com/nglglhtr/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/sign.js#L110](https://github.com/nglglhtr/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/sign.js#L110)
+    Calling the API, ref: [https://github.com/angelagilhotra/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/sign.js#L110](https://github.com/angelagilhotra/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/sign.js#L110)
 
     ```jsx
     const response = await request.post(
@@ -180,7 +180,7 @@ let data = await web3.eth.abi.encodeFunctionCall({
 
 - If you use the custom API it executes the `executeMetaTransaction` function on the contract:
 
-    (ref: [https://github.com/nglglhtr/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/server/index.js#L40](https://github.com/nglglhtr/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/server/index.js#L40))
+    (ref: [https://github.com/angelagilhotra/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/server/index.js#L40](https://github.com/angelagilhotra/ETHOnline-Workshop/blob/6b615b8a4ef00553c17729c721572529303c8e1b/2-network-agnostic-transfer/server/index.js#L40))
 
     ```jsx
     try {
