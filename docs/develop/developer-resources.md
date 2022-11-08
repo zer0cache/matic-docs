@@ -14,6 +14,12 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
+:::tip
+
+Here are some links that might be useful for new Web3 developers and anyone who is interested in the blockchain ecosystem.
+
+:::
+
 ## Basics of Web3 Development 
 
 - [What is Ethereum?](https://blockgeeks.com/guides/ethereum/)

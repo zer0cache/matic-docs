@@ -25,15 +25,15 @@ This guide will introduce you to the Polygon ecosystem. You'll find links to val
 
 Keep up with the latest builder updates from the Polygon 
 team and the community by subscribing to the 
-[Polygon notification groups](https://polygon.technology/notifications/).
+[<ins>Polygon notification groups</ins>](https://polygon.technology/notifications/).
 
 :::
 
 ## **Key Features of Polygon**
 
-- **Speed** The Polygon Network uses a high-throughput blockchain with consensus provided by a group of Block Producers selected by stakeholders at each checkpoint. A Proof of Stake layer is used to validate blocks and periodically post proofs of Block Producers to the Ethereum mainnet. This enables rapid block confirmation rates of about 2 seconds while preserving a high amount of decentralization, resulting in excellent throughput for the network.
-- **Scalability** Polygon Network achieves a hypothetical transaction speed of fewer than 2 seconds on a single sidechain. Using multiple sidechains helps the network to handle millions of transactions per second. This mechanism (already demonstrated in the first Matic sidechain) allows the Polygon network to scale easily.
-- **Security** Polygon's smart contracts rely on Ethereum’s security. To safeguard the network, it employs three critical security models. It uses Ethereum's **staking management contracts** and a group of incentivized validators running **Heimdall** and **Bor** nodes. Developers can also implement both models (Hybrid) into their dApp.
+- **Speed**: The Polygon Network uses a high-throughput blockchain with consensus provided by a group of Block Producers selected by stakeholders at each checkpoint. A Proof of Stake layer is used to validate blocks and periodically post proofs of Block Producers to the Ethereum mainnet. This enables rapid block confirmation rates of about 2 seconds while preserving a high amount of decentralization, resulting in excellent throughput for the network.
+- **Scalability**: Polygon Network achieves a hypothetical transaction speed of fewer than 2 seconds on a single sidechain. Using multiple sidechains helps the network to handle millions of transactions per second. This mechanism (already demonstrated in the first Matic sidechain) allows the Polygon network to scale easily.
+- **Security**: Polygon's smart contracts rely on Ethereum’s security. To safeguard the network, it employs three critical security models. It uses Ethereum's **staking management contracts** and a group of incentivized validators running **Heimdall** and **Bor** nodes. Developers can also implement both models (Hybrid) into their dApp.
 
 ## **Building on Polygon**
 
@@ -45,7 +45,7 @@ You can deploy decentralized applications to either Polygon Mumbai Testnet or th
 
 ### **Wallets**
 
-To interact with the Polygon Network, you need to have an Ethereum-based wallet because Polygon runs on Ethereum Virtual Machine (EVM). You can choose to set up a [Metamask](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/metamask/overview.md) or [Arkane](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/wallets/arkane/intro_arkane.md) Wallet. More information on wallet-related details and why you need one can be found in our [wallet documentation](https://docs.polygon.technology/docs/develop/wallets/getting-started).
+To interact with the Polygon Network, you need to have an Ethereum-based wallet because Polygon runs on Ethereum Virtual Machine (EVM). You can choose to set up a [Metamask](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/metamask/overview.md) or [Arkane](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/wallets/arkane/intro_arkane.md) Wallet. More on wallet-related information and why you need one can be found in our [wallet documentation](https://docs.polygon.technology/docs/develop/wallets/getting-started).
 
 ### **Smart Contracts**
 
@@ -101,7 +101,7 @@ If you already have a decentralized application (dApp) and are looking for a pla
 
 ## **Side Note**
 
-If this is overwhelming, that’s alright! You can jump right into the action and start hacking. You’ve got this! Here are some notes before you start diving into resources, repositories, and docs:
+If this is overwhelming, that’s alright! You can jump right into the action and start hacking. Here are some notes before you start diving into resources, repositories, and docs:
 
 1. **Beware the cost of being on the bleeding edge**: Like typical niche programming, dApps and blockchain development moves very quickly. While researching, you may find complex code repositories, 404s on a documentation site, or even no documentation. Use that opportunity to reach out to us via any social media channel.
 2. **The learning curve may be daunting, but the barrier to entry is low**: The community is very open and welcoming! Projects welcome pull requests from outsiders and resolve any blockers actively. We’re working on creating a better world and contribution in any form is appreciated. We’ll be grateful to onboard you into this amazing Web3 ecosystem.
