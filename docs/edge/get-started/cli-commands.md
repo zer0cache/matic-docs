@@ -1660,6 +1660,18 @@ Address of the gRPC API. Default: `127.0.0.1:9632`.
 Address of the gRPC API. Default: `127.0.0.1:9632`.
 
 ---
+<h3>version command</h3>
+
+
+<Tabs>
+  <TabItem value="syntax" label="Syntax" default>
+
+    version
+
+  </TabItem>
+</Tabs>
+
+Displays release version, git branch, commit hash and build time.
 
 ## Secrets Commands
 
