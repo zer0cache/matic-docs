@@ -5,7 +5,11 @@ description: Plasma token transfer tutorial using metamask.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png
+  - polygon
+  - plasma
+  - metamask
+  - token transfer
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -19,7 +23,6 @@ The most important thing to be understood from this tutorial is the **proper usa
 3. Replace the token addresses in src/config.json with your corresponding token addresses
 
 ```jsx
-
 posRootERC20: ERC20 root token address on pos bridge
 posChildERC20: ERC20 child token address on pos bridge
 posWETH: PoS Weth
@@ -33,14 +36,13 @@ VERSION: network version,
 NETWORK: "testnet" or "mainnet"
 MATIC_CHAINID: Chain ID of child chain,
 ETHEREUM_CHAINID: Chain ID of root chain
-
 ```
 
 - The configuration and key values for Polygon mainnet and mumbai testnet can be found here
   1. [Mumbai Testnet Config](https://static.matic.network/network/testnet/mumbai/index.json)
   2. [Polygon Mainnet Config](https://static.matic.network/network/mainnet/v1/index.json)
 
-4. Run the project using `npm start` .
+4. Run the project using `npm start`.
 
 ## Example using Plasma ERC20
 
@@ -69,9 +71,11 @@ During deposit of ERC20 tokens, providers are specified as below
 
 `parentProvider: window.web3`
 
-:::note 
+:::note
 
-Deposits from Ethereum to Polygon happen using a state sync mechanism and take about 22-30 minutes. After waiting for this time interval, it is recommended to check the balance using the web3.js/matic.js library or using Metamask. The explorer will show the balance only if at least one asset transfer has happened on the child chain. This [link](/docs/develop/ethereum-polygon/plasma/deposit-withdraw-event-plasma/) explains how to track the deposit events.
+Deposits from Ethereum to Polygon happen using a state sync mechanism and takes about ~22-30 minutes After waiting for this time interval, it is recommended to check the balance using web3.js/matic.js library or using Metamask.
+
+The explorer will show the balance only if at least one asset transfer has happened on the child chain. This [link](/docs/develop/ethereum-polygon/plasma/deposit-withdraw-event-plasma/) explains how to track the deposit events.
 
 :::
 
@@ -81,9 +85,7 @@ Deposits from Ethereum to Polygon happen using a state sync mechanism and take a
 
 ### Transfer
 
-Once deposited, the token can be transfered to any other account on the Polygon chain.
-
-During Transfer, only the `maticProvider` needs to be set as `window.web3`.
+Once deposited, the token can be transfered to any other account on the Matic chain. During Transfer, only the `maticProvider` needs to be set as `window.web3`.
 
 
 ```js
@@ -96,8 +98,7 @@ const txHash = await result.getTransactionHash();
 const txReceipt = await result.getReceipt();
 ```
 
-MATIC is the native token of the Polygon network. So we support the transfer of MATIC tokens without any token address.
-
+MATIC is native token on Polygon. We support transfer of MATIC tokens without any token address.
 
 ```js
 // initialize token with null means use MATIC tokens
@@ -110,9 +111,9 @@ const txHash = await result.getTransactionHash();
 const txReceipt = await result.getReceipt();
 ```
 
-### Initiate withdraw
+### Initiate Withdraw
 
-For withdrawing tokens back to root chain, tokens have to be first burned on child chain. Make sure child chain network is selected in Metamask.
+For withdrawing tokens back to root chain, tokens have to be first burnt on child chain. Make sure child chain network is selected in metamask.
 
 ```js
 const erc20ChildToken = plasmaClient.erc20(<child token address>);
@@ -123,7 +124,6 @@ const result = await erc20ChildToken.withdrawStart(100);
 const txHash = await result.getTransactionHash();
 
 const txReceipt = await result.getReceipt();
-
 ```
 
 During burning of ERC20 tokens, providers are specified as below
@@ -142,13 +142,13 @@ Withdrawal of funds is initiated from the child chain. A checkpoint interval of 
 
 Once the withdraw function is successful, an NFT Exit (ERC721) token is created. The withdrawn funds can be claimed back to your account on the root chain using a process-exit which is explained in the next step.
 
-In the confirm withdraw step, providers are specified as below
+In the confirm withdraw step, providers are specified as below:
 
 `maticProvider: maticprovider`
 
 `parentProvider: window.web3`
 
-The `withdrawConfirm()` function in Plasma bridge involves block proof generation by querying the child chain multiple times and hence it may take 4-5 seconds for Metamask to pop up as it consumes time to build the transaction object.
+The `_withdrawConfirm_` function in Plasma bridge involves block proof generation by querying the child chain multiple times and hence it may take 4-5 seconds for Metamask to popup as it consumes time to build the transaction object.
 
 ```js
 const erc20Token = plasmaClient.erc20(<token address>, true);
@@ -158,10 +158,9 @@ const result = await erc20Token.withdrawConfirm(<burn tx hash>);
 const txHash = await result.getTransactionHash();
 
 const txReceipt = await result.getReceipt();
-
 ```
 
-You can use the **_withdrawConfirmFaster_** method which is faster because it generates proof in the backend. Fore more details to use this please visit this [guide](https://maticnetwork.github.io/matic.js/docs/plasma/erc20/withdraw-confirm-faster/)
+You can use the `_withdrawConfirmFaster_` method which is faster because it generates proof in the backend. Fore more details to use this please visit this [guide](https://maticnetwork.github.io/matic.js/docs/plasma/erc20/withdraw-confirm-faster/).
 
 <div align="center">
   <img src={useBaseUrl("img/plasma-using-metamask/confirmWithdraw.png")} />
@@ -179,10 +178,9 @@ const result = await erc20Token.withdrawExit();
 const txHash = await result.getTransactionHash();
 
 const txReceipt = await result.getReceipt();
-
 ```
 
-In the process exit step, providers are specified as below
+In the process exit step, providers are specified as below:
 
 `maticProvider: maticprovider`
 

@@ -1,26 +1,31 @@
 ---
 id: remix
-title: Using Remix
+title: Deploy a Smart Contract Using Remix
 sidebar_label: Using Remix
-description: Deploy a Smart Contract with Remix.
+description: Deploy a Smart Contract with Remix
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+  - polygon
+  - remix
+  - deploy
+  - smart contract
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## Overview
+## Overview 
 
-A Hello World style starter project. This tutorial aims to instruct how to deploy a smart contract with a message, and render it in the front-end. You can change the message using the interact panel.
+This tutorial guides you to implement a **Hello World** dApp which echoes a message passed to the contract on to the frontend. You will also be able to change the message using the interactive panel.
 
-This dapp implements a "Hello World" style application that echoes a message passed to the contract to the front end. This tutorial is intended to be followed using the online IDE available at [Remix IDE](https://remix.ethereum.org/).
+:::tip Recommended
 
-## What you will learn
-This guide introduces an online IDE for blockchain development called Remix. An easy-to-use platform that does not require any downloads, creating accounts or logins. 
-Here, the Remix team also provides some explanation about a smart contract typical structure, how to compile, deploy and verify a smart contract pushed into Polygon. 
+We recommend you to follow this tutorial using the online IDE available at [Remix IDE](https://remix.ethereum.org/). Remix IDE is an easy-to-use platform that does not require any downloads, creating accounts, or logins.
+
+:::
 
 ## What you will do
+
 - Create a file on Remix
 - Upload a pre-built smart contract into the IDE
 - Compile the smart contract
@@ -29,13 +34,14 @@ Here, the Remix team also provides some explanation about a smart contract typic
 - Verify the smart contract
 
 ## Getting started with [Remix IDE](https://remix.ethereum.org/)
-Remix is a Ethereum-focused IDE: an online platform to develop smart contracts. To start building a smart contract, click on **New File** and name it `HelloWorld.sol`:
+
+Remix is a Ethereum-focused IDE: an online platform to develop and deploy smart contracts. To start building a smart contract, click on **New File** and name it `HelloWorld.sol`.
 
 <img src={useBaseUrl("img/remix/new-file.png")} />
 
-### The smart contract
+## Smart Contract
 
-Now copy and paste the Smart contract below into the newly created `HelloWorld.sol` file.
+Copy and paste the Smart Contract code provided below into the newly created `HelloWorld.sol` file.
 
 ```js title="HelloWorld.sol"
 // Specifies that the source code is for a version
@@ -75,89 +81,47 @@ The `update` function is another public function that is similar to the constr
 
 ## Compile Smart Contract
 
-- Go to Solidity Compiler <img src={useBaseUrl("img/helloworld/Screenshot_2020-02-14_at_1.00.03_PM.png")} />
-- Select Compiler Version to 0.5.10
-- Now, ```Compile HelloWorld.sol```
-- After Successful Compilation, it will show 
-<img src={useBaseUrl("img/helloworld/Screenshot_2020-02-14_at_1.08.22_PM.png")} />
-- Now, We have to deploy our smart contract on Polygon Network. For that, we have to connect to the web3 world, this can be done by using any of the services like Metamask, Brave, Portis etc. We will be using Metamask. Please follow this [tutorial to set up a Metamask Account](/docs/develop/metamask/hello).
-- Open Metamask and select Custom RPC from the networks dropdown
+- Go to the **Solidity Compiler** tab (below the search button)
 
-<div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center"
-        }}
-      >
-        <img src={useBaseUrl("img/helloworld/metamask-custom-rpc.png")} alt="RemixIDE_Step1"/>
-</div>
+- Select compiler version to **0.5.10**
 
-- Put in a Network name - “Matic Mumbai Testnet”
-- In URL field you can add the URL as "https://rpc-mumbai.maticvigil.com"
-- Enter the Chain ID: 80001
-- (Optional Fields) Currency Symbol: "MATIC" and Block Explorer URL: "https://mumbai.polygonscan.com/"
-<div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center"
-        }}
-      >
-        <img src={useBaseUrl("img/helloworld/metamask_mumbai_setup.png")} alt="RemixIDE_Step1"/>
-</div>
-- Go ahead and click **save**
-- Copy your address from Metamask
-<div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center"
-        }}
-      >
-        <img src={useBaseUrl("img/helloworld/Screenshot_2020-01-09_at_1.24.49_PM.png")} alt="RemixIDE_Step1"/>
-</div>
+- Now, compile `HelloWorld.sol`
 
-- Head over to [Faucet](https://faucet.polygon.technology/) and request test ether - you will need this pay for gas on Matic. 
-Select 'Mumbai' as the network and 'MATIC Token' as the token in the faucet
-- Now, let's Deploy the Smart Contract on Matic Network
-- Select Injected Provider Metamask in the Environment dropdown and your contract
+- After successful compilation, it will show a green tick mark on the **Compiler** tab button
 
-<div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center"
-        }}
-      >
-        <img src={useBaseUrl("img/remix/injected-provider.png")} alt="RemixIDE_Step1"/>
-</div>
+- Now, We have to deploy our smart contract on Polygon Network. For that, we have to connect to the Web3 world which can be accomplished by using any of the services like Metamask, Brave, Portis etc. We will be using Metamask in this tutorial. Please follow this [guide to set up a Metamask Account](/docs/develop/metamask/hello).
 
-- Accept the Connection Request.
+- Open Metamask. Click on the network dropdown menu (set to **Ethereum Mainnet** by default) and click on **Add Network** button
 
-<div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center"
-        }}
-      >
-        <img src={useBaseUrl("img/helloworld/Screenshot_2020-02-14_at_1.59.10_PM.png")} alt="RemixIDE_Step1"/>
-</div>
+  - **Network:** Polygon Mumbai Testnet
+  - **New RPC URL:** https://rpc-mumbai.maticvigil.com
+  - **Chain ID:** 80001
+  - **Currency Symbol:** MATIC
+  - **Block Explorer URL:** https://mumbai.polygonscan.com/
 
-- Once Metamask is connected to Remix, the ‘Deploy’ transaction would generate another metamask popup that requires transaction confirmation.
+- Go ahead and click **Save**
 
-<div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center"
-        }}
-      >
-        <img src={useBaseUrl("img/helloworld/Screenshot_2020-02-14_at_1.45.23_PM.png")} alt="RemixIDE_Step1"/>
-</div>
+- Copy your wallet address from Metamask by clicking over your account name.
 
-**Congratulations!** You have successfully deployed the **HelloWorld** Smart Contract. Now you can interact with the Smart Contract. Check the deployment status here: https://mumbai.polygonscan.com/.
+- Head over to [Faucet](https://faucet.polygon.technology/) and request test MATIC - you will need this pay for gas on Polygon network. Select **Mumbai** as the network and **MATIC Token** as the token in the faucet.
+
+- Now, let's deploy the Smart Contract on Polygon Network
+
+- Select **Injected Provider** Metamask in the **Environment** dropdown and your contract
+
+  <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
+          }}
+        >
+          <img src={useBaseUrl("img/remix/injected-provider.png")} alt="RemixIDE_Step1"/>
+  </div>
+
+- Accept the **Connect** request received in MetaMask. If the popup doesn't open by default, you can also try manually launching the MetaMask extension
+
+- Once MetaMask is connected to Remix, the `Deploy` transaction would generate another MetaMask popup that requires transaction confirmation. Simply confirm the transaction!
 
 <div
         style={{
@@ -169,34 +133,35 @@ Select 'Mumbai' as the network and 'MATIC Token' as the token in the faucet
         <img src={useBaseUrl("img/helloworld/Screenshot_2020-02-14_at_2.00.19_PM.png")} alt="RemixIDE_Step1"/>
 </div>
 
+<br/>
 
-# **Verifying your Contracts on PolygonScan**
+**Congratulations! You have successfully deployed the **HelloWorld** Smart Contract.** You can start interacting with your Smart Contract. Check the deployment status at https://mumbai.polygonscan.com/.
 
-The first and foremost step is to flatten the solidity contract into a single file.
+## Verifying your Contract
 
-## **Flatten your solidity contract**
+### Flatten your Smart Contract
 
-Install [truffle-flattener](https://github.com/nomiclabs/truffle-flattener) or [sol-merger](https://github.com/RyuuGan/sol-merger)
+The first and foremost step is to flatten the solidity smart contract into a single file. In order to do that, install [truffle-flattener](https://github.com/nomiclabs/truffle-flattener) or [sol-merger](https://github.com/RyuuGan/sol-merger).
 
+After installation, flatten the contract using below command (we have demonstrated using sol-merger).
 
-Flatten using command
+```
+sol-merger \"./contracts/*.sol\" ./build
+```
 
-```sol-merger \"./contracts/*.sol\" ./build```
+### Verifying on Polygonscan
 
-## **Verifying on Polygonscan**
+- Navigate to your contract's Polygonscan page and click on **Verify and Publish**.
 
-Navigate to your contract's polygonscan page and then click verify and publish
+  <img src={useBaseUrl("img/verification/verify-publish.png")} />
 
-<img src={useBaseUrl("img/verification/verify-publish.png")} />
+- Select **Solidity (Single File)** in compiler type
 
-
-- Select ```Solidity (Single File)``` in compiler type
 - Select appropriate compiler version
+
 - Choose the license type of your contract
 
-Onto the next section, paste your flattended contract there.
+In the next section, paste your flattened samrt contract here. If you had enabled optimization, then adjust the `optimization` section accordingly.
 
-If you had enabled optimization then adjust the  `optimization` section accordingly.
-
-Constructor arguments should have been filled in automatically, if not, they can be retrieved from the trailing bytes of the deployment transaction, they resemble something like ```000000000000000000000000a6fa4fb5f76172d178d61b04b0ecd319c5d1c0aa```
+Constructor arguments should have been filled in automatically. If not, they can be retrieved from the trailing bytes of the deployment transaction (example: `000000000000000000000000a6fa4fb5f76172d178d61b04b0ecd319c5d1c0aa`).
 

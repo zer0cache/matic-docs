@@ -1,17 +1,22 @@
 ---
 id: web-wallet-v3-guide
-title: Polygon Wallet Suite Usage Guide (V3)
-description: Learn how to use the Polygon Wallet Suite.
+title: Polygon Wallet Suite V3
+sidebar_label: V3 Usage Guide
+description: Learn how to use the Polygon Wallet Suite
 keywords:
   - wallet
   - matic
-image: https://matic.network/banners/matic-network-16x9.png
+  - docs
+  - polygon
+  - guide
+  - web wallet
+  - v3
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 **A new version of our Polygon Wallet is live**. Now called **Polygon Wallet Suite**, our new environment provides a more seamless exprience with great improvements on the user interface as well as on its overall experience.
-
 
 This guide shows instructions to deposit and withdraw funds using [Polygon's network](https://wallet-beta.polygon.technology/). For performing those actions, you need to connect a wallet to Polygon's environmnet. In this tutorial, we used Metamask, but Polygon is integrated with other wallets such as Coinbase, Bitski, Venly and WalletConnect.
 
@@ -22,10 +27,7 @@ Please refer to [<ins>this guide</ins>](https://docs.polygon.technology/docs/dev
 
 ## Logging into the Polygon Wallet Suite
 
-
 To log into the Polygon Wallet Suite you need to access the following URL: https://wallet-beta.polygon.technology/.
-
-<!-- To log into the **testnet version** of Polygon Wallet Suite, you need to access the following URL: https://wallet-dev.polygon.technology/. -->
 
 
 Once you connect your account with the Web Wallet, you will be taken to the landing page with various means on how to transact with the web wallet. Polygon POS chain currently offers the following services:

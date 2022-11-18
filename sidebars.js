@@ -113,16 +113,16 @@ module.exports = {
 
         {
           type: "category",
-          label: "Arkane",
+          label: "Venly",
           link: {
             type: "generated-index",
           },
           items: [
-            "develop/wallets/arkane/intro",
-            "develop/wallets/arkane/create-wallet",
-            "develop/wallets/arkane/network",
-            "develop/wallets/arkane/custom-tokens",
-            "develop/wallets/arkane/support",
+            "develop/wallets/venly/intro",
+            "develop/wallets/venly/create-wallet",
+            "develop/wallets/venly/network",
+            "develop/wallets/venly/custom-tokens",
+            "develop/wallets/venly/support",
           ],
         },
         "develop/wallets/fortmatic",

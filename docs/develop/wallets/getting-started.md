@@ -6,8 +6,18 @@ description: Get a list of supported wallets and manage key strategy.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png
+  - polygon
+  - wallet
+  - integrate
+  - guide
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
+
+:::tip Stay in the know
+
+Keep up with the latest Wallet Suite updates from the Polygon team and community by subscribing to our [<ins>Notifications</ins>](https://polygon.technology/notifications/).
+
+:::
 
 Wallets that support Polygon allow for key management, access to accounts controlled by 
 private keys, and interfaces that allow users to perform chain actions and sign transactions.
@@ -17,8 +27,8 @@ that this is not an exhaustive index.
 :::caution Third-party wallets
 
 These third-party wallets have integrated Polygon and support a variety of features.
-**You should use your own due diligence in researching and using them**. The official Polygon
-Support cannot provide support for issues with these wallets or other non-native wallets.
+**You should do your own due diligence before using them**. The official Polygon
+Support cannot provide assistance for issues with these wallets or other non-native wallets.
 
 :::
 
@@ -29,25 +39,16 @@ For a list of CEXs that support Polygon, visit a third-party tracking website su
 
 :::
 
-:::tip Stay in the know
-
-Keep up with the latest wallet suite updates from the Polygon 
-team and the community by subscribing to the 
-[Polygon notification groups](https://polygon.technology/notifications/).
-
-:::
-
 
 ## Native Wallets
 
-[Polygon Support](https://support.polygon.technology/support/home) can provide assistance to users and address 
-issues related to the following wallets:
+[Polygon Support](https://support.polygon.technology/support/home) can provide assistance to users and address issues related to the following wallets:
 
 | Wallet                                                               | Custody       | Account Type | Multi-Sig | dApp Browser | Platform |
 |----------------------------------------------------------------------|---------------|--------------|-----------|--------------|----------|
 | [PoS Wallet](https://wallet.polygon.technology/login/)           | non-custodial | EOA          | no        | no           | browser  |
 | [Hermez Wallet](https://wallet.hermez.io/login)                      | non-custodial | EOA          | no        | no           | browser  |
-| [Avail Apps](https://devnet-avail.polygon.technology/) (testnet) | non-custodial | EOA          | yes       | no           | browser  |
+| [Avail Apps (Testnet)](https://devnet-avail.polygon.technology/) | non-custodial | EOA          | yes       | no           | browser  |
 
 
 ## Partner Wallets
@@ -94,7 +95,7 @@ The following wallets are solutions that Polygon Technology has partnered with:
 | [XDeFi](https://www.xdefi.io/) 	| non-custodial 	| EOA 	| no 	| interface 	| no 	| no 	| no 	| browser 	|
 | [Zerion](https://zerion.io/) 	| non-custodial 	| EOA 	| no 	| no 	| yes 	|  	|  	| mobile, browser 	|
 
-:::caution *Non-native wallet support
+:::caution Non-native wallet support
 
 Wallets denoted with * in the table above are not natively supported with the wallet software 
 and require manual steps to add the Polygon network.
@@ -103,7 +104,7 @@ and require manual steps to add the Polygon network.
 
 ## Key Management Strategy
 
-The following basic steps allow for the integration a client-side application with Polygon:
+The following basic steps allow for the integration of a client-side application with Polygon:
 
 1. **Set up Web3**: [web3.js](https://web3js.readthedocs.io/) is a javascript library that 
    allows a client-side application to talk to the blockchain. We configure web3 to communicate 

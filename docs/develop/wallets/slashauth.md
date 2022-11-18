@@ -5,31 +5,37 @@ description: SlashAuth provides authentication and authorization for dApps.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+  - polygon
+  - slashauth
+  - authentication
+  - dapp
+  - integrate
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
-SlashAuth allows developers to quickly authenticate users with their wallets and create role-based access control based off of on-chain data. A developer can use SlashAuth to securely log a user in and verify that they have the necessary tokens (ERC20, ERC721, ERC1155) to gain access to the site.
+
+**SlashAuth** allows developers to quickly authenticate users with their wallets and create **role-based access control based on the on-chain data**. A developer can use SlashAuth to securely log a user in and verify that they have the necessary tokens (ERC20, ERC721, ERC1155) to gain access to the website.
 
 SlashAuth works with existing wallets such as Metamask, Coinbase Wallet, and WalletConnect. It also supports tokens on Ethereum and Polygon with more networks coming soon.
 
-For more documentation, please visit our [docs](https://docs.slashauth.com/docs)
+For more documentation, please check out their official [documentation](https://docs.slashauth.com/docs).
 
-## 1. Create SlashAuth app
+## Create SlashAuth app
 
 Navigate to the [SlashAuth Dashboard](https://app.slashauth.com) and create a new app. Take note of the ClientID and Client Secret as we will use them below.
 
-## 2. Install the React SDK
+## Install the React SDK
 
-Install the Javascript Library via NPM
+Install the Javascript Library via NPM:
+
 ```bash
 npm i @slashauth/slashauth-react
 ```
 
-## 3. Configure the SlashAuthProvider component
+## Configure the `SlashAuthProvider` component
 
-The SlashAuth SDK uses [React Context](https://reactjs.org/docs/context.html) to manage state and expose it to your components. In order to integrate /auth into your app, you must provide the context at the root of your app:
+The SlashAuth SDK uses [React Context](https://reactjs.org/docs/context.html) to manage state and expose it to your components. In order to integrate `/auth` into your app, you must provide the context at the root of your app:
 
-```typescript
-// file:index.tsx
+```typescript title="index.tsx"
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -48,12 +54,11 @@ root.render(
 );
 ```
 
-## 4. Add login with wallet
+## Add Login with Wallet
 
 The SlashAuth SDK gives you tools to quickly implement authentication via Metamask wallet in your React application. The simplest implementation is to log the user in directly in their browser. We use the function `loginNoRedirectNoPopup()` from the `useSlashAuth()` hook to accomplish this.
 
-```typescript
-// file:LoginButton.tsx
+```typescript title="LoginButton.tsx"
 import { useSlashAuth } from "@slashauth/slashauth-react";
 
 export const LoginButton = () => {
@@ -63,12 +68,11 @@ export const LoginButton = () => {
 };
 ```
 
-## 5. Show authentication information
+## Authentication information
 
 The SlashAuth SDK exposes information about the current user and their logged in status via data returned by the `useSlashAuth()` hook. Because this data propagates via React Context, any time it changes your components will be notified and rerender. Let's create a status component
 
-```typescript
-// file:LoginStatus.tsx
+```typescript title="LoginStatus.tsx"
 import { useSlashAuth } from "@slashauth/slashauth-react";
 import { useEffect, useState } from "react";
 
@@ -115,12 +119,11 @@ export const LoginStatus = () => {
 }
 ```
 
-## 6. Logout button
+## Logout button
 
 The SlashAuth SDK exposes logout functionality that logs the user out both locally and invalidates their tokens remotely. Let's build a button to add this functionality.
 
-```typescript
-// file:LogoutButton.tsx
+```typescript title="LogoutButton.tsx"
 import { useSlashAuth } from "@slashauth/slashauth-react";
 
 export const LogoutButton = () => {
@@ -130,9 +133,9 @@ export const LogoutButton = () => {
 };
 ```
 
-## 7. Tying it all together
+## Tying it all together
 
-A simple way to see this all work together is updating your app's entry point to display this information.
+A simple way to see this all work together is updating your application entry point to display this information.
 
 ```typescript
 import { useSlashAuth } from '@slashauth/slashauth-react';
@@ -155,6 +158,6 @@ function App() {
 export default App;
 ```
 
-Congratulations! You're successfully integrated with SlashAuth.
+**Congratulations! You're successfully integrated SlashAuth in your dApp.** 
 
 You can find the full example of this code in our [GitHub repo](https://github.com/slashauth/slashauth-react-quickstart-example).

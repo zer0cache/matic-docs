@@ -1,23 +1,27 @@
 ---
 id: hardhat
-title: Using Hardhat
-description: Use Hardhat to deploy a Smart Contract.
+title: Deploy a Smart Contract Using Hardhat
+sidebar_label: Using Hardhat
+description: Use Hardhat to deploy a Smart Contract on Polygon
 keywords:
   - docs
   - matic
+  - polygon
   - smart
   - contracts
   - hardhat
-image: https://matic.network/banners/matic-network-16x9.png 
+  - deploy on polygon
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
 ## Overview
-Hardhat is an Ethereum development environment that provides an easy way to deploy  contracts, run tests and debug Solidity code locally.
 
-### What you will learn
+Hardhat is an Ethereum development environment that provides an easy way to deploy smart contracts, run tests and debug Solidity code locally.
+
 In this tutorial, you will learn how to set up Hardhat and use it to build, test and deploy a simple smart contract.
 
 ### What you will do
+
 - Set up Hardhat
 - Create a simple smart contract
 - Compile contract
@@ -47,7 +51,6 @@ The sample project used here comes from the [<ins>Hardhat Quickstart guide</ins>
 :::
 
 ## Creating a project
-### Sample project
 
 To create a sample project, run `npx hardhat` in your project folder. You should see the following prompt:
 
@@ -59,7 +62,7 @@ Choose the JavaScript project and go through these steps to compile, test and de
 
 The `contracts` folder contains `Lock.sol`, which is a sample contract which consistis of a simple digital lock, where users could only withdraw funds after a given period of time.
 
-```solidity
+```
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.9;
 
@@ -103,7 +106,6 @@ contract Lock {
 - Create `.env` file in the root to store your private key
 - Add Polygonscan API key to `.env` file to verify the contract on Polygonscan. You can generate an API key by [creating an account](https://polygonscan.com/register)
 
-
 ```js
 require('dotenv').config();
 require("@nomiclabs/hardhat-ethers");
@@ -145,6 +147,7 @@ Find more instructions on how to use DOTENV on [<ins>this page</ins>](https://ww
 ### Compiling the contract
 
 To compile the contract, you first need to install Hardhat Toolbox:
+
 ```bash
 npm install --save-dev @nomicfoundation/hardhat-toolbox
 ```
@@ -156,6 +159,7 @@ npx hardhat compile
 ```
 
 ### Testing the Contract
+
 To run tests with Hardhat, you just need to type the following:
 
 ```bash
@@ -166,9 +170,10 @@ And this is an expected output:
 
 ![img](/img/hardhat/test.png)
 
-### Deploying on Matic Network
+### Deploying on Polygon Network
 
 Run this command in root of the project directory:
+
 ```bash
 npx hardhat run scripts/deploy.js --network matic
 ```

@@ -6,7 +6,11 @@ description: Learn the Basics of Web3 Development.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png
+  - polygon
+  - web3
+  - development
+  - basics
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
 - [Full stack dapp tutorial series](https://kauri.io/#collections/Full%20Stack%20dApp%20Tutorial%20Series/full-stack-dapp-tutorial-series-intro/)

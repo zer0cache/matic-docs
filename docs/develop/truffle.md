@@ -1,68 +1,75 @@
 ---
 id: truffle
-title: Using Truffle
-description:  "Use Truffle to deploy a Smart Contract."
+title: Deploy a Smart Contract Using Truffle
+sidebar_label: Using Truffle
+description:  Use Truffle to deploy a Smart Contract on Polygon
 keywords:
   - docs
   - matic
+  - polygon
   - smart
   - contract
   - truffle
-image: https://matic.network/banners/matic-network-16x9.png 
+  - deploy
+  - polygonscan
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
 ## Overview
-[Truffle](https://trufflesuite.com/) is a blockchain development environment, which you can use to create and test smart contracts by levering an Ethereum Virtual Machine.
 
-### What you will learn
-This guide aims at teaching how to create a smart contract using Truffle and deploying it on Matic Network.
+[Truffle](https://trufflesuite.com/) is a blockchain development environment, which you can use to create and test smart contracts by leveraging the Ethereum Virtual Machine. This guide aims at teaching how to create a smart contract using Truffle and deploying it on the EVM-compatible Polygon Network.
 
-### What you will do
+:::note
+
+This tutorial is an adapted version of the [<ins>Truffle quickstart guide</ins>](https://www.trufflesuite.com/docs/truffle/quickstart) article.
+
+:::
+
+## What you will do
+
 - Install and set up Truffle
-- Deploy contract on Matic Network
-- Check the deployment status on Polygonscan.
+- Deploy contract on Polygon Network
+- Check the deployment status on Polygonscan
 
-## Setting up the development environment
+## Prerequisites
 
 There are a few technical requirements before we start. Please install the following:
 
-- [Node.js v8+ LTS and npm](https://nodejs.org/en/) (comes with Node)
+- [Node.js v8+ LTS and npm](https://nodejs.org/en/) (packaged with Node)
 - [Git](https://git-scm.com/)
 
 Once we have those installed, we only need one command to install Truffle:
 
-    npm install -g truffle
+```
+npm install -g truffle
+```
 
-To verify that Truffle is installed properly, type **`truffle version`** on a terminal. If you see an error, make sure that your npm modules are added to your path.
+To verify that Truffle is installed properly, type `truffle version` on a terminal. If you see an error, make sure that the npm modules are added to your path.
 
-:::note
+## Creating a Project
 
-What follows is an adapted version of the [<ins>Truffle quickstart guide</ins>](https://www.trufflesuite.com/docs/truffle/quickstart) article. 
-:::
-
-## Creating a project
-### MetaCoin project
+### MetaCoin Project
 
 We will use one of Truffle's boilerplates which you can find on their [Truffle Boxes](https://trufflesuite.com/boxes/) page. [MetaCoin box](https://trufflesuite.com/boxes/metacoin/) creates a token that can be transferred between accounts.
 
 1. Start by creating a new directory for this Truffle project:
 
-```bash
-mkdir MetaCoin
-cd MetaCoin
-```
+  ```bash
+  mkdir MetaCoin
+  cd MetaCoin
+  ```
 
 2. Download the MetaCoin box:
 
-```bash
-truffle unbox metacoin
-```
+  ```bash
+  truffle unbox metacoin
+  ```
 
-With that last step, you have created a Truffle project cointaining folders with contracts, deployment, testing and configuration files.
+With that last step, you have created a Truffle project cointaining folders with contracts, deployment, testing, and configuration files.
 
 This is the smart contract data from the `metacoin.sol` file:
 
-```solidity
+```solidity title="metacoin.sol"
 // SPDX-License-Identifier: MIT
 // Tells the Solidity compiler to compile only from v0.8.13 to v0.9.0
 pragma solidity ^0.8.13;
@@ -106,32 +113,33 @@ Notice that ConvertLib is being imported just after the `pragma` statement. In t
 
 :::
 
-### Testing the contract
+### Testing the Contract
 
-You can run a Solidity and Javascript tests.
+You can run Solidity and Javascript tests.
 
 1. In a terminal, run the Solidity test:
 
-```bash
-truffle test ./test/TestMetaCoin.sol
-```
+  ```bash
+  truffle test ./test/TestMetaCoin.sol
+  ```
 
-You should see the following output:
+  You should see the following output:
 
-![img](/img/truffle/test1.png)
+  ![img](/img/truffle/test1.png)
 
 2. Run the JavaScript test:
 
-```bash
-truffle test ./test/metacoin.js
-```
+  ```bash
+  truffle test ./test/metacoin.js
+  ```
 
-You should see the following output:
+  You should see the following output:
 
-![img](/img/truffle/test2.png)
+  ![img](/img/truffle/test2.png)
 
-### Compiling the contract
-Compile the smart contract:
+### Compiling the Contract
+
+Compile the smart contract using the following command:
 
 ```bash
 truffle compile
@@ -141,14 +149,13 @@ You will see the following output:
 
 ![img](/img/truffle/compile.png)
 
-### Configuring the smart contract
+### Configuring the Smart Contract
 
 Before actually depolying the contract, you need to set up the `truffle-config.js` file, inserting network and compilers data. 
 
-- Go to truffle-config.js
-- Update the truffle-config with matic-network-crendentials.
+Go to `truffle-config.js` and update the file with Polygon Mumbai network details.
 
-```js
+```js title="truffle-config.js"
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 const fs = require('fs');
 const mnemonic = fs.readFileSync(".secret").toString().trim();
@@ -183,20 +190,23 @@ module.exports = {
 }
 ```
 
-Notice, it requires mnemonic to be passed in for maticProvider, this is the seed phrase for the account you'd like to deploy from. Create a new `.secret` file in the root directory and enter your 12-word mnemonic seed phrase to get started. To get the seed words from Metamask wallet, you can go to Metamask settings, then from the menu, choose Security and Privacy where you will see a button that says "reveal seed words". 
+Note that it requires mnemonic to be passed in for `maticProvider`. This is the seed phrase (or private key) for the account you would like to deploy from. Create a new `.secret` file in the root directory and enter your 12-word mnemonic seed phrase to get started. To get the seed words from Metamask wallet, you can go to MetaMask settings, then from the menu, choose **Security and Privacy** where you will see a button that says **reveal seed words**. 
 
-### Deploying on Matic Network
+### Deploying on Polygon Network
 
-Add Matic to your wallet using https://faucet.polygon.technology/.
+Add MATIC to your wallet using [Polygon Faucet](https://faucet.polygon.technology/). Next, run this command in the root folder of the project directory:
 
-Run this command in the root of the the project directory:
+```
+truffle compile
+truffle deploy --network matic
+```
 
 ![img](/img/truffle/deployed-contract.png)
 
 :::note
 
-Remember your address, transaction_hash and other details provided would differ. Above is just to provide an idea of the structure.
+Remember your `address`, `transaction_hash` and other details provided would differ. Above is just to provide an idea of the structure.
 
 :::
 
-**Congratulations! You have successfully deployed a Smart Contract using Truffle. Now you can interact with it check its deployment status here: https://mumbai.polygonscan.com/.**
+**Congratulations! You have successfully deployed a Smart Contract using Truffle.** Now you can interact with the contract and also check its deployment status on [Polygonscan](https://mumbai.polygonscan.com/).

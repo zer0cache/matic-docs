@@ -1,27 +1,32 @@
 ---
 id: dapp-fauna-polygon-react
-title: dApps Data Tutorial
-description: Build dapps using Fauna, Polygon, and React.
+sidebar_label: dApps Data Tutorial
+title: Data Tutorial for Decentralized Applications
+description: Build dapps using Fauna, Polygon, and React
 keywords:
   - docs
   - matic
   - dapp
   - fauna
   - polygon
+  - data
+  - security
   - react
-image: https://matic.network/banners/matic-network-16x9.png
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 slug: dapp-fauna-polygon-react
 ---
 
-**dApps**, or decentralized applications, are apps built on the blockchain structure. There are different types of blockchains that applications can be built off of - some you might’ve heard of are Solana and Ethereum. These primary networks are sometimes supplemented by **sidechains**, or secondary blockchains, that run parallel to the primary blockchain. Sidechains, such as Polygon, allow for tokens and other digital assets to be used between multiple blockchains, greatly expanding the capabilities of primary blockchains and allowing use cases such as reduction of transaction fees, making primary blockchains more scalable, and having more optimized transaction traffic and capacity since sidechains only periodically update their root chain, while primary blockchains update every new block.
+**dApps**, or decentralized applications, are apps built on the blockchain structure. There are different types of blockchains that applications can be built off of - some you might’ve heard of are Ethereum and Solana.
+
+These primary networks are sometimes supplemented by **sidechains**, or secondary blockchains, that run parallel to the primary blockchain. Sidechains, such as Polygon, allow for tokens and other digital assets to be used between multiple blockchains, greatly expanding the capabilities of primary blockchains and allowing use cases such as reduction of transaction fees, making primary blockchains more scalable, and having more optimized transaction traffic and capacity since sidechains only periodically update their root chain, while primary blockchains update every new block.
 
 The use cases for dApps are expanding by the day - due to its growing popularity, more and more apps are imagining how they can fit their application into the decentralized world. Just as with centralized apps, some of these dApps may still require the usage of private data for scenarios like authenticating identities or purchasing something that’s being shipped to your physical address.
 
 Having private application data transmitted and stored on a public blockchain, while necessary for dApps, can end up causing huge privacy breaches from bad actors. So how can we protect private data from making its way into the public and immutable nature of the blockchain?
 
-## Safeguarding your dApp data with Fauna, Polygon, and React
+## Safeguarding your dApp data
 
-In this tutorial, we’ll be building a simple allowlisting app that utilizes React for the UI and functionality, the Polygon sidechain for transactions, and Fauna for storing private data from transactions that we may not necessarily want to surface publicly in the blockchain. “Allowlisting”, also known as “whitelisting”, is a concept that is very common in the decentralized world - when signing up for a allowlist, you typically gain access to special privileges, such as being able to be the first to purchase digital assets.
+In this tutorial, we’ll be building a simple allowlisting app that utilizes **React** for the UI and functionality, the **Polygon** sidechain for transactions, and **Fauna** for storing private data from transactions that we may not necessarily want to surface publicly in the blockchain. **Allowlisting**, also known as **whitelisting**, is a concept that is very common in the decentralized world - when signing up for a allowlist, you typically gain access to special privileges, such as being able to be the first to purchase digital assets.
 
 ![img](/img/dapp-fauna-polygon-react/polygon-fauna-app.gif)
 
@@ -44,12 +49,14 @@ In order to get started with building, follow these steps:
 
 - Create a Fauna Account — you can sign up [here](https://dashboard.fauna.com/accounts/register?utm_source=polygon.technology&utm_medium=referral&utm_campaign=docs-tutorial).
 - Create a Metamask Wallet with Polygon’s Test Network (Mumbai-Testnet) configured.
-    - First, get set up with Metamask [here](../develop/metamask/tutorial-metamask.md). Make sure you save your Secret Recovery Phrase.
-    - Then, configure the Mumbai-Testnet on your Metamask by following the instructions [here](../develop/metamask/config-polygon-on-metamask.md).
+    - First, get set up with Metamask [here](/docs/develop/metamask/tutorial-metamask.md). Make sure you save your Secret Recovery Phrase.
+    - Then, configure the Mumbai-Testnet on your Metamask by following the instructions [here](/docs/develop/metamask/config-polygon-on-metamask.md).
 - Once you have Metamask set up and configured for the Mumbai-Testnet, you’ll need some MATIC to add to your wallet
-    - MATIC is the native cryptocurrency of the Polygon network and it’s used to pay network fees, for staking, and also for governance to the Polygon blockchain (MATIC holders can vote on Polygon changes). In the context of this project, you will need MATIC to pay gas fees that are charged for each transaction. You can learn more about MATIC [here](https://www.kraken.com/en-us/learn/what-is-polygon-matic#:~:text=MATIC%20is%20the%20native%20cryptocurrency,services%20to%20the%20Polygon%20network.).
+    - MATIC is the native cryptocurrency of the Polygon network and it’s used to pay network fees, for staking, and also for governance to the Polygon blockchain (MATIC holders can vote on Polygon changes). In the context of this project, you will need MATIC to pay gas fees that are charged for each transaction. You can learn more about MATIC [here](https://www.kraken.com/en-us/learn/what-is-polygon-matic).
     - To get started, use the [MATIC faucet](https://faucet.polygon.technology/) to get free MATIC sent to your wallet (note: this MATIC will only be available on the Mumbai-Testnet and is only for development purposes). Once on the webpage, make sure the following options are selected:
+
     ![img](/img/dapp-fauna-polygon-react/faucet.png)
+
     Network: Mumbai, Select Token: MATIC Token, Wallet Address: Put your wallet address here
     - To find out what your wallet address is, you can pull it from Metamask:
 
@@ -57,22 +64,24 @@ In order to get started with building, follow these steps:
 
     Go into Metamask from your browser. At the top under your Account Name, you’ll see a long string. That’s your account ID. Copy that ID by clicking on it.
 
-    :::note
+    :::info
 
-    *Note: this can take a while and you may have to try a few times before the first transaction comes through your wallet. Each successful transaction from the MATIC faucet will give you 0.5 MATIC. Since testing the application requires spending MATIC as gas fees (a fluctuating fee that you must pay to perform transactions), we recommend doing this transaction ~12 times so you have about 6 MATIC in your wallet, which should be enough for testing the app in development.*
+    This can take a while and you may have to try a few times before the first transaction comes through your wallet. Each successful transaction from the MATIC faucet will give you 0.5 MATIC.
+    
+    Since testing the application requires spending MATIC as gas fees (a fluctuating fee that you must pay to perform transactions), we recommend doing this transaction ~12 times so you have about 6 MATIC in your wallet, which should be enough for testing the app in development.
 
     To track your wallet’s transactions, you can visit [https://mumbai.polygonscan.com/address/](https://mumbai.polygonscan.com/address/)[wallet address].
 
     :::
 - Now, install [Truffle](https://trufflesuite.com/) — this is a suite of tools designed for developing Ethereum applications.
   - To see if you already have Truffle installed, you can run `truffle version` - if you get back a response that looks like this, you already have it installed:
-  ``` js
-  $ truffle version
-  Truffle v5.4.29 (core: 5.4.29)
-  Solidity v0.5.16 (solc-js)
-  Node v13.8.0
-  Web3.js v1.5.3
-  ```
+    ``` js
+    $ truffle version
+    Truffle v5.4.29 (core: 5.4.29)
+    Solidity v0.5.16 (solc-js)
+    Node v13.8.0
+    Web3.js v1.5.3
+    ```
   - To install Truffle, run `npm -g truffle`.
 - Also, if you don’t already have it, install the tool to spin up a sample React app with `npm i create-react-app`. Learn more about React [here](https://reactjs.org/).
 
@@ -148,19 +157,22 @@ If you’re someone that prefers walking through code independently, the GitHub 
 2. Once you’ve set up your configuration, test it and make sure it points to your account.
   - To test this, migrate your current smart contracts (Truffle has auto-populated some for you) by running `truffle migrate --network matic`. If it’s not your first time running this `deploy` command for this project, you’ll want to run `truffle migrate --network matic --reset` so it runs a fresh copy of migrations and pulls the most recent code updates.
 
-:::note
+  :::info Facing Errors?
 
-  if you run into any issues, check the following things:
-  Make sure your `MNEMONIC` environment variable is defined in a `.env` file in your root directory.
-  *If you are running into continuous errors and you’ve checked the above, try other RPC URLs in place of the [matic-mubai.chainstacklabs.com](http://matic-mubai.chainstacklabs.com) URL in `truffle-config.js`. A list of additional URLs for the Mumbai-Testnet can be found on [this page](https://docs.polygon.technology/docs/develop/network-details/network/) under the “Mumbai-Testnet” section.*
+  If you run into any issues, try the following things:
 
-:::
+  * Make sure your `MNEMONIC` environment variable is defined in a `.env` file in your root directory.
+
+  * If you are running into continuous errors and you’ve checked the above, try other RPC URLs in place of the [matic-mubai.chainstacklabs.com](http://matic-mubai.chainstacklabs.com) URL in `truffle-config.js`. A list of additional URLs for the Mumbai-Testnet can be found on [this page](https://docs.polygon.technology/docs/develop/network-details/network/) under the **Mumbai-Testnet** section.
+
+  :::
 
 - Then, test being able to connect to your new application by running the front-end. Truffle added some pre-configured logic that will allow you to test this connection. You can test it by running the following from your main directory:
 
-        `cd client`
-
-        `npm run start`
+  ```bash
+  `cd client`
+  `npm run start`
+  ```
 
 :::note
 
@@ -217,13 +229,13 @@ Let’s break this code down a bit:
 
 - Then, go into the migrations folder in the root directory. We’re going to hop into the  2_deploy_contracts.js file and update the functionality so it deploys the new contract
 
-```js
-var Allowlist = artifacts.require("./Allowlist.sol");
+  ```js
+  var Allowlist = artifacts.require("./Allowlist.sol");
 
-module.exports = function(deployer) {
-  deployer.deploy(Allowlist);
-};
-```
+  module.exports = function(deployer) {
+    deployer.deploy(Allowlist);
+  };
+  ```
 
 - Finally, you will migrate your new contract by running `truffle migrate --network matic --reset`.
 
@@ -235,251 +247,250 @@ Once you’ve deployed your new smart contract, let’s get started on building 
 2. Next, create a new directory in `client/src` titled `components`.
 3. Within `components`, create a file called `AllowlistForm.js` and paste in the following:
 
-```js
-import React, { useEffect } from "react";
-import { useForm } from "react-hook-form";
+  ```js
+  import React, { useEffect } from "react";
+  import { useForm } from "react-hook-form";
 
-export default function AllowlistForm(props) {
-  const {
-    register,
-    handleSubmit,
-    setValue,
-    formState: { errors },
-  } = useForm();
+  export default function AllowlistForm(props) {
+    const {
+      register,
+      handleSubmit,
+      setValue,
+      formState: { errors },
+    } = useForm();
 
-  useEffect(() => {
-    register("firstName", { required: true });
-    register("lastName", { required: true });
-    register("walletAddress", { required: true });
-  }, [register]);
+    useEffect(() => {
+      register("firstName", { required: true });
+      register("lastName", { required: true });
+      register("walletAddress", { required: true });
+    }, [register]);
 
-  async function submitForm(data) {
-    console.log(data);
-  }
-
-  return (
-    <div className="wrapper">
-      <form onSubmit={handleSubmit((data) => submitForm(data))}>
-        <div className="header">
-          <h1>Allowlist Form</h1>
-          <p>
-            Please fill out this form to get allowlisted for this exclusive
-            project.
-          </p>
-        </div>
-        <label htmlFor="firstName">First Name</label>
-        <input
-          id="firstName"
-          onChange={(e) => setValue("firstName", e.target.value)}
-        />
-        {errors.firstName && (
-          <span role="alert" className="errorField">
-            First name is required.
-          </span>
-        )}
-        <label htmlFor="lastName">Last Name</label>
-        <input
-          id="lastName"
-          onChange={(e) => setValue("lastName", e.target.value)}
-        />
-        {errors.lastName && (
-          <span role="alert" className="errorField">
-            Last name is required.
-          </span>
-        )}
-        <label htmlFor="walletAddress">Wallet Address</label>
-        <input
-          id="walletAddress"
-          onChange={(e) => setValue("walletAddress", e.target.value)}
-        />
-        {errors.walletAddress && (
-          <span role="alert" className="errorField">
-            Wallet address is required.
-          </span>
-        )}
-        <input type="submit" className="submitButton" />
-      </form>
-    </div>
-  );
-}
-```
-
-The above code creates a component called `AllowlistForm`  using the `react-hook-form` library installed earlier. The form allows a `firstName`, `lastName`, and `walletAddress` field, and also explicitly specifies what fields are required or not for error validation. The component also contains some error-handling logic for leaving required inputs blank and attempting to submit.
-
-4. Next, to make the form look better, create a file called `AllowlistForm.css` and add in the following CSS:
-``` css
-
-h1 {
-  border-bottom: 1px solid white;
-  color: #3d3d3d;
-  font-family: sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 24px;
-  text-align: center;
-}
-
-.header {
-  margin-bottom: 10px;
-}
-
-form {
-  background: white;
-  border: 1px solid #dedede;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 0 auto;
-  margin-top: 10px;
-  max-width: 500px;
-  padding: 30px 50px 0px;
-}
-
-input {
-  border: 1px solid #d9d9d9;
-  border-radius: 4px;
-  box-sizing: border-box;
-  padding: 10px;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-label {
-  color: #3d3d3d;
-  display: block;
-  font-family: sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  text-align: left;
-}
-
-.errorField {
-  color: red;
-  font-family: sans-serif;
-  font-size: 12px;
-  margin-bottom: 10px;
-  text-align: left;
-}
-
-.submitButton {
-  background-color: #6976d9;
-  color: white;
-  font-family: sans-serif;
-  font-size: 14px;
-  margin: 20px 0px;
-}
-
-```
-
-:::tip
-To implement the form field, button, and input styling and color scheme, as well as to help outline form functionality, you can use [Retool tutorial](https://retool.com/blog/how-to-build-a-react-form-component/) on `react-hook-form` as a reference.
-
-:::
-
-:::note
-Additional note: If you receive a warning about old stylesheets, this is probably due to a legacy version of `create-react-app` that Truffle is using to set up the React project. To mitigate this, you can update your `package.json`'s `browserlist` property so it looks like this:
-
-```js
-"browserslist": {
-    "production": [
-      ">0.3%",
-      "not ie 11",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version",
-      ">0.3%",
-      "not ie 11",
-      "not dead",
-      "not op_mini all"
-    ]
-  }
-```
-:::
-
-5. To wire up the styling with the component, add the following import statement at the top of your `AllowlistForm.js` component:
-
-    `import "./AllowlistForm.css";`
-
-6. Finally, we need to actually surface the form in our demo app.
-    - We’ll do this by updating the `App.js` file in the `client` directory. Replace the current contents of `App.js` with the following:
-
-```js
-import React, { Component } from "react";
-import AllowlistContract from "./contracts/Allowlist.json";
-import getWeb3 from "./getWeb3";
-import AllowlistForm from "./components/AllowlistForm";
-
-import "./App.css";
-
-class App extends Component {
-  state = { storageValue: 0, web3: null, accounts: null, contract: null };
-
-  componentDidMount = async () => {
-    try {
-      // Get network provider and web3 instance.
-      const web3 = await getWeb3();
-
-      // Use web3 to get the user's accounts.
-      const accounts = await web3.eth.getAccounts();
-
-      // Get the contract instance.
-      const networkId = await web3.eth.net.getId();
-      const deployedNetwork = AllowlistContract.networks[networkId];
-      const instance = new web3.eth.Contract(
-        AllowlistContract.abi,
-        deployedNetwork && deployedNetwork.address
-      );
-
-      // Set web3, accounts, and contract to the state, and then proceed with an
-      // example of interacting with the contract's methods.
-      this.setState({ web3, accounts, contract: instance });
-    } catch (error) {
-      // Catch any errors for any of the above operations.
-      alert(
-        `Failed to load web3, accounts, or contract. Check console for details.`
-      );
-      console.error(error);
+    async function submitForm(data) {
+      console.log(data);
     }
-  };
 
-  render() {
-    if (!this.state.web3) {
-      return <div>Loading Web3, accounts, and contract...</div>;
-    }
     return (
-      <div className="App">
-        <AllowlistForm
-          contract={this.state.contract}
-          accounts={this.state.accounts}
-        />
+      <div className="wrapper">
+        <form onSubmit={handleSubmit((data) => submitForm(data))}>
+          <div className="header">
+            <h1>Allowlist Form</h1>
+            <p>
+              Please fill out this form to get allowlisted for this exclusive
+              project.
+            </p>
+          </div>
+          <label htmlFor="firstName">First Name</label>
+          <input
+            id="firstName"
+            onChange={(e) => setValue("firstName", e.target.value)}
+          />
+          {errors.firstName && (
+            <span role="alert" className="errorField">
+              First name is required.
+            </span>
+          )}
+          <label htmlFor="lastName">Last Name</label>
+          <input
+            id="lastName"
+            onChange={(e) => setValue("lastName", e.target.value)}
+          />
+          {errors.lastName && (
+            <span role="alert" className="errorField">
+              Last name is required.
+            </span>
+          )}
+          <label htmlFor="walletAddress">Wallet Address</label>
+          <input
+            id="walletAddress"
+            onChange={(e) => setValue("walletAddress", e.target.value)}
+          />
+          {errors.walletAddress && (
+            <span role="alert" className="errorField">
+              Wallet address is required.
+            </span>
+          )}
+          <input type="submit" className="submitButton" />
+        </form>
       </div>
     );
   }
-}
+  ```
 
-export default App;
-```
+  The above code creates a component called `AllowlistForm`  using the `react-hook-form` library installed earlier. The form allows a `firstName`, `lastName`, and `walletAddress` field, and also explicitly specifies what fields are required or not for error validation. The component also contains some error-handling logic for leaving required inputs blank and attempting to submit.
+
+4. Next, to make the form look better, create a file called `AllowlistForm.css` and add in the following CSS code:
+
+  ```css
+
+  h1 {
+    border-bottom: 1px solid white;
+    color: #3d3d3d;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .header {
+    margin-bottom: 10px;
+  }
+
+  form {
+    background: white;
+    border: 1px solid #dedede;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 10px;
+    max-width: 500px;
+    padding: 30px 50px 0px;
+  }
+
+  input {
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  label {
+    color: #3d3d3d;
+    display: block;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
+  .errorField {
+    color: red;
+    font-family: sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .submitButton {
+    background-color: #6976d9;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 20px 0px;
+  }
+  ```
+
+  :::tip
+
+  To implement the form field, button, and input styling and color scheme, as well as to help outline form functionality, you can use [Retool tutorial](https://retool.com/blog/how-to-build-a-react-form-component/) on `react-hook-form` as a reference.
+
+  :::
+
+  :::note
+
+  If you receive a warning about old stylesheets, this is probably due to a legacy version of `create-react-app` that Truffle is using to set up the React project. To mitigate this, you can update your `package.json`'s `browserlist` property so it looks like this:
+
+  ```js
+  "browserslist": {
+      "production": [
+        ">0.3%",
+        "not ie 11",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version",
+        ">0.3%",
+        "not ie 11",
+        "not dead",
+        "not op_mini all"
+      ]
+    }
+  ```
+  :::
+
+5. To wire up the styling with the component, add the following import statement at the top of your `AllowlistForm.js` component:
+
+  `import "./AllowlistForm.css";`
+
+6. Finally, we need to actually surface the form in our demo app. We’ll do this by updating the `App.js` file in the `client` directory. Replace the current contents of `App.js` with the following:
+
+  ```js
+  import React, { Component } from "react";
+  import AllowlistContract from "./contracts/Allowlist.json";
+  import getWeb3 from "./getWeb3";
+  import AllowlistForm from "./components/AllowlistForm";
+
+  import "./App.css";
+
+  class App extends Component {
+    state = { storageValue: 0, web3: null, accounts: null, contract: null };
+
+    componentDidMount = async () => {
+      try {
+        // Get network provider and web3 instance.
+        const web3 = await getWeb3();
+
+        // Use web3 to get the user's accounts.
+        const accounts = await web3.eth.getAccounts();
+
+        // Get the contract instance.
+        const networkId = await web3.eth.net.getId();
+        const deployedNetwork = AllowlistContract.networks[networkId];
+        const instance = new web3.eth.Contract(
+          AllowlistContract.abi,
+          deployedNetwork && deployedNetwork.address
+        );
+
+        // Set web3, accounts, and contract to the state, and then proceed with an
+        // example of interacting with the contract's methods.
+        this.setState({ web3, accounts, contract: instance });
+      } catch (error) {
+        // Catch any errors for any of the above operations.
+        alert(
+          `Failed to load web3, accounts, or contract. Check console for details.`
+        );
+        console.error(error);
+      }
+    };
+
+    render() {
+      if (!this.state.web3) {
+        return <div>Loading Web3, accounts, and contract...</div>;
+      }
+      return (
+        <div className="App">
+          <AllowlistForm
+            contract={this.state.contract}
+            accounts={this.state.accounts}
+          />
+        </div>
+      );
+    }
+  }
+
+  export default App;
+  ```
 You might notice that some of this `App.js` logic is similar to what was originally set up by Truffle! Our new-and-improved `App.js` will do the following:
 
-- On page load, initialize a web3 instance, any related accounts, and an instance of our `Allowlist` smart contract (pulled from `Allowlist.json`, an instance of our contract that is generated from the previously run `truffle migrate` command).
-    - Within these initializations, we set corresponding state variables for the contract, account list, and web3 instances.
-- When the page renders, if we’re still fetching all of the web3 information, it’ll show a “Loading message” rather than the form - this is determined by checking whether the web3 state variable has been set.
-    - Once that web3 state variable has been set, we return the `AllowlistForm` component and pass in our `contract` and `accounts` state variables - we’ll need them within our component to write to the blockchain when we submit the form.
+- On page load, initialize a web3 instance, any related accounts, and an instance of our `Allowlist` smart contract (pulled from `Allowlist.json`, an instance of our contract that is generated from the previously run `truffle migrate` command). Within these initializations, we set corresponding state variables for the contract, account list, and web3 instances.
+- When the page renders, if we’re still fetching all of the web3 information, it’ll show a `Loading message` rather than the form - this is determined by checking whether the web3 state variable has been set. Once that web3 state variable has been set, we return the `AllowlistForm` component and pass in our `contract` and `accounts` state variables - we’ll need them within our component to write to the blockchain when we submit the form.
 - To get a beautiful full-page lavender background like in the demo GIF, add the following at the bottom of your `App.css` file:
 
-```css
-html,
-body {
-  width: 100%;
-  height: 100%;
-  background: lavender;
-}
-```
+  ```css
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    background: lavender;
+  }
+  ```
 
 When navigating to http://localhost:3000 now, your application will look like this:
 
@@ -503,20 +514,22 @@ Once you create your database, you will be taken to the overview page.
 
 :::tip
 
-Something super interesting about Fauna is that you don’t actually create “columns”, which, in a traditional database, are a way to structure entries that you insert in the table. The data you insert into Fauna determines the collection structure rather than the other way around.*
+  Something super interesting about Fauna is that you don’t actually create `columns`, which, in a traditional database, are a way to structure entries that you insert in the table. The data you insert into Fauna determines the collection structure rather than the other way around.
+
 :::
 
-3. Once a database and a collection within it has been made, we need to generate a secret key to be able to access it in-app. To do so, go to the “Security” option in your database and click “New Key”.  Create a new key with the following settings and give it a name of your choosing:
+3. Once a database and a collection within it has been made, we need to generate a secret key to be able to access it in-app. To do so, go to the **Security** option in your database and click **New Key**. Create a new key with the following settings and give it a name of your choosing:
 
 ![img](/img/dapp-fauna-polygon-react/new_key.png)
 
-Click “Save” and copy the Secret that appears above the list of keys. Then, create a .env file in your project within client - this is a React-specific .env that the front-end will read from. Add a REACT_APP_FAUNADB_SECRET environment variable and set it equal to the Secret that you copied when generating the API key. Your .env should look like this:
+Click **Save** and copy the Secret that appears above the list of keys. Then, create a `.env` file in your project within client - this is a React-specific environment file that the frontend will read from. Add a `REACT_APP_FAUNADB_SECRET` environment variable and set it equal to the Secret that you copied when generating the API key. Your `.env` should look like this:
 
-```js
-REACT_APP_FAUNADB_SECRET=your secret from fauna goes here
-```
+  ```js
+  REACT_APP_FAUNADB_SECRET=your secret from fauna goes here
+  ```
 
 :::note
+
   For React `.env` files, all custom environment variables MUST start with `REACT_APP_` in order for React to recognize them.
 
 :::
@@ -551,11 +564,15 @@ REACT_APP_FAUNADB_SECRET=your secret from fauna goes here
     }
 
     ```
-The `fauna.js` starts by pulling the environment variable set in the `client/.env`. Then, it declares an `addDocument` function that takes in a `uuid` (which we will generate programmatically in a section below), and the form-inputted `firstName`, `lastName`, and `walletAddress`. Within the function, it initializes an instance of a Fauna API client utilizing the secret stores in the `.env`, which specifically will point Fauna to the database you created. Finally, the function actually queries the API client to add a new item, called a Document, to the collection you created (in this code example it is pulling from a collection called `allowlist_members`- you’ll need to change this to the name you chose for your own collection).
+
+The `fauna.js` starts by pulling the environment variable set in the `client/.env`. Then, it declares an `addDocument` function that takes in a `uuid` (which we will generate programmatically in a section below), and the form-inputted `firstName`, `lastName`, and `walletAddress`. Within the function, it initializes an instance of a Fauna API client utilizing the secret stores in the `.env`, which specifically will point Fauna to the database you created.
+
+Finally, the function actually queries the API client to add a new item, called a Document, to the collection you created (in this code example it is pulling from a collection called `allowlist_members`- you’ll need to change this to the name you chose for your own collection).
 
 Finally, the API response is returned once the query is executed.
 
 :::tip
+
 The `faunadb` [package website](https://www.npmjs.com/package/faunadb) is a great resource for insight into configuring and connecting Fauna to the app!
 
 :::
@@ -573,18 +590,21 @@ Now that we have the functionality in place to send information to Fauna, let’
 
 1. Add the following import at the top of your `AllowlistForm.js` file:
 
+    ```js
     `import { *addDocument* } from "../api/fauna";`
+    ```
 
 2. Then, inside the `submitForm` function in `AllowlistForm.js`, replace the `console.log` statement with the following:
-``` js
-// add data to Fauna
-const uuid = crypto.randomUUID();
-await addDocument(uuid, data.firstName, data.lastName, data.walletAddress)
-  .then((res) => {
-    console.log(res);
-  }
-)
-```
+
+    ``` js
+    // add data to Fauna
+    const uuid = crypto.randomUUID();
+    await addDocument(uuid, data.firstName, data.lastName, data.walletAddress)
+      .then((res) => {
+        console.log(res);
+      }
+    )
+    ```
 
 In this snippet, we are programmatically generating a UUID using the built-in `crypto.randomUUID()` [function](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID), which will generate a 36-character-long v4 UUID. Once the UUID has been generated, we call the `addDocument` function we just added. Within `addDocument`, we’re passing information from the form submission (captured in `data`, which is being initially passed into `submitForm` - `data.firstName`, `data.lastName`, and `data.walletAddress`) as well as the generated UUID. Finally, the API response is logged to the console, which will help us determine if the API call successfully went through.
 
@@ -597,91 +617,92 @@ In this snippet, we are programmatically generating a UUID using the built-in `c
 Our application is now sending responses to Fauna. However, since we’re using a randomly generated UUID, there is a chance that we could have duplicated UUID entries in our database. We want to make sure that before we store any information in Fauna that there are no other UUIDs that match the one we’ve generated, and if there are, we’ll need to generate a new one.
 
 1. In order to search the data we’ve been populating into our Fauna collection, we can use an [Index](https://docs.fauna.com/fauna/current/api/fql/indexes?lang=javascript). Indexes in Fauna allow you to browse and easily search the data stored in your collections. To do this, you can go to your collection in Fauna and click the “New Index” button.
+
 2. You will be taken to a page to create a new index - make sure the Source Collection field has correctly populated the collection you’re trying to add to. Indexes are used for querying, so try to name the index something that specifically captures what it’s going to do - since the index will be used to query entries by UUID, we chose `allowlist_members_by_uuid`. To specify what properties you’ll be querying by, add `data.uuid` into the Terms field - this lets Fauna know to pull items based on the UUID. Lastly, since you do want the UUID to be unique, check the “Unique” option and also make sure the “Serialized” option also stays checked:
 
 ![img](/img/dapp-fauna-polygon-react/new_index.png)
 
 3. Once the index has been created, we can now query it from Fauna. To do this, we’ll need to hop into our client/src/api/fauna.js file and add a new function, findUUID, to search by index when given a UUID passed in as a parameter:
 
-```js
+    ```js
 
-export async function findUUID(uuid) {
-  const faunadb = require("faunadb");
-  const q = faunadb.query;
-  const client = new faunadb.Client({
-    secret: process.env.REACT_APP_FAUNADB_SECRET,
-    domain: "db.fauna.com",
-    scheme: "https",
-  });
-  client
-    .query(q.Paginate(q.Match(q.Index("allowlist_members_by_uuid"), uuid)))
-    .then((res) => {
-      if (res.data.length === 0) {
-        return false;
-      } else {
-        return true;
-      }
-    });
-}
+    export async function findUUID(uuid) {
+      const faunadb = require("faunadb");
+      const q = faunadb.query;
+      const client = new faunadb.Client({
+        secret: process.env.REACT_APP_FAUNADB_SECRET,
+        domain: "db.fauna.com",
+        scheme: "https",
+      });
+      client
+        .query(q.Paginate(q.Match(q.Index("allowlist_members_by_uuid"), uuid)))
+        .then((res) => {
+          if (res.data.length === 0) {
+            return false;
+          } else {
+            return true;
+          }
+        });
+    }
 
-```
+    ```
 
 Very similarly to the `addDocuments` function, we need to do some initial setup and configurations with the Fauna client in this function. Then, we’re calling a query that looks into a specific index (in this case `allowlist_members_by_uuid` ) and sees if there are any matching items that have the `uuid` passed in as a function argument. In the event that there are no matches, an empty array is returned, so the function then checks for an empty array and returns `false` (indicating the UUID has not been found and is therefore not taken) - otherwise, it’ll return `true` (indicating the UUID has a match).
 
 4. Now that we have a way to check for existing UUIDs, we can add this in to our `submitForm` function in our `AllowlistForm.js` component.
     - To do this, we’ll add the `findUUID` function in to the `../api/fauna` import statement at the top of the file like so:
-    ``` js
-    import { addDocument, findUUID } from "../api/fauna";
-    ```
+
+      ``` js
+      import { addDocument, findUUID } from "../api/fauna";
+      ```
 
     - Replace the const uuid = crypto.randomUUID(); line with the following logic:
 
-    ```js
-    // generate uuid
-    let uuid = "";
-    // check for duplicate uuids in db
-    while (true) {
-      const generatedUUID = crypto.randomUUID();
-      const didFindUUID = await findUUID(generatedUUID);
-      if (!didFindUUID) {
-        uuid = generatedUUID;
-        break;
+      ```js
+      // generate uuid
+      let uuid = "";
+      // check for duplicate uuids in db
+      while (true) {
+        const generatedUUID = crypto.randomUUID();
+        const didFindUUID = await findUUID(generatedUUID);
+        if (!didFindUUID) {
+          uuid = generatedUUID;
+          break;
+        }
       }
-    }
-
-    ```
-    With the above code, we’re initializing a UUID variable. Then, we’re diving into an infinite loop that will run until it is manually broken out of - within the loop, a UUID is generated using crypto.randomUUID(). The generated UUID is then passed into a call to the findUUID function, which will return either true or false to the variable didFindUUID once the function call is complete. If didFindUUID returns false, meaning there are no matches in the database for this generated UUID, then the UUID variable is set to the generated UUID and the loop is broken out of. Otherwise, the entire process is repeated until a non-duplicate UUID is identified.
+      ```
+    With the above code, we’re initializing a UUID variable. Then, we’re diving into an infinite loop that will run until it is manually broken out of - within the loop, a UUID is generated using `crypto.randomUUID()`. The generated UUID is then passed into a call to the `findUUID` function, which will return either true or false to the variable `didFindUUID` once the function call is complete. If `didFindUUID` returns false, meaning there are no matches in the database for this generated UUID, then the UUID variable is set to the generated UUID and the loop is broken out of. Otherwise, the entire process is repeated until a non-duplicate UUID is identified.
 
 ### Submit form responses to the blockchain
+
 The final step in our application is to write to  the blockchain using our smart contract. As we mentioned above, we want the generated UUID that we store in Fauna to replace all of the actual private data (in this case, the first name, last name, and wallet address submitted). This adds a layer of security to the private data - it’s not publicly available on the blockchain, only the UUID is, and you’d need access to the Fauna database to be able to see the information behind that UUID.
 
 1. Since we want the form to submit to the blockchain only if the Fauna API call is successful (and only once it happens), we can nest the API call to add a new allowlister within the Fauna API call where we add a new document. We’ll do this in the `submitForm` function by replacing the `console.log(res)` line so that it calls our `_createAllowlister` method from our smart contract:
 
-```js
-
-async function submitForm(data) {
-  // generate uuid
-    let uuid = "";
-  // check for duplicate uuids in db
-  while (true) {
-    const generatedUUID = crypto.randomUUID();
-    const didFindUUID = await findUUID(generatedUUID);
-    if (!didFindUUID) {
-      uuid = generatedUUID;
-      break;
+    ```js
+    async function submitForm(data) {
+      // generate uuid
+        let uuid = "";
+      // check for duplicate uuids in db
+      while (true) {
+        const generatedUUID = crypto.randomUUID();
+        const didFindUUID = await findUUID(generatedUUID);
+        if (!didFindUUID) {
+          uuid = generatedUUID;
+          break;
+        }
+      }
+      // add data to Fauna
+      await addDocument(uuid, data.firstName, data.lastName, data.walletAddress)
+        .then((res) => {
+          // add data to contract
+          props.contract.methods
+            ._createAllowlister(uuid)
+            .send({ from: props.accounts[0] })
+        }
+      )
     }
-  }
-	// add data to Fauna
-  await addDocument(uuid, data.firstName, data.lastName, data.walletAddress)
-    .then((res) => {
-      // add data to contract
-      props.contract.methods
-        ._createAllowlister(uuid)
-        .send({ from: props.accounts[0] })
-	  }
-  )
- }
- ```
+    ```
 
  Since we passed the `Allowlist` smart contract and all available accounts into our `AllowlistForm` component, we’re able to access them to pull information from our smart contract. Since they’re passed in as props, we’re referencing them as `props.contract` and `props.accounts` rather than `contract` and `accounts`.
 
@@ -710,41 +731,41 @@ We can write a script to parse the transaction hash for the Input Data, so that 
 
 5. To decode this, we can use the [abi-decoder library](https://github.com/ConsenSys/abi-decoder). In the `client` directory of your project, run the following to install the library:
 
-```jsx
-npm install abi-decoder
-```
+    ```jsx
+    npm install abi-decoder
+    ```
 
 6. Then, create a folder named `scripts` in the `client` directory.
 7. Within the `scripts` folder, create a file called `decode-transaction.js` and paste the following information in:
 
-```jsx
-const abiDecoder = require('abi-decoder');
+    ```jsx
+    const abiDecoder = require('abi-decoder');
 
-// pulled from Allowlist.json "abi" field
-const testABI = [
-    {
-      "constant": false,
-      "inputs": [
+    // pulled from Allowlist.json "abi" field
+    const testABI = [
         {
-          "internalType": "string",
-          "name": "_uuid",
-          "type": "string"
+          "constant": false,
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "_uuid",
+              "type": "string"
+            }
+          ],
+          "name": "_createAllowlister",
+          "outputs": [],
+          "payable": false,
+          "stateMutability": "nonpayable",
+          "type": "function"
         }
-      ],
-      "name": "_createAllowlister",
-      "outputs": [],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    }
-];
-abiDecoder.addABI(testABI);
+    ];
+    abiDecoder.addABI(testABI);
 
-// add in your input data hash as a string here
-const testData = "";
-const decodedData = abiDecoder.decodeMethod(testData);
-console.log(decodedData);
-```
+    // add in your input data hash as a string here
+    const testData = "";
+    const decodedData = abiDecoder.decodeMethod(testData);
+    console.log(decodedData);
+    ```
 
 The above code will create an instance of the abi-decoder library so it can be used, storing it in the variable `abiDecoder`. In order to read the Input Data hash, the library requires an ABI, or Application Binary Interface, to tell the decoder what information, such as functions and arguments, is in the smart contract being used for the transaction. The ABI will help inform the decoder what information can be parsed from the hash.
 
@@ -754,9 +775,9 @@ The final touch for this program to run will be to add in the input data hash fo
 
 8. Once all information has been added in to the script, we can run it in the command line to see the output. Run the script from the `client` folder using this command:
 
-```jsx
-    node scripts/decode-transaction.js
-```
+    ```jsx
+        node scripts/decode-transaction.js
+    ```
 
 You’ll receive a response back that looks like this:
 

@@ -5,15 +5,18 @@ description: "IPFS - distributed system for storing and accessing data."
 keywords:
   - IPFS
   - matic
-image: https://matic.network/banners/matic-network-16x9.png
+  - docs
+  - polygon
+  - storage
+  - blockchain
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
-
 
 ### Context
 
-Polygon blockchain reduces transaction costs to store data versus Ethereum mainnet; however, even these lower costs add up quickly when storing sizable files. Developers also must consider block size constraints and transaction speed limitations when storing data onchain. One solution which addresses all of these concerns is IPFS, the InterPlanetary File System.&#x20;
+Polygon blockchain reduces transaction costs to store data versus Ethereum mainnet; however, even these lower costs add up quickly when storing sizable files. Developers also must consider block size constraints and transaction speed limitations when storing data onchain. One solution which addresses all of these concerns is IPFS, the InterPlanetary File System.
 
-#### What is IPFS?&#x20;
+#### What is IPFS?
 
 IPFS is a distributed system for storing and accessing files, websites, applications, and data. IPFS uses decentralization, content addressing, and a robust peer-to-peer network of active participants to allow users to store, request, and transfer verifiable data with each other. 
 
@@ -24,10 +27,10 @@ Content addressing uses cryptography to create a uniquely verifable hash based u
 Finally, an ever growing active community of users makes this peer-to-peer sharing of content possible. Developers upload and pin content to IPFS while Filecoin or Crust storage providers help to ensure persistent storage of that content. 
 
 
-IPFS based storage allows you to simply store the CID for your content rather than loading entire files to Polygon blockchain; allowing for decreased costs, larger file sizes, and provably persistent storage. For more details refer [IPFS Docs](https://docs.ipfs.io/). &#x20;
+IPFS based storage allows you to simply store the CID for your content rather than loading entire files to Polygon blockchain; allowing for decreased costs, larger file sizes, and provably persistent storage. For more details refer [IPFS Docs](https://docs.ipfs.io/).
 
 ### Example Projects
 
- 1)  Tutorial in scaffold-eth that demonstrates how to mint an NFT on Polygon with IPFS [link](https://github.com/scaffold-eth/scaffold-eth/tree/simple-nft-example)
+1. Tutorial in scaffold-eth that demonstrates how to mint an NFT on Polygon with IPFS - [link](https://github.com/scaffold-eth/scaffold-eth/tree/simple-nft-example)
 
- 2) Building a full stack web3 app with Next.js, Polygon, Solidity, The Graph, IPFS, and Hardhat [link](https://dev.to/dabit3/the-complete-guide-to-full-stack-web3-development-4g74)
+2. Building a full stack web3 app with Next.js, Polygon, Solidity, The Graph, IPFS, and Hardhat - [link](https://dev.to/dabit3/the-complete-guide-to-full-stack-web3-development-4g74)

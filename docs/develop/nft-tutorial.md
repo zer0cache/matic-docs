@@ -5,7 +5,12 @@ description: Build, mint, and send around your own NFT (ERC721).
 keywords:
   - graph
   - matic
-image: https://matic.network/banners/matic-network-16x9.png
+  - docs
+  - polygon
+  - nft tutorial
+  - mint nft on polygon
+  - erc721
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

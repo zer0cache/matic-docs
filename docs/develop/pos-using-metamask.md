@@ -149,6 +149,7 @@ const txHash = await result.getTransactionHash();
 const txReceipt = await result.getReceipt();
 
 ```
+
 You can also use the `withdrawExitFaster()` method to exit the withdrawal process faster. For more details please visit this [guide](https://maticnetwork.github.io/matic.js/docs/pos/erc20/withdraw-exit-faster/).
 
 <div align= "center">

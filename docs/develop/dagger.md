@@ -2,11 +2,13 @@
 id: dagger
 title: Dagger
 sidebar_label: Dagger - Single App
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+  - polygon
+  - dagger
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

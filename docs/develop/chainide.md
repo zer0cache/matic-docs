@@ -1,6 +1,6 @@
 ---
 id: chainide
-title: Using ChainIDE
+title: Deploy a Smart Contract Using ChainIDE
 sidebar_label: Using ChainIDE
 description: Learn how to use ChainIDE to build and deploy smart contracts.
 keywords:
@@ -13,16 +13,16 @@ keywords:
   - environment
   - smart contract
   - chainIDE
-image: https://matic.network/banners/matic-network-16x9.png
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
-## **Introduction**
+## Introduction
 
 [ChainIDE](https://chainide.com/) is a chain agnostic, cloud-based IDE for creating decentralized applications. It enhances development cycle through pre-configured plugins that save users' time and effort. This is a beginner guide on creating and deploying a simple ERC-721 smart contract on the Polygon Mumbai Testnet.
 
 :::tip
 
-If you have any questions, feel free to ask the ChainIDE team in [<ins>their Discord</ins>](https://discord.gg/QpGq4hjWrh).
+If you have any questions, feel free to ask the ChainIDE team in their [<ins>Discord</ins>](https://discord.gg/QpGq4hjWrh).
 
 :::
 
@@ -32,7 +32,7 @@ If you have any questions, feel free to ask the ChainIDE team in [<ins>their Dis
 2. MetaMask
 3. Solidity
 
-## What You'll Do
+## What you will do
 
 The following are general steps for deploying an ERC-721 smart contract:
 
@@ -46,11 +46,11 @@ The following are general steps for deploying an ERC-721 smart contract:
 
 ## Setting up a Wallet
 
-### **Install MetaMask**
+### Install MetaMask
 
 A gas fee must be paid when deploying a smart contract on the blockchain or making a transaction to a deployed smart contract, and we must do so using a crypto wallet, such as MetaMask. To download MetaMask, click [here](https://metamask.io/).
 
-### **Adding the Mumbai testnet**
+### Adding the Mumbai testnet
 
 After installing MetaMask, you need to add the Polygon Mumbai Testnet to MetaMask. In order to add Mumbai Testnet, check out the configuration guide for [MetaMask](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask).
 
@@ -58,13 +58,13 @@ After installing MetaMask, you need to add the Polygon Mumbai Testnet to MetaMas
   <img src="https://d3gvnlbntpm4ho.cloudfront.net/ERC+721+Deployment+on++Mumbai/image.png" />
 </div>
 
-### **Obtaining MATIC tokens on testnet**
+### Obtaining MATIC tokens on Testnet
 
-After adding the Mumbai testnet on MetaMask, visit the [Polygon Faucet](https://faucet.polygon.technology/) to request testnet tokens. These tokens are required to pay gas fees in order to deploy and interact with the smart contract. On the faucet page, select "Mumbai" as the network, "MATIC" as the token, and paste your MetaMask wallet address. Then, click submit and the faucet will send you some test MATIC within a minute.
+After adding the Mumbai testnet on MetaMask, visit the [Polygon Faucet](https://faucet.polygon.technology/) to request testnet tokens. These tokens are required to pay gas fees in order to deploy and interact with the smart contract. On the faucet page, select **Mumbai** as the network, **MATIC** as the token, and paste your MetaMask wallet address. Then, click **Submit** and the faucet will send you some test MATIC within a minute.
 
 <img src="https://d3gvnlbntpm4ho.cloudfront.net/ERC+721+Deployment+on++Mumbai/Polygon_PR_get_tokens.png" width="100%" height="100%" />
 
-## **Write an ERC-721 Smart Contract**
+## Write an ERC-721 Smart Contract
 
 You need to write down all the required functions that you want to implement in your ERC-721 smart contract. A general ERC-721 smart contract has the following functions:
 
@@ -79,7 +79,7 @@ You need to write down all the required functions that you want to implement in 
 
 The ChainIDE team has prepared a complete ERC-721 template contract that includes all the required functions; you may use this built-in template and add/delete functions according to your requirements.
 
-Visit the [ChainIDE site](https://chainide.com/) and click on "Try Now".
+Visit the [ChainIDE site](https://chainide.com/) and click on **Try Now**.
 
 <img src="https://3869740696-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MYy-lqJKjq1m0yBAX4r%2Fuploads%2Fnpdf7fg51675wYmFcL6b%2Fimage.png?alt=media&token=353fc876-a319-49cb-92d5-1ed23c39aa90" width="100%" height="100%" />
 
@@ -87,13 +87,13 @@ Then, click on **New Project** and select **Polygon**. You will be presented wit
 
 <img src="https://d3gvnlbntpm4ho.cloudfront.net/Using+ChainIDE+polygon/select+polygon+showcase.png" width="100%" height="100%" />
 
-Now, you can see the template contract, **Creature.sol**, that includes all the required functions.
+Now, you can see the template contract, `Creature.sol`, that includes all the required functions.
 
 After creating the project, click on the **Unconnected** button in the upper right corner, select the **Injected Web3 Provider** button, and then click on MetaMask to connect your wallet (Polygon Mainnet is the main network, and Mumbai is the test network - connect to Mumbai).
 
 <img src="https://d3gvnlbntpm4ho.cloudfront.net/Using+ChainIDE+polygon/connect+mumbai.png" width="100%" height="100%" />
 
-## **Compile an ERC-721 Smart Contract**
+## Compile an ERC-721 Smart Contract
 
 After you have completed your smart contract, it is time to compile it. To compile, navigate to "compile the module", choose an appropriate compiler according to your source code, and press the "compile" button. An ABI and bytecode for the source code are generated upon successful compilation. If there are any errors in your source code, they will be displayed in the "Logger module" under the output panel. You may need to carefully read the error, resolve it, and recompile the contract.
 
@@ -105,7 +105,7 @@ Note down the **compiler version** and the **license** for your source code. It 
 
 <img src="https://d3gvnlbntpm4ho.cloudfront.net/ERC+721+Deployment+on++Mumbai/image+(1).png" width="100%" height="100%" />
 
-## **Deploy an ERC-721 Smart Contract**
+## Deploy an ERC-721 Smart Contract
 
 After successful compilation, it's time to deploy your compiled ERC-721 smart contract to the Polygon Mumbai Testnet. Before you deploy, you need to have MetaMask installed, the Mumbai test network added to your wallet, and some testnet MATIC tokens to pay for the transaction fees.
 
@@ -113,13 +113,13 @@ Navigate to the **Deploy & Interaction** module and choose among the compiled sm
 
 <img src="https://d3gvnlbntpm4ho.cloudfront.net/ERC+721+Deployment+on++Mumbai/image+(2).png" width="100%" height="100%" />
 
-### **Check Functions from the Deployed Contract**
+### Check Functions from the Deployed Contract
 
 After successful deployment, an output message should state that your smart contract was deployed successfully. You can now verify the deployed contract. All the functions in the deployed smart contract can be seen in the **INTERACT** panel.
 
 <img src="https://d3gvnlbntpm4ho.cloudfront.net/ERC+721+Deployment+on++Mumbai/image+(3).png" width="100%" height="100%" />
 
-## **Create a Flattened File using Flattener Library**
+## Create a Flattened File using Flattener Library
 
 To verify a smart contract that imports other smart contracts, we need to create a flattened file. A flattened file includes all the source codes of imported contracts in a single file. To create a flattened file, you need to add a **Flattener** plug-in.
 
@@ -137,7 +137,7 @@ The saved flattened file can be accessed under the explorer module.
 
 <img src="https://d3gvnlbntpm4ho.cloudfront.net/ERC+721+Deployment+on++Mumbai/image+(10).png" width="100%" height="100%" />
 
-## **Verify a Smart Contract**
+## Verify a Smart Contract
 
 To verify a smart contract, you need to visit [Mumbai Polygonscan](https://mumbai.polygonscan.com/), and search for the deployed smart contract using the contract address.
 
@@ -164,7 +164,7 @@ If there are no issues with your smart contract, it would be verified, and you'l
 
 <img src="https://d3gvnlbntpm4ho.cloudfront.net/ERC+721+Deployment+on++Mumbai/image+(15).png" width="100%" height="100%" />
 
-## **Minting NFT**
+## Minting NFT
 
 To mint an NFT, you need to use the **Award Item** function, the wallet address of someone to whom you want to award an NFT, and the link of the photo uploaded to IPFS to be pasted in the token URL input field.
 
@@ -174,7 +174,7 @@ To mint an NFT, you need to use the **Award Item** function, the wallet address 
 
 After successful minting, you can check the minted NFT on the OpenSea NFT marketplace. Visit [OpenSea Testnet](https://testnets.opensea.io/), connect your MetaMask wallet and make sure the selected network is Polygon Mumbai Testnet, and you'll be able to see and trade the minted NFT on the OpenSea NFT marketplace.
 
-Congratulations, you have successfully minted an NFT on Polygon using ChainIDE.
+**Congratulations! You have successfully minted an NFT on Polygon using ChainIDE.**
 
 <img src="https://d3gvnlbntpm4ho.cloudfront.net/ERC+721+Deployment+on++Mumbai/image+(6).png" width="100%" height="100%" />
 

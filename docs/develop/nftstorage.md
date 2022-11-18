@@ -1,12 +1,15 @@
 ---
 id: nftstorage
 title: Mint NFTs
-description: "Mint with NFT.storage and Polygon."
+description: Mint with NFT.storage and Polygon.
 keywords:
   - nft.storage
   - filecoin
   - matic
-image: https://matic.network/banners/matic-network-16x9.png
+  - polygon
+  - docs
+  - mint nfts
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
 This tutorial will teach you to mint an NFT using the Polygon blockchain and IPFS/Filecoin storage via NFT.Storage. Polygon, a Layer 2 scaling solution for Ethereum, is often chosen by developers for its speed and lower transaction costs while maintaining full compatibility with Ethereum's EVM. The tutorial will walk you through the creation and deployment of a standardized smart contract, storing metadata and assets on IPFS and Filecoin via the NFT.Storage API and minting the NFT to your own wallet on Polygon.
@@ -67,7 +70,7 @@ Hardhat needs to be initialized in the current folder. In order to start the ini
 npx hardhat
 ```
 
-When prompted, choose `Create an empty hardhat.config.js`. Your console output should look like this:
+When prompted, choose **Create an empty hardhat.config.js**. Your console output should look like this:
 
 ```bash
 ✔ What do you want to do? · Create an empty hardhat.config.js
@@ -105,7 +108,7 @@ module.exports = {
 }
 ```
 
-Create a new file called `.env` which will hold your API key for NFT.Storage and your Polygon wallet. The content of the `.env` file should look like the listing below:
+Create a new file called `.env` which will hold your API key for NFT.Storage and your Polygon wallet private key. The content of the `.env` file should look something like:
 
 ```bash
 PRIVATE_KEY="Your Private Key"
@@ -221,11 +224,11 @@ To be a valid NFT, your smart contract must implement all the methods of the [ER
 
 At the top of our smart contract, we import three OpenZeppelin smart contract classes:
 
-`\@openzeppelin/contracts/token/ERC721/ERC721.sol` contains the implementation of the basic methods of the ERC-721 standard, which our NFT smart contract will inherit. We use the `ERC721URIStorage,` which is an extension to store not just the assets but also metadata as a JSON file off-chain. Like the contract, this JSON file needs to adhere to ERC-721.
+1. `\@openzeppelin/contracts/token/ERC721/ERC721.sol` contains the implementation of the basic methods of the ERC-721 standard, which our NFT smart contract will inherit. We use the `ERC721URIStorage,` which is an extension to store not just the assets but also metadata as a JSON file off-chain. Like the contract, this JSON file needs to adhere to ERC-721.
 
-`\@openzeppelin/contracts/utils/Counters.sol` provides counters that can only be incremented or decremented by one. Our smart contract uses a counter to keep track of the total number of NFTs minted and to set the unique ID on our new NFT.
+2. `\@openzeppelin/contracts/utils/Counters.sol` provides counters that can only be incremented or decremented by one. Our smart contract uses a counter to keep track of the total number of NFTs minted and to set the unique ID on our new NFT.
 
-`\@openzeppelin/contracts/access/Ownable.sol` sets up access control on our smart contract, so only the owner of the smart contract (you) can mint NFTs.
+3. `\@openzeppelin/contracts/access/Ownable.sol` sets up access control on our smart contract, so only the owner of the smart contract (you) can mint NFTs.
 
 After our import statements, we have our custom NFT smart contract, which contains a counter, a constructor, and a method to actually mint the NFT. Most of the hard work is done by the base contract inherited from OpenZeppelin, which implements most of the methods we require to create an NFT adhering to the ERC-721 standard.
 
@@ -235,13 +238,13 @@ In the constructor, we pass in two string arguments for the name of the smart co
 
 Finally, we have our method `mintNFT` that allows us to actually mint the NFT. The method is set to `onlyOwner` to make sure it can only be executed by the owner of the smart contract.
 
-`address recipient` specifies the address that will receive the NFT at first
+`address recipient` specifies the address that will receive the NFT at first.
 
 `string memory tokenURI` is a URL that should resolve to a JSON document that describes the NFT's metadata. In our case it's already stored on NFT.Storage. We can use the returned IPFS link to the metadata JSON file during the execution of the method.
 
 Inside the method, we increment the counter to receive a new unique identifier for our NFT. Then we call the methods provided by the base contract from OpenZeppelin to mint the NFT to the recipient with the newly created identifier and setting the URI of the metadata. The method returns the unique identifier after execution.
 
-#### Deploy the smart contract to Polygon
+#### Deploy the Smart Contract to Polygon
 
 Now, it's time to deploy our smart contract to Polygon. Create a new file called `deploy-contract.mjs` within the `scripts` directory. Copy the contents of the listing below into that file and save it.
 
@@ -265,7 +268,9 @@ deployContract()
  });
 ```
 
-Deploying the contract is done with the helper functions provided by the hardhat library. First, we get the smart contract we created in the previous step with the provided factory. Then we deploy it by calling the respective method and wait for the deployment to be completed. There are a few more lines below the described code to get the correct address in the testnet environment. Save the `mjs` file Execute the script with the following command:
+Deploying the contract is done with the helper functions provided by the hardhat library. First, we get the smart contract we created in the previous step with the provided factory. Then we deploy it by calling the respective method and wait for the deployment to be completed. There are a few more lines below the described code to get the correct address in the testnet environment. Save the `mjs` file.
+
+Execute the script with the following command:
 
 ```bash
 npx hardhat run scripts/deploy-contract.mjs --network PolygonMumbai
@@ -313,8 +318,8 @@ npx hardhat run scripts/mint-nft.mjs --network PolygonMumbai
 You can expect to see the following output:
 
 ```bash
-NFT minted to: 0x{YOUR_WALLET_ADDRESS}
-````
+NFT minted to: 0x<YOUR_WALLET_ADDRESS>
+```
 
 Looking for the sample code from this tutorial? You can find it in the polygon-nft.storage-demo [link](https://github.com/itsPiyushMaheshwari/Polygon-nft.storage-demo) Github repo.
 
@@ -326,4 +331,4 @@ We deployed a custom smart contract to mint our NFT specific to our needs. For t
 
 Successful minting can be seen as the start of the valuable phase of the NFT. The NFT can then be used to prove ownership and can be transferred to other users. Reasons to transfer a NFT might include a successful sale on one of the NFT marketplaces like [OpenSea](https://opensea.io), or a different type of event such as acquiring an item in a NFT based game. Exploring the rich possibilities for NFTs is definitely an exciting next step.
 
-If you\'d like help building your NFT project with NFT.storage, we encourage you to join the `#nft-storage` channel on [Discord](https://discord.gg/Z4H6tdECb9) and [Slack](https://filecoinproject.slack.com/archives/C021JJRH26B).
+If you'd like help building your NFT project with NFT.storage, we encourage you to join the `#nft-storage` channel on [Discord](https://discord.gg/Z4H6tdECb9) and [Slack](https://filecoinproject.slack.com/archives/C021JJRH26B).

@@ -7,11 +7,13 @@ keywords:
   - docs
   - matic
   - polygon
-  - develop
   - developer
   - resources
   - links
-image: https://matic.network/banners/matic-network-16x9.png
+  - web3
+  - ethereum
+  - blockchain
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
 :::tip
