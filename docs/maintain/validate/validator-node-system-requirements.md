@@ -1,7 +1,7 @@
 ---
 id: validator-node-system-requirements
-title: Node System Requirements
-description: "System requirements to run a validator node."
+title: System Requirements
+description: System requirements to run a validator node
 keywords:
   - docs
   - matic
@@ -9,12 +9,10 @@ keywords:
   - prerequisites
   - requirements
 slug: validator-node-system-requirements
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
-# Node System Requirements
-
-The system requirements listed in this section are both for the [sentry](/docs/maintain/glossary#sentry) node and the [validator](/docs/maintain/glossary#validator) node.
+The system requirements listed in this section are both for the [Sentry](/docs/maintain/glossary.md#sentry) node and the [Validator](/docs/maintain/glossary.md#validator) node.
 
 The **minimum** system requirements mean you can run the nodes but the setup is not future-proof.
 

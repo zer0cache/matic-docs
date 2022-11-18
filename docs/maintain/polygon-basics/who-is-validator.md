@@ -8,12 +8,11 @@ keywords:
   - matic
   - polygon
   - validator
-image: https://matic.network/banners/matic-network-16x9.png
+  - Who is a Validator
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
-# Who is a Validator
-
-A validator is a participant in the network who locks up MATIC tokens in the system and runs Heimdall validator and Bor block producer nodes in order to help run the network. Validators stake their MATIC tokens as collateral to work for the security of the network and in exchange for their service, earn rewards.
+Validator is a participant in the network who locks up MATIC tokens in the system and runs Heimdall validator and Bor block producer nodes in order to help run the network. Validators stake their MATIC tokens as collateral to work for the security of the network and in exchange for their service, earn rewards.
 
 Rewards are distributed to all stakers proportional to their stake at every checkpoint with the exception being the proposer getting an additional bonus. User reward balance gets updated in the contract which is referred to while claiming rewards.
 
@@ -21,21 +20,21 @@ Stakes are at risk of getting slashed in case the validator node commits a malic
 
 :::tip
 
-Those who are interested in securing the network but are not running a full node can participate as [delegators](/docs/maintain/glossary#delegator).
+Those who are interested in securing the network but are not running a full node can participate as [delegators](/docs/maintain/glossary.md#delegator).
 
 :::
 
 ## Overview
 
-Validators on the Polygon network are selected through an on-chain auction process which happens at regular intervals. These selected validators participate as block producers and verifiers. Once a [checkpoint](/docs/maintain/glossary#checkpoint-transaction) is validated by the participants, updates are made on the parent chain (the Ethereum mainnet) which releases the rewards for validators depending on their stake in network.
+Validators on the Polygon network are selected through an on-chain auction process which happens at regular intervals. These selected validators participate as block producers and verifiers. Once a [checkpoint](/docs/maintain/glossary.md#checkpoint-transaction) is validated by the participants, updates are made on the parent chain (the Ethereum mainnet) which releases the rewards for validators depending on their stake in network.
 
-Polygon relies on a set of [validators](/docs/maintain/glossary#validator) to secure the network. The role of validators is to run a full node, [produce blocks](/docs/maintain/glossary#block-producer), validate and participate in consensus, and commit [checkpoints](/docs/maintain/glossary#checkpoint-transaction) on the Ethereum mainnet. To become a validator, one needs to [stake](/docs/maintain/glossary#staking) their MATIC tokens with staking management contracts residing on the Ethereum mainnet.
+Polygon relies on a set of [validators](/docs/maintain/glossary.md#validator) to secure the network. The role of validators is to run a full node, [produce blocks](/docs/maintain/glossary.md#block-producer), validate and participate in consensus, and commit [checkpoints](/docs/maintain/glossary.md#checkpoint-transaction) on the Ethereum mainnet. To become a validator, one needs to [stake](/docs/maintain/glossary.md#staking) their MATIC tokens with staking management contracts residing on the Ethereum mainnet.
 
 ## Core components
 
-[Heimdall](/docs/maintain/glossary#heimdall) reads the events emitted by the staking contracts to pick the validators for the current set with their updated stake ratio, which is used also by [Bor](/docs/maintain/glossary#bor) while producing blocks.
+[Heimdall](/docs/maintain/glossary.md#heimdall) reads the events emitted by the staking contracts to pick the validators for the current set with their updated stake ratio, which is used also by [Bor](/docs/maintain/glossary.md#bor) while producing blocks.
 
-[Delegation](/docs/maintain/glossary#delegator) is also recorded in the staking contracts and any update in the validator power or node [signer address](/docs/maintain/glossary#signer-address) or unbonding requests comes into effect when the next checkpoint gets committed.
+[Delegation](/docs/maintain/glossary.md#delegator) is also recorded in the staking contracts and any update in the validator power or node [signer address](/docs/maintain/glossary.md#signer-address) or unbonding requests comes into effect when the next checkpoint gets committed.
 
 
 ## End-to-end flow for a Polygon Validator
@@ -48,11 +47,11 @@ There is limited space for accepting new validators. New validators can only joi
 
 :::
 
-Block producers are chosen from the validator set where it is the responsibility of the selected validators to produce blocks for a given [span](/docs/maintain/glossary#span).
+Block producers are chosen from the validator set where it is the responsibility of the selected validators to produce blocks for a given [span](/docs/maintain/glossary.md#span).
 
 Nodes at Heimdall validate the blocks being produced, participate in consensus and commit checkpoints on the Ethereum mainnet at defined intervals.
 
-The probability of validators to get selected as the block producer or checkpoint [proposer](/docs/maintain/glossary#proposer) is dependent on one’s stake ratio including delegations in the overall pool.
+The probability of validators to get selected as the block producer or checkpoint [proposer](/docs/maintain/glossary.md#proposer) is dependent on one’s stake ratio including delegations in the overall pool.
 
 Validators receive rewards at every checkpoint as per their stake ratio, after deducting the proposer bonus which is disbursed to the checkpoint proposer.
 

@@ -1,17 +1,15 @@
 ---
 id: validator-faq
 title: Validator FAQ
-description: "Common questions on validator operations."
+description: Common questions on validator operations
 keywords:
   - docs
   - matic
   - polygon
   - validator
   - faq
-image: https://matic.network/banners/matic-network-16x9.png
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
-
-# Validator FAQ
 
 ## How can I reserve a Validator spot?
 
@@ -92,8 +90,8 @@ tar -xzvf <snapshot file> -C <HEIMDALL_DATA_DIRECTORY>
 
 Then start Heimdall services again. Refer to:
 
-* [Run a Validator Node with Ansible](../run-validator-ansible)
-* [Run a Validator Node from Binaries](../run-validator-binaries)
+* [Run a Validator Node with Ansible](/docs/maintain/validate/run-validator-ansible)
+* [Run a Validator Node from Binaries](/docs/maintain/validate/run-validator-binaries)
 
 ## Heimdall shows "dpkg: error processing archive"
 
@@ -251,7 +249,7 @@ If the issue is not resolved, contact support team on [Discord](https://discord.
 
 ## Bor shows "Address is required as argument"
 
-This means that you have not added your [signer address](../../glossary#signer-address) to the metadata. You can add it using this path `/etc/matic/metadata` . Once the address is added, you can then restart the Bor service and everything should be fine.
+This means that you have not added your [signer address](/docs/maintain/glossary.md#signer-address) to the metadata. You can add it using this path `/etc/matic/metadata` . Once the address is added, you can then restart the Bor service and everything should be fine.
 
 ## Bor shows "Failed to unlock account (0x...) No key for given address or file"
 
@@ -286,12 +284,12 @@ See [Getting Started](/docs/maintain/validate/validator-index).
 
 Check out:
 
-* [Run a Validator Node with Ansible](../run-validator-ansible)
-* [Run a Validator Node from Binaries](../run-validator-binaries)
+* [Run a Validator Node with Ansible](/docs/maintain/validate/run-validator-ansible)
+* [Run a Validator Node from Binaries](/docs/maintain/validate/run-validator-binaries)
 
 ## Why do I have to keep ETH in my signer account?
 
-ETH is required on your [signer account](/docs/maintain/glossary#signer-address) because for submitting checkpoints to Ethereum, all transactions require ETH to be used as gas. Hence ETH is required on your signer account.
+ETH is required on your [signer account](/docs/maintain/glossary.md#signer-address) because for submitting checkpoints to Ethereum, all transactions require ETH to be used as gas. Hence ETH is required on your signer account.
 
 ## Setting up a node with Ansible errors out with "Host not found"
 

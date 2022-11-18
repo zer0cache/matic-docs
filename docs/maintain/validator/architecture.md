@@ -1,7 +1,7 @@
 ---
 id: architecture
 title: Architecture
-description: Ethereum, Heimdall and Bor layers.
+description: Ethereum, Heimdall and Bor layers
 keywords:
   - docs
   - matic
@@ -9,11 +9,9 @@ keywords:
   - architecture
   - validator
 slug: architecture
-image: https://matic.network/banners/matic-network-16x9.png
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
-
-# Architecture
 
 The Polygon Network is broadly divided into three layers:
 

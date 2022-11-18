@@ -1,6 +1,7 @@
 ---
 id: run-validator-binaries
-title: Run a Validator Node from Binaries
+title: Run Validator Node from Binaries
+sidebar_label: Using Binaries
 description: Use binaries to set up your validator node
 keywords:
   - docs
@@ -11,21 +12,17 @@ keywords:
   - validator
   - sentry
 slug: run-validator-binaries
-image: https://matic.network/banners/matic-network-16x9.png
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Run a Validator Node from Binaries
-
 :::tip
-Steps in this guide involve waiting for the **Heimdall** and **Bor** services to fully sync.
-This process takes several days to complete. Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](/docs/develop/network-details/snapshot-instructions-heimdall-bor).
+Steps in this guide involve waiting for the **Heimdall** and **Bor** services to fully sync. Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours.
+For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](https://forum.polygon.technology/t/snapshot-instructions-for-heimdall-and-bor/9233).
 
-For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.matic.today/).
+For snapshot download links, see [<ins>Polygon Chains Snapshots</ins>](https://snapshots.matic.today/).
 
-There is limited space for accepting new validators. New validators can only join the active set when an already active validator unbonds.
 :::
-
 
 This guide will walk you through running a Polygon validator node from binaries.
 
@@ -33,9 +30,15 @@ For system requirements, follow the [Validator Node System Requirements](validat
 
 If you would like to start and run the validator node through Ansible, see [Run a Validator Node with Ansible](run-validator-ansible.md).
 
+:::caution
+
+There is limited space for accepting new validators. New validators can only join the active set when an already active validator unbonds.
+
+:::
+
 ## Prerequisites
 
-* Two machines — one [sentry](/docs/maintain/glossary#sentry) and one [validator](/docs/maintain/glossary#validator).
+* Two machines — one [sentry](/docs/maintain/glossary.md#sentry) and one [validator](/docs/maintain/glossary.md#validator).
 * `build-essential` installed on both the sentry and the validator machines.
 
   To install:
@@ -96,7 +99,7 @@ Install the binaries for both on the sentry and validator machines.
 
 ### Installing Heimdall
 
-[Heimdall](../validator/core-components/heimdall-chain.md) is the proof-of-stake verifier layer
+[Heimdall](/docs/pos/heimdall/overview) is the Proof-of-Stake verifier layer
 responsible for checkpointing the representation of the Plasma blocks to the Ethereum mainnet.
 
 The latest version, [Heimdall v.0.2.12](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.12), contains a few enhancements such as:
@@ -155,9 +158,7 @@ Before proceeding, Heimdall should be installed on both the sentry and validator
 
 ### Installing Bor
 
-[Bor](../../pos/bor/) is the sidechain operator that acts as the block production layer,
-which syncs with Heimdall to select block producers and verifiers for each [span](../glossary#span)
-and [sprint](../glossary#sprint).
+[Bor](/docs/pos/bor) is the sidechain operator that acts as the block production layer, which syncs with Heimdall to select block producers and verifiers for each [span](/docs/maintain/glossary.md#span) and [sprint](/docs/maintain/glossary.md#sprint).
 
 Clone the [Bor repository](https://github.com/maticnetwork/bor):
 
@@ -532,7 +533,7 @@ Save the changes in `static-nodes.json`.
 On Polygon, it is recommended that you keep the owner and signer keys different.
 
 * Signer — the address that signs the
-  [checkpoint transactions](../glossary#checkpoint-transaction). The recommendation is
+  [checkpoint transactions](/docs/maintain/glossary.md#checkpoint-transaction). The recommendation is
   to keep at least 1 ETH on the signer address.
 * Owner — the address that does the staking transactions. The recommendation is to keep the MATIC
   tokens on the owner address.
@@ -611,17 +612,6 @@ At this point, you must have:
 You will now start the Heimdall service on the validator machine. Once the Heimdall service syncs, you
 will start the Bor service on the validator machine.
 
-:::note
-
-The Heimdall service takes several days to sync from scratch fully.
-
-Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours.
-For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](https://forum.polygon.technology/t/snapshot-instructions-for-heimdall-and-bor/9233).
-
-For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.matic.today/).
-
-:::
-
 Start the Heimdall service:
 
 ```sh
@@ -696,4 +686,4 @@ Now that your sentry and validator nodes are in sync and running, head over to
 ## Next Steps: Staking
 
 Now that you have your sentry and validator nodes are health-checked, proceed to
-the [Staking](../validator/core-components/staking.md) guide to start backing the network.
+the [Staking](/docs/maintain/validator/core-components/staking.md) guide to start backing the network.

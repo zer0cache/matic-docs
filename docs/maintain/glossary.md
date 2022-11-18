@@ -9,10 +9,8 @@ keywords:
   - glossary
   - jargons
 slug: glossary
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
-
-# Glossary
 
 ## Block Producer
 
@@ -53,7 +51,7 @@ See also [Who Is a Delegator](/docs/maintain/polygon-basics/who-is-delegator).
 
 A full node is a fully synced [sentry node](#sentry) running both [Heimdall](#heimdall) and [Bor](#bor).
 
-See also [Full Node Deployment](../develop/network-details/full-node-deployment).
+See also [Full Node Deployment](/docs/develop/network-details/full-node-deployment).
 
 ## Heimdall
 
@@ -87,7 +85,7 @@ A logically defined set of blocks for which a set of validators is chosen from a
 
 The selection of each span is decided by at least 2/3 of the validators in terms of the staking power.
 
-See also [Bor Consensus: Span](/docs/pos/bor/consensus/#span).
+See also [Bor Consensus: Span](/docs/pos/bor/consensus.md#span).
 
 ## Staking
 

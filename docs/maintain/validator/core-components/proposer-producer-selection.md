@@ -11,15 +11,13 @@ keywords:
   - block producers
   - selection
 slug: proposers-producers-selection
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Proposers & Producers Selection
-
 Block Producers for the BOR layer, are a committee selected from the Validators pool on the basis of their stake which happens at regular intervals. These intervals are decided by the Validator's governance with regards to dynasty and network.
 
-The ratio of [stake](/docs/maintain/glossary#staking) specifies the probability to be selected as a member of [block producers](/docs/maintain/glossary#block-producer) committee.
+The ratio of [stake](/docs/maintain/glossary.md#staking) specifies the probability to be selected as a member of [block producers](/docs/maintain/glossary.md#block-producer) committee.
 
 ## Selection Process
 

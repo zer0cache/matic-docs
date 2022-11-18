@@ -9,14 +9,14 @@ keywords:
   - how to delegate
   - validator
   - stake
-image: https://matic.network/banners/matic-network-16x9.png
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 slug: delegate
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # How to Delegate
 
-This is a step-by-step guide to help you become a [delegator](/docs/maintain/glossary#delegator) on the Polygon Network.
+This is a step-by-step guide to help you become a [delegator](/docs/maintain/glossary.md#delegator) on the Polygon Network.
 
 The only prerequisite is to have your MATIC tokens and ETH on the Ethereum mainnet address.
 
@@ -30,7 +30,7 @@ The only prerequisite is to have your MATIC tokens and ETH on the Ethereum mainn
 
 :::note
 
-If you a validator, use a different non-validating address to log in as delegator.
+If you are a validator, use a different non-validating address to log in as delegator.
 
 :::
 
@@ -54,7 +54,7 @@ If you a validator, use a different non-validating address to log in as delegato
 </div>
 <br />
 
-After the delegation transaction completes, you will see the *Delegation Completed* message.
+After the delegation transaction completes, you will see the **Delegation Completed** message.
 
 <div align="center">
 <img align="center" src={useBaseUrl("/img/staking/delegate3.png")} width="500" />
@@ -90,7 +90,7 @@ This will withdraw your rewards from the validator and your entire stake from th
 
 Your withdrawn rewards will show up immediately on your Ethereum account.
 
-Your withdrawn stake funds will be locked for 80 [checkpoints](/docs/maintain/glossary#checkpoint-transaction).
+Your withdrawn stake funds will be locked for 80 [checkpoints](/docs/maintain/glossary.md#checkpoint-transaction).
 
 <div align="center">
 <img align="center" src={useBaseUrl("/img/staking/unbond.png")} width="500" />
@@ -107,7 +107,7 @@ The fund locking for the unbonding period is in place to ensure there is no mali
 
 Moving stake from one node to another node is a single transaction. There are no delays or unbonding periods during this event.
 
-1. Log in to the [My Account](https://wallet-dev.polygon.technology/staking/my-account) on the staking dashboard.
+1. Log in to the [My Account](https://wallet.polygon.technology/staking/my-account) on the Staking dashboard.
 1. Click **Move Stake** under your delegated validator.
 1. Select an external validator and click **Stake here**.
 
@@ -125,8 +125,8 @@ Moving stake from one node to another node is a single transaction. There are no
 
 This will move the stake. The dashboard will update after 12 block confirmations.
 
-:::note
+:::info
 
-Moving stake is allowed between any nodes. The only exception is moving stake from one Foundation node to another Foundation node. This is not allowed.
+Moving stake is allowed between any nodes. The only exception is moving stake from one Foundation node to another Foundation node which is not allowed.
 
 :::

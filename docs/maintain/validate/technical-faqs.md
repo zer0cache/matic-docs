@@ -9,14 +9,14 @@ keywords:
   - faqs
   - technical
 slug: technical-faqs
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
 # Technical FAQs
 
 :::tip Stay in the know
 
-Keep up with the latest node and validator updates from the Polygon team and the community by subscribing to the [Polygon notification groups](https://polygon.technology/notifications/).
+Keep up with the latest node and validator updates from the Polygon team and the community by subscribing to [Polygon notifications](https://polygon.technology/notifications/).
 
 :::
 
@@ -116,7 +116,7 @@ This error occurs because the path for the password.txt and Keystore file is inc
 
 3. Make sure you have added correct address in `/etc/bor/metadata`
 
-For Binaries:
+**For Binaries:**
 
 1. Copy the Bor keystore file to:
 
@@ -125,7 +125,6 @@ For Binaries:
 2. And password.txt to
 
     `~/.bor/password.txt`
-
 
 ### 4. Error: Wrong Block.Header.AppHash. Expected xxxx
 
@@ -180,9 +179,11 @@ A minimum of 10 Matic tokens is required for the stake amount whereas heimdall f
 
 However, please note that the values entered in stake amount and heimdal-fee-amount should be entered in 18 decimals
 
-For example, 
+For example,
 
-    heimdallcli stake --staked-amount 400000000000000000000  --fee-amount 1000000000000000000 --validator 0xf8d1127780b89f167cb4578935e89b8ea1de774f
+```
+heimdallcli stake --staked-amount 400000000000000000000  --fee-amount 1000000000000000000 --validator 0xf8d1127780b89f167cb4578935e89b8ea1de774f
+```
 
 
 ### 10. I was selected to become a validator but my ETH address was incorrect. What do I do?
@@ -252,7 +253,7 @@ However, please note that the values entered in stake amount and heimdal-fee-amo
 
 For example, 
 
-    heimdallcli stake --staked-amount 400000000000000000000  --fee-amount 1000000000000000000 --validator 0xf8d1127780b89f167cb4578935e89b8ea1de774f
+```heimdallcli stake --staked-amount 400000000000000000000  --fee-amount 1000000000000000000 --validator 0xf8d1127780b89f167cb4578935e89b8ea1de774f```
 
 ### 20. When will I get a chance to become a Validator?
 
@@ -260,7 +261,7 @@ We are progressively adding validators throughout the course of Stage 1 event. W
 
 ### 21. Where can I find Heimdall account info location?
 
-For binaries: `~/.heimdalld/config folder`
+For Binaries: `~/.heimdalld/config folder`
 
 For Linux package: `/etc/heimdall/config`
 
@@ -270,16 +271,16 @@ Once you have created the API key you need to add the API key in `heimdall-confi
 
 ### 23. Which file do I add the persistent_peers?
 
-You can add the `persistent_peers` in the following file: `~/.heimdalld/config/config.toml`
+You can add the `persistent_peers` in the following file: `~/.heimdalld/config/config.toml`.
 
 ### 24. Did you reset Tendermint without resetting your application's data?
 
 In such a case you can reset heimdall config data and try running the installation again.
 
-    ```bash
-    $ heimdalld unsafe-reset-all
-    $ rm -rf $HEIMDALLDIR/bridge
-    ```
+```bash
+$ heimdalld unsafe-reset-all
+$ rm -rf $HEIMDALLDIR/bridge
+```
 
 ### 25. Error: Unable to unmarshall config Error 1 error(s) decoding
 

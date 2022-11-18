@@ -7,13 +7,12 @@ keywords:
   - matic
   - polygon
   - state sync
+  - mechanism
 slug: state-sync-mechanism
-image: https://matic.network/banners/matic-network-16x9.png
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
-# State Sync Mechanism
-
-Validators on the [Heimdall](/docs/maintain/glossary#heimdall) layer pick up the [StateSynced](https://github.com/maticnetwork/contracts/blob/a4c26d59ca6e842af2b8d2265be1da15189e29a4/contracts/root/stateSyncer/StateSender.sol#L24) event and pass the event on to the [Bor](/docs/maintain/glossary#bor) layer. See also [Polygon Architecture](/docs/pos/polygon-architecture).
+Validators on the [Heimdall](/docs/maintain/glossary.md#heimdall) layer pick up the [StateSynced](https://github.com/maticnetwork/contracts/blob/a4c26d59ca6e842af2b8d2265be1da15189e29a4/contracts/root/stateSyncer/StateSender.sol#L24) event and pass the event on to the [Bor](/docs/maintain/glossary.md#bor) layer. See also [Polygon Architecture](/docs/pos/polygon-architecture).
 
 The **receiver contract** inherits [IStateReceiver](https://github.com/maticnetwork/genesis-contracts/blob/master/contracts/IStateReceiver.sol), and custom logic sits inside the [onStateReceive](https://github.com/maticnetwork/genesis-contracts/blob/05556cfd91a6879a8190a6828428f50e4912ee1a/contracts/IStateReceiver.sol#L5) function.
 

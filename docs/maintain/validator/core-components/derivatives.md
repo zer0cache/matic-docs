@@ -10,10 +10,8 @@ keywords:
   - delegation
   - shares
 slug: derivatives
-image: https://matic.network/banners/matic-network-16x9.png
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
-
-# Derivatives
 
 Polygon supports [delegation](/docs/maintain/glossary#delegator) via validator shares. By using this design, it is easier to distribute rewards and slash with scale on the Ethereum mainnet contracts without much computation.
 

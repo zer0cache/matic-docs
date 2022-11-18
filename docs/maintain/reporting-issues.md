@@ -11,10 +11,8 @@ keywords:
   - bugs
   - attacks
 slug: reporting-issues
-image: https://matic.network/banners/matic-network-16x9.png
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
-
-# Reporting Issues
 
 ## Where to report a bug
 

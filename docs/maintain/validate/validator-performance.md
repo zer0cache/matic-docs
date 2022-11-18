@@ -2,7 +2,7 @@
 id: validator-performance-overview
 title: Performance Metrics Overview
 sidebar_label: Overview
-description: "Learn about the validator performance metrics that help validators self-regulate/"
+description: Learn about the validator performance metrics that help validators self-regulate
 keywords:
   - docs
   - matic
@@ -13,10 +13,8 @@ keywords:
   - dashboard
   - staking
 slug: validator-performance
-image: https://matic.network/banners/matic-network-16x9.png
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
-
-# Performance Metrics Overview
 
 :::note Section is being updated
 

@@ -1,7 +1,7 @@
 ---
 id: governance
 title: Governance
-description: Learn about the Polygon DAO and how to participate in Polygon's governance
+description: Learn about the Polygon DAO and how to participate in Polygon governance
 keywords:
   - docs
   - matic
@@ -9,7 +9,7 @@ keywords:
   - DAO
   - governance
 slug: governance
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
 <!-- This page is a WIP -->

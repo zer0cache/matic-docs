@@ -11,10 +11,8 @@ keywords:
   - signer
   - owner
 slug: key-management
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
-
-# Key Management
 
 Each validator uses two keys to manage validator related activities on Polygon:
 
@@ -29,7 +27,7 @@ The signer address's private key must be located on the machine running the vali
 
 The signer key cannot manage staking, rewards, or delegations.
 
-The validator must keep ETH on the signer address on the Ethereum mainnet to send [checkpoints](/docs/maintain/glossary#checkpoint-transaction).
+The validator must keep ETH on the signer address on the Ethereum mainnet to send [checkpoints](/docs/maintain/glossary.md#checkpoint-transaction).
 
 ## Owner Key
 

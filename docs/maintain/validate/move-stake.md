@@ -1,19 +1,19 @@
 ---
 id: move-stake
 title: Moving Stake 
-description: Build your next blockchain app on Polygon.
+description: Moving your stake on polygon network
 keywords:
   - docs
   - polygon
   - matic
   - stake
   - move stake
+  - validator
+  - delegator
 slug: move-stake
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
-
-# Moving Stake
 
 ## Moving Stake from Foundation nodes to External Nodes
 
@@ -31,7 +31,7 @@ Please note that Moving Stake is only allowed from Foundation node to External n
 
 Also, the Move Stake function is a temporary function developed by the Polygon team to ensure smooth transistioning of funds from the Foundation nodes to External. And will only stay active until the foundation nodes are turned off.
 
-### How to Move Stake
+## How to Move Stake
 
 In order to Move stake, first you will need to login to the [Staking UI](https://wallet.polygon.technology/staking) using your Delegator Address. 
 
@@ -41,27 +41,27 @@ Once logged in, you will see a list of Validators.
 
 <img src={useBaseUrl("img/staking/validator-list.png")} />
 
-Now go to your Delegator Profile by clicking on the "Show Delegator Details" button or the "My Delegator Details" option on the left hand side.
+Now go to your Delegator Profile by clicking on the **Show Delegator Details** button or the **My Delegator Details** option on the left.
 
 <img src={useBaseUrl("img/staking/show-delegator-details.png")} />
 
-Here you will find a new button called "Move Stake"
+Here you will find a new button called **Move Stake**.
 
 <img src={useBaseUrl("img/staking/move-stake-button.png")} />
 
-Clicking on that button would navigate you to a page with a list of validators that you can Delegate to. You can delegate to any Validator on this list.
+Clicking on that button would navigate you to a page with a list of validators that you can delegate to. You can delegate to any Validator on this list.
 
 <img src={useBaseUrl("img/staking/move-stake-validator.png")} />
 
-Now after choosing your validator that you want to delegate to, click on the "Delegate Here" button. Clicking on that button would open up a pop up.
+Now after choosing your validator that you want to delegate to, click on the **Delegate Here** button. Clicking on that button would open up a popup window.
 
 <img src={useBaseUrl("img/staking/stake-funds.png")} />
 
-Here you would see an Amount field which would automatically populate with entire amount for Delegation. You can also use a partial amount to delegate to a validator. 
+Here you would see an **Amount** field which would automatically populate with entire amount for Delegation. You can also use a partial amount to delegate to a validator. 
 
 For example, if you have delegated 100 MATIC tokens to Foundation Node 1 and now you want to move your stake from the foundation node to an external node, you can delegate a partial amount to the external node of your choice, lets say 50 MATIC tokens. The rest of the 50 MATIC tokens will stay on Foundation node 1. You can then choose to either delegate the rest of the 50 tokens to another external node or the same external node.
 
-Once you have entered the amount you can then click on Stake Funds button. This will then ask for confirmation on your Metamask to sign the address.
+Once you have entered the amount you can then click on **Stake Funds** button. This will then ask for confirmation on your Metamask to sign the address.
 
 Once you have signed the transaction your stake would have successfully moved from the Foundation node to the External node. However, you will have to wait for 12 block confirmations for it reflect on the Staking UI. If your moved funds do not show up after 12 block confirmations, try refreshing the page once to see updated stakes.
 

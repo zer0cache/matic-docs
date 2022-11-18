@@ -1,7 +1,8 @@
 ---
 id: run-validator-ansible
-title: Run a Validator Node with Ansible
-description: "Use Ansible to set up your validator node."
+title: Run Validator Node with Ansible
+sidebar_label: Using Ansible
+description: Use Ansible to set up your validator node on Polygon
 keywords:
   - docs
   - matic
@@ -11,19 +12,15 @@ keywords:
   - validator
   - sentry
 slug: run-validator-ansible
-image: https://matic.network/banners/matic-network-16x9.png
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
-
-# Run a Validator Node with Ansible
 
 :::tip
 Steps in this guide involve waiting for the **Heimdall** and **Bor** services to fully sync.
 This process takes several days to complete. Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](/docs/develop/network-details/snapshot-instructions-heimdall-bor).
 
-For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.matic.today/).
-
-There is limited space for accepting new validators. New validators can only join the active set when an already active validator unbonds.
+For snapshot download links, see [<ins>Polygon Chains Snapshots</ins>](https://snapshots.matic.today/).
 :::
 
 This section guides you through starting and running the validator node through an Ansible playbook.
@@ -32,9 +29,15 @@ For the system requirements, see [Validator Node System Requirements](validator-
 
 If you would like to start and run the validator node from binaries, see [Run a Validator Node from Binaries](run-validator-binaries.md).
 
+:::caution
+
+There is limited space for accepting new validators. New validators can only join the active set when an already active validator unbonds.
+
+:::
+
 ## Prerequisites
 
-* Three machines — one local machine on which you will run the Ansible playbook; two remote machines — one [sentry](/docs/maintain/glossary#sentry) and one [validator](/docs/maintain/glossary#validator).
+* Three machines — one local machine on which you will run the Ansible playbook; two remote machines — one [sentry](/docs/maintain/glossary.md#sentry) and one [validator](/docs/maintain/glossary.md#validator).
 * On the local machine, [Ansible](https://www.ansible.com/) installed.
 * On the local machine, [Python 3.x](https://www.python.org/downloads/) installed.
 * On the remote machines, make sure Go is *not* installed.
@@ -63,7 +66,7 @@ For example, a sentry node must always be set up before the validator node.
 
 :::
 
-## Set up the sentry node
+## Set up the Sentry node
 
 On your local machine, clone the [node-ansible repository](https://github.com/maticnetwork/node-ansible):
 
@@ -157,17 +160,13 @@ ansible-playbook -l sentry playbooks/clean.yml
 
 :::
 
-## Set up the validator node
+## Set up the Validator node
 
 At this point, you have the sentry node set up.
 
 On your local machine, you also have the Ansible playbook set up to run the validator node setup.
 
-Check that the remote validator machine is reachable. On the local machine, run `ansible validator -m ping`:
-
-```sh
-$ ansible validator -m ping
-```
+Check that the remote validator machine is reachable. On the local machine, run `ansible validator -m ping`.
 
 You should get this as output:
 
@@ -214,7 +213,7 @@ ansible-playbook -l validator playbooks/clean.yml
 
 :::
 
-## Configure the sentry node
+## Configure the Sentry node
 
 Log into the remote sentry machine.
 
@@ -255,7 +254,6 @@ In `heimdall-config.toml`, change your RPC endpoint to point to a fully synced E
 `eth_rpc_url = <insert Infura or any full node RPC URL to Ethereum>`
 
 For example: `eth_rpc_url = "https://nd-123-456-789.p2pify.com/60f2a23810ba11c827d3da642802412a"`
-
 
 Save the changes in `heimdall-config.toml`.
 
@@ -499,7 +497,7 @@ heimdallcli generate-keystore ETHEREUM_PRIVATE_KEY
 
 :::note
 
-ETHEREUM_PRIVATE_KEY — your Ethereum wallet address
+ETHEREUM_PRIVATE_KEY — your Ethereum wallet’s private key.
 
 :::
 
@@ -513,7 +511,7 @@ Move the generated keystore file to the Bor configuration directory:
 mv ./UTC-<time>-<address> ~/.bor/keystore/
 ```
 
-### Add password.txt
+### Add `password.txt`
 
 Make sure to create a `password.txt` file then add the Bor keystore file password right in the `~/.bor/password.txt` file.
 
@@ -525,7 +523,7 @@ In `metadata`, add your Ethereum address. Example: `VALIDATOR_ADDRESS=0xca67a8D7
 
 Save the changes in `metadata`.
 
-## Start the validator node
+## Start the Validator node
 
 At this point, you must have:
 
@@ -605,8 +603,8 @@ journalctl -u bor.service -f
 
 ## Check node health with the community
 
-Now that your sentry and validator nodes are synced and running, head over to [Discord](https://discord.com/invite/0xPolygon) and ask the community to health-check your nodes.
+Now that your Sentry and Validator nodes are synced and running, head over to [Discord](https://discord.com/invite/0xPolygon) and ask the community to health-check your nodes.
 
 ## Proceed to staking
 
-Now that you have your sentry and validator nodes health-checked, proceed to [Staking](/docs/maintain/validator/core-components/staking).
+Now that you have your Sentry and Validator nodes health-checked, proceed to [Staking](/docs/maintain/validator/core-components/staking).

@@ -9,7 +9,7 @@ keywords:
   - DAO
   - governance
 slug: polygon-dao
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
 <!-- This page is a WIP -->

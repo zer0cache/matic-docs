@@ -1,7 +1,7 @@
 ---
 id: validator-index
 title: Validator Index
-description: A collection of instructions on how to run and operate validator nodes on the Polygon Network.
+description: A collection of instructions on how to run and operate validator nodes on the Polygon Network
 keywords:
   - docs
   - polygon
@@ -11,14 +11,12 @@ keywords:
   - architecture
   - Validator Index
 slug: validator-index
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
-
-# Validator Index
 
 :::tip Stay in the know
 
-Keep up with the latest node and validator updates from the Polygon team and the community by subscribing to the [Polygon notification groups](https://polygon.technology/notifications/).
+Keep up with the latest node and validator updates from the Polygon team and the community by subscribing to [Polygon notifications](https://polygon.technology/notifications/).
 
 :::
 
@@ -59,7 +57,7 @@ Heimdall does the following:
 
 Heimdall is based on Tendermint.
 
-:::note See Also
+:::info See Also
 
 * GitHub repository: [Heimdall](https://github.com/maticnetwork/heimdall)
 * GitHub repository: [Staking contracts](https://github.com/maticnetwork/contracts/tree/master/contracts/staking)
@@ -75,7 +73,7 @@ Bor does the following:
 
 Bor is the Block producer node and layer for the Polygon Network. It is based on Go Ethereum. Blocks produced on Bor are validated by Heimdall nodes.
 
-:::note See Also
+:::info See Also
 
 * GitHub repository: [Bor](https://github.com/maticnetwork/bor)
 * Blog post: [Heimdall and Bor](https://blog.polygon.technology/heimdall-and-bor/)
