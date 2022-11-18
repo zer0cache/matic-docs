@@ -34,9 +34,8 @@ that is production ready as the validator nodes are spanned across multiple avai
 * [aws access key ID and secret access key](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-prereqs.html#getting-started-prereqs-keys)
 
 ### Terraform variables
-Three variables that must be provided, before running the deployment:
+Two variables that must be provided, before running the deployment:
 
-* `account_id` - the AWS account ID that the Polygon Edge blockchain cluster will be deployed on
 * `alb_ssl_certificate` - the ARN of the certificate from AWS Certificate Manager to be used by ALB for https protocol.   
   The certificate must be generated before starting the deployment, and it must have **Issued** status
 * `premine` - the account that will receive pre mined native currency.
@@ -105,7 +104,6 @@ module "polygon-edge" {
   source  = "aws-ia/polygon-technology-edge/aws"
   version = ">=0.0.1"
 
-  account_id          = var.account_id
   premine             = var.premine
   alb_ssl_certificate = var.alb_ssl_certificate
 }
@@ -113,11 +111,6 @@ module "polygon-edge" {
 output "json_rpc_dns_name" {
   value       = module.polygon-edge.jsonrpc_dns_name
   description = "The dns name for the JSON-RPC API"
-}
-
-variable "account_id" {
-  type        = string
-  description = "Your AWS Account ID"
 }
 
 variable "premine" {
@@ -133,7 +126,6 @@ variable "alb_ssl_certificate" {
 
 #### `terraform.tfvars` example
 ```terraform
-account_id          = "123456789"
 premine             = "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
 alb_ssl_certificate = "arn:aws:acm:us-west-2:123456789:certificate/64c7f117-61f5-435e-878b-83186676a8af"
 ```
