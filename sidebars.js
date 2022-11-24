@@ -874,7 +874,19 @@ module.exports = {
     "avail/architecture/avail-system-overview",
     "avail/architecture/avail-consensus",
     "avail/how-tos/avail-quick-start",
-    "avail/node/avail-node-management",
+    {
+      type: "category",
+      label: "Operate a Node",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "avail/node/avail-node-management",
+        "avail/node/avail-validator",
+        "avail/node/avail-data-avail",
+        "avail/node/avail-light-client-da",
+      ],
+    },
     "avail/faq",
   ],
 
