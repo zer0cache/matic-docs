@@ -482,13 +482,22 @@ module.exports = {
       },
       items: [
         "develop/oracles/getting-started",
-        "develop/oracles/optimisticoracle",
-        "develop/oracles/chainlink",
-        "develop/oracles/razor",
-        "develop/oracles/bandchain",
-        "develop/oracles/bandstandarddataset",
-        "develop/oracles/tellor",
         "develop/oracles/api3",
+        {
+          type: "category",
+          label: "Band Protocol",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "develop/oracles/bandchain",
+            "develop/oracles/bandstandarddataset",
+          ],
+        },
+        "develop/oracles/chainlink",
+        "develop/oracles/optimisticoracle",
+        "develop/oracles/razor",
+        "develop/oracles/tellor",
       ],
     },
     {
