@@ -47,8 +47,6 @@ module.exports = {
 
   delegate: ["maintain/delegate/delegate", "maintain/delegate/delegator-faq"],
 
-  govern: ["maintain/govern/governance-posv1"],
-
   develop: [
     "develop/getting-started",
     "develop/developer-resources",
