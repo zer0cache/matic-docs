@@ -13,7 +13,13 @@ export const firstRow = [
       imageUrl: "img/supernet.svg",
       description: "Secure the network by staking tokens & delegating your stake to validators."
   },
-
+  {
+      title: "Governance",
+      status: "Beginner",
+      linkUrl: "docs/maintain/govern/governance-posv1",
+      imageUrl: "img/supernet.svg",
+      description: "Vote on proposals and participate in the Polygon DAO."
+  },
    {
         title: "Developer",
         status: "Intermediate",
