@@ -1014,7 +1014,8 @@ module.exports = {
       },
       items:[
         "zkEVM/zknode/overview",
-        "zkEVM/zknode/setup-local-node"
+        "zkEVM/zknode/setup-local-node",
+        "zkEVM/zknode/setup-production-node"
       ]
     },
     "zkEVM/Architecture/zkProver",

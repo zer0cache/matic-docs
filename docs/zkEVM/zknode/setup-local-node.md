@@ -1,7 +1,7 @@
 ---
 id: setup-local-node
 title: Setup Local zkNode
-sidebar_label: Setup Local zkNode
+sidebar_label: Local zkNode
 description: Detailed guide on setting up Polygon zkEVM Node locally on your device
 keywords:
   - docs
@@ -109,7 +109,7 @@ The following scripts are available if you require sample data that has already 
 # To add some examples of transactions and smart contracts:
 make deploy-sc
 
-# To deploy a full a Uniswap environment:
+# To deploy a full Uniswap environment:
 make deploy-uniswap
 
 # To grant the MATIC smart contract a set amount of tokens:
@@ -120,7 +120,7 @@ make run-approve-matic
 
 :::info
 
-Metamask requires the network to be running while configuring it, so make sure your network is running before configuring the network.
+Metamask requires the network to be running while configuring it, so make sure your network is up.
 
 :::
 
