@@ -29,6 +29,19 @@ aria2c -x6 -s6 https://matic-blockchain-snapshots.s3-accelerate.amazonaws.com/ma
 tar xzf bor-fullnode-snapshot-2022-07-01.tar.gz -C /mnt/data/bor/bor/chaindata
 # at this point, you can start your containers back up. Pay attention to the logs to make sure everything looks good
 ```
+
+The `aria2c` method is used for downloading snapshots faster.
+There is an alternate way where the downloaded snapshots can be directly extracted without any intervention.
+
+**Steps for that:** 
+
+```bash title="For Heimdall"
+wget -c https://matic-blockchain-snapshots.s3-accelerate.amazonaws.com/matic-mainnet/heimdall-snapshot-2022-11-30.tar.gz -O - | tar -xzf - -C ~/.heimdalld/data/
+```
+
+```bash title="For Bor"
+wget -c https://matic-blockchain-snapshots.s3-accelerate.amazonaws.com/matic-mainnet/bor-fullnode-snapshot-2022-11-21.tar.gz  -O - | tar -xzf - -C ~/.bor/data/bor/chaindata
+```
 :::
 
 ## Prerequisites
@@ -37,14 +50,14 @@ The general configuration for running a Polygon full node is to have **at least*
 
 These instructions are based on Docker, so it should be easy to follow along with almost any operating system, but we’re using Ubuntu.
 
-In terms of space, for a full node you’ll probably need at least 1.5 terabytes of SSD (or faster) storage.
+In terms of space, for a full node you’ll probably need from **2.5 to 5 terabytes of SSD (or faster) storage**.
 
 The peer exchange for a Polygon full node generally depends on port 30303 and 26656 being open. When you configure your firewall or security groups for AWS, make sure these ports are open along with whatever ports you need to access the machine.
 
 TLDR:
 
 - Use a machine with at least 4 cores and 16GB RAM
-- Make sure you have at least 1.5 TB of fast storage
+- Make sure you have from 2.5 TB to 5 TB of fast storage
 - Use a public IP and open ports 30303 and 26656
 
 ## Initial Setup
