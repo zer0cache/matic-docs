@@ -1288,6 +1288,7 @@ module.exports = {
         "edge/get-started/set-up-ibft-on-the-cloud",
         "edge/get-started/cli-commands",
         "edge/get-started/terraform-aws-deployment",
+        "edge/get-started/gcp-marketplace-deployment",
         {
           type: "category",
           label: "Configuration",
