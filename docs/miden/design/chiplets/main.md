@@ -7,13 +7,14 @@ keywords:
   - docs
   - matic
   - polygon
+  - wiki
   - miden
   - design
   - chiplet
   - hash
   - bitwise
   - memory
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/thumbnail/polygon-miden.png
 ---
 
 The Chiplets module reduces the number of columns required by the execution trace by stacking the execution traces of 3 chiplets that are expected to generate significantly fewer rows than the other VM processors (the decoder, stack, and range checker).

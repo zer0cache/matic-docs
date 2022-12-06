@@ -13,7 +13,6 @@ slug: governance-posv1
 image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
-
 This page includes common governance terms and processes for the Polygon PoS v1 blockchain.
 
 ## Heimdall

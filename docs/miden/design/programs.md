@@ -7,12 +7,13 @@ keywords:
   - docs
   - matic
   - polygon
+  - wiki
   - miden
   - design
   - code
   - block
   - computation
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/thumbnail/polygon-miden.png
 ---
 
 Miden VM consumes programs in a form of a Merkelized Abstract Syntax Tree (MAST). This tree is a binary tree where each node is a *code block*. The execution starts at the root of the tree, and recursively executes all required blocks according to their semantics. A set of currently available blocks and their execution semantics are described below.

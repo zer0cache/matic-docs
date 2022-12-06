@@ -7,11 +7,12 @@ keywords:
   - docs
   - matic
   - polygon
+  - wiki
   - miden
   - design
   - chiplet
   - bitwise
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/thumbnail/polygon-miden.png
 ---
 
 In this article we describe how to compute bitwise AND, OR, and XOR operations on 32-bit values and the constraints required for proving correct execution.

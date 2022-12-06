@@ -7,10 +7,11 @@ keywords:
   - docs
   - matic
   - polygon
+  - wiki
   - miden
   - design
   - operation
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/thumbnail/polygon-miden.png
 ---
 
 In addition to the constraints described in the previous section, we need to impose constraints to check that each VM operation is executed correctly.

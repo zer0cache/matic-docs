@@ -7,11 +7,12 @@ keywords:
   - docs
   - matic
   - polygon
+  - wiki
   - miden
   - design
   - chiplet
   - memory
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/thumbnail/polygon-miden.png
 ---
 
 Miden VM supports linear read-write random access memory. This memory is word-addressable, meaning, four values are located at each address, and we can read and write values to/from memory in batches of four. Each value is a field element in a $64$-bit prime field with modulus $2^{64} - 2^{32} + 1$. Memory address can be any field element.

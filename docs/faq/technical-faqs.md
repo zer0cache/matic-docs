@@ -8,6 +8,12 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
+:::tip Stay in the know
+
+Keep up with the latest node and validator updates from the Polygon team and the community by subscribing to [<ins>Polygon notifications</ins>](https://polygon.technology/notifications/).
+
+:::
+
 ### 1. Are the private keys same for Heimdall and Bor keystore?
 Yes, the private key used for generating Validator keys and Bor Keystore is the same. The private key used in this instance is your Wallet's ETH address where your Polygon testnet tokens are stored.
 

@@ -8,7 +8,7 @@ keywords:
   - polygon
   - miden
   - features
-image: https://matic.network/banners/matic-network-16x9.png
+image: https://wiki.polygon.technology/img/thumbnail/polygon-miden.png
 ---
 
 [Miden VM](https://github.com/maticnetwork/miden) is a zero-knowledge virtual machine written in Rust. For any program executed on Miden VM, a STARK-based proof of execution is automatically generated. This proof can then be used by anyone to verify that the program was executed correctly without the need for re-executing the program or even knowing the contents of the program.

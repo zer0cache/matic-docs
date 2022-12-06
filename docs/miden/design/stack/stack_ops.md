@@ -7,10 +7,11 @@ keywords:
   - docs
   - matic
   - polygon
+  - wiki
   - miden
   - design
   - stack
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/thumbnail/polygon-miden.png
 ---
 
 In this section we describe the AIR constraints for Miden VM stack manipulation operations. 

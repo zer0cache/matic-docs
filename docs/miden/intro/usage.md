@@ -7,10 +7,11 @@ keywords:
   - docs
   - matic
   - polygon
+  - wiki
   - miden
   - crate
   - interface
-image: https://matic.network/banners/matic-network-16x9.png
+image: https://wiki.polygon.technology/img/thumbnail/polygon-miden.png
 ---
 
 Before you can use Miden VM, you'll need to make sure you have Rust [installed](https://www.rust-lang.org/tools/install). Miden VM v0.3 requires Rust version **1.62** or greater.

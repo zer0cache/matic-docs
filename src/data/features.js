@@ -15,17 +15,17 @@ export const firstRow = [
   },
   {
       title: "Governance",
-      status: "Beginner",
+      status: "Intermediate",
       linkUrl: "docs/maintain/govern/governance-posv1",
       imageUrl: "img/supernet.svg",
-      description: "Vote on proposals and participate in the Polygon DAO."
+      description: "Understand how Polygon governance works and propose protocol improvements."
   },
    {
         title: "Developer",
         status: "Intermediate",
         linkUrl: "docs/develop/getting-started",
         imageUrl: "img/home/dapp-developers.svg",
-        description: "Build an application and deploy on Polygon."
+        description: "Build and deploy decentralized applications on the Polygon network."
     },
     {
         title: "Validator",
@@ -49,7 +49,7 @@ export const secondRow = [
         status: "PoS v3: Docs Coming Soon",
         linkUrl: "docs/pos/polygon-architecture",
         imageUrl: "img/home/blockchain-basics.svg",
-        description: "A Layer 2 Proof of Stake scaling solution for Ethereum-based public blockchains"
+        description: "A Layer-2 Proof of Stake scaling solution for Ethereum-based public blockchains."
     },
     {
         title: "Edge",
@@ -57,55 +57,55 @@ export const secondRow = [
         class_name: "polygon-banner",
         linkUrl: "docs/edge/overview/",
         imageUrl: "img/home/polygon-edge.svg",
-        description: "A modular and extensible framework for building Ethereum-compatible blockchain networks"
+        description: "Build modular and extensible blockchain networks that are compatible with Ethereum."
     },
     {
         title: "Supernets",
         status: "Appchains: Docs Coming Soon",
         linkUrl: "",
         imageUrl: "img/supernet.svg",
-        description: "Application-specific chains that are interoperable, scalable & secure: powered by Polygon Edge"
+        description: "Application-specific blockchain networks that are interoperable, scalable and secure."
     },
     {
         title: "Avail",
         status: "Data Availability",
         linkUrl: "docs/avail/introduction/what-is-avail",
         imageUrl: "img/avail.svg",
-        description: "A general-purpose, scalable, data availability-focused blockchain"
+        description: "A general-purpose, scalable, and data availability-focused blockchain."
     },
     {
         title: "Nightfall",
         status: "Optimistic Rollup",
         linkUrl: "docs/nightfall/introduction/overview",
         imageUrl: "img/Nightfall.png",
-        description: "An optimistic rollup solution designed for enterprises that supports private transactions"
+        description: "An optimistic rollup solution designed for enterprises that supports private transactions."
     },
     {
         title: "zkEVM",
         status: "ZK Rollup",
         linkUrl: "docs/zkEVM/develop",
         imageUrl: "img/hermez.svg",
-        description: "The first open-source ZK rollup with security of Ethereum and full EVM opcode equivalence"
+        description: "The first source-available ZK Rollup with Ethereum's security & full EVM opcode equivalence."
     },
     {
         title: "Miden",
         status: "STARK-based ZK Rollup",
         linkUrl: "docs/miden/intro/main",
         imageUrl: "img/miden.svg",
-        description: "A STARK-based zk-rollup solution that supports arbitrary smart contracts"
+        description: "A STARK-based Zero Knowledge Rollup solution that supports arbitrary smart contracts."
     },
     {
         title: "Zero",
         status: "ZK Rollup: Docs Coming Soon",
         linkUrl: "",
         imageUrl: "img/zero.svg",
-        description: "A highly scalable, Ethereum-compatible Zero Knowledge Rollup."
+        description: "A highly scalable, Ethereum-compatible Zero Knowledge Rollup solution."
     },
     {
         title: "ID",
         status: "Privacy",
         linkUrl: "docs/polygonid/overview",
         imageUrl: "img/polygon-id.svg",
-        description: "A blockchain-native identity and authentication solution"
+        description: "Scalable blockchain-native identity and authentication solution with ZK-based privacy."
     },
 ];

@@ -15,7 +15,7 @@ image: https://wiki.polygon.technology/img/polygon-wiki.png
 
 # Networks
 
-- [Network Details](/docs/develop/network-details/network) -> To view network details
+- [Network Details](/docs/integrate/network-detail) -> To view network details
 - [Polygon Faucet](https://faucet.polygon.technology/) -> Get TestTokens at Polygon faucet
 
 

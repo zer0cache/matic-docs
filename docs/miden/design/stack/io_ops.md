@@ -7,17 +7,18 @@ keywords:
   - docs
   - matic
   - polygon
+  - wiki
   - miden
   - design
   - input
   - output
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/thumbnail/polygon-miden.png
 ---
 
 In this section we describe the AIR constraints for Miden VM input / output operations. These operations move values between the stack and other components of the VM such as program code (i.e., decoder), memory, and advice provider.
 
 ### PUSH
-The `PUSH` operation pushes the provided immediate value onto the stack (i.e., sets the value of $s_0$ register). Currently, it is the only operation in Miden VM which carries an immediate value. The semantics of this operation are explained in the [decoder section](../decoder/main.html#handling-immediate-values).
+The `PUSH` operation pushes the provided immediate value onto the stack (i.e., sets the value of $s_0$ register). Currently, it is the only operation in Miden VM which carries an immediate value. The semantics of this operation are explained in the [decoder section](/docs/miden/design/decoder/main.md#handling-immediate-values).
 
 The effect of this operation on the rest of the stack is:
 * **Right shift** starting from position $0$.

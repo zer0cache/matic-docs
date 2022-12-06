@@ -10,7 +10,7 @@ keywords:
   - miden
   - performance
   - benchmark
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/thumbnail/polygon-miden.png 
 ---
 
 The benchmarks below should be viewed only as a rough guide for expected future performance. The reasons for this are twofold:

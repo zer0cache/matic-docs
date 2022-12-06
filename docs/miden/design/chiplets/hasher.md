@@ -7,11 +7,12 @@ keywords:
   - docs
   - matic
   - polygon
+  - wiki
   - miden
   - design
   - chiplet
   - hash
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/thumbnail/polygon-miden.png
 ---
 
 Miden VM "offloads" all hash-related computations to a separate _hash processor_. This chiplet supports executing [Rescue Prime](https://eprint.iacr.org/2020/1143) hash function (or rather a [specific instantiation](https://docs.rs/winter-crypto/0.3.2/winter_crypto/hashers/struct.Rp64_256.html) of it) in the following settings:

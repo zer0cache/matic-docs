@@ -250,4 +250,4 @@ Following is the desired flow of the startup procedure for Polygon Edge validato
 - Create a Polygon Edge service ( `systemd` or similar ) where `polygon-edge` binary will run the server from a `default-config.yaml` file
 - Start Polygon Edge server by starting the service ( example: `systemctl start polygon-edge` )
 - Check the `polygon-edge` log output and make sure the blocks are being generated and that there are no `[ERROR]` logs
-- Check the chain functionality by calling a JSON-RPC method like [`eth_chainId`](get-started/json-rpc-commands#eth_chainid)
+- Check the chain functionality by calling a JSON-RPC method like [`eth_chainId`](/docs/edge/api/json-rpc-eth#eth_chainid)

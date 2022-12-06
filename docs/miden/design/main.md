@@ -7,9 +7,10 @@ keywords:
   - docs
   - matic
   - polygon
+  - wiki
   - miden
   - design
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/thumbnail/polygon-miden.png
 ---
 
 In the following sections, we provide in-depth descriptions of Miden VM internals, including all AIR constraints for the proving system. We also provide rationale for making specific design choices.

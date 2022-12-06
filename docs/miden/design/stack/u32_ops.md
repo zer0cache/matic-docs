@@ -7,10 +7,11 @@ keywords:
   - docs
   - matic
   - polygon
+  - wiki
   - miden
   - design
   - range
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/thumbnail/polygon-miden.png
 ---
 
 In this section we describe semantics and AIR constraints of operations over u32 values (i.e., 32-bit unsigned integers) as they are implemented in Miden VM.

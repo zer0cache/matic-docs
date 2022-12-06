@@ -7,10 +7,11 @@ keywords:
   - docs
   - matic
   - polygon
+  - wiki
   - miden
   - design
   - decoder
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/thumbnail/polygon-miden.png
 ---
 
 Miden VM program decoder is responsible for ensuring that a program with a given [MAST root](../programs.md) is executed by the VM. As the VM executes a program, the decoder does the following:

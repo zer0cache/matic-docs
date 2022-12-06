@@ -6,13 +6,14 @@ description: "Multiset checks description"
 keywords:
   - docs
   - matic
+  - wiki
   - polygon
   - miden
   - design
   - chiplet
   - multiset
   - bitwise
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/thumbnail/polygon-miden.png
 ---
 
 A brief introduction on permutation check can be found [here](https://hackmd.io/@arielg/ByFgSDA7D).
