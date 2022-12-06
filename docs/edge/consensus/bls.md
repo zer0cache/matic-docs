@@ -11,7 +11,7 @@ keywords:
 
 ## Overview
 
-BLS is a signature scheme that can aggregate multiple signatures. In Polygon Edge, BLS is used by default in order to provide better security in the IBFT consensus mode. BLS can aggregate signatures into a single byte array and reduce the block header size. Each chain can choose whether to use BLS or not. The ECDSA key is used regardless of whether the BLS mode is enabled or not.
+BLS also known as Boneh–Lynn–Shacham (BLS)—is a cryptographic signature scheme which allows a user to verify that a signer is authentic. It is a signature scheme that can aggregate multiple signatures. In Polygon Edge, BLS is used by default in order to provide better security in the IBFT consensus mode. BLS can aggregate signatures into a single byte array and reduce the block header size. Each chain can choose whether to use BLS or not. The ECDSA key is used regardless of whether the BLS mode is enabled or not.
 
 ## Video presentation
 
