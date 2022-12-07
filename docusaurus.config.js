@@ -442,6 +442,10 @@ module.exports = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+        gtag: {
+          trackingID: 'G-LLNECLTBDN',
+          anonymizeIP: true,
+        },
       },
       // "@docuaurus/plugin-content-pages",
       // {
