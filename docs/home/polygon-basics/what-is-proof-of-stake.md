@@ -17,7 +17,7 @@ image: https://wiki.polygon.technology/img/polygon-wiki.png
 
 Proof of Stake (PoS) is a category of consensus algorithms for public blockchains that depend on a validator's economic [stake](/docs/maintain/glossary#staking) in the network.
 
-In proof of work (PoW) based public blockchains, the algorithm rewards participants who solve cryptographic puzzles to validate transactions and create new blocks. PoW blockchain examples: Bitcoin, current Ethereum.
+In Proof of Work (PoW) based public blockchains, the algorithm rewards participants who solve cryptographic puzzles to validate transactions and create new blocks. PoW blockchain examples: Bitcoin, earlier Ethereum.
 
 In PoS-based public blockchains, a set of validators take turns proposing and voting on the next block. The weight of each validator's vote depends on the size of its deposit — [stake](/docs/maintain/glossary#staking). Significant advantages of PoS include security, reduced risk of centralization, and energy efficiency. PoS blockchain examples: Eth2, Polygon.
 
