@@ -20,7 +20,7 @@ keywords:
 --- 
 
 Our goal is to make a highly-performant, feature-rich and easy to setup and maintain blockchain client software.
-All tests were done using the [Polygon Edge Loadbot](../additional-features/stress-testing.md).
+All tests were done using the Polygon Edge Loadbot.
 Every performance report you will find in this section is properly dated, environment clearly described and the testing method clearly explained.   
 
 The goal of these performance tests is to show a real world performance of Polygon Edge blockchain network.

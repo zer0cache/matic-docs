@@ -1269,7 +1269,6 @@ module.exports = {
                 "edge/additional-features/chainbridge/use-case-erc721-bridge",
               ],
             },
-            "edge/additional-features/stress-testing",
             "edge/additional-features/blockscout",
             "edge/additional-features/permission-contract-deployment",
             "edge/additional-features/predeployment",
