@@ -666,7 +666,7 @@ Sets the directory for the Polygon Edge genesis data. Default: `./genesis.json`.
   </TabItem>
 </Tabs>
 
-Sets the name for the chain. Default: `polyton-edge`.
+Sets the name for the chain. Default: `polygon-edge`.
 
 ---
 
