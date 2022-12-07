@@ -19,16 +19,16 @@ This page includes common governance terms and processes for the Polygon PoS v1 
 
 | Upgrade Type      | Softfork/Hardfork | Proposal                                      | Consensus Options      | Implementation Flow                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |-------------------|-------------------|-----------------------------------------------|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Software upgrades | Both              | PIP proposed via community forum (recommended) | Rough consensus        | Rough consensus:  1. Development and testing on local dev machines 2. Multi-node testing on devnet  3. Rolling out the release on a few Mumbai nodes (testnet) 4. Rolling out the release on a few Mainnet nodes 5. Full roll-out on Mumbai (testnet) 6. Full roll-out on Mainnet                                                                                                                                                                                                     |
-| Consensus rules   | Hardfork only     | PIP proposed via community forum (recommended) | Rough consensus        | Rough consensus:  1. Development and testing on local dev machines 2. Multi-node testing on devnet  3. Rolling out the release on a few Mumbai nodes (testnet) 4. Rolling out the release on a few Mainnet nodes 5. Full roll-out on Mumbai (testnet) 6. Full roll-out on Mainnet                                                                                                                                                                                                     |
-| [Governance module](https://forum.polygon.technology/t/overview-of-governance-on-matic/8191) | Both              | PIP proposed via community forum (recommended) | Governance module vote | Governance module:  1. Proposal submission: Validators can submit proposals with a deposit. Once the minimum deposit is reached, the proposal enters the voting period. Validators that deposited on proposals can recover their deposits once the proposal is rejected or accepted. 2. Vote: Validators can vote on proposals that reached MinDeposit 3. Once the voting parameters needed to pass the proposal are met, the change is simultaneously carried out across the network |
+| Software upgrades | Both              | PIP proposed via community forum (recommended) | Rough consensus        | Rough consensus:  <ol><li>Development and testing on local dev machines</li><li>Multi-node testing on devnet</li>  <li>Rolling out the release on a few Mumbai nodes (testnet)</li> <li>Rolling out the release on a few Mainnet nodes</li> <li>Full roll-out on Mumbai (testnet)</li> <li> Full roll-out on Mainnet</li></ol>                                                                                                                                                                                                     |
+| Consensus rules   | Hardfork only     | PIP proposed via community forum (recommended) | Rough consensus        | Rough consensus:  <ol><li>Development and testing on local dev machines</li><li>Multi-node testing on devnet</li>  <li>Rolling out the release on a few Mumbai nodes (testnet)</li> <li>Rolling out the release on a few Mainnet nodes</li> <li>Full roll-out on Mumbai (testnet)</li> <li>Full roll-out on Mainnet</li></ol>                                                                                                                                                                                                       |
+| [Governance module](https://forum.polygon.technology/t/overview-of-governance-on-matic/8191) | Both              | PIP proposed via community forum (recommended) | Governance module vote | Governance module:  <ol><li>Proposal submission: Validators can submit proposals with a deposit. Once the minimum deposit is reached, the proposal enters the voting period. Validators that deposited on proposals can recover their deposits once the proposal is rejected or accepted.</li> <li>Vote: Validators can vote on proposals that reached MinDeposit</li> <li>Once the voting parameters needed to pass the proposal are met, the change is simultaneously carried out across the network</li></ol> |
 
 ## Bor
 
 | Upgrade Type      | Softfork/Hardfork | Proposal                                                                                           | Consensus Options | Implementation Flow                                                                                                                                                                                                                                                               |
 |-------------------|-------------------|----------------------------------------------------------------------------------------------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Software upgrades | Both              | PIP proposed via community forum (recommended)                                                      | Rough consensus   | Rough consensus:  1. Development and testing on local dev machines 2. Multi-node testing on devnet  3. Rolling out the release on a few Mumbai nodes (testnet) 4. Rolling out the release on a few Mainnet nodes 5. Full roll-out on Mumbai (testnet) 6. Full roll-out on Mainnet |
-| Consensus rules   | Hardfork only     | Upgrades are made in line with the  [geth](https://github.com/ethereum/go-ethereum) implementation | Rough consensus   | Rough consensus:  1. Development and testing on local dev machines 2. Multi-node testing on devnet  3. Rolling out the release on a few Mumbai nodes (testnet) 4. Rolling out the release on a few Mainnet nodes 5. Full roll-out on Mumbai (testnet) 6. Full roll-out on Mainnet |
+| Software upgrades | Both              | PIP proposed via community forum (recommended)                                                      | Rough consensus   | Rough consensus:  <ol><li>Development and testing on local dev machines</li><li>Multi-node testing on devnet</li>  <li>Rolling out the release on a few Mumbai nodes (testnet)</li> <li>Rolling out the release on a few Mainnet nodes</li> <li>Full roll-out on Mumbai (testnet)</li> <li>Full roll-out on Mainnet</li></ol>
+| Consensus rules   | Hardfork only     | Upgrades are made in line with the  [geth](https://github.com/ethereum/go-ethereum) implementation | Rough consensus   | Rough consensus:  <ol><li>Development and testing on local dev machines</li><li>Multi-node testing on devnet</li>  <li>Rolling out the release on a few Mumbai nodes (testnet)</li> <li>Rolling out the release on a few Mainnet nodes</li> <li>Full roll-out on Mumbai (testnet)</li> <li>Full roll-out on Mainnet</li></ol>
 
 ## Definitions
 
@@ -44,7 +44,6 @@ number is selected before which all nodes in the network should have upgraded to
 version. Nodes running the old version will stop working (will be disconnected from the canonical
 chain after the hardfork block).
 
-
 Should there be ⅓+1 staked MATIC in disagreement with the fork, two canonical chains will temporarily
 form until the end of the current span. After this, Bor will stop producing blocks, and the chain will
 halt until consensus is reached.
@@ -57,7 +56,7 @@ be running at once and be able to validate transactions.
 
 ### Rough Consensus
 
-Defined as the 'dominant view' of a group as determined by the current consensus framework. 
+Defined as the 'dominant view' of a group as determined by the current consensus framework.
 Without a vote that can carry out a synchronous update across the network, the 'dominant view.'
 is defined by the node software used by each validator, weighted by its total stake.
 
@@ -72,6 +71,7 @@ Once the defined voting parameters are met, each validator automatically updates
 with the proposal data.
 
 The current voting parameters (denominated in staked MATIC):
+
 - Quorum: 33.4%
 - Threshold: 50%
 - Veto: 33.4%
