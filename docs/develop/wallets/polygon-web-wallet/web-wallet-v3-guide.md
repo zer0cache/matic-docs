@@ -1,12 +1,13 @@
 ---
 id: web-wallet-v3-guide
-title: Polygon Wallet Suite V3
-sidebar_label: V3 Usage Guide
+title: Polygon Wallet Suite
+sidebar_label: Usage Guide
 description: Learn how to use the Polygon Wallet Suite
 keywords:
   - wallet
   - matic
   - docs
+  - wiki
   - polygon
   - guide
   - web wallet

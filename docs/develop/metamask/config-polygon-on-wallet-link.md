@@ -3,9 +3,9 @@ id: config-polygon-on-wallet-link
 title: Configure Polygon on Wallet Link
 description: Set up Polygon Mainnet on Wallet Link.
 keywords:
-  - docs
-  - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+  - wiki
+  - polygon
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Tabs from '@theme/Tabs';

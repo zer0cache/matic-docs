@@ -1,18 +1,20 @@
 ---
 id: config-polygon-on-metamask
 title: Add Polygon Network
-description: Integrate Polygon with Metamask.
+description: Integrate Polygon with Metamask by using Polygonscan or adding it manually.
 keywords:
-  - docs
-  - matic
-image: https://matic.network/banners/matic-network-16x9.png
+  - wiki
+  - polygon
+  - metamask
+  - polygonscan
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-In order to view the flow of funds in your accounts, on the Polygon Network, you will need to configure Polygon `{testnet, mainnet}` URL on Metamask.
+In order to view the flow of funds in your accounts, on the Polygon Network, you will need to configure Polygon testnet and mainnet URLs on Metamask.
 
 There are two ways to do it:
 1. [Using Polygonscan](/develop/metamask/config-polygon-on-metamask.md#polygon-scan)
@@ -37,16 +39,19 @@ Please make sure you have already installed <ins>**[Metamask](https://metamask.i
 
 Please follow the steps to add Polygon's Mumbai-Testnet:
 
-- Navigate to [mumbai.polygonscan.com](https://mumbai.polygonscan.com/)
+1. Navigate to [mumbai.polygonscan.com](https://mumbai.polygonscan.com/)
+2. Scroll down to the bottom of the page and click on the button `Add Mumbai Network`
 
 <img src={useBaseUrl("img/metamask/testnet-button.png")} />
 <p></p>
 
-- Scroll down to the bottom of the page and click on the button `Add Mumbai Network`
+3. Once you click the button you will see a Metamask Notification, now click on **Approve**.
 
-<img src={useBaseUrl("img/metamask/testnet-addnetwork.png")} width="357" height="600" />
+<div align="center">
+  <img  src={useBaseUrl("img/metamask/develop/testnet-addnetwork.png")} width="357" height="600" />
+</div>
+<br></br>
 
-- Once you click the button you will see a Metamask Notification, now click on **Approve**.
 You will be directly switched to Polygon’s Mainnet now in the network dropdown list. You can now close the dialog.
 
 </TabItem>
@@ -55,23 +60,27 @@ You will be directly switched to Polygon’s Mainnet now in the network dropdown
 
 Please follow the steps to add Polygon’s Mainnet:
 
-- Navigate to [polygonscan.com](https://polygonscan.com/)
+1. Navigate to [polygonscan.com](https://polygonscan.com/)
+2. Scroll down to the bottom of the page and click on the button `Add Polygon Network`
 
 <img src={useBaseUrl("img/metamask/mainnet-button.png")} />
 <p></p>
+<br></br>
+<br></br>
 
-- Scroll down to the bottom of the page and click on the button `Add Polygon Network`
-
-<img src={useBaseUrl("img/metamask/mainnet-addnetwork.png")} width="357" height="600" />
-
-- Once you click the button you will see a Metamask Notification, now click on **Approve**.
+3. Once you click the button you will see a Metamask Notification, now click on **Approve**.
 You will be directly switched to Polygon’s Mainnet now in the network dropdown list. You can now close the dialog.
+
+<div align="center">
+<img src={useBaseUrl("img/metamask/mainnet-addnetwork.png")} width="357" height="600" />
+</div>
+
 
 </TabItem>
 
 </Tabs>
 
-If you are facing any issue, **Add the Network Manually(steps given below)**
+If you are facing any issue, **add the network manually** according to the steps given below.
 
 ### Add the Polygon network manually
 
@@ -87,10 +96,13 @@ If you are facing any issue, **Add the Network Manually(steps given below)**
 To add Polygon's Mumbai-Testnet, click on the Network selection dropdown and then click on Custom RPC.
 
 <img src={useBaseUrl("img/metamask/select-network.png")} />
+<br></br>
 
 It will open up a form with 2 tabs on the top, Settings and Info. In the Settings tab you can add `Matic Mumbai` in the Network Name field, URL `https://rpc-mumbai.maticvigil.com/` in the New RPC URL field, `80001` in Chain ID field, `MATIC` in Currency Symbol field and `https://mumbai.polygonscan.com/` in Block Explorer URL field.
+<br></br>
 
 <img src={useBaseUrl("img/metamask/metamask-settings-mumbai.png")} />
+<br></br>
 
 Once you’ve added the URL in the New Network field, click on Save. You will be directly switched to Polygon’s Mumbai-Testnet now in the network dropdown list. You can now close the dialog.
 </TabItem>
@@ -103,6 +115,8 @@ To add Polygon’s Mainnet, click on the Network selection dropdown and then cli
 It will open up a form with 2 tabs on the top, Settings and Info. In the Settings tab you can add `Polygon Mainnet` in the Network Name field, URL `https://polygon-rpc.com/` in the New RPC URL field, `137` in Chain ID field, `MATIC` in Currency Symbol field and `https://polygonscan.com/` in Block Explorer URL field.
 
 <img src={useBaseUrl("img/metamask/metamask-settings-mainnet.png")} />
+<br></br>
+<br></br>
 
 Once you’ve added the information click on Save. You will be directly switched to Polygon’s Mainnet now in the network dropdown list. You can now close the dialog.
 </TabItem>

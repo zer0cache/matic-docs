@@ -6,8 +6,10 @@ description: Learn how to create a Metamask wallet.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 If you are wondering how to create a new cryptocurrency wallet, consider creating one by installing the MetaMask extension.
 
 MetaMask is a free and secure browser extension that allows web applications to read and interact with the Ethereum blockchain.
@@ -18,21 +20,23 @@ To create a new wallet with MetaMask you need to install the extension first. Yo
 
 1. Open [https://metamask.io](https://metamask.io/) or search for “Metamask extension” using your favorite search engine.
 
+:::note
 In this tutorial we will be using Google Chrome as an example, but the workflow is the same for all browsers.
+:::
 
-![https://miro.medium.com/max/1492/1*JCvnTXS3Xu0X-RExle77LA.png](https://miro.medium.com/max/1492/1*JCvnTXS3Xu0X-RExle77LA.png)
+<img src={useBaseUrl("img/metamask/develop/metamask-home.png")} />
 
-![https://miro.medium.com/max/2768/1*yO33yG60Vzht6n9L4JcXeA.png](https://miro.medium.com/max/2768/1*yO33yG60Vzht6n9L4JcXeA.png)
-
-2. Click **Chrome** to install MetaMask as a Google Chrome extension.
+2. Click **Download** to install MetaMask as a Google Chrome extension.
 
 3. Click **Add to Chrome.**
 
+<img src={useBaseUrl("img/metamask/develop/add-chrome.png")} />
+
 4. Click **Add Extension**.
 
-![https://miro.medium.com/max/2373/1*pGyNYTNmc_gZskdXH0enKQ.png](https://miro.medium.com/max/2373/1*pGyNYTNmc_gZskdXH0enKQ.png)
-
-![https://miro.medium.com/max/2251/1*ukli2LnKCQkMKT0TJFi5iQ.png](https://miro.medium.com/max/2251/1*ukli2LnKCQkMKT0TJFi5iQ.png)
+<div align="center">
+<img src={useBaseUrl("img/metamask/develop/add-extension.png")} />
+</div>
 
 That’s it! You have successfully installed MetaMask extension!
 
@@ -40,38 +44,35 @@ That’s it! You have successfully installed MetaMask extension!
 
 The next step is to create an account.
 
-1. Click on the MetaMask icon in the upper right corner to open the extension.
-2. To install the latest version of MetaMask, click **Try it now**.
-3. Click **Continue**.
+1. When the download is finished, you will be able to either **restore a wallet** with a Secret Recovery Phrase or **create a new account**, by creating a new wallet and generating a new Secret Recovery Phrase.
 
-![https://miro.medium.com/max/1486/1*5hrpXhzgQYNQMV2GhQl4-Q.gif](https://miro.medium.com/max/1486/1*5hrpXhzgQYNQMV2GhQl4-Q.gif)
+<div align="center">
+<img src={useBaseUrl("img/metamask/develop/new-metamask.png")} />
+</div>
 
-4. You will be asked to create a new password. Create a strong password and click **Create**.
+2. You will be asked to create a new password. Create a strong password and click **Create**.
 
-> Don’t forget to store your password for safekeeping!
+<div align="center" >
+<img width="500" src={useBaseUrl("img/metamask/develop/create-password.png")} />
+</div>
 
-![https://miro.medium.com/max/1433/1*FZEkwKijuGmIXMLfEHwtgg.png](https://miro.medium.com/max/1433/1*FZEkwKijuGmIXMLfEHwtgg.png)
+3. Metamask will then provide some information about the Secret Recovery Phrase and on the next page you will see your phrase. 
 
-![https://miro.medium.com/max/1488/1*GY-dCrx6d2nXdJVT4g_STg.png](https://miro.medium.com/max/1488/1*GY-dCrx6d2nXdJVT4g_STg.png)
+<div align="center" >
+<img  src={useBaseUrl("img/metamask/develop/reveal-phrase.png")} />
+</div>
 
-5. Proceed by clicking **Next**, then accept Terms of Use.
 
-6. Click **Reveal secret words**.
+4. Write the 12-word phrase down  on a piece of paper on the same order presented.
 
-7. You will see a 12 words seed phrase. Save seed words as a file or copy them to a safe place and click **Next.**
+:::caution
+Read carefully Metamask's instructions. Write this phrase on a piece of paper and store in a secure location. If you want even more security, write it down on multiple pieces of paper and store each in 2–3 different locations. You can even memorize this phrase.
+:::
 
-Reveal secret words and copy your secret backup phrase to a safe place
+5. Verify your secret phrase by selecting the previously generated phrase. When done, click **Confirm**.
 
-![https://miro.medium.com/max/1499/1*3Q9CtffF4SrXNpcjoEiPWw.png](https://miro.medium.com/max/1499/1*3Q9CtffF4SrXNpcjoEiPWw.png)
+<img src={useBaseUrl("img/metamask/develop/phrase.gif")} />
 
-![https://miro.medium.com/max/1500/1*ZVGYYeUAhvWP3vx0MLyJvg.png](https://miro.medium.com/max/1500/1*ZVGYYeUAhvWP3vx0MLyJvg.png)
-
-> Security tips:Write this phrase on a piece of paper and store in a secure location. If you want even more security, write it down on multiple pieces of paper and store each in 2–3 different locations.Memorize this phrase.
-
-8. Verify your secret phrase by selecting the previously generated phrase. When done, click **Confirm**.
-
-![https://miro.medium.com/max/636/1*n6mJR5csvbgsBK-hcx6nBQ.gif](https://miro.medium.com/max/636/1*n6mJR5csvbgsBK-hcx6nBQ.gif)
-
-By “solving this puzzle” you are confirming that you know your secret phrase
+By “solving this puzzle” you are confirming that you know your secret phrase.
 
 **Congratulations!** You have successfully created your MetaMask account. A new Ethereum wallet address was automatically generated for you!
