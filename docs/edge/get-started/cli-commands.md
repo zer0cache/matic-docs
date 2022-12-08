@@ -35,40 +35,21 @@ The `--json` flag is supported on some commands. This flag instructs the command
 
 | **All server flags**                                                                        |
 |---------------------------------------|---------------------------------------------|
-| [seal](/docs/edge/get-started/cli-commands#seal) | [data-dir](/docs/edge/get-started/cli-commands#data-dir) |
-| [jsonrpc](/docs/edge/get-started/cli-commands#jsonrpc) | [json-rpc-block-range-limit](/docs/edge/get-started/cli-commands#json-rpc-block-range-limit) |
-[grpc](/docs/edge/get-started/cli-commands#grpc) | [libp2p](/docs/edge/get-started/cli-commands#libp2p) |
-| [prometheus](/docs/edge/get-started/cli-commands#prometheus) | [block-gas-target](/docs/edge/get-started/cli-commands#block-gas-target) |
+| [data-dir](/docs/edge/get-started/cli-commands#data-dir) | [jsonrpc](/docs/edge/get-started/cli-commands#jsonrpc) | 
+| [json-rpc-block-range-limit](/docs/edge/get-started/cli-commands#json-rpc-block-range-limit) | [json-rpc-batch-request-limit](/docs/edge/get-started/cli-commands#json-rpc-batch-request-limit) |
+|[grpc](/docs/edge/get-started/cli-commands#grpc) | [libp2p](/docs/edge/get-started/cli-commands#libp2p) | 
+| [prometheus](/docs/edge/get-started/cli-commands#prometheus) | [block-gas-target](/docs/edge/get-started/cli-commands#block-gas-target) | 
 | [max-peers](/docs/edge/get-started/cli-commands#max-peers) | [max-inbound-peers](/docs/edge/get-started/cli-commands#max-inbound-peers) |
 | [max-outbound-peers](/docs/edge/get-started/cli-commands#max-outbound-peers) | [max-enqueued](/docs/edge/get-started/cli-commands#max-enqueued) |
 | [log-level](/docs/edge/get-started/cli-commands#log-level) | [log-to](/docs/edge/get-started/cli-commands#log-to) |
 | [chain](/docs/edge/get-started/cli-commands#chain) | [join](/docs/edge/get-started/cli-commands#join) |
-| [nat](/docs/edge/get-started/cli-commands#nat) | [dns](/docs/edge/get-started/cli-commands#dns) |
-| [price-limit](/docs/edge/get-started/cli-commands#price-limit) | [max-slots](/docs/edge/get-started/cli-commands#max-slots) | [config](/docs/edge/get-started/cli-commands#config) |
-| [secrets-config](/docs/edge/get-started/cli-commands#secrets-config) | [dev](/docs/edge/get-started/cli-commands#dev) |
-| [dev-interval](/docs/edge/get-started/cli-commands#dev-interval) | [no-discover](/docs/edge/get-started/cli-commands#no-discover) | [restore](/docs/edge/get-started/cli-commands#restore) |
+| [nat](/docs/edge/get-started/cli-commands#nat) | [dns](/docs/edge/get-started/cli-commands#dns) | 
+| [price-limit](/docs/edge/get-started/cli-commands#price-limit) | [max-slots](/docs/edge/get-started/cli-commands#max-slots) |
+| [config](/docs/edge/get-started/cli-commands#config) | [secrets-config](/docs/edge/get-started/cli-commands#secrets-config) | 
+| [dev](/docs/edge/get-started/cli-commands#dev) | [dev-interval](/docs/edge/get-started/cli-commands#dev-interval) | 
+| [no-discover](/docs/edge/get-started/cli-commands#no-discover) | [restore](/docs/edge/get-started/cli-commands#restore) | 
 | [block-time](/docs/edge/get-started/cli-commands#block-time) | [access-control-allow-origins](/docs/edge/get-started/cli-commands#access-control-allow-origins) |
 
-
-
-#### <h4><i>seal</i></h4>
-
-<Tabs>
-  <TabItem value="syntax" label="Syntax" default>
-
-    server [--seal SHOULD_SEAL]
-
-  </TabItem>
-  <TabItem value="example" label="Example">
-
-    server --seal
-
-  </TabItem>
-</Tabs>
-
-Sets the flag indicating that the client should seal blocks. Default: `true`.
-
----
 
 #### <h4><i>data-dir</i></h4>
 
