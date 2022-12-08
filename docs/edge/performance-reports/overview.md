@@ -10,6 +10,9 @@ keywords:
   - tests
   - loadbot
 ---
+:::caution 
+Please note that regular performance testing has been paused from release 0.4.1 due to consensus protocol changes that are being implemented.
+:::
 
 | Type | Value | Link to test |
 | ---- | ----- | ------------ |
