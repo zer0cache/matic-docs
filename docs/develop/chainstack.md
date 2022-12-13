@@ -17,7 +17,8 @@ image: https://wiki.polygon.technology/img/polygon-wiki.png
 ## Overview 
 
 This section guides you through deploying a Hello World contract using [Chainstack](https://chainstack.com/build-better-with-polygon/) and [Foundry](https://github.com/gakonst/foundry/) on the Polygon Mumbai testnet.
-Chainstack provides infrasctructure for Ethereum-based applications and other blockchains. They maintain nodes and guarantee their connection to the network and also offer an interface to interact with mainnet and testnets.
+
+Chainstack provides infrastructure for Ethereum-based applications and other blockchains. They maintain nodes and guarantee their connection to the network and also offer an interface to interact with mainnet and testnets.
 
 Foundry is a fast toolkit for Ethereum application development written in Rust. It provides testing, interaction with EVM smart contracts, sending transactions, and blockchain data retrieval.
 
