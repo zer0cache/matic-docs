@@ -1,7 +1,7 @@
 ---
 id: json-rpc-net
 title: Net
-description: "List of JSON RPC commands for Polygon Edge."
+description: "List of Net JSON RPC commands for Polygon Edge."
 keywords:
   - docs
   - polygon

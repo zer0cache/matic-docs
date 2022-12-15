@@ -1371,6 +1371,7 @@ module.exports = {
         "edge/api/json-rpc-net",
         "edge/api/json-rpc-web3",
         "edge/api/json-rpc-txpool",
+        "edge/api/json-rpc-debug",
       ],
     },
     {
