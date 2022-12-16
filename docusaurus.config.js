@@ -93,6 +93,10 @@ module.exports = {
           {
             to: '/docs/develop/wallets/getting-started',
             from: '/docs/develop/cexs-wallets/cexs',
+          },
+          {
+            to: '/docs/develop/wallets/polygon-web-wallet/web-wallet-v3-guide',
+            from: '/docs/develop/wallets/polygon-web-wallet/web-wallet-v2-guide',
           }
         ],
         createRedirects: function (existingPath) {
