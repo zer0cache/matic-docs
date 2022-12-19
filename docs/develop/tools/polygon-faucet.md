@@ -2,57 +2,67 @@
 id: polygon-faucet
 title: Polygon Faucet
 sidebar_label: Polygon Faucet
-description: "Request Matic on Polygon Faucet."
+description: Request MATIC tokens on the Mumbai Testnet using Polygon Faucet.
 keywords:
   - docs
-  - matic
-image: https://matic.network/banners/matic-network-16x9.png
+  - polygon
+  - wiki
+  - tokens
+  - faucet
+  - testnet
+  - matic tokens
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-[Polygon Faucet](https://faucet.polygon.technology/) is a tool that allows you to get free MATIC tokens on testnet to help you get started with Polygon network. The tokens enable you to work with Polygon features without spending real MATIC on the mainnet.
+[Polygon Faucet](https://faucet.polygon.technology/) is a tool that allows you to get free MATIC tokens on the Mumbai Testnet to help you get started with the Polygon network. These test tokens enable you to work with Polygon features without spending real MATIC on the Mainnet.
 
-:::note
+:::info
+
 Tokens on testnet networks have no value as they are only used for testing purposes.
+
 :::
 
-### How to use Polygon Faucet
+## How to use Polygon Faucet
 
-1. Navigate to [faucet.polygon.technology](https://faucet.polygon.technology/)
+- Navigate to [faucet.polygon.technology](https://faucet.polygon.technology/)
+   <img src={useBaseUrl("img/tools/faucet.png")} />
 
-2. Select one of the blockchain testnet networks. Where:
-    - **Mumbai** - Polygon test network
-    - **Goerli** - Ethereum test network
-    - **DA Testnet** - Internal testing
+- Select one of the blockchain testnet networks, where:
+    - **Mumbai** - Polygon Testnet
+    - **Goerli** - Ethereum Testnet
+    - **Avail Devnet** - For testing DA Chain
+    - **Avail Testnet** - Avail Testnet
 
+- Select the type of Testnet token that you want to receive, where:
+    - **MATIC Token** - Testnet token of Polygon network
+    - **Test ERC20** - Standard testnet token on the Ethereum network
+    - **Test ERC1155** - Standard testnet token used for NFTs
+    - **LINK** - ERC677 testnet token that inherits functionality from the ERC20
 
- <img src={useBaseUrl("img/tools/faucet.png")} />
+- Enter your wallet address (you can copy it from your Metamask or Polygon wallet)
 
+- Click on the **Submit** button to send your token request
 
-3. Select the type of the testnet token that you want to receive, where:
-   - **MATIC Token** - Testnet token of Polygon network
-   - **Test ERC20** - Standard testnet token on the Ethereum network
-   - **Test ERC1155** - Standard testnet token used for NFTs
-   - **LINK** - ERC677 testnet token that inherits functionality from the ERC20
+- Click **Confirm** to finalize the transaction
+   
+   <img src={useBaseUrl("img/tools/confirm-transaction.png")} />
 
-<img src={useBaseUrl("img/tools/select-tokens.png")} />
+:::caution
 
-4. Enter your wallet address, you can copy it from your Metamask or Polygon wallet
+If you don't have enough MATIC Testnet tokens in your account to pay for the gas fees, the transaction may fail. If you require testnet tokens in bulk, please contact us on the <ins>**[Polygon Discord server](https://discord.com/invite/0xPolygon)**</ins>.
 
-5. Click on the button "Submit" to send your request
-
-6. Click on the button "Confirm" to agree on the entered details
- <img src={useBaseUrl("img/tools/confirm-transaction.png")} />
-
-7. Congratulations, you have successfully submitted your request. You will receive the requested testnet tokens within 1 to 2 minutes.
- <img src={useBaseUrl("img/tools/submitted.png")} />
-
-:::note
-If you don't have enough MATIC testnet Tokens in your account to pay the gas fees, the transaction may fail. If you require testnet tokens in bulk, please contact us on <ins>**[Discord](https://discord.com/invite/0xPolygon)**</ins>.
 :::
+
+- After confirmation, you will receive the requested Testnet tokens within 1 to 2 minutes.
+
+   <img src={useBaseUrl("img/tools/success.png")} />
 
 :::tip
-In addition to Polygon faucets, [Alchemy’s Mumbai Faucet](https://mumbaifaucet.com/) will allow you to test your Polygon applications before going live, by providing test MATIC tokens. <ins>**[Here's how to use it](/docs/develop/tools/alchemy-faucet)**</ins>.
+
+In addition to the Polygon faucet, [Alchemy’s Mumbai Faucet](https://mumbaifaucet.com/) also allows you to test your Polygon applications before going live by providing test MATIC tokens. <ins>**[Here's how to use it](/docs/develop/tools/alchemy-faucet)**</ins>.
+
 :::
