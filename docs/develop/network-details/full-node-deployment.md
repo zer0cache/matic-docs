@@ -43,7 +43,7 @@ For snapshot download links, see the [<ins>Polygon Chains Snapshots</ins>](https
 
 :::info Heimdall source enhancements
 
-The latest Heimdall version, **[v.0.2.12](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.12)**, contains a few enhancements. 
+The latest Heimdall version, **[v.0.3.0](https://github.com/maticnetwork/heimdall/releases/tag/v0.3.0)**, contains a few enhancements. 
 The delay time between the contract events of different validators **has been increased** to ensure that the mempool doesn't get filled 
 quickly in case of a burst of events that could hamper the chain's progress. 
 
@@ -71,7 +71,7 @@ Length in byte format - 4
 
   ```bash
   # Mainnet:
-  ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.16 heimdall_branch=v0.2.12 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
+  ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.3.0 heimdall_branch=v0.3.0 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
 
   # Testnet:
   ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.3.0 heimdall_branch=v0.3.0 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai" --list-hosts
@@ -83,7 +83,7 @@ Length in byte format - 4
 
   ```bash
   # Mainnet:
-  ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.16 heimdall_branch=v0.2.12 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"
+  ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.3.0 heimdall_branch=v0.3.0 network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"
 
   # Testnet:
   ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.3.0 heimdall_branch=v0.3.0 network_version=testnet-v4 node_type=sentry/sentry heimdall_network=mumbai"
