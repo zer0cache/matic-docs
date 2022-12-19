@@ -206,8 +206,144 @@ Once you have confirmed all these transactions, you will receive your funds back
 
 <img src={useBaseUrl("img/wallet/v3/plasma/transfer-completed.png")} width="50%" height="50%"/>
 
+## Swap for Gas
+
+The MATIC token is used for paying gas fees in the Polygon ecosystem. It's always important to have a minimum amount of MATIC to perform transactions on Polygon.
+There are a few ways you can acquire MATIC tokens:
+- buy them using Fiat On-ramp platforms,
+- swap for other tokens, or
+- trade them on a supported exchange.
+Polygon also offers the possibility of swapping tokens for MATIC. You can currently choose from a range of cryptocurrencies to swap for MATIC, namely ETH, USDC, USDT, and others.
+
+### Step-by-step guide
+
+Assuming you are on the assets homepage, find the **Swap for Gas** feature on the sidebar on your left.
+
+<div align="center">
+  <img src={useBaseUrl("/img/wallet/swap-gas-home.png")} />
+</div>
+<br />
+
+Now, you need to set the amount of MATIC you need, either by choosing one of the given quantities or entering the amount you need (1). You should also select the token that will be swapped for MATIC (2).
+
+:::info
+
+The minimum amount for requesting MATIC tokens is 0.5 MATIC
+
+:::
+
+<br />
+<div align="center">
+  <img src={useBaseUrl("/img/wallet/swap-gas-tokens.png")} width="400"/>
+</div>
+<br />
+
+:::note
+
+If you haven't added the Polygon network to your Metamask, you will be prompted to install it. Please proceed with the installation or check out this guide [here](/docs/develop/metamask/config-polygon-on-metamask).
+
+:::
+
+Metamask will then prompt you to sign the transaction.
+
+<div align="center">
+  <img src={useBaseUrl("/img/wallet/swap-gas-signature.png")} width="400"/>
+</div>
+
+:::note
+
+If the **Sign** button is not visible, try scrolling down by clicking on the down arrow in the **Message** field.
+
+:::
+
+After you signed it, you will be able to transfer the requested amount of MATIC to your wallet.
+
+<div align="center">
+  <img src={useBaseUrl("/img/wallet/swap-gas-transfer.png")} width="400"/>
+</div>
+
+A new signature will be requested:
+
+<div align="center">
+  <img src={useBaseUrl("/img/wallet/swap-gas-sign-swap.png")} width="400"/>
+</div>
+
+Transaction completed. Remember that you can always verify it on [Polygonscan](https://polygonscan.com/)!
+
+<div align="center">
+  <img src={useBaseUrl("/img/wallet/swap-gas-complete.png")} width="400"/>
+</div>
+<br />
+
 :::tip
 
-In case you have any queries, feel free to raise a ticket here: <ins>https://support.polygon.technology/support/home</ins>
+This is a gasless transaction. You do not have to pay a gas fee.
+0.01 MATIC can pay for approximately 20 transactions.
+
+:::
+
+## Token Swap
+
+You can swap tokens for other tokens using the **Token Swap** feature, which uses decentralized exchanges under the hood. The Token Swap feature may be found on the sidebar.
+
+<div align="center">
+  <img src={useBaseUrl("/img/wallet/swap-token-home.png")}/>
+</div>
+
+### Step-by-step guide
+
+The token on the top is the one you are swapping. The other one on the bottom is what you are going to receive.
+
+<div align="center">
+  <img src={useBaseUrl("/img/wallet/swap-token.png")} width="400"/>
+</div>
+
+You will be able to review the transaction before it goes through.
+
+<div align="center">
+  <img src={useBaseUrl("/img/wallet/swap-token-review.png")} width="400"/>
+</div>
+
+Confirm the transaction on Metamask:
+
+<div align="center">
+  <img src={useBaseUrl("/img/wallet/swap-token-sign.png")} width="400"/>
+</div>
+
+And the transaction will be completed successfully!
+
+<div align="center">
+  <img src={useBaseUrl("/img/wallet/swap-token-complete.png")} width="400"/>
+</div>
+<br />
+
+## Token Lists
+
+You can customize the list of tokens you may see on the Polygon Wallet Suite homepage. For that, click on **Manage Token List**:
+
+<div align="center">
+  <img src={useBaseUrl("/img/wallet/token-list-home.png")} />
+</div>
+<br />
+
+There are some default options provided by Polygon, but you can always add new token lists by entering their URLs.
+
+<div align="center">
+  <img src={useBaseUrl("/img/wallet/token-list-manage.png")} width="400" />
+</div>
+<br />
+
+You can also make your own list, import it to Polygon Wallet and even share it with the community.
+To learn more about creating your own token lists, check out this guide to [Authoring Token Lists on Github](https://github.com/uniswap/token-lists#authoring-token-lists). Note that the **Chain ID should be 137** when creating a Polygon list.
+
+:::note
+
+If you need to add a token to one of our lists, [<ins>add a Token Request</ins>](https://github.com/maticnetwork/polygon-token-list/issues/new?assignees=&labels=add+token+request&template=add_token_request.md&title=Add+%7BTOKEN_SYMBOL%7D%3A+%7BTOKEN_NAME%7D) with the required information, and it’ll be reviewed by our team.
+
+:::
+
+:::tip
+
+You can find some of the token lists here: https://tokenlists.org/
 
 :::
