@@ -986,6 +986,7 @@ module.exports = {
   ],
 
   zkEVM: [
+    "zkEVM/introduction",
     "zkEVM/develop",
     "zkEVM/overview",
     "zkEVM/proof-of-efficiency",

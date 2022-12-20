@@ -83,23 +83,23 @@ export const secondRow = [
     {
         title: "zkEVM",
         status: "ZK Rollup",
-        linkUrl: "docs/zkEVM/develop",
+        linkUrl: "docs/zkEVM/introduction",
         imageUrl: "img/hermez.svg",
-        description: "The first source-available ZK Rollup with Ethereum's security & full EVM opcode equivalence."
+        description: "The first source-available ZK-Rollup with Ethereum's security & full EVM opcode equivalence."
     },
     {
         title: "Miden",
         status: "STARK-based ZK Rollup",
         linkUrl: "docs/miden/intro/main",
         imageUrl: "img/miden.svg",
-        description: "A STARK-based Zero Knowledge Rollup solution that supports arbitrary smart contracts."
+        description: "A STARK-based Zero-Knowledge Rollup solution that supports arbitrary smart contracts."
     },
     {
         title: "Zero",
         status: "ZK Rollup: Docs Coming Soon",
         linkUrl: "",
         imageUrl: "img/zero.svg",
-        description: "A highly scalable, Ethereum-compatible Zero Knowledge Rollup solution."
+        description: "A highly scalable, Ethereum-compatible Zero-Knowledge Rollup solution."
     },
     {
         title: "ID",
