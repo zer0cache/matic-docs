@@ -110,6 +110,7 @@ module.exports = {
   ],
   onBrokenLinks: 'log',
   themeConfig: {
+    metadata: [{name: 'description', content: 'Welcome to Polygon Wiki, the official documentation for Polygon and its products. Explore and learn about Polygon and its wide range of Ethereum-scaling solutions.'}],
     footer: {
       style: 'dark',
       links: [
