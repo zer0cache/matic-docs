@@ -1,8 +1,8 @@
 ---
-id: zkProver
+id: overview
 title: zkProver
-sidebar_label: zkProver
-description: Introduction to the zkProver
+sidebar_label: Overview
+description: An overview to the zkProver architecture of Polygon zkEVM
 keywords:
   - docs
   - polygon

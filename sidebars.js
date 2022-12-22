@@ -1002,7 +1002,32 @@ module.exports = {
         "zkEVM/zknode/setup-production-node"
       ]
     },
-    "zkEVM/Architecture/zkProver",
+    {
+      type: "category",
+      label: "zkProver",
+      link: {
+        type: "generated-index"
+      },
+      items:[
+        "zkEVM/zkProver/overview",
+        "zkEVM/zkProver/zkprover-design",
+        {
+          type: "category",
+          label: "mFibonacci SM",
+          link: {
+            type: "generated-index"
+          },
+          items:[
+            "zkEVM/zkProver/mfibonacci-overview",
+            "zkEVM/zkProver/mfibonacci-example",
+            "zkEVM/zkProver/commitment-scheme",
+            "zkEVM/zkProver/verification-scheme",
+            "zkEVM/zkProver/pil-stark",
+            "zkEVM/zkProver/pil-stark-demo",
+          ]
+        },
+      ]
+    },
     "zkEVM/lx-ly-bridge",
     {
       type: "category",

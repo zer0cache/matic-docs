@@ -68,7 +68,7 @@ The two permissionless participants of the zkEVM network are: **Sequencers** and
    - Static Cost: L1 call cost + Server cost (to build a proof)
    - Profitable if: `MATIC fee` > `L1 call` + `Server cost`
 
-## [zkProver](/docs/zkEVM/architecture/zkProver)
+## [zkProver](/docs/zkEVM/zkProver/overview.md)
 
 zkEVM employs advanced zero-knowledge technology to create validity proofs. It uses a **zero-knowledge prover (zkProver)**, which is intended to run on any server and is being engineered to be compatible with most consumer hardware. Every **Aggregator** will use this zkProver to validate batches and provide Validity Proofs.
 
@@ -76,7 +76,7 @@ It consists of a **Main State Machine Executor**, a collection of **secondary St
 
 ![Skeletal Overview of zkProver](figures/fig4-zkProv-arch.png)
 
-In a nutshell, **the zkEVM expresses state changes in a polynomial form**. As a result, the constraints that each proposed batch must meet are polynomial constraints or polynomial identities. To put it another way, all valid batches must satisfy specific polynomial constraints. Check out the detailed architecture of zkProver [here](/docs/zkEVM/architecture/zkProver).
+In a nutshell, **the zkEVM expresses state changes in a polynomial form**. As a result, the constraints that each proposed batch must meet are polynomial constraints or polynomial identities. To put it another way, all valid batches must satisfy specific polynomial constraints. Check out the detailed architecture of zkProver [here](/docs/zkEVM/zkProver/overview.md).
 
 ## [The LX-to-LY Bridge](lx-ly-bridge.md)
 
