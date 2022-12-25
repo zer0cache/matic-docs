@@ -1026,6 +1026,19 @@ module.exports = {
             "zkEVM/zkProver/pil-stark-demo",
           ]
         },
+        {
+          type: "category",
+          label: "Generic SM",
+          link: {
+            type: "generated-index"
+          },
+          items:[
+            "zkEVM/zkProver/intro-generic-sm",
+            "zkEVM/zkProver/exec-trace-correct",
+            "zkEVM/zkProver/ending-program",
+            "zkEVM/zkProver/program-counter"
+          ]
+        },
       ]
     },
     "zkEVM/lx-ly-bridge",
