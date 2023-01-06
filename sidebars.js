@@ -1039,6 +1039,23 @@ module.exports = {
             "zkEVM/zkProver/program-counter"
           ]
         },
+        {
+          type: "category",
+          label: "Storage SM",
+          link: {
+            type: "generated-index"
+          },
+          items:[
+            "zkEVM/zkProver/intro-storage-sm",
+            "zkEVM/zkProver/sparse-merkle-tree",
+            "zkEVM/zkProver/simple-smt",
+            "zkEVM/zkProver/detailed-smt-concepts",
+            "zkEVM/zkProver/basic-smt-ops",
+            "zkEVM/zkProver/construct-key-path",
+            "zkEVM/zkProver/storage-sm-mechanism",
+            "zkEVM/zkProver/executor-pil",
+          ]
+        },
       ]
     },
     "zkEVM/lx-ly-bridge",
