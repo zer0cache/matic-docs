@@ -23,7 +23,7 @@ Besides validators, there are non-validators who do not participate in the block
 ## Adding a validator to the validator-set
 
 This guide describes how to add a new validator node to an active IBFT network with 4 validator nodes.
-If you need help setting up the the network refer to the [Local Setup](/docs/edge/get-started/set-up-ibft-locally) / [Cloud Setup](/docs/edge/get-started/set-up-ibft-on-the-cloud) sections.
+If you need help setting up the network refer to the [Local Setup](/edge/get-started/set-up-ibft-locally.md) / [Cloud Setup](/edge/get-started/set-up-ibft-on-the-cloud.md) sections.
 
 ### Step 1: Initialize data folders for IBFT and generate validator keys​ for the new node
 

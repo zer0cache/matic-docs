@@ -17,7 +17,7 @@ keywords:
 This guide goes into detail on how to set up a Proof of Stake network with the Polygon Edge, how to stake funds for nodes
 to become validators and how to unstake funds.
 
-It **highly encouraged** to read and go through
+It is **highly encouraged** to read and go through
 the [Local Setup](/docs/edge/get-started/set-up-ibft-locally)
 / [Cloud Setup](/docs/edge/get-started/set-up-ibft-on-the-cloud) sections, before going along
 with this PoS guide. These sections outline the steps needed to start a Proof of Authority (PoA) cluster with the

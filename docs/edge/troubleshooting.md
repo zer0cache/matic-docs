@@ -63,7 +63,7 @@ You can use the below command to change the fee:
 ```` bash
  $ cb-sol-cli admin set-fee --bridge <BRIDGE_ADDRESS> --fee 0 --url <JSON_RPC_URL> --privateKey <PRIVATE_KEY>
  ````
-You can find more information about this flage [here](https://github.com/ChainSafe/chainbridge-deploy/blob/main/cb-sol-cli/docs/deploy.md).
+You can find more information about this flag [here](https://github.com/ChainSafe/chainbridge-deploy/blob/main/cb-sol-cli/docs/deploy.md).
 
 
 

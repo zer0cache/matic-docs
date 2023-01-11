@@ -90,8 +90,7 @@ considered validators during the next epoch.
 **Epoch Blocks** are a concept introduced in the PoS implementation of IBFT in Polygon Edge.
 
 Essentially, epoch blocks are special blocks that contain **no transactions** and occur only at **the end of an epoch**.
-For example, if the **epoch size** is set to `50` blocks, epoch blocks would be considered to be blocks `50`, `100`
-, `150` and so on.
+For example, if the **epoch size** is set to `50` blocks, epoch blocks would be considered to be blocks `50`, `100`, `150` and so on.
 
 They are used to performing additional logic that shouldn't occur during regular block production.
 
