@@ -177,7 +177,7 @@ where `RELEASE_TAG` is the tag of the release version that you install.
 For instance:
 
 ```sh
-git checkout v0.3.0
+git checkout v0.3.3
 ```
 
 Install Bor:

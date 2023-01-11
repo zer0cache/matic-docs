@@ -116,7 +116,7 @@ git clone https://github.com/maticnetwork/bor
 cd bor
 
 # Checkout to a proper version
-# For e.g: git checkout 0.3.0
+# For e.g: git checkout 0.3.3
 git checkout <TAG OR BRANCH>
 make bor-all
 sudo ln -nfs ~/bor/build/bin/bor /usr/bin/bor
