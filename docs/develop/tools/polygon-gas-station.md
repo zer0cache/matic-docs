@@ -20,7 +20,7 @@ import TabItem from '@theme/TabItem';
 
 We received a lot of requests from dApp developers for building a gas price recommendation service. So we took some inspiration from **Eth Gas Station** and built one.
 
-**Polygon Gas Station** has been deployed both on the Polygon Mumbai Testnet & Polygon Mainnet, where it analyzes recent 500 transactions and recommends gas price.
+**Polygon Gas Station** has been deployed both on the Polygon Mainnet & Mumbai Testnet. It queries the RPC for `eth_feeHistory` and fetches the 10th, 25th, and 50th percentiles of priority fees for transactions in each of the last 15 blocks. The average value of the 10th, 25th, and 50th percentiles become the `safeLow`, `standard`, and fast fee predictions.
 
 ## Usage
 

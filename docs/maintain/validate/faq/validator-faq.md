@@ -90,8 +90,8 @@ tar -xzvf <snapshot file> -C <HEIMDALL_DATA_DIRECTORY>
 
 Then start Heimdall services again. Refer to:
 
-* [Run a Validator Node with Ansible](/docs/maintain/validate/run-validator-ansible)
-* [Run a Validator Node from Binaries](/docs/maintain/validate/run-validator-binaries)
+* [Run a Validator Node with Ansible](/maintain/validate/run-validator-ansible.md)
+* [Run a Validator Node from Binaries](/maintain/validate/run-validator-binaries.md)
 
 ## Heimdall shows "dpkg: error processing archive"
 
@@ -249,7 +249,7 @@ If the issue is not resolved, contact support team on [Discord](https://discord.
 
 ## Bor shows "Address is required as argument"
 
-This means that you have not added your [signer address](/docs/maintain/glossary.md#signer-address) to the metadata. You can add it using this path `/etc/matic/metadata` . Once the address is added, you can then restart the Bor service and everything should be fine.
+This means that you have not added your [signer address](/maintain/glossary.md#signer-address) to the metadata. You can add it using this path `/etc/matic/metadata` . Once the address is added, you can then restart the Bor service and everything should be fine.
 
 ## Bor shows "Failed to unlock account (0x...) No key for given address or file"
 
@@ -278,18 +278,18 @@ If none of this is the issue, contact support team on [Discord](https://discord.
 
 ## How to set up a validator node on the mainnet?
 
-See [Getting Started](/docs/maintain/validate/validator-index).
+See [Getting Started](/maintain/validate/validator-index).
 
 ## How to set up a non-validating node?
 
 Check out:
 
-* [Run a Validator Node with Ansible](/docs/maintain/validate/run-validator-ansible)
-* [Run a Validator Node from Binaries](/docs/maintain/validate/run-validator-binaries)
+* [Run a Validator Node with Ansible](/maintain/validate/run-validator-ansible.md)
+* [Run a Validator Node from Binaries](/docs/maintain/validate/run-validator-binaries.md)
 
 ## Why do I have to keep ETH in my signer account?
 
-ETH is required on your [signer account](/docs/maintain/glossary.md#signer-address) because for submitting checkpoints to Ethereum, all transactions require ETH to be used as gas. Hence ETH is required on your signer account.
+ETH is required on your [signer account](/maintain/glossary.md#signer-address) because for submitting checkpoints to Ethereum, all transactions require ETH to be used as gas. Hence ETH is required on your signer account.
 
 ## Setting up a node with Ansible errors out with "Host not found"
 
@@ -305,7 +305,7 @@ Your sentry node gleans information / blocks from the network and then relays th
 
 ## What is the minimum disk space required to run a Validator node?
 
-See [Validator Node System Requirements](/docs/maintain/validate/validator-node-system-requirements).
+See [Validator Node System Requirements](/maintain/validate/validator-node-system-requirements.md).
 
 ## Bridge shows "Error while fetching mainchain receipt error="
 
@@ -335,8 +335,8 @@ No. You cannot. Polygon's architecture currently does not allow validators runni
 
 There is no light node option as of now.
 
-* [Run a Full Node on a binary](/docs/develop/network-details/full-node-binaries)
-* [Run a Full Node with Ansible](/docs/develop/network-details/full-node-deployment)
+* [Run a Full Node on a binary](/develop/network-details/full-node-binaries.md)
+* [Run a Full Node with Ansible](/develop/network-details/full-node-deployment.md)
 
 ## What is the uptime percentage calculation on the staking dashboard?
 
