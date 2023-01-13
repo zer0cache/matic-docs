@@ -458,7 +458,6 @@ module.exports = {
             },
             "develop/ethereum-polygon/pos/deposit-withdraw-event-pos",
             "develop/ethereum-polygon/pos/deployment",
-            "develop/ethereum-polygon/pos/mapping-assets",
             "develop/pos-using-metamask",
           ],
         },
