@@ -1,7 +1,7 @@
 ---
 id: develop
 title: Start Building on Polygon zkEVM
-sidebar_label: Start Building
+sidebar_label: Develop
 description: A guide to help developers get started building on the Polygon zkEVM
 keywords:
   - docs

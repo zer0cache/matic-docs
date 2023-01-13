@@ -1,5 +1,5 @@
 ---
-id: overview
+id: architecture
 title: Polygon zkEVM Architecture
 sidebar_label: Architecture
 description: Introduction to Polygon zkEVM and it's architecture

@@ -987,21 +987,9 @@ module.exports = {
 
   zkEVM: [
     "zkEVM/introduction",
-    "zkEVM/develop",
-    "zkEVM/overview",
+    "zkEVM/architecture",
     "zkEVM/proof-of-efficiency",
-    {
-      type: "category",
-      label: "zkNode",
-      link: {
-        type: "generated-index"
-      },
-      items:[
-        "zkEVM/zknode/overview",
-        "zkEVM/zknode/setup-local-node",
-        "zkEVM/zknode/setup-production-node"
-      ]
-    },
+    "zkEVM/zknode/zknode-overview",
     {
       type: "category",
       label: "zkProver",
@@ -1059,6 +1047,18 @@ module.exports = {
       ]
     },
     "zkEVM/lx-ly-bridge",
+    {
+      type: "category",
+      label: "Start Building",
+      link: {
+        type: "generated-index"
+      },
+      items:[
+        "zkEVM/develop",
+        "zkEVM/setup-local-node",
+        "zkEVM/setup-production-node",
+      ]
+    },
     {
       type: "category",
       label: "zk Assembly",
