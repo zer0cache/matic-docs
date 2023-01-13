@@ -146,7 +146,8 @@ module.exports = {
             "develop/wallets/portis",
             "develop/wallets/torus",
             "develop/wallets/walletconnect",
-            "develop/wallets/slashauth"
+            "develop/wallets/slashauth",
+            "develop/wallets/plaid-wallet-onboard",
           ],
         }
       ],
