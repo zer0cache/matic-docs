@@ -476,9 +476,9 @@ module.exports = {
             "develop/plasma-using-metamask",
           ],
         },
+        "develop/l1-l2-communication/fx-portal",
         "develop/ethereum-polygon/mintable-assets",
         "develop/l1-l2-communication/state-transfer",
-        "develop/l1-l2-communication/fx-portal",
       ],
     },
     {

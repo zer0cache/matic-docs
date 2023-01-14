@@ -155,12 +155,7 @@ In case you need an example, please check out this [Mintable ERC20 Root and Chil
 
 :::info
 
-In the case of Mintable Token FxTunnels, the child token gets deployed first and the root token is deployed only when the first withdraw/exit process is completed. The root contract address can be pre-determined right after the child contract is deployed, but the mapping will technically exist only when the first withdrawal/exit is completed. 
-
-The **ERC721** and **ERC1155** Mintable FxTunnel examples are as follows :- 
-
-- [FxMintableERC721Tunnels](https://github.com/fx-portal/contracts/tree/main/contracts/examples/mintable-erc721-transfer)
-- [FxMintableERC1155Tunnels](https://github.com/fx-portal/contracts/tree/main/contracts/examples/mintable-erc1155-transfer)
+In the case of Mintable Token FxTunnels, the child token gets deployed first and the root token is deployed only when the first withdraw/exit process is completed. The root token contract address can be pre-determined right after the child contract is deployed, but the mapping will technically exist only when the first withdrawal/exit is completed. 
 
 :::
 
@@ -192,9 +187,12 @@ Feed the generated burn proof as the argument to `receiveMessage()` in `FxMintab
 2. Call `deposit()` in `FxMintableERC20RootTunnel` with the `rootToken` as address of root token and `user` as the recipient.
 3. Wait for the state sync event (22-30 mins). After this, you can query the target recipient's balance on the child chain.
 
-## Example Deployments
+The **ERC721** and **ERC1155** Mintable FxTunnel examples are as follows :- 
 
-The corresponding Mainnet deployments can be found [here](https://static.matic.network/network/mainnet/v1/index.json).
+- [FxMintableERC721Tunnels](https://github.com/fx-portal/contracts/tree/main/contracts/examples/mintable-erc721-transfer)
+- [FxMintableERC1155Tunnels](https://github.com/fx-portal/contracts/tree/main/contracts/examples/mintable-erc1155-transfer)
+
+## Example Deployments
 
 ### Goerli
 
@@ -217,6 +215,8 @@ The corresponding Mainnet deployments can be found [here](https://static.matic.n
 - FxERC721ChildTunnel: [0x3658ccFDE5e9629b0805EB06AaCFc42416850961](https://mumbai.polygonscan.com/address/0x3658ccFDE5e9629b0805EB06AaCFc42416850961)
 - FxERC1155: [0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C](https://mumbai.polygonscan.com/address/0x80be8Cf927047A40d3f5791BF7436D8c95b3Ae5C)
 - FxERC1155ChildTunnel: [0x3A0f90D3905601501652fe925e96d8B294243Efc](https://mumbai.polygonscan.com/address/0x3A0f90D3905601501652fe925e96d8B294243Efc)
+
+The corresponding Mainnet deployments can be found [here](https://static.matic.network/network/mainnet/v1/index.json). Look for the keyword `FxPortalContracts` to find all the default tunnel contracts and other important FxPortal contract deployments. You can make use of the [`maticnetwork/meta`](https://www.npmjs.com/package/@maticnetwork/meta) package to access the contract addresses and ABIs.
 
 ## Contract Addresses
 

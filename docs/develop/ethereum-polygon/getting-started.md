@@ -14,6 +14,8 @@ keywords:
 image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 Polygon brings you a trustless two-way transaction channel between Polygon and Ethereum by introducing the cross-chain bridge with Plasma and PoS security. With this users can transfer tokens across Polygon without incurring third-party risks and market liquidity limitations. **The Plasma and PoS Bridge is available on both Mumbai Testnet as well as Polygon Mainnet**.
 
 **Polygon bridge provides a bridging mechanism that is near-instant, low-cost, and quite flexible**. Polygon uses a dual-consensus architecture(Plasma + Proof-of-Stake (PoS) platform)
@@ -37,7 +39,7 @@ to optimise for speed and decentralization. We consciously architected the syste
 
 :::info
 
-The [Fx-portal](http://localhost:3000/docs/develop/l1-l2-communication/fx-portal) is another type of bridge that is very similar to the PoS Bridge. They share the same characteristics as mentioned in the table above. The only huge difference is that Tokens need not be mapped on the Fx Portal Bridge prior to bridging. The mapping happens during the first deposit transaction which is initiated for a given token. Also, anyone can make use of the fx-portal to build their own custom tunnels/bridges on top of the Polygon bridge. It is highly recommended to use the fx-portal for any bridging use case. New Token Mappings on PoS and Plasma will not be supported post-Jan 31st, 2023.
+The [**FxPortal**](/develop/l1-l2-communication/fx-portal.md) is another type of bridge that is very similar to the PoS Bridge. They share the same characteristics as mentioned for PoS in the table above. The only difference is that Tokens need not be mapped on the FxPortal Bridge prior to bridging. The mapping happens during the first deposit transaction which is initiated for a given token. Also, anyone can make use of the FxPortal to build their own custom tunnels/bridges on top of the Polygon bridge. It is highly recommended to use the FxPortal for any bridging use case. New token mappings on PoS and Plasma will be discouraged post-Jan 31st, 2023 so that the mapping process is fully decentralized and flexible. 
 
 :::
 
