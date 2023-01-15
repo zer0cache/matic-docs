@@ -1,25 +1,27 @@
 ---
 id: technical-faqs
 title: Technical FAQs
-description: Build your next blockchain app on Polygon.
+description: Frequently asked questions related to running a Validator on the Polygon network.
 keywords:
   - docs
-  - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+  - polygon
+  - polygon wiki
+  - faqs
+  - technical
+slug: technical-faqs
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
-:::tip Stay in the know
-
-Keep up with the latest node and validator updates from the Polygon team and the community by subscribing to [<ins>Polygon notifications</ins>](https://polygon.technology/notifications/).
-
-:::
-
 ### 1. Are the private keys same for Heimdall and Bor keystore?
-Yes, the private key used for generating Validator keys and Bor Keystore is the same. The private key used in this instance is your Wallet's ETH address where your Polygon testnet tokens are stored.
+
+Yes, the private key used for generating Validator keys and Bor Keystore is the same. 
+The private key used in this instance is your Wallet's ETH address where your Polygon 
+testnet tokens are stored.
 
 ### 2. List of Common Commands
 
-We currently have an easy to dive-in list for you for the Linux packages. We will keep updating this list regularly for more convenience.
+We currently have an easy to dive-in list for you for the Linux packages. We will 
+keep updating this list regularly for more convenience.
 
 **For Linux packages**
 
@@ -119,27 +121,13 @@ For Binaries:
 
 ### 4. Error: Wrong Block.Header.AppHash. Expected xxxx
 
-This error usually occurs when the Heimdall service is stuck on a block; there is no reversal method available on Heimdall.
+This usually occurs due to an incorrect installation of heimdall. You can follow the steps below to rectify this:
 
-To resolve this, you need to reset Heimdall completely:
+run 
 
-```bash
-    sudo service heimdalld stop
+    ```heimdalld unsafe-reset-all```
 
-    heimdalld unsafe-reset-all
-```
-
-After that, you should sync from the snapshot again:
-
-```bash
-    wget -c <Snapshot URL>
-
-    tar -xzvf <snapshot file> -C <HEIMDALL_DATA_DIRECTORY>
-
-```
-
-Then, start the Heimdall services again.
-
+and start Heimdall services again. You can refer to this guide - https://docs.polygon.technology/docs/validate/validate/run-validator
 
 ### 5. From where do I create the API key?
 
@@ -152,7 +140,7 @@ Mainnet is selected by default.
 **Actual Error**: My heimdalld isn’t working. In the log the first line is:
 panic: Unknown db_backend leveldb, expected either goleveldb or memdb or fsdb
 
-Change the config to `goleveldb` in config.toml
+Change the config to `goleveldb` in `config.toml`.
 
 
 ### 7. How do I delete remnants of Heimdall and Bor?
@@ -213,7 +201,7 @@ Try `~/go/bin/bridge` instead `(or $GOBIN/bridge)`
 
 **Error**: "dpkg: error processing archive matic-heimdall_1.0.0_amd64.deb (--install): trying to overwrite '/heimdalld-rest-server.service', which is also in package matic-node 1.0.0"
 
-This occurs mainly because of a previous installation of Matic on your machine. To resolve you can run:
+This occurs mainly because of a previous installation of Polygon on your machine. To resolve you can run:
 
 `sudo dpkg -r matic-node`
 
@@ -282,7 +270,7 @@ We are progressively adding validators throughout the course of Stage 1 event. W
 
 For binaries:
 
-    /var/lib/heimdalld/config folder
+    /var/lib/heimdall/config folder
 
 For Linux package:
 
@@ -298,7 +286,7 @@ Once you have created the API key you need to add the API key in `heimdall-confi
 
 You can add the persistent_peers in the following file:
 
-    /var/lib/heimdalld/config/config.toml
+    /var/lib/heimdall/config/config.toml
 
 
 ### 24. “Did you reset Tendermint without resetting your application's data?”
@@ -343,10 +331,18 @@ Delete Bor: `sudo rm -rf /etc/bor/*`
 
 **For Binaries**:
 
-Delete Heimdall: `sudo rm -rf /var/lib/heimdalld/`
+Delete Heimdall: `sudo rm -rf /var/lib/heimdall/`
 
 Delete Bor: `sudo rm -rf /var/lib/bor`
 
 ### 28. What to do when you get "Wrong Block.Header.AppHash." error
 
 This error usually occurs due to Infura requests getting exhausted. When you setup a node on Polygon, you add an Infura Key to the Config file (Heimdall). By default you are allowed 100k Requests per day, if this limit is crossed, then you would face such problems. To resolve this you can create a new API key and add it to the `config.toml` file.
+
+:::tip Stay in the know
+
+Keep up with the latest node and validator updates from the Polygon 
+team and the community by subscribing to the 
+[Polygon notification groups](https://polygon.technology/notifications/).
+
+:::

@@ -145,7 +145,7 @@ If none of this works, then please contact the **Polygon Support Team** immediat
 ### 10. Error: (in Bor) "Failed to prepare header mining at block 0"
 
 **Description:**
-This happens because of a formatting issue in your `static-nodes.json` file (~/.bor/data/bor/static-nodes.json).
+This happens because of a formatting issue in your `static-nodes.json` file (/var/lib/bor/data/bor/static-nodes.json).
 
 **Solution:**
 
@@ -186,7 +186,7 @@ This is related to connectivity and more specifically a port related problem.
 - Check to `curl localhost:26657/status` still shows the same block.
 - Try a Heimdall Restart.
 - Make sure that the connectivity to this port 26656 is open.
-- Try adding additional peers in `vi ~/.heimdalld/config/config.toml`
+- Try adding additional peers in vi /var/lib/heimdall/config/config.toml
 - Set `max_open_connection` parameter to 100.
 
 ### 15. Issue: Looking for Peers or Stopping Peer for error
@@ -195,7 +195,7 @@ This is related to connectivity and more specifically a port related problem.
 
 - open the `config.toml` file on your Sentry node.
 
-    `~/.heimdalld/config/config.toml`
+    `/var/lib/heimdall/config/config.toml`
 
 - And then find the parameter `external_address`. Once you find it this what you should be updating it with
 
@@ -209,7 +209,7 @@ This is related to connectivity and more specifically a port related problem.
 
 - Ensure that you’re only doing this on your sentry only.
 
-Follow the below steps for adding additional peers in  `vi ~/.heimdalld/config/config.toml`
+Follow the below steps for adding additional peers in  `vi /var/lib/heimdall/config/config.toml`
 
 - Stop heimdalld service
 
@@ -221,11 +221,11 @@ Follow the below steps for adding additional peers in  `vi ~/.heimdalld/config/c
 
     ```
     sudo service heimdalld stop
-    cp ~/.heimdalld/config/addrbook.json ~/.heimdalld/config/addrbook.json.bkp
-    rm ~/.heimdalld/config/addrbook.json
+    cp /var/lib/heimdall/config/addrbook.json /var/lib/heimdall/config/addrbook.json.bkp
+    rm /var/lib/heimdall/config/addrbook.json
     ```
 
-- Increase `max_num_inbound_peers` and `max_num_outbound_peers` in `~/.heimdalld/config/config.toml`:
+- Increase `max_num_inbound_peers` and `max_num_outbound_peers` in `/var/lib/heimdall/config/config.toml`:
 
     ```
     max_num_inbound_peers = 300
@@ -257,8 +257,8 @@ Then the Heimdall Bridge needs a restart.
 
 **Solution**
 
-1. Get the right configs from Github and copy them to `~/.heimdalld/config`, and
-2. Please reset Heimdall using `heimdalld unsafe-reset-all`.
+1. Get the right configs from Github and copy them to `/var/lib/heimdall/config` and
+2.  Please reset heimdall using `heimdalld unsafe-reset-all`.
 
 ### 18. Issue: Problems in starting Bor
 
@@ -310,13 +310,13 @@ Kill Bor process
 1. Copy the Bor keystore file to:
 
     ```jsx
-    ~/.bor/keystore/
+    /var/lib/bor/keystore/
     ```
 
 2. And password.txt to
 
     ```jsx
-    ~/.bor/password.txt
+    /var/lib/bor/password.txt
     ```
 
 ### 20. Consequences of validator missing a checkpoint and points to investigate from our side

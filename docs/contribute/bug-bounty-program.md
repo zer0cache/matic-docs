@@ -32,10 +32,8 @@ Set up a test network locally. See [Running a node on the local environment](htt
 
 The Polygon CLI repository is an easy way to setup and manage the entire Polygon stack, including **Heimdall**, **Bor**, and the **Staking & Plasma smart contracts** on a local environment. This would help in simulating tests and attacks locally.
 
-If you want to run a full node on the Polygon Mainnet or Mumbai Testnet, you can follow the links below:
-
-* [Run a Validator Node with Ansible](/docs/maintain/validate/run-validator-ansible)
-* [Run a Validator Node from Binaries](/docs/maintain/validate/run-validator-binaries)
+If you want to run a full node on the Polygon Mainnet or Mumbai Testnet, you can follow the
+[Run a Validator Node](/docs/validate/validate/run-validator) guide.
 
 ## Obtaining tokens for testing
 

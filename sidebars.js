@@ -65,6 +65,8 @@ module.exports = {
         "develop/network-details/full-node-deployment",
         "develop/network-details/full-node-binaries",
         "develop/network-details/full-node-docker",
+        "develop/network-details/full-node",
+        "develop/network-details/snapshot-instructions-heimdall-bor",
         "develop/network-details/network-rpc-endpoints",
         {
           type: "category",
@@ -612,6 +614,7 @@ module.exports = {
             "maintain/validate/validator-node-system-requirements",
             "maintain/validate/run-validator-binaries",
             "maintain/validate/run-validator-ansible",
+            "maintain/validate/run-validator",
           ],
         },
         {
@@ -664,7 +667,6 @@ module.exports = {
       ],
     },
   ],
-
   integrate: [
     "integrate/quickstart",
     {

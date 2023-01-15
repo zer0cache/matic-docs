@@ -20,6 +20,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Your validator node fully set up and synced. See also:
 
+* [Run a Validator Node](run-validator.md)
 * [Run a Validator Node with Ansible](run-validator-ansible.md)
 * [Run a Validator Node from Binaries](run-validator-binaries.md)
 

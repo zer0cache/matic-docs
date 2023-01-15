@@ -51,7 +51,7 @@ tar -xzvf <snapshot file> -C <HEIMDALL_DATA_DIRECTORY>
 // When this command completes, you may delete the tar file to reclaim space.
 
 // For example, this will unpack the tar file in the Heimdall Data directory:
-tar -xzvf heimdall-snapshot-2021-11-08.tar.gz -C ~/.heimdalld/data/
+tar -xzvf heimdall-snapshot-2021-11-08.tar.gz -C /var/lib/heimdall/data/
 ```
 
 ## Bor Snapshot
@@ -80,7 +80,7 @@ tar -xzvf <snapshot file> -C <BOR_DATA_DIRECTORY>
 // When this command completes, you may delete the tar file to reclaim space.
 
 // For example, this will unpack the tar file in the Bor data directory:
-tar -xzvf bor-fullnode-snapshot-2022-11-08.tar.gz -C ~/.bor/data/bor/chaindata
+tar -xzvf bor-fullnode-snapshot-2022-11-08.tar.gz -C /var/lib/bor/data/bor/chaindata
 ```
 
 :::note

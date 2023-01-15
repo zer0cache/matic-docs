@@ -95,7 +95,7 @@ This document gives some additional details for setting up a new node based on [
         
         <img src={useBaseUrl("img/knowledge-base/node-setup-5.png")} width="100%" height="100%"/> 
         
-        - Provide the copied **https** endpoint as `eth_rpc_url` in `~/.heimdalld/config/heimdall-config.toml`
+        - Provide the copied **https** endpoint as `eth_rpc_url` in `/var/lib/heimdall/config/heimdall-config.toml`
             
 ### 2. Why do I have to keep ETH in my signer account?
 
@@ -131,7 +131,15 @@ The Private key to be used is your Wallet's ETH address where your Matic testnet
 
 For Binaries: `~/.heimdalld/config folder`
 
-For Linux package: `/etc/heimdall/config`
+```jsx
+/var/lib/heimdall/config folder
+```
+
+For Linux package:
+
+```jsx
+/etc/heimdall/config
+```
     
 ### 8. Which file do we add the API key?
     
@@ -139,7 +147,11 @@ Once you have created the API key, you need to add the API key in `heimdall-con
     
 ### 9. Which file do we add the `persistent_peers`?
     
-You can add the `persistent_peers` in the following file: `~/.heimdalld/config/config.toml`
+You can add the `persistent_peers` in the following file:
+
+```jsx
+/var/lib/heimdall/config/config.toml
+```
     
 ### 10. How to stop Heimdall and Bor services?
     
@@ -170,9 +182,9 @@ Delete Bor: `sudo rm -rf /etc/bor/*`
 
 **For Binaries**:
 
-Delete Heimdall: `sudo rm -rf ~/.heimdalld/`
+Delete Heimdall: `sudo rm -rf /var/lib/heimdall/`
 
-Delete Bor: `sudo rm -rf ~/.bor`
+Delete Bor: `sudo rm -rf /var/lib/bor`
     
 ### 12. How to reduce cache in Bor?
     
@@ -181,7 +193,7 @@ Bor supports the `--cache` parameter which can reduce the cache to avoid running
 ### 13. How to delete the Bor DB data?
     
 ```    
-bor --datadir  ~/.bor/data removedb
+bor --datadir  /var/lib/bor/data removedb
 cd ~/node/bor
 bash setup.sh
 service bor start
