@@ -33,8 +33,8 @@ In order to map tokens between Ethereum and Polygon, you have to submit a mappin
 
 **Step 1 &rarr;** Choose the network on which you want to map tokens. You can choose Goerli-Mumbai for Testnet, and Ethereum-Polygon for the Mainnet.
 
-**Step 2 &rarr;** Select the type of token you are mapping from **ERC20**, **ERC721**, or **ERC1155**. For mapping any other token standard, you can reach out to the Polygon team on [Discord](https://discord.com/invite/0xPolygon) or create a ticket [here](https://support.polygon.technology/support/home) and keep "Token Mapping" in the ticket title.
+**Step 2 &rarr;** Select the type of token you are mapping from **ERC20**, **ERC721**, or **ERC1155**. For any other custom mapping requirements, you may follow the [FxPortal](/develop/l1-l2-communication/fx-portal.md) documentation. Please contact the Polygon team on [Discord](https://discord.com/invite/0xPolygon) if you have any questions, or open a ticket on the [Polygon Support portal](https://support.polygon.technology/support/home) with the subject line **Token Mapping**.
 
 **Step 3 &rarr;** Enter your **Ethereum / Goerli** token address in the **Ethereum Token Address** field. Make sure your token contract code has been verified on the [Ethereum](https://etherscan.io/) / [Goerli](https://goerli.etherscan.io/) blockchain explorers. if your root token is verified ✅, the **name**, **symbol**, and **decimal** fields will be automatically filled and these fields are uneditable.
 
-In case of a custom token mapping, you can visit our [FxPortal](/develop/l1-l2-communication/fx-portal.md) and use the data provided to build your custom token.
+In case of a custom token mapping, you can visit our [**FxPortal**](/develop/l1-l2-communication/fx-portal.md) documentation and use the guides provided to build your custom token.
