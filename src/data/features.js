@@ -16,7 +16,7 @@ export const firstRow = [
   {
       title: "Governance",
       status: "Intermediate",
-      linkUrl: "docs/maintain/govern/governance-posv1",
+      linkUrl: "docs/maintain/govern/governance-pos",
       imageUrl: "img/supernet.svg",
       description: "Understand how Polygon governance works and propose protocol improvements."
   },

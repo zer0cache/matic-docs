@@ -47,7 +47,7 @@ module.exports = {
 
   delegate: ["maintain/delegate/delegate", "maintain/delegate/delegator-faq"],
 
-  govern: ["maintain/govern/governance-posv1"],
+  govern: ["maintain/govern/governance-pos"],
 
   develop: [
     "develop/getting-started",
@@ -129,7 +129,7 @@ module.exports = {
               },
               items: ["develop/metamask/config-polygon-on-wallet-link"],
             },
-    
+
             {
               type: "category",
               label: "Venly",
