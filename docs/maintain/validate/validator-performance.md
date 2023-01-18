@@ -16,9 +16,11 @@ slug: validator-performance
 image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Validator performance framework
 
-This is a guide to help users understand the validator performance parameters the community agreed to in PIP-4.
+This is a guide to help users understand the validator performance parameters the community agreed to in [PIP-4](https://snapshot.org/#/polygonvalidators.eth/proposal/0x1e9d79b6406870ebd0b66ac256b59012f97f3f4d652052681c6fb1077e251804).
 
 These parameters and the related health statuses help provide information about validator performance against a defined performance benchmark. 
 
@@ -34,6 +36,10 @@ A validator’s performance is measured based on checkpoints it signed over a mo
 
 ### Performance Benchmark
 
+<div align="center">
+  <img src={useBaseUrl("img/validator-performance/performance-benchmark.png")}  width="300" />
+</div>
+
 To facilitate the transition, there will be a slightly lower benchmark around the first two months while validators become accustomed to the parameters.
 
 * PB1 → 95% of the median average of the last 700 checkpoints signed by the validator set (first 2,800 checkpoints))
@@ -48,6 +54,31 @@ To facilitate the transition, there will be a slightly lower benchmark around th
 Each GP is an additional 700 checkpoints, allowing a validator to bring their performance back above the PB. If the deficiency is corrected within the GP, there will be no further action. Failure to match, or out perform the performance benchmark, at the end of GP2 will result in a public NOD that will be displayed on the staking dashboard.
 
 The validator will have a 700 checkpoint period to correct the deficiency in GP2. If the deficiency is fixed within the NOD period, then no further action will occur. However, the NOD would remain public. Failure to improve after GP2 would result in the issuance of an FN of the community's intent to implement a forced exit procedure by offboarding the validator from the network by unbonding their stake.
+
+:::tip Health Status
+
+You can quickly check a validator's health status, whether it is **Healthy**, on **Grace Period** or **Final Notice** on the **All Validators** table or on each validator page.
+
+<div align="center">
+  <img src={useBaseUrl("img/validator-performance/health-status.png")}  width="1000" />
+</div>
+
+:::
+
+### Public Notices
+
+The Public Notices page shows the recent notices and messages sent to the community of validators.
+
+<div align="center">
+  <img src={useBaseUrl("img/validator-performance/public-notices.png")}  width="800" />
+</div>
+<br></br>
+
+This is how a Notice message should look like:
+
+<div align="center">
+  <img src={useBaseUrl("img/validator-performance/notice.png")}  width="500" />
+</div>
 
 ### Forced Unstaking
 
