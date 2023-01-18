@@ -87,10 +87,6 @@
     "message": "Avail FAQ",
     "description": "Navbar item with label Avail FAQ"
   },
-  "item.label.Nightfall FAQ": {
-    "message": "Nightfall FAQ",
-    "description": "Navbar item with label Nightfall FAQ"
-  },
   "item.label.Edge FAQ": {
     "message": "Edge FAQ",
     "description": "Navbar item with label Edge FAQ"

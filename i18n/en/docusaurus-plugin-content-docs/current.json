@@ -243,26 +243,6 @@
     "message": "State Sync",
     "description": "The label for category State Sync in sidebar pos"
   },
-  "sidebar.nightfall.category.Network Deployments": {
-    "message": "Network Deployments",
-    "description": "The label for category Network Deployments in sidebar nightfall"
-  },
-  "sidebar.nightfall.category.Protocol": {
-    "message": "Protocol",
-    "description": "The label for category Protocol in sidebar nightfall"
-  },
-  "sidebar.nightfall.category.Nightfall Protocol": {
-    "message": "Nightfall Protocol",
-    "description": "The label for category Nightfall Protocol in sidebar nightfall"
-  },
-  "sidebar.nightfall.category.Proposers & Challengers": {
-    "message": "Proposers & Challengers",
-    "description": "The label for category Proposers & Challengers in sidebar nightfall"
-  },
-  "sidebar.nightfall.category.Tools": {
-    "message": "Tools",
-    "description": "The label for category Tools in sidebar nightfall"
-  },
   "sidebar.faq.category.Wallet FAQs": {
     "message": "Wallet FAQs",
     "description": "The label for category Wallet FAQs in sidebar faq"

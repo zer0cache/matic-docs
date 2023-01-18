@@ -138,10 +138,6 @@ module.exports = {
             href: "https://polygon.technology/solutions/polygon-avail/"
           },
           {
-              label: "Polygon Nightfall",
-              href: "https://polygon.technology/solutions/polygon-nightfall/"
-          },
-          {
             label: "Polygon Zero",
             href: "https://polygon.technology/solutions/polygon-zero/"
           },
@@ -392,12 +388,6 @@ module.exports = {
                   {
                     to: 'docs/avail/faq',
                     label: 'Avail FAQ',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    to: 'docs/nightfall/faq/',
-                    label: 'Nightfall FAQ',
                     target: '_blank',
                     rel: null,
                   },

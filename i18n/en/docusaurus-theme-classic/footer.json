@@ -31,10 +31,6 @@
     "message": "Polygon Avail",
     "description": "The label of footer link with label=Polygon Avail linking to https://polygon.technology/solutions/polygon-avail/"
   },
-  "link.item.label.Polygon Nightfall": {
-    "message": "Polygon Nightfall",
-    "description": "The label of footer link with label=Polygon Nightfall linking to https://polygon.technology/solutions/polygon-nightfall/"
-  },
   "link.item.label.Polygon Zero": {
     "message": "Polygon Zero",
     "description": "The label of footer link with label=Polygon Zero linking to https://polygon.technology/solutions/polygon-zero/"

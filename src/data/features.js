@@ -46,10 +46,10 @@ export const firstRow = [
 export const secondRow = [
     {
         title: "PoS",
-        status: "PoS v3: Docs Coming Soon",
+        status: "Proof-of-Stake chain",
         linkUrl: "docs/pos/polygon-architecture",
         imageUrl: "img/home/blockchain-basics.svg",
-        description: "A Layer-2 Proof of Stake scaling solution for Ethereum-based public blockchains."
+        description: "A Proof-of-Stake scaling solution for Ethereum-based public blockchain networks."
     },
     {
         title: "Edge",
@@ -74,20 +74,6 @@ export const secondRow = [
         description: "A general-purpose, scalable, and data availability-focused blockchain."
     },
     {
-        title: "Nightfall",
-        status: "Optimistic Rollup",
-        linkUrl: "docs/nightfall/introduction/overview",
-        imageUrl: "img/Nightfall.png",
-        description: "An optimistic rollup solution designed for enterprises that supports private transactions."
-    },
-    {
-        title: "zkEVM",
-        status: "ZK Rollup",
-        linkUrl: "docs/zkEVM/introduction",
-        imageUrl: "img/hermez.svg",
-        description: "The first source-available ZK-Rollup with Ethereum's security & full EVM opcode equivalence."
-    },
-    {
         title: "Miden",
         status: "STARK-based ZK Rollup",
         linkUrl: "docs/miden/intro/main",
@@ -95,15 +81,8 @@ export const secondRow = [
         description: "A STARK-based Zero-Knowledge Rollup solution that supports arbitrary smart contracts."
     },
     {
-        title: "Zero",
-        status: "ZK Rollup: Docs Coming Soon",
-        linkUrl: "",
-        imageUrl: "img/zero.svg",
-        description: "A highly scalable, Ethereum-compatible Zero-Knowledge Rollup solution."
-    },
-    {
         title: "ID",
-        status: "Privacy",
+        status: "Privacy & Identity",
         linkUrl: "docs/polygonid/overview",
         imageUrl: "img/polygon-id.svg",
         description: "Scalable blockchain-native identity and authentication solution with ZK-based privacy."
