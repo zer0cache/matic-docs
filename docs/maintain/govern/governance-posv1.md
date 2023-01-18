@@ -1,8 +1,8 @@
 ---
 id: governance-posv1
-title: Polygon PoS v1 Consensus and Governance
-sidebar_label: PoS v1 Governance
-description: Common governance terms and processes for the Polygon PoS v1 blockchain.
+title: Polygon PoS Consensus and Governance
+sidebar_label: PoS Governance
+description: Common governance terms and processes for the Polygon PoS blockchain.
 keywords:
   - docs
   - matic
@@ -13,7 +13,7 @@ slug: governance-posv1
 image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
-This page includes common governance terms and processes for the Polygon PoS v1 blockchain.
+This page includes common governance terms and processes for the Polygon PoS blockchain.
 
 ## Heimdall
 
