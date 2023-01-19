@@ -23,7 +23,7 @@ Even though the Sequencer and Aggregator functions are still centralized at thi
 
 :::caution
 
-Currently the zkProver does not run on ARM-powered Macs. For Windows users, using WSL/WSL2 is not recommended.
+Currently, the zkProver does not run on ARM-powered Macs. For Windows users, using WSL/WSL2 is not recommended.
 
 Unfortunately, Apple M1 chips are not supported for now - since some optimizations on the zkProver require specific Intel instructions. This means some non-M1 computers won't work regardless of the OS, for example: AMD.
 
@@ -128,7 +128,7 @@ docker logs -f eth-node
 
 :::info
 
-Running Postgres instances in a Docker container is an option but we recommend you to use a specialized infrastructure for the database, such as AWS RDS, an on-site server, or any other Postgres DB dedicated infrastructure.
+Running Postgres instances in a Docker container is an option but we recommend using a specialized infrastructure for the database, such as AWS RDS, an on-site server, or any other Postgres DB dedicated infrastructure.
 
 It is not necessary to have a backup because all data is available on L1 and can be resynchronized if it is lost. However, having a backup is strongly advised in order to avoid resynchronizing the entire network in the event of a DB problem.
 
@@ -221,6 +221,8 @@ To run the Postgres instance, go to the `zkevm-node` folder in your terminal and
 ```bash
 docker-compose up -d
 ```
+
+Tags to be used for different docker images available for the node components can be found [here](https://github.com/0xPolygonHermez/zkevm-node/tags).
 
 ## Executor & StateDB Setup
 
@@ -413,7 +415,7 @@ To configure your Metamask to use your custom zkEVM network, follow these steps:
 5. Fill up the L2 network information
     * **Network Name:** Polygon zkEVM - Goerli
     * **New RPC URL:** <http://IP-and-Port-of-zkEVM-Node-Instance>
-    * **Chain ID:** 1402
+    * **Chain ID:** 1422
     * **Currency Symbol:** ETH
     * **Block Explorer URL:** <http://IP-and-Port-of-Explorer-Instance>
 6. Click on **Save** and close the Settings

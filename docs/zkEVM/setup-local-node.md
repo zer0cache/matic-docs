@@ -99,6 +99,20 @@ To restart the whole zkNode environment:
 make restart
 ```
 
+## Configuration Parameters
+​
+The Synchronizer regularly pulls for network updates, mainly from Ethereum but also via the **Trusted Sequencer**'s broadcasting mechanism, in order to stay up-to-date. Unless otherwise specified in the setup, the Synchronizer's **default syncing rate** is every **2 seconds**.
+
+The **Keystore** file, used to **store private keys**, is normally required for running the Sequencer & Aggregator but not for a Synchronizer/RPC-setup.
+
+:::info
+
+We have the inconvenient situation where the **Keystore** file is required to run the node when it shouldn't be, for example, if no transactions are sent to L1. **Keystore is not required in the Mango Testnet** as it uses a trusted sequencer and aggregator.
+
+This will be reviewed when a decentralised zkEVM network is implemented.
+
+:::
+
 ## Sample Data
 
 It's important to populate your local zkEVM node with some data before you start testing out the network. The `make run` command will execute the containers required to run the environment, but it will not execute anything else. **Your local L2 network will be essentially empty**.
