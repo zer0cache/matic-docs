@@ -1,6 +1,6 @@
 ---
 id: withdrawal-queue
-title: WthdrawalQueue
+title: WithdrawalQueue
 description: "The withdrawal queue logic for Polygon Edge."
 keywords:
   - docs
