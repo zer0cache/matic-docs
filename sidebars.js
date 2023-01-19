@@ -1146,8 +1146,8 @@ module.exports = {
             "edge/consensus/pos-stake-unstake",
             "edge/consensus/migration-to-pos",
             "edge/consensus/bls",
-          ],
-        },
+            ],
+          },
         {
           type: "category",
           label: "Block production",
@@ -1428,5 +1428,66 @@ module.exports = {
         "polygonid/contracts/overview"
       ]
     }
-  ]
+  ],
+
+  // #####################################################################
+
+  supernets: [
+    "supernets/overview",
+    "supernets/architecture",
+    "supernets/polybft",
+    {
+      type: "category",
+      label: "[WIP] Core Modules",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "supernets/modules/consensus",
+      ],
+    },
+    {
+      type: "category",
+      label: "Core Contracts",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "supernets/contracts/state-sender",
+        "supernets/contracts/state-receiver",
+        "supernets/contracts/checkpoint-manager",
+        "supernets/contracts/reward-pool",
+        "supernets/contracts/validator-queue",
+        //"supernets/contracts/validator-storage",
+        "supernets/contracts/withdrawal-queue",
+      ],
+    },
+    {
+      type: "category",
+      label: "Bridge",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "supernets/bridge/overview",
+        "supernets/bridge/statesync",
+        "supernets/bridge/checkpoint",
+      ],
+    },
+    {
+      type: "category",
+      label: "JSON RPC Commands",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "supernets/api/json-rpc-eth",
+        "supernets/api/json-rpc-net",
+        "supernets/api/json-rpc-web3",
+        "supernets/api/json-rpc-txpool",
+        "supernets/api/json-rpc-debug",
+      ],
+    },
+  ],
+
 };

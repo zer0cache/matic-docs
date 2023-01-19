@@ -60,11 +60,11 @@ export const secondRow = [
         description: "Build modular and extensible blockchain networks that are compatible with Ethereum."
     },
     {
-        title: "Supernets",
-        status: "Appchains: Docs Coming Soon",
-        linkUrl: "",
+        title: "[ALPHA] Supernets",
+        status: "Appchains: Edge v0.7.0",
+        linkUrl: "docs/supernets/overview",
         imageUrl: "img/supernet.svg",
-        description: "Application-specific blockchain networks that are interoperable, scalable and secure."
+        description: "Application-specific blockchain networks that are interoperable, scalable, and secure."
     },
     {
         title: "Avail",
