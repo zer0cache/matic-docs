@@ -22,7 +22,13 @@ You will need to stop all nodes, add fork configuration into genesis.json by `ib
 ````bash
 polygon-edge ibft switch --chain ./genesis.json --type PoS --deployment 100 --from 200
 ````
+:::caution Switching while using ECDSA
+When using ECDSA, the `--ibft-validator-type` flag must be added to the switch, mentioning that ECDSA is used. If not included, Edge will automatically switch to BLS.
 
+````bash
+polygon-edge ibft switch --chain ./genesis.json --type PoS --ibft-validator-type ecdsa --deployment 100 --from 200
+````
+:::
 To switch to PoS, you will need to specify 2 block heights: `deployment` and `from`. `deployment` is the height to deploy the staking contract and `from` is the height of beginning of PoS. The staking contract will be deployed at the address `0x0000000000000000000000000000000000001001`  at the `deployment`, like as the case of pre-deployed contract.
 
 Please check [Proof of Stake](/docs/edge/consensus/pos-concepts) for more details about Staking contract.
