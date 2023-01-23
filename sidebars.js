@@ -45,7 +45,9 @@ module.exports = {
     "home/faq",
   ],
 
-  delegate: ["maintain/delegate/delegate", "maintain/delegate/delegator-faq"],
+  delegate: ["maintain/delegate/delegate", 
+  //"maintain/delegate/delegator-faq"
+  ],
 
   govern: ["maintain/govern/governance-pos"],
 
@@ -651,14 +653,23 @@ module.exports = {
         "avail/node/avail-node-management",
         {
           type: "category",
-          label: "FAQ",
+          label: "Knowledge Base",
           link: {
             type: "generated-index",
           },
           items: [
-            "maintain/validate/faq/known-issues",
-            "maintain/validate/faq/how-to",
-            "maintain/validate/faq/validator-faq",
+            "maintain/validate/kb/known-issues",
+            "maintain/validate/kb/how-to",
+            {
+              type: "category",
+              label: "Additional Information",
+              link: {
+                type: "generated-index",
+              },
+              items: [
+                "maintain/validate/kb/additional-info/port-config"
+              ]
+            }
           ],
         },
         "maintain/reporting-issues",
@@ -1096,8 +1107,8 @@ module.exports = {
     "faq/technical-faqs",
     // "faq/delegator-faq",
     "faq/commit-chain-multisigs",
-    "maintain/delegate/delegator-faq",
-    "maintain/validate/faq/validator-faq",
+    // "maintain/delegate/delegator-faq",
+    "faq/validator-faq",
     "faq/staking-faq",
     "faq/wallet-bridge-faq",
     "faq/consensys-framework",

@@ -16,6 +16,12 @@ image: https://wiki.polygon.technology/img/polygon-wiki.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+:::info
+
+If you have any queries about the Validator process or facing issues with Heimdall and Bor, head over to the [<ins>Validator FAQ</ins>](/faq/validator-faq.md) page.
+
+:::
+
 ### 1. Error: Bad block/Invalid Merkle
 
 **Description:**

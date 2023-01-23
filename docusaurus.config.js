@@ -97,6 +97,22 @@ module.exports = {
           {
             to: '/docs/develop/wallets/polygon-web-wallet/web-wallet-v3-guide',
             from: '/docs/develop/wallets/polygon-web-wallet/web-wallet-v2-guide',
+          },
+          {
+            to: '/docs/faq/general-faq/',
+            from: '/docs/category/faq/'
+          },
+          {
+            to:'/docs/maintain/validate/kb/known-issues',
+            from:'/docs/maintain/validate/faq/known-issues'
+          },
+          {
+            to:'/docs/maintain/validate/kb/how-to',
+            from:'/docs/maintain/validate/faq/how-to'
+          },
+          {
+            to:'/docs/faq/validator-faq',
+            from:'/docs/maintain/validate/faq/validator-faq'
           }
         ],
         createRedirects: function (existingPath) {
