@@ -63,6 +63,6 @@ If you don't have enough MATIC Testnet tokens in your account to pay for the gas
 
 :::tip
 
-In addition to the Polygon faucet, [Alchemy’s Mumbai Faucet](https://mumbaifaucet.com/) also allows you to test your Polygon applications before going live by providing test MATIC tokens. <ins>**[Here's how to use it](/docs/develop/tools/alchemy-faucet)**</ins>.
+In addition to the Polygon faucet, [Alchemy’s Mumbai Faucet](https://mumbaifaucet.com/) and [QuickNode Multi-chain Faucet](https://faucet.quicknode.com/drip) also allows you to test your Polygon applications before going live by providing test MATIC tokens.
 
 :::
