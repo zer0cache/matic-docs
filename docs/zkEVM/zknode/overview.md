@@ -7,8 +7,6 @@ keywords:
   - docs
   - zk rollups
   - polygon
-  - proof
-  - efficiency
   - hermez
   - zkEVM
   - zkNode

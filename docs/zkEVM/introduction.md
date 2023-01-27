@@ -18,7 +18,7 @@ image: https://wiki.polygon.technology/img/thumbnail/polygon-zkevm.png
 
 This documentation is still a **Work In Progress**. Some topics have been discussed in greater depth, while others require additional clarification. Sections of this documentation might later be reorganized in order to achieve a better flow.
 
-If you are interested in learning about the basics of Zero-knowledge, EVM, and other fundamental concepts behind Polygon zkEVM, check out the [<ins>Polygon zkEVM basics</ins>](/docs/home/polygon-basics/zkEVM-basics.md).
+If you are interested in learning about the basics of Zero-knowledge, EVM, and other fundamental concepts behind Polygon zkEVM, check out the [<ins>Polygon zkEVM basics</ins>](/home/polygon-basics/zkEVM-basics.md).
 
 :::
 

@@ -17,13 +17,11 @@ keywords:
 image: https://wiki.polygon.technology/img/thumbnail/polygon-zkevm.png
 ---
 
-## Overview
-
 Polygon zkEVM handles state transitions caused by Ethereum Layer 2 transaction executions (transactions that users send to the network). Following that, it creates validity proofs that attest to the accuracy of these off-chain state change calculations by utilising zero-knowledge features.
 
 The major components of zkEVM are:
 
-- Proof of Efficiency (PoE) Consensus Mechanism
+- Consensus Contract (PolygonZkEVM.sol)
 - zkNode
    - Synchronizer
    - Sequencers & Aggregators
@@ -35,13 +33,13 @@ The skeletal architecture of Polygon zkEVM is shown below:
 
 ![Skeletal Overview of zkEVM](figures/fig1-simpl-arch.png)
 
-## [Proof of Efficiency (PoE)](proof-of-efficiency.md)
+## [Consensus Contract](protocol/consensus.md)
 
 The earlier version, **Polygon Hermez 1.0**, was based on the **Proof of Donation (PoD)** consensus mechanism. PoD was basically a decentralized auction conducted automatically, with participants (coordinators) bidding a certain number of tokens in order to be chosen to create the next batch.
 
-Our latest **Proof of Efficiency (PoE)** consensus mechanism leverages the experience of the existing **PoD** in v1.0 and add support for the permissionless participation of multiple coordinators to produce batches in L2.
+Our latest **Consensus Contract (PolygonZkEVM.sol)** leverages the experience of the existing **PoD** in v1.0 and add support for the permissionless participation of multiple coordinators to produce batches in L2.
 
-Explore Proof of Efficiency in detail [here](proof-of-efficiency.md).
+Explore Consensus Contract in detail [here](protocol/consensus.md).
 
 ## [zkNode](zknode/overview.md)
 

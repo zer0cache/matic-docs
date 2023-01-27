@@ -2,7 +2,7 @@
 id: glossary
 title: Polygon zkEVM Glossary
 sidebar_label: Glossary
-description: "Definition of anything related to zkEVM"
+description: Definition of key terms related to the Polygon zkEVM
 keywords:
   - docs
   - zk rollups
@@ -21,9 +21,9 @@ Layer 1 or the base blockchain is where the rollup smart contracts are installed
 
 Layer 2 refers to the rollup network; in our case,  the Polygon zkEVM network.
 
-### Proof of Efficiency (PoE)
+### Consensus Contract (PolygonZkEVM.sol)
 
-Consensus mechanism utilized by the Polygon zkEVM network. It is enforced by the smart contracts.
+Consensus mechanism utilized by the Polygon zkEVM network. It is enforced by the smart contracts deployed on Layer 1 (in this case, Ethereum).
 
 ### Batch
 

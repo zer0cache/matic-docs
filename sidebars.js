@@ -1001,7 +1001,32 @@ module.exports = {
   zkEVM: [
     "zkEVM/introduction",
     "zkEVM/architecture",
-    "zkEVM/proof-of-efficiency",
+    {
+      type: "category",
+      label: "zkEVM Protocol",
+      link: {
+        type: "generated-index"
+      },
+      items:[
+        "zkEVM/protocol/protocol-components",
+        "zkEVM/protocol/consensus",
+        "zkEVM/protocol/l2-transaction-cycle",
+        "zkEVM/protocol/incentive-mechanism",
+        {
+              type: "category",
+              label: "Malfunction Resistance",
+              link: {
+                type: "generated-index"
+              },
+              items:[
+                "zkEVM/protocol/sequencer-resistance",
+                "zkEVM/protocol/aggregator-resistance",
+                "zkEVM/protocol/emergency-state",
+              ]
+        },
+        "zkEVM/lx-ly-bridge",
+      ]
+    },
     "zkEVM/zknode/zknode-overview",
     {
       type: "category",
@@ -1059,7 +1084,6 @@ module.exports = {
         },
       ]
     },
-    "zkEVM/lx-ly-bridge",
     {
       type: "category",
       label: "How To Guides",
