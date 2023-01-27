@@ -25,7 +25,7 @@ For the latest technical documentation and tutorials, please head over to our [<
 
 :::tip Contact
 
-You can ask questions in our [<ins>discord for Polygon ID</ins>](https://discord.com/channels/635865020172861441/1052090291743637504)
+You can ask questions in our [<ins>discord for Polygon ID</ins>](https://discord.com/invite/XvpHAxZ)
 
 Also please refer to our [<ins>Twitter page</ins>](https://twitter.com/0xpolygonid) to stay updated with the latest developments on Polygon ID. 
 
