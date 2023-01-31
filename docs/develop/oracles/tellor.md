@@ -81,11 +81,11 @@ contract PriceContract is UsingTellor {
 
 Tellor Tributes: [`0xe3322702bedaaed36cddab233360b939775ae5f1`](https://polygonscan.com/token/0xe3322702bedaaed36cddab233360b939775ae5f1#code)
 
-Oracle: [`0x8f55D884CAD66B79e1a131f6bCB0e66f4fD84d5B`](https://polygonscan.com/address/0x8f55D884CAD66B79e1a131f6bCB0e66f4fD84d5B#code)
+Oracle: [`0xD9157453E2668B2fc45b7A803D3FEF3642430cC0`](https://polygonscan.com/address/0xD9157453E2668B2fc45b7A803D3FEF3642430cC0#code)
 
 #### Looking to do some testing first?:
 
-Polygon Mumbai Testnet: [`0x8f55D884CAD66B79e1a131f6bCB0e66f4fD84d5B `](https://mumbai.polygonscan.com/address/0x8f55D884CAD66B79e1a131f6bCB0e66f4fD84d5B/contracts#code)
+Polygon Mumbai Testnet: [`0xD9157453E2668B2fc45b7A803D3FEF3642430cC0`](https://mumbai.polygonscan.com/address/0xD9157453E2668B2fc45b7A803D3FEF3642430cC0/contracts#code)
 
 Test Tributes: [`0xCE4e32fE9D894f8185271Aa990D2dB425DF3E6bE`](https://mumbai.polygonscan.com/token/0xCE4e32fE9D894f8185271Aa990D2dB425DF3E6bE#code)
 
