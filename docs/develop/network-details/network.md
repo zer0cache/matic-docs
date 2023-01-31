@@ -116,7 +116,7 @@ You can sign up for a dedicated free RPC URL at the following:
 * [Alchemy](https://www.alchemy.com/)
 * [Ankr](https://www.ankr.com/)
 * [Blast (Bware Labs)](https://blastapi.io/)
-* [BlockPI](https://chains.blockpi.io/#/polygon)
+* [BlockPI](https://blockpi.io/)
 * [Chainstack](https://chainstack.com/build-better-with-polygon/)
 * [DataHub (Figment)](https://datahub.figment.io)
 * [Getblock](https://getblock.io/en/)
