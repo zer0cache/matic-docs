@@ -556,9 +556,7 @@ module.exports = {
         type: "generated-index",
       },
       items: [
-        "develop/tools/polygon-faucet",
-        "develop/tools/quicknode-faucet",
-        "develop/tools/alchemy-faucet",
+        "develop/tools/matic-faucet",
         "develop/tools/polygon-gas-station"
       ],
     },
