@@ -36,7 +36,7 @@ To be clear, the current multisigs cannot censor transactions like bridge transa
 | Rights    |<ul> <li>Update staking contracts for staking optimisations, features and upgradations </li> <li>Be able to fix unexpected and unforeseen bugs on POS/Plasma contracts</li></ul>|
 | Signatories    |<ul><li> Quickswap </li> <li>Curve </li> <li>Polygon </li> <li>Horizon Games </li> <li>Cometh  </li></ul>|
 
-| Multisig Address  | **5/9 multisig <br/> 0x355b8E02e7F5301E6fac9b7cAc1D6D9c86C0343f**                                 |
+| Multisig Address  | **5/8 multisig <br/> 0x355b8E02e7F5301E6fac9b7cAc1D6D9c86C0343f**                                 |
 |:--------------:|----------------------------------------|
 | Purpose  | To to be able to update "custom" childerc20s if required on Polygon Commitchain* <br/> |
 | Chain      | Polygon Commitchain                                 |
@@ -50,7 +50,7 @@ To be clear, the current multisigs cannot censor transactions like bridge transa
 | Rights    |Permissionless|
 | Signatories    |Permissionless|
 
-| Multisig Address  | 2/5 Multisig <br/> 0x424bDE99FCfB68c5a1218fd3215caFfD031f19C4 |
+| Multisig Address  | 4/8 Multisig <br/> 0x424bDE99FCfB68c5a1218fd3215caFfD031f19C4 |
 |:--------------:|----------------------------------------|
 | Purpose  | <ul><li>To enable the mapping of "custom" child ERC20s with Mainnet contract. <li>60% of Dapps deployed on Polygon "want" custom child ERC20 token, which needs to be mapped with supervision.<li> Eventually this can go to Governance but this will vastly increase the time for Dapp teams who want custom ERC20.</li></li></li> <li> You can create standard child ERC20s yourselves using Fx portal, its permissionless, no mapping required</li></ul>|
 | Chain      | Ethereum <br/>             |
