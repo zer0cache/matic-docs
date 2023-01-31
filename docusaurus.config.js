@@ -276,26 +276,20 @@ module.exports = {
           position: "right",
           items: [
                   {
-                    href: 'https://wallet.polygon.technology/login?next=%2Fwallet',
+                    href: 'https://wallet.polygon.technology',
                     label: 'PoS Wallet',
                     target: '_blank',
                     rel: null,
                   },
                   {
-                    href: 'https://wallet.polygon.technology/login?next=%2Fbridge',
+                    href: 'https://wallet.polygon.technology/polygon/bridge/deposit',
                     label: 'PoS Bridge',
                     target: '_blank',
                     rel: null,
                   },
                   {
-                    href: 'https://polygon.technology/staking',
+                    href: 'https://staking.polygon.technology/',
                     label: 'PoS Staking',
-                    target: '_blank',
-                    rel: null,
-                  },
-                  {
-                    href: 'https://wallet.polygon.technology/login?next=%2Fwidget-dashboard',
-                    label: 'PoS Widget',
                     target: '_blank',
                     rel: null,
                   },
@@ -306,7 +300,7 @@ module.exports = {
                     rel: null,
                   },
                   {
-                    href: 'https://hermez.io/wallet',
+                    href: 'https://wallet.hermez.io/login',
                     label: 'Hermez Wallet',
                     target: '_blank',
                     rel: null,
