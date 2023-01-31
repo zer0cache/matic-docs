@@ -23,8 +23,14 @@ The only prerequisite is to have your MATIC tokens and ETH on the Ethereum mainn
 ## Access the dashboard
 
 1. In your wallet (e.g. MetaMask), choose the Ethereum mainnet.
-1. Log in to [Polygon Staking](https://staking.polygon.technology/).
-1. Once you log in, you will see some overall statistics along with the list of validators.
+
+<div align="center">
+<img align="center" src={useBaseUrl("/img/staking/choose-eth-mainnet.png")} width="300" />
+</div>
+<br />
+
+2. Log in to [Polygon Staking](https://staking.polygon.technology/).
+3. Once you log in, you will see some overall statistics along with the list of validators.
 
 ![img](/img/staking/home.png)
 
@@ -70,21 +76,54 @@ To view your delegations, click [My Account](https://staking.polygon.technology/
 ## Withdraw rewards
 
 1. Click [My Account](https://staking.polygon.technology/account).
-1. Under your delegated validator, click **Withdraw Reward**.
+
+<div align="center">
+<img align="center" src={useBaseUrl("/img/staking/click-my-account.png")} width="500" />
+</div>
+<br />
+
+2. Under your delegated validator, click **Withdraw Reward**.
+
+<div align="center">
+<img align="center" src={useBaseUrl("/img/staking/withdraw-reward.png")} width="800" />
+</div>
+<br />
 
 This will withdraw the MATIC token rewards to your Ethereum address.
 
 ## Restake rewards
 
 1. Click [My Account](https://staking.polygon.technology/account).
-1. Under your delegated validator, click **Restake Reward**.
+
+<div align="center">
+<img align="center" src={useBaseUrl("/img/staking/click-my-account.png")} width="500" />
+</div>
+<br />
+
+2. Under your delegated validator, click **Restake Reward**.
+
+<div align="center">
+<img align="center" src={useBaseUrl("/img/staking/restake-rewards.png")} width="800" />
+</div>
+<br />
 
 This will restake the MATIC token rewards to the validator and increase your delegation stake.
 
 ## Unbond from a Validator
 
 1. Click [My Account](https://staking.polygon.technology/account).
-1. Under your delegated validator, click **Unbond**.
+
+<div align="center">
+<img align="center" src={useBaseUrl("/img/staking/click-my-account.png")} width="500" />
+</div>
+<br />
+
+2. Under your delegated validator, click **Unbond**.
+
+<div align="center">
+<img align="center" src={useBaseUrl("/img/staking/unbond-from-validator.png")} width="800" />
+</div>
+<br />
 
 This will withdraw your rewards from the validator and your entire stake from the validator.
 

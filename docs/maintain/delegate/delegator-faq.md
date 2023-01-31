@@ -47,13 +47,19 @@ Staking through Binance is not yet supported. There will be an announcement if a
 
 ### I have completed my delegation, where can I check details?
 
-Once you have completed your delegation, wait for 12 block confirmations on Ethereum (~3-5 minutes), then on the Dashboard,you can click on the “My Delegator Details” option on the left-hand side. Or you could also click on “Show Delegator Profile” card.
+Once you have completed your delegation, wait for 12 block confirmations on Ethereum (approx. 3-5 minutes), then on the Dashboard, you can click on **My Account**.
+
+<div>
+  <img src={useBaseUrl("/img/delegator-faq/my-account.png")} />
+</div>
 
 ### Where can I check my rewards?
 
-On the Dashboard, you can click on the “My Delegator Details” option on the left-hand side. Or you could also click on “Show Delegator Profile” card.
+On the Dashboard, you can click on the **My Account** option on the left-hand side. 
 
-Check the `New Rewards` card on the right. Once you accrue rewards, you can click on the `Details` link to check rewards in detail.
+<div>
+  <img src={useBaseUrl("/img/delegator-faq/my-account.png")} />
+</div>
 
 ### Do I need ETH to pay for Gas fees?
 
@@ -87,7 +93,11 @@ Rewards will be higher, to begin with, and will keep decreasing as the locked su
 
 ### How can I claim my rewards?
 
-You can claim your rewards instantly by clicking on the **New Rewards** card and then clicking on the **Withdraw Rewards** button. This will transfer the rewards accumulated to your delegated account on Metamask.
+You can claim your rewards instantly by clicking on the **Withdraw Reward** button. This will transfer the rewards accumulated to your delegated account on Metamask.
+
+<div>
+  <img src={useBaseUrl("/img/delegator-faq/withdraw-reward.png")} />
+</div>
 
 ### What is the Unbonding period?
 
@@ -100,6 +110,10 @@ No. Once you unbond, you will stop receiving rewards.
 ### How many transactions does the delegation require?
 
 Delegation requires 2 transactions, one after the other. One to **Approve** the request and another to **Deposit**.
+
+<div>
+  <img src={useBaseUrl("/img/delegator-faq/delegate.png")} />
+</div>
 
 ### What does Redelegate Rewards mean?
 
@@ -160,9 +174,23 @@ The Claim Stake button will only be enabled when your unbonding period is comple
 
 Yes, under the Claim Stake button you would see a note on how many checkpoints are pending before the Claim Stake button would be enabled. Every checkpoint takes approximately 30 minutes. However, some checkpoints could be delayed upto ~1 hour due to congestion on Ethereum.
 
+<div>
+  <img src={useBaseUrl("/img/delegator-faq/unbond.png")} />
+</div>
+
 ### How do I switch my delegation from Foundation Nodes to External nodes?
 
 You can switch your Delegation using the **Move Stake** option on the Staking UI. This will switch your Delegation from the Foundation node to any other external node of your choice.
+
+<div align="center">
+  <img src={useBaseUrl("/img/delegator-faq/move-stake.png")} width="500" />
+</div>
+
+You will see a list of other validators:
+
+<div>
+  <img src={useBaseUrl("/img/delegator-faq/validators.png")} />
+</div>
 
 ### Will there be any ubonding period when I switch Delegation from Foundation nodes to external nodes?
 
