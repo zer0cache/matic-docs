@@ -65,6 +65,14 @@ The `zkevm-node` docker image must be built at least once and whenever the code 
 make build-docker
 ```
 
+:::caution Building Docker Image
+
+For a given version of the Testnet implementation, be sure to use configuration files from the correct and corresponding tag. For instance: **to build an RC9 image, use configuration files from RC9 tag**.
+
+All tags can be found here **https://github.com/0xPolygonHermez/zkevm-node/tags**
+
+:::
+
 Certain commands on the `zkevm-node` can interact with smart contracts, run specific components, create encryption files, and print debug information. 
 
 To interact with the binary program, we provide `docker-compose` files and a `Makefile` to spin up/down the various services and components, ensuring smooth local deployment and a better command line interface for developers.
