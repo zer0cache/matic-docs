@@ -8,8 +8,9 @@ keywords:
   - matic
   - multisig
   - address
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -35,6 +36,7 @@ To be clear, the current multisigs cannot censor transactions like bridge transa
 | Chain      | Ethereum                                 |
 | Rights    |<ul> <li>Update staking contracts for staking optimisations, features and upgradations </li> <li>Be able to fix unexpected and unforeseen bugs on POS/Plasma contracts</li></ul>|
 | Signatories    |<ul><li> Quickswap </li> <li>Curve </li> <li>Polygon </li> <li>Horizon Games </li> <li>Cometh  </li></ul>|
+
 
 | Multisig Address  | **5/8 multisig <br/> 0x355b8E02e7F5301E6fac9b7cAc1D6D9c86C0343f**                                 |
 |:--------------:|----------------------------------------|

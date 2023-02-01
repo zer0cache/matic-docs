@@ -113,6 +113,10 @@ module.exports = {
           {
             to:'/docs/faq/validator-faq',
             from:'/docs/maintain/validate/faq/validator-faq'
+          },
+          {
+            to:'/docs/maintain/validator/responsibilities',
+            from:'/docs/maintain/validate/validator-responsibilities'
           }
         ],
         createRedirects: function (existingPath) {
@@ -234,7 +238,7 @@ module.exports = {
       {
         label: "Ecosystem Careers",
         href: "https://ecosystemjobs.polygon.technology/jobs/"
-    },
+      },
     ]
     },
     ],

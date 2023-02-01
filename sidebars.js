@@ -564,7 +564,6 @@ module.exports = {
 
   maintain: [
     "maintain/validate/validator-index",
-    "maintain/validate/validator-responsibilities",
     {
       type: "category",
       label: "Validator Overview",
@@ -1134,8 +1133,7 @@ module.exports = {
     "faq/validator-faq",
     "faq/staking-faq",
     "faq/wallet-bridge-faq",
-    "faq/consensys-framework",
-    "faq/widget-faq",
+    "faq/consensys-framework"
   ],
 
 // #####################################################################

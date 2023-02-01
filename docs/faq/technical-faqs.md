@@ -1,11 +1,11 @@
 ---
 id: technical-faqs
-title: Technical FAQs
+title: Technical FAQ
 description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
-image: https://matic.network/banners/matic-network-16x9.png 
+image: https://wiki.polygon.technology/img/polygon-wiki.png
 ---
 
 :::tip Stay in the know
