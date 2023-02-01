@@ -73,3 +73,14 @@ We repurpose the ethash header fields as follows:
 Thus, the `miner` field is used for proposing a vote for a certain address, not to show the proposer of the block.
 
 The information about the proposer of the block can be found by recovering the pubkey from the Seal field of the RLP encoded Istanbul extra data field in the block headers.
+
+## Which parts and values of Genesis can safely be modified?
+
+:::caution
+
+Please make sure to create a manual copy of the existing genesis.json file before attempting to edit it.
+Also, the entire chain has to be stopped before editing the genesis.json file. Once the genesis file is modified, the newer version of it has to distributed across all non-validator and valdiator nodes.
+
+:::
+
+**Only the bootnodes section of the genesis file can safely be modified**, where you can add or remove bootnodes from the list.
