@@ -11,7 +11,7 @@ keywords:
   - checkpoint
 ---
 
-A user sends a transaction to an exit contract which generates a `sidechain`
+A user sends a transaction to an exit contract which generates a `childchain`
 exit event.
 
 The exit root is sent into a `rootchain` contract called
