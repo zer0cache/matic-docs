@@ -1470,16 +1470,6 @@ module.exports = {
     "supernets/polybft",
     {
       type: "category",
-      label: "[WIP] Core Modules",
-      link: {
-        type: "generated-index",
-      },
-      items: [
-        "supernets/modules/consensus",
-      ],
-    },
-    {
-      type: "category",
       label: "Core Contracts",
       link: {
         type: "generated-index",

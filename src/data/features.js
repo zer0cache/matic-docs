@@ -53,15 +53,15 @@ export const secondRow = [
     },
     {
         title: "Edge",
-        status: "Blockchain SDK",
+        status: "Blockchain SDK: Edge 0.6.0x",
         class_name: "polygon-banner",
         linkUrl: "docs/edge/overview/",
         imageUrl: "img/home/polygon-edge.svg",
         description: "Build modular and extensible blockchain networks that are compatible with Ethereum."
     },
     {
-        title: "[ALPHA] Supernets",
-        status: "Appchains: Edge v0.7.0",
+        title: "Supernets",
+        status: "Appchains: Edge 0.7.0x",
         linkUrl: "docs/supernets/overview",
         imageUrl: "img/supernet.svg",
         description: "Application-specific blockchain networks that are interoperable, scalable, and secure."

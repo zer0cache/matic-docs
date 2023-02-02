@@ -14,14 +14,15 @@ keywords:
   - extensible
 ---
 
-:::caution
+:::caution Active development
 
-All the client-based documentation is being revamped due to the new
-client updates to Polygon Edge and is subject to change. Please stay
-tuned!
+The Supernets documentation is a work in progress. Currently, this Hub only extends
+the original **[<ins>Polygon Edge</ins>](/edge/overview.md)** documentation to provide material for
+the functionality in the
+**[<ins>v0.7.0-alpha release</ins>](https://github.com/0xPolygon/polygon-edge/releases/tag/v0.7.0-alpha1)**.
 
-Please also feel free to raise an issue or pull request if you have any
-queries or suggestions.
+**The code is undergoing an audit and should not yet be used in production environments.**
+Please get in touch with the Polygon team if you would like to use it in production or have any questions.
 
 :::
 
@@ -41,16 +42,16 @@ cover later on.
 
 With the help of PolyBFT, Polygon Edge supports an in-built bridging mechanism
 (a two-way bridge), which enables arbitrary message passing between
-a Supernet (`sidechain`) and another proof-of-stake blockchain (`rootchain`). Transfers can
+a Supernet (`childchain`) and another proof-of-stake blockchain (`rootchain`). Transfers can
 occur without mapping.
 
-Message passing between a `rootchain` to a given `sidechain` is
-accomplished by continuously syncing the state of the `rootchain` with the `sidechain`, known
+Message passing between a `rootchain` to a given `childchain` is
+accomplished by continuously syncing the state of the `rootchain` with the `childchain`, known
 as `StateSync`. These transfers of state happen between system calls. The mechanics of `StateSync`
 are explained [here](bridge/statesync.md).
 
-When passing messages from a `sidechain` to a `rootchain`, the validator set will commit
-`checkpoints`, a snapshot of the `sidechain` state. The mechanics of `checkpoints` are explained
+When passing messages from a `childchain` to a `rootchain`, the validator set will commit
+`checkpoints`, a snapshot of the `childchain` state. The mechanics of `checkpoints` are explained
 [here](bridge/checkpoint.md).
 
 ## Message Pool

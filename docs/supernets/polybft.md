@@ -11,14 +11,15 @@ keywords:
   - pos
 ---
 
-:::caution
+:::caution Active development
 
-All the client-based documentation is being revamped due to the new
-client updates to Polygon Edge and is subject to change. Please stay
-tuned!
+The Supernets documentation is a work in progress. Currently, this Hub only extends
+the original **[<ins>Polygon Edge</ins>](/edge/overview.md)** documentation to provide material for
+the functionality in the
+**[<ins>v0.7.0-alpha release</ins>](https://github.com/0xPolygon/polygon-edge/releases/tag/v0.7.0-alpha1)**.
 
-Please also feel free to raise an issue or pull request if you have any
-queries or suggestions.
+**The code is undergoing an audit and should not yet be used in production environments.**
+Please get in touch with the Polygon team if you would like to use it in production or have any questions.
 
 :::
 
@@ -56,15 +57,15 @@ known as IBFT (Istanbul Byzantine Fault Tolerance).
 > network that is resilient enough to function correctly
 > even if some nodes are dishonest or malicious.
 > A PBFT implementation, which IBFT is one of,
-> can tolerate up to *f* faulty nodes in a
-> network of 3f + 1 nodes. The network remains fault tolerant so long as two-thirds of
+> can tolerate up to **f faulty nodes** in a
+> network of **3f + 1 nodes**. The network remains fault tolerant so long as two-thirds of
 > nodes are honest. This is sometimes referred to as a “super-majority rules” algorithm.
 
 Each PolyBFT node maintains a local copy of the blockchain. The PolyBFT blockchain can be modeled
 as a list of blocks, like the Ethereum blockchain. The height of a block is defined as the number
 of parent links that separate the block from the genesis block, with height 0. The protocol runs
-sequential instances of a block finalization protocol, where the objective of the h-th instance is
-to decide which Ethereum block is to be added at height `h` of the blockchain.
+sequential instances of a block finalization protocol, where the objective of the height **h-th**
+instance is to decide which Ethereum block is to be added at height `h` of the blockchain.
 
 ## Consensus Engine: IBFT 2.0
 
@@ -180,8 +181,8 @@ process will typically follow the steps below.
     for it to be added to the blockchain. If the required number of votes is not reached during a
     particular round, the voting process will continue into the next round, and thus, the protocol
     "increases the round". Another validator will attempt to seal the sequence in the new round.
-    > The best case for a proposed block is that it is sealed at round 0. If blocks are repeatedly being
-    > sealed at a high-order round, which usually indicates a problem with the network.
+    > The best case for a proposed block is that it is sealed at round 0. Blocks that are repeatedly
+    > sealed at a high-order round which usually indicates a problem with the network.
 
 3. If the proposed block is accepted, it will be added to the blockchain, and the state of the blockchain
    will be updated to reflect the changes introduced by the transactions in the block.
@@ -223,21 +224,22 @@ poor performance. The slashing mechanics are still being determined, but PolyBFT
 include a mechanism to penalize bad actors. Slashing a validator typically involves a penalty, such
 as losing some or all of their stake on the network.
 
-Examples of malicious activities are double-signing and equivocation.
+Examples of malicious activities are double-signing and equivocation:
 
-Double-signing refers to the act of signing two conflicting transactions. When a validator double-signs,
-it creates a situation where the network is unable to reach consensus on the state of the blockchain,
-which can lead to problems such as an attempt to fork or network instability.
+- Double-signing refers to the act of signing two conflicting transactions. When a validator double-signs,
+  it creates a situation where the network is unable to reach consensus on the state of the blockchain,
+  which can lead to problems such as an attempt to fork or network instability.
 
-Equivocation is another behavior that can lead to validator slashing in a PoS network. Equivocation
-refers to the act of a validator attempting to create two conflicting versions of the blockchain,
-which can also lead to problems such as fork or network instability.
+- Equivocation refers to the act of a validator attempting to create two conflicting versions of the
+  blockchain, which can also lead to problems such as fork or network instability.
 
 :::
 
 ## Optional In-built bridge integration
 
-With the help of PolyBFT, the Polygon client supports an in-built bridging mechanism (a two-way bridge)
-known as **FxPortal**, which enables arbitrary message passing between a Supernet (`sidechain`) and another proof-of-stake blockchain (`rootchain`). Transfers can occur without mapping. Learn more
-[here](bridge/fxportal.md)
->
+With the help of PolyBFT, the Polygon client supports an
+[in-built bridging mechanism (a two-way bridge)](/supernets/bridge/overview.md),
+which enables arbitrary message passing between a Supernet (`childchain`) and another proof-of-stake
+blockchain (`rootchain`). Transfers can occur without mapping.
+
+Learn more [here](/supernets/bridge/overview.md).

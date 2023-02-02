@@ -8,23 +8,23 @@ keywords:
   - edge
   - bridge
   - fxportal
-  - sidechain
+  - childchain
   - rootchain
   - statesync
 ---
 
-A Polygon Edge-based chain, that is, a `sidechain`, can connect to a layer 1 network,
+A Polygon Edge-based chain, that is, a `childchain`, can connect to a layer 1 network,
 that is, a `rootchain` to send and receive messages.
 
 A user sends a transaction into a [`StateSender`](../contracts/state-sender.md) contract.
-A [`StateReceiver`](../contracts/state-receiver.md) contract is present on the `sidechain`
+A [`StateReceiver`](/supernets/contracts/state-receiver.md) contract is present on the `childchain`
 that is used to listen for state `data`.
 
 ![Commitment Diagram](/img/supernets/commitment.png)
 
-The `sidechain` calls the `StateSync` method to synchronize the states. Once the length
+The `childchain` calls the `StateSync` method to synchronize the states. Once the length
 of the data that the `rootchain` reaches **2048**, that is, a predefined number of `StateSync`t
-events in the `rootchain`, the `sidechain` will create a commitment using a merkle trie
+events in the `rootchain`, the `childchain` will create a commitment using a merkle trie
 for the `StateSync` objects.
 
 The `root` of the Merkle trie is the *commitment root*. Edge uses the **memory pool** to
