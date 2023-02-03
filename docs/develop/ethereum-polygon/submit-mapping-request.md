@@ -37,7 +37,7 @@ In order to map tokens between Ethereum and Polygon PoS, you may use the [Polygo
 
 **Step 3 &rarr;** Enter your **Ethereum/Goerli** token address in the **Ethereum Token Address** field. Make sure your token contract code has been verified on the **Ethereum/Goerli** blockchain explorers.
 
-**Step 4 &rarr;** After adding the **Ethereum Token Address**, the corresponding fields viz. **Token Name, Token Symbol, and Token Decimal** will be automatically populate with the contract details.
+**Step 4 &rarr;** After adding the **Ethereum Token Address**, the corresponding fields viz. **Token Name, Token Symbol, and Token Decimal** will be automatically populated with the contract details.
 
 **Step 5 &rarr;** Now, click on the **Begin Mapping** button to initiate the mapping process. As this involves an Ethereum transaction, you will need to connect your wallet to proceed.
 
