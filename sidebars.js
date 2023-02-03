@@ -1079,6 +1079,7 @@ module.exports = {
             "zkEVM/zkProver/executor-pil",
           ]
         },
+        "zkEVM/zkProver/arithmetic-sm",
       ]
     },
     {
