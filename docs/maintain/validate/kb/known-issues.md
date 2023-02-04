@@ -383,7 +383,7 @@ These logs throw up when there is no enough ETH in your signer wallet.
 **Solution:**
 It is recommended to have 1 ETH in your signer wallet but can keep .5 to .75 in case you check it often enough.
 
-26. Heimdall:  No staking sequence exists: %s %s             module=staking
+### 26. Heimdall:  No staking sequence exists: %s %s             module=staking
 
 
 If the following logs are found on a large frequency on Heimdall then this issue is related to the bridge service resetting the bridge directory fixes this issue.
@@ -394,7 +394,7 @@ mv /var/lib/rabbitmq/mnesia /var/lib/rabbitmq/mnesia-old
 sudo service rabbitmq-server start
 ```
 
-27. Retrying again in 5 seconds to fetch data from Heimdall path=bor/span/1
+### 27. Retrying again in 5 seconds to fetch data from Heimdall path=bor/span/1
 
 These logs in Bor mean that it cannot connect to Heimdall. 
 
@@ -431,13 +431,13 @@ wget -c <Snapshot URL>
 tar -xzvf <snapshot file> -C <HEIMDALL_DATA_DIRECTORY>
 ```
 
-28. etherbase missing: etherbase must be explicitly specified
+### 28. etherbase missing: etherbase must be explicitly specified
 
-To fix this issue, the signer address that is used to mine must be added inside `miner.etherbase` section in the `config.toml` file
+To fix this issue, the signer address that is used to mine must be added inside `miner.etherbase` section in the `config.toml` file.
 
 
 
-29. Steps to Prune the node
+### 29. Steps to Prune the node
 
 Please use the below steps:
 
