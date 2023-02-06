@@ -15,7 +15,7 @@ image: https://wiki.polygon.technology/img/thumbnail/polygon-zkevm.png
 
 The KECCAK-F State Machine is one of the secondary zkProver state machines. It computes message string hashes and validates the accuracy of those computations upon the request of Main SM.
 
-Although the architecture of the original KECCAK hash function is simple, the KECCAK-F SM is not a state machine or a simple automated version of the cryptographic hash function.
+Although the architecture of the original KECCAK hash function is simple, the KECCAK-F SM is not just a state machine or a simple automated version of the cryptographic hash function.
 
 First, a gates state machine is used to implement the KECCAK-F SM. A binary circuit that operates on a bit-by-bit basis.
 
