@@ -1080,6 +1080,22 @@ module.exports = {
           ]
         },
         "zkEVM/zkProver/arithmetic-sm",
+        {
+          type: "category",
+          label: "Hashing SM",
+          link: {
+            type: "generated-index"
+          },
+          items:[
+            "zkEVM/zkProver/intro-hashing-sm",
+            "zkEVM/zkProver/keccak-framework",
+            "zkEVM/zkProver/paddingkk-sm",
+            "zkEVM/zkProver/paddingkk-bit-sm",
+            "zkEVM/zkProver/bits2field-sm",
+            "zkEVM/zkProver/keccakf-sm",
+            "zkEVM/zkProver/poseidon-sm",
+          ]
+        },
       ]
     },
     {
