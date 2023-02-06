@@ -14,13 +14,7 @@ keywords:
 image: https://wiki.polygon.technology/img/thumbnail/polygon-zkevm.png
 ---
 
-Core to the integrity of the **Polygon zkEVM** is its zero-knowledge prover, aka the **zkProver**.
-
-This documentation provides a detailed architectural description of the zkProver without delving deep into its technical complexities. Additionally, it briefly describes its state machines, which are fully documented [<ins>here</ins>](https://docs.hermez.io/zkEVM/zkProver/State-Machines/Overview/zkProver-State-Machines/#state-machines).
-
-## Introduction
-
-The design paradigm at Polygon has shifted to developing a **zero-knowledge virtual machine (zkEVM)** that emulates the Ethereum Virtual Machine (EVM).
+The design paradigm at Polygon has shifted to developing a **zero-knowledge virtual machine** that emulates the Ethereum Virtual Machine (EVM).
 
 Proving and verification of transactions in **Polygon zkEVM** are all handled by a zero-knowledge prover component called the **zkProver**. All the rules for a transaction to be valid are implemented and enforced in the zkProver.
 
@@ -32,7 +26,7 @@ zkProver is a component of the Polygon zkEVM which is solely responsible for Pro
 
 :::
 
-## Interation with Node and Database
+## Interaction with Node and Database
 
 The zkProver mainly interacts with two components, i.e. the Node and the Database (DB). Hence, before diving deeper into other components, we must understand the flow of control between zkProver, the Node, and Database. Here is a diagram to explain the process clearly.
 
