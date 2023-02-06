@@ -1527,6 +1527,7 @@ module.exports = {
         "supernets/api/json-rpc-debug",
       ],
     },
+    "supernets/supernets-faq",
   ],
 
 };
