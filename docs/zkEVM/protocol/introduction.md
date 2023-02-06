@@ -47,13 +47,13 @@ The Consensus Contract's logic validates the Zero-Knowledge proofs, resulting in
 
 :::info L2 State Root
 
-An L2 State root is a concise cryptographic digest of the L2 State. In case you want to read more about State roots, please check out [this article](https://ethereum.org/en/developers/docs/scaling/zk-rollups/#state-commitments).
+An L2 State root is a concise cryptographic digest of the L2 State. In case you want to read more about State roots, please check out [<ins>this article</ins>](https://ethereum.org/en/developers/docs/scaling/zk-rollups/#state-commitments).
 
 :::
 
 The Trusted Aggregator should run a zkEVM node in **Aggregator mode** and must control a specific Ethereum account enforced in an Consensus Contract.
 
-### PolygonZkEVM.sol
+### Consensus Contract
 
 The Consensus Contract used by both the Trusted Sequencer and the Trusted Aggregator in their interactions with L1 is the **PolygonZkEVM.sol** contract.
 

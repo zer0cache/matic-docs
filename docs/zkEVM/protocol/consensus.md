@@ -55,7 +55,7 @@ The underlying protocol in zkEVM ensures that the state transitions are correct 
 
 :::info
 
-The **Consensus Contract** is currently deployed on the Goerli testnet. It is available [here](https://goerli.etherscan.io/address/0x14cB06e8dE2222912138F9a062E5a4d9F4821409).
+The **Consensus Contract** is currently deployed on the Goerli testnet. It is available [<ins>here</ins>](https://goerli.etherscan.io/address/0x5e2e663A39205348cE985Bccc9673Ca25AeE727E).
 
 :::
 
