@@ -46,11 +46,11 @@ However, this is really the tip of the iceberg in terms of what the zkProver doe
 
 ## State Machines
 
-The zkProver follows modularity of design to the extent that, except for a few components, it is mainly a cluster of State Machines. It has a total of **fourteen (14) State Machines**;
+The zkProver follows modularity of design to the extent that, except for a few components, it is mainly a cluster of State Machines. It has a total of **thirteen (13) State Machines**;
 
 - The **Main State Machine** 
 - **Secondary State Machines &rarr;** Binary SM, Storage SM, Memory SM, Arithmetic SM, Keccak Function SM, PoseidonG SM,
-- **Auxiliary State Machines &rarr;** Padding-PG SM, Padding-KK SM, Nine2One SM, Memory Align SM, Norm Gate SM, Byte4 SM, ROM SM.
+- **Auxiliary State Machines &rarr;** Padding-PG SM, Padding-KK SM, Bits2Field SM, Memory Align SM, Byte4 SM, ROM SM.
 
 Due to the modular design of zkProver, the Main State Machine can delegate as many of tasks as possible to other specialist State Machines. This heavily improves the efficiency of Main SM.
 
