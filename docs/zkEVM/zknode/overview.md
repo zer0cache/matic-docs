@@ -18,7 +18,7 @@ A zkNode is the software needed to run a zkEVM node. It is a client that the net
 - As a node to know the state of the network, or
 - As a participant in the process of batch production in any of the two roles: **Sequencer** or **Aggregator**
 
-The zkNode Architecture modular in nature. You can check out the diagram below for more clarity.
+The zkNode architecture is modular in nature. You can check out the below diagram for more clarity.
 
 ![Figure 3: zkEVM zkNode Diagram](figures/fig3-zkNode-arch.png)
 
@@ -60,8 +60,8 @@ RPC (Remote Procedure Call) is a JSON-RPC interface compatible with Ethereum. Fo
 
 This subcomponent implements the Merkle Tree and connects to the DB backend. It checks integrity at the block level (information related to gas and block size, among others) and some transaction-related information (signatures, sufficient balance). It also stores the Smart Contract code into the Merkle tree and processes transactions using EVM.
 
-## [zkProver](/docs/zkEVM/architecture/zkProver)
+## [zkProver](/zkEVM/zkProver/overview.md)
 
 All the rules for a transaction to be valid are implemented and enforced in the zkProver. A zkProver performs complex mathematical computations in the form of polynomials and assembly language. These are later verified on a Smart Contract.
 
-These rules could be seen as constraints that a transaction must satisfy in order to be able to modify the state tree or the exit tree. The zkProver is the most complex module which required development of two new programming languages to implement the needed elements. Its detailed architecture is outlined [here](/docs/zkEVM/Architecture/zkProver).
+These rules could be seen as constraints that a transaction must satisfy in order to be able to modify the state tree or the exit tree. The zkProver is the most complex module which required development of two new programming languages to implement the needed elements. Its detailed architecture is outlined [here](/zkEVM/zkProver/overview.md).
