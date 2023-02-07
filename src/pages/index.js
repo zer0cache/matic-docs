@@ -105,7 +105,7 @@ defaultValue="beginner"
 className="tabs"
 values={[
 {label: 'Choose a Hub', value: 'beginner'},
-{label: 'Browse by Product', value: 'products'},
+{label: 'Browse by Protocol', value: 'protocols'},
 ]}>
 
 <TabItem value="beginner">
@@ -131,7 +131,7 @@ networkBanner.map((props, idx) => (
       ))}{" "}
   </div>
 </TabItem>
-<TabItem value="products">
+<TabItem value="protocols">
 <div className="row pt-40">
     {networkBanner &&
       networkBanner.length &&
