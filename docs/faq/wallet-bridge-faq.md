@@ -73,7 +73,7 @@ The token contract address will be required when you are trying to add a new or 
 
 You need to manually add the custom token address to Metamask.
 
-Open Metamask and scroll down to click on **Import tokens**.
+Open MetaMask and scroll down to click on **Import tokens**.
 
 <div align="center">
 <img src={useBaseUrl("img/wallet-bridge/wallet-faq-3.png")} width="400" />
@@ -125,8 +125,8 @@ The transaction might be dropped due to the following reasons:
 You can proceed with the dropped transactions in the following ways:
  
 1. If your transaction is stuck for more than an hour, a **Try Again** button will be shown. You can click on the **Try Again** button to complete the same transaction. You can refer to this video for more information on how to use the **Try Again** feature.
-2. Please check your Metamask wallet as well because sometimes transactions might be dropped due to queued-up transactions in the Metamask. In that case, clear the queued-up transactions or re-install the Metamask in the same browser.
-3. You can install the Metamask in an alternate browser and then try to complete the transaction using Polygon Wallet Suite.
+2. Please check your MetaMask wallet as well because sometimes transactions might be dropped due to queued-up transactions in the Metamask. In that case, clear the queued-up transactions or re-install the MetaMask in the same browser.
+3. You can install the MetaMask in an alternate browser and then try to complete the transaction using Polygon Wallet Suite.
 4. You can also use this link to complete the pending withdrawal transaction. Paste the transaction hash in the search option and click the **Confirm Exit** button to complete the transaction.
 
 ## What do I do if the deposit is confirmed but the balance is not getting updated?
@@ -208,7 +208,7 @@ Yes, we support the following hardware wallets:
 1. Trezor
 2. Ledger
 
-Users can connect their Hardware wallet option on Metamask and proceed with their transaction.
+Users can connect their Hardware wallet option on MetaMask and proceed with their transaction.
 Here is the link to connect the hardware wallet on Metamask:
 https://metamask.zendesk.com/hc/en-us/articles/4408552261275
 

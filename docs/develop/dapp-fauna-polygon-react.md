@@ -30,7 +30,7 @@ In this tutorial, we’ll be building a simple allowlisting app that utilizes **
 
 ![img](/img/dapp-fauna-polygon-react/polygon-fauna-app.gif)
 
-GIF of app workflow - user fills out form, Metamask window pops up, and then once the transaction is submitted and confirmed, it surfaces a success message.
+GIF of app workflow - user fills out form, MetaMask window pops up, and then once the transaction is submitted and confirmed, it surfaces a success message.
 
 The application will take in a first name, last name, and a wallet address. Typically, a lot of allowlists take in a wallet address only, but we’ll be using the first and last name as a way to pass in some additional private information within the transaction. The flow of data will be as illustrated in the diagram:
 
@@ -48,10 +48,10 @@ In this tutorial, we’ll be using Fauna as a method of storing private transact
 In order to get started with building, follow these steps:
 
 - Create a Fauna Account — you can sign up [here](https://dashboard.fauna.com/accounts/register?utm_source=polygon.technology&utm_medium=referral&utm_campaign=docs-tutorial).
-- Create a Metamask Wallet with Polygon’s Test Network (Mumbai-Testnet) configured.
-    - First, get set up with Metamask [here](/docs/develop/metamask/tutorial-metamask.md). Make sure you save your Secret Recovery Phrase.
-    - Then, configure the Mumbai-Testnet on your Metamask by following the instructions [here](/docs/develop/metamask/config-polygon-on-metamask.md).
-- Once you have Metamask set up and configured for the Mumbai-Testnet, you’ll need some MATIC to add to your wallet
+- Create a MetaMask Wallet with Polygon’s Test Network (Mumbai-Testnet) configured.
+    - First, get set up with MetaMask [here](/docs/develop/metamask/tutorial-metamask.md). Make sure you save your Secret Recovery Phrase.
+    - Then, configure the Mumbai-Testnet on your MetaMask by following the instructions [here](/docs/develop/metamask/config-polygon-on-metamask.md).
+- Once you have MetaMask set up and configured for the Mumbai-Testnet, you’ll need some MATIC to add to your wallet
     - MATIC is the native cryptocurrency of the Polygon network and it’s used to pay network fees, for staking, and also for governance to the Polygon blockchain (MATIC holders can vote on Polygon changes). In the context of this project, you will need MATIC to pay gas fees that are charged for each transaction. You can learn more about MATIC [here](https://www.kraken.com/en-us/learn/what-is-polygon-matic).
     - To get started, use the [MATIC faucet](https://faucet.polygon.technology/) to get free MATIC sent to your wallet (note: this MATIC will only be available on the Mumbai-Testnet and is only for development purposes). Once on the webpage, make sure the following options are selected:
 
@@ -62,7 +62,7 @@ In order to get started with building, follow these steps:
 
     ![img](/img/dapp-fauna-polygon-react/metamask_wallet_address.png)
 
-    Go into Metamask from your browser. At the top under your Account Name, you’ll see a long string. That’s your account ID. Copy that ID by clicking on it.
+    Go into MetaMask from your browser. At the top under your Account Name, you’ll see a long string. That’s your account ID. Copy that ID by clicking on it.
 
     :::info
 
@@ -117,7 +117,7 @@ If you’re someone that prefers walking through code independently, the GitHub 
         `npm install dotenv`
 
     - Then, create a file called `.env` in the directory you’re currently in. Within `.env`, do the following:
-        - Create an environment variable called `MNEMONIC` and make it equal to the Secret Recovery Phrase for your Metamask wallet - if you didn’t write it down, you can follow [this guide](https://metamask.zendesk.com/hc/en-us/articles/360015290032-How-to-reveal-your-Secret-Recovery-Phrase) to reveal it once again.
+        - Create an environment variable called `MNEMONIC` and make it equal to the Secret Recovery Phrase for your MetaMask wallet - if you didn’t write it down, you can follow [this guide](https://metamask.zendesk.com/hc/en-us/articles/360015290032-How-to-reveal-your-Secret-Recovery-Phrase) to reveal it once again.
         - Create an environment variable called `RPC_APP_ID` and
 
         Your `.env` should look something like this:
@@ -180,11 +180,11 @@ If you’re someone that prefers walking through code independently, the GitHub 
 
 :::
 
-  - Your browser will launch a development instance on [http://localhost:3000](http://localhost:3000) that will then prompt Metamask. It may ask you to re-auth your password. Finally, Metamask will attempt to connect your account on the testnet to your application instance, which will cost you some MATIC in gas fees. You’ll see a window like this:    
+  - Your browser will launch a development instance on [http://localhost:3000](http://localhost:3000) that will then prompt Metamask. It may ask you to re-auth your password. Finally, MetaMask will attempt to connect your account on the testnet to your application instance, which will cost you some MATIC in gas fees. You’ll see a window like this:    
 
   ![img](/img/dapp-fauna-polygon-react/metamask_notification.png)
 
-  - To go through with the transaction, click “Confirm”. The Metamask window will disappear and you should get a small “Transaction Confirmed” notification in your browser. To verify that your wallet has been connected successfully, you should see this page:
+  - To go through with the transaction, click “Confirm”. The MetaMask window will disappear and you should get a small “Transaction Confirmed” notification in your browser. To verify that your wallet has been connected successfully, you should see this page:
 
   ![img](/img/dapp-fauna-polygon-react/truffe_box_installed.png)
 
@@ -706,7 +706,7 @@ The final step in our application is to write to  the blockchain using our smart
 
  Since we passed the `Allowlist` smart contract and all available accounts into our `AllowlistForm` component, we’re able to access them to pull information from our smart contract. Since they’re passed in as props, we’re referencing them as `props.contract` and `props.accounts` rather than `contract` and `accounts`.
 
-2. Once that has been added in, you can see if your application is successfully submitting to Fauna and the blockchain by filling out the form in your application. A Metamask window should pop up, and if you click “Accept”, you’ll receive a notification after a few seconds that the transaction was successfully submitted. You can also check for the newly added document in your Fauna collection to make sure it’s writing to both Fauna and the blockchain.
+2. Once that has been added in, you can see if your application is successfully submitting to Fauna and the blockchain by filling out the form in your application. A MetaMask window should pop up, and if you click “Accept”, you’ll receive a notification after a few seconds that the transaction was successfully submitted. You can also check for the newly added document in your Fauna collection to make sure it’s writing to both Fauna and the blockchain.
 
 ### Read transaction data from the blockchain and lookup in Fauna
 

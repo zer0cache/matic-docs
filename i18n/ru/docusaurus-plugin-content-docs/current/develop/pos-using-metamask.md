@@ -10,7 +10,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-This tutorial is a brief introduction on how to transfer tokens between Ethereum and Polygon on PoS bridge using **_matic.js SDK and Metamask_**. Polygon-Ethereum bridge provides a cross-chain channel using which users can transfer tokens from Ethereum to Polygon and vice-versa. More details on using the bridge can be found [here](/docs/develop/ethereum-polygon/pos/getting-started). This **tutorial mainly focuses on using the bridge from a front end perspective**. We will be using Metamask for this purpose.
+This tutorial is a brief introduction on how to transfer tokens between Ethereum and Polygon on PoS bridge using **_matic.js SDK and Metamask_**. Polygon-Ethereum bridge provides a cross-chain channel using which users can transfer tokens from Ethereum to Polygon and vice-versa. More details on using the bridge can be found [here](/docs/develop/ethereum-polygon/pos/getting-started). This **tutorial mainly focuses on using the bridge from a front end perspective**. We will be using MetaMask for this purpose.
 
 The most important thing to be understood from this tutorial is the **proper usage of the web3 provider in the matic.js instance** we create. Whether using PoS or Plasma, certain actions need to be performed on Polygon and some on Ethereum. Due to this reason, **different providers are required in different scenarios. Hence correctly setting the providers is very necessary.**
 
@@ -50,7 +50,7 @@ ETHEREUM_CHAINID: Chain ID of root chain
 
 ### Deposit
 
-To deposit ERC20 tokens, an approve function call has to be made before calling the deposit function. Upon clicking the deposit button, metamask will first ask to approve the transfer of a specified number of tokens and after the confirmation of the approval transaction, metamask will ask to confirm the deposit transaction. Make sure the root chain network is selected in metamask for deposit functionality.
+To deposit ERC20 tokens, an approve function call has to be made before calling the deposit function. Upon clicking the deposit button, MetaMask will first ask to approve the transfer of a specified number of tokens and after the confirmation of the approval transaction, MetaMask will ask to confirm the deposit transaction. Make sure the root chain network is selected in MetaMask for deposit functionality.
 
 ```js
 // approve amount 10 on parent token
@@ -100,7 +100,7 @@ const txReceipt = await result.getReceipt();
 
 ### Burn
 
-For withdrawing tokens back to root chain,tokens have to be first burnt on child chain. Make sure child chain network is selected in metamask. The **withdrawStart()** method can be used to initiate the withdraw process which will burn the specified amount on polygon chain.
+For withdrawing tokens back to root chain,tokens have to be first burnt on child chain. Make sure child chain network is selected in MetaMask. The **withdrawStart()** method can be used to initiate the withdraw process which will burn the specified amount on polygon chain.
 
 ```js
 const erc20Token = posClient.erc20(<token address>);
@@ -132,7 +132,7 @@ During burning of ERC20 tokens, providers are specified as below
 
 ### Exit
 
-The exit process takes place on ethereum and upon confirmation, equivalent amount of tokens that were burnt on child chain are released to the users address on root chain. Make sure the root chain network is selected in metamask. The burn hash obtained after burning of tokens is given as the input. Wait for the checkpointing to complete before doing this exit process. Checkpoint time is usually ~10 minutes.
+The exit process takes place on ethereum and upon confirmation, equivalent amount of tokens that were burnt on child chain are released to the users address on root chain. Make sure the root chain network is selected in MetaMask. The burn hash obtained after burning of tokens is given as the input. Wait for the checkpointing to complete before doing this exit process. Checkpoint time is usually ~10 minutes.
 
 During exit of ERC20 tokens, the providers are specified as below
 
@@ -140,7 +140,7 @@ During exit of ERC20 tokens, the providers are specified as below
 
 `parentProvider: window.web3`
 
-The **_withdrawExit_** function in PoS bridge involves block proof generation by querying the child chain multiple times and hence it may take 4-5 seconds for Metamask to popup as it consumes time to build the transaction object.
+The **_withdrawExit_** function in PoS bridge involves block proof generation by querying the child chain multiple times and hence it may take 4-5 seconds for MetaMask to popup as it consumes time to build the transaction object.
 
 ```js
 const erc20RootToken = posClient.erc20(<root token address>, true);

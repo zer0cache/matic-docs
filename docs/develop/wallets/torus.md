@@ -23,7 +23,7 @@ Depending on your application needs, Torus can be integrated via the Torus Walle
 
 ## Torus Wallet Integration
 
-If your application is already compatible with Metamask or any other Web3 providers, integrating the Torus Wallet would give you a provider to wrap the same Web3 interface. You can install via a npm package. For more ways and in-depth information, please visit the official Torus documentation on [wallet integration](https://docs.tor.us/wallet/get-started).
+If your application is already compatible with MetaMask or any other Web3 providers, integrating the Torus Wallet would give you a provider to wrap the same Web3 interface. You can install via a npm package. For more ways and in-depth information, please visit the official Torus documentation on [wallet integration](https://docs.tor.us/wallet/get-started).
 
 ### Installation
 

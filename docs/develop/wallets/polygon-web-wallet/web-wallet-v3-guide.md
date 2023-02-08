@@ -224,7 +224,7 @@ You can either watch the video tutorial below or follow the step-by-step guide.
 2. Now, you need to set the amount of MATIC you need, either by choosing one of the given quantities or entering the amount you need (1). You should also select the token that will be swapped for MATIC (2). **The minimum amount for requesting MATIC tokens is 0.5 MATIC**.
   <div align="center"><img src={useBaseUrl("/img/wallet/swap-gas-tokens.png")} width="400"/></div>
 
-3. Metamask will then prompt you to sign the transaction. If you haven't added the Polygon network to your Metamask, you will be prompted to install it. Please proceed with the installation or check out this guide [here](/develop/metamask/config-polygon-on-metamask.md).
+3. MetaMask will then prompt you to sign the transaction. If you haven't added the Polygon network to your Metamask, you will be prompted to install it. Please proceed with the installation or check out this guide [here](/develop/metamask/config-polygon-on-metamask.md).
 
   <div align="center"><img src={useBaseUrl("/img/wallet/swap-gas-signature.png")} width="400"/></div>
 
@@ -276,7 +276,7 @@ You can either watch the video tutorial here or follow the step-by-step guide pr
 
   <div align="center"><img src={useBaseUrl("/img/wallet/swap-token-review.png")} width="400"/></div>
 
-3. **Sign** and confirm the transaction on Metamask and the transaction will be completed successfully.
+3. **Sign** and confirm the transaction on MetaMask and the transaction will be completed successfully.
 
 ## Token Lists
 

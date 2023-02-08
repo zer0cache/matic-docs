@@ -11,7 +11,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 ## Goal
 
-Execute transactions on Polygon chain, without changing provider on Metamask (this tutorial caters to metamask's inpage provider, can be modified to execute transactions from any other provider)
+Execute transactions on Polygon chain, without changing provider on MetaMask (this tutorial caters to metamask's inpage provider, can be modified to execute transactions from any other provider)
 
 Under the hood, user signs on an intent to execute a transaction, which is relayed by a simple relayer to execute it on a contract deployed on Polygon chain.
 

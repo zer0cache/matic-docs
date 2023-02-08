@@ -31,10 +31,10 @@ To test and run the code found in this tutorial, you will need a working [Node.j
 
 You'll also need a Polygon wallet on the Mumbai testnet with a small amount of the MATIC token. Follow the instructions below to get started:
 
-1. **Download and install [Metamask](https://metamask.io/)**. Metamask is a crypto wallet and gateway to blockchain apps. It's very easy to use and simplifies a lot of steps, e.g., setting up a Polygon wallet.
-2. **Connect Metamask to Polygon's [Mumbai testnet](https://docs.polygon.technology/docs/develop/metamask/overview)** and select it in the dropdown menu. We will use Polygon's testnet to mint our NFT as it's free of charge.
-3. **Receive MATIC token** to your wallet by using the [faucet](https://faucet.polygon.technology/). Select the Mumbai testnet and paste your wallet address from Metamask into the form. To mint an NFT, we need to pay a small amount of MATIC, which is a fee charged by miners for operations to add new transactions to the blockchain, e.g., minting an NFT or creating a new smart contract.
-4. **Copy your private key** from Metamask by clicking on the three dots in the top right corner and selecting 'Account details'. On the bottom you can find a button to export your private key. Click it and enter your password when prompted. You can copy and paste the private key in a text file for now. We will use it later in the tutorial when interacting with the blockchain.
+1. **Download and install [Metamask](https://metamask.io/)**. MetaMask is a crypto wallet and gateway to blockchain apps. It's very easy to use and simplifies a lot of steps, e.g., setting up a Polygon wallet.
+2. **Connect MetaMask to Polygon's [Mumbai testnet](https://docs.polygon.technology/docs/develop/metamask/overview)** and select it in the dropdown menu. We will use Polygon's testnet to mint our NFT as it's free of charge.
+3. **Receive MATIC token** to your wallet by using the [faucet](https://faucet.polygon.technology/). Select the Mumbai testnet and paste your wallet address from MetaMask into the form. To mint an NFT, we need to pay a small amount of MATIC, which is a fee charged by miners for operations to add new transactions to the blockchain, e.g., minting an NFT or creating a new smart contract.
+4. **Copy your private key** from MetaMask by clicking on the three dots in the top right corner and selecting 'Account details'. On the bottom you can find a button to export your private key. Click it and enter your password when prompted. You can copy and paste the private key in a text file for now. We will use it later in the tutorial when interacting with the blockchain.
 
 Lastly, you will need a text or code editor. For more convenience, choose an editor with language support for both JavaScript and Solidity. A good option is [Visual Studio Code](https://code.visualstudio.com) with the [solidity](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity) extension enabled.
 

@@ -61,7 +61,7 @@ Here you would see an **Amount** field which would automatically populate with e
 
 For example, if you have delegated 100 MATIC tokens to Foundation Node 1 and now you want to move your stake from the foundation node to an external node, you can delegate a partial amount to the external node of your choice, lets say 50 MATIC tokens. The rest of the 50 MATIC tokens will stay on Foundation node 1. You can then choose to either delegate the rest of the 50 tokens to another external node or the same external node.
 
-Once you have entered the amount you can then click on **Stake Funds** button. This will then ask for confirmation on your Metamask to sign the address.
+Once you have entered the amount you can then click on **Stake Funds** button. This will then ask for confirmation on your MetaMask to sign the address.
 
 Once you have signed the transaction your stake would have successfully moved from the Foundation node to the External node. However, you will have to wait for 12 block confirmations for it reflect on the Staking UI. If your moved funds do not show up after 12 block confirmations, try refreshing the page once to see updated stakes.
 

@@ -71,11 +71,11 @@ Throughout this tutorial, we will be using the ERC20 token `TEST` on the Görli 
 
 > Note: To use your own tokens for deposits and withdrawals, you'll have to get the token 'mapped'. Which essentially means making the contracts on main chain and side chain 'aware' of your custom token. Read more about the Mapping process [here](/docs/develop/ethereum-polygon/plasma/mapping-assets), or you can submit a mapping request [here](/docs/develop/ethereum-polygon/submit-mapping-request).
 
-### Basic setup for the Metamask Wallet (Optional)
+### Basic setup for the MetaMask Wallet (Optional)
 
-1. [Create a wallet](/docs/develop/metamask/hello): If you are new to wallets, then Setup a Metamask Account.
+1. [Create a wallet](/docs/develop/metamask/hello): If you are new to wallets, then Setup a MetaMask Account.
 2. [Configure the Polygon testnet](/docs/develop/metamask/config-polygon-on-metamask): To easily visualise the flow of funds on Polygon, it is instructive if you configure the Polygon testnet on Metamask.
 
-   > Note that we are using Metamask here solely for visualization purposes. There is no requirement to use Metamask at all for using Polygon.
+   > Note that we are using MetaMask here solely for visualization purposes. There is no requirement to use MetaMask at all for using Polygon.
 3. [Create Multiple Accounts](/docs/develop/metamask/multiple-accounts): Before starting with the tutorial, go ahead and have 3 Ethereum test accounts ready.
-4. [Configure token on Polygon](/docs/develop/metamask/custom-tokens): In order to view the flow of funds easily on Polygon using Matic.js, you can configure tokens on Metamask. The `TEST` token, taken as an example for this tutorial, can be configured in Metamask so as to easily visualise account balances. > Again note this is **optional**. You can very easily query the token balances and other variables using [web3](https://web3js.readthedocs.io/en/1.0/)
+4. [Configure token on Polygon](/docs/develop/metamask/custom-tokens): In order to view the flow of funds easily on Polygon using Matic.js, you can configure tokens on Metamask. The `TEST` token, taken as an example for this tutorial, can be configured in MetaMask so as to easily visualise account balances. > Again note this is **optional**. You can very easily query the token balances and other variables using [web3](https://web3js.readthedocs.io/en/1.0/)

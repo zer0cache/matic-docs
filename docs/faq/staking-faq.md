@@ -13,7 +13,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### How to stake tokens on Polygon?
 
-For Staking you would need to have funds on the Ethereum Mainnet (more information [here](https://etherscan.io/gastracker)). Log into Metamask on the Ethereum network using the Staking Dashboard. https://staking.polygon.technology/
+For Staking you would need to have funds on the Ethereum Mainnet (more information [here](https://etherscan.io/gastracker)). Log into MetaMask on the Ethereum network using the Staking Dashboard. https://staking.polygon.technology/
 
 Please watch this video for a graphical illustration of how this works:
 
@@ -76,7 +76,7 @@ This period applies to the originally delegated amount and re-delegated amounts.
 ### How to restake rewards?
 
 Go to “My Account” to check "Your Delegations".
-Clicking on "Restake Reward" will ask you for confirmation from your Metamask account. Once you confirm the transaction, only then the restake transaction would be complete.
+Clicking on "Restake Reward" will ask you for confirmation from your MetaMask account. Once you confirm the transaction, only then the restake transaction would be complete.
 
 `Step 1` <br/>
 <img src={useBaseUrl("img/staking_faq/restake-rewards1.png")} height="300px"/><br/>
@@ -138,7 +138,7 @@ Please watch the video for a graphical illustration of how this works:
 
 ### Are hardware wallets supported?
 
-Yes, hardware wallets are supported. You can use the "Connect Hardware Wallet" option on Metamask and connect your Hardware wallet and then continue the delegation process.
+Yes, hardware wallets are supported. You can use the "Connect Hardware Wallet" option on MetaMask and connect your Hardware wallet and then continue the delegation process.
 
 ### Why can’t I stake directly from Binance?
 
@@ -183,10 +183,10 @@ Please watch the video for a graphical illustration of how this works:
 
 Chrome, Firefox, and Brave.
 
-### Nothing happens when I try to log in or my Metamask is stuck at confirming after logging in. What do I do?
+### Nothing happens when I try to log in or my MetaMask is stuck at confirming after logging in. What do I do?
 
 Check for the following:
 - If you’re using Brave, please turn off the option for “Use Crypto Wallets” in the settings panel.
 - Check if you are logged into Metamask.
-- Check if you are logged into Metamask with Trezor/Ledger. You need to additionally turn on permission to call contracts on your Ledger device, if not enabled already.
+- Check if you are logged into MetaMask with Trezor/Ledger. You need to additionally turn on permission to call contracts on your Ledger device, if not enabled already.
 - Check your system timestamp. If the system time is not correct, you will need to correct it.

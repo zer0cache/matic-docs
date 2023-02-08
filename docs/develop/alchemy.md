@@ -69,9 +69,9 @@ To get your custom Polygon RPC URL from Alchemy, go to your **Hello World** app 
 
 ![img](/img/alchemy/view-key.png)
 
-You can download and create a Metamask account for free [here](https://metamask.io/download.html). Once you've created an account, follow these steps to set up the Polygon PoS network on your wallet.
+You can download and create a MetaMask account for free [here](https://metamask.io/download.html). Once you've created an account, follow these steps to set up the Polygon PoS network on your wallet.
 
-1. Select **Settings** from the drop-down menu in the top right corner of your Metamask wallet.
+1. Select **Settings** from the drop-down menu in the top right corner of your MetaMask wallet.
 2. Select **Networks** from the menu to the left.
 3. Connect your wallet to the Mumbai Testnet using the following parameters:
 
@@ -102,7 +102,7 @@ To double-check our balance is there, let’s make an [eth\_getBalance](https://
 
 ![img](/img/alchemy/get-balance.png)
 
-After you input your Metamask account address and click **Send Request**, you should see a response that looks like this:
+After you input your MetaMask account address and click **Send Request**, you should see a response that looks like this:
 
 ```json
 { "jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000" }
@@ -258,9 +258,9 @@ contract HelloWorld {
 
 This is a super simple smart contract that stores a message upon creation and can be updated by calling the `update` function.
 
-### Connect with Metamask & Alchemy
+### Connect with MetaMask & Alchemy
 
-We’ve created a Metamask wallet, Alchemy account, and written our smart contract, now it’s time to connect the three.
+We’ve created a MetaMask wallet, Alchemy account, and written our smart contract, now it’s time to connect the three.
 
 Every transaction sent from your virtual wallet requires a signature using your unique private key. To provide our program with this permission, we can safely store our private key (and Alchemy API key) in an environment file.
 
@@ -270,7 +270,7 @@ First, install the dotenv package in your project directory:
 npm install dotenv --save
 ```
 
-Then, create a `.env` file in the root directory of our project, and add your Metamask private key and HTTP Alchemy API URL to it.
+Then, create a `.env` file in the root directory of our project, and add your MetaMask private key and HTTP Alchemy API URL to it.
 
 :::warning Warning
 
@@ -400,7 +400,7 @@ Contract deployed to address: 0x3d94af870ED272Cd5370e4135F9B2Bd0e311d65D
 
 If we go to the [Polygon Mumbai explorer](https://mumbai.polygonscan.com/) and search for our contract address, we should be able to see that it has been deployed successfully.
 
-The `From` address should match your Metamask account address and the `To` address will say **Contract Creation**. But if we click into the transaction, we’ll see our contract address in the `To` field.
+The `From` address should match your MetaMask account address and the `To` address will say **Contract Creation**. But if we click into the transaction, we’ll see our contract address in the `To` field.
 
 ![img](/img/alchemy/polygon-scan.png)
 

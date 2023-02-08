@@ -39,9 +39,9 @@ Since Polygon is a Layer-2 scaling solution for Ethereum, we need to get an Ethe
 
 To get your customer Polygon RPC URL from Alchemy, go to your "Hello World" app in your Alchemy dashboard and click "View Key" in the top right corner. Then go ahead and copy your Alchemy HTTP API key!
 
-You can download and create a Metamask account for free [here](https://metamask.io/download.html). Once you've created an account, follow these steps to set up the Polygon network on your wallet.
+You can download and create a MetaMask account for free [here](https://metamask.io/download.html). Once you've created an account, follow these steps to set up the Polygon network on your wallet.
 
-1. Select “Settings” from the drop down menu on the top right corner of your Metamask wallet.
+1. Select “Settings” from the drop down menu on the top right corner of your MetaMask wallet.
 2. Select “Networks” from the menu to the left.
 3. Connect your wallet to the Mumbai Testnet using the following parameters.
 
@@ -57,13 +57,13 @@ You can download and create a Metamask account for free [here](https://metamask.
 
 ### Step 4: Add Polygon Mumbai Test MATIC from a Faucet
 
-In order to deploy our smart contract to the test network, we’ll need some fake MATIC. To get MATIC, you can go to the [Polygon Mumbai Faucet](https://faucet.polygon.technology/), select "Mumbai", choose "MATIC Token", and enter your Polygon wallet address, then click “Submit.” It may take some time to receive your fake Eth due to network traffic. (At the time of writing this, it took around 30 minutes.) You should see Eth in your Metamask account soon after!
+In order to deploy our smart contract to the test network, we’ll need some fake MATIC. To get MATIC, you can go to the [Polygon Mumbai Faucet](https://faucet.polygon.technology/), select "Mumbai", choose "MATIC Token", and enter your Polygon wallet address, then click “Submit.” It may take some time to receive your fake Eth due to network traffic. (At the time of writing this, it took around 30 minutes.) You should see Eth in your MetaMask account soon after!
 
 ### Step 5: Check your Balance
 
 To double check our balance is there, let’s make an [eth\_getBalance](https://docs.alchemy.com/alchemy/apis/polygon-api/eth_getbalance) request using [Alchemy’s composer tool](https://composer.alchemyapi.io/). Select "Polygon" as the chain, "Polygon Mumbai" as the network, "eth_getBalance" as the method, and input your address. This will return the amount of MATIC in our wallet. Check out [this video](https://youtu.be/r6sjRxBZJuU) for instructions on how to use the composer tool!
 
-After you input your Metamask account address and click “Send Request”, you should see a response that looks like this:
+After you input your MetaMask account address and click “Send Request”, you should see a response that looks like this:
 
 ```
 { "jsonrpc": "2.0", "id": 0, "result": "0xde0b6b3a7640000" }
@@ -217,9 +217,9 @@ contract HelloWorld {
 
 This is a super simple smart contract that stores a message upon creation and can be updated by calling the `update` function.
 
-### Step 11: Connect Metamask & Alchemy to your project
+### Step 11: Connect MetaMask & Alchemy to your project
 
-We’ve created a Metamask wallet, Alchemy account, and written our smart contract, now it’s time to connect the three.
+We’ve created a MetaMask wallet, Alchemy account, and written our smart contract, now it’s time to connect the three.
 
 Every transaction sent from your virtual wallet requires a signature using your unique private key. To provide our program with this permission, we can safely store our private key (and Alchemy API key) in an environment file.
 
@@ -231,7 +231,7 @@ First, install the dotenv package in your project directory:
 npm install dotenv --save
 ```
 
-Then, create a `.env` file in the root directory of our project, and add your Metamask private key and HTTP Alchemy API URL to it.
+Then, create a `.env` file in the root directory of our project, and add your MetaMask private key and HTTP Alchemy API URL to it.
 
 Your environment file must be named `.env` or it won't be recognized as an environment file.
 
@@ -361,7 +361,7 @@ Contract deployed to address: 0x3d94af870ED272Cd5370e4135F9B2Bd0e311d65D
 
 If we go to the [Polygon Mumbai explorer](https://mumbai.polygonscan.com/) and search for our contract address we should able to see that it has been deployed successfully.
 
-The `From` address should match your Metamask account address and the To address will say “Contract Creation”. But if we click into the transaction, we’ll see our contract address in the `To` field:
+The `From` address should match your MetaMask account address and the To address will say “Contract Creation”. But if we click into the transaction, we’ll see our contract address in the `To` field:
 
 Congrats! You just deployed a smart contract to the Polygon chain 🎉
 

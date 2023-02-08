@@ -45,7 +45,7 @@ Please follow the steps to add Polygon's Mumbai-Testnet:
 
 <img src={useBaseUrl("img/metamask/testnet-addnetwork.png")} />
 
-- Once you click the button you will see a Metamask Notification, now click on **Approve**.
+- Once you click the button you will see a MetaMask Notification, now click on **Approve**.
 You will be directly switched to Polygon’s Mainnet now in the network dropdown list. You can now close the dialog.
 
 </TabItem>
@@ -63,7 +63,7 @@ Please follow the steps to add Polygon’s Mainnet:
 
 <img src={useBaseUrl("img/metamask/mainnet-addnetwork.png")} />
 
-- Once you click the button you will see a Metamask Notification, now click on **Approve**.
+- Once you click the button you will see a MetaMask Notification, now click on **Approve**.
 You will be directly switched to Polygon’s Mainnet now in the network dropdown list. You can now close the dialog.
 
 </TabItem>

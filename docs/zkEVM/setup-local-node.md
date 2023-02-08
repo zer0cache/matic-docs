@@ -146,9 +146,9 @@ Metamask requires the network to be running while configuring it, so make sure y
 
 :::
 
-To configure your Metamask to use your local zkEVM environment, follow these steps:
+To configure your MetaMask to use your local zkEVM environment, follow these steps:
 
-1. Log in to your Metamask wallet
+1. Log in to your MetaMask wallet
 2. Click on your account picture and then on **Settings**
 3. On the left menu, click on **Networks**
 4. Click on **Add Network** button
@@ -167,4 +167,4 @@ To configure your Metamask to use your local zkEVM environment, follow these ste
     * **Currency Symbol:** ETH
 9. Click on **Save**
 
-You can now interact with your local zkEVM network and sign transactions from your Metamask wallet.
+You can now interact with your local zkEVM network and sign transactions from your MetaMask wallet.

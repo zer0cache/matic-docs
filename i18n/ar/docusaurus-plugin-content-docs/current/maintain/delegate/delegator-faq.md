@@ -31,11 +31,11 @@ The time taken to complete a transaction depends on the gas fees that you have a
 
 ### Which wallets are currently supported?
 
-Currently, only the Metamask extension on the desktop browser and Coinbase Wallet are supported. Additionally you can use WalletConnect and Walletlink from supported mobile wallets to interact with the Staking UI dashboard on desktop/laptop. We will be gradually adding support for other wallets soon.
+Currently, only the MetaMask extension on the desktop browser and Coinbase Wallet are supported. Additionally you can use WalletConnect and Walletlink from supported mobile wallets to interact with the Staking UI dashboard on desktop/laptop. We will be gradually adding support for other wallets soon.
 
 ### Are hardware wallets supported?
 
-Yes, hardware wallets are supported. You can use the "Connect Hardware Wallet" option on Metamask and connect your Hardware wallet and then continue the delegation process.
+Yes, hardware wallets are supported. You can use the "Connect Hardware Wallet" option on MetaMask and connect your Hardware wallet and then continue the delegation process.
 
 ### Why can’t I stake directly from Binance?
 
@@ -111,13 +111,13 @@ We are doing a phased rollout of the Polygon mainnet. Later on, external validat
 
 Chrome, Firefox, and Brave
 
-### My Metamask is stuck at confirming after login, what do I do? Or nothing happens when I try to login?
+### My MetaMask is stuck at confirming after login, what do I do? Or nothing happens when I try to login?
 
 Check for the following:
 
 - If you’re using Brave, please turn off the option for “Use Crypto Wallets” in the settings panel.
 - Check if you are logged into Metamask
-- Check if you are logged into Metamask with Trezor/Ledger. You need to additionally turn on permission to call contracts on your Ledger device, if not enabled already.
+- Check if you are logged into MetaMask with Trezor/Ledger. You need to additionally turn on permission to call contracts on your Ledger device, if not enabled already.
 - Check your system timestamp. If the system time is not correct, you will need to correct it.
 
 ### How do I send funds from Binance or other exchanges to Polygon wallet?
@@ -140,7 +140,7 @@ If you have not re-delegated your rewards before delegating additional funds to 
 
 In case you dont want that to happen, re-delegate your rewards before delegating additional funds.
 
-### I have delegated my tokens via Metamask on the Staking dashboard. Do I need to keep my system or device on?
+### I have delegated my tokens via MetaMask on the Staking dashboard. Do I need to keep my system or device on?
 
 No. Once your Delegation transactions are confirmed, and you can see your tokens reflected in the Total Stake and New Reward cards/sections, then you are done. There is no need to keep your system or device on.
 

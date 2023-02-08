@@ -14,7 +14,7 @@ In case you are new to Ethereum and Metamask, here is a guide on how to create m
 
 ## Create Account
 
-To create multiple accounts, you click on Profile icon on Metamask and then click on Create Account<br/><br/>
+To create multiple accounts, you click on Profile icon on MetaMask and then click on Create Account<br/><br/>
 
 <img src={useBaseUrl("img/metamask/create-accounts.png")} /><br/><br/>
 

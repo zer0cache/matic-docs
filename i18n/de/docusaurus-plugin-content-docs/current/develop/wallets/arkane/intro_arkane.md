@@ -66,7 +66,7 @@ Arkane.createArkaneProviderEngine({clientId: ‘Arketype’}).then(provider => {
     web3 = new Web3(provider);
 });
 ```
-The web3 instance now works as if it was injected by parity or metamask. You can fetch wallets, sign transactions, and messages.
+The web3 instance now works as if it was injected by parity or MetaMask. You can fetch wallets, sign transactions, and messages.
 ### Congratulations, your dapp now supports Arkane 🎉
 > 🧙 To connect to Arkanes production environment and mainnet, you will need to [register your app](https://arkane-network.typeform.com/to/hzbcGJ) and request your [Client ID](https://arkane.gitbook.io/widget/deep-dive/authentication#client-id).
 

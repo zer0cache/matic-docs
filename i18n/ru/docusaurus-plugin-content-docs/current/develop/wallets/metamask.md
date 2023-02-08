@@ -54,7 +54,7 @@ Create a new file, name it `web3.js` and insert the following code in it:
   export default getWeb3;
   ```
 
-The above file exports a function called `getWeb3()` - the purpose of which is to request metamask account’s access via detecting a global object (`ethereum` or `web3`) injected by Metamask.
+The above file exports a function called `getWeb3()` - the purpose of which is to request MetaMask account’s access via detecting a global object (`ethereum` or `web3`) injected by Metamask.
 
 According to [Metamask’s API documentation](https://docs.metamask.io/guide/ethereum-provider.html#upcoming-provider-changes):
 
@@ -84,7 +84,7 @@ Now to send transactions (specifically those that alter the state of the blockch
     this.account = accounts[0];
   })
 ```
-The `getAccounts()` function returns an array of all the accounts on user’s metamask, and `accounts[0]` is the one currently selected by the user.
+The `getAccounts()` function returns an array of all the accounts on user’s MetaMask, and `accounts[0]` is the one currently selected by the user.
 
 ### 3. Instantiate your contracts
 

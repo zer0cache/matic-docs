@@ -34,7 +34,7 @@ Polygon's Test Network which is called **Mumbai** connects with **Ethereum's Go√
     - [Using Truffle](/docs/develop/truffle)
     - [Using Hardhat](/docs/develop/hardhat)
     - [Using Replit](/docs/develop/replit)
-- Connecting to Polygon [with RPC](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask) by adding Polygon on Metamask or directly via [Arkane](/docs/develop/wallets/arkane/network).
+- Connecting to Polygon [with RPC](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask) by adding Polygon on MetaMask or directly via [Arkane](/docs/develop/wallets/arkane/network).
 
 :::note
 You can use the same RPC with web3.js.

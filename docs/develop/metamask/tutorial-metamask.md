@@ -2,7 +2,7 @@
 id: hello
 title: How to create a MetaMask Wallet?
 sidebar_label: Hello Metamask
-description: Learn how to create a Metamask wallet.
+description: Learn how to create a MetaMask wallet.
 keywords:
   - docs
   - matic
@@ -16,7 +16,7 @@ MetaMask is a free and secure browser extension that allows web applications to 
 
 ## Step 1. Install MetaMask on your browser
 
-To create a new wallet with MetaMask you need to install the extension first. You can install Metamask for [Chrome](https://chrome.google.com/webstore/detail/nkbihfbeogaeaoehlefnkodbefgpgknn), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ether-metamask/), Brave and [Opera](https://addons.opera.com/en/extensions/details/metamask/) browsers.
+To create a new wallet with MetaMask you need to install the extension first. You can install MetaMask for [Chrome](https://chrome.google.com/webstore/detail/nkbihfbeogaeaoehlefnkodbefgpgknn), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/ether-metamask/), Brave and [Opera](https://addons.opera.com/en/extensions/details/metamask/) browsers.
 
 1. Open [https://metamask.io](https://metamask.io/) or search for “Metamask extension” using your favorite search engine.
 
@@ -56,7 +56,7 @@ The next step is to create an account.
 <img width="500" src={useBaseUrl("img/metamask/develop/create-password.png")} />
 </div>
 
-3. Metamask will then provide some information about the Secret Recovery Phrase and on the next page you will see your phrase. 
+3. MetaMask will then provide some information about the Secret Recovery Phrase and on the next page you will see your phrase. 
 
 <div align="center" >
 <img  src={useBaseUrl("img/metamask/develop/reveal-phrase.png")} />

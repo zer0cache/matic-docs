@@ -1,7 +1,7 @@
 ---
 id: config-polygon-on-metamask
 title: Add Polygon Network
-description: Integrate Polygon with Metamask by using Polygonscan or adding it manually.
+description: Integrate Polygon with MetaMask by using Polygonscan or adding it manually.
 keywords:
   - wiki
   - polygon
@@ -49,7 +49,7 @@ Please follow the steps to add Polygon's Mumbai-Testnet:
 <img src={useBaseUrl("img/metamask/testnet-button.png")} />
 <p></p>
 
-3. Once you click the button you will see a Metamask Notification, now click on **Approve**.
+3. Once you click the button you will see a MetaMask Notification, now click on **Approve**.
 
 <div align="center">
   <img  src={useBaseUrl("img/metamask/develop/testnet-addnetwork.png")} width="357" height="600" />
@@ -72,7 +72,7 @@ Please follow the steps to add Polygon’s Mainnet:
 <br></br>
 <br></br>
 
-3. Once you click the button you will see a Metamask Notification, now click on **Approve**.
+3. Once you click the button you will see a MetaMask Notification, now click on **Approve**.
 You will be directly switched to Polygon’s Mainnet now in the network dropdown list. You can now close the dialog.
 
 <div align="center">

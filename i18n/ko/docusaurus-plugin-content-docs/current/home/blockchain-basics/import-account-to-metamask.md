@@ -11,7 +11,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can always import your account to Metamask if you're using any other web/mobile wallet. All you need to to make sure that you have a backup of your seedphrase.
+You can always import your account to MetaMask if you're using any other web/mobile wallet. All you need to to make sure that you have a backup of your seedphrase.
 
 If you're using Matic Wallet then you can backup you seedphrase by going to the Settings and then clicking **Show Passphrase**.
 
@@ -19,7 +19,7 @@ If you don't have the seedphrase you will be unable to import your account to Me
 
 ### Installing Metamask
 
-In order to import you account you first need to make sure that you install the Metamask extension on your browser. To install Metamask extension you use this link: https://metamask.io
+In order to import you account you first need to make sure that you install the MetaMask extension on your browser. To install MetaMask extension you use this link: https://metamask.io
 
 <img src={useBaseUrl("img/home/metamask-link.png")} />
 
@@ -49,8 +49,8 @@ By default, only ETH is listed in Metamask. If you already have Matic tokens the
 
 Do keep extreme care of your seedphrase and keep backups, because unlike exchanges, you need to keep your seedphrase safe. If the seedphrase is lost, funds are not recoverable. Also do not ever share this seedphrase with anyone.
 
-### Sending MATIC tokens from Binance and other exchanges to the Metamask wallet
+### Sending MATIC tokens from Binance and other exchanges to the MetaMask wallet
 
 Most exchanges like Binance and others have an option to withdraw funds from your exchange account to your address on the Ethereum blockchain. Once you have setup an account in Metamask, you will see the address of your account.
 
-To send Matic tokens to Metamask, withdraw funds from your exchange account to the Metamask address. After some time, the funds will get reflected in the Metamask account.
+To send Matic tokens to Metamask, withdraw funds from your exchange account to the MetaMask address. After some time, the funds will get reflected in the MetaMask account.

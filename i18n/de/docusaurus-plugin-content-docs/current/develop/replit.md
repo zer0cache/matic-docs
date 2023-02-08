@@ -27,7 +27,7 @@ You need a browser-based web3 wallet to interact with the Polygon Mumbai Testnet
 You must setup all of the following Prerequisites to be able to deploy your solidity smart contract on Polygon:
 
 1. [Create a Replit account](https://replit.com/signup)
-2. [Download Metamask wallet](https://docs.polygon.technology/docs/develop/metamask/hello/)
+2. [Download MetaMask wallet](https://docs.polygon.technology/docs/develop/metamask/hello/)
 3. [Configure Polygon on Metamask](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/)
 4. [Get testnet tokens](https://faucet.polygon.technology)
 

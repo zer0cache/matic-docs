@@ -49,7 +49,7 @@ We have listed three faucet tools you can use to receive **MATIC Testnet tokens*
     - **Test ERC1155** - Standard testnet token used for NFTs
     - **LINK** - ERC677 testnet token that inherits functionality from the ERC20
 
-- Enter your wallet address (you can copy it from your Metamask or Polygon wallet)
+- Enter your wallet address (you can copy it from your MetaMask or Polygon wallet)
 
 - Click on the **Submit** button to send your token request
 

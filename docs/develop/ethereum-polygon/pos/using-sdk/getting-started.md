@@ -42,7 +42,7 @@ import HDWalletProvider from "@truffle/hdwallet-provider"
 use(Web3ClientPlugin)
 ```
 
-The providers can be RPC URLs or web3-based providers like Metamask provider, HDWalletProvider etc. based on requirement.
+The providers can be RPC URLs or web3-based providers like MetaMask provider, HDWalletProvider etc. based on requirement.
 
 For more information, please have a look at the [Matic.js documentation on PoS](https://maticnetwork.github.io/matic.js/docs/pos/).
 

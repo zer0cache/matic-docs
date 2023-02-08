@@ -98,8 +98,8 @@ Go to Solidity Compiler
 - Select Compiler Version to 0.5.10
 - Now, `Compile HelloWorld.sol`
 - After Successful Compilation, it will show <img src={useBaseUrl("img/helloworld/Screenshot_2020-02-14_at_1.08.22_PM.png")} />
-- Now, We have to deploy our smart contract on Polygon Network. For that, we have to connect to web3 world, this can be done by using any of the services like Metamask, Brave, Portis etc. We will be using Metamask. Please follow this [tutorial to setup a Metamask Account](/docs/develop/metamask/hello).
-- Open Metamask and select Custom RPC from the networks dropdown
+- Now, We have to deploy our smart contract on Polygon Network. For that, we have to connect to web3 world, this can be done by using any of the services like Metamask, Brave, Portis etc. We will be using Metamask. Please follow this [tutorial to setup a MetaMask Account](/docs/develop/metamask/hello).
+- Open MetaMask and select Custom RPC from the networks dropdown
 
 <div
         style={{
@@ -162,7 +162,7 @@ Go to Solidity Compiler
         <img src={useBaseUrl("img/helloworld/Screenshot_2020-02-14_at_1.59.10_PM.png")} alt="RemixIDE_Step1"/>
 </div>
 
-- Once Metamask is connected to Remix, the ‘Deploy’ transaction would generate another metamask popup that requires transaction confirmation.
+- Once MetaMask is connected to Remix, the ‘Deploy’ transaction would generate another MetaMask popup that requires transaction confirmation.
 
 <div
         style={{

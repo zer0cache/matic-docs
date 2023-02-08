@@ -98,7 +98,7 @@ Solidity Compiler로 이동
 - Compiler Version을 0.5.10으로 선택
 - 이제, `HelloWorld.sol를 컴파일`하십시오
 - 성공적인 컴파일 후,  이것이 보여집니다. <img src={useBaseUrl("img/helloworld/Screenshot_2020-02-14_at_1.08.22_PM.png")} />
-- 이제 Polygon Network에 스마트 컨트랙트를 배포해야 합니다. 이를 위해 우리는 web3 세계에 연결해야 합니다. 이것은 Metamask, Brave, Portis 등과 같은 서비스를 사용하여 수행할 수 있습니다. 우리는 Metamask를 사용할 것입니다. 이 [메타마스크 계정 설정하기 튜토리얼(tutorial to setup a Metamask Account)](/docs/develop/metamask/hello)를 따라하십시오.
+- 이제 Polygon Network에 스마트 컨트랙트를 배포해야 합니다. 이를 위해 우리는 web3 세계에 연결해야 합니다. 이것은 Metamask, Brave, Portis 등과 같은 서비스를 사용하여 수행할 수 있습니다. 우리는 Metamask를 사용할 것입니다. 이 [메타마스크 계정 설정하기 튜토리얼(tutorial to setup a MetaMask Account)](/docs/develop/metamask/hello)를 따라하십시오.
 - 메타마스크를 열고 네트워크 드롭다운에서 Custom RPC를 선택합니다
 
 <div

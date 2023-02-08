@@ -75,11 +75,11 @@ To use your own tokens for deposits and withdrawals, you'll have to get the toke
 
 :::
 
-### Basic setup for the Metamask Wallet (Optional)
+### Basic setup for the MetaMask Wallet (Optional)
 
-1. [Create a wallet](/docs/develop/metamask/hello): If you are new to wallets, then set up a Metamask Account.
+1. [Create a wallet](/docs/develop/metamask/hello): If you are new to wallets, then set up a MetaMask Account.
 2. [Configure the Polygon testnet](/docs/develop/metamask/config-polygon-on-metamask): To easily visualise the flow of funds on Polygon, it is instructive if you configure the Polygon testnet on Metamask.
-   Note that we are using Metamask here solely for visualization purposes. There is no requirement to use Metamask at all for using Polygon.
+   Note that we are using MetaMask here solely for visualization purposes. There is no requirement to use MetaMask at all for using Polygon.
 3. [Create Multiple Accounts](/docs/develop/metamask/multiple-accounts): Before starting with the tutorial, go ahead and have 3 Ethereum test accounts ready.
 4. [Configure token on Polygon](/docs/develop/metamask/custom-tokens): In order to view the flow of funds easily on Polygon using Matic.js, you can configure tokens on Metamask.
-   The `TEST` token, taken as an example for this tutorial, can be configured in Metamask so as to easily visualize account balances. Again note this is **optional**. You can very easily query the token balances and other variables using [web3.js](https://web3js.readthedocs.io/en/1.0/)
+   The `TEST` token, taken as an example for this tutorial, can be configured in MetaMask so as to easily visualize account balances. Again note this is **optional**. You can very easily query the token balances and other variables using [web3.js](https://web3js.readthedocs.io/en/1.0/)

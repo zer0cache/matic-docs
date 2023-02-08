@@ -21,7 +21,7 @@
   },
   "sidebar.develop.category.Metamask": {
     "message": "Metamask",
-    "description": "The label for category Metamask in sidebar develop"
+    "description": "The label for category MetaMask in sidebar develop"
   },
   "sidebar.develop.category.Wallet Link": {
     "message": "Wallet Link",
