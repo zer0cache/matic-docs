@@ -118,7 +118,7 @@ cd bor
 # Checkout to a proper version
 # For e.g: git checkout 0.3.3
 git checkout <TAG OR BRANCH>
-make bor-all
+make bor
 sudo ln -nfs ~/bor/build/bin/bor /usr/bin/bor
 sudo ln -nfs ~/bor/build/bin/bootnode /usr/bin/bootnode
 ```
