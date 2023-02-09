@@ -198,13 +198,19 @@ Withdrawing funds from Polygon back to the Ethereum mainnet via Plasma Bridge is
 
 ## Swap for Gas
 
-The MATIC token is used for paying gas fees in the Polygon ecosystem. It's always important to have a minimum amount of MATIC to perform transactions on Polygon. There are a few ways you can acquire MATIC tokens:
+The MATIC token is used for paying gas fees in the Polygon ecosystem. It's always important to have a minimum amount of MATIC to perform transactions on Polygon. **In fact, 0.01 MATIC can pay for about 20 transactions**. There are a few ways you can acquire MATIC tokens:
 
 - buy them using Fiat On-ramp platforms,
 - swap for other tokens, or
 - trade them on a supported exchange.
 
 Polygon also offers the possibility of swapping tokens for MATIC. You can currently choose from a range of cryptocurrencies to swap for MATIC, namely ETH, USDC, USDT, and others.
+
+:::tip
+
+This is a gasless transaction. You do not have to pay any gas fees.
+
+:::
 
 You can either watch the video tutorial below or follow the step-by-step guide.
 
@@ -244,11 +250,6 @@ You can either watch the video tutorial below or follow the step-by-step guide.
 
   Transaction completed. Remember that you can always verify it on [Polygonscan](https://polygonscan.com/)!
 
-:::tip
-
-This is a gasless transaction. You do not have to pay a gas fee. Also, 0.01 MATIC can pay for ~20 transactions.
-
-:::
 
 ## Token Swap
 
