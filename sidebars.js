@@ -1080,6 +1080,8 @@ module.exports = {
           ]
         },
         "zkEVM/zkProver/arithmetic-sm",
+        "zkEVM/zkProver/memory-sm",
+        "zkEVM/zkProver/mem-align-sm",
         {
           type: "category",
           label: "Hashing SM",
