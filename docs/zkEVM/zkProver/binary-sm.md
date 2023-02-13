@@ -208,10 +208,11 @@ The previous scheme depicts several cases that need to be treated separately;
     a_2 + b_2 = 1 \cdot 2^8 + c_2,
     $$
 
-​   for some byte $c_2$. The addition $\mathbf{a} + \mathbf{b}$ is then computed as follows, 
-    $$
-    \mathbf{a} + \mathbf{b} = (1, c_2, a_1 + b_1).
-    $$
+    ​for some byte $c_2$. The addition $\mathbf{a} + \mathbf{b}$ is then computed as follows,
+
+$$
+\mathbf{a} + \mathbf{b} = (1, c_2, a_1 + b_1).
+$$
 
 3. If $a_1 + b_1 \geq 2^8$, then we have that:
 
@@ -220,13 +221,14 @@ The previous scheme depicts several cases that need to be treated separately;
     $$
 
     for some byte $c_1$. Then we can write
+
     $$
     \mathbf{a} + \mathbf{b} = (a_2 + b_2 + 1) \cdot 2^8 + c_1.
     $$
 
 Consider the following two scenarios:
 
-(a) If $a_2 + b_2 + 1 \geq 2^8$, then the sum will take the form:
+1. If $a_2 + b_2 + 1 \geq 2^8$, then the sum will take the form:
 
     $$
     a_2 + b_2 + 1 = 1 \cdot 2^8 + c_2.
@@ -238,7 +240,7 @@ Consider the following two scenarios:
     \mathbf{a} + \mathbf{b} = (1, c_2, c_1).
     $$
 
-(b) If $a_2 + b_2 + 1 < 2^8$, then the byte decomposition of $\mathbf{a} + \mathbf{b}$ is:
+2. If $a_2 + b_2 + 1 < 2^8$, then the byte decomposition of $\mathbf{a} + \mathbf{b}$ is:
 
     $$
     \mathbf{a} + \mathbf{b} = (c_2, c_1).
@@ -414,12 +416,12 @@ Recall that we are processing the bytes of $a$ and $b$ from the less significant
    (b) If $\texttt{sgn}(a) < \texttt{sgn}(b)$, we output a $0$, so $a < b$.
 
    (c) If $\texttt{sgn}(a) = \texttt{sgn}(b)$, we compare the last bytes $a_{31}$ and $b_{31}$ in the same way we have compared the previous bytes. We output $0$ or $1$ accordingly.
+    
+    1. If $a_{31} < b_{31}$, we output a $1$, so $a < b$.
 
-        (i) If $a_{31} < b_{31}$, we output a $1$, so $a < b$.
+    2. If $a_{31} = b_{31}$, we output the previous $\texttt{carry}$, maintaining the last decision.
 
-        (ii) If $a_{31} = b_{31}$, we output the previous $\texttt{carry}$, maintaining the last decision.
-
-        (iii) Otherwise, we output a $0$, so $a \not < b$. 
+    3. Otherwise, we output a $0$, so $a \not < b$. 
 
 Let us exemplify the previous procedure setting $a = \mathtt{0xFF FF FF 00}$ and $b = \mathtt{0x00 FF FF FF}$. We know that $a < b$, so we should output a $1$. Observe that the less significant byte of $a$ is leaser than the less significant byte of $b$. Hence, we should put $\texttt{carry}$ equal to $1$. The next two bytes of $a$ and $b$ are both equal to $\mathtt{0xFF FF}$, therefore we maintain $\texttt{carry}$ unchanged equal to $1$. However, since $a$ is negative and $b$ is positive, we should change the decision and output a $1$, independently of the $\texttt{carry}$. 
 
