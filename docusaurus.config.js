@@ -87,10 +87,6 @@ module.exports = {
             from: '/docs/integrate/full-node-deployment',
           },
           {
-            to: '/docs/develop/wallets/metamask',
-            from:'/docs/develop/metamask/overview',
-          },
-          {
             to: '/docs/develop/wallets/getting-started',
             from: '/docs/develop/cexs-wallets/cexs',
           },
