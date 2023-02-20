@@ -44,7 +44,20 @@ There is limited space for accepting new validators. New validators can only joi
 * On the remote machines, your local machine's SSH public key is on the remote machines to let Ansible connect to them.
 * We have Bloxroute available as a relay network. If you need a gateway to be added as your Trusted Peer please contact **@validator-support-team** in [Polygon Discord](https://discord.com/invite/0xPolygon) > POS VALIDATORS | FULL NODE PROVIDERS | PARTNERS > bloxroute.
 
+:::info
+
+Please follow the steps on [<ins>bloXroute instructions</ins>](/maintain/validate/bloxroute.md) to connect your nodes to the bloXroute gateways.
+
+:::
+
 ## Overview
+
+:::caution
+
+You must follow the **exact outlined sequence of actions**, otherwise you will run into issues.
+For example, **a sentry node must always be set up before the validator node**.
+
+:::
 
 To get to a running validator node, do the following:
 
@@ -57,14 +70,6 @@ To get to a running validator node, do the following:
 1. Set the owner and signer keys.
 1. Start the validator node.
 1. Check node health with the community.
-
-:::note
-
-You must follow the **exact outlined sequence of actions**, otherwise you will run into issues.
-
-For example, a sentry node must always be set up before the validator node.
-
-:::
 
 ## Set up the Sentry node
 
@@ -594,6 +599,12 @@ journalctl -u bor.service -f
 ## Check node health with the community
 
 Now that your Sentry and Validator nodes are synced and running, head over to [Discord](https://discord.com/invite/0xPolygon) and ask the community to health-check your nodes.
+
+:::note
+
+As validators, it’s mandatory to always have a check of the signer address. If the ETH balance reaches below 0.5 ETH then it should be refilled. Avoiding this will push out nodes from submitting checkpoint transactions.
+
+:::
 
 ## Proceed to staking
 

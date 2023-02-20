@@ -377,7 +377,7 @@ Let’s verify the `sha256 sum` again for this file:
 
 ```
 # sha256sum genesis.json
-5c10eadfa9d098f7c1a15f8d58ae73d67e3f67cf7a7e65b2bd50ba77eeac67e1  genesis.json
+4bacbfbe72f0d966412bb2c19b093f34c0a1bd4bb8506629eba1c9ca8c69c778  genesis.json
 ```
 
 Now we need to create a default config file for starting Bor.

@@ -625,6 +625,7 @@ module.exports = {
           items: [
             "maintain/port-management",
             "maintain/validate/change-signer-address",
+            "maintain/validate/bloxroute"
           ],
         },
         {
