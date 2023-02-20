@@ -557,7 +557,8 @@ module.exports = {
       },
       items: [
         "develop/tools/matic-faucet",
-        "develop/tools/polygon-gas-station"
+        "develop/tools/polygon-gas-station",
+        "develop/tools/zkevm-gas-station"
       ],
     },
   ],
