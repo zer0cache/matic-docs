@@ -40,7 +40,7 @@ import requests
 requests.get('https://gasstation-mumbai.matic.today/zkevm').json()
 ```
 
-## interpretation
+## Interpretation
 
 An example JSON response will look like this.
 
