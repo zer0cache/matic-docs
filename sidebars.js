@@ -1009,7 +1009,20 @@ module.exports = {
       items:[
         "zkEVM/protocol/protocol-components",
         "zkEVM/protocol/consensus",
-        "zkEVM/protocol/l2-transaction-cycle",
+        {
+              type: "category",
+              label: "Transaction Life Cycle",
+              link: {
+                type: "generated-index"
+              },
+              items:[
+                "zkEVM/protocol/l2-transaction-cycle-intro",
+                "zkEVM/protocol/transaction-execution",
+                "zkEVM/protocol/transaction-batching",
+                "zkEVM/protocol/transaction-sequencing",
+                "zkEVM/protocol/transaction-aggregation",
+              ]
+        },
         "zkEVM/protocol/incentive-mechanism",
         {
               type: "category",
