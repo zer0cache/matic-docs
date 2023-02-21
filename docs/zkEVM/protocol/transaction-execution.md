@@ -24,4 +24,8 @@ The **Trusted Sequencer reads transactions from the pool** and decides whether t
 
 Once a transaction is added to the L2 State, it is broadcast to all other zkEVM nodes via a broadcast service. It is worth noting that **by relying on the Trusted Sequencer, we can achieve fast transaction finality (faster than in L1)**. However, the resulting L2 State will be in a trusted state until the batch is committed in the Consensus Contract.
 
-Users will typically interact with trusted L2 State. However, due to certain protocol characteristics, the verification process for L2 transactions can take a long time, typically around 30 minutes but up to 2 weeks in rare cases. As a result, users should be mindful of the potential risks associated with high-value transactions, particularly those that cannot be reversed, such as off-ramps, over-the-counter transactions, and alternative bridges.
+:::tip Verification on Layer 1
+
+Users will typically interact with trusted L2 State. However, due to certain protocol characteristics, the verification process for L2 transactions (on Layer 1 to enable withdrawals) can take a long time, typically around 30 minutes but up to 2 weeks in rare cases. As a result, users should be mindful of the potential risks associated with high-value transactions, particularly those that cannot be reversed, such as off-ramps, over-the-counter transactions, and alternative bridges.
+
+:::
