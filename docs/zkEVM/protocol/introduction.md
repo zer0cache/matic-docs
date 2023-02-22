@@ -18,7 +18,7 @@ Various **Layer 2 solutions** aimed at improving the **scalability of the Ethere
 
 **Polygon zkEVM is a Layer 2 Rollup solution** that combines data availability and **execution verification in Layer 1 of the Ethereum** blockchain to ensure L2 state transition security and reliability.
 
-This section will describe the infrastructure that Polygon designed and implemented for its zkEVM. It aims to explain how the Polygon zkEVM Protocol manages the L2 Rollup's states while providing state transition verifiability and security.
+This section will describe the infrastructure that Polygon designed and implemented for its zkEVM, with a focus on providing an overview of the components used in the development of the **zkEVM Protocol**.
 
 ## Components
 
@@ -61,53 +61,21 @@ The Trusted Sequencer can commit batch sequences to L1 and store them in the `Po
 
 The `PolygonZkEVM.sol` Contract also **enables the Aggregator to publicly verify transitions from one L2 State root to the next**. The Consensus Contract accomplishes this by validating the Aggregator's ZK-proofs, which attest to the proper execution of transaction batches.
 
-![figure 1](figures/01L2-overview-l2-state-management.png)
-
-As shown in the above figure, **L2 nodes can receive batch data in three different ways**: 
-
-1. Directly from the Trusted Sequencer before the batches are committed to L1, or
-2. Straight from L1 after the batches have been sequenced, or
-3. Only after correctness of execution has been proved by the Aggregator and verified by the `PolygonZkEVM.sol` contract.
-
-It is worth noting that **the three batch data formats are received by L2 nodes in the chronological order** listed above.
-
-## Three L2 States
-
-There are three stages of the L2 State, each corresponding to the three different ways in which L2 nodes can update their state. All three cases depend on the format of batch data used to update the L2 State.
-
-In the **first instance**, the update is informed solely by the information (i.e., Batches consisting of ordered transactions) coming directly from the Trusted Sequencer, before any data availability on L1. The resulting L2 state is called the **Trusted State**.
-
-In the **second case**, the update is based on **information retrieved from the L1 network by L2 nodes**. That is, after the batches have been sequenced and data has been made available on L1. The L2 state is referred to as the **Virtual State** at this point.
-
-The information used to update the L2 State in **the last case** includes verified zero-knowledge proofs of computational integrity. That is, **after the Zero-Knowledge proof has been successfully verified in L1, L2 nodes synchronise their local L2 State root** with the one committed in L1 by the Trusted Aggregator. As a result, such an L2 State is known as the **Consolidated State**.
-
-The figure below depicts the timeline of L2 State stages from a batch perspective, as well as the actions that trigger progression from one stage to the next.
-
-![L2 State stages timeline](figures/02l2-l2-state-timeline.png)
-
 ## zkEVM Node Execution Modes
 
 **zkEVM node** is a software package containing **all components needed to run zkEVM network**. It can be run in three different modes; **as a Sequencer, an Aggregator, or RPC**.
 
 ### Sequencer Mode
 
-In the **Sequencer mode**, the node can do several things some of which are mentioned below:
+In the **Sequencer mode**, the node holds an instance of L2 State, manages batch broadcasting to other L2 network nodes, and has a built-in API to handle L2 user interactions (transaction requests and L2 State queries).
 
-- hold an instance of the L2 State,
-- manage batch broadcasting to other L2 network nodes,
-- handle L2 user’s interactions (transaction requests and L2 State queries) via a built-in API,
-- temporarily store transactions that have not yet been ordered or executed in a database, which is a pool of pending transactions,
-- interact with L1 in order to sequence transaction batches, and keep its local L2 State up-to-date.
+There is also a database to temporarily store transactions that have not yet been ordered and executed (pending transactions pool), as well as all the components required to interact with L1 in order to sequence transaction batches and keep its local L2 State up to date.
 
 ### Aggregator Mode
 
-In the **Aggregator mode**, the node has a few capabilities like:
+In the **Aggregator mode**, the node has all the components needed to execute transaction batches, compute the resulting L2 State and generate the Zero-Knowledge proofs of computational integrity.
 
-- execute transaction batches,
-- compute the resulting L2 State,
-- generate the Zero-Knowledge proofs of computational integrity,
-- fetch transaction batches committed in L1 by the Trusted Sequencer,
-- call the functions needed to verify L2 State transitions publicly, that is on L1.
+Also, has all the components needed to fetch transaction batches committed in L1 by the Trusted Sequencer and call the functions to publicly verify the L2 State transitions on L1.
 
 ### RPC Mode
 

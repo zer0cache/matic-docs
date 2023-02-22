@@ -95,7 +95,7 @@ Second, how much time has passed, as indicated by `veryBatchTimeTarget`.
 
 The `diffBatches` variable represents the difference between late batches and those below the target, and its value is limited by a constant called `MAX BATCH MULTIPLIER`, which is set to 12.
 
-#### Case 1
+### Case 1
 
 If there are more late batches than early batches in the sequence being aggregated, the following formula will be applied to the `batchFee` storage variable:
 
@@ -110,7 +110,7 @@ It should be noted that the goal is to increase the aggregation reward in order 
 
 ![% of batch fee variation when late batches dominate the sequence](figures/07l2-batch-fee-var.png)
 
-#### Case 2
+### Case 2
 
 If the early batches outnumber the late ones, the following formula is applied to the storage variable 'batchFee':
 
@@ -122,23 +122,8 @@ The graph below shows the percentage variation of the `batchFee` variable depend
 
 ![% of batch fee variation when batches below the time target dominate the sequence](figures/08l2-batches-below-time-target.png)
 
-To summarise, the admin can tune the reaction of `batchFee` variable re-adjustments by adjusting `veryBatchTimeTarget` and `multiplierBatchFee`. The values set during the contract's initialization are listed below:
+To summarize, the admin can tune the reaction of `batchFee` variable re-adjustments by adjusting `veryBatchTimeTarget` and `multiplierBatchFee`. The values set during the contract's initialization are listed below:
 
 - `batchFee` = 1018 (1 MATIC).
 - `veryBatchTimeTarget` = 30 minutes.
 - `multiplierBatchFee` = 1002.
-
-## Admin Role
-
-Admin is an Ethereum account that controls the contract, but **it is planned to be removed in the future**. It is the only account in the contract that can call the following functions;
-
-- `setTrustedSequencer`
-- `setForceBatchAllowed`
-- `setTrustedSequencerURL`
-- `setTrustedAggregator`
-- `setTrustedAggregatorTimeout`
-- `setPendingStateTimeout`
-- `setMultiplierBatchFee`
-- `setVeryBatchTimeTarget`
-- `setAdmin`
-- `deactivateEmergencyState`

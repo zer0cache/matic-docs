@@ -84,5 +84,5 @@ To successfully override a pending state, the Trusted Aggregator must submit a p
 To summarize, **the emergency state can only be activated**:
 
 - when the contract owner deems it appropriate, or
-- when aggregation activity is halted due to a `HALT AGGREGATION TIMEOUT`, or
+- when aggregation activity is halted due to a `HALT_AGGREGATION_TIMEOUT`, or
 - when anyone can demonstrate that a pending state is non-deterministic.

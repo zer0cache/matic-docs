@@ -1008,6 +1008,7 @@ module.exports = {
       },
       items:[
         "zkEVM/protocol/protocol-components",
+        "zkEVM/protocol/state-management",
         "zkEVM/protocol/consensus",
         {
               type: "category",
@@ -1024,6 +1025,8 @@ module.exports = {
               ]
         },
         "zkEVM/protocol/incentive-mechanism",
+        "zkEVM/protocol/upgradability",
+        "zkEVM/protocol/admin-role",
         {
               type: "category",
               label: "Malfunction Resistance",
