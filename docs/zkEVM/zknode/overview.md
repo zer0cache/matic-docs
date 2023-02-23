@@ -32,7 +32,7 @@ Sequencers can be either **Trusted** or **Permissionless**:
 
 ### Trusted
 
-**Trusted sequencers** are added to the network in order to achieve **fast finality**. The trusted sequencers predicts what the state will look like before it’s actually virtualized on L1.
+**Trusted sequencers** are added to the network in order to achieve **fast finality**. The trusted sequencers predict what the state will look like before it’s actually virtualized on L1.
 
 ### Permissionless
 

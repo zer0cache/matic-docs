@@ -75,7 +75,7 @@ engine to seal blocks.
 IBFT includes a validator pool (or set) responsible for validating candidate blocks proposed
 by a randomly selected block proposer who is part of the validator pool. The proposer is responsible
 for constructing a block at the block interval. The proposer mechanism is based on Tendermint, where
-a proposer is chosen based a deterministic selection algorithm. The frequency in selection is
+a proposer is chosen based on a deterministic selection algorithm. The frequency in selection is
 proportional to the voting power of the validator.
 
  > The amount of voting power a validator has is proportional to the amount of stake that they have locked

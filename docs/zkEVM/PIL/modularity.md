@@ -81,7 +81,7 @@ These are included in PIL as shown in the code excerpt below.
 
 ## The Main State Machine
 
-The _Main State Machine_ is in charge of some (major) tasks, but will specifically use the Arithmetic SM when Arithmetic operations needs to be performed over certain values.
+The _Main State Machine_ is in charge of some (major) tasks, but will specifically use the Arithmetic SM when Arithmetic operations need to be performed over certain values.
 
 ![The Main State Machine Architecture](figures/fig15-main-sm-arch.png)
 
@@ -93,9 +93,9 @@ Now, check whether all the input polynomials (wherever necessary) are present, a
 
 Now, add various constraints regarding the evolution of the "main" state variables $a$, $b$, $c$, $d$ and $e$, so that any kind of linear combination between the main state variables, the free input and any constant is subject to be moved in the next iteration of some (or all) the state variables.
 
-Below diagram shows the desired behavior of Boolean Polynommials in the Main State Machine:
+Below diagram shows the desired behavior of Boolean Polynomials in the Main State Machine:
 
-![Boolean Polynommials in the Main State Machine](figures/fig16-main-sm-bool-pols.png)
+![Boolean Polynomials in the Main State Machine](figures/fig16-main-sm-bool-pols.png)
 
 In PIL, it translates to the following:
 
@@ -109,7 +109,7 @@ The connections can be depicted in terms of tables, as shown below:
 
 ![Connecting Arithmetic and Main State Machines](figures/fig18-main-cnnct-Arth-Main.png)
 
-On the one side, the $\texttt{arith}$ selector is used in the Main SM to point to this state machine when an arithmetic lookup have to be performed. On the other side, the $\texttt{LATCH}$ selector, which also works as a selector for which rows should be added in the lookup argument is used. And, as illustrated in the figure above, this proves that,
+On the one side, the $\texttt{arith}$ selector is used in the Main SM to point to this state machine when an arithmetic lookup has to be performed. On the other side, the $\texttt{LATCH}$ selector, which also works as a selector for which rows should be added in the lookup argument is used. And, as illustrated in the figure above, this proves that,
 
 $$
 \begin{array}{c}

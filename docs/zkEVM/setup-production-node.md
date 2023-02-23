@@ -38,7 +38,7 @@ This tutorial assumes that you have `docker-compose` already installed. If you n
 - 16GB RAM
 - 4-core CPU
 
-It is highly recommeneded that you create a separate folder for installing and working around the zkNode. We won't be cloning any repository (unlike [<ins>local zkNode setup</ins>](setup-local-node.md)) so it's better to create a folder before starting the zkNode setup: ```mkdir -p /$HOME/zkevm-node```
+It is highly recommended that you create a separate folder for installing and working around the zkNode. We won't be cloning any repository (unlike [<ins>local zkNode setup</ins>](setup-local-node.md)) so it's better to create a folder before starting the zkNode setup: ```mkdir -p /$HOME/zkevm-node```
 
 ## Network Components
 

@@ -35,7 +35,7 @@ The Trusted Sequencer component is in charge of **receiving L2 transactions from
 
 The Sequencer executes and broadcasts batches of transactions to L2 network nodes in order to achieve fast finality and reduce costs associated with high network usage. That's before even submitting them to L1.
 
-The Trusted Sequencer must run a zkEVM node in **Sequencer mode** and be in control of an **Consensus Contract-enforced** Ethereum account.
+The Trusted Sequencer must run a zkEVM node in **Sequencer mode** and be in control of a **Consensus Contract-enforced** Ethereum account.
 
 ### Trusted Aggregator
 
@@ -51,7 +51,7 @@ An L2 State root is a concise cryptographic digest of the L2 State. In case you 
 
 :::
 
-The Trusted Aggregator should run a zkEVM node in **Aggregator mode** and must control a specific Ethereum account enforced in an Consensus Contract.
+The Trusted Aggregator should run a zkEVM node in **Aggregator mode** and must control a specific Ethereum account enforced in a Consensus Contract.
 
 ### Consensus Contract
 

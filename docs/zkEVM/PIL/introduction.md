@@ -21,7 +21,7 @@ One of the main peculiarities of PIL is its **modularity**, which allows program
 
 Some of the keys features of PIL are;
 
-- Providing $\texttt{namespaces}$ for naming the essential parts that constitutes state machines,
+- Providing $\texttt{namespaces}$ for naming the essential parts that constitute state machines,
 - Denoting whether the polynomials are $\texttt{committed}$ or $\texttt{constant}$,
 - Expressing polynomial relations, including $\texttt{identities}$ and $\texttt{lookup arguments}$, and
 - Specifying the type of a polynomial, such as $\texttt{bool}$ or $\texttt{u32}$.
@@ -34,7 +34,7 @@ Arithmetic circuits arise naturally in the context of succinct interactive proto
 
 ![Vanilla Plonk vs PlonKish Circuit Representation Style](figures/fig1-plnk-plnkish.png)
 
-However, recent proof systems such as STARKs have shown that arithmetic circuits might not be the best computational models in all use-cases.
+However, recent proof systems such as STARKs have shown that arithmetic circuits might not be the best computational models in all use cases.
 
 Given a complete programming language, computing a valid proof for a circuit satisfiability problem, may result in long proving times due to the overhead of re-used logic. Opting for deployment of state machines, with their low-level programming, shorter proving times are attainable especially with the advent of proof / verification-aiding languages such as PIL.
 
