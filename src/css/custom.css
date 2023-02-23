@@ -12,7 +12,7 @@
   --ifm-color-primary-light: #0042c4;
   --ifm-color-primary-lighter: #0045cd;
   --ifm-color-primary-lightest: #004ee7;
-  --ifm-font-family-base: Graphik;
+  --ifm-font-family-base: GeneralSans;
 
   --ifm-h1-font-size: 2rem;
   --ifm-h2-font-size: 1.5rem;
@@ -40,45 +40,33 @@
 
 /* You can override the default Infima variables here. */
 @font-face {
-  font-family: "Graphik";
+  font-family: "GeneralSans";
   font-weight: 300;
-  src: url("/fonts/graphik/Graphik-300-Light.otf") format("opentype");
+  src: url("/fonts/GeneralSans/GeneralSans-Light.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Graphik";
+  font-family: "GeneralSans";
   font-weight: 400;
-  src: url("/fonts/graphik/Graphik-Regular.otf") format("opentype");
+  src: url("/fonts/GeneralSans/GeneralSans-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Graphik";
+  font-family: "GeneralSans";
   font-weight: 500;
-  src: url("/fonts/graphik/Graphik-500-Medium.otf") format("opentype");
+  src: url("/fonts/GeneralSans/GeneralSans-Medium.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Graphik";
+  font-family: "GeneralSans";
   font-weight: 600;
-  src: url("/fonts/graphik/Graphik-Semibold.otf") format("opentype");
+  src: url("/fonts/GeneralSans/GeneralSans-Semibold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Graphik";
+  font-family: "GeneralSans";
   font-weight: 700;
-  src: url("/fonts/graphik/Graphik-Bold.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Graphik";
-  font-weight: 800;
-  src: url("/fonts/graphik/Graphik-800-Black.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Graphik";
-  font-weight: 900;
-  src: url("/fonts/graphik/Graphik-900-Super.otf") format("opentype");
+  src: url("/fonts/GeneralSans/GeneralSans-Semibold.otf") format("opentype");
 }
 
 @-ms-viewport {
@@ -776,7 +764,7 @@ html[data-theme='dark'] .header-github-link:before {
 }
 
 :root {
-  --ifm-color-primary: #8247e5;
+  --ifm-color-primary: #ad7dff;
   --ifm-color-primary-dark: #125bec;
   --ifm-color-primary-darker: #1156df;
   --ifm-color-primary-darkest: #0e47b8;
@@ -830,30 +818,30 @@ html[data-theme='dark'] .header-github-link:before {
 }
 
 .banner .description {
-  /* Body Small */
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-
-  /* Dark_Gray_500 */
   color: #3b465c;
 }
 
 .show-card {
   background: #ffffffe8;
-  border: 2px solid #e7e9ee;
-  border-radius: 25px;
+  border: 2px solid #D0BAF5;
+  border-radius: 12px;
   width: 100%;
   height: 100%;
-  padding: 55px;
+  padding: 20px;
 }
 
 [data-theme='dark'] .show-card {
-  background: #EAE0FB;
+  background: #1C1C1E;
+  border: 2px solid #D0BAF5;
 }
 
 .show-card:hover {
   box-shadow: 0px 1px 4px rgb(106,50,159);
+  background-color: #AA84ED;
+  border-color: #AA84ED;
 }
 
 .show-card .icon-wrapper {
@@ -866,27 +854,35 @@ html[data-theme='dark'] .header-github-link:before {
 }
 
 .show-card .title {
-  margin-top: 40px;
-  margin-bottom: 12px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 
-  /* Heading Large */
+  /* Heading Medium */
   font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 20px;
+  line-height: 24px;
   letter-spacing: -0.02em;
 
   /* Dark_Gray_700 */
   color: #061024;
 }
 
-.show-card .descriptions {
-  /* Body Medium */
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
+[data-theme='dark'] .show-card .title {
+  color: #e6e6e9;
+}
 
-  /* Dark_Gray_500 */
+.show-card .descriptions {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
   color: #3b465c;
+}
+
+[data-theme='dark'] .show-card .descriptions {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #e6e6e9;
 }
 
 .big-block-content {
@@ -896,12 +892,14 @@ html[data-theme='dark'] .header-github-link:before {
 }
 
 .big-block-content img {
-  width: 20%;
+  width: 160px;
+  height: 100%;
   float: right;
 }
 .big-block-content .text {
-  width: 70%;
+  width: 75%;
   float: left;
+  padding: 20px;
 }
 
 .big-block-content .text .title {
@@ -916,6 +914,69 @@ html[data-theme='dark'] .header-github-link:before {
     margin-top: 0.5em;
   }
 }
+
+.landing-page-link{
+  color: #8b43ee;
+}
+
+/* DARK CARD */
+
+.dark-card {
+  background-color: #212529;
+  border-radius: 12px;
+  box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 115px;
+  margin-top: 40px;
+  margin-bottom: 300px;
+
+  }
+
+  [data-theme='light'] .dark-card {
+  background-color: #f0f0f0;
+  }
+
+  .dark-card .custom-card img {
+    max-height: 190px;
+
+  }
+
+  .dark-card .title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  /* Heading Medium */
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 64px;
+  letter-spacing: -0.04em;
+
+  /* Light_Gray_400 */
+  color: #b1b1b3;
+  }
+
+  [data-theme='light'] .dark-card .title {
+  color: #061024;
+  }
+
+  .dark-card .descriptions {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #d6d6d9;
+  }
+
+  .dark-card img {
+    width: 20%;
+    float: right;
+  }
+
+  [data-theme='light'] .dark-card .descriptions {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3b465c;
+  }
 
 .pt-40 {
   padding-top: 40px !important;
@@ -968,19 +1029,84 @@ strong {
 }
 
 .show-card .status {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   position: absolute;
-  top: 130px;
-  color: #3b465c;
+  top: 85px;
+  color: #e6e6e9;
 
   -webkit-transition: color 2s;
     transition: color 2s;
 }
 
-.show-card .status:hover {
-  color: #003cb2;
+[dark-theme = 'dark'] .show-card .status {
+  color: #e6e6e9;
 }
 
-.tabs {
+.show-card .status:hover {
+  color: #733183;
+}
+
+.index-page .row > :nth-child(1) {
+  margin-top: 110px;
+  margin-bottom: 110px;
+}
+
+.index-page p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+
+.index-page h1 {
+  font-size: 5em;
+  margin-bottom: 25px;
+}
+
+.index-page h2 {
+  font-size: 3em;
+}
+
+.index-page h3 {
+  font-size: 2.1em;
+}
+
+.col-lg-4 {
+  display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.col-lg-4 img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.btn-custom {
+  text-align: center;
+  /* text-transform: uppercase; We can add this too*/
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  background-color: transparent;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(to right, #a626c1 0%, #9b2dc9 26%, #9332d1 51%, #8539db 76%, #7c3ee3 100%);
+}
+
+.btn-custom:hover {
+  background-position: right center;
+}
+
+@media only screen and (max-width: 991px) {
+  .d-lg-block {
+    display: none;
+  }
+}
+
+@media (max-width: 1330px) {
+  .navbar__item {
+    display: none;
+  }
 }

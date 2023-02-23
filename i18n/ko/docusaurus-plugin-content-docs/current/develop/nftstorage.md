@@ -74,7 +74,7 @@ npx hardhat
 ✨ Config file created ✨
 ```
 
-폴리곤 뭄바이 테스트 네트워크를 지원하기 위해 hardhat 구성 파일 `hardhat.config.js`를 약간 수정할 것입니다. 마지막 단계에서 생성한 `hardhat.config.js`를 엽니다. 환경 파일에서 폴리곤 지갑 프라이빗 키를 로드하고 있으며 이 환경 파일을 안전하게 보관해야 합니다. 요구 사항에 따라 다른 rpc [링크](https://docs.polygon.technology/docs/develop/network-details/network)를 사용할 수도 있습니다.
+폴리곤 뭄바이 테스트 네트워크를 지원하기 위해 hardhat 구성 파일 `hardhat.config.js`를 약간 수정할 것입니다. 마지막 단계에서 생성한 `hardhat.config.js`를 엽니다. 환경 파일에서 폴리곤 지갑 프라이빗 키를 로드하고 있으며 이 환경 파일을 안전하게 보관해야 합니다. 요구 사항에 따라 다른 rpc [링크](https://docs.polygon.technology/docs/operate/network)를 사용할 수도 있습니다.
 
 ```js
 /**

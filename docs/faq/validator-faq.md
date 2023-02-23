@@ -329,8 +329,8 @@ No. You cannot. Polygon's architecture currently does not allow validators runni
 
 There is no light node option as of now.
 
-* [Run a Full Node on a binary](/develop/network-details/full-node-binaries.md)
-* [Run a Full Node with Ansible](/develop/network-details/full-node-deployment.md)
+* [Run a Full Node on a binary](/operate/full-node-binaries.md)
+* [Run a Full Node with Ansible](/operate/full-node-deployment.md)
 
 ## What is the uptime percentage calculation on the staking dashboard?
 

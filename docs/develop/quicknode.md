@@ -109,7 +109,7 @@ The contract is an ERC-20 contract. You can learn more about the ERC-20 standard
 
 ## Booting your Polygon node
 
-QuickNode has a global network of Polygon Mainnet and Mumbai testnet nodes. They also run a [free public Polygon RPC](https://docs.polygon.technology/docs/develop/network-details/network/#:~:text=https%3A//rpc%2Dmainnet.matic.quiknode.pro) but if you get rate limited, you can sign up for a [free trial node from QuickNode](https://www.quicknode.com/chains/matic?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide).
+QuickNode has a global network of Polygon Mainnet and Mumbai testnet nodes. They also run a [free public Polygon RPC](https://docs.polygon.technology/docs/operate/network/#:~:text=https%3A//rpc%2Dmainnet.matic.quiknode.pro) but if you get rate limited, you can sign up for a [free trial node from QuickNode](https://www.quicknode.com/chains/matic?utm_source=polygon_docs&utm_campaign=ploygon_docs_contract_guide).
 
 ![img](/img/quicknode/http_URL.png)
 
@@ -198,7 +198,7 @@ You can check out the deployed contract by copy-pasting the contract address at 
 
 ## Testing the Contract
 
-Brownie also offers the option of testing smart contracts functionalities. It uses the `pytest` framework to easily generate unit tests. You can find more information about writing tests on Bronwnie [on their documentation](https://eth-brownie.readthedocs.io/en/latest/tests-pytest-intro.html#). 
+Brownie also offers the option of testing smart contracts functionalities. It uses the `pytest` framework to easily generate unit tests. You can find more information about writing tests on Bronwnie [on their documentation](https://eth-brownie.readthedocs.io/en/latest/tests-pytest-intro.html#).
 
 **This is how contracts are deployed on Polygon using Brownie and QuickNode.**
 

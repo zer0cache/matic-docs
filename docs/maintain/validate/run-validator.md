@@ -21,7 +21,7 @@ follow the [Validator Node System Requirements](validator-node-system-requiremen
 
 :::tip
 Steps in this guide involve waiting for the **Heimdall** and **Bor** services to fully sync.
-This process takes several days to complete. Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](/docs/develop/network-details/snapshot-instructions-heimdall-bor).
+This process takes several days to complete. Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](/docs/operate/snapshot-instructions-heimdall-bor).
 
 For snapshot download links, see [<ins>Polygon Chains Snapshots</ins>](https://snapshot.polygon.technology/).
 :::
@@ -73,7 +73,7 @@ It is important to keep in mind that a sentry node must always be set up before 
     curl -L https://raw.githubusercontent.com/maticnetwork/install/main/heimdall.sh | bash
     ```
 
-    or install a specific version, node type (`sentry` or `validator`), and network (`mainnet` or `testnet`). All release versions can be found on 
+    or install a specific version, node type (`sentry` or `validator`), and network (`mainnet` or `testnet`). All release versions can be found on
     [Heimdall GitHub repository](https://github.com/maticnetwork/heimdall/releases).
 
     ```shell
@@ -90,7 +90,7 @@ It is important to keep in mind that a sentry node must always be set up before 
     curl -L https://raw.githubusercontent.com/maticnetwork/install/main/bor.sh | bash
     ```
 
-    or install a specific version,  node type (`sentry` or `validator`), and network (`mainnet` or `testnet`). All release versions could be found on 
+    or install a specific version,  node type (`sentry` or `validator`), and network (`mainnet` or `testnet`). All release versions could be found on
     [Bor Github repository](https://github.com/maticnetwork/bor/releases).
 
     ```shell
@@ -122,11 +122,11 @@ Before proceeding, Bor should be installed on both the sentry and validator mach
 
 ## Configuration
 
-In this section, we will go through steps to initialize and customize configurations nodes. 
+In this section, we will go through steps to initialize and customize configurations nodes.
 
 :::caution
 
-Bor and Heimdall 0.3.0 uses standardized paths for configuration files and chain data. If you have existing 
+Bor and Heimdall 0.3.0 uses standardized paths for configuration files and chain data. If you have existing
 config files and chain data on your node, please skip this section and jump directly to **[Migration](#upgrade-from-02x-to-03x) section** to learn about migrating configs and data to standardized file locations.
 
 :::
@@ -186,7 +186,7 @@ In `/var/lib/bor/config.toml`, add the following:
 [p2p]
     [p2p.discovery]
         static-nodes = ["<replace with enode://validator_machine_enodeID@validator_machine_ip:30303>"]
-``` 
+```
 
 To get the node ID of Bor on the validator machine:
 
@@ -217,7 +217,7 @@ The sentry machine must have the following ports open to the world `0.0.0.0/0`:
 ## Upgrade from 0.2.x to 0.3.x
 
 Bor 0.3.0 and Heimdall 0.3.0 uses new CLIs and path standards. It is recommended to set up everything from a new machine.
-However, if you still want to perform an upgrade on existing node, you need to follow the one-time migration steps 
+However, if you still want to perform an upgrade on existing node, you need to follow the one-time migration steps
 outlined below. If you are installing everything from a new machine, you can skip this section and continue to [Configure service files](#configure-service-files-for-bor-and-heimdall).
 
 - Stop existing Heimdall and Bor services
@@ -275,7 +275,7 @@ outlined below. If you are installing everything from a new machine, you can ski
     sudo chown -R bor /var/lib/bor
     ```
 
-- Copy configurations in `node/bor/start.sh` to Bor configuration file `/var/lib/bor/config.toml`. Note that some 
+- Copy configurations in `node/bor/start.sh` to Bor configuration file `/var/lib/bor/config.toml`. Note that some
   flags are renamed in the new CLI, you can find the documentation for new CLI [here](https://github.com/maticnetwork/bor/tree/master/docs/cli) and sample configuration file in [launch repository](https://github.com/maticnetwork/launch).
 
   You can use [this util script](https://github.com/maticnetwork/bor/blob/develop/scripts/getconfig.sh) to convert `start.sh` to a `config.toml` file on your host. Example usage:
@@ -298,8 +298,8 @@ outlined below. If you are installing everything from a new machine, you can ski
 
 ## Configure service files for Bor and Heimdall
 
-After successfully installing Bor and Heimdall through [packages](#install-with-packages-recommended), their service file could be found under `/lib/systemd/system`, and Bor's config 
-file could be found under `/var/lib/bor/config.toml`. 
+After successfully installing Bor and Heimdall through [packages](#install-with-packages-recommended), their service file could be found under `/lib/systemd/system`, and Bor's config
+file could be found under `/var/lib/bor/config.toml`.
 You will need to check and modify these files accordingly.
 
     - In the service file, set `--chain` to `mainnet` or `mumbai` accordingly
@@ -416,12 +416,12 @@ node ready.
 
 :::caution
 
-Bor and Heimdall 0.3.0 uses standardized paths for configuration files and chain data. If you have existing 
+Bor and Heimdall 0.3.0 uses standardized paths for configuration files and chain data. If you have existing
 config files and chain data on your node, please jump directly to **[Migration](#upgrade-from-02x-to-03x-1) section** to learn about migrating configs and data to standardized file locations.
 
 :::
 
-### Configure Heimdall 
+### Configure Heimdall
 
 Log in to the remote validator machine.
 
@@ -479,7 +479,7 @@ In `/var/lib/bor/config.toml`, add the following:
 [p2p]
     [p2p.discovery]
         static-nodes = ["<replace with enode://validator_machine_enodeID@validator_machine_ip:30303>"]
-``` 
+```
 
 To get the node ID of Bor on the sentry machine:
 
@@ -570,7 +570,7 @@ Save the changes in `metadata`.
 ## Upgrade from 0.2.x to 0.3.x
 
 Bor 0.3.0 and Heimdall 0.3.0 uses new CLIs and path standards. It is recommended to set up everything from a new machine.
-However, if you still want to perform upgrade on existing node, you need to follow one-time migration steps 
+However, if you still want to perform upgrade on existing node, you need to follow one-time migration steps
 outlined below. If you are installing everything from a new machine, you can skip this section and continue to [Configure service files](#configure-service-files-for-bor-and-heimdall-1).
 
 - Stop existing Heimdall and Bor services
@@ -617,7 +617,7 @@ outlined below. If you are installing everything from a new machine, you can ski
     ```
 
     In case data copying is too slow or original data folder is mounted on a different device, you can create symlinks
-    
+
     ```shell
     sudo chown -R heimdall ~/.bor
     sudo chown -R bor ~/.heimdalld
@@ -629,7 +629,7 @@ outlined below. If you are installing everything from a new machine, you can ski
     ```
 
 
-- Copy configurations in `node/bor/start.sh` to bor configuration file `/var/lib/bor/config.toml`. Note that some 
+- Copy configurations in `node/bor/start.sh` to bor configuration file `/var/lib/bor/config.toml`. Note that some
   flags are renamed in the new CLI, you can find the documentation for new CLI [here](https://github.com/maticnetwork/bor/tree/master/docs/cli) and sample configuration file in [launch repository](https://github.com/maticnetwork/launch).
 
   You can use [this util script](https://github.com/maticnetwork/bor/blob/develop/scripts/getconfig.sh) to convert start.sh to a config.toml file on your host. Example usage:
@@ -654,12 +654,12 @@ outlined below. If you are installing everything from a new machine, you can ski
 
 ## Configure service files for bor and heimdall
 
-After successfully installing Bor and Heimdall through [packages](#install-with-packages-recommended), their service file could be found under `/lib/systemd/system`, and Bor's config 
-file could be found under `/var/lib/bor/config.toml`. 
+After successfully installing Bor and Heimdall through [packages](#install-with-packages-recommended), their service file could be found under `/lib/systemd/system`, and Bor's config
+file could be found under `/var/lib/bor/config.toml`.
 You will need to check and modify these files accordingly.
 
 - Make sure the chain is set correctly in `/lib/systemd/system/heimdalld.service` file. Open the file with following command `sudo vi /lib/systemd/system/heimdalld.service`
-    
+
     - In the service file, set `--chain` to `mainnet` or `mumbai` accordingly
     - Add `--bridge --all` to the heimdall command line for validator, example:
       ```
@@ -682,7 +682,7 @@ You will need to check and modify these files accordingly.
         gaslimit = 20000000
         gasprice = "30000000000"
         etherbase = "VALIDATOR ADDRESS"
-        
+
       [accounts]
         allow-insecure-unlock = true
         password = "/var/lib/bor/password.txt"

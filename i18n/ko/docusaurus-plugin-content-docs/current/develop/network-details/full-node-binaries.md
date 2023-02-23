@@ -22,7 +22,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 이 섹션에서는 바이너리에서 풀 노드를 시작하고 실행하는 방법을 안내합니다.
 
-시스템 요구사항은 [Minimum Technical Requirements](http://localhost:3000/docs/develop/network-details/technical-requirements)을 참조하십시오.
+시스템 요구사항은 [Minimum Technical Requirements](http://localhost:3000/docs/operate/technical-requirements)을 참조하십시오.
 
 :::참고
 이 가이드의 단계들에는 Heimdall 및 Bor 서비스가 완전히 동기화될 때까지 기다리는 작업이 포함됩니다. 이 프로세스를 완료하는 데 며칠이 걸립니다.
@@ -36,7 +36,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 - 하나의 머신이 필요함
 풀 노드 머신에 설치된 'build-essential'
-- 설치를 위해: 
+- 설치를 위해:
 - 'sudo apt-get install build-essential'
 - 양쪽 풀 노드 머신에 설치된 Go 1.17<!-- ### To install
 
@@ -287,7 +287,7 @@ VPN을 사용하여 요구 사항 및 보안 지침에 따라 포트 22에 대�
 
 이 섹션에서는 바이너리에서 풀 노드를 시작하고 실행하는 방법을 안내합니다.
 
-시스템 요구사항은 [Minimum Technical Requirements](https://docs.polygon.technology/docs/develop/network-details/technical-requirements)을 참조하십시오.
+시스템 요구사항은 [Minimum Technical Requirements](https://docs.polygon.technology/docs/operate/technical-requirements)을 참조하십시오.
 
 :::참고
 이 가이드의 단계들에는 Heimdall 및 Bor 서비스가 완전히 동기화될 때까지 기다리는 작업이 포함됩니다. 이 프로세스를 완료하는 데 며칠이 걸립니다.
@@ -301,7 +301,7 @@ VPN을 사용하여 요구 사항 및 보안 지침에 따라 포트 22에 대�
 
 - 하나의 머신이 필요함
 풀 노드 머신에 설치된 'build-essential'
-- 설치를 위해: 
+- 설치를 위해:
 - 'sudo apt-get install build-essential'
 - 양쪽 풀 노드 머신에 설치된 Go 1.17
 
@@ -321,7 +321,7 @@ sudo ln -nfs ~/.go/bin/go /usr/bin/go
 
 RabbitMQ installed on both the Full Node machines. See Downloading and Installing RabbitMQ. -->
 
-Two machines — one local machine on which you will run the Ansible playbook; one 
+Two machines — one local machine on which you will run the Ansible playbook; one
 remote machine — for Full Node.
 - On the local machine, Ansible installed.
 - On the local machine, Python 3.x installed.
@@ -368,7 +368,7 @@ sudo ln -nfs ~/.go/bin/go /usr/bin/go
 
 다음으로, 최신 버전의 Heimdall과 서비스를 설치합니다. Git에서 정식으로 [배포된 버전](https://github.com/maticnetwork/heimdall/releases)을 확인하십시오. 최신 버전인 [Heimdall v.0.2.9](https://github.com/maticnetwork/heimdall/releases/tag/v0.2.9)에는 다음과 같은 몇가지 개선사항이 포함되어 있습니다:
 1. 상태 동기화 트랜잭션 크기를 다음으로 제한:
-    * **bytes**로 표시되는 경우 **30Kb** 
+    * **bytes**로 표시되는 경우 **30Kb**
     * **string**으로 표시되는 경우 **60Kb**.
 2. 체인의 진행을 방해할 수 있는 갑작스러운 이벤트의 경우 mempool이 매우 빠르게 채워지지 않도록 다른 validators의 컨트랙트 이벤트 간의 **지연 시간**을 늘립니다.
 
@@ -554,7 +554,7 @@ sudo service heimdalld-rest-server start
 
 이제 **Heimdall이 완전히 동기화되었는지** 확인한 다음 Bor를 시작해야 합니다. Heimdall을 완전히 동기화하지 않고 Bor를 시작하면 자주 문제가 발생합니다.
 
-- •	Heimdall이 동기화되었는지 확인하려면 
+- •	Heimdall이 동기화되었는지 확인하려면
     - 원격 장비/VM에서, `curl localhost:26657/status`를 실행합니다.
     - 출력에서, `catching_up`값은 `false`이어야 합니다.
 

@@ -28,7 +28,7 @@ const balance = await erc20.getBalance('<user address>')
 
 read APIs are very simple and returns result directly.
 
-## 2. Write API
+## Write API
 
 Write APIs publish some data on the blockchain, so it consumes gas. Example of write APIs are - `approve`, `deposit` etc.
 
@@ -55,7 +55,7 @@ const receipt = await result.getReceipt();
 
 ```
 
-### Transaction option
+## Transaction option
 
 There are some configurable options that are available for all API's. These configurations can be passed in parameters.
 

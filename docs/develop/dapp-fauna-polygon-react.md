@@ -67,7 +67,7 @@ In order to get started with building, follow these steps:
     :::info
 
     This can take a while and you may have to try a few times before the first transaction comes through your wallet. Each successful transaction from the MATIC faucet will give you 0.5 MATIC.
-    
+
     Since testing the application requires spending MATIC as gas fees (a fluctuating fee that you must pay to perform transactions), we recommend doing this transaction ~12 times so you have about 6 MATIC in your wallet, which should be enough for testing the app in development.
 
     To track your wallet’s transactions, you can visit [https://mumbai.polygonscan.com/address/](https://mumbai.polygonscan.com/address/)[wallet address].
@@ -103,7 +103,7 @@ If you’re someone that prefers walking through code independently, the GitHub 
 
     If you use an IDE to code, now would be the perfect time to open your project in the IDE! We’re going to start editing some files pretty soon.
 
-  :::    
+  :::
 
 ### Smart contract configuration and functionality
 
@@ -124,7 +124,7 @@ If you’re someone that prefers walking through code independently, the GitHub 
         ```js
           MNEMONIC=your secret phrase should go here
         ```
-    - Finally, replace the truffle-config.js file that was generated through Truffle with the following (note: it should be in the same directory as the client, contracts, and migrations folders):   
+    - Finally, replace the truffle-config.js file that was generated through Truffle with the following (note: it should be in the same directory as the client, contracts, and migrations folders):
     ```js
     const HDWalletProvider = require("@truffle/hdwallet-provider");
     const path = require("path");
@@ -163,7 +163,7 @@ If you’re someone that prefers walking through code independently, the GitHub 
 
   * Make sure your `MNEMONIC` environment variable is defined in a `.env` file in your root directory.
 
-  * If you are running into continuous errors and you’ve checked the above, try other RPC URLs in place of the [matic-mubai.chainstacklabs.com](http://matic-mubai.chainstacklabs.com) URL in `truffle-config.js`. A list of additional URLs for the Mumbai-Testnet can be found on [this page](https://docs.polygon.technology/docs/develop/network-details/network/) under the **Mumbai-Testnet** section.
+  * If you are running into continuous errors and you’ve checked the above, try other RPC URLs in place of the [matic-mubai.chainstacklabs.com](http://matic-mubai.chainstacklabs.com) URL in `truffle-config.js`. A list of additional URLs for the Mumbai-Testnet can be found on [this page](https://docs.polygon.technology/docs/operate/network/) under the **Mumbai-Testnet** section.
 
   :::
 
@@ -180,7 +180,7 @@ If you’re someone that prefers walking through code independently, the GitHub 
 
 :::
 
-  - Your browser will launch a development instance on [http://localhost:3000](http://localhost:3000) that will then prompt Metamask. It may ask you to re-auth your password. Finally, MetaMask will attempt to connect your account on the testnet to your application instance, which will cost you some MATIC in gas fees. You’ll see a window like this:    
+  - Your browser will launch a development instance on [http://localhost:3000](http://localhost:3000) that will then prompt Metamask. It may ask you to re-auth your password. Finally, MetaMask will attempt to connect your account on the testnet to your application instance, which will cost you some MATIC in gas fees. You’ll see a window like this:
 
   ![img](/img/dapp-fauna-polygon-react/metamask_notification.png)
 
@@ -720,7 +720,7 @@ Luckily, the public nature of the blockchain makes it easy to track down transac
 
 Click on a transaction to see more information by clicking on the transaction hash - this hash is uniquely generated and is what identifies your transaction.
 
-![img](/img/dapp-fauna-polygon-react/transaction_hash.png)  
+![img](/img/dapp-fauna-polygon-react/transaction_hash.png)
 
 3. When you click on the transaction hash, you’ll go to a page that lists the transaction’s specific details. To grab the information you’ll need, click the “Click to see more” option near the bottom of the displayed transaction information.
 4. Within the “Click to see more” option, you’ll see a lot more information. We’re going to scroll to the “Input Data” section, where there will be a long hash.
@@ -804,7 +804,7 @@ Once you have the right index pulled up, paste your UUID into the field under �
 
 When you click the search button, an entry should appear below the search field:
 
-![img](/img/dapp-fauna-polygon-react/search_index.png)  
+![img](/img/dapp-fauna-polygon-react/search_index.png)
 
 Once you expand the entry, you’ll see all of the original data passed in to the form for that specific transaction, such as the first name, last name, and wallet address.
 

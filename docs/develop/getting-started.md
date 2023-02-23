@@ -29,8 +29,8 @@ This guide will introduce you to the Polygon ecosystem. You'll find links to val
 
 :::tip Stay in the know
 
-Keep up with the latest builder updates from the Polygon 
-team and the community by subscribing to the 
+Keep up with the latest builder updates from the Polygon
+team and the community by subscribing to the
 [<ins>Polygon notification groups</ins>](https://polygon.technology/notifications/).
 
 :::
@@ -45,7 +45,7 @@ team and the community by subscribing to the
 
 If you are an Ethereum developer, you are already a Polygon developer. Simply switch to the [Polygon RPC](https://polygon-rpc.com/) and get started. All the tools you are familiar with on the Ethereum blockchain are supported on Polygon by default, such as Truffle, Remix, and Web3js.
 
-You can deploy decentralized applications to either Polygon Mumbai Testnet or the Mainnet. The Polygon Mumbai Testnet connects with the Ethereum Goërli Testnet, which acts as its ParentChain. You can find all the network-related details in the [network documentation](https://github.com/maticnetwork/matic-docs/blob/master/docs/develop/network-details/network.md).
+You can deploy decentralized applications to either Polygon Mumbai Testnet or the Mainnet. The Polygon Mumbai Testnet connects with the Ethereum Goërli Testnet, which acts as its ParentChain. You can find all the network-related details in the [network documentation](https://github.com/maticnetwork/matic-docs/blob/master/docs/operate/network.md).
 
 ### Wallets
 

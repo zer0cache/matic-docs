@@ -22,7 +22,7 @@ The Polygon Wallet Suite is a collection of Web3 applications provided by Polygo
 
 ## Which wallets are currently supported?
 
-Metamask, Coinbase, Bitski Wallet, Venly and WalletConnect are the currently supported wallets. 
+Metamask, Coinbase, Bitski Wallet, Venly and WalletConnect are the currently supported wallets.
 
 <div align="center">
   <img src={useBaseUrl("img/faq/wallet/supported-wallets.png")} width="400" />
@@ -79,7 +79,7 @@ Open MetaMask and scroll down to click on **Import tokens**.
 <img src={useBaseUrl("img/wallet-bridge/wallet-faq-3.png")} width="400" />
 </div>
 
-Then, add the relevant contract address, symbol, and decimal precision. Contract addresses (PoS-WETH in this case) can be found on this link: [https://docs.polygon.technology/docs/develop/network-details/mapped-tokens/](https://docs.polygon.technology/docs/develop/network-details/mapped-tokens/). You will need to add the child token address to view balances on Polygon Mainnet. The decimal of precision is 18 for WETH (for most tokens, the decimal of precision is 18).
+Then, add the relevant contract address, symbol, and decimal precision. Contract addresses (PoS-WETH in this case) can be found on this link: [https://docs.polygon.technology/docs/operate/mapped-tokens/](https://docs.polygon.technology/docs/operate/mapped-tokens/). You will need to add the child token address to view balances on Polygon Mainnet. The decimal of precision is 18 for WETH (for most tokens, the decimal of precision is 18).
 
 ## How can I add Polygon Mainnet on Metamask?
 
@@ -113,17 +113,17 @@ Unfortunately, we can not assist in such cases. Please don't send funds directly
 ##  I made a transfer to the wrong address. How do I retrieve the funds?
 
 Unfortunately, nothing can be done. Only the owner of the private keys to that particular address can move those assets.
-It’s always advisable to confirm if the address you are sending tokens to is the right one. 
+It’s always advisable to confirm if the address you are sending tokens to is the right one.
 
 ## My transaction has been pending for too long, what can I do?
 The transaction might be dropped due to the following reasons:
- 
+
 1. Setting up a low gas price while submitting the transaction.
 2. A sudden surge in the gas price due to congestion on the Ethereum Mainnet.
 3. The transaction is canceled by you from your wallet or replaced with a new transaction.
- 
+
 You can proceed with the dropped transactions in the following ways:
- 
+
 1. If your transaction is stuck for more than an hour, a **Try Again** button will be shown. You can click on the **Try Again** button to complete the same transaction. You can refer to this video for more information on how to use the **Try Again** feature.
 2. Please check your MetaMask wallet as well because sometimes transactions might be dropped due to queued-up transactions in the Metamask. In that case, clear the queued-up transactions or re-install the MetaMask in the same browser.
 3. You can install the MetaMask in an alternate browser and then try to complete the transaction using Polygon Wallet Suite.
@@ -142,7 +142,7 @@ Checkpoints sometimes take more than 45 minutes to 1 hour based on network conge
 We have listed some common errors that users might face. You can find the solution below the image of the error. In case you're shown a different error, please [raise a support ticket](https://support.polygon.technology/support/home) for our team to troubleshoot.
 
   - ### Common Errors
-  a. Withdrawal stuck on the Initialised phase.   
+  a. Withdrawal stuck on the Initialised phase.
 
     <img src={useBaseUrl("img/wallet-bridge/plasma-progress-stuck.png")} width="357" height="800"/>
 
@@ -150,15 +150,15 @@ We have listed some common errors that users might face. You can find the soluti
 
   b. RPC Error
 
-    <img src={useBaseUrl("img/wallet-bridge/checkpoint-rpc-error.png")} width="357" height="600"/>   
+    <img src={useBaseUrl("img/wallet-bridge/checkpoint-rpc-error.png")} width="357" height="600"/>
 
     The current RPC error you're facing might be due to an RPC overload.
 
-    Please try changing your RPC and proceed with the transaction. You may follow this link [here](https://docs.polygon.technology/docs/develop/network-details/network#matic-mainnet) for more information.
+    Please try changing your RPC and proceed with the transaction. You may follow this link [here](https://docs.polygon.technology/docs/operate/network#matic-mainnet) for more information.
 
   c.
 
-  <img src={useBaseUrl("img/wallet-bridge/checkpoint-stumbled-error.png")} width="357" height="600"/>  
+  <img src={useBaseUrl("img/wallet-bridge/checkpoint-stumbled-error.png")} width="357" height="600"/>
 
   This is usually an off-and-on error that gets resolved automatically. In case you are still receiving the same error while reinitiating the step, do [raise a support ticket](https://support.polygon.technology/) with all the relevant information to troubleshoot this further.
 
@@ -228,7 +228,7 @@ What you could do:
 - Be patient.
 - Increase the gas fee if it is too slow.
 - Check the fees before sending transactions. Here is a link for Etherscan's gas tracker:
-https://etherscan.io/gastracker 
+https://etherscan.io/gastracker
 
 What you shouldn’t do:
 - Please do not set the gas limit low or your transaction might fail.
@@ -240,7 +240,7 @@ What you shouldn’t do:
 The gas limit is estimated and set by the application according to certain requirements of the function being called in the contract. This should not be edited. Only the gas price can be changed in order to increase or decrease the transaction fees.
 
 ## How to speed up the transactions?
-You can do so by increasing the gas fees. Here's a link explaining how to do it on Metamask: https://metamask.zendesk.com/hc/en-us/articles/360015489251-How-to-Speed-Up-or-Cancel-a-Pending-Transaction. 
+You can do so by increasing the gas fees. Here's a link explaining how to do it on Metamask: https://metamask.zendesk.com/hc/en-us/articles/360015489251-How-to-Speed-Up-or-Cancel-a-Pending-Transaction.
 
 ## How much MATIC token is enough for the gas fee?
 Users need to have a minimum of 0.01 MATIC in the Polygon mainnet.
@@ -250,7 +250,7 @@ If you need help from our specialists, please send us a message at https://suppo
 
 ## How do I bridge assets across chains?
 
-Polygon offers a bridge to move assets from Ethereum to Polygon and vice versa. You can learn more about it on the [Bridges section]([https://wiki.polygon.technology/docs/develop/ethereum-polygon/getting-started](https://wiki.polygon.technology/docs/develop/ethereum-polygon/getting-started)) of this wiki. 
+Polygon offers a bridge to move assets from Ethereum to Polygon and vice versa. You can learn more about it on the [Bridges section]([https://wiki.polygon.technology/docs/develop/ethereum-polygon/getting-started](https://wiki.polygon.technology/docs/develop/ethereum-polygon/getting-started)) of this wiki.
 
 However, if you are using any external service that is not owned by Polygon, we advise you to reach out to their customer service to request tutorials and instructions. It is also important to do your own research when you are using web3 services.
 

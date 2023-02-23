@@ -23,7 +23,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 이더리움 개발자라면 이미 폴리곤 개발자입니다. 이더리움 블록체인에서 익숙한 모든 도구는 즉시 폴리곤에서 지원됩니다. 예를 들어 Truffle, Remix 및 Web3js가 있습니다. Polygon RPC로 전환하고 시작하십시오!
 
-**뭄바이**라고 하는 폴리곤의 테스트 네트워크는 **이더리움의 Goërli 테스트넷**과 연결됩니다. 모든 네트워크 관련 세부정보는 [네트워크 문서](/docs/develop/network-details/network)에서 찾을 수 있습니다.
+**뭄바이**라고 하는 폴리곤의 테스트 네트워크는 **이더리움의 Goërli 테스트넷**과 연결됩니다. 모든 네트워크 관련 세부정보는 [네트워크 문서](/docs/operate/network)에서 찾을 수 있습니다.
 
 - [메타마스크 지갑](/docs/develop/metamask/overview) 또는 [Arkane 지갑](/docs/develop/wallets/arkane/intro) 설정하기
 - 폴리곤에 컨트랙트 배포하기

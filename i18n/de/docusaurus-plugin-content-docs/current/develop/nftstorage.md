@@ -74,7 +74,7 @@ When prompted, choose `Create an empty hardhat.config.js`. Your console output s
 ✨ Config file created ✨
 ```
 
-We will do some modifications to the hardhat configuration file `hardhat.config.js` to support the Polygon Mumbai test network. Open the `hardhat.config.js` that was created in the last step. Please note that we are loading your Polygon wallet private key from an environment file and that this environment file must be kept safe. You can even use other rpc [link](https://docs.polygon.technology/docs/develop/network-details/network), as per requirement.
+We will do some modifications to the hardhat configuration file `hardhat.config.js` to support the Polygon Mumbai test network. Open the `hardhat.config.js` that was created in the last step. Please note that we are loading your Polygon wallet private key from an environment file and that this environment file must be kept safe. You can even use other rpc [link](https://docs.polygon.technology/docs/operate/network), as per requirement.
 
 ```js
 /**

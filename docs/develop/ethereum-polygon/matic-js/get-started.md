@@ -76,7 +76,7 @@ After `POSClient` is initiated, we need to initiate the required token types lik
 
 Let's initiate `erc20` -
 
-### erc20
+### ERC20
 
 **create erc20 child token**
 
@@ -118,6 +118,6 @@ const txReceipt = await approveResult.getReceipt();
 
 As you can see, with its simple APIs maticjs makes it very easy to interact with maticjs bridge. **Let's get started with creating something awesome**
 
-### Some important links
+### Useful links
 
 - [Examples](https://github.com/maticnetwork/matic.js/tree/master/examples)

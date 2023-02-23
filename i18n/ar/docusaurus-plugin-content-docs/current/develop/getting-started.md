@@ -23,7 +23,7 @@ This page will act as your guide into the **Polygon Ecosystem**. You'll find lin
 
 If you're an Ethereum Developer, you're already a Polygon developer. All the tools you're familiar with are supported on Polygon out of the box: Truffle, Remix, Web3js. Switch over to Polygon's RPC and get started!
 
-Polygon's Test Network which is called **Mumbai** connects with **Ethereum's Goërli Testnet.** All the network related details can be found in [network docs](/docs/develop/network-details/network).
+Polygon's Test Network which is called **Mumbai** connects with **Ethereum's Goërli Testnet.** All the network related details can be found in [network docs](/docs/operate/network).
 
 - Set up [Metamask Wallet](/docs/develop/metamask/overview) or [Arkane Wallet](/docs/develop/wallets/arkane/intro)
 - Deploy your Contracts on Polygon

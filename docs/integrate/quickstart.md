@@ -27,8 +27,8 @@ this section is for you.
 ## Setup a Full Node
 
 Follow the instructions on the articles:
-* [Full Node Deployment](/docs/develop/network-details/full-node-deployment)
-* [Full Node Binaries](/docs/develop/network-details/full-node-binaries)
+* [Full Node Deployment](/docs/operate/full-node-deployment)
+* [Full Node Binaries](/docs/operate/full-node-binaries)
 
 ## Deploy smart contracts
 

@@ -147,14 +147,14 @@ If you’re someone that prefers walking through code independently, the GitHub 
 
 :::note
 
-  if you run into any issues, check the following things: Make sure your `MNEMONIC` environment variable is defined in a `.env` file in your root directory. *If you are running into continuous errors and you’ve checked the above, try other RPC URLs in place of the [matic-mubai.chainstacklabs.com](http://matic-mubai.chainstacklabs.com) URL in `truffle-config.js`. A list of additional URLs for the Mumbai-Testnet can be found on [this page](https://docs.polygon.technology/docs/develop/network-details/network/) under the “Mumbai-Testnet” section.*
+  if you run into any issues, check the following things: Make sure your `MNEMONIC` environment variable is defined in a `.env` file in your root directory. *If you are running into continuous errors and you’ve checked the above, try other RPC URLs in place of the [matic-mubai.chainstacklabs.com](http://matic-mubai.chainstacklabs.com) URL in `truffle-config.js`. A list of additional URLs for the Mumbai-Testnet can be found on [this page](https://docs.polygon.technology/docs/operate/network/) under the “Mumbai-Testnet” section.*
 
 :::
 
 - Then, test being able to connect to your new application by running the front-end. Truffle added some pre-configured logic that will allow you to test this connection. You can test it by running the following from your main directory:
-  
+
         `cd client`
-      
+
         `npm run start`
 
 :::note

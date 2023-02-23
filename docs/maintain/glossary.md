@@ -51,7 +51,7 @@ See also [Who Is a Delegator](/docs/maintain/polygon-basics/who-is-delegator).
 
 A full node is a fully synced [sentry node](#sentry) running both [Heimdall](#heimdall) and [Bor](#bor).
 
-See also [Full Node Deployment](/docs/develop/network-details/full-node-deployment).
+See also [Full Node Deployment](/docs/operate/full-node-deployment).
 
 ## Heimdall
 

@@ -16,7 +16,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-:::tip Steps in this guide involve waiting for the **Heimdall** and **Bor** services to fully sync. This process takes several days to complete. Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](../../develop/network-details/snapshot-instructions-heimdall-bor).
+:::tip Steps in this guide involve waiting for the **Heimdall** and **Bor** services to fully sync. This process takes several days to complete. Alternatively, you can use a maintained snapshot, which will reduce the sync time to a few hours. For detailed instructions, see [<ins>Snapshot Instructions for Heimdall and Bor</ins>](../../operate/snapshot-instructions-heimdall-bor).
 
 For snapshot download links, see [Polygon Chains Snapshots](https://snapshots.matic.today/).
 

@@ -24,7 +24,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 This section guides you through starting and running a full node on a binary.
 
-For the system requirements, see [Minimum Technical Requirements](http://localhost:3000/docs/develop/network-details/technical-requirements).
+For the system requirements, see [Minimum Technical Requirements](http://localhost:3000/docs/operate/technical-requirements).
 
 :::note
 
@@ -297,7 +297,7 @@ You can use VPN to restrict access for 22 port as per your requirement and secur
 
 This section guides you through starting and running a full node on a binary.
 
-For the system requirements, see [Minimum Technical Requirements](https://docs.polygon.technology/docs/develop/network-details/technical-requirements).
+For the system requirements, see [Minimum Technical Requirements](https://docs.polygon.technology/docs/operate/technical-requirements).
 
 :::note
 
