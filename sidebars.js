@@ -960,7 +960,20 @@ module.exports = {
         "zkEVM/protocol/protocol-components",
         "zkEVM/protocol/state-management",
         "zkEVM/protocol/consensus",
-        "zkEVM/protocol/l2-transaction-cycle-intro",
+        {
+              type: "category",
+              label: "Transaction Life Cycle",
+              link: {
+                type: "generated-index"
+              },
+              items:[
+                "zkEVM/protocol/l2-transaction-cycle-intro",
+                "zkEVM/protocol/transaction-execution",
+                "zkEVM/protocol/transaction-batching",
+                "zkEVM/protocol/transaction-sequencing",
+                "zkEVM/protocol/transaction-aggregation",
+              ]
+        },
         "zkEVM/protocol/incentive-mechanism",
         "zkEVM/protocol/upgradability",
         "zkEVM/protocol/admin-role",
@@ -980,6 +993,20 @@ module.exports = {
       ]
     },
     "zkEVM/zknode/zknode-overview",
+    {
+      type: "category",
+      label: "Developer Guides",
+      link: {
+        type: "generated-index"
+      },
+      collapsed: false,
+      items:[
+        "zkEVM/develop",
+        "zkEVM/setup-local-node",
+        "zkEVM/setup-production-node",
+        "zkEVM/zkevm-gas-station",
+      ]
+    },
     {
       type: "category",
       label: "zkProver",
@@ -1054,19 +1081,6 @@ module.exports = {
             "zkEVM/zkProver/poseidon-sm",
           ]
         },
-      ]
-    },
-    {
-      type: "category",
-      label: "How To Guides",
-      link: {
-        type: "generated-index"
-      },
-      collapsed: false,
-      items:[
-        "zkEVM/develop",
-        "zkEVM/setup-local-node",
-        "zkEVM/setup-production-node",
       ]
     },
     {
