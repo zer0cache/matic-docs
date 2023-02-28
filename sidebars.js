@@ -54,7 +54,7 @@ module.exports = {
   govern: [
     {
       type: "category",
-      label: "PIPs",
+      label: "Polygon Improvement Proposals (PIPs)",
       link: {
         type: "generated-index",
       },
