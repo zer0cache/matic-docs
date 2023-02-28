@@ -52,7 +52,19 @@ module.exports = {
   ],
 
   govern: [
-    "maintain/govern/pips",
+    {
+      type: "category",
+      label: "PIPs",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "maintain/govern/pips/pips-overview",
+        "maintain/govern/pips/how-to-propose",
+        "maintain/govern/pips/pips-forum",
+        "maintain/govern/pips/pips-community-guidelines",
+      ],
+    },
     "maintain/govern/governance-pos",
   ],
 
