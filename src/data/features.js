@@ -25,7 +25,7 @@ export const firstRow = [
     },
     {
         title: "Participate in Governance",
-        linkUrl: "/docs/maintain/govern/pips/how-to-propose",
+        linkUrl: "/docs/maintain/govern/pips/",
         imageUrl: "img/supernet.svg",
         description: "Learn about governance and how to shape the future of Polygon through the PIP framework."
     },
